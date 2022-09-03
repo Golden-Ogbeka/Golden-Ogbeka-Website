@@ -1,0 +1,90 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Manrope', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+	/* transition: all 1s; */
+}
+
+/* Editing all pages' scrollbar */
+*::-webkit-scrollbar {
+	width: 12px;
+	height: 5px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+	background: #ccc;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+	background: #999;
+}
+
+/* Customized scrollbar */
+.customizedScrollbar::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+/* Track */
+.customizedScrollbar::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+.customizedScrollbar::-webkit-scrollbar-thumb {
+	background: #ccc;
+}
+
+/* Handle on hover */
+.customizedScrollbar::-webkit-scrollbar-thumb:hover {
+	background: #999;
+}
+
+/* For scroll animation */
+.reveal {
+	position: relative;
+	transform: translateX(150px);
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+.reveal.active {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+/* Custom modal */
+.ReactModal__Overlay {
+	opacity: 0;
+
+	transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+	opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+	opacity: 0;
+}
+
+.hoverText:hover {
+	color: #ffdf86 !important;
+	transition: all 0.5s;
+}

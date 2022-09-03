@@ -1,0 +1,17 @@
+.container {
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	align-items: center;
+	overflow-x: auto;
+	overflow-y: hidden;
+	flex-wrap: nowrap;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	cursor: grab;
+	cursor: -webkit-grab;
+	padding-block: 20px;
+	position: relative;
+	scroll-behavior: smooth;
+}

@@ -1,0 +1,36 @@
+.container {
+	padding-inline: 5vw;
+	padding-block: 22.58px;
+}
+
+.innerContainer {
+	font-size: 0.9375rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.linkContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 55.55px;
+}
+
+@media (min-width: 800px) {
+	.desktopLink {
+		display: block;
+	}
+}
+@media (max-width: 800px) {
+	.desktopLink {
+		display: none;
+	}
+	.mobileLink {
+		display: block;
+	}
+	.linkContainer {
+		gap: 20px;
+	}
+}
