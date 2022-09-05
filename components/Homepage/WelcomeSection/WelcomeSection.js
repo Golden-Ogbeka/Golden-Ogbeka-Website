@@ -15,11 +15,11 @@ function WelcomeSection() {
 						called The Chicken Universe in 2019 and understands what it takes to grow a business
 						and influence people to join a dream
 					</p>
-					<Link href='/portfolio'>
-						<Button className={styles.button} variant='contained' color='alternate'>
+					<a href='https://github.com/Golden-Ogbeka'>
+						<Button color='alternate' variant='contained' className={styles.button}>
 							Portfolio
 						</Button>
-					</Link>
+					</a>
 				</div>
 				<div className={styles.rightSide}>
 					<Image
@@ -30,6 +30,12 @@ function WelcomeSection() {
 					/>
 				</div>
 			</Box>
+			<style jsx>{`
+				a {
+					text-decoration: none;
+					color: initial;
+				}
+			`}</style>
 		</section>
 	);
 }

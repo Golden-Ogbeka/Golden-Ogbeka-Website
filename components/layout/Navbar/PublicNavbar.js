@@ -33,10 +33,10 @@ function PublicNavbar() {
 			label: 'Contact',
 			route: '/#contact',
 		},
-		{
-			label: 'Portfolio',
-			route: '/portfolio',
-		},
+		// {
+		// 	label: 'Portfolio',
+		// 	route: '/portfolio',
+		// },
 	];
 	return (
 		<AppBar position='fixed' elevation={0}>
@@ -90,11 +90,11 @@ function PublicNavbar() {
 							{page.label}
 						</Typography>
 					))}
-					<Link href='/portfolio'>
+					<a href='https://github.com/Golden-Ogbeka'>
 						<Button color='alternate' variant='contained' className={styles.button}>
 							Portfolio
 						</Button>
-					</Link>
+					</a>
 				</Box>
 				<Box sx={{ display: { xs: 'flex', md: 'none' } }}>
 					<IconButton size='large' onClick={handleOpenNavMenu} color='inherit'>
@@ -136,6 +136,12 @@ function PublicNavbar() {
 					</Menu>
 				</Box>
 			</Toolbar>
+			<style jsx>{`
+				a {
+					text-decoration: none;
+					color: initial;
+				}
+			`}</style>
 		</AppBar>
 	);
 }
