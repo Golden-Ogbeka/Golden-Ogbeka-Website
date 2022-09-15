@@ -1,3 +1,7 @@
+## About
+
+Official website for Golden Ogbeka
+
 ## Getting Started
 
 First, install dependencies
@@ -15,5 +19,6 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Live URL:
+## Live Link
+
 https://goldenogbeka.vercel.app/
