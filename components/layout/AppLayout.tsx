@@ -8,9 +8,11 @@ function AppLayout({ children }: { children: React.ReactNode }) {
 
 	return (
 		<div className={`${isDark ? 'dark' : ''}`}>
-			<Navbar />
-			<main className='min-h-screen bg-red-500 dark:bg-green-600'>{children}</main>
-			<Footer />
+			<div className=' bg-white dark:bg-dark pl-[9.375vw] pr-[9.375vw]'>
+				<Navbar />
+				<main className='min-h-screen'>{children}</main>
+				<Footer />
+			</div>
 		</div>
 	);
 }

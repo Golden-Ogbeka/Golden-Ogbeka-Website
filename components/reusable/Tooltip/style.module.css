@@ -1,22 +1,24 @@
 .tooltip {
 	position: relative;
 	display: inline-block;
-	border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
 .tooltip .tooltipText {
 	visibility: hidden;
 	width: 120px;
-	background-color: black;
+	background-color: #ccc;
 	color: #fff;
 	text-align: center;
-	padding: 5px 0;
+	padding: 10px;
 	border-radius: 6px;
 
 	/* Position the tooltip text - see examples below! */
 	position: absolute;
 	z-index: 1;
+	right: 0;
+
+	transition: all linear 0.5s;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
