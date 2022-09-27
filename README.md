@@ -22,3 +22,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Live Link
 
 [https://goldenogbeka.vercel.app/](https://goldenogbeka.vercel.app/)
+
+## Design Details
+
+Creator: Melody Onyeocha
+Link: [https://www.figma.com/community/file/1060298479321271618](https://www.figma.com/community/file/1060298479321271618)
