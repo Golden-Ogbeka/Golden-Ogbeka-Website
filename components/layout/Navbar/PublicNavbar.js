@@ -136,6 +136,7 @@ function PublicNavbar() {
 					</Menu>
 				</Box>
 			</Toolbar>
+			{/* eslint-disable-next-line react/no-unknown-property */}
 			<style jsx>{`
 				a {
 					text-decoration: none;
