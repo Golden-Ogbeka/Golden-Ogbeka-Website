@@ -34,7 +34,11 @@ function HorizontalSlider(props) {
 	}
 
 	return (
-		<div className={Styles.container + ' ' + 'customizedScrollbar'} id={props.id}>
+		<div
+			className={Styles.container + ' ' + 'customizedScrollbar'}
+			id={props.id}
+			style={props.style}
+		>
 			{props.children}
 		</div>
 	);

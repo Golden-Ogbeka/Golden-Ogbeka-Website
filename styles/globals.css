@@ -1,17 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Manrope', sans-serif;
-	font-weight: 500;
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
 	font-size: 16px;
 	scroll-behavior: smooth;
 	overflow-x: hidden;
+	color: #1a1a1a;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
 	box-sizing: border-box;
-	/* transition: all 1s; */
+	transition: all 0.5s;
+}
+
+/* For scroll animation */
+.reveal {
+	position: relative;
+	transform: translateX(150px);
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+.reveal.active {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.primaryButton {
+	background: #da342c;
+	box-shadow: -3px 2px 18px rgba(0, 0, 0, 0.25);
+	border-radius: 16px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 36px;
+	/* identical to box height */
+
+	color: #fcf8f8;
+	width: 150px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.primaryButton:hover {
+	background: #00915f;
+}
+
+.secondaryButton {
+	background: #da342c;
+	box-shadow: -3px 2px 18px rgba(0, 0, 0, 0.25);
+
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 36px;
+	/* identical to box height */
+
+	color: #fcf8f8;
+	padding: 20px;
+	height: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.secondaryButton:hover {
+	background: #00915f;
+}
+
+.menu:hover {
+	filter: invert(40%) sepia(57%) saturate(7249%) hue-rotate(149deg) brightness(95%)
+		contrast(101%);
+}
+
+.radioInput {
+	appearance: none;
+
+	border-radius: 50%;
+	width: 33px;
+	height: 33px;
+	border: 2px solid #ababab;
+
+	transition: 0.2s all linear;
+	margin-right: 16px;
+	position: relative;
+	/* top: 4px; */
+}
+
+.radioInput:checked {
+	border-color: #d24943;
+	background-color: #fff;
+	border-width: 6.6px;
 }
 
 /* Editing all pages' scrollbar */
@@ -33,58 +127,4 @@ body {
 /* Handle on hover */
 *::-webkit-scrollbar-thumb:hover {
 	background: #999;
-}
-
-/* Customized scrollbar */
-.customizedScrollbar::-webkit-scrollbar {
-	width: 5px;
-	height: 5px;
-}
-
-/* Track */
-.customizedScrollbar::-webkit-scrollbar-track {
-	background: #f1f1f1;
-}
-
-/* Handle */
-.customizedScrollbar::-webkit-scrollbar-thumb {
-	background: #ccc;
-}
-
-/* Handle on hover */
-.customizedScrollbar::-webkit-scrollbar-thumb:hover {
-	background: #999;
-}
-
-/* For scroll animation */
-.reveal {
-	position: relative;
-	transform: translateX(150px);
-	opacity: 0;
-	transition: 1s all ease;
-}
-
-.reveal.active {
-	transform: translateX(0);
-	opacity: 1;
-}
-
-/* Custom modal */
-.ReactModal__Overlay {
-	opacity: 0;
-
-	transition: all 500ms ease-in-out;
-}
-
-.ReactModal__Overlay--after-open {
-	opacity: 1;
-}
-
-.ReactModal__Overlay--before-close {
-	opacity: 0;
-}
-
-.hoverText:hover {
-	color: #ffdf86 !important;
-	transition: all 0.5s;
 }

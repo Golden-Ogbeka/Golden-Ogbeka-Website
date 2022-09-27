@@ -1,5 +1,5 @@
 {
-  "name": "web.frscsm-lagos.org",
+  "name": "value-female-network",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,19 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.2",
     "@reduxjs/toolkit": "^1.8.5",
-    "axios": "^0.27.2",
     "formik": "^2.2.9",
-    "next": "12.2.5",
-    "next-redux-wrapper": "^7.0.5",
+    "next": "12.3.1",
+    "next-redux-wrapper": "^8.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-redux": "^8.0.2",
+    "react-redux": "^8.0.4",
     "react-toggle-dark-mode": "^1.1.0",
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "eslint": "8.22.0",
-    "eslint-config-next": "12.2.5"
+    "@types/node": "18.7.18",
+    "@types/react": "18.0.20",
+    "@types/react-dom": "18.0.6",
+    "autoprefixer": "^10.4.12",
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.1",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "typescript": "4.8.3"
   }
 }
