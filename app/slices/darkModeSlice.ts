@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const darkModeSlice = createSlice({
 	name: 'darkMode',
 	initialState: {
-		isDark: false,
+		isDark: true,
 	},
 	reducers: {
 		toggleDarkMode(state) {

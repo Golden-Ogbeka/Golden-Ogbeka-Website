@@ -9,8 +9,11 @@ import { setDarkMode } from '../app/slices/darkModeSlice';
 function MyApp({ Component, pageProps }: AppProps) {
 	const dispatch = useAppDispatch();
 	React.useEffect(() => {
-		const currentTheme = localStorage.getItem('theme') === 'dark' ? true : false;
-		dispatch(setDarkMode(currentTheme));
+		let currentTheme = localStorage.getItem('theme');
+		if (currentTheme) {
+			let currentThemeCondition = currentTheme === 'dark' ? true : false;
+			dispatch(setDarkMode(currentThemeCondition));
+		}
 	}, []);
 	return (
 		<>
