@@ -13,6 +13,7 @@ const Experiences: Array<{
 	companyLink?: string;
 	date: string;
 	tasksAchieved: string[];
+	invertCompanyLogoInDarkMode?: boolean;
 }> = [
 	{
 		role: 'Full Stack Developer',
@@ -40,6 +41,7 @@ const Experiences: Array<{
 			'I left for health reasons',
 		],
 		companyLogo: Punch,
+		invertCompanyLogoInDarkMode: true,
 	},
 	{
 		role: 'Full Stack Developer',
@@ -53,6 +55,7 @@ const Experiences: Array<{
 			'My team and I organized a training session for the staff of the company to train them on how to use the application we developed',
 		],
 		companyLogo: Composite,
+		invertCompanyLogoInDarkMode: true,
 	},
 	{
 		role: 'Full Stack Developer and Product Owner',

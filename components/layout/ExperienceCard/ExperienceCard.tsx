@@ -10,6 +10,7 @@ function ExperienceCard({
 		companyLogo: StaticImageData;
 		companyLink?: string;
 		date: string;
+		invertCompanyLogoInDarkMode?: boolean;
 		tasksAchieved: string[];
 	};
 }) {
@@ -32,13 +33,13 @@ function ExperienceCard({
 					width={25}
 					height={25}
 					objectFit='cover'
-					className='rounded-full'
+					className={`${experience.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
 				/>
 				<span>{experience.company}</span>
 			</a>
 			<ul className='flex flex-col gap-3 list-none'>
 				{experience.tasksAchieved.map((task, index) => (
-					<li key={index} className='dashedList'>
+					<li key={index} className='dashedList dark:text-[#C4C4C4]'>
 						{task}
 					</li>
 				))}
