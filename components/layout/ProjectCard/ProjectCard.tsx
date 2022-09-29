@@ -22,20 +22,15 @@ function ProjectCard({
 }) {
 	const router = useRouter();
 
-	const navigateToDescription = () => {
-		router.push(
-			{
-				pathname: '/project/' + project.name,
-				query: { project: JSON.stringify(project) },
-			},
-			'/project/' + project.name
-		);
-	};
 	return (
 		<div className='flex flex-col w-[511px] max-w-full'>
-			<div
+			<a
 				className='w-full h-[338px] relative cursor-pointer'
-				onClick={navigateToDescription}
+				href={
+					project.liveLink || project.githubLink || project.figmaLink || project.postmanLink
+				}
+				target='_blank'
+				rel='noreferrer'
 			>
 				<Image
 					src={project.image}
@@ -45,7 +40,7 @@ function ProjectCard({
 					layout='fill'
 					placeholder='blur'
 				/>
-			</div>
+			</a>
 			<div className='flex flex-row justify-between items-center mt-[31px]'>
 				<span className='dark:text-white text-2xl'>{project.name}</span>
 				<div className='flex flex-row items-center gap-[19px]'>
