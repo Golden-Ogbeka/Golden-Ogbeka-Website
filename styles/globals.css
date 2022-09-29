@@ -67,3 +67,8 @@ a {
 	background-clip: text;
 	text-fill-color: transparent;
 }
+
+/* Dashed list items */
+.dashedList::before {
+	content: '- ';
+}

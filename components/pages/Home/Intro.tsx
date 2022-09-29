@@ -8,7 +8,7 @@ import WhatsappIcon from '../../../public/icons/whatsapp.png';
 
 function Intro() {
 	return (
-		<div className='mt-[117px]'>
+		<header className='mt-[117px]'>
 			<span className='font-extralight dark:text-white'>Hey, I&apos;m</span>
 			<h1 className='font-medium text-5xl md:text-6xl lg:text-7xl xl:text-8xl mt-[18px] mb-6 font-[Montserrat] gradientText'>
 				Golden Ogbeka
@@ -35,7 +35,7 @@ function Intro() {
 					<Image src={WhatsappIcon} alt='Whatsapp' />
 				</a>
 			</div>
-		</div>
+		</header>
 	);
 }
 

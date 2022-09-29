@@ -73,7 +73,7 @@ function ProjectCard({
 				</div>
 			</div>
 			<p className='max-w-[453px] dark:text-[#C4C4C4] mt-3'>{project.description}</p>
-			<p className='mt-3 text-[#004E93] dark:text-[#6CACE4] text-sm'>
+			<p className='mt-3 text-secondary dark:text-lightSecondary text-sm'>
 				{project.tools.join(' - ')}
 			</p>
 		</div>
