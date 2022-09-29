@@ -4,6 +4,7 @@ import React from 'react';
 import GithubIcon from '../../../public/icons/github.png';
 import LinkIcon from '../../../public/icons/link.png';
 import FigmaIcon from '../../../public/icons/figma.png';
+import PostmanIcon from '../../../public/icons/postman.png';
 
 function ProjectCard({
 	project,
@@ -12,9 +13,10 @@ function ProjectCard({
 		name: string;
 		description: string;
 		tools: string[];
-		githubLink: string;
+		githubLink?: string;
 		liveLink?: string;
 		figmaLink?: string;
+		postmanLink?: string;
 		image: StaticImageData;
 	};
 }) {
@@ -39,7 +41,7 @@ function ProjectCard({
 					src={project.image}
 					alt={project.name}
 					objectFit='cover'
-					className='rounded'
+					className='rounded hover:scale-110'
 					layout='fill'
 					placeholder='blur'
 				/>
@@ -55,6 +57,11 @@ function ProjectCard({
 					{project.figmaLink && (
 						<a href={project.figmaLink} target='_blank' rel='noreferrer'>
 							<Image src={FigmaIcon} alt='Figma' />
+						</a>
+					)}
+					{project.postmanLink && (
+						<a href={project.postmanLink} target='_blank' rel='noreferrer'>
+							<Image src={PostmanIcon} alt='Postman' />
 						</a>
 					)}
 
