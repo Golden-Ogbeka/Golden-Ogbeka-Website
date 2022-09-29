@@ -23,7 +23,6 @@ const Home: NextPage = () => {
 			<ExperienceSection />
 			<SectionDivider />
 			<EducationSection />
-			<SectionDivider />
 		</AppLayout>
 	);
 };

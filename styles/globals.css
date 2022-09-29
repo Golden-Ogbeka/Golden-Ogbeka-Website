@@ -72,3 +72,7 @@ a {
 .dashedList::before {
 	content: '- ';
 }
+
+.contactCard:hover > .contactCardImage {
+	filter: invert(100%) !important;
+}

@@ -8,7 +8,7 @@ function AppLayout({ children }: { children: React.ReactNode }) {
 
 	return (
 		<div className={`${isDark ? 'dark' : ''}`}>
-			<div className=' bg-white dark:bg-dark pl-[9.375vw] pr-[9.375vw]'>
+			<div className=' bg-white dark:bg-dark pl-[9.375vw] pr-[9.375vw] pb-[118px]'>
 				<Navbar />
 				<main className='min-h-screen'>{children}</main>
 				<Footer />
