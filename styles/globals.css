@@ -1,17 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Manrope', sans-serif;
-	font-weight: 500;
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
 	font-size: 16px;
-	scroll-behavior: smooth;
+	scroll-behavior: smooth !important;
 	overflow-x: hidden;
+	color: #1a1a1a;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
 	box-sizing: border-box;
-	/* transition: all 1s; */
+	transition: all 0.5s;
+}
+
+/* For scroll animation */
+.reveal {
+	position: relative;
+	transform: translateX(150px);
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+.reveal.active {
+	transform: translateX(0);
+	opacity: 1;
 }
 
 /* Editing all pages' scrollbar */
@@ -35,56 +58,21 @@ body {
 	background: #999;
 }
 
-/* Customized scrollbar */
-.customizedScrollbar::-webkit-scrollbar {
-	width: 5px;
-	height: 5px;
+/* Gradient text */
+.gradientText {
+	background: linear-gradient(89.81deg, #9845e8 -1.72%, #33d2ff 24.05%, #dd5789 49.78%);
+	line-height: normal !important;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
 }
 
-/* Track */
-.customizedScrollbar::-webkit-scrollbar-track {
-	background: #f1f1f1;
+/* Dashed list items */
+.dashedList::before {
+	content: '- ';
 }
 
-/* Handle */
-.customizedScrollbar::-webkit-scrollbar-thumb {
-	background: #ccc;
-}
-
-/* Handle on hover */
-.customizedScrollbar::-webkit-scrollbar-thumb:hover {
-	background: #999;
-}
-
-/* For scroll animation */
-.reveal {
-	position: relative;
-	transform: translateX(150px);
-	opacity: 0;
-	transition: 1s all ease;
-}
-
-.reveal.active {
-	transform: translateX(0);
-	opacity: 1;
-}
-
-/* Custom modal */
-.ReactModal__Overlay {
-	opacity: 0;
-
-	transition: all 500ms ease-in-out;
-}
-
-.ReactModal__Overlay--after-open {
-	opacity: 1;
-}
-
-.ReactModal__Overlay--before-close {
-	opacity: 0;
-}
-
-.hoverText:hover {
-	color: #ffdf86 !important;
-	transition: all 0.5s;
+.contactCard:hover > .contactCardImage {
+	filter: invert(100%) !important;
 }
