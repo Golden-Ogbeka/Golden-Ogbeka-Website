@@ -12,6 +12,7 @@ import TCU from '../public/images/Projects/tcu.png';
 import Keyla from '../public/images/Projects/keyla.png';
 import Library from '../public/images/Projects/library.png';
 import GlowStopper from '../public/images/Projects/glowstopper.png';
+import Whitepace from '../public/images/Projects/whitepace.png';
 
 const Projects: Array<{
 	name: string;
@@ -23,6 +24,15 @@ const Projects: Array<{
 	postmanLink?: string;
 	image: StaticImageData;
 }> = [
+	{
+		name: 'White Pace',
+		description: 'Saas Landing Page',
+		tools: ['Vue JS', 'Tailwind CSS', 'TypeScript', 'Vue3 Carousel'],
+		githubLink: 'https://github.com/Golden-Ogbeka/saas-landing-page-vue',
+		liveLink: 'https://saas-landing-page-vue.vercel.app/',
+		figmaLink: 'https://www.figma.com/community/file/1156860863353724933',
+		image: Whitepace,
+	},
 	{
 		name: 'Boldo',
 		description: 'Code implementation for Boldo Design by Edgar Allan in Figma Community',
