@@ -66,7 +66,7 @@ const Projects: Array<{
 			'A web application where users can create posts and comment on posts from other users',
 		tools: ['React JS', 'Tailwind CSS', 'Express JS', 'Node JS', 'Mongo DB'],
 		githubLink: 'https://github.com/Golden-Ogbeka/Social-News',
-		liveLink: 'https://social-news-by-golden-ogbeka.herokuapp.com/',
+		liveLink: 'https://social-news.onrender.com/',
 		figmaLink:
 			'https://www.figma.com/file/5VJBI6mmPQ3KA2dbPgLMnF/Social-News?node-id=0%3A1',
 		postmanLink:
@@ -101,7 +101,7 @@ const Projects: Array<{
 		description:
 			'This app was built to connect buyers and sellers of chicken products together. It also includes forums and groups to help build communities and interaction between poultry farmers',
 		tools: ['Express JS', 'EJS', 'MongoDB', 'JWT', 'Socket.IO', 'React JS', 'Bootstrap'],
-		liveLink: 'https://thechickenuniverse.herokuapp.com/',
+		liveLink: 'https://thechickenuniverse.onrender.com/',
 		image: TCU,
 	},
 	{
@@ -118,7 +118,7 @@ const Projects: Array<{
 		description:
 			'The app allows search for any query by specifying the exact location you are interested in. You are allowed to specify the Latitude and Longitude coordinates as well as the location radius in meters. This gives you full control over the results.',
 		tools: ['React JS', 'Material UI', 'Node JS', 'Google Maps Services'],
-		liveLink: 'https://find-it-by-golden-ogbeka.herokuapp.com/',
+		liveLink: 'https://find-it-by-golden-ogbeka.cyclic.app/',
 		figmaLink: 'https://www.figma.com/file/v06s62gpM0hZ7ny0RKW6qU/Find-IT?node-id=0%3A1',
 		githubLink: 'https://github.com/Golden-Ogbeka/Find-It',
 		image: FindIt,
@@ -128,7 +128,7 @@ const Projects: Array<{
 		description:
 			'A landing page with products, details and images gotten from Unsplash API.',
 		tools: ['React JS', 'Material UI', 'Node JS', 'Unsplash-JS', 'Node-Fetch'],
-		liveLink: 'https://product-catalog-golden-ogbeka.herokuapp.com/',
+		liveLink: 'https://product-catalog-unsplash.cyclic.app/',
 		githubLink: 'https://github.com/Golden-Ogbeka/Product-Catalog-with-Unsplash-API',
 		image: ProductCatalog,
 	},
@@ -145,7 +145,7 @@ const Projects: Array<{
 		name: 'Todo List',
 		description: 'To-do List with Add and Delete Task functionalities.',
 		tools: ['React JS', 'Material UI', 'Node JS', 'Mongo DB'],
-		liveLink: 'https://to-do-app-by-golden-ogbeka.herokuapp.com/',
+		liveLink: 'https://to-do-list-by-golden-ogbeka.cyclic.app/',
 		githubLink: 'https://github.com/Golden-Ogbeka/To-do-List',
 		image: Todo,
 	},
