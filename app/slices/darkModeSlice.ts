@@ -13,7 +13,6 @@ export const darkModeSlice = createSlice({
 		},
 		setDarkMode(state, action) {
 			state.isDark = action.payload;
-			console.log(action.payload);
 		},
 	},
 });
