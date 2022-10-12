@@ -60,19 +60,7 @@ const Projects: Array<{
 		liveLink: 'https://e-bike-by-golden-ogbeka.vercel.app/',
 		image: EBike,
 	},
-	{
-		name: 'Social News',
-		description:
-			'A web application where users can create posts and comment on posts from other users',
-		tools: ['React JS', 'Tailwind CSS', 'Express JS', 'Node JS', 'Mongo DB'],
-		githubLink: 'https://github.com/Golden-Ogbeka/Social-News',
-		liveLink: 'https://social-news.onrender.com/',
-		figmaLink:
-			'https://www.figma.com/file/5VJBI6mmPQ3KA2dbPgLMnF/Social-News?node-id=0%3A1',
-		postmanLink:
-			'https://www.postman.com/Golden-Ogbeka/workspace/social-news/collection/11204995-032cdcbe-2616-4307-bfd1-8c49f88fe902',
-		image: SocialNews,
-	},
+
 	{
 		name: 'Cravings',
 		description:
@@ -123,6 +111,7 @@ const Projects: Array<{
 		githubLink: 'https://github.com/Golden-Ogbeka/Find-It',
 		image: FindIt,
 	},
+
 	{
 		name: 'Product Catalog',
 		description:
@@ -131,6 +120,19 @@ const Projects: Array<{
 		liveLink: 'https://product-catalog-unsplash.cyclic.app/',
 		githubLink: 'https://github.com/Golden-Ogbeka/Product-Catalog-with-Unsplash-API',
 		image: ProductCatalog,
+	},
+	{
+		name: 'Social News',
+		description:
+			'A web application where users can create posts and comment on posts from other users',
+		tools: ['React JS', 'Tailwind CSS', 'Express JS', 'Node JS', 'Mongo DB'],
+		githubLink: 'https://github.com/Golden-Ogbeka/Social-News',
+		liveLink: 'https://social-news.onrender.com/',
+		figmaLink:
+			'https://www.figma.com/file/5VJBI6mmPQ3KA2dbPgLMnF/Social-News?node-id=0%3A1',
+		postmanLink:
+			'https://www.postman.com/Golden-Ogbeka/workspace/social-news/collection/11204995-032cdcbe-2616-4307-bfd1-8c49f88fe902',
+		image: SocialNews,
 	},
 	{
 		name: 'Glow Stopper',
