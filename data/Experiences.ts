@@ -1,6 +1,5 @@
 import { StaticImageData } from 'next/image';
 import Keyla from '../public/images/Experiences/keyla.png';
-import Punch from '../public/images/Experiences/punch.png';
 import Composite from '../public/images/Experiences/composite.png';
 import TCU from '../public/images/Experiences/tcu.png';
 import KFC from '../public/images/Experiences/kfc.png';
@@ -31,19 +30,6 @@ const Experiences: Array<{
 		companyLogo: Keyla,
 	},
 	{
-		role: 'MERN Stack Developer',
-		company: 'Punch Group',
-		date: 'Nov 2021 - Mar 2022',
-		companyLink: 'https://punch.cool/',
-		tasksAchieved: [
-			'I worked with the development team to create a unique platform that would serve as the Linkedin for people in the IT industry and also provide unique features that are relevant to people in this field',
-			'I also worked with different teams to create a client project that aims to revolutionize the idea of salesmanship. I got experience with tools like Apollo for GraphQL, TypeScript, React-Native-Web, NextJS, VideoJS and Recharts',
-			'I left for health reasons',
-		],
-		companyLogo: Punch,
-		invertCompanyLogoInDarkMode: true,
-	},
-	{
 		role: 'Full Stack Developer',
 		company: 'Composite Property Development',
 		date: 'Feb 2021 - Dec 2021',
@@ -61,7 +47,7 @@ const Experiences: Array<{
 		role: 'Full Stack Developer and Product Owner',
 		company: 'The Chicken Universe',
 		date: 'Oct 2019 - Jan 2021',
-		companyLink: 'https://compositepropertydevelopment.com/',
+		companyLink: 'https://thechickenuniverse.onrender.com/',
 		tasksAchieved: [
 			'I created this application to help connect buyers and sellers of chicken products together',
 			"I created the web application as an e-commerce store using React JS, EJS, NodeJS, Express JS, MongoDB, Sockets IO and React's Context API",
