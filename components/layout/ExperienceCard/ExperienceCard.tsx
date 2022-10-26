@@ -32,7 +32,7 @@ function ExperienceCard({
 					alt=''
 					width={25}
 					height={25}
-					objectFit='cover'
+					objectFit='contain'
 					className={`${experience.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
 				/>
 				<span>{experience.company}</span>
