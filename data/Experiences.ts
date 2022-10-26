@@ -21,7 +21,7 @@ const Experiences: Array<{
 		date: 'Oct 2022 - Present',
 		companyLink: 'https://www.alerzo.com/',
 		tasksAchieved: [],
-		companyLogo: Keyla,
+		companyLogo: Alerzo,
 	},
 	{
 		role: 'Full Stack Developer',
