@@ -4,6 +4,7 @@ import Composite from '../public/images/Experiences/composite.png';
 import TCU from '../public/images/Experiences/tcu.png';
 import KFC from '../public/images/Experiences/kfc.png';
 import BOI from '../public/images/Experiences/boi.jpg';
+import Alerzo from '../public/images/Experiences/alerzo.png';
 
 const Experiences: Array<{
 	role: string;
@@ -14,6 +15,14 @@ const Experiences: Array<{
 	tasksAchieved: string[];
 	invertCompanyLogoInDarkMode?: boolean;
 }> = [
+	{
+		role: 'Frontend Engineer',
+		company: 'Alerzo',
+		date: 'Oct 2022 - Present',
+		companyLink: 'https://www.alerzo.com/',
+		tasksAchieved: [],
+		companyLogo: Keyla,
+	},
 	{
 		role: 'Full Stack Developer',
 		company: 'Keyla Technologies',
