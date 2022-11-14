@@ -20,13 +20,16 @@ const Experiences: Array<{
 		company: 'Alerzo',
 		date: 'Oct 2022 - Present',
 		companyLink: 'https://www.alerzo.com/',
-		tasksAchieved: [],
+		tasksAchieved: [
+		"Worked on adding features to Veedez Dashboard",
+		"Worked on revamping the design for aspects of Veedez Website"
+		],
 		companyLogo: Alerzo,
 	},
 	{
 		role: 'Full Stack Developer',
 		company: 'Keyla Technologies',
-		date: 'Oct 2021 - Present',
+		date: 'Oct 2021 - Oct 2022',
 		companyLink: 'https://keyla.ng/',
 		tasksAchieved: [
 			'I worked on upgrading Cravings website into a full E-commerce application',
