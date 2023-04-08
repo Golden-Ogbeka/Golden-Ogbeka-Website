@@ -34,7 +34,7 @@ const Projects: Array<{
     tools: ['React Native', 'Redux Toolkit'],
     image: TFH_Mobile,
     liveLink:
-      'https://drive.google.com/drive/u/0/folders/1Gbxyry3TV19qWCt9aIALzlAsb6GhsuNN',
+      'https://play.google.com/store/apps/details?id=com.tfhmobile',
   },
   {
     name: 'Switch Mobile App',
