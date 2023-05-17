@@ -33,8 +33,7 @@ const Projects: Array<{
     description: "Mobile app for The Father's House Church, Nigeria",
     tools: ['React Native', 'Redux Toolkit'],
     image: TFH_Mobile,
-    liveLink:
-      'https://play.google.com/store/apps/details?id=com.tfhmobile',
+    liveLink: 'https://play.google.com/store/apps/details?id=com.tfhmobile',
   },
   {
     name: 'Switch Mobile App',
@@ -44,22 +43,22 @@ const Projects: Array<{
     image: Switch,
     liveLink: 'https://play.google.com/store/apps/details?id=ng.sterling.sterlingswitch',
   },
-  {
-    name: 'Veedez',
-    description: 'Brand website for Veedez. A product of Alerzo Limited',
-    tools: ['React JS', 'Styled Components', 'TypeScript'],
-    image: Veedez,
-    liveLink: 'https://veedez.com/',
-  },
-  {
-    name: 'Veedez Pro',
-    description: 'Business Management System. A product of Alerzo Limited',
-    tools: ['React JS', 'Styled Components', 'TypeScript', 'Redux Toolkit'],
-    image: VeedezPro,
-  },
+  // {
+  //   name: 'Veedez',
+  //   description: 'Brand website for Veedez. A product of Alerzo Limited',
+  //   tools: ['React JS', 'Styled Components', 'TypeScript'],
+  //   image: Veedez,
+  //   liveLink: 'https://veedez.com/',
+  // },
+  // {
+  //   name: 'Veedez Pro',
+  //   description: 'Business Management System. A product of Alerzo Limited',
+  //   tools: ['React JS', 'Styled Components', 'TypeScript', 'Redux Toolkit'],
+  //   image: VeedezPro,
+  // },
   {
     name: 'White Pace',
-    description: 'Saas Landing Page',
+    description: 'UI reproduction for a Saas Landing Page',
     tools: ['Vue JS', 'Tailwind CSS', 'TypeScript', 'Vue3 Carousel'],
     githubLink: 'https://github.com/Golden-Ogbeka/saas-landing-page-vue',
     liveLink: 'https://saas-landing-page-vue.vercel.app/',
@@ -68,7 +67,7 @@ const Projects: Array<{
   },
   {
     name: 'Boldo',
-    description: 'Code implementation for Boldo Design by Edgar Allan in Figma Community',
+    description: 'UI reproduction for Boldo Design by Edgar Allan in Figma Community',
     tools: ['NextJS', 'Tailwind CSS', 'TypeScript'],
     githubLink: 'https://github.com/Golden-Ogbeka/Boldo-Design-Implementation',
     liveLink: 'https://boldo-design-implementation.vercel.app/',
@@ -86,30 +85,29 @@ const Projects: Array<{
   },
   {
     name: 'E-Bike',
-    description:
-      'Frontend UI Implementation of an E-Bike system using Lootie Files for animations',
+    description: 'UI reproduction for an E-Bike system using Lootie Files for animations',
     tools: ['React JS', 'Material UI', 'Lootie Animations', 'React Multi Carousel'],
     githubLink: 'https://github.com/Golden-Ogbeka/e-bike',
     liveLink: 'https://e-bike-by-golden-ogbeka.vercel.app/',
     image: EBike,
   },
 
-  {
-    name: 'Cravings',
-    description:
-      'Web application for Cravings Food Nigeria. Allows you order food from your favourite restaurants around you. A product of Keyla Technologies',
-    tools: ['React JS', 'Material UI', 'Framer Motion', 'React Context'],
-    // liveLink: 'https://cravingsng.com/',
-    image: Cravings,
-  },
-  {
-    name: 'Cravings Logistics',
-    description:
-      'Web application for Cravings Logistics: a reliable delivery system. A product of Keyla Technologies',
-    tools: ['Next JS', 'Redux Toolkit'],
-    // liveLink: 'https://logistics.cravingsng.com/',
-    image: CravingsLogistics,
-  },
+  // {
+  //   name: 'Cravings',
+  //   description:
+  //     'Web application for Cravings Food Nigeria. Allows you order food from your favourite restaurants around you. A product of Keyla Technologies',
+  //   tools: ['React JS', 'Material UI', 'Framer Motion', 'React Context'],
+  //   // liveLink: 'https://cravingsng.com/',
+  //   image: Cravings,
+  // },
+  // {
+  //   name: 'Cravings Logistics',
+  //   description:
+  //     'Web application for Cravings Logistics: a reliable delivery system. A product of Keyla Technologies',
+  //   tools: ['Next JS', 'Redux Toolkit'],
+  //   // liveLink: 'https://logistics.cravingsng.com/',
+  //   image: CravingsLogistics,
+  // },
   {
     name: 'Keyla',
     description:
@@ -135,26 +133,26 @@ const Projects: Array<{
     githubLink: 'https://github.com/Golden-Ogbeka/library-app',
     image: Library,
   },
-  {
-    name: 'Find IT',
-    description:
-      'The app allows search for any query by specifying the exact location you are interested in. You are allowed to specify the Latitude and Longitude coordinates as well as the location radius in meters. This gives you full control over the results.',
-    tools: ['React JS', 'Material UI', 'Node JS', 'Google Maps Services'],
-    liveLink: 'https://find-it-by-golden-ogbeka.cyclic.app/',
-    figmaLink: 'https://www.figma.com/file/v06s62gpM0hZ7ny0RKW6qU/Find-IT?node-id=0%3A1',
-    githubLink: 'https://github.com/Golden-Ogbeka/Find-It',
-    image: FindIt,
-  },
+  // {
+  //   name: 'Find IT',
+  //   description:
+  //     'The app allows search for any query by specifying the exact location you are interested in. You are allowed to specify the Latitude and Longitude coordinates as well as the location radius in meters. This gives you full control over the results.',
+  //   tools: ['React JS', 'Material UI', 'Node JS', 'Google Maps Services'],
+  //   liveLink: 'https://find-it-by-golden-ogbeka.cyclic.app/',
+  //   figmaLink: 'https://www.figma.com/file/v06s62gpM0hZ7ny0RKW6qU/Find-IT?node-id=0%3A1',
+  //   githubLink: 'https://github.com/Golden-Ogbeka/Find-It',
+  //   image: FindIt,
+  // },
 
-  {
-    name: 'Product Catalog',
-    description:
-      'A landing page with products, details and images gotten from Unsplash API.',
-    tools: ['React JS', 'Material UI', 'Node JS', 'Unsplash-JS', 'Node-Fetch'],
-    liveLink: 'https://product-catalog-unsplash.cyclic.app/',
-    githubLink: 'https://github.com/Golden-Ogbeka/Product-Catalog-with-Unsplash-API',
-    image: ProductCatalog,
-  },
+  // {
+  //   name: 'Product Catalog',
+  //   description:
+  //     'A landing page with products, details and images gotten from Unsplash API.',
+  //   tools: ['React JS', 'Material UI', 'Node JS', 'Unsplash-JS', 'Node-Fetch'],
+  //   liveLink: 'https://product-catalog-unsplash.cyclic.app/',
+  //   githubLink: 'https://github.com/Golden-Ogbeka/Product-Catalog-with-Unsplash-API',
+  //   image: ProductCatalog,
+  // },
   {
     name: 'Social News',
     description:
@@ -177,14 +175,14 @@ const Projects: Array<{
       'https://www.figma.com/file/Ydk3iHnNJxHH31HxQQXg9W/Glow-Stopper?node-id=40%3A33',
     image: GlowStopper,
   },
-  {
-    name: 'Todo List',
-    description: 'To-do List with Add and Delete Task functionalities.',
-    tools: ['React JS', 'Material UI', 'Node JS', 'Mongo DB'],
-    liveLink: 'https://to-do-list-by-golden-ogbeka.cyclic.app/',
-    githubLink: 'https://github.com/Golden-Ogbeka/To-do-List',
-    image: Todo,
-  },
+  // {
+  //   name: 'Todo List',
+  //   description: 'To-do List with Add and Delete Task functionalities.',
+  //   tools: ['React JS', 'Material UI', 'Node JS', 'Mongo DB'],
+  //   liveLink: 'https://to-do-list-by-golden-ogbeka.cyclic.app/',
+  //   githubLink: 'https://github.com/Golden-Ogbeka/To-do-List',
+  //   image: Todo,
+  // },
 ];
 
 export default Projects;
