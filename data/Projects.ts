@@ -17,6 +17,8 @@ import Whitepace from '../public/images/Projects/whitepace.png';
 // import Veedez from '../public/images/Projects/veedez.png';
 import Switch from '../public/images/Projects/switch.png';
 import TFH_Mobile from '../public/images/Projects/tfh-mobile.png';
+import Koneqtor from '../public/images/Projects/koneqtor.png';
+import ShipAfrica from '../public/images/Projects/ship-africa.png';
 
 const Projects: Array<{
   name: string;
@@ -29,11 +31,20 @@ const Projects: Array<{
   image: StaticImageData;
 }> = [
   {
-    name: 'TFH Church App',
-    description: "Mobile app for The Father's House Church, Nigeria",
-    tools: ['React Native', 'Redux Toolkit'],
-    image: TFH_Mobile,
-    liveLink: 'https://play.google.com/store/apps/details?id=com.tfhmobile',
+    name: 'Koneqtor',
+    description:
+      'App to connect artisans to their customers around Nigeria and also help manage appointments and communication between artisans and their customers',
+    tools: ['Next JS', 'Redux Toolkit', 'Tailwind CSS', 'Socket IO'],
+    image: Koneqtor,
+    liveLink: 'https://koneqtor.com/',
+  },
+  {
+    name: 'Ship Africa',
+    description:
+      'Helps users create, monitor and manage shipment within their states, between states and also between countries',
+    tools: ['Next JS', 'Redux Toolkit', 'Tailwind CSS'],
+    image: ShipAfrica,
+    liveLink: 'https://shipafrica.io/',
   },
   {
     name: 'Switch Mobile App',
@@ -42,6 +53,39 @@ const Projects: Array<{
     tools: ['React Native', 'Redux Saga'],
     image: Switch,
     liveLink: 'https://play.google.com/store/apps/details?id=ng.sterling.sterlingswitch',
+  },
+  {
+    name: 'TFH Church App',
+    description: "Mobile app for The Father's House Church, Nigeria",
+    tools: ['React Native', 'Redux Toolkit'],
+    image: TFH_Mobile,
+    liveLink: 'https://play.google.com/store/apps/details?id=com.tfhmobile',
+  },
+
+  {
+    name: 'VFN Website',
+    description:
+      'Website for Value Female Network. A youth-led, registered, non-governmental organization that seeks to establish the health and rights of women and girls in local communities',
+    tools: ['NextJS', 'Tailwind CSS', 'TypeScript'],
+    githubLink: 'https://github.com/Golden-Ogbeka/value-female-network',
+    liveLink: 'https://value-female-network.vercel.app/',
+    image: VFN,
+  },
+  {
+    name: 'The Chicken Universe',
+    description:
+      'This app was built to connect buyers and sellers of chicken products together. It also includes forums and groups to help build communities and interaction between poultry farmers',
+    tools: ['Express JS', 'EJS', 'MongoDB', 'JWT', 'Socket.IO', 'React JS', 'Bootstrap'],
+    liveLink: 'https://thechickenuniverse.onrender.com/',
+    image: TCU,
+  },
+  {
+    name: 'Keyla',
+    description:
+      'Web application for Keyla Technologies: a technology solution service provider. A product of Keyla Technologies',
+    tools: ['Gatsby'],
+    liveLink: 'https://keyla.ng/',
+    image: Keyla,
   },
   // {
   //   name: 'Veedez',
@@ -74,15 +118,7 @@ const Projects: Array<{
     figmaLink: 'https://www.figma.com/community/file/1081611224529759785',
     image: Boldo,
   },
-  {
-    name: 'VFN Website',
-    description:
-      'Website for Value Female Network. A youth-led, registered, non-governmental organization that seeks to establish the health and rights of women and girls in local communities',
-    tools: ['NextJS', 'Tailwind CSS', 'TypeScript'],
-    githubLink: 'https://github.com/Golden-Ogbeka/value-female-network',
-    liveLink: 'https://value-female-network.vercel.app/',
-    image: VFN,
-  },
+
   {
     name: 'E-Bike',
     description: 'UI reproduction for an E-Bike system using Lootie Files for animations',
@@ -108,22 +144,7 @@ const Projects: Array<{
   //   // liveLink: 'https://logistics.cravingsng.com/',
   //   image: CravingsLogistics,
   // },
-  {
-    name: 'Keyla',
-    description:
-      'Web application for Keyla Technologies: a technology solution service provider. A product of Keyla Technologies',
-    tools: ['Gatsby'],
-    liveLink: 'https://keyla.ng/',
-    image: Keyla,
-  },
-  {
-    name: 'The Chicken Universe',
-    description:
-      'This app was built to connect buyers and sellers of chicken products together. It also includes forums and groups to help build communities and interaction between poultry farmers',
-    tools: ['Express JS', 'EJS', 'MongoDB', 'JWT', 'Socket.IO', 'React JS', 'Bootstrap'],
-    liveLink: 'https://thechickenuniverse.onrender.com/',
-    image: TCU,
-  },
+
   {
     name: 'Library App',
     description:

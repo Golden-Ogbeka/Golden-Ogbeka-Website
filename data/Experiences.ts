@@ -23,7 +23,7 @@ const Experiences: Array<{
     tasksAchieved: [
       'Worked on adding features to Veedez Dashboard',
       'Worked on revamping the design for aspects of Veedez Website',
-      'Worked on the internal admin dashboard for the company',
+      'Worked on maintaining the internal admin dashboard for the company',
     ],
     companyLogo: Alerzo,
   },
