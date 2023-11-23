@@ -5,18 +5,6 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        {/* <!-- Google tag (gtag.js) --> */}
-        <Script async src='https://www.googletagmanager.com/gtag/js?id=G-NZGV1R34HY' />
-        <Script id='google-analytics'>
-          {`
-						window.dataLayer = window.dataLayer || [];
-						function gtag(){dataLayer.push(arguments);}
-						gtag('js', new Date());
-
-						gtag('config', 'G-NZGV1R34HY');
-        `}
-        </Script>
-
         {/* <!-- Fonts --> */}
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='true' />
