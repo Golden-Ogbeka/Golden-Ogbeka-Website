@@ -1,10 +1,10 @@
 import { StaticImageData } from 'next/image';
-import Keyla from '../public/images/Experiences/keyla.png';
-import Composite from '../public/images/Experiences/composite.png';
-import TCU from '../public/images/Experiences/tcu.png';
-import KFC from '../public/images/Experiences/kfc.png';
-import BOI from '../public/images/Experiences/boi.jpg';
 import Alerzo from '../public/images/Experiences/alerzo.png';
+import BOI from '../public/images/Experiences/boi.jpg';
+import Composite from '../public/images/Experiences/composite.png';
+import Keyla from '../public/images/Experiences/keyla.png';
+import KFC from '../public/images/Experiences/kfc.png';
+import TCU from '../public/images/Experiences/tcu.png';
 
 const Experiences: Array<{
   role: string;
@@ -23,7 +23,7 @@ const Experiences: Array<{
     tasksAchieved: [
       'Worked on adding features to Veedez Dashboard',
       'Worked on revamping the design for aspects of Veedez Website',
-      'Worked on maintaining the internal admin dashboard for the company',
+      'Worked on maintaining internal admin dashboards',
     ],
     companyLogo: Alerzo,
   },
