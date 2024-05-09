@@ -39,12 +39,12 @@ const Projects: Array<{
     liveLink: 'https://koneqtor.com/',
   },
   {
-    name: 'Ship Africa',
+    name: 'Ship Plug',
     description:
       'Helps users create, monitor and manage shipment within their states, between states and also between countries',
     tools: ['Next JS', 'Redux Toolkit', 'Tailwind CSS'],
     image: ShipAfrica,
-    liveLink: 'https://shipafrica.io/',
+    liveLink: 'https://www.shipplug.africa/',
   },
   {
     name: 'Switch Mobile App',
