@@ -11,6 +11,13 @@ const Education: Array<{
     date: 'In Progress',
   },
   {
+    degree:
+      'Organizational Leadership: Success Through Maximizing the Capabilities of the Employees',
+    institution: 'University of California, Riverside',
+    institutionLink: 'https://www.parchment.com/u/s/rJYQ',
+    date: 'May 2024',
+  },
+  {
     degree: 'AWS Technical Essentials',
     institution: 'Amazon Web Services (AWS)',
     institutionLink:
@@ -23,20 +30,6 @@ const Education: Array<{
     institutionLink:
       'https://app.hubspot.com/academy/achievements/jzzw8lz0/en/1/golden-ogbeka/content-marketing',
     date: 'August 2021',
-  },
-  {
-    degree: 'Mentorship Certification',
-    institution: 'Covenant University Alumni Association',
-    institutionLink:
-      'https://drive.google.com/file/d/1sJZJafb_U5jzRfr1CL3nT-YqT2P16hxs/view?usp=sharing',
-    date: 'July 2021',
-  },
-  {
-    degree: 'Digital Nigeria Certifications',
-    institution: 'Microsoft',
-    institutionLink:
-      'https://drive.google.com/drive/folders/1C2ZJ7GjMHdKA02SDy3FWb5xpTFawodyN?usp=sharing',
-    date: 'June 2021',
   },
   {
     degree: 'SEO Certification',
