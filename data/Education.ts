@@ -11,6 +11,13 @@ const Education: Array<{
     date: 'In Progress',
   },
   {
+    degree: 'Management Theories and Philosophies',
+    institution: 'Unicaf University',
+    institutionLink:
+      'https://drive.google.com/file/d/1GivBwJC3x_Yws4w7Jwoy7fGrCqTN3leY/view?usp=sharing',
+    date: 'June 2024',
+  },
+  {
     degree:
       'Organizational Leadership: Success Through Maximizing the Capabilities of the Employees',
     institution: 'University of California, Riverside',
