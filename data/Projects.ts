@@ -1,24 +1,25 @@
 import { StaticImageData } from 'next/image';
 import Boldo from '../public/images/Projects/boldo.png';
-import VFN from '../public/images/Projects/vfn.png';
 import EBike from '../public/images/Projects/e-bike.png';
 import SocialNews from '../public/images/Projects/social-news.png';
+import VFN from '../public/images/Projects/vfn.png';
 // import Cravings from '../public/images/Projects/cravings.png';
 // import CravingsLogistics from '../public/images/Projects/cravings-logistics.png';
 // import FindIt from '../public/images/Projects/find-it.png';
 // import Todo from '../public/images/Projects/todo.png';
 // import ProductCatalog from '../public/images/Projects/product-catalog.png';
-import TCU from '../public/images/Projects/tcu.png';
-import Keyla from '../public/images/Projects/keyla.png';
-import Library from '../public/images/Projects/library.png';
 import GlowStopper from '../public/images/Projects/glowstopper.png';
+// import Keyla from '../public/images/Projects/keyla.png';
+import Library from '../public/images/Projects/library.png';
+import TCU from '../public/images/Projects/tcu.png';
 import Whitepace from '../public/images/Projects/whitepace.png';
 // import VeedezPro from '../public/images/Projects/veedez-pro.png';
 // import Veedez from '../public/images/Projects/veedez.png';
 import Switch from '../public/images/Projects/switch.png';
-import TFH_Mobile from '../public/images/Projects/tfh-mobile.png';
-import Koneqtor from '../public/images/Projects/koneqtor.png';
-import ShipAfrica from '../public/images/Projects/ship-africa.png';
+// import TFH_Mobile from '../public/images/Projects/tfh-mobile.png';
+// import Koneqtor from '../public/images/Projects/koneqtor.png';
+// import ShipAfrica from '../public/images/Projects/ship-africa.png';
+import A1Quest from '../public/images/Projects/a1quest.png';
 
 const Projects: Array<{
   name: string;
@@ -31,21 +32,28 @@ const Projects: Array<{
   image: StaticImageData;
 }> = [
   {
-    name: 'Koneqtor',
-    description:
-      'App to connect artisans to their customers around Nigeria and also help manage appointments and communication between artisans and their customers',
-    tools: ['Next JS', 'Redux Toolkit', 'Tailwind CSS', 'Socket IO'],
-    image: Koneqtor,
-    liveLink: 'https://koneqtor.com/',
+    name: 'A1Quest',
+    description: 'App that teaches Mathematics to secondary school children',
+    tools: ['Next JS', 'Redux Toolkit', 'Tailwind CSS', 'Firebase'],
+    image: A1Quest,
+    liveLink: 'https://a1quest.com/',
   },
-  {
-    name: 'Ship Plug',
-    description:
-      'Helps users create, monitor and manage shipment within their states, between states and also between countries',
-    tools: ['Next JS', 'Redux Toolkit', 'Tailwind CSS'],
-    image: ShipAfrica,
-    liveLink: 'https://www.shipplug.africa/',
-  },
+  // {
+  //   name: 'Koneqtor',
+  //   description:
+  //     'App to connect artisans to their customers around Nigeria and also help manage appointments and communication between artisans and their customers',
+  //   tools: ['Next JS', 'Redux Toolkit', 'Tailwind CSS', 'Socket IO'],
+  //   image: Koneqtor,
+  //   liveLink: 'https://koneqtor.com/',
+  // },
+  // {
+  //   name: 'Ship Plug',
+  //   description:
+  //     'Helps users create, monitor and manage shipment within their states, between states and also between countries',
+  //   tools: ['Next JS', 'Redux Toolkit', 'Tailwind CSS'],
+  //   image: ShipAfrica,
+  //   liveLink: 'https://www.shipplug.africa/',
+  // },
   {
     name: 'Switch Mobile App',
     description:
@@ -54,23 +62,21 @@ const Projects: Array<{
     image: Switch,
     liveLink: 'https://play.google.com/store/apps/details?id=ng.sterling.sterlingswitch',
   },
-  {
-    name: 'TFH Church App',
-    description: "Mobile app for The Father's House Church, Nigeria",
-    tools: ['React Native', 'Redux Toolkit'],
-    image: TFH_Mobile,
-    liveLink: 'https://play.google.com/store/apps/details?id=com.tfhmobile',
-  },
-
-  {
-    name: 'VFN Website',
-    description:
-      'Website for Value Female Network. A youth-led, registered, non-governmental organization that seeks to establish the health and rights of women and girls in local communities',
-    tools: ['NextJS', 'Tailwind CSS', 'TypeScript'],
-    githubLink: 'https://github.com/Golden-Ogbeka/value-female-network',
-    liveLink: 'https://value-female-network.vercel.app/',
-    image: VFN,
-  },
+  // {
+  //   name: 'TFH Church App',
+  //   description: "Mobile app for The Father's House Church, Nigeria",
+  //   tools: ['React Native', 'Redux Toolkit'],
+  //   image: TFH_Mobile,
+  //   liveLink: 'https://play.google.com/store/apps/details?id=com.tfhmobile',
+  // },
+  // {
+  //   name: 'Keyla',
+  //   description:
+  //     'Web application for Keyla Technologies: a technology solution service provider. A product of Keyla Technologies',
+  //   tools: ['Gatsby'],
+  //   liveLink: 'https://keyla.ng/',
+  //   image: Keyla,
+  // },
   {
     name: 'The Chicken Universe',
     description:
@@ -80,13 +86,15 @@ const Projects: Array<{
     image: TCU,
   },
   {
-    name: 'Keyla',
+    name: 'VFN Website',
     description:
-      'Web application for Keyla Technologies: a technology solution service provider. A product of Keyla Technologies',
-    tools: ['Gatsby'],
-    liveLink: 'https://keyla.ng/',
-    image: Keyla,
+      'Website for Value Female Network. A youth-led, registered, non-governmental organization that seeks to establish the health and rights of women and girls in local communities',
+    tools: ['NextJS', 'Tailwind CSS', 'TypeScript'],
+    githubLink: 'https://github.com/Golden-Ogbeka/value-female-network',
+    liveLink: 'https://value-female-network.vercel.app/',
+    image: VFN,
   },
+
   // {
   //   name: 'Veedez',
   //   description: 'Brand website for Veedez. A product of Alerzo Limited',
