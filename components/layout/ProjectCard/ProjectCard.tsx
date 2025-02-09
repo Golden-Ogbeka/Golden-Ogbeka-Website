@@ -1,9 +1,8 @@
 import Image, { StaticImageData } from 'next/image';
 import { useRouter } from 'next/router';
-import React from 'react';
+import FigmaIcon from '../../../public/icons/figma.png';
 import GithubIcon from '../../../public/icons/github.png';
 import LinkIcon from '../../../public/icons/link.png';
-import FigmaIcon from '../../../public/icons/figma.png';
 import PostmanIcon from '../../../public/icons/postman.png';
 
 function ProjectCard({
@@ -39,7 +38,7 @@ function ProjectCard({
           src={project.image}
           alt={project.name}
           objectFit='cover'
-          className='rounded hover:scale-110 object-left'
+          className='rounded hover:scale-110 object-center'
           layout='fill'
           placeholder='blur'
         />

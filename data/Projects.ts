@@ -5,21 +5,28 @@ import SocialNews from '../public/images/Projects/social-news.png';
 import VFN from '../public/images/Projects/vfn.png';
 // import Cravings from '../public/images/Projects/cravings.png';
 // import CravingsLogistics from '../public/images/Projects/cravings-logistics.png';
-// import FindIt from '../public/images/Projects/find-it.png';
-// import Todo from '../public/images/Projects/todo.png';
-// import ProductCatalog from '../public/images/Projects/product-catalog.png';
+import FindIt from '../public/images/Projects/find-it.png';
 import GlowStopper from '../public/images/Projects/glowstopper.png';
+import ProductCatalog from '../public/images/Projects/product-catalog.png';
+import Todo from '../public/images/Projects/todo.png';
 // import Keyla from '../public/images/Projects/keyla.png';
 import Library from '../public/images/Projects/library.png';
 import TCU from '../public/images/Projects/tcu.png';
 import Whitepace from '../public/images/Projects/whitepace.png';
 // import VeedezPro from '../public/images/Projects/veedez-pro.png';
-// import Veedez from '../public/images/Projects/veedez.png';
 import Switch from '../public/images/Projects/switch.png';
-// import TFH_Mobile from '../public/images/Projects/tfh-mobile.png';
+import TFH_Mobile from '../public/images/Projects/tfh-mobile.png';
+import Veedez from '../public/images/Projects/veedez.png';
 // import Koneqtor from '../public/images/Projects/koneqtor.png';
 // import ShipAfrica from '../public/images/Projects/ship-africa.png';
 import A1Quest from '../public/images/Projects/a1quest.png';
+import Alerzoshop from '../public/images/Projects/alerzoshop.png';
+import CAPAdmin from '../public/images/Projects/cap-admin.png';
+import Ocpus from '../public/images/Projects/ocpus.png';
+import TFHAdmin from '../public/images/Projects/tfh-admin.png';
+import TFHBackend from '../public/images/Projects/tfh-backend.png';
+import TFHWebsite from '../public/images/Projects/tfh-website.png';
+import VeedezPay from '../public/images/Projects/veedezpay.png';
 
 const Projects: Array<{
   name: string;
@@ -38,22 +45,14 @@ const Projects: Array<{
     image: A1Quest,
     liveLink: 'https://a1quest.com/',
   },
-  // {
-  //   name: 'Koneqtor',
-  //   description:
-  //     'App to connect artisans to their customers around Nigeria and also help manage appointments and communication between artisans and their customers',
-  //   tools: ['Next JS', 'Redux Toolkit', 'Tailwind CSS', 'Socket IO'],
-  //   image: Koneqtor,
-  //   liveLink: 'https://koneqtor.com/',
-  // },
-  // {
-  //   name: 'Ship Plug',
-  //   description:
-  //     'Helps users create, monitor and manage shipment within their states, between states and also between countries',
-  //   tools: ['Next JS', 'Redux Toolkit', 'Tailwind CSS'],
-  //   image: ShipAfrica,
-  //   liveLink: 'https://www.shipplug.africa/',
-  // },
+  {
+    name: 'CAP Admin',
+    description:
+      'Build the admin dashboard for CAP PLC internal operations for their partners and representatives',
+    tools: ['React JS', 'Zustand', 'Material UI', 'Socket.IO', 'Zod', 'Recharts'],
+    image: CAPAdmin,
+    liveLink: 'https://capplc.com/',
+  },
   {
     name: 'Switch Mobile App',
     description:
@@ -62,21 +61,69 @@ const Projects: Array<{
     image: Switch,
     liveLink: 'https://play.google.com/store/apps/details?id=ng.sterling.sterlingswitch',
   },
-  // {
-  //   name: 'TFH Church App',
-  //   description: "Mobile app for The Father's House Church, Nigeria",
-  //   tools: ['React Native', 'Redux Toolkit'],
-  //   image: TFH_Mobile,
-  //   liveLink: 'https://play.google.com/store/apps/details?id=com.tfhmobile',
-  // },
-  // {
-  //   name: 'Keyla',
-  //   description:
-  //     'Web application for Keyla Technologies: a technology solution service provider. A product of Keyla Technologies',
-  //   tools: ['Gatsby'],
-  //   liveLink: 'https://keyla.ng/',
-  //   image: Keyla,
-  // },
+  {
+    name: 'Veedez Admin and PWA',
+    description:
+      'Worked on the admin dashboard controlling the Veedez Product and also worked on the User Dashboard PWA',
+    tools: ['React JS', 'Styled Components', 'TypeScript'],
+    image: Veedez,
+    liveLink: 'https://veedez.com/',
+  },
+  {
+    name: 'Alerzoshop Admin',
+    description:
+      'Worked on the admin dashboard application controlling the AlerzoShop application and also maintained AlerzoShop',
+    tools: ['React JS', 'Styled Components', 'TypeScript', 'Redux Toolkit', 'NextJS'],
+    image: Alerzoshop,
+    liveLink: 'https://shop.alerzo.com/',
+  },
+  {
+    name: 'Veedez Pay',
+    description:
+      'Worked on the B2B dashboard for Veedez Pay as well as the Admin Dashboard',
+    tools: ['React JS', 'TypeScript'],
+    image: VeedezPay,
+    liveLink: 'https://veedezpay.com/',
+  },
+  {
+    name: 'Ocpus Mobile App',
+    description: 'Mobile App to enable live event hosting and participation',
+    tools: ['React Native Web', 'TypeScript'],
+    image: Ocpus,
+    liveLink: 'https://play.google.com/store/apps/details?id=net.ocpusapp.android&hl=en',
+  },
+  {
+    name: 'TFH Church App',
+    description: "Built mobile app for The Father's House Church, Nigeria",
+    tools: ['React Native', 'Redux Toolkit'],
+    image: TFH_Mobile,
+    githubLink: 'https://github.com/Golden-Ogbeka/church-mobile-app',
+  },
+  {
+    name: 'TFH Church Website',
+    description: "Built website for The Father's House Church, Nigeria",
+    tools: ['Next JS', 'Tailwind CSS', 'Redux Toolkit'],
+    image: TFHWebsite,
+    githubLink: 'https://github.com/Golden-Ogbeka/church-website',
+    liveLink: 'https://tfh-website.netlify.app/',
+  },
+  {
+    name: 'TFH Admin Dashboard',
+    description: "Built admin dashboard for The Father's House Church, Nigeria",
+    tools: ['React JS', 'Redux Toolkit', 'Tailwind CSS'],
+    image: TFHAdmin,
+    githubLink: 'https://github.com/Golden-Ogbeka/church-admin-frontend',
+    liveLink: 'https://tfh-admin.netlify.app/',
+  },
+  {
+    name: 'TFH Backend API',
+    description:
+      "Built the backend APIs for all the apps built for The Father's House Church, Nigeria",
+    tools: ['Node JS', 'Typescript', 'Redux Toolkit'],
+    image: TFHBackend,
+    githubLink: 'https://github.com/Golden-Ogbeka/church-backend',
+  },
+
   {
     name: 'The Chicken Universe',
     description:
@@ -95,19 +142,6 @@ const Projects: Array<{
     image: VFN,
   },
 
-  // {
-  //   name: 'Veedez',
-  //   description: 'Brand website for Veedez. A product of Alerzo Limited',
-  //   tools: ['React JS', 'Styled Components', 'TypeScript'],
-  //   image: Veedez,
-  //   liveLink: 'https://veedez.com/',
-  // },
-  // {
-  //   name: 'Veedez Pro',
-  //   description: 'Business Management System. A product of Alerzo Limited',
-  //   tools: ['React JS', 'Styled Components', 'TypeScript', 'Redux Toolkit'],
-  //   image: VeedezPro,
-  // },
   {
     name: 'White Pace',
     description: 'UI reproduction for a Saas Landing Page',
@@ -136,23 +170,6 @@ const Projects: Array<{
     image: EBike,
   },
 
-  // {
-  //   name: 'Cravings',
-  //   description:
-  //     'Web application for Cravings Food Nigeria. Allows you order food from your favourite restaurants around you. A product of Keyla Technologies',
-  //   tools: ['React JS', 'Material UI', 'Framer Motion', 'React Context'],
-  //   // liveLink: 'https://cravingsng.com/',
-  //   image: Cravings,
-  // },
-  // {
-  //   name: 'Cravings Logistics',
-  //   description:
-  //     'Web application for Cravings Logistics: a reliable delivery system. A product of Keyla Technologies',
-  //   tools: ['Next JS', 'Redux Toolkit'],
-  //   // liveLink: 'https://logistics.cravingsng.com/',
-  //   image: CravingsLogistics,
-  // },
-
   {
     name: 'Library App',
     description:
@@ -162,26 +179,7 @@ const Projects: Array<{
     githubLink: 'https://github.com/Golden-Ogbeka/library-app',
     image: Library,
   },
-  // {
-  //   name: 'Find IT',
-  //   description:
-  //     'The app allows search for any query by specifying the exact location you are interested in. You are allowed to specify the Latitude and Longitude coordinates as well as the location radius in meters. This gives you full control over the results.',
-  //   tools: ['React JS', 'Material UI', 'Node JS', 'Google Maps Services'],
-  //   liveLink: 'https://find-it-by-golden-ogbeka.cyclic.app/',
-  //   figmaLink: 'https://www.figma.com/file/v06s62gpM0hZ7ny0RKW6qU/Find-IT?node-id=0%3A1',
-  //   githubLink: 'https://github.com/Golden-Ogbeka/Find-It',
-  //   image: FindIt,
-  // },
 
-  // {
-  //   name: 'Product Catalog',
-  //   description:
-  //     'A landing page with products, details and images gotten from Unsplash API.',
-  //   tools: ['React JS', 'Material UI', 'Node JS', 'Unsplash-JS', 'Node-Fetch'],
-  //   liveLink: 'https://product-catalog-unsplash.cyclic.app/',
-  //   githubLink: 'https://github.com/Golden-Ogbeka/Product-Catalog-with-Unsplash-API',
-  //   image: ProductCatalog,
-  // },
   {
     name: 'Social News',
     description:
@@ -204,13 +202,73 @@ const Projects: Array<{
       'https://www.figma.com/file/Ydk3iHnNJxHH31HxQQXg9W/Glow-Stopper?node-id=40%3A33',
     image: GlowStopper,
   },
+  {
+    name: 'Find IT',
+    description:
+      'The app allows search for any query by specifying the exact location you are interested in. You are allowed to specify the Latitude and Longitude coordinates as well as the location radius in meters. This gives you full control over the results.',
+    tools: ['React JS', 'Material UI', 'Node JS', 'Google Maps Services'],
+    liveLink: 'https://find-it-by-golden-ogbeka.cyclic.app/',
+    figmaLink: 'https://www.figma.com/file/v06s62gpM0hZ7ny0RKW6qU/Find-IT?node-id=0%3A1',
+    githubLink: 'https://github.com/Golden-Ogbeka/Find-It',
+    image: FindIt,
+  },
+  {
+    name: 'Product Catalog',
+    description:
+      'A landing page with products, details and images gotten from Unsplash API.',
+    tools: ['React JS', 'Material UI', 'Node JS', 'Unsplash-JS', 'Node-Fetch'],
+    liveLink: 'https://product-catalog-unsplash.cyclic.app/',
+    githubLink: 'https://github.com/Golden-Ogbeka/Product-Catalog-with-Unsplash-API',
+    image: ProductCatalog,
+  },
+  {
+    name: 'Todo List',
+    description: 'To-do List with Add and Delete Task functionalities.',
+    tools: ['React JS', 'Material UI', 'Node JS', 'Mongo DB'],
+    liveLink: 'https://to-do-list-by-golden-ogbeka.cyclic.app/',
+    githubLink: 'https://github.com/Golden-Ogbeka/To-do-List',
+    image: Todo,
+  },
   // {
-  //   name: 'Todo List',
-  //   description: 'To-do List with Add and Delete Task functionalities.',
-  //   tools: ['React JS', 'Material UI', 'Node JS', 'Mongo DB'],
-  //   liveLink: 'https://to-do-list-by-golden-ogbeka.cyclic.app/',
-  //   githubLink: 'https://github.com/Golden-Ogbeka/To-do-List',
-  //   image: Todo,
+  //   name: 'Koneqtor',
+  //   description:
+  //     'App to connect artisans to their customers around Nigeria and also help manage appointments and communication between artisans and their customers',
+  //   tools: ['Next JS', 'Redux Toolkit', 'Tailwind CSS', 'Socket IO'],
+  //   image: Koneqtor,
+  //   liveLink: 'https://koneqtor.com/',
+  // },
+  // {
+  //   name: 'Ship Plug',
+  //   description:
+  //     'Helps users create, monitor and manage shipment within their states, between states and also between countries',
+  //   tools: ['Next JS', 'Redux Toolkit', 'Tailwind CSS'],
+  //   image: ShipAfrica,
+  //   liveLink: 'https://www.shipplug.africa/',
+  // },
+
+  // {
+  //   name: 'Keyla',
+  //   description:
+  //     'Web application for Keyla Technologies: a technology solution service provider. A product of Keyla Technologies',
+  //   tools: ['Gatsby'],
+  //   liveLink: 'https://keyla.ng/',
+  //   image: Keyla,
+  // },
+  // {
+  //   name: 'Cravings',
+  //   description:
+  //     'Web application for Cravings Food Nigeria. Allows you order food from your favourite restaurants around you. A product of Keyla Technologies',
+  //   tools: ['React JS', 'Material UI', 'Framer Motion', 'React Context'],
+  //   // liveLink: 'https://cravingsng.com/',
+  //   image: Cravings,
+  // },
+  // {
+  //   name: 'Cravings Logistics',
+  //   description:
+  //     'Web application for Cravings Logistics: a reliable delivery system. A product of Keyla Technologies',
+  //   tools: ['Next JS', 'Redux Toolkit'],
+  //   // liveLink: 'https://logistics.cravingsng.com/',
+  //   image: CravingsLogistics,
   // },
 ];
 

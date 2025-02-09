@@ -5,12 +5,6 @@ const Education: Array<{
   institutionLink?: string;
 }> = [
   {
-    degree: 'Unicaf University',
-    institution: 'Master of Business Administration, Management',
-    institutionLink: 'https://university.unicaf.org/',
-    date: 'In Progress',
-  },
-  {
     degree: 'Management Theories and Philosophies',
     institution: 'Unicaf University',
     institutionLink:
