@@ -22,6 +22,8 @@ import Veedez from '../public/images/Projects/veedez.png';
 import A1Quest from '../public/images/Projects/a1quest.png';
 import Alerzoshop from '../public/images/Projects/alerzoshop.png';
 import CAPAdmin from '../public/images/Projects/cap-admin.png';
+import JompStart from '../public/images/Projects/jompstart.png';
+import LandshopAdmin from '../public/images/Projects/landshop-admin.png';
 import Ocpus from '../public/images/Projects/ocpus.png';
 import TFHAdmin from '../public/images/Projects/tfh-admin.png';
 import TFHBackend from '../public/images/Projects/tfh-backend.png';
@@ -122,6 +124,22 @@ const Projects: Array<{
     tools: ['Node JS', 'Typescript', 'Redux Toolkit'],
     image: TFHBackend,
     githubLink: 'https://github.com/Golden-Ogbeka/church-backend',
+  },
+  {
+    name: 'Jompstart',
+    description:
+      'Worked on the user application for Jompstart. It is an application that gives users access to credit facilities',
+    tools: ['React JS', 'Typescript', 'Redux Toolkit', 'Tailwindcss'],
+    image: JompStart,
+    liveLink: 'https://www.jompstart.com/',
+  },
+  {
+    name: 'Landshop Admin',
+    description:
+      'Built the admin dashboard for Landshop. It is an application that provides real estate investment opportunities',
+    tools: ['React JS'],
+    image: LandshopAdmin,
+    liveLink: 'https://landshop.ng/',
   },
 
   {
