@@ -4,6 +4,7 @@ import BOI from '../public/images/Experiences/boi.jpg';
 import Composite from '../public/images/Experiences/composite.png';
 import Keyla from '../public/images/Experiences/keyla.png';
 import KFC from '../public/images/Experiences/kfc.png';
+import Rova from '../public/images/Experiences/rova.jpeg';
 import TCU from '../public/images/Experiences/tcu.png';
 
 const Experiences: Array<{
@@ -17,13 +18,24 @@ const Experiences: Array<{
 }> = [
   {
     role: 'Frontend Engineer',
+    company: 'Rova',
+    date: 'Aug 2024 - Present',
+    companyLink: 'https://getrova.com/',
+    tasksAchieved: [
+      'Building the new Corporate Internet Banking platform for FCMB UK and NG',
+    ],
+    companyLogo: Rova,
+  },
+  {
+    role: 'Frontend Engineer',
     company: 'Alerzo',
-    date: 'Oct 2022 - Present',
+    date: 'Oct 2022 - March 2025',
     companyLink: 'https://www.alerzo.com/',
     tasksAchieved: [
-      'Worked on adding features to Veedez Dashboard',
-      'Worked on revamping the design for aspects of Veedez Website',
-      'Worked on maintaining internal admin dashboards',
+      'Built CAP PLC Admin Dashboard',
+      'Maintained Alerzopay User Dashboard',
+      'Maintained Alerzoshop Dashboard',
+      'Maintained Veedez Dashboard',
     ],
     companyLogo: Alerzo,
   },
