@@ -1,56 +1,69 @@
-import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useAppDispatch, useAppSelector } from '../../../app/hooks';
 import { toggleDarkMode } from '../../../app/slices/darkModeSlice';
 import AvatarImage from '../../../public/brand/golden-ogbeka.jpg';
-import Image from 'next/image';
-import Link from 'next/link';
+import { trackEvent } from '../../../utils/analytics';
 
 function Navbar() {
-	const dispatch = useAppDispatch();
+  const dispatch = useAppDispatch();
 
-	const { isDark } = useAppSelector((state) => state.darkMode);
+  const { isDark } = useAppSelector((state) => state.darkMode);
 
-	return (
-		<nav className='pt-10 pb-10'>
-			<div className='flex flex-row items-center justify-between'>
-				<Link href='/'>
-					<Image
-						src={AvatarImage}
-						alt='Golden Ogbeka'
-						width={50}
-						height={50}
-						objectFit='cover'
-						className='rounded-full cursor-pointer'
-					/>
-				</Link>
-				<div className='flex flex-row items-center gap-[30px]'>
-					<Link href='/#projects'>
-						<span className='dark:text-white cursor-pointer hover:text-secondary hidden md:block'>
-							Projects
-						</span>
-					</Link>
-					<Link href='#contact'>
-						<span className='dark:text-white cursor-pointer hover:text-secondary'>Contact</span>
-					</Link>
-					<a
-						href='/brand/Resume-Golden-Ogbeka.pdf'
-						target='_blank'
-						rel='noopener noreferrer'
-						download='Golden_Ogbeka_Resume'
-					>
-						<span className='dark:text-white hover:text-secondary'>Resume</span>
-					</a>
-					<DarkModeSwitch
-						checked={!isDark}
-						onChange={() => dispatch(toggleDarkMode())}
-						moonColor='#000'
-						sunColor='#fff'
-					/>
-				</div>
-			</div>
-		</nav>
-	);
+  return (
+    <nav className='py-6 px-4 sm:px-6 lg:px-8 w-full max-w-screen-2xl mx-auto flex flex-row items-center justify-between'>
+      <Link href='/'>
+        <a className='flex-shrink-0 flex items-center gap-3'>
+          <Image
+            src={AvatarImage}
+            alt='Golden Ogbeka'
+            width={48}
+            height={48}
+            objectFit='cover'
+            className='rounded-full cursor-pointer'
+          />
+          <span className='font-display font-semibold lg:text-3xl text-xl hidden md:block'>
+            Golden Ogbeka
+          </span>
+        </a>
+      </Link>
+      <div className='flex flex-row items-center gap-6'>
+        <Link href='/projects'>
+          <a className='text-zinc-600 dark:text-zinc-300 hover:text-accent dark:hover:text-accent font-medium hidden md:block'>
+            Projects
+          </a>
+        </Link>
+        <Link href='/experiences'>
+          <a className='text-zinc-600 dark:text-zinc-300 hover:text-accent dark:hover:text-accent font-medium hidden md:block'>
+            Experience
+          </a>
+        </Link>
+        <Link href='/open-source'>
+          <a className='text-zinc-600 dark:text-zinc-300 hover:text-accent dark:hover:text-accent font-medium hidden md:block'>
+            Open Source
+          </a>
+        </Link>
+        <a
+          href='/brand/Resume-Golden-Ogbeka.pdf'
+          target='_blank'
+          rel='noopener noreferrer'
+          download='Golden_Ogbeka_Resume'
+          onClick={() => trackEvent('download', 'engagement', 'Resume Download')}
+          className='text-zinc-600 dark:text-zinc-300 hover:text-accent dark:hover:text-accent font-medium'
+        >
+          Resume
+        </a>
+        <DarkModeSwitch
+          checked={!isDark}
+          onChange={() => dispatch(toggleDarkMode())}
+          moonColor={isDark ? '#f4f4f5' : '#09090b'}
+          sunColor={isDark ? '#f4f4f5' : '#09090b'}
+          size={24}
+        />
+      </div>
+    </nav>
+  );
 }
 
 export default Navbar;

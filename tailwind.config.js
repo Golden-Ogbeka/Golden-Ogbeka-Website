@@ -1,18 +1,38 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	darkMode: 'class',
-	content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-	theme: {
-		extend: {
-			textColor: {
-				secondary: '#004E93',
-				dark: '#1A1A1A',
-				lightSecondary: '#6CACE4',
-			},
-			backgroundColor: {
-				dark: '#111111',
-			},
-		},
-	},
-	plugins: [],
+  darkMode: 'class',
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        display: ['Outfit', 'sans-serif'],
+      },
+      colors: {
+        primary: '#0F172A',     // slate-900
+        secondary: '#334155',   // slate-700
+        accent: '#3B82F6',      // blue-500
+        darkBg: '#09090b',      // zinc-950
+        darkCard: '#18181b',    // zinc-900
+        darkText: '#f4f4f5',    // zinc-100
+        lightBg: '#ffffff',
+        lightCard: '#f4f4f5',   // zinc-100
+        lightText: '#09090b',   // zinc-950
+      },
+      animation: {
+        'fade-in-up': 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+      },
+      keyframes: {
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+    },
+  },
+  plugins: [],
 };

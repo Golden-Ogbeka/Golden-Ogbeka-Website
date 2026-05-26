@@ -7,7 +7,7 @@ import KFC from '../public/images/Experiences/kfc.png';
 import Rova from '../public/images/Experiences/rova.jpeg';
 import TCU from '../public/images/Experiences/tcu.png';
 
-const Experiences: Array<{
+export interface ExperienceType {
   role: string;
   company: string;
   companyLogo: StaticImageData;
@@ -15,44 +15,66 @@ const Experiences: Array<{
   date: string;
   tasksAchieved: string[];
   invertCompanyLogoInDarkMode?: boolean;
-}> = [
+}
+
+const Experiences: ExperienceType[] = [
   {
-    role: 'Frontend Engineer',
-    company: 'Rova',
+    role: 'Senior Software Engineer',
+    company: 'Rova (FCMB Group)',
     date: 'Aug 2024 - Present',
     companyLink: 'https://getrova.com/',
     tasksAchieved: [
-      'Building the new Corporate Internet Banking platform for FCMB UK and NG',
+      'Contributed to rebuilding a corporate banking platform designed to improve enterprise customer experience, operational reliability, and secure financial workflows across Nigeria and the UK.',
+      'Developed secure financial modules including bulk payments, transaction workflows, account management systems, and banking operations features aligned with enterprise security standards.',
+      'Improved application responsiveness, frontend maintainability, and user experience through reusable component systems, optimized rendering patterns, and scalable architecture practices.',
+      'Integrated backend services, RESTful APIs, and authentication workflows supporting reliable financial transactions and customer-facing banking functionality.',
+      'Contributed to scalable service integration strategies and frontend architecture decisions supporting secure enterprise banking operations.',
+      'Collaborated with backend engineers, designers, and product teams to deliver scalable cloud-native financial solutions in Agile development environments.',
+      'Resolved production issues and contributed to application reliability through debugging, monitoring, testing, and operational support workflows.'
     ],
     companyLogo: Rova,
   },
   {
-    role: 'Frontend Engineer',
+    role: 'Software Engineer',
     company: 'Alerzo',
-    date: 'Oct 2022 - March 2025',
+    date: 'Oct 2022 - Mar 2025',
     companyLink: 'https://www.alerzo.com/',
     tasksAchieved: [
-      'Built CAP PLC Admin Dashboard',
-      'Maintained Alerzopay User Dashboard',
-      'Maintained Alerzoshop Dashboard',
-      'Maintained Veedez Dashboard',
+      'Developed and maintained operational systems supporting inventory, logistics, customer, and order management workflows used by thousands of businesses across Nigeria.',
+      'Built scalable frontend features and reusable React and TypeScript component systems improving engineering consistency and accelerating feature delivery.',
+      'Optimized frontend architecture, service integrations, and application performance to improve responsiveness, maintainability, and operational reliability.',
+      'Integrated RESTful APIs and backend services supporting high-volume operational processes, asynchronous workflows, and customer-facing business functionality.',
+      'Collaborated across engineering, product, and design teams to deliver scalable enterprise solutions in fast-paced Agile environments.',
+      'Resolved production issues, participated in code reviews, and contributed to continuous improvement initiatives across engineering teams.'
     ],
     companyLogo: Alerzo,
   },
   {
-    role: 'Full Stack Developer',
-    company: 'Keyla Technologies',
-    date: 'Oct 2021 - Oct 2022',
-    companyLink: 'https://keyla.ng/',
+    role: 'Software Engineer and CTO',
+    company: 'Kanaga Technologies',
+    date: 'Aug 2023 - Jul 2024',
     tasksAchieved: [
-      'I worked on upgrading Cravings website into a full E-commerce application',
-      "I re-developed the company's website (www.keyla.ng) using React JS and Gatsby",
-      "I replicated the UI Design for the food vendor applications' website called Cravings (www.cravingsng.com) and ensured mobile responsiveness and a great user experience using React JS and Material UI",
-      "I developed an admin dashboard for a another food vendor application with total user and admin management using ReactJS, Material UI and React's Context API",
-      'I created a brand website for Cravings Logistics',
-      'I completed the backend of a food delivery app that has a full logistics feature using PostgreSQL, NodeJS and ExpressJS',
+      'Led product strategy, technical direction, and end-to-end development of A1Quest, an edtech platform focused on improving mathematics learning accessibility.',
+      'Coordinated engineering and product teams to define technical direction, architecture decisions, feature priorities, and delivery timelines.',
+      'Designed scalable frontend systems, reusable UI architectures, backend service integrations, and administrative platforms using React and TypeScript.',
+      'Contributed to architectural decisions and scalable application design improving maintainability and engineering consistency.',
+      'Managed technical decision-making, deployment coordination, testing workflows, and software delivery processes across the product lifecycle.',
+      'Implemented engineering best practices including code reviews, collaborative development workflows, frontend optimization strategies, and maintainable architecture patterns.'
     ],
-    companyLogo: Keyla,
+    companyLogo: TCU, // Fallback logo or define a new one if available
+  },
+  {
+    role: 'Mobile Engineer',
+    company: 'Sterling Bank PLC',
+    date: 'Feb 2022 - Jun 2023',
+    tasksAchieved: [
+      'Implemented fintech features supporting Nigerians in diaspora with secure access to banking operations, account management services, and digital financial workflows.',
+      'Enhanced mobile applications with secure payment systems, identity verification workflows, transaction capabilities, and card management features.',
+      'Contributed to application reliability, observability, debugging, troubleshooting, production support, and mobile performance optimization initiatives.',
+      'Integrated backend services and secure authentication workflows supporting enterprise banking operations and customer-facing financial services.',
+      'Collaborated with engineers, QA teams, designers, and product stakeholders to deliver secure banking solutions aligned with enterprise standards.'
+    ],
+    companyLogo: BOI, // Fallback
   },
   {
     role: 'Full Stack Developer',
@@ -60,49 +82,27 @@ const Experiences: Array<{
     date: 'Feb 2021 - Dec 2021',
     companyLink: 'https://compositepropertydevelopment.com/',
     tasksAchieved: [
-      "I re-branded the company's website and created User Interface Designs with Figma. Then I created the backend for the application using MySQL, NodeJs and ExpressJS",
-      'My team and I created the frontend of a crowdfunding real estate application that would be used by the company with ReactJS, Material UI and React Context API',
-      "My team and I concluded the company's staff portal and client dashboard to manage company's inventory, projects, staff, clients and contractors",
-      'My team and I organized a training session for the staff of the company to train them on how to use the application we developed',
+      'Developed a real estate crowdfunding platform enabling users to invest in construction and property development opportunities.',
+      'Built frontend and backend application features using React, Node.js, REST APIs, and database-driven architectures supporting customer and operational workflows.',
+      'Improved company digital platforms, application usability, and customer experience through redesigned web systems and optimized workflows.',
+      'Integrated APIs and backend services supporting business operations, authentication workflows, and scalable application functionality.'
     ],
     companyLogo: Composite,
     invertCompanyLogoInDarkMode: true,
   },
   {
-    role: 'Full Stack Developer and Product Owner',
+    role: 'Full Stack Engineer and Founder',
     company: 'The Chicken Universe',
     date: 'Oct 2019 - Jan 2021',
     companyLink: 'https://thechickenuniverse.onrender.com/',
     tasksAchieved: [
-      'I created this application to help connect buyers and sellers of chicken products together',
-      "I created the web application as an e-commerce store using React JS, EJS, NodeJS, Express JS, MongoDB, Sockets IO and React's Context API",
-      'I hosted the web application using cloud hosting and was in charge of managing the SSH integrations',
-      "I created the mobile application using React Native and hosted it on Amazon's AppStore",
+      'Founded and built a digital marketplace platform connecting poultry suppliers, vendors, distributors, and customers through scalable commerce solutions.',
+      'Developed backend infrastructure, APIs, real-time systems, and cloud-based application features using Node.js and modern web technologies.',
+      'Managed the full product lifecycle including architecture, development, deployment, monitoring, maintenance, and operational support.',
+      'Implemented authentication systems, payment workflows, service integrations, and scalable platform features supporting day-to-day business operations.',
+      'Contributed to product growth through technical ownership, feature development, troubleshooting, and continuous platform improvements.'
     ],
     companyLogo: TCU,
-  },
-  {
-    role: 'Supply Base Manager',
-    company: 'KFC',
-    date: 'Aug 2018 - Oct 2018',
-    companyLink: 'https://www.instagram.com/officialkfcnigeria/?hl=en',
-    tasksAchieved: [
-      'I took this job to learn about the principles of a long standing business. KFC has been in existence for over 69 years and I wanted to know why. I got to learn that a business is not built on passion but by following well defined principles and procedures. I was also learnt about integrity, character and was made to understand the necessity of discipline',
-      'I left for my NYSC programme',
-    ],
-    companyLogo: KFC,
-  },
-  {
-    role: 'IT Support Technician',
-    company: 'Bank of Industry Limited',
-    date: 'Feb 2017 - Aug 2017',
-    companyLink: 'https://www.boi.ng/',
-    tasksAchieved: [
-      'I was taught problem solving patterns as I handled staff complaints that were related to technological devices and network infrastructure issues',
-      'I was taught presentation skills as I was tasked to give presentations on programming and cloud computing',
-      'I was taught computer hardware troubleshooting',
-    ],
-    companyLogo: BOI,
   },
 ];
 

@@ -1,46 +1,47 @@
-import Image from 'next/image';
-import DribbbleIcon from '../../../public/icons/dribbble.png';
-import EmailIcon from '../../../public/icons/email.png';
-import GithubIcon from '../../../public/icons/github.png';
-import LinkedinIcon from '../../../public/icons/linkedin.png';
-import WhatsappIcon from '../../../public/icons/whatsapp.png';
+import Link from 'next/link';
 
-function Intro() {
+export default function Intro() {
   return (
-    <header className='mt-[117px]'>
-      <span className='font-extralight dark:text-white'>Hey, I&apos;m</span>
-      <h1 className='font-medium text-5xl md:text-6xl lg:text-7xl xl:text-8xl mt-[18px] mb-6 font-[Montserrat] gradientText'>
-        Golden Ogbeka
-      </h1>
-      <p className='text-lg font-extralight dark:text-[#F0F0F0] mb-10'>
-        I&apos;m a software engineer based in Lagos, Nigeria. I&apos;m passionate about
-        using technology to create solutions for people and have experience doing so in
-        these sectors: Agriculture, Finance, Real Estate, Retail Services, IT, Food and
-        Logistics.
-      </p>
-      <div className='flex flex-row gap-5 items-center flex-wrap'>
-        <a href='https://github.com/Golden-Ogbeka' target='_blank' rel='noreferrer'>
-          <Image src={GithubIcon} alt='Github' className='invert dark:invert-0' />
-        </a>
-        <a
-          href='https://www.linkedin.com/in/goldenogbeka/'
-          target='_blank'
-          rel='noreferrer'
-        >
-          <Image src={LinkedinIcon} alt='Linkedin' />
-        </a>
-        <a href='https://dribbble.com/Golden-Ogbeka' target='_blank' rel='noreferrer'>
-          <Image src={DribbbleIcon} alt='Dribbble' />
-        </a>
-        <a href='mailto:ogbekagolden@gmail.com' target='_blank' rel='noreferrer'>
-          <Image src={EmailIcon} alt='Email' className='invert dark:invert-0' />
-        </a>
-        <a href='https://wa.me/2348169200454' target='_blank' rel='noreferrer'>
-          <Image src={WhatsappIcon} alt='Whatsapp' />
-        </a>
+    <section className='pt-32 pb-20 min-h-[80vh] flex flex-col justify-center animate-fade-in-up'>
+      <div className='max-w-3xl'>
+        <h1 className='text-5xl md:text-7xl font-display font-semibold tracking-tight leading-tight mb-6'>
+          Building <span className='text-zinc-500'>scalable enterprise </span>
+          platforms.
+        </h1>
+        <p className='text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 font-light leading-relaxed mb-10 max-w-4xl'>
+          I&apos;m Golden Ogbeka, a Senior Software Engineer specializing in fintech,
+          distributed systems, and crafting premium user experiences.
+        </p>
+
+        <div className='flex flex-wrap gap-4'>
+          <Link href='/projects'>
+            <a className='px-8 py-4 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 rounded-full font-medium text-lg hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors inline-flex items-center'>
+              View Work
+              <svg
+                className='w-5 h-5 ml-2'
+                fill='none'
+                stroke='currentColor'
+                viewBox='0 0 24 24'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth={2}
+                  d='M14 5l7 7m0 0l-7 7m7-7H3'
+                />
+              </svg>
+            </a>
+          </Link>
+          <a
+            href='mailto:ogbekagolden@gmail.com'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='px-8 py-4 minimal-card rounded-full font-medium text-lg inline-flex items-center'
+          >
+            Contact Me
+          </a>
+        </div>
       </div>
-    </header>
+    </section>
   );
 }
-
-export default Intro;
