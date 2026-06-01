@@ -39,6 +39,8 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
             <Image
               src={src}
               loading='lazy'
+              layout='fill'
+              objectFit='cover'
               alt={`${projectName} screenshot ${index + 1}`}
               className='object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500'
             />
@@ -54,7 +56,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
       <Dialog open={isOpen} onClose={() => setIsOpen(false)} className='relative z-50'>
         <div className='fixed inset-0 bg-black/90 backdrop-blur-sm' aria-hidden='true' />
 
-        <div className='fixed inset-0 flex items-center justify-center p-4'>
+        <div className='fixed inset-0 flex items-center justify-center p-4 overflow-hidden'>
           <Dialog.Panel className='relative w-full max-w-5xl mx-auto flex flex-col items-center'>
             <button
               onClick={() => setIsOpen(false)}
@@ -95,11 +97,15 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
                 </svg>
               </button>
 
-              <Image
-                src={screenshots[currentIndex]}
-                alt={`${projectName} full view ${currentIndex + 1}`}
-                className='max-h-[85vh] object-contain w-full rounded-md'
-              />
+              <div className='relative w-full' style={{ height: '80vh' }}>
+                <Image
+                  src={screenshots[currentIndex]}
+                  alt={`${projectName} full view ${currentIndex + 1}`}
+                  layout='fill'
+                  objectFit='contain'
+                  className='rounded-md object-contain'
+                />
+              </div>
 
               <button
                 onClick={nextImage}

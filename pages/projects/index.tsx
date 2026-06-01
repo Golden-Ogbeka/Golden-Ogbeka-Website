@@ -34,7 +34,9 @@ export default function Projects() {
                     <Image
                       src={project.screenshots[0]}
                       alt={`${project.title} thumbnail`}
-                      className='object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500'
+                      layout='fill'
+                      objectFit='cover'
+                      className='transform group-hover:scale-105 transition-transform duration-500'
                     />
                   ) : (
                     <Image
@@ -50,7 +52,15 @@ export default function Projects() {
                   <h3 className='text-xl font-semibold mb-2 group-hover:text-accent transition-colors'>
                     {project.title}
                   </h3>
-                  <p className='text-zinc-600 dark:text-zinc-400 line-clamp-3 mb-4 flex-1'>
+                  <p
+                    className='text-zinc-600 dark:text-zinc-400 line-clamp-3 mb-4 flex-1'
+                    style={{
+                      display: '-webkit-box',
+                      WebkitLineClamp: 3,
+                      WebkitBoxOrient: 'vertical',
+                      overflow: 'hidden',
+                    }}
+                  >
                     {project.description}
                   </p>
                   <div className='flex flex-wrap gap-2 mt-auto'>

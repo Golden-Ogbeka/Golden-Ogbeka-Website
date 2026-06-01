@@ -1,5 +1,10 @@
 import { StaticImageData } from 'next/image';
 import A1Quest from '../public/images/Projects/a1quest.png';
+import Alerzo1 from '../public/images/Projects/alerzo-admin-web/1.png';
+import Alerzo2 from '../public/images/Projects/alerzo-admin-web/2.png';
+import Alerzo3 from '../public/images/Projects/alerzo-admin-web/3.png';
+import Alerzo4 from '../public/images/Projects/alerzo-admin-web/4.png';
+import Alerzo5 from '../public/images/Projects/alerzo-admin-web/5.png';
 import Boldo from '../public/images/Projects/boldo.png';
 import CAPAdmin from '../public/images/Projects/cap-admin.png';
 import CIBWeb1 from '../public/images/Projects/cib-web/1.png';
@@ -28,7 +33,12 @@ import LexisKitchen5 from '../public/images/Projects/lexis-kitchen/5.png';
 import Library from '../public/images/Projects/library.png';
 import Ocpus from '../public/images/Projects/ocpus.png';
 import ProductCatalog from '../public/images/Projects/product-catalog.png';
-import Switch from '../public/images/Projects/switch.png';
+import Switch1 from '../public/images/Projects/switch/1.png';
+import Switch2 from '../public/images/Projects/switch/2.png';
+import Switch3 from '../public/images/Projects/switch/3.png';
+import Switch4 from '../public/images/Projects/switch/4.png';
+import Switch5 from '../public/images/Projects/switch/5.png';
+import Switch from '../public/images/Projects/switch/switch.png';
 import TCU from '../public/images/Projects/tcu.png';
 import TFHAdmin from '../public/images/Projects/tfh-admin.png';
 import TFHWebsite from '../public/images/Projects/tfh-website.png';
@@ -57,45 +67,40 @@ export interface ProjectType {
 const placeholderImage = '/images/placeholder.jpg';
 const Projects: ProjectType[] = [
   {
-    title: 'Corporate Banking Client Portal',
+    title: 'Enterprise Corporate Internet Banking Platform',
     slug: 'rova-cba-cib-client-frontend',
     description:
-      'A corporate banking client portal for FCMB Group with secure login, account and beneficiary management, single and bulk payments, approval workflows, transaction reporting, and web-security controls.',
+      'A corporate internet banking client portal built for FCMB Group with secure login, account and beneficiary management, single and bulk payments, approval workflows, transaction reporting, and web-security controls.',
     features: [
       'Corporate account dashboard with balance, statement, and transaction analytics',
       'Single and bulk payment execution with beneficiary management',
       'Approval and authorization routing for corporate transfers',
       'Transaction search, reporting, export and audit history',
+      'Advanced Manual and Digital onboarding workflows',
       'Security-focused bank workflows with OWASP-safe form handling and session protection',
+      'Web accessibility and responsive design for enterprise users',
+      'Advanced encryption and secure data handling for financial transactions',
     ],
-    coreTools: [
-      'Next.js',
-      'React',
-      'Redux Toolkit',
-      'FormKit Auto Animate',
-      'Headless UI',
-      'Heroicons',
-      'Peculiar WebCrypto',
-      'Playwright',
-      'Radix UI Dialog',
-      'Radix UI Popover',
-    ],
+    coreTools: ['Next.js', 'React', 'Redux Toolkit', 'RSA and AES Encryption', 'Jest'],
     image: CIBWeb1,
     screenshots: [CIBWeb1, CIBWeb2, CIBWeb3, CIBWeb4, CIBWeb5],
     featured: true,
     videoDemoLink: 'https://www.youtube.com/watch?v=k3Y9ZXfJ9GU',
   },
   {
-    title: 'Click N Schedule API',
+    title: 'Workforce Scheduling and HR Management Backend API Service',
     slug: 'clicknchedule-api',
     description:
-      'A shift scheduling backend API for Click N Schedule that handles roster creation, shift assignment, notifications, and secure authentication.',
+      'A shift scheduling backend API built for Click N Schedule that handles roster creation, shift assignment, facility management, clocking, notifications, and secure authentication.',
     features: [
       'Shift and roster scheduling endpoints for employee assignments',
       'Schedule adjustment and availability rules',
       'Email/SMS notification orchestration for shift changes',
       'Secure authentication and user session protection',
       'API-first backend for workforce management integrations',
+      'Facility and location management for shift assignments',
+      'Clocking and timekeeping endpoints for employee tracking',
+      'Employee and manager role-based access controls',
     ],
     coreTools: [
       'Express',
@@ -103,9 +108,6 @@ const Projects: ProjectType[] = [
       'Agenda',
       'Bcryptjs',
       'Cloudinary',
-      'Compression',
-      'CORS',
-      'Dotenv',
       'Google Maps Services Js',
       'Nodemailer',
     ],
@@ -122,31 +124,65 @@ const Projects: ProjectType[] = [
     apiLink: 'https://documenter.getpostman.com/view/11204995/2sA3kXDKh2',
   },
   {
-    title: 'Switch 3.0 Mobile App',
+    title:
+      'Enterprise Cross-Border Fintech Mobile Platform for Multi-Currency Banking and Global Payments',
     slug: 'switch3.0',
     description:
-      'A React Native fintech app for Switch 3.0 with native device APIs, analytics, secure auth, and banking workflows.',
+      'Fintech application built for Sterling Bank that enables users to manage multi-currency accounts, perform local and international money transfers, pay bills, access investment and insurance services, and manage their finances from a single platform. The app delivers secure digital banking experiences through authentication, account management, payment processing, and transaction tracking workflows. Built to support cross-border financial operations, it integrates banking services, real-time transactions, and financial management tools within a scalable mobile ecosystem.',
     features: [
-      'Native device integration for secure mobile finance',
-      'Analytics tracking and user behavior monitoring',
-      'Secure login and payment workflows',
-      'Offline-aware connectivity and network status handling',
-      'Rich mobile navigation with tabs and stack routes',
+      'Multi-currency account management',
+      'Cross-border money transfers',
+      'International payments',
+      'Foreign currency wallets',
+      'Domiciliary account creation',
+      'Investment and wealth management',
+      'Insurance services integration',
+      'Loan and lending services',
+      'KYC and identity verification',
+      'Secure authentication workflows',
+      'Real-time transaction processing',
+      'Payment link generation and requests',
+      'Bill payment aggregation',
+      'Card management services',
+      'Travel and E-SIM integrations',
+      'Financial product marketplace',
+      'Global financial operations',
+      'Account and wallet orchestration',
     ],
     coreTools: [
       'React Native',
-      'Expo',
-      'Async Storage',
+      'Redux Saga',
       'React Native Firebase',
-      'React Navigation',
       'Geolocation',
+      'Async Storage',
+      'React Navigation',
       'NetInfo',
       'Slack Webhook',
-      'Axios',
-      'Redux Toolkit',
     ],
     image: Switch,
-    screenshots: [],
+    liveLink: 'https://play.google.com/store/apps/details?id=ng.sterling.sterlingswitch',
+    videoDemoLink: 'https://www.youtube.com/watch?v=cXb7nckKpLk',
+    screenshots: [Switch, Switch1, Switch2, Switch3, Switch4, Switch5],
+    featured: true,
+  },
+  {
+    title: 'Enterprise B2B Supply Chain and Commerce Management Platform',
+    slug: 'alerzo-admin-web',
+    description:
+      'Web-based administrative platform built for Alerzo and designed to manage B2B commerce operations, merchant onboarding, order fulfillment, inventory monitoring, logistics coordination, and business performance reporting. The dashboard provides centralized tools for customer management, product administration, transaction oversight, and operational analytics. Built to support large-scale retail and distribution workflows, it streamlines business processes across merchants, suppliers, and internal operations teams.',
+    features: [
+      'End-to-end order fulfillment management covering order processing, pickup coordination, shipment tracking, delivery execution, and status monitoring',
+      'Multi-tenant onboarding and administration platform for customers, merchants, drivers, and internal operations teams',
+      'Real-time logistics and fleet operations dashboard with shipment visibility, route optimization, and delivery performance monitoring',
+      'GraphQL-powered analytics ecosystem for tracking fulfillment KPIs, operational efficiency, merchant growth, and revenue performance',
+      'Enterprise-grade role-based access control, audit logging, and administrative workflow management',
+      'Operational intelligence dashboards providing live business insights, exception management, and performance reporting across the supply chain',
+    ],
+    coreTools: ['React', 'Apollo Client', 'Material UI', 'Sentry', 'Mapbox Polyline'],
+    image: Alerzo1,
+    screenshots: [Alerzo1, Alerzo2, Alerzo3, Alerzo4, Alerzo5],
+    featured: true,
+    videoDemoLink: 'https://www.youtube.com/watch?v=cFuj9sNzlvk',
   },
   {
     title: 'Corporate Banking Mobile App',
@@ -238,34 +274,7 @@ const Projects: ProjectType[] = [
     featured: true,
     videoDemoLink: 'https://www.youtube.com/watch?v=Lq-I5ZWkE9c',
   },
-  {
-    title: 'Alerzo B2B Admin Dashboard',
-    slug: 'alerzo-admin-web',
-    description:
-      'A B2B operations admin portal for Alerzo that manages orders, customers, drivers, shipments, settlement analytics, and GraphQL-based operational controls.',
-    features: [
-      'Order lifecycle management with pickup and delivery status views',
-      'Customer, merchant and driver onboarding dashboards',
-      'Shipment tracking and route optimization panels',
-      'GraphQL analytics widgets for fulfillment and revenue metrics',
-      'Role-based admin access and real-time operational reporting',
-    ],
-    coreTools: [
-      'Apollo Client',
-      'Material UI',
-      'Sentry Browser',
-      'Sentry Tracing',
-      'Axios',
-      'Classnames',
-      'Mapbox Polyline',
-      'React',
-      'Redux Toolkit',
-      'URQL',
-    ],
-    image: placeholderImage,
-    screenshots: [],
-    featured: true,
-  },
+
   {
     title: 'Veedez Marketing Website',
     slug: 'veedezwebsite',
