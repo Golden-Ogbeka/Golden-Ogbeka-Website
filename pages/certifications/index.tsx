@@ -7,7 +7,7 @@ export default function Certifications() {
     <AppLayout>
       <HeadElement
         pageTitle='Certifications & Education | Golden Ogbeka'
-        description='My academic background and professional certifications.'
+        description='Academic degrees, professional certifications, and training achievements by Golden Ogbeka, Senior Software Engineer.'
       />
       <div className='pt-32 pb-20 min-h-screen'>
         <div className='mb-16 animate-fade-in-up'>

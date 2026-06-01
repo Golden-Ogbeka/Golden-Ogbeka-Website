@@ -1,51 +1,78 @@
 import Head from 'next/head';
-import React from 'react';
+
+const SITE_URL = 'https://goldenogbeka.com';
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Golden Ogbeka',
+  url: SITE_URL,
+  jobTitle: 'Senior Software Engineer',
+  sameAs: [
+    'https://www.linkedin.com/in/goldenogbeka/',
+    'https://github.com/Golden-Ogbeka',
+  ],
+  description:
+    'Senior Software Engineer creating scalable products at the intersection of technology and innovation.',
+};
 
 function HeadElement({
-	pageTitle = 'Golden Ogbeka',
-	description = 'I am a frontend web developer that is passionate about looking for the connection between technology and people. I believe technology can be used to solve the problems people face. Therefore I aim to use my skills to help people',
-	noIndex = false,
-	siteLink = 'https://goldenogbeka.vercel.app/',
+  pageTitle = 'Golden Ogbeka | Senior Software Engineer',
+  description = 'Senior Software Engineer creating scalable products at the intersection of technology and innovation.',
+  noIndex = false,
+  siteLink = SITE_URL,
+  ogImage = '/og-image.png',
 }: {
-	pageTitle?: string;
-	description?: string;
-	noIndex?: boolean;
-	siteLink?: string;
+  pageTitle?: string;
+  description?: string;
+  noIndex?: boolean;
+  siteLink?: string;
+  ogImage?: string;
 }) {
-	return (
-		<Head>
-			<meta charSet='utf-8' />
-			<link rel='icon' href='/favicon.ico' />
+  const fullOgImageUrl = `${SITE_URL}${ogImage}`;
 
-			<meta name='viewport' content='width=device-width, initial-scale=1' />
-			<meta name='theme-color' content='#000000' />
+  return (
+    <Head>
+      {/* Essential Meta Tags */}
+      <meta charSet='utf-8' />
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <meta name='theme-color' content='#000000' />
+      <link rel='icon' href='/favicon.ico' />
 
-			{/* <!-- Main Tags --> */}
-			<title>{pageTitle}</title>
-			<meta name='title' content={pageTitle} />
-			<meta name='description' content={description} />
+      {/* Primary SEO Tags */}
+      <title>{pageTitle}</title>
+      <meta name='title' content={pageTitle} />
+      <meta name='description' content={description} />
+      <link rel='canonical' href={siteLink} />
 
-			{/* <!-- Google meta tags --> */}
-			<meta itemProp='name' content={pageTitle} />
-			<meta itemProp='description' content={description} />
-			<meta itemProp='image' content={siteLink + '/favicon.ico'} />
+      {/* Internationalization */}
+      <link rel='alternate' hrefLang='en' href={SITE_URL} />
 
-			{/* <!-- Facebook meta tags --> */}
-			<meta property='og:url' content={siteLink} />
-			<meta property='og:type' content='website' />
-			<meta property='og:title' content={pageTitle} />
-			<meta property='og:description' content={description} />
-			<meta property='og:image' content={siteLink + '/favicon.ico'} />
+      {/* Open Graph / Facebook */}
+      <meta property='og:type' content='website' />
+      <meta property='og:url' content={siteLink} />
+      <meta property='og:title' content={pageTitle} />
+      <meta property='og:description' content={description} />
+      <meta property='og:image' content={fullOgImageUrl} />
+      <meta property='og:image:width' content='1200' />
+      <meta property='og:image:height' content='630' />
 
-			{/* <!-- Twitter meta tags --> */}
-			<meta name='twitter:card' content='summary_large_image' />
-			<meta name='twitter:title' content={pageTitle} />
-			<meta name='twitter:description' content={description} />
-			<meta name='twitter:image' content={siteLink + '/favicon.ico'} />
+      {/* Twitter / X */}
+      <meta name='twitter:card' content='summary_large_image' />
+      <meta name='twitter:url' content={siteLink} />
+      <meta name='twitter:title' content={pageTitle} />
+      <meta name='twitter:description' content={description} />
+      <meta name='twitter:image' content={fullOgImageUrl} />
 
-			{noIndex === true && <meta name='robots' content='noIndex' />}
-		</Head>
-	);
+      {/* Schema.org Structured Data */}
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+
+      {noIndex && <meta name='robots' content='noindex, nofollow' />}
+    </Head>
+  );
 }
 
 export default HeadElement;
