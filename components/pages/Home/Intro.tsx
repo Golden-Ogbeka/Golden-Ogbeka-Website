@@ -33,9 +33,7 @@ export default function Intro() {
             </a>
           </Link>
           <a
-            href='mailto:ogbekagolden@gmail.com'
-            target='_blank'
-            rel='noopener noreferrer'
+            href='#contact'
             className='px-8 py-4 minimal-card rounded-full font-medium text-lg inline-flex items-center'
           >
             Contact Me

@@ -39,6 +39,8 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
             <Image
               src={src}
               loading='lazy'
+              layout='fill'
+              objectFit='cover'
               alt={`${projectName} screenshot ${index + 1}`}
               className='object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500'
             />
@@ -54,8 +56,8 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
       <Dialog open={isOpen} onClose={() => setIsOpen(false)} className='relative z-50'>
         <div className='fixed inset-0 bg-black/90 backdrop-blur-sm' aria-hidden='true' />
 
-        <div className='fixed inset-0 flex items-center justify-center p-4'>
-          <Dialog.Panel className='relative w-full max-w-5xl mx-auto flex flex-col items-center'>
+        <div className='fixed inset-0 flex items-center justify-center p-4 overflow-hidden'>
+          <Dialog.Panel className='relative w-full max-w-5xl mx-auto flex flex-col items-center max-h-screen overflow-hidden'>
             <button
               onClick={() => setIsOpen(false)}
               className='absolute -top-12 right-0 text-white hover:text-zinc-300 p-2'
@@ -75,7 +77,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
               </svg>
             </button>
 
-            <div className='relative w-full flex items-center justify-center'>
+            <div className='relative w-full flex items-center justify-center overflow-hidden'>
               <button
                 onClick={prevImage}
                 className='absolute left-0 z-10 p-2 bg-black/50 text-white rounded-r-xl hover:bg-black/70 transition-colors'
@@ -95,10 +97,21 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
                 </svg>
               </button>
 
-              <Image
-                src={screenshots[currentIndex]}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={
+                  typeof screenshots[currentIndex] === 'string'
+                    ? screenshots[currentIndex]
+                    : (screenshots[currentIndex] as StaticImageData).src
+                }
                 alt={`${projectName} full view ${currentIndex + 1}`}
-                className='max-h-[85vh] object-contain w-full rounded-md'
+                className='rounded-md object-contain'
+                style={{
+                  maxHeight: '80vh',
+                  maxWidth: '100%',
+                  width: 'auto',
+                  height: 'auto',
+                }}
               />
 
               <button
