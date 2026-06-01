@@ -57,7 +57,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
         <div className='fixed inset-0 bg-black/90 backdrop-blur-sm' aria-hidden='true' />
 
         <div className='fixed inset-0 flex items-center justify-center p-4 overflow-hidden'>
-          <Dialog.Panel className='relative w-full max-w-5xl mx-auto flex flex-col items-center max-h-screen overflow-hidden'>
+          <Dialog.Panel className='relative w-full max-w-5xl mx-auto flex flex-col items-center'>
             <button
               onClick={() => setIsOpen(false)}
               className='absolute -top-12 right-0 text-white hover:text-zinc-300 p-2'
@@ -77,7 +77,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
               </svg>
             </button>
 
-            <div className='relative w-full flex items-center justify-center overflow-hidden'>
+            <div className='relative w-full flex items-center justify-center'>
               <button
                 onClick={prevImage}
                 className='absolute left-0 z-10 p-2 bg-black/50 text-white rounded-r-xl hover:bg-black/70 transition-colors'
@@ -97,22 +97,15 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
                 </svg>
               </button>
 
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={
-                  typeof screenshots[currentIndex] === 'string'
-                    ? screenshots[currentIndex]
-                    : (screenshots[currentIndex] as StaticImageData).src
-                }
-                alt={`${projectName} full view ${currentIndex + 1}`}
-                className='rounded-md object-contain'
-                style={{
-                  maxHeight: '80vh',
-                  maxWidth: '100%',
-                  width: 'auto',
-                  height: 'auto',
-                }}
-              />
+              <div className='relative w-full' style={{ height: '80vh' }}>
+                <Image
+                  src={screenshots[currentIndex]}
+                  alt={`${projectName} full view ${currentIndex + 1}`}
+                  layout='fill'
+                  objectFit='contain'
+                  className='rounded-md object-contain'
+                />
+              </div>
 
               <button
                 onClick={nextImage}

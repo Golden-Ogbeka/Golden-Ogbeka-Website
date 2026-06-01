@@ -1,5 +1,10 @@
 import { StaticImageData } from 'next/image';
 import A1Quest from '../public/images/Projects/a1quest.png';
+import Alerzo1 from '../public/images/Projects/alerzo-admin-web/1.png';
+import Alerzo2 from '../public/images/Projects/alerzo-admin-web/2.png';
+import Alerzo3 from '../public/images/Projects/alerzo-admin-web/3.png';
+import Alerzo4 from '../public/images/Projects/alerzo-admin-web/4.png';
+import Alerzo5 from '../public/images/Projects/alerzo-admin-web/5.png';
 import Boldo from '../public/images/Projects/boldo.png';
 import CAPAdmin from '../public/images/Projects/cap-admin.png';
 import CIBWeb1 from '../public/images/Projects/cib-web/1.png';
@@ -86,7 +91,7 @@ const Projects: ProjectType[] = [
     title: 'Workforce Scheduling and HR Management Backend API Service',
     slug: 'clicknchedule-api',
     description:
-      'A shift scheduling backend API for Click N Schedule that handles roster creation, shift assignment, facility management, clocking, notifications, and secure authentication.',
+      'A shift scheduling backend API built for Click N Schedule that handles roster creation, shift assignment, facility management, clocking, notifications, and secure authentication.',
     features: [
       'Shift and roster scheduling endpoints for employee assignments',
       'Schedule adjustment and availability rules',
@@ -123,7 +128,7 @@ const Projects: ProjectType[] = [
       'Enterprise Cross-Border Fintech Mobile Platform for Multi-Currency Banking and Global Payments',
     slug: 'switch3.0',
     description:
-      "Sterling Bank's fintech application that enables users to manage multi-currency accounts, perform local and international money transfers, pay bills, access investment and insurance services, and manage their finances from a single platform. The app delivers secure digital banking experiences through authentication, account management, payment processing, and transaction tracking workflows. Built to support cross-border financial operations, it integrates banking services, real-time transactions, and financial management tools within a scalable mobile ecosystem.",
+      'Fintech application built for Sterling Bank that enables users to manage multi-currency accounts, perform local and international money transfers, pay bills, access investment and insurance services, and manage their finances from a single platform. The app delivers secure digital banking experiences through authentication, account management, payment processing, and transaction tracking workflows. Built to support cross-border financial operations, it integrates banking services, real-time transactions, and financial management tools within a scalable mobile ecosystem.',
     features: [
       'Multi-currency account management',
       'Cross-border money transfers',
@@ -158,6 +163,26 @@ const Projects: ProjectType[] = [
     liveLink: 'https://play.google.com/store/apps/details?id=ng.sterling.sterlingswitch',
     videoDemoLink: 'https://www.youtube.com/watch?v=cXb7nckKpLk',
     screenshots: [Switch, Switch1, Switch2, Switch3, Switch4, Switch5],
+    featured: true,
+  },
+  {
+    title: 'Enterprise B2B Supply Chain and Commerce Management Platform',
+    slug: 'alerzo-admin-web',
+    description:
+      'Web-based administrative platform built for Alerzo and designed to manage B2B commerce operations, merchant onboarding, order fulfillment, inventory monitoring, logistics coordination, and business performance reporting. The dashboard provides centralized tools for customer management, product administration, transaction oversight, and operational analytics. Built to support large-scale retail and distribution workflows, it streamlines business processes across merchants, suppliers, and internal operations teams.',
+    features: [
+      'End-to-end order fulfillment management covering order processing, pickup coordination, shipment tracking, delivery execution, and status monitoring',
+      'Multi-tenant onboarding and administration platform for customers, merchants, drivers, and internal operations teams',
+      'Real-time logistics and fleet operations dashboard with shipment visibility, route optimization, and delivery performance monitoring',
+      'GraphQL-powered analytics ecosystem for tracking fulfillment KPIs, operational efficiency, merchant growth, and revenue performance',
+      'Enterprise-grade role-based access control, audit logging, and administrative workflow management',
+      'Operational intelligence dashboards providing live business insights, exception management, and performance reporting across the supply chain',
+    ],
+    coreTools: ['React', 'Apollo Client', 'Material UI', 'Sentry', 'Mapbox Polyline'],
+    image: Alerzo1,
+    screenshots: [Alerzo1, Alerzo2, Alerzo3, Alerzo4, Alerzo5],
+    featured: true,
+    videoDemoLink: 'https://www.youtube.com/watch?v=cFuj9sNzlvk',
   },
   {
     title: 'Corporate Banking Mobile App',
@@ -249,34 +274,7 @@ const Projects: ProjectType[] = [
     featured: true,
     videoDemoLink: 'https://www.youtube.com/watch?v=Lq-I5ZWkE9c',
   },
-  {
-    title: 'Alerzo B2B Admin Dashboard',
-    slug: 'alerzo-admin-web',
-    description:
-      'A B2B operations admin portal for Alerzo that manages orders, customers, drivers, shipments, settlement analytics, and GraphQL-based operational controls.',
-    features: [
-      'Order lifecycle management with pickup and delivery status views',
-      'Customer, merchant and driver onboarding dashboards',
-      'Shipment tracking and route optimization panels',
-      'GraphQL analytics widgets for fulfillment and revenue metrics',
-      'Role-based admin access and real-time operational reporting',
-    ],
-    coreTools: [
-      'Apollo Client',
-      'Material UI',
-      'Sentry Browser',
-      'Sentry Tracing',
-      'Axios',
-      'Classnames',
-      'Mapbox Polyline',
-      'React',
-      'Redux Toolkit',
-      'URQL',
-    ],
-    image: placeholderImage,
-    screenshots: [],
-    featured: true,
-  },
+
   {
     title: 'Veedez Marketing Website',
     slug: 'veedezwebsite',
