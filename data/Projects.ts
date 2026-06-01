@@ -1,32 +1,48 @@
 import { StaticImageData } from 'next/image';
-import Boldo from '../public/images/Projects/boldo.png';
-import EBike from '../public/images/Projects/e-bike.png';
-import SocialNews from '../public/images/Projects/social-news.png';
-import VFN from '../public/images/Projects/vfn.png';
-import FindIt from '../public/images/Projects/find-it.png';
-import GlowStopper from '../public/images/Projects/glowstopper.png';
-import ProductCatalog from '../public/images/Projects/product-catalog.png';
-import Todo from '../public/images/Projects/todo.png';
-import Library from '../public/images/Projects/library.png';
-import TCU from '../public/images/Projects/tcu.png';
-import Whitepace from '../public/images/Projects/whitepace.png';
-import Switch from '../public/images/Projects/switch.png';
-import TFH_Mobile from '../public/images/Projects/tfh-mobile.png';
-import Veedez from '../public/images/Projects/veedez.png';
 import A1Quest from '../public/images/Projects/a1quest.png';
-import Alerzoshop from '../public/images/Projects/alerzoshop.png';
+import Boldo from '../public/images/Projects/boldo.png';
 import CAPAdmin from '../public/images/Projects/cap-admin.png';
-import JompStart from '../public/images/Projects/jompstart.png';
+import ClickNSchedule1 from '../public/images/Projects/clicknschedule/1.png';
+import ClickNSchedule2 from '../public/images/Projects/clicknschedule/2.png';
+import ClickNSchedule3 from '../public/images/Projects/clicknschedule/3.png';
+import ClickNSchedule4 from '../public/images/Projects/clicknschedule/4.png';
+import ClickNSchedule5 from '../public/images/Projects/clicknschedule/5.png';
+import EBike from '../public/images/Projects/e-bike.png';
+import FindIt from '../public/images/Projects/find-it.png';
+import FRSC1 from '../public/images/Projects/frsc-website/1.png';
+import FRSC2 from '../public/images/Projects/frsc-website/2.png';
+import FRSC3 from '../public/images/Projects/frsc-website/3.png';
+import FRSC4 from '../public/images/Projects/frsc-website/4.png';
+import GlowStopper from '../public/images/Projects/glowstopper.png';
 import LandshopAdmin from '../public/images/Projects/landshop-admin.png';
+import LexisKitchen1 from '../public/images/Projects/lexis-kitchen/1.png';
+import LexisKitchen2 from '../public/images/Projects/lexis-kitchen/2.png';
+import LexisKitchen3 from '../public/images/Projects/lexis-kitchen/3.png';
+import LexisKitchen4 from '../public/images/Projects/lexis-kitchen/4.png';
+import LexisKitchen5 from '../public/images/Projects/lexis-kitchen/5.png';
+import Library from '../public/images/Projects/library.png';
 import Ocpus from '../public/images/Projects/ocpus.png';
+import ProductCatalog from '../public/images/Projects/product-catalog.png';
+import Switch from '../public/images/Projects/switch.png';
+import TCU from '../public/images/Projects/tcu.png';
 import TFHAdmin from '../public/images/Projects/tfh-admin.png';
-import TFHBackend from '../public/images/Projects/tfh-backend.png';
 import TFHWebsite from '../public/images/Projects/tfh-website.png';
-import VeedezPay from '../public/images/Projects/veedezpay.png';
-import CIBWeb from '../public/images/Projects/cib-web/1.png'; // Assuming 1.png is the thumbnail
+import Todo from '../public/images/Projects/todo.png';
+import Truevoix1 from '../public/images/Projects/truevoix-web/1.png';
+import Truevoix2 from '../public/images/Projects/truevoix-web/2.png';
+import Truevoix3 from '../public/images/Projects/truevoix-web/3.png';
+import Truevoix4 from '../public/images/Projects/truevoix-web/4.png';
+import Truevoix5 from '../public/images/Projects/truevoix-web/5.png';
+import Veedez from '../public/images/Projects/veedez.png';
+
+import CIBWeb1 from '../public/images/Projects/cib-web/1.png';
+import CIBWeb2 from '../public/images/Projects/cib-web/2.png';
+import CIBWeb3 from '../public/images/Projects/cib-web/3.png';
+import CIBWeb4 from '../public/images/Projects/cib-web/4.png';
+import CIBWeb5 from '../public/images/Projects/cib-web/5.png';
 
 export interface ProjectType {
-  name: string;
+  title: string;
   slug: string;
   description: string;
   features: string[];
@@ -35,17 +51,20 @@ export interface ProjectType {
   liveLink?: string;
   designLink?: string;
   apiLink?: string;
-  image: StaticImageData;
-  screenshots: string[];
+  image: StaticImageData | string;
+  screenshots: StaticImageData[];
   videoDemoLink?: string;
   featured?: boolean;
 }
 
+const placeholderImage = '/images/placeholder.jpg';
+
 const Projects: ProjectType[] = [
   {
-    name: 'CIB Web Application',
-    slug: 'cib-web',
-    description: 'Corporate Internet Banking platform designed to improve enterprise customer experience, operational reliability, and secure financial workflows across Nigeria and the UK. Built for FCMB Group.',
+    title: 'Corporate Internet Banking Platform',
+    slug: 'rova-cba-cib-client-frontend',
+    description:
+      'Corporate Internet Banking platform designed to improve enterprise customer experience, operational reliability, and secure financial workflows across Nigeria and the UK. Built for FCMB Group.',
     features: [
       'Advanced Role-Based Access Control (RBAC) & Team Management',
       'Multi-factor Authentication & Secure Login flows',
@@ -54,282 +73,768 @@ const Projects: ProjectType[] = [
       'Comprehensive Transaction History & Dashboard Reporting',
       'Clickjacking Protection & OWASP Security Standards compliance',
     ],
-    coreTools: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Redux Toolkit', 'React Hook Form', 'Zod', 'Framer Motion'],
-    image: CIBWeb, // Needs to be added to imports or handled dynamically, wait we don't have CIBWeb image imported properly yet if the file doesn't exist. I'll change this to use a string or mock image later.
-    screenshots: [
-      '/images/Projects/cib-web/1.png',
-      '/images/Projects/cib-web/2.png',
-      '/images/Projects/cib-web/3.png',
-      '/images/Projects/cib-web/4.png',
-      '/images/Projects/cib-web/5.png',
+    coreTools: [
+      'React JS',
+      'Redux',
+      'Redux Toolkit',
+      'Next JS',
+      'Jest',
+      'Recharts',
+      'Tailwind CSS',
     ],
+    image: CIBWeb1,
+    screenshots: [CIBWeb1, CIBWeb2, CIBWeb3, CIBWeb4, CIBWeb5],
+    featured: true,
     videoDemoLink: 'https://www.youtube.com/watch?v=k3Y9ZXfJ9GU',
-    featured: true,
   },
   {
-    name: 'A1Quest',
-    slug: 'a1quest',
-    description: 'App that teaches Mathematics to secondary school children focusing on improving learning accessibility and student engagement in Nigeria.',
-    features: ['Student dashboard', 'Interactive mathematics lessons', 'Progress tracking', 'Gamified learning experience'],
-    coreTools: ['Next JS', 'Redux Toolkit', 'Tailwind CSS', 'Firebase'],
-    image: A1Quest,
-    liveLink: 'https://a1quest.com/',
+    title: 'Alerzo Admin Web (Saas Platform)',
+    slug: 'alerzo-admin-web',
+    description:
+      'Admin dashboard web application. For Alerzo, a leading B2B e-commerce platform. Key features: Logistics, Customer and Order Management. Built with Apollo GraphQL, Apollo Client, Material UI, Firebase, React JS.',
+    features: [
+      'Firebase Integration',
+      'GraphQL API Integration',
+      'Data Visualization & Analytics Dashboard',
+      'Admin Management System',
+    ],
+    coreTools: [
+      'Apollo GraphQL',
+      'Apollo Client',
+      'Material UI',
+      'Firebase',
+      'React JS',
+      'GraphQL',
+      'Recharts',
+      'Jest',
+    ],
+    image: placeholderImage,
     screenshots: [],
     featured: true,
   },
+
   {
-    name: 'CAP Admin',
-    slug: 'cap-admin',
-    description: 'Build the admin dashboard for CAP PLC internal operations for their partners and representatives.',
-    features: ['Partner management', 'Operational analytics', 'Real-time data visualization', 'Secure administrative controls'],
-    coreTools: ['React JS', 'Zustand', 'Material UI', 'Socket.IO', 'Zod', 'Recharts'],
-    image: CAPAdmin,
-    liveLink: 'https://capplc.com/',
-    screenshots: [],
-    featured: true,
-  },
-  {
-    name: 'Switch Mobile App',
-    slug: 'switch-mobile',
-    description: 'Financial application for managing funds and sending money between Nigeria and other countries. A product of Sterling Bank PLC.',
-    features: ['International money transfers', 'Wallet management', 'Transaction history', 'Secure biometric authentication'],
-    coreTools: ['React Native', 'Redux Saga'],
-    image: Switch,
-    liveLink: 'https://play.google.com/store/apps/details?id=ng.sterling.sterlingswitch',
-    screenshots: [],
-    featured: true,
-  },
-  {
-    name: 'Veedez Admin and PWA',
-    slug: 'veedez-admin',
-    description: 'Worked on the admin dashboard controlling the Veedez Product and also worked on the User Dashboard PWA.',
-    features: ['Product inventory management', 'Order tracking', 'User management', 'Offline capable PWA'],
-    coreTools: ['React JS', 'Styled Components', 'TypeScript'],
+    title: 'Veedez Website',
+    slug: 'veedezwebsite',
+    description:
+      'Branded website for Veedez. An application that provides digital payment solutions for businesses. Built with Next JS, React JS, Chakra UI, Framer Motion.',
+    features: [
+      'Responsive UI Layout',
+      'Component-driven Architecture',
+      'SEO Optimization',
+    ],
+    coreTools: ['Next JS', 'React JS', 'Chakra UI', 'Framer Motion'],
     image: Veedez,
-    liveLink: 'https://veedez.com/',
+    screenshots: [],
+  },
+
+  {
+    title: 'Web Application for Veedez',
+    slug: 'veedez-web-app',
+    description:
+      'Web application for Veedez paid users. Users utilize it for managing business operations and payments. Built with Redux, Redux Toolkit, Firebase.',
+    features: [
+      'Firebase Integration',
+      'GraphQL API Integration',
+      'Payment Gateway Integration',
+      'Data Visualization & Analytics Dashboard',
+    ],
+    coreTools: [
+      'Redux',
+      'Redux Toolkit',
+      'Firebase',
+      'React JS',
+      'Flutterwave',
+      'GraphQL',
+      'React Hook Form',
+      'Recharts',
+      'Styled Components',
+      'React Query',
+    ],
+    image: Veedez,
     screenshots: [],
     featured: true,
   },
+
   {
-    name: 'Alerzoshop Admin',
-    slug: 'alerzoshop-admin',
-    description: 'Worked on the admin dashboard application controlling the AlerzoShop application and also maintained AlerzoShop.',
-    features: ['Logistics management', 'Inventory tracking', 'Order fulfillment processing', 'Real-time updates'],
-    coreTools: ['React JS', 'Styled Components', 'TypeScript', 'Redux Toolkit', 'NextJS'],
-    image: Alerzoshop,
-    liveLink: 'https://shop.alerzo.com/',
+    title: 'Cap Admin Dashboard',
+    slug: 'zeebly-admin',
+    description:
+      "Admin dashboard for CAP Plc. Built to monitor and analyze key performance indicators (KPIs) and metrics related to CAP Plc's operations. Key features: GraphQL API Integration, Data Visualization & Analytics Dashboard, Complex State Management. Built with Apollo GraphQL, Apollo Client, React JS, Material UI.",
+    features: [
+      'Firebase Integration',
+      'GraphQL API Integration',
+      'Data Visualization & Analytics Dashboard',
+      'Complex State Management',
+    ],
+    coreTools: [
+      'Apollo GraphQL',
+      'Apollo Client',
+      'React JS',
+      'Material UI',
+      'Jest',
+      'GraphQL',
+      'React Hook Form',
+      'Recharts',
+      'Zod',
+      'Zustand',
+    ],
+    image: CAPAdmin,
     screenshots: [],
     featured: true,
   },
+
   {
-    name: 'Veedez Pay',
-    slug: 'veedez-pay',
-    description: 'Worked on the B2B dashboard for Veedez Pay as well as the Admin Dashboard.',
-    features: ['B2B transactions', 'Payment gateways integration', 'Dashboard analytics', 'User role management'],
-    coreTools: ['React JS', 'TypeScript'],
-    image: VeedezPay,
-    liveLink: 'https://veedezpay.com/',
-    screenshots: [],
+    title: 'Click N Schedule API Backend',
+    slug: 'clicknchedule-api',
+    description:
+      'Backend API Service built for an HR shift and schedule management system with real-time time tracking, real-time message communication, push notifications and schedule managment. Built with Express, Node JS, Mongo DB, firebase and Socket.IO',
+    features: [
+      'Real-time Communication',
+      'Firebase Push notifications',
+      'Schedule Management',
+    ],
+    coreTools: ['Express JS', 'Firebase', 'MongoDB', 'Socket.IO', 'Node JS'],
+    image: ClickNSchedule1,
+    screenshots: [
+      ClickNSchedule1,
+      ClickNSchedule2,
+      ClickNSchedule3,
+      ClickNSchedule4,
+      ClickNSchedule5,
+    ],
+    liveLink: 'https://clicknschedule.com/',
     featured: true,
+    apiLink: 'https://documenter.getpostman.com/view/11204995/2sA3kXDKh2',
   },
   {
-    name: 'Ocpus Mobile App',
-    slug: 'ocpus-mobile',
-    description: 'Mobile App to enable live event hosting and participation.',
-    features: ['Live event streaming', 'Audience participation', 'Event scheduling', 'Real-time chat'],
-    coreTools: ['React Native Web', 'TypeScript'],
-    image: Ocpus,
-    liveLink: 'https://play.google.com/store/apps/details?id=net.ocpusapp.android&hl=en',
+    title: 'Crowd funding Web Project',
+    slug: 'mono-web',
+    description:
+      'Crowdfunding application for real estate structures. Built with Material UI and React',
+    features: [
+      'Responsive UI Layout',
+      'Crowdfunding Features',
+      'Component-driven Architecture',
+    ],
+    coreTools: ['Material UI', 'React JS'],
+    image: placeholderImage,
     screenshots: [],
+  },
+
+  {
+    title: 'FRSC Website Rebuild',
+    slug: 'frsc-website',
+    description:
+      'Rebuild of the official website for the Lagos State Command of the Federal Road Safety Corps (FRSC). Built with Material UI and React',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['React JS', 'Material UI', 'Next JS'],
+    image: FRSC1,
+    screenshots: [FRSC1, FRSC2, FRSC3, FRSC4],
+    codeLink: 'https://github.com/Golden-Ogbeka/frsc-website',
+    videoDemoLink: 'https://www.youtube.com/watch?v=doVTz9PLGrk',
+  },
+
+  {
+    title: 'Afripie Bill Payment',
+    slug: 'afripie-frontend',
+    description:
+      'Bill payment gateway web application. Key features: Bill payment, Authentication and Onboarding. Built with Redux, Redux Toolkit, React JS, Next JS, Tailwind CSS.',
+    features: ['Bill Payment', 'Authentication and Onboarding'],
+    coreTools: ['Redux', 'Redux Toolkit', 'React JS', 'Next JS', 'Tailwind CSS', 'Jest'],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Truevoix Website',
+    slug: 'truevoix-website',
+    description:
+      'Branded website for Truevoix. An application that gives constituents direct interaction with the government. Key features: Responsive UI Layout, Component-driven Architecture, SEO Optimization. Built with Next JS, React JS, Tailwind CSS.',
+    features: [
+      'Responsive UI Layout',
+      'Component-driven Architecture',
+      'SEO Optimization',
+    ],
+    coreTools: ['Redux', 'Redux Toolkit', 'Vitest', 'React JS', 'Tailwind CSS'],
+    image: Truevoix1,
+    screenshots: [Truevoix1, Truevoix2, Truevoix3, Truevoix4, Truevoix5],
+    videoDemoLink: 'https://www.youtube.com/watch?v=v1ac7ZXbe8M',
+  },
+  {
+    title: 'Lexis Kitchen Inquiry App',
+    slug: 'lexis-kitchen',
+    description:
+      'Service inquiry web application for Lexis Kitchen(a food service company). Key features: Responsive UI Layout, Component-driven Architecture, Complex Forms. Built with Next JS, React JS, Tailwind CSS.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture', 'Complex Forms'],
+    coreTools: ['Next JS', 'React JS', 'Tailwind CSS'],
+    image: LexisKitchen1,
+    screenshots: [
+      LexisKitchen1,
+      LexisKitchen2,
+      LexisKitchen3,
+      LexisKitchen4,
+      LexisKitchen5,
+    ],
     featured: true,
+    videoDemoLink: 'https://www.youtube.com/watch?v=Lq-I5ZWkE9c',
   },
+
   {
-    name: 'TFH Church App',
-    slug: 'tfh-church-app',
-    description: "Built mobile app for The Father's House Church, Nigeria.",
-    features: ['Sermon audio/video streaming', 'Event calendar', 'In-app giving', 'Push notifications'],
-    coreTools: ['React Native', 'Redux Toolkit'],
-    image: TFH_Mobile,
-    codeLink: 'https://github.com/Golden-Ogbeka/church-mobile-app',
-    screenshots: [],
-    featured: true,
-  },
-  {
-    name: 'TFH Church Website',
-    slug: 'tfh-church-website',
-    description: "Built website for The Father's House Church, Nigeria.",
-    features: ['Sermon archive', 'Event listings', 'Online giving portal', 'Blog integration'],
-    coreTools: ['Next JS', 'Tailwind CSS', 'Redux Toolkit'],
-    image: TFHWebsite,
-    codeLink: 'https://github.com/Golden-Ogbeka/church-website',
-    liveLink: 'https://tfh-website.netlify.app/',
-    screenshots: [],
-    featured: true,
-  },
-  {
-    name: 'TFH Admin Dashboard',
-    slug: 'tfh-admin',
-    description: "Built admin dashboard for The Father's House Church, Nigeria.",
-    features: ['Member management', 'Content management system (CMS)', 'Donation tracking', 'Event creation'],
-    coreTools: ['React JS', 'Redux Toolkit', 'Tailwind CSS'],
-    image: TFHAdmin,
-    codeLink: 'https://github.com/Golden-Ogbeka/church-admin-frontend',
-    liveLink: 'https://tfh-admin.netlify.app/',
+    title: 'Corporate Internet Banking Mobile App',
+    slug: 'rova-cba-cib-ng-app-lite',
+    description:
+      'Corporate Internet Banking Mobile App is a React Native mobile app. Key features: Data Visualization & Analytics Dashboard, Complex State Management. Built with React JS, React Native, Redux.',
+    features: [
+      'Data Visualization & Analytics Dashboard',
+      'Complex State Management',
+      'Mobile App Capabilities',
+    ],
+    coreTools: [
+      'React JS',
+      'React Native',
+      'Redux',
+      'Redux Toolkit',
+      'Jest',
+      'Tailwind CSS',
+    ],
+    image: placeholderImage,
     screenshots: [],
   },
+
   {
-    name: 'TFH Backend API',
-    slug: 'tfh-backend',
-    description: "Built the backend APIs for all the apps built for The Father's House Church, Nigeria.",
-    features: ['RESTful architecture', 'Authentication/Authorization', 'Database management', 'Payment integration'],
-    coreTools: ['Node JS', 'Typescript', 'Redux Toolkit'],
-    image: TFHBackend,
-    codeLink: 'https://github.com/Golden-Ogbeka/church-backend',
+    title: 'Tennis Slide Api Backend API/Service',
+    slug: 'tennis-slide-api',
+    description:
+      'Tennis Slide Api Backend API/Service is a backend API/service. Key features: Real-time Communication, Payment Gateway Integration. Built with Express JS, MongoDB, Socket.IO.',
+    features: ['Real-time Communication', 'Payment Gateway Integration'],
+    coreTools: ['Express JS', 'MongoDB', 'Socket.IO', 'Stripe'],
+    image: placeholderImage,
+    apiLink: 'https://documenter.getpostman.com/view/11204995/2sA3rxqDJV',
     screenshots: [],
   },
   {
-    name: 'Jompstart',
-    slug: 'jompstart',
-    description: 'Worked on the user application for Jompstart. It is an application that gives users access to credit facilities.',
-    features: ['Credit scoring application', 'Loan management', 'Repayment tracking', 'User authentication'],
-    coreTools: ['React JS', 'Typescript', 'Redux Toolkit', 'Tailwindcss'],
-    image: JompStart,
-    liveLink: 'https://www.jompstart.com/',
+    title: 'A1quest Admin Web Web Project',
+    slug: 'a1quest-admin-web',
+    description:
+      'A1quest Admin Web Web Project is a admin dashboard web application. Key features: Data Visualization & Analytics Dashboard, Complex State Management. Built with Redux, Redux Toolkit, Jest.',
+    features: ['Data Visualization & Analytics Dashboard', 'Complex State Management'],
+    coreTools: ['Redux', 'Redux Toolkit', 'Jest', 'React JS', 'Recharts', 'Tailwind CSS'],
+    image: A1Quest,
     screenshots: [],
   },
+
   {
-    name: 'Landshop Admin',
-    slug: 'landshop-admin',
-    description: 'Built the admin dashboard for Landshop. It is an application that provides real estate investment opportunities.',
-    features: ['Property listings management', 'Investor portfolio tracking', 'Transaction monitoring', 'Admin reporting'],
-    coreTools: ['React JS'],
+    title: 'A1quest Web Next',
+    slug: 'a1quest-web',
+    description:
+      'A1quest Web Next is a Next.js web application. Key features: Firebase Integration, Payment Gateway Integration. Built with React JS, Redux, Redux Toolkit.',
+    features: [
+      'Firebase Integration',
+      'Payment Gateway Integration',
+      'Data Visualization & Analytics Dashboard',
+      'Complex State Management',
+    ],
+    coreTools: [
+      'React JS',
+      'Redux',
+      'Redux Toolkit',
+      'Next JS',
+      'Firebase',
+      'Flutterwave',
+      'Recharts',
+      'Tailwind CSS',
+    ],
+    image: A1Quest,
+    screenshots: [],
+    liveLink: 'https://a1quest.com/',
+  },
+
+  {
+    title: 'Cravings Admin Frontend Web Project',
+    slug: 'cravings-admin-frontend',
+    description:
+      'Cravings Admin Frontend Web Project is a admin dashboard web application. Key features: Real-time Communication, Data Visualization & Analytics Dashboard. Built with React JS, Material UI, Jest.',
+    features: [
+      'Real-time Communication',
+      'Data Visualization & Analytics Dashboard',
+      'Admin Management System',
+    ],
+    coreTools: ['React JS', 'Material UI', 'Jest', 'Chart.js', 'Socket.IO'],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Cravings Web Frontend Web Project',
+    slug: 'cravings-web-frontend',
+    description:
+      'Cravings Web Frontend Web Project is a web application. Key features: Data Visualization & Analytics Dashboard. Built with React JS, Material UI, Jest.',
+    features: ['Data Visualization & Analytics Dashboard'],
+    coreTools: ['React JS', 'Material UI', 'Jest', 'Chart.js'],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Cravings Logistics Client Side Next',
+    slug: 'cravings-logistics-client-side',
+    description:
+      'Cravings Logistics Client Side Next is a Next.js web application. Key features: Complex State Management. Built with Redux, Redux Toolkit, Next JS.',
+    features: ['Complex State Management'],
+    coreTools: ['Redux', 'Redux Toolkit', 'Next JS', 'React JS'],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Gatsby Starter Hello World Web Project',
+    slug: 'keyla-site-Frontend',
+    description:
+      'Gatsby Starter Hello World Web Project is a web application. Key features: Responsive UI Layout, Component-driven Architecture. Built with Styled Components, React JS.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Styled Components', 'React JS'],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Koneqtor Admin Frontend Web Project',
+    slug: 'koneqtor-admin-frontend',
+    description:
+      'Koneqtor Admin Frontend Web Project is a admin dashboard web application. Key features: Complex State Management. Built with Redux, Redux Toolkit, Jest.',
+    features: ['Complex State Management'],
+    coreTools: ['Redux', 'Redux Toolkit', 'Jest', 'React JS', 'Tailwind CSS'],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Koneqtor Frontend Next',
+    slug: 'koneqtor-frontend',
+    description:
+      'Koneqtor Frontend Next is a Next.js web application. Key features: Real-time Communication, Complex State Management. Built with Redux, Redux Toolkit, React JS.',
+    features: ['Real-time Communication', 'Complex State Management'],
+    coreTools: [
+      'Redux',
+      'Redux Toolkit',
+      'React JS',
+      'Next JS',
+      'Socket.IO',
+      'Tailwind CSS',
+    ],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Landshop Adminpanel Web Project',
+    slug: 'landshop-adminpanel',
+    description:
+      'Landshop Adminpanel Web Project is a admin dashboard web application. Key features: Complex State Management. Built with Redux, Redux Toolkit, Jest.',
+    features: ['Complex State Management'],
+    coreTools: ['Redux', 'Redux Toolkit', 'Jest', 'React JS', 'Tailwind CSS'],
     image: LandshopAdmin,
-    liveLink: 'https://landshop.ng/',
     screenshots: [],
   },
   {
-    name: 'The Chicken Universe',
-    slug: 'the-chicken-universe',
-    description: 'This app was built to connect buyers and sellers of chicken products together. It also includes forums and groups to help build communities and interaction between poultry farmers.',
-    features: ['Digital marketplace', 'Community forums', 'Real-time chat', 'Order management'],
-    coreTools: ['Express JS', 'EJS', 'MongoDB', 'JWT', 'Socket.IO', 'React JS', 'Bootstrap'],
-    liveLink: 'https://thechickenuniverse.onrender.com/',
-    image: TCU,
+    title: 'Ship Africa Admin Web GraphQL Service',
+    slug: 'ship-africa-admin-web',
+    description:
+      'Ship Africa Admin Web GraphQL Service is a admin dashboard web application. Key features: GraphQL API Integration, Complex State Management. Built with Apollo GraphQL, Apollo Client, Redux.',
+    features: ['GraphQL API Integration', 'Complex State Management'],
+    coreTools: [
+      'Apollo GraphQL',
+      'Apollo Client',
+      'Redux',
+      'Redux Toolkit',
+      'Jest',
+      'React JS',
+      'GraphQL',
+      'Tailwind CSS',
+    ],
+    image: placeholderImage,
     screenshots: [],
   },
   {
-    name: 'VFN Website',
-    slug: 'vfn-website',
-    description: 'Website for Value Female Network. A youth-led, registered, non-governmental organization that seeks to establish the health and rights of women and girls in local communities.',
-    features: ['Informational pages', 'Donation portal', 'Volunteer registration', 'Blog updates'],
-    coreTools: ['NextJS', 'Tailwind CSS', 'TypeScript'],
+    title: 'Ship Africa Web Next',
+    slug: 'ship-africa-web',
+    description:
+      'Ship Africa Web Next is a Next.js web application. Key features: GraphQL API Integration, Complex State Management. Built with Apollo GraphQL, Apollo Client, React JS.',
+    features: ['GraphQL API Integration', 'Complex State Management'],
+    coreTools: [
+      'Apollo GraphQL',
+      'Apollo Client',
+      'React JS',
+      'Redux',
+      'Redux Toolkit',
+      'Next JS',
+      'GraphQL',
+      'Tailwind CSS',
+    ],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Shipmust Web Web Project',
+    slug: 'shipmust-web',
+    description:
+      'Shipmust Web Web Project is a web application. Key features: Responsive UI Layout, Component-driven Architecture. Built with JavaScript, Node.js.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['JavaScript', 'Node.js'],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Shipplug Vue/Nuxt Web App',
+    slug: 'shipplug',
+    description:
+      'Shipplug Vue/Nuxt Web App is a Vue/Nuxt web application. Key features: Responsive UI Layout, Component-driven Architecture. Built with Vue JS, Tailwind CSS.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Vue JS', 'Tailwind CSS'],
+    image: placeholderImage,
+    screenshots: [],
+  },
+  {
+    title: 'Transaction Viewer Root Web Project',
+    slug: 'transaction-viewer',
+    description:
+      'Transaction Viewer Root Web Project is a web application. Key features: Responsive UI Layout, Component-driven Architecture. Built with JavaScript, Node.js.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['JavaScript', 'Node.js'],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Value Female Network Next',
+    slug: 'value-female-network',
+    description:
+      'Value Female Network Next is a Next.js web application. Key features: Complex State Management, Financial Transaction Management. Built with Redux, Redux Toolkit, Next JS.',
+    features: ['Complex State Management', 'Financial Transaction Management'],
+    coreTools: ['Redux', 'Redux Toolkit', 'Next JS', 'React JS', 'Tailwind CSS'],
+    image: placeholderImage,
+    screenshots: [],
     codeLink: 'https://github.com/Golden-Ogbeka/value-female-network',
     liveLink: 'https://value-female-network.vercel.app/',
-    image: VFN,
-    screenshots: [],
   },
+
   {
-    name: 'White Pace',
-    slug: 'white-pace',
-    description: 'UI reproduction for a Saas Landing Page.',
-    features: ['Responsive layout', 'Carousel implementations', 'Modern UI design'],
-    coreTools: ['Vue JS', 'Tailwind CSS', 'TypeScript', 'Vue3 Carousel'],
-    codeLink: 'https://github.com/Golden-Ogbeka/saas-landing-page-vue',
-    liveLink: 'https://saas-landing-page-vue.vercel.app/',
-    designLink: 'https://www.figma.com/community/file/1156860863353724933',
-    image: Whitepace,
+    title: 'Authentication Api Backend API/Service',
+    slug: 'authentication-api',
+    description:
+      'Authentication Api Backend API/Service is a backend API/service. Key features: Responsive UI Layout, Component-driven Architecture. Built with Express JS, MongoDB.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Express JS', 'MongoDB'],
+    image: placeholderImage,
     screenshots: [],
+    apiLink: 'https://documenter.getpostman.com/view/11204995/UVR4M9dS',
   },
+
   {
-    name: 'Boldo',
-    slug: 'boldo',
-    description: 'UI reproduction for Boldo Design by Edgar Allan in Figma Community.',
-    features: ['Pixel-perfect conversion', 'Mobile responsiveness', 'Interactive components'],
-    coreTools: ['NextJS', 'Tailwind CSS', 'TypeScript'],
-    codeLink: 'https://github.com/Golden-Ogbeka/Boldo-Design-Implementation',
-    liveLink: 'https://boldo-design-implementation.vercel.app/',
-    designLink: 'https://www.figma.com/community/file/1081611224529759785',
+    title: 'Autocomplete Component Web Project',
+    slug: 'autocomplete-component',
+    description:
+      'Autocomplete Component Web Project is a web application. Key features: Responsive UI Layout, Component-driven Architecture. Built with Jest, React JS.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Jest', 'React JS'],
+    image: placeholderImage,
+    screenshots: [],
+    liveLink: 'https://autocomplete-component-golden.vercel.app/',
+    codeLink: 'https://github.com/Golden-Ogbeka/autocomplete-component',
+  },
+
+  {
+    title: 'Boldo Design Implementation Next',
+    slug: 'boldo-design-implementation',
+    description:
+      'Boldo Design Implementation Next is a Next.js web application. Key features: Responsive UI Layout, Component-driven Architecture. Built with Next JS, React JS, Tailwind CSS.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Next JS', 'React JS', 'Tailwind CSS'],
     image: Boldo,
     screenshots: [],
+    liveLink: 'https://boldo-design-implementation.vercel.app/',
+    codeLink: 'https://github.com/Golden-Ogbeka/Boldo-Design-Implementation',
+  },
+
+  {
+    title: 'Ceejayne Backend API/Service',
+    slug: 'ceejayne',
+    description:
+      'Ceejayne Backend API/Service is a backend API/service. Key features: Responsive UI Layout, Component-driven Architecture. Built with Express JS.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Express JS'],
+    image: placeholderImage,
+    screenshots: [],
   },
   {
-    name: 'E-Bike',
+    title: 'E Bike Web Project',
     slug: 'e-bike',
-    description: 'UI reproduction for an E-Bike system using Lootie Files for animations.',
-    features: ['Lottie animations', 'Product carousel', 'Interactive UI elements'],
-    coreTools: ['React JS', 'Material UI', 'Lootie Animations', 'React Multi Carousel'],
-    codeLink: 'https://github.com/Golden-Ogbeka/e-bike',
-    liveLink: 'https://e-bike-by-golden-ogbeka.vercel.app/',
+    description:
+      'E Bike Web Project is a web application. Key features: Responsive UI Layout, Component-driven Architecture. Built with React JS, Material UI, Jest.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['React JS', 'Material UI', 'Jest'],
     image: EBike,
     screenshots: [],
+    codeLink: 'https://github.com/Golden-Ogbeka/e-bike',
+    liveLink: 'https://e-bike-by-golden-ogbeka.vercel.app/',
   },
+
   {
-    name: 'Library App',
-    slug: 'library-app',
-    description: 'A basic implementation of a book purchase system with cart and search features.',
-    features: ['Book search', 'Shopping cart', 'State management'],
-    coreTools: ['React JS', 'Redux Toolkit', 'React Elastic Carousel'],
-    liveLink: 'https://library-app-sage.vercel.app/',
-    codeLink: 'https://github.com/Golden-Ogbeka/library-app',
-    image: Library,
-    screenshots: [],
-  },
-  {
-    name: 'Social News',
-    slug: 'social-news',
-    description: 'A web application where users can create posts and comment on posts from other users.',
-    features: ['Post creation', 'Commenting system', 'User authentication'],
-    coreTools: ['React JS', 'Tailwind CSS', 'Express JS', 'Node JS', 'Mongo DB'],
-    codeLink: 'https://github.com/Golden-Ogbeka/Social-News',
-    liveLink: 'https://social-news.onrender.com/',
-    designLink: 'https://www.figma.com/file/5VJBI6mmPQ3KA2dbPgLMnF/Social-News?node-id=0%3A1',
-    apiLink: 'https://www.postman.com/Golden-Ogbeka/workspace/social-news/collection/11204995-032cdcbe-2616-4307-bfd1-8c49f88fe902',
-    image: SocialNews,
-    screenshots: [],
-  },
-  {
-    name: 'Glow Stopper',
-    slug: 'glow-stopper',
-    description: 'Web Application for Glow Stopper - An online cloth delivery store.',
-    features: ['E-commerce product listing', 'Cart checkout', 'User accounts'],
-    coreTools: ['Express JS', 'MySQL', 'JWT', 'React JS', 'Material UI'],
-    codeLink: 'https://github.com/Golden-Ogbeka/glow_stopper',
-    designLink: 'https://www.figma.com/file/Ydk3iHnNJxHH31HxQQXg9W/Glow-Stopper?node-id=40%3A33',
-    image: GlowStopper,
-    screenshots: [],
-  },
-  {
-    name: 'Find IT',
+    title: 'Find It Backend API/Service',
     slug: 'find-it',
-    description: 'The app allows search for any query by specifying the exact location you are interested in. You are allowed to specify the Latitude and Longitude coordinates as well as the location radius in meters.',
-    features: ['Location-based search', 'Google Maps integration', 'Custom radius filtering'],
-    coreTools: ['React JS', 'Material UI', 'Node JS', 'Google Maps Services'],
-    liveLink: 'https://find-it-by-golden-ogbeka.cyclic.app/',
-    designLink: 'https://www.figma.com/file/v06s62gpM0hZ7ny0RKW6qU/Find-IT?node-id=0%3A1',
-    codeLink: 'https://github.com/Golden-Ogbeka/Find-It',
+    description:
+      'Find It Backend API/Service is a backend API/service. Key features: Responsive UI Layout, Component-driven Architecture. Built with Express JS.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Express JS'],
     image: FindIt,
     screenshots: [],
   },
+
   {
-    name: 'Product Catalog',
-    slug: 'product-catalog',
-    description: 'A landing page with products, details and images gotten from Unsplash API.',
-    features: ['API Integration', 'Product display grid', 'Dynamic content loading'],
-    coreTools: ['React JS', 'Material UI', 'Node JS', 'Unsplash-JS', 'Node-Fetch'],
-    liveLink: 'https://product-catalog-unsplash.cyclic.app/',
-    codeLink: 'https://github.com/Golden-Ogbeka/Product-Catalog-with-Unsplash-API',
+    title: 'Glow Stopper Backend API/Service',
+    slug: 'glow-stopper',
+    description:
+      'Glow Stopper Backend API/Service is a backend API/service. Key features: Responsive UI Layout, Component-driven Architecture. Built with Express JS.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Express JS'],
+    image: GlowStopper,
+    screenshots: [],
+  },
+
+  {
+    title: 'Library App Web Project',
+    slug: 'library-app',
+    description:
+      'Library App Web Project is a web application. Key features: Complex State Management. Built with Redux, Redux Toolkit, Jest.',
+    features: ['Complex State Management'],
+    coreTools: ['Redux', 'Redux Toolkit', 'Jest', 'React JS'],
+    image: Library,
+    screenshots: [],
+  },
+
+  {
+    title: 'Mini Todo App Server Backend API/Service',
+    slug: 'mini-todo-app-server',
+    description:
+      'Mini Todo App Server Backend API/Service is a backend API/service. Key features: Responsive UI Layout, Component-driven Architecture. Built with Express JS.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Express JS'],
+    image: Todo,
+    screenshots: [],
+  },
+
+  {
+    title: 'Otk Contact Manager Web Project',
+    slug: 'otk-contact-manager',
+    description:
+      'Otk Contact Manager Web Project is a web application. Key features: Responsive UI Layout, Component-driven Architecture. Built with React JS.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['React JS'],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Product Catalog With Unsplash Api Backend API/Service',
+    slug: 'product-catalog-with-unsplash-api',
+    description:
+      'Product Catalog With Unsplash Api Backend API/Service is a backend API/service. Key features: Responsive UI Layout, Component-driven Architecture. Built with Express JS.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Express JS'],
     image: ProductCatalog,
     screenshots: [],
   },
+
   {
-    name: 'Todo List',
-    slug: 'todo-list',
-    description: 'To-do List with Add and Delete Task functionalities.',
-    features: ['Task creation', 'Task deletion', 'Persistent storage'],
-    coreTools: ['React JS', 'Material UI', 'Node JS', 'Mongo DB'],
-    liveLink: 'https://to-do-list-by-golden-ogbeka.cyclic.app/',
-    codeLink: 'https://github.com/Golden-Ogbeka/To-do-List',
-    image: Todo,
+    title: 'Risevest Homepage Build Web Project',
+    slug: 'risevest-homepage-build',
+    description:
+      'Risevest Homepage Build Web Project is a web application. Key features: Responsive UI Layout, Component-driven Architecture. Built with Jest, React JS.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Jest', 'React JS'],
+    image: placeholderImage,
+    screenshots: [],
+    liveLink: 'https://risevest-homepage.vercel.app/',
+    codeLink: 'https://github.com/Golden-Ogbeka/risevest-homepage-build',
+  },
+
+  {
+    title: 'Saas Landing Page Vue Vue/Nuxt Web App',
+    slug: 'saas-landing-page-vue',
+    description:
+      'Saas Landing Page Vue Vue/Nuxt Web App is a Vue/Nuxt web application. Key features: Responsive UI Layout, Component-driven Architecture. Built with Vue JS, Tailwind CSS.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Vue JS', 'Tailwind CSS'],
+    image: placeholderImage,
+    screenshots: [],
+    codeLink: 'https://github.com/Golden-Ogbeka/saas-landing-page-vue',
+    liveLink: 'https://saas-landing-page-vue.vercel.app/',
+  },
+
+  {
+    title: 'Secure Shift Api Backend API/Service',
+    slug: 'secure-shift-api',
+    description:
+      'Secure Shift Api Backend API/Service is a backend API/service. Key features: Responsive UI Layout, Component-driven Architecture. Built with Express JS, Jest.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Express JS', 'Jest'],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Simple Cart Web Project',
+    slug: 'simple-cart',
+    description:
+      'Simple Cart Web Project is a web application. Key features: Responsive UI Layout, Component-driven Architecture. Built with Jest, React JS.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Jest', 'React JS'],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Ocpus Client Next',
+    slug: 'ocpus-client',
+    description:
+      'Ocpus Client Next is a React Native mobile app. Key features: Real-time Communication, GraphQL API Integration. Built with Apollo GraphQL, Apollo Client, React JS.',
+    features: [
+      'Real-time Communication',
+      'GraphQL API Integration',
+      'Complex State Management',
+    ],
+    coreTools: [
+      'Apollo GraphQL',
+      'Apollo Client',
+      'React JS',
+      'React Native',
+      'Redux',
+      'Redux Toolkit',
+      'GraphQL',
+      'Next JS',
+      'Socket.IO',
+    ],
+    image: Ocpus,
+    screenshots: [],
+  },
+
+  {
+    title: 'Zwilt Multiplatform Client Next',
+    slug: 'zwilt-client',
+    description:
+      'Zwilt Multiplatform Client Next is a React Native mobile app. Key features: Real-time Communication, GraphQL API Integration. Built with Apollo GraphQL, Apollo Client, React JS.',
+    features: [
+      'Real-time Communication',
+      'GraphQL API Integration',
+      'Data Visualization & Analytics Dashboard',
+      'Complex State Management',
+    ],
+    coreTools: [
+      'Apollo GraphQL',
+      'Apollo Client',
+      'React JS',
+      'Material UI',
+      'Redux',
+      'Redux Toolkit',
+      'GraphQL',
+      'Next JS',
+      'React Native',
+      'Recharts',
+      'Socket.IO',
+      'Styled Components',
+    ],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Switch React Native Mobile App',
+    slug: 'switch3.0',
+    description:
+      'Switch React Native Mobile App is a React Native mobile app. Key features: Firebase Integration, Complex State Management. Built with React JS, React Native, Firebase.',
+    features: ['Firebase Integration', 'Complex State Management'],
+    coreTools: ['React JS', 'React Native', 'Firebase', 'Redux', 'Jest'],
+    image: Switch,
+    screenshots: [],
+  },
+
+  {
+    title: 'Tcu Mobile React Native Mobile App',
+    slug: 'tcu-mobile',
+    description:
+      'Tcu Mobile React Native Mobile App is a React Native mobile app. Key features: Mobile App Capabilities. Built with React JS, React Native, Jest.',
+    features: ['Mobile App Capabilities'],
+    coreTools: ['React JS', 'React Native', 'Jest'],
+    image: TCU,
+    screenshots: [],
+  },
+
+  {
+    title: 'Thechickenuniverse Backend API/Service',
+    slug: 'thechickenuniverse',
+    description:
+      'Thechickenuniverse Backend API/Service is a backend API/service. Key features: Real-time Communication. Built with Express JS, MongoDB, Socket.IO.',
+    features: ['Real-time Communication'],
+    coreTools: ['Express JS', 'MongoDB', 'Socket.IO'],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Account Connect App Root Web Project',
+    slug: 'account-connect-app',
+    description:
+      'Account Connect App Root Web Project is a web application. Key features: Responsive UI Layout, Component-driven Architecture. Built with JavaScript, Node.js.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['JavaScript', 'Node.js'],
+    image: placeholderImage,
+    screenshots: [],
+  },
+
+  {
+    title: 'Tfh Admin Frontend Web Project',
+    slug: 'tfh-admin-frontend',
+    description:
+      'Tfh Admin Frontend Web Project is a admin dashboard web application. Key features: Complex State Management, Admin Management System. Built with Redux, Redux Toolkit, React JS.',
+    features: ['Complex State Management', 'Admin Management System'],
+    coreTools: ['Redux', 'Redux Toolkit', 'React JS', 'Tailwind CSS'],
+    image: TFHAdmin,
+    screenshots: [],
+  },
+
+  {
+    title: 'Tfh Admin Backend Backend API/Service',
+    slug: 'tfh-backend',
+    description:
+      'Tfh Admin Backend Backend API/Service is a backend API/service. Key features: Responsive UI Layout, Component-driven Architecture. Built with Express JS, MongoDB.',
+    features: ['Responsive UI Layout', 'Component-driven Architecture'],
+    coreTools: ['Express JS', 'MongoDB'],
+    image: TFHAdmin,
+    screenshots: [],
+  },
+
+  {
+    title: 'Tfh Website Next',
+    slug: 'tfh-website',
+    description:
+      'Tfh Website Next is a Next.js web application. Key features: Complex State Management. Built with Redux, Redux Toolkit, React JS.',
+    features: ['Complex State Management'],
+    coreTools: ['Redux', 'Redux Toolkit', 'React JS', 'Next JS', 'Tailwind CSS'],
+    image: TFHWebsite,
+    screenshots: [],
+  },
+
+  {
+    title: 'Tfhmobile React Native Mobile App',
+    slug: 'tfhmobile',
+    description:
+      'Tfhmobile React Native Mobile App is a React Native mobile app. Key features: Complex State Management, Mobile App Capabilities. Built with React JS, React Native, Redux.',
+    features: ['Complex State Management', 'Mobile App Capabilities'],
+    coreTools: ['React JS', 'React Native', 'Redux', 'Redux Toolkit', 'Jest'],
+    image: placeholderImage,
     screenshots: [],
   },
 ];

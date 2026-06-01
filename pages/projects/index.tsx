@@ -26,20 +26,20 @@ export default function Projects() {
           {ProjectsData.map((project, index) => (
             <Link key={project.slug} href={`/projects/${project.slug}`}>
               <a
-                className='minimal-card flex flex-col group overflow-hidden block animate-fade-in-up'
+                className='minimal-card flex flex-col group overflow-hidden animate-fade-in-up'
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className='relative w-full aspect-video bg-zinc-200 dark:bg-zinc-800 overflow-hidden'>
                   {project.screenshots && project.screenshots.length > 0 ? (
-                    <img
+                    <Image
                       src={project.screenshots[0]}
-                      alt={`${project.name} thumbnail`}
+                      alt={`${project.title} thumbnail`}
                       className='object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500'
                     />
                   ) : (
                     <Image
                       src={project.image}
-                      alt={`${project.name} thumbnail`}
+                      alt={`${project.title} thumbnail`}
                       layout='fill'
                       objectFit='cover'
                       className='transform group-hover:scale-105 transition-transform duration-500'
@@ -48,7 +48,7 @@ export default function Projects() {
                 </div>
                 <div className='p-6 flex-1 flex flex-col'>
                   <h3 className='text-xl font-semibold mb-2 group-hover:text-accent transition-colors'>
-                    {project.name}
+                    {project.title}
                   </h3>
                   <p className='text-zinc-600 dark:text-zinc-400 line-clamp-3 mb-4 flex-1'>
                     {project.description}

@@ -16,7 +16,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
   return (
     <AppLayout>
       <HeadElement
-        pageTitle={`${project.name} | Golden Ogbeka`}
+        pageTitle={`${project.title} | Golden Ogbeka`}
         description={project.description}
       />
 
@@ -42,7 +42,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
 
         <header className='mb-12 animate-fade-in-up'>
           <h1 className='text-4xl md:text-5xl lg:text-6xl font-display font-semibold mb-6'>
-            {project.name}
+            {project.title}
           </h1>
           <p className='text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl leading-relaxed'>
             {project.description}
@@ -160,7 +160,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
         </div>
 
         {project.screenshots && project.screenshots.length > 0 && (
-          <ImageGallery screenshots={project.screenshots} projectName={project.name} />
+          <ImageGallery screenshots={project.screenshots} projectName={project.title} />
         )}
 
         <VideoDemo videoLink={project.videoDemoLink} />
