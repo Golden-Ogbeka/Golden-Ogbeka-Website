@@ -45,14 +45,14 @@ export default function FeaturedProjects() {
                 {project.screenshots && project.screenshots.length > 0 ? (
                   <Image
                     src={project.screenshots[0]}
-                    alt={`${project.name} thumbnail`}
+                    alt={`${project.title} thumbnail`}
                     className='object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500'
                     layout='fill'
                   />
                 ) : (
                   <Image
                     src={project.image}
-                    alt={`${project.name} thumbnail`}
+                    alt={`${project.title} thumbnail`}
                     layout='fill'
                     objectFit='cover'
                     className='transform group-hover:scale-105 transition-transform duration-500'
@@ -61,7 +61,7 @@ export default function FeaturedProjects() {
               </div>
               <div className='p-8 flex-1 flex flex-col'>
                 <h3 className='text-2xl font-semibold mb-3 group-hover:text-accent transition-colors'>
-                  {project.name}
+                  {project.title}
                 </h3>
                 <p className='text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-6 flex-1 text-lg'>
                   {project.description}
