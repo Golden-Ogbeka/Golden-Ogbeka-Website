@@ -12,7 +12,7 @@ function Navbar() {
   const { isDark } = useAppSelector((state) => state.darkMode);
 
   return (
-    <nav className='py-6 px-4 sm:px-6 lg:px-8 w-full max-w-screen-2xl mx-auto flex flex-row items-center justify-between'>
+    <nav aria-label='Main navigation' className='py-6 px-4 sm:px-6 lg:px-8 w-full max-w-screen-2xl mx-auto flex flex-row items-center justify-between'>
       <Link href='/'>
         <a className='flex-shrink-0 flex items-center gap-3'>
           <Image

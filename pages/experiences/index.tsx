@@ -22,7 +22,7 @@ export default function Experiences() {
 
         <div className='space-y-12'>
           {ExperiencesData.map((exp, index) => (
-            <div
+            <article
               key={index}
               className='minimal-card p-8 animate-fade-in-up'
               style={{ animationDelay: `${index * 0.1}s` }}
@@ -64,7 +64,7 @@ export default function Experiences() {
                   </ul>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

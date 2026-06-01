@@ -37,7 +37,10 @@ const OpenSourcePage: NextPage = () => {
 
   return (
     <AppLayout>
-      <HeadElement pageTitle='Open Source Projects | Golden Ogbeka' />
+      <HeadElement
+        pageTitle='Open Source Projects | Golden Ogbeka'
+        description='A collection of open source repositories, libraries, and templates built and shared by Golden Ogbeka with the developer community.'
+      />
 
       {/* Hero Section */}
       <div className='min-h-screen pt-32 pb-12'>
