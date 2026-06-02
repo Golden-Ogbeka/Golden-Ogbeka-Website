@@ -6,7 +6,6 @@ import Alerzo3 from '../public/images/Projects/alerzo-admin-web/3.png';
 import Alerzo4 from '../public/images/Projects/alerzo-admin-web/4.png';
 import Alerzo5 from '../public/images/Projects/alerzo-admin-web/5.png';
 import Boldo from '../public/images/Projects/boldo.png';
-import CAPAdmin from '../public/images/Projects/cap-admin.png';
 import CIBWeb1 from '../public/images/Projects/cib-web/1.png';
 import CIBWeb2 from '../public/images/Projects/cib-web/2.png';
 import CIBWeb3 from '../public/images/Projects/cib-web/3.png';
@@ -48,7 +47,22 @@ import Truevoix2 from '../public/images/Projects/truevoix-web/2.png';
 import Truevoix3 from '../public/images/Projects/truevoix-web/3.png';
 import Truevoix4 from '../public/images/Projects/truevoix-web/4.png';
 import Truevoix5 from '../public/images/Projects/truevoix-web/5.png';
-import Veedez from '../public/images/Projects/veedez.png';
+import Veedez1 from '../public/images/Projects/veedez-web-app/1.png';
+import Veedez2 from '../public/images/Projects/veedez-web-app/2.png';
+import Veedez3 from '../public/images/Projects/veedez-web-app/3.png';
+import Veedez4 from '../public/images/Projects/veedez-web-app/4.png';
+import Veedez5 from '../public/images/Projects/veedez-web-app/5.png';
+import VeedezWeb1 from '../public/images/Projects/veedez-website/1.png';
+import VeedezWeb2 from '../public/images/Projects/veedez-website/2.png';
+import VeedezWeb3 from '../public/images/Projects/veedez-website/3.png';
+import VeedezWeb4 from '../public/images/Projects/veedez-website/4.png';
+import VeedezWeb5 from '../public/images/Projects/veedez-website/5.png';
+import Zeebly1 from '../public/images/Projects/zeebly-admin/1.png';
+import Zeebly2 from '../public/images/Projects/zeebly-admin/2.png';
+import Zeebly3 from '../public/images/Projects/zeebly-admin/3.png';
+import Zeebly4 from '../public/images/Projects/zeebly-admin/4.png';
+import Zeebly5 from '../public/images/Projects/zeebly-admin/5.png';
+
 export interface ProjectType {
   title: string;
   slug: string;
@@ -184,6 +198,130 @@ const Projects: ProjectType[] = [
     featured: true,
     videoDemoLink: 'https://www.youtube.com/watch?v=cFuj9sNzlvk',
   },
+
+  {
+    title: 'Lexis Kitchen Inquiry Portal',
+    slug: 'lexis-kitchen',
+    description:
+      'A service inquiry portal for Lexis Kitchen with menu browsing, reservation request forms, and email-based booking workflows.',
+    features: [
+      'Menu browsing and service inquiry pages',
+      'Reservation and contact form workflows',
+      'Email integration for booking requests',
+      'Validated form inputs with Formik and Yup',
+      'Responsive restaurant-service presentation',
+    ],
+    coreTools: [
+      'Next.js',
+      'Formik',
+      'Yup',
+      'Nodemailer',
+      'React Select',
+      'Axios',
+      'React',
+      'React DOM',
+      'Tailwind CSS',
+      'Postcss',
+    ],
+    image: LexisKitchen1,
+    screenshots: [
+      LexisKitchen1,
+      LexisKitchen2,
+      LexisKitchen3,
+      LexisKitchen4,
+      LexisKitchen5,
+    ],
+    featured: true,
+    videoDemoLink: 'https://www.youtube.com/watch?v=Lq-I5ZWkE9c',
+    liveLink: 'https://inquiry.lexkitchen.com/',
+  },
+
+  {
+    title: 'Veedez Merchant Operations and Business Management Platform',
+    slug: 'veedez-web-app',
+    description:
+      'A comprehensive business operations platform designed for merchants to manage transactions, monitor business performance, process payments, and gain real-time operational insights. The application provides centralized dashboards for financial activities, customer interactions, and business analytics while leveraging secure Firebase-based authentication and access control. Built to streamline merchant workflows, the platform supports payment processing, transaction monitoring, reporting, and data-driven decision-making through an intuitive web interface.',
+    features: [
+      'Comprehensive merchant operations dashboard providing real-time visibility into business performance, transaction activity, and operational metrics',
+      'Integrated payment processing and checkout infrastructure supporting seamless transaction execution and payment management workflows',
+      'Advanced business analytics and reporting tools delivering insights into revenue trends, transaction volumes, customer behavior, and operational performance',
+      'Financial transaction monitoring system with detailed histories, status tracking, reconciliation support, and activity auditing',
+      'Secure Firebase-powered authentication and role-based access control ensuring protected access to business-critical resources and administrative functions',
+      'Merchant account administration tools for managing business profiles, operational settings, permissions, and user access',
+      'Real-time business intelligence dashboards enabling data-driven decision-making through interactive metrics and performance visualizations',
+      'Centralized operational management platform that streamlines payment workflows, transaction oversight, and day-to-day business activities',
+      'Flutterwave payment checkout integration for business collections',
+    ],
+    coreTools: [
+      'Redux Toolkit',
+      'Firebase',
+      'Flutterwave React V3',
+      'Framer Motion',
+      'Dayjs',
+      'React',
+      'React Redux',
+    ],
+    image: Veedez1,
+    screenshots: [Veedez1, Veedez2, Veedez3, Veedez4, Veedez5],
+    featured: true,
+    videoDemoLink: 'https://www.youtube.com/watch?v=q1s34P4gs58',
+  },
+
+  {
+    title: 'Veedez Digital Payments Marketing and Customer Acquisition Platform',
+    slug: 'veedezwebsite',
+    description:
+      "A high-conversion marketing website designed to showcase Veedez's digital payment solutions, communicate product value, and drive customer acquisition. The platform combines interactive user experiences, product storytelling, pricing presentation, and lead generation workflows to engage prospective business customers. Built with responsive design principles and performance-focused architecture, it delivers a seamless experience across devices while supporting marketing, sales, and brand positioning objectives.",
+    features: [
+      'Interactive product showcase featuring animated service demonstrations, value propositions, and customer-focused messaging for digital payment solutions',
+      'Conversion-optimized landing pages designed to guide visitors through product discovery, engagement, and lead generation journeys',
+      'Integrated lead capture and contact management workflows with email notifications, inquiry collection, and customer acquisition support',
+      'Comprehensive service, pricing, and product positioning sections that clearly communicate offerings, benefits, and business value',
+      'Responsive, mobile-first user experience built with Chakra UI, ensuring consistent performance and accessibility across devices and screen sizes',
+      'Dynamic animations and motion-driven interactions that enhance user engagement, content discovery, and brand perception',
+      'SEO-optimized information architecture and content strategy designed to improve search visibility, organic traffic, and online discoverability',
+      'Content-driven storytelling framework that communicates brand identity, product capabilities, customer success value, and market differentiation',
+      'Performance-focused frontend implementation with optimized page rendering, fast load times, and scalable component architecture',
+      'Marketing analytics and customer engagement touchpoints supporting campaign effectiveness, visitor conversion, and business growth objectives',
+    ],
+    coreTools: ['Next.js', 'React', 'Chakra UI', 'Formik', 'Framer Motion'],
+    image: VeedezWeb1,
+    screenshots: [VeedezWeb1, VeedezWeb2, VeedezWeb3, VeedezWeb4, VeedezWeb5],
+    videoDemoLink: 'https://www.youtube.com/watch?v=EkeuDEr7IXw',
+  },
+
+  {
+    title: 'Enterprise Analytics and Operations Management Dashboard',
+    slug: 'zeebly-admin',
+    description:
+      'An enterprise-grade analytics and administration platform developed for CAP Plc to provide real-time business intelligence, operational oversight, and performance monitoring. The dashboard centralizes KPI reporting, administrative workflows, user management, and data-driven decision-making through GraphQL-powered insights and interactive visualizations. Built for scalability and usability, it enables stakeholders to monitor business performance, analyze operational trends, and manage critical organizational processes from a unified interface.',
+    features: [
+      'Executive KPI dashboards providing real-time visibility into business performance, operational efficiency, and strategic performance indicators',
+      'Interactive analytics and reporting tools with dynamic data visualizations, trend analysis, and performance monitoring capabilities',
+      'GraphQL-powered data architecture enabling efficient data retrieval, intelligent caching, and responsive user experiences across large datasets',
+      'Comprehensive administrative workflow management for overseeing business operations, user activities, and organizational processes',
+      'User administration and role management capabilities with controlled access to operational data and business-critical resources',
+      'Advanced tabular data exploration tools supporting filtering, sorting, search, and detailed analysis of operational information',
+      'Operational intelligence dashboards delivering actionable insights into organizational performance, resource utilization, and business outcomes',
+      'Material UI-driven enterprise interface with reusable components, responsive layouts, and consistent design patterns',
+      'Accessible and inclusive user experience designed to support diverse enterprise users while adhering to modern accessibility standards',
+      'Scalable reporting infrastructure that empowers stakeholders to make data-driven decisions through centralized business intelligence and analytics',
+    ],
+    coreTools: [
+      'Apollo Client',
+      'Material UI',
+      'Hookform Resolvers',
+      'Loadable Component',
+      'Sentry Browser',
+      'React',
+      'Redux Toolkit',
+    ],
+    image: Zeebly1,
+    screenshots: [Zeebly1, Zeebly2, Zeebly3, Zeebly4, Zeebly5],
+    featured: true,
+    videoDemoLink: 'https://www.youtube.com/watch?v=mg3menZpkS4',
+  },
+
   {
     title: 'Corporate Banking Mobile App',
     slug: 'rova-cba-cib-ng-app-lite',
@@ -239,125 +377,7 @@ const Projects: ProjectType[] = [
     screenshots: [],
     liveLink: 'https://a1quest.com/',
   },
-  {
-    title: 'Lexis Kitchen Inquiry Portal',
-    slug: 'lexis-kitchen',
-    description:
-      'A service inquiry portal for Lexis Kitchen with menu browsing, reservation request forms, and email-based booking workflows.',
-    features: [
-      'Menu browsing and service inquiry pages',
-      'Reservation and contact form workflows',
-      'Email integration for booking requests',
-      'Validated form inputs with Formik and Yup',
-      'Responsive restaurant-service presentation',
-    ],
-    coreTools: [
-      'Next.js',
-      'Formik',
-      'Yup',
-      'Nodemailer',
-      'React Select',
-      'Axios',
-      'React',
-      'React DOM',
-      'Tailwind CSS',
-      'Postcss',
-    ],
-    image: LexisKitchen1,
-    screenshots: [
-      LexisKitchen1,
-      LexisKitchen2,
-      LexisKitchen3,
-      LexisKitchen4,
-      LexisKitchen5,
-    ],
-    featured: true,
-    videoDemoLink: 'https://www.youtube.com/watch?v=Lq-I5ZWkE9c',
-  },
 
-  {
-    title: 'Veedez Marketing Website',
-    slug: 'veedezwebsite',
-    description:
-      'A marketing website for Veedez with animated service showcase, pricing and product positioning, lead capture forms, and responsive Chakra UI sections.',
-    features: [
-      'Animated hero and feature sections for digital payment services',
-      'Lead capture contact forms with email integration',
-      'Service and pricing presentation for business customers',
-      'Responsive Chakra UI page structure and motion interactions',
-      'SEO-friendly landing page design with content-driven storytelling',
-    ],
-    coreTools: [
-      'Next.js',
-      'React',
-      'Chakra UI',
-      'Emotion',
-      'Formik',
-      'Framer Motion',
-      'EmailJS Browser',
-      'React Slick',
-      'Isomorphic Dompurify',
-      'Next.js Third Parties',
-    ],
-    image: Veedez,
-    screenshots: [],
-  },
-  {
-    title: 'Veedez Business Operations Web App',
-    slug: 'veedez-web-app',
-    description:
-      'A merchant operations web portal for Veedez with business transaction dashboards, payment checkout, analytics, and Firebase-backed access control.',
-    features: [
-      'Merchant dashboard with transaction history and analytics',
-      'Flutterwave payment checkout integration for business collections',
-      'Customer and order management workflows',
-      'Firebase authentication and session handling',
-      'GraphQL-powered client state caching and navigation',
-    ],
-    coreTools: [
-      'Redux Toolkit',
-      'URQL',
-      'Firebase',
-      'Flutterwave React V3',
-      'Framer Motion',
-      'Axios',
-      'Dayjs',
-      'Clsx',
-      'React',
-      'React Redux',
-    ],
-    image: Veedez,
-    screenshots: [],
-    featured: true,
-  },
-  {
-    title: 'CAP Plc Admin Analytics Dashboard',
-    slug: 'zeebly-admin',
-    description:
-      'A CAP Plc analytics dashboard built with Apollo and Material UI, focused on KPI reporting, admin workflows, and GraphQL-powered operational insights.',
-    features: [
-      'Admin KPI dashboards with interactive reporting cards',
-      'GraphQL-driven data loading and cache-aware UI',
-      'User and operations management controls',
-      'Material UI visualization components and tabular data views',
-      'Accessible component patterns for enterprise admin users',
-    ],
-    coreTools: [
-      'Apollo Client',
-      'Material UI',
-      'Emotion',
-      'Hookform Resolvers',
-      'Loadable Component',
-      'Sentry Browser',
-      'Axios',
-      'React',
-      'Redux Toolkit',
-      'Testing Library',
-    ],
-    image: CAPAdmin,
-    screenshots: [],
-    featured: true,
-  },
   {
     title: 'TFH Marketing Website',
     slug: 'tfh-website',
