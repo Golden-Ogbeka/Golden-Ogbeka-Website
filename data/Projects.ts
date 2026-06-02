@@ -431,7 +431,6 @@ const Projects: ProjectType[] = [
     ],
     image: placeholderImage,
     screenshots: [],
-    featured: true,
   },
   {
     title: 'TFH Mobile App',
@@ -458,7 +457,6 @@ const Projects: ProjectType[] = [
       'React',
     ],
     image: placeholderImage,
-    featured: true,
     screenshots: [],
   },
 
