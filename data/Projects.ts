@@ -77,11 +77,27 @@ import CIBApp4 from '../public/images/Projects/cib-app/4.png';
 import CIBApp5 from '../public/images/Projects/cib-app/5.png';
 import CIBApp6 from '../public/images/Projects/cib-app/6.png';
 import CIBApp7 from '../public/images/Projects/cib-app/7.png';
+import CravingsLogistics1 from '../public/images/Projects/cravings-logistics/1.png';
+import CravingsLogistics2 from '../public/images/Projects/cravings-logistics/2.png';
+import CravingsLogistics3 from '../public/images/Projects/cravings-logistics/3.png';
+import CravingsLogistics4 from '../public/images/Projects/cravings-logistics/4.png';
+import CravingsLogistics5 from '../public/images/Projects/cravings-logistics/5.png';
+import KeylaWeb1 from '../public/images/Projects/keyla-website/1.png';
+import KeylaWeb2 from '../public/images/Projects/keyla-website/2.png';
+import KeylaWeb3 from '../public/images/Projects/keyla-website/3.png';
+import KeylaWeb4 from '../public/images/Projects/keyla-website/4.png';
+import KeylaWeb5 from '../public/images/Projects/keyla-website/5.png';
 import MonoWeb1 from '../public/images/Projects/mono-web/1.png';
 import MonoWeb2 from '../public/images/Projects/mono-web/2.png';
 import MonoWeb3 from '../public/images/Projects/mono-web/3.png';
 import MonoWeb4 from '../public/images/Projects/mono-web/4.png';
 import MonoWeb5 from '../public/images/Projects/mono-web/5.png';
+import Shipmust1 from '../public/images/Projects/shipmust/1.png';
+import Shipmust2 from '../public/images/Projects/shipmust/2.png';
+import Shipmust3 from '../public/images/Projects/shipmust/3.png';
+import Shipmust4 from '../public/images/Projects/shipmust/4.png';
+import Shipmust5 from '../public/images/Projects/shipmust/5.png';
+import Shipmust6 from '../public/images/Projects/shipmust/6.png';
 import TFHAdmin1 from '../public/images/Projects/tfh-admin/1.png';
 import TFHAdmin2 from '../public/images/Projects/tfh-admin/2.png';
 import TFHAdmin3 from '../public/images/Projects/tfh-admin/3.png';
@@ -260,16 +276,21 @@ const Projects: ProjectType[] = [
   },
 
   {
-    title: 'Lexis Kitchen Inquiry Portal',
+    title: 'Restaurant Reservations and Customer Engagement Platform',
     slug: 'lexis-kitchen',
     description:
-      'A service inquiry portal for Lexis Kitchen with menu browsing, reservation request forms, and email-based booking workflows.',
+      'A customer-facing hospitality platform developed for Lexis Kitchen to showcase menu offerings, streamline reservation requests, and facilitate customer engagement through digital inquiry workflows. The platform enables visitors to explore dining options, submit booking requests, inquire about catering and events, and connect with the business through a seamless and responsive user experience. Designed to support customer acquisition and service management, it combines intuitive navigation, automated communication workflows, and modern web technologies.',
     features: [
-      'Menu browsing and service inquiry pages',
-      'Reservation and contact form workflows',
-      'Email integration for booking requests',
-      'Validated form inputs with Formik and Yup',
-      'Responsive restaurant-service presentation',
+      'Comprehensive menu and service showcase featuring dining options, catering services, event offerings, and business information',
+      'Digital reservation and booking request workflows enabling customers to schedule dining experiences and submit service inquiries',
+      'Customer engagement platform supporting inquiries for catering, private events, special occasions, and hospitality services',
+      'Automated email notification system for handling reservation requests, customer communications, and booking confirmations',
+      'Formik and Yup-powered form validation ensuring accurate customer submissions and reliable inquiry processing',
+      'Responsive user experience optimized for customers browsing menus, making reservations, and exploring services across devices',
+      'Conversion-focused service presentation highlighting menu offerings, customer value propositions, and hospitality experiences',
+      'Streamlined customer onboarding journey guiding visitors from service discovery to reservation and inquiry submission',
+      'Performance-optimized frontend architecture delivering fast page loads, intuitive navigation, and seamless interactions',
+      'Digital customer acquisition platform supporting restaurant marketing, reservation management, and business growth initiatives',
     ],
     coreTools: [
       'Next.js',
@@ -853,20 +874,27 @@ const Projects: ProjectType[] = [
     screenshots: [],
   },
   {
-    title: 'Shipmust Service Website',
-    slug: 'shipmust-web',
+    title: 'ShipMust Digital Logistics and Shipment Management Platform',
+    slug: 'shipmust-web-live',
     description:
-      'A service landing website for Shipmust with product descriptions, testimonials, and responsive business content.',
+      'A modern logistics platform designed to simplify local and international shipping by connecting individuals and businesses with multiple courier providers through a single digital experience. The platform enables users to compare shipping options, obtain instant delivery quotes, book shipments, track packages in real time, and manage logistics operations through a streamlined and responsive interface. Built to support scalable logistics workflows, it delivers transparency, convenience, and operational efficiency across the shipping lifecycle.',
     features: [
-      'Service listing and capability presentation',
-      'Responsive landing page built with Vite',
-      'Customer value proposition and feature sections',
-      'Fast loading content and modern web build pipeline',
-      'Simple service showcase with clear CTAs',
+      'Multi-courier shipping platform enabling customers to compare delivery providers, pricing options, and service offerings from a single interface',
+      'Instant shipping quotation system with dynamic pricing estimates based on pickup location, destination, parcel details, and delivery requirements',
+      'End-to-end shipment booking workflows supporting local and international deliveries for individuals and businesses',
+      'Real-time package tracking capabilities providing visibility into shipment status, transit progress, and delivery milestones',
+      'Global logistics services connecting customers to local and international delivery networks through a unified digital platform',
+      'Courier partner aggregation system offering access to multiple logistics providers without requiring separate integrations',
+      'Responsive customer experience optimized for shipment discovery, quote generation, booking, payment, and delivery management',
+      'Trust-building content ecosystem featuring customer testimonials, service highlights, operational transparency, and logistics expertise',
+      'Conversion-focused landing pages designed to drive shipment bookings, customer inquiries, and business acquisition',
+      'Performance-optimized frontend architecture delivering fast page loads, seamless navigation, and scalable logistics service presentation',
     ],
-    coreTools: ['Vite', 'React', 'JavaScript', 'HTML', 'CSS'],
-    image: placeholderImage,
-    screenshots: [],
+    coreTools: ['Vite', 'React', 'Vanilla JavaScript', 'Bootstrap', 'HTML', 'CSS'],
+    image: Shipmust1,
+    screenshots: [Shipmust1, Shipmust2, Shipmust3, Shipmust4, Shipmust5, Shipmust6],
+    liveLink: 'https://shipmust.com/',
+    videoDemoLink: 'https://www.youtube.com/watch?v=s0I__qzSGew',
   },
   {
     title: 'Real Estate Investment and Crowdfunding Platform',
@@ -964,16 +992,21 @@ const Projects: ProjectType[] = [
     screenshots: [],
   },
   {
-    title: 'Cravings Logistics Client Portal',
+    title: 'Customer Logistics Inquiry and Booking Platform',
     slug: 'cravings-logistics-client-side',
     description:
-      'A logistics client portal for Cravings that manages driver bookings, route planning, delivery schedules, and customer dispatch screens.',
+      'A customer-facing logistics website developed for Cravings to showcase delivery services, communicate company capabilities, and streamline customer dropoff requests. The platform provides service information, company branding, delivery coverage details, and a simple request workflow that enables customers to initiate logistics engagements through an intuitive and responsive interface.',
     features: [
-      'Route scheduling and pickup/dropoff workflows',
-      'Driver assignment and delivery confirmation screens',
-      'Form-based service request and fulfillment tracking',
-      'Client-side state management with Redux Toolkit',
-      'Next.js integration for server-rendered logistics pages',
+      'Service-focused landing pages showcasing logistics capabilities, delivery solutions, and company offerings',
+      'Customer dropoff request workflows allowing users to submit delivery and transportation requirements',
+      'Company branding and marketing content designed to communicate service value and operational expertise',
+      'Responsive user experience optimized for service discovery and customer engagement across devices',
+      'Structured request forms with validation and guided submission workflows',
+      'Customer inquiry and communication channels supporting logistics consultations and service requests',
+      'Redux Toolkit-powered state management for handling user interactions and request workflows',
+      'Next.js-powered architecture delivering fast page rendering, SEO optimization, and scalable performance',
+      'Conversion-focused content sections designed to increase customer inquiries and service adoption',
+      'Modern logistics service presentation with intuitive navigation and streamlined user journeys',
     ],
     coreTools: [
       'Next.js',
@@ -983,39 +1016,39 @@ const Projects: ProjectType[] = [
       'Formik',
       'React Modal',
       'Yup',
-      'React',
-      'React DOM',
-      'Next Redux Wrapper',
     ],
-    image: placeholderImage,
-    screenshots: [],
+    image: CravingsLogistics1,
+    screenshots: [
+      CravingsLogistics1,
+      CravingsLogistics2,
+      CravingsLogistics3,
+      CravingsLogistics4,
+      CravingsLogistics5,
+    ],
+    videoDemoLink: 'https://www.youtube.com/watch?v=n52S6GXCMBc',
   },
+
   {
-    title: 'Keyla Gatsby Marketing Site',
+    title: 'Keyla Digital Marketing and Customer Acquisition Platform',
     slug: 'keyla-site-Frontend',
     description:
-      'A Gatsby marketing site for Keyla with static page generation, styled-components theming, and lead contact forms.',
+      'A modern digital marketing platform built for Keyla to showcase services, communicate brand value, and drive customer acquisition through engaging content and lead generation workflows. The website combines high-performance static site generation, responsive user experiences, and conversion-focused design to support marketing campaigns, customer engagement, and business growth objectives.',
     features: [
-      'Static page rendering for marketing content',
-      'Styled components theming and brand visuals',
-      'Lead capture and email contact forms',
-      'Campaign section presentation and service breakdowns',
-      'Gatsby image optimization and Netlify deployment support',
+      'High-performance static website architecture delivering fast page loads, improved SEO visibility, and optimized user experiences',
+      'Comprehensive service showcase pages communicating business offerings, customer value propositions, and brand positioning',
+      'Lead generation and customer inquiry workflows designed to convert visitors into qualified business opportunities',
+      'Styled-components powered design system providing consistent branding, reusable UI patterns, and scalable theming capabilities',
+      'Marketing-focused landing pages supporting campaign promotion, customer engagement, and business growth initiatives',
+      'Responsive user experience optimized for seamless browsing across desktop, tablet, and mobile devices',
+      'Integrated contact and email inquiry forms enabling streamlined communication between prospective customers and the business',
+      'Content-driven storytelling framework highlighting services, customer benefits, and market differentiation',
+      'Gatsby image optimization techniques improving website performance, visual quality, and loading efficiency',
+      'Scalable deployment architecture leveraging modern Jamstack principles and Netlify hosting workflows',
     ],
-    coreTools: [
-      'Gatsby',
-      'Styled Components',
-      'React',
-      'EmailJS Browser',
-      'Animate.Css',
-      'Babel Plugin Styled Components',
-      'Gatsby Plugin Image',
-      'Gatsby Plugin Sharp',
-      'Gatsby Plugin Netlify',
-      'Gatsby Plugin React Helmet',
-    ],
-    image: placeholderImage,
-    screenshots: [],
+    coreTools: ['Gatsby', 'React', 'Animate.Css'],
+    image: KeylaWeb1,
+    screenshots: [KeylaWeb1, KeylaWeb2, KeylaWeb3, KeylaWeb4, KeylaWeb5],
+    videoDemoLink: 'https://www.youtube.com/watch?v=Os2yTIBBhyI',
   },
   {
     title: 'Church Administration and Content Management Platform',
