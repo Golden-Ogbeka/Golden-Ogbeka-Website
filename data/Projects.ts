@@ -961,7 +961,7 @@ const Projects: ProjectType[] = [
     ],
     videoDemoLink: 'https://www.youtube.com/watch?v=_nPHEHTA67s',
     apiLink: 'https://documenter.getpostman.com/view/25358026/2s8ZDU5ivU',
-    liveLink: 'https://tfh-website.netlify.app/',
+    liveLink: 'https://church-website-golden.vercel.app/',
     codeLink: 'https://github.com/Golden-Ogbeka/church-backend',
   },
   {
