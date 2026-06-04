@@ -1049,6 +1049,7 @@ const Projects: ProjectType[] = [
     image: KeylaWeb1,
     screenshots: [KeylaWeb1, KeylaWeb2, KeylaWeb3, KeylaWeb4, KeylaWeb5],
     videoDemoLink: 'https://www.youtube.com/watch?v=Os2yTIBBhyI',
+    featured: true,
   },
   {
     title: 'Church Administration and Content Management Platform',
