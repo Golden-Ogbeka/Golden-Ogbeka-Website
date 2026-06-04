@@ -1,5 +1,4 @@
 import { StaticImageData } from 'next/image';
-import A1Quest from '../public/images/Projects/a1quest.png';
 import Alerzo1 from '../public/images/Projects/alerzo-admin-web/1.png';
 import Alerzo2 from '../public/images/Projects/alerzo-admin-web/2.png';
 import Alerzo3 from '../public/images/Projects/alerzo-admin-web/3.png';
@@ -39,8 +38,6 @@ import Switch4 from '../public/images/Projects/switch/4.png';
 import Switch5 from '../public/images/Projects/switch/5.png';
 import Switch from '../public/images/Projects/switch/switch.png';
 import TCU from '../public/images/Projects/tcu.png';
-import TFHAdmin from '../public/images/Projects/tfh-admin.png';
-import TFHWebsite from '../public/images/Projects/tfh-website.png';
 import Todo from '../public/images/Projects/todo.png';
 import Truevoix1 from '../public/images/Projects/truevoix-web/1.png';
 import Truevoix2 from '../public/images/Projects/truevoix-web/2.png';
@@ -57,11 +54,71 @@ import VeedezWeb2 from '../public/images/Projects/veedez-website/2.png';
 import VeedezWeb3 from '../public/images/Projects/veedez-website/3.png';
 import VeedezWeb4 from '../public/images/Projects/veedez-website/4.png';
 import VeedezWeb5 from '../public/images/Projects/veedez-website/5.png';
+import VMI1 from '../public/images/Projects/vmi-admin-web/1.png';
+import VMI2 from '../public/images/Projects/vmi-admin-web/2.png';
+import VMI3 from '../public/images/Projects/vmi-admin-web/3.png';
+import VMI4 from '../public/images/Projects/vmi-admin-web/4.png';
+import VMI5 from '../public/images/Projects/vmi-admin-web/5.png';
+// import mono-web here
+import A1QuestAdmin1 from '../public/images/Projects/a1quest-admin/1.png';
+import A1QuestAdmin2 from '../public/images/Projects/a1quest-admin/2.png';
+import A1QuestAdmin3 from '../public/images/Projects/a1quest-admin/3.png';
+import A1QuestAdmin4 from '../public/images/Projects/a1quest-admin/4.png';
+import A1QuestAdmin5 from '../public/images/Projects/a1quest-admin/5.png';
+import A1Quest1 from '../public/images/Projects/a1quest/1.png';
+import A1Quest2 from '../public/images/Projects/a1quest/2.png';
+import A1Quest3 from '../public/images/Projects/a1quest/3.png';
+import A1Quest4 from '../public/images/Projects/a1quest/4.png';
+import A1Quest5 from '../public/images/Projects/a1quest/5.png';
+import CIBApp1 from '../public/images/Projects/cib-app/1.png';
+import CIBApp2 from '../public/images/Projects/cib-app/2.png';
+import CIBApp3 from '../public/images/Projects/cib-app/3.png';
+import CIBApp4 from '../public/images/Projects/cib-app/4.png';
+import CIBApp5 from '../public/images/Projects/cib-app/5.png';
+import CIBApp6 from '../public/images/Projects/cib-app/6.png';
+import CIBApp7 from '../public/images/Projects/cib-app/7.png';
+import MonoWeb1 from '../public/images/Projects/mono-web/1.png';
+import MonoWeb2 from '../public/images/Projects/mono-web/2.png';
+import MonoWeb3 from '../public/images/Projects/mono-web/3.png';
+import MonoWeb4 from '../public/images/Projects/mono-web/4.png';
+import MonoWeb5 from '../public/images/Projects/mono-web/5.png';
+import TFHAdmin1 from '../public/images/Projects/tfh-admin/1.png';
+import TFHAdmin2 from '../public/images/Projects/tfh-admin/2.png';
+import TFHAdmin3 from '../public/images/Projects/tfh-admin/3.png';
+import TFHAdmin4 from '../public/images/Projects/tfh-admin/4.png';
+import TFHAdmin5 from '../public/images/Projects/tfh-admin/5.png';
+import TFHMobile1 from '../public/images/Projects/tfh-mobile/1.png';
+import TFHMobile10 from '../public/images/Projects/tfh-mobile/10.png';
+import TFHMobile11 from '../public/images/Projects/tfh-mobile/11.png';
+import TFHMobile12 from '../public/images/Projects/tfh-mobile/12.png';
+import TFHMobile13 from '../public/images/Projects/tfh-mobile/13.png';
+import TFHMobile14 from '../public/images/Projects/tfh-mobile/14.png';
+import TFHMobile15 from '../public/images/Projects/tfh-mobile/15.png';
+import TFHMobile16 from '../public/images/Projects/tfh-mobile/16.png';
+import TFHMobile17 from '../public/images/Projects/tfh-mobile/17.png';
+import TFHMobile18 from '../public/images/Projects/tfh-mobile/18.png';
+import TFHMobile2 from '../public/images/Projects/tfh-mobile/2.png';
+import TFHMobile3 from '../public/images/Projects/tfh-mobile/3.png';
+import TFHMobile4 from '../public/images/Projects/tfh-mobile/4.png';
+import TFHMobile5 from '../public/images/Projects/tfh-mobile/5.png';
+import TFHMobile6 from '../public/images/Projects/tfh-mobile/6.png';
+import TFHMobile7 from '../public/images/Projects/tfh-mobile/7.png';
+import TFHMobile8 from '../public/images/Projects/tfh-mobile/8.png';
+import TFHMobile9 from '../public/images/Projects/tfh-mobile/9.png';
+import TFHWeb1 from '../public/images/Projects/tfh-website/1.png';
+import TFHWeb2 from '../public/images/Projects/tfh-website/2.png';
+import TFHWeb3 from '../public/images/Projects/tfh-website/3.png';
+import TFHWeb4 from '../public/images/Projects/tfh-website/4.png';
+import TFHWeb5 from '../public/images/Projects/tfh-website/5.png';
+import TFHWeb6 from '../public/images/Projects/tfh-website/6.png';
+import TFHWeb7 from '../public/images/Projects/tfh-website/7.png';
+import TFHWeb8 from '../public/images/Projects/tfh-website/8.png';
 import Zeebly1 from '../public/images/Projects/zeebly-admin/1.png';
 import Zeebly2 from '../public/images/Projects/zeebly-admin/2.png';
 import Zeebly3 from '../public/images/Projects/zeebly-admin/3.png';
 import Zeebly4 from '../public/images/Projects/zeebly-admin/4.png';
 import Zeebly5 from '../public/images/Projects/zeebly-admin/5.png';
+import Zeebly6 from '../public/images/Projects/zeebly-admin/6.png';
 
 export interface ProjectType {
   title: string;
@@ -95,48 +152,20 @@ const Projects: ProjectType[] = [
       'Web accessibility and responsive design for enterprise users',
       'Advanced encryption and secure data handling for financial transactions',
     ],
-    coreTools: ['Next.js', 'React', 'Redux Toolkit', 'RSA and AES Encryption', 'Jest'],
+    coreTools: [
+      'Next.js',
+      'React',
+      'Redux Toolkit',
+      'RSA and AES Encryption',
+      'Jest',
+      'recharts',
+    ],
     image: CIBWeb1,
     screenshots: [CIBWeb1, CIBWeb2, CIBWeb3, CIBWeb4, CIBWeb5],
     featured: true,
     videoDemoLink: 'https://www.youtube.com/watch?v=k3Y9ZXfJ9GU',
   },
-  {
-    title: 'Workforce Scheduling and HR Management Backend API Service',
-    slug: 'clicknchedule-api',
-    description:
-      'A shift scheduling backend API built for Click N Schedule that handles roster creation, shift assignment, facility management, clocking, notifications, and secure authentication.',
-    features: [
-      'Shift and roster scheduling endpoints for employee assignments',
-      'Schedule adjustment and availability rules',
-      'Email/SMS notification orchestration for shift changes',
-      'Secure authentication and user session protection',
-      'API-first backend for workforce management integrations',
-      'Facility and location management for shift assignments',
-      'Clocking and timekeeping endpoints for employee tracking',
-      'Employee and manager role-based access controls',
-    ],
-    coreTools: [
-      'Express',
-      'Axios',
-      'Agenda',
-      'Bcryptjs',
-      'Cloudinary',
-      'Google Maps Services Js',
-      'Nodemailer',
-    ],
-    image: ClickNSchedule1,
-    screenshots: [
-      ClickNSchedule1,
-      ClickNSchedule2,
-      ClickNSchedule3,
-      ClickNSchedule4,
-      ClickNSchedule5,
-    ],
-    liveLink: 'https://clicknschedule.com/',
-    featured: true,
-    apiLink: 'https://documenter.getpostman.com/view/11204995/2sA3kXDKh2',
-  },
+
   {
     title:
       'Enterprise Cross-Border Fintech Mobile Platform for Multi-Currency Banking and Global Payments',
@@ -178,6 +207,37 @@ const Projects: ProjectType[] = [
     videoDemoLink: 'https://www.youtube.com/watch?v=cXb7nckKpLk',
     screenshots: [Switch, Switch1, Switch2, Switch3, Switch4, Switch5],
     featured: true,
+  },
+  {
+    title: 'Enterprise Corporate Digital Banking Mobile Platform',
+    slug: 'rova-cba-cib-ng-app-lite',
+    featured: true,
+    description:
+      'A secure React Native mobile banking application built for FCMB Group that enables corporate customers to manage business accounts, initiate and authorize transactions, oversee beneficiaries, and perform day-to-day banking operations from anywhere. The platform delivers enterprise-grade banking workflows, account management capabilities, transaction approvals, and financial oversight through an intuitive mobile experience. Designed for corporate banking users, it supports secure financial operations, approval hierarchies, and real-time access to business banking services.',
+    features: [
+      'Comprehensive account management dashboards providing real-time visibility into account balances, transaction activity, and financial positions across corporate accounts',
+      'Secure domestic and international transfer workflows with beneficiary management, payment initiation, transaction validation, and processing controls',
+      'Multi-level transaction authorization and approval workflows supporting corporate banking mandates, maker-checker processes, and delegated approvals',
+      'Beneficiary administration tools for creating, managing, validating, and organizing trusted payment recipients',
+      'Corporate payment management capabilities enabling users to initiate, review, track, and monitor financial transactions from a mobile device',
+      'Real-time transaction history and activity monitoring with detailed payment records, status tracking, and audit visibility',
+      'Enterprise-grade authentication and security controls protecting sensitive financial operations and account access',
+      'Native mobile navigation architecture optimized for complex banking workflows, financial operations, and user productivity',
+      'Offline-aware user experience with intelligent session handling, connectivity recovery, and seamless interaction across varying network conditions',
+      'Mobile-first banking platform integrating secure financial services, account oversight, transaction approvals, and business banking operations',
+    ],
+    coreTools: [
+      'React Native',
+      'Expo',
+      'Redux Toolkit',
+      'React Navigation',
+      'Async Storage',
+      'React Native DateTime Picker',
+      'Formik',
+    ],
+    image: CIBApp1,
+    screenshots: [CIBApp1, CIBApp2, CIBApp3, CIBApp4, CIBApp5, CIBApp6, CIBApp7],
+    videoDemoLink: 'https://www.youtube.com/watch?v=AOd7ZjdbIQg',
   },
   {
     title: 'Enterprise B2B Supply Chain and Commerce Management Platform',
@@ -235,7 +295,42 @@ const Projects: ProjectType[] = [
     videoDemoLink: 'https://www.youtube.com/watch?v=Lq-I5ZWkE9c',
     liveLink: 'https://inquiry.lexkitchen.com/',
   },
-
+  {
+    title: 'A1Quest Mathematics Learning and Student Success Platform',
+    slug: 'a1quest-web',
+    description:
+      'A comprehensive edtech platform designed to help secondary school students master mathematics through personalized learning experiences, interactive exercises, progress tracking, and curriculum-aligned educational content. The platform supports students, parents, and educators with structured learning paths, performance insights, subscription management, and digital learning tools that make mathematics more engaging, accessible, and effective.',
+    features: [
+      'Personalized mathematics learning experiences tailored to individual student skill levels, learning pace, and academic goals',
+      'Comprehensive curriculum coverage spanning junior and senior secondary mathematics topics with structured learning pathways',
+      'Interactive exercises, quizzes, and problem-solving activities designed to reinforce mathematical concepts and improve retention',
+      'Step-by-step solution workflows that help students understand mathematical reasoning and problem-solving methodologies',
+      'Real-time performance feedback and progress tracking enabling students, parents, and educators to monitor learning outcomes',
+      'Student onboarding, account management, and subscription-based access to premium educational resources and learning modules',
+      'Parent engagement tools providing visibility into student progress, strengths, learning patterns, and improvement opportunities',
+      'Responsive educational content delivery optimized for seamless learning across desktop, tablet, and mobile devices',
+      'Secure Firebase-powered authentication and user management supporting protected student accounts and personalized learning journeys',
+      'Conversion-focused marketing and enrollment experience showcasing educational value propositions, pricing plans, and platform benefits',
+      'Digital learning ecosystem supporting curriculum-aligned instruction, self-paced study, and continuous academic development',
+      'Performance-optimized frontend architecture delivering fast content access, intuitive navigation, and engaging learning experiences',
+    ],
+    coreTools: [
+      'React',
+      'Tailwind CSS',
+      'Redux Toolkit',
+      'Firebase',
+      'Framer Motion',
+      'Auto Animate',
+      'Crypto JS',
+      'Formik',
+      'recharts',
+    ],
+    image: A1Quest1,
+    featured: true,
+    screenshots: [A1Quest1, A1Quest2, A1Quest3, A1Quest4, A1Quest5],
+    liveLink: 'https://a1quest.com/',
+    videoDemoLink: 'https://www.youtube.com/watch?v=shcwNwKvGxk',
+  },
   {
     title: 'Veedez Merchant Operations and Business Management Platform',
     slug: 'veedez-web-app',
@@ -291,104 +386,91 @@ const Projects: ProjectType[] = [
   },
 
   {
-    title: 'Enterprise Analytics and Operations Management Dashboard',
+    title: 'CAP Plc Partner Operations and Business Intelligence Platform',
     slug: 'zeebly-admin',
     description:
-      'An enterprise-grade analytics and administration platform developed for CAP Plc to provide real-time business intelligence, operational oversight, and performance monitoring. The dashboard centralizes KPI reporting, administrative workflows, user management, and data-driven decision-making through GraphQL-powered insights and interactive visualizations. Built for scalability and usability, it enables stakeholders to monitor business performance, analyze operational trends, and manage critical organizational processes from a unified interface.',
+      "A centralized enterprise platform developed for CAP Plc's ConnectUs ecosystem, providing partners and administrators with real-time operational visibility, order management capabilities, business analytics, and performance monitoring tools. The platform consolidates partner operations, account management, reporting, and workflow administration into a single interface, enabling data-driven decision-making and streamlined business processes across the distribution network.",
     features: [
-      'Executive KPI dashboards providing real-time visibility into business performance, operational efficiency, and strategic performance indicators',
-      'Interactive analytics and reporting tools with dynamic data visualizations, trend analysis, and performance monitoring capabilities',
-      'GraphQL-powered data architecture enabling efficient data retrieval, intelligent caching, and responsive user experiences across large datasets',
-      'Comprehensive administrative workflow management for overseeing business operations, user activities, and organizational processes',
-      'User administration and role management capabilities with controlled access to operational data and business-critical resources',
-      'Advanced tabular data exploration tools supporting filtering, sorting, search, and detailed analysis of operational information',
-      'Operational intelligence dashboards delivering actionable insights into organizational performance, resource utilization, and business outcomes',
-      'Material UI-driven enterprise interface with reusable components, responsive layouts, and consistent design patterns',
-      'Accessible and inclusive user experience designed to support diverse enterprise users while adhering to modern accessibility standards',
-      'Scalable reporting infrastructure that empowers stakeholders to make data-driven decisions through centralized business intelligence and analytics',
+      'Executive business intelligence dashboards delivering real-time visibility into partner performance, operational efficiency, order activity, and key business metrics',
+      'Comprehensive order and account management tools supporting order monitoring, status tracking, account visibility, and operational oversight',
+      'GraphQL-powered analytics architecture enabling efficient data retrieval, intelligent caching, and responsive experiences across large operational datasets',
+      'Interactive reporting and visualization modules for analyzing trends, performance indicators, operational outcomes, and business growth opportunities',
+      'Partner administration and workflow management capabilities supporting onboarding, account maintenance, operational coordination, and business processes',
+      'Role-based access control and administrative permissions ensuring secure access to sensitive operational and business information',
+      'Advanced data management interfaces featuring filtering, search, sorting, and exploration of large-scale business and operational records',
+      'Operational monitoring dashboards providing actionable insights into fulfillment activities, partner engagement, and organizational performance',
+      'Enterprise-grade Material UI implementation with reusable design systems, responsive layouts, and accessibility-focused user experiences',
+      'Scalable reporting infrastructure empowering stakeholders to make informed decisions through centralized analytics, operational intelligence, and performance monitoring',
     ],
     coreTools: [
+      'Zod',
+      'Zustand',
+      'GraphQL',
+      'recharts',
+      'xlsx',
       'Apollo Client',
       'Material UI',
-      'Hookform Resolvers',
-      'Loadable Component',
-      'Sentry Browser',
       'React',
       'Redux Toolkit',
     ],
     image: Zeebly1,
-    screenshots: [Zeebly1, Zeebly2, Zeebly3, Zeebly4, Zeebly5],
+    screenshots: [Zeebly1, Zeebly2, Zeebly3, Zeebly4, Zeebly5, Zeebly6],
     featured: true,
-    videoDemoLink: 'https://www.youtube.com/watch?v=mg3menZpkS4',
+    videoDemoLink: 'https://www.youtube.com/watch?v=6UGhRV-dz7k',
   },
 
   {
-    title: 'Corporate Banking Mobile App',
-    slug: 'rova-cba-cib-ng-app-lite',
+    title: 'Workforce Scheduling and HR Management Backend API Service',
+    slug: 'clicknchedule-api',
     description:
-      'A lightweight React Native mobile banking app for corporate users, providing secure account access, transfers, beneficiary management, and mobile workflow navigation.',
+      'A shift scheduling backend API built for Click N Schedule that handles roster creation, shift assignment, facility management, clocking, notifications, and secure authentication.',
     features: [
-      'Mobile account summary and transaction history views',
-      'Secure transfer workflows with beneficiary selection',
-      'Inline authorization and approval screens',
-      'Native banking navigation with bottom tabs and stack flows',
-      'Offline-aware mobile UX with native device integration',
+      'Shift and roster scheduling endpoints for employee assignments',
+      'Schedule adjustment and availability rules',
+      'Email/SMS notification orchestration for shift changes',
+      'Secure authentication and user session protection',
+      'API-first backend for workforce management integrations',
+      'Facility and location management for shift assignments',
+      'Clocking and timekeeping endpoints for employee tracking',
+      'Employee and manager role-based access controls',
     ],
     coreTools: [
-      'React Native',
-      'Expo',
-      'Redux Toolkit',
-      'React Navigation',
-      'Async Storage',
-      'React Native DateTime Picker',
-      'Radix UI Avatar',
-      'Expo Vector Icons',
-      'Plus Jakarta Sans',
-      'Formik',
-    ],
-    image: placeholderImage,
-    screenshots: [],
-  },
-  {
-    title: 'A1Quest Customer Portal',
-    slug: 'a1quest-web',
-    description:
-      'A customer-facing portal for A1Quest with marketing sections, service details, onboarding, and secure Firebase-backed logins.',
-    features: [
-      'Service and product presentation with responsive pages',
-      'Customer onboarding and sign-up flows',
-      'Payment integration and transaction callouts',
-      'Firebase authentication and session security',
-      'Animated marketing interactions and feature highlights',
-    ],
-    coreTools: [
-      'React',
-      'Redux Toolkit',
-      'Firebase',
-      'Framer Motion',
-      'React Spring',
+      'Express',
       'Axios',
-      'Auto Animate',
-      'Crypto JS',
-      'Formik',
-      'Tailwind CSS',
+      'Agenda',
+      'Bcryptjs',
+      'Cloudinary',
+      'Google Maps Services Js',
+      'Nodemailer',
     ],
-    image: A1Quest,
-    screenshots: [],
-    liveLink: 'https://a1quest.com/',
+    image: ClickNSchedule1,
+    screenshots: [
+      ClickNSchedule1,
+      ClickNSchedule2,
+      ClickNSchedule3,
+      ClickNSchedule4,
+      ClickNSchedule5,
+    ],
+    liveLink: 'https://clicknschedule.com/',
+    apiLink: 'https://documenter.getpostman.com/view/11204995/2sA3kXDKh2',
   },
-
   {
-    title: 'TFH Marketing Website',
+    title: 'Church Digital Ministry and Community Engagement Platform',
     slug: 'tfh-website',
+    featured: true,
     description:
-      'A TFH marketing website built with Next.js and Redux Toolkit for brand storytelling, service pages, and customer discovery.',
+      "A modern church website built for The Father's House Church with Next.js and Redux Toolkit to support digital ministry, community engagement, event communication, and outreach initiatives. The platform provides visitors and members with access to church information, ministry programs, upcoming events, sermons, and community resources through an accessible and responsive web experience. Designed to strengthen online presence and member engagement, it serves as a central hub for communication, outreach, and spiritual growth.",
     features: [
-      'Service and brand storytelling landing pages',
-      'Customer inquiry and conversion journeys',
-      'Redux Toolkit-powered UI state management',
-      'Marketing page content sections and CTAs',
-      'Next.js responsive page rendering',
+      'Comprehensive ministry and church information pages showcasing vision, mission, leadership, programs, and community initiatives',
+      'Event promotion and engagement platform highlighting upcoming services, conferences, outreach programs, and special church activities',
+      'Visitor and member engagement journeys designed to encourage participation, inquiries, and connection with church ministries',
+      'Sermon, devotional, and faith-based content presentation supporting spiritual growth and community interaction',
+      'Contact and inquiry workflows enabling visitors to connect with church leadership, ministry teams, and support services',
+      'Responsive and accessible user experience optimized for members and visitors across desktop, tablet, and mobile devices',
+      'Redux Toolkit-powered state management for seamless content delivery and interactive user experiences',
+      'Content-driven storytelling focused on church vision, community impact, ministry outreach, and faith-centered messaging',
+      'Modern Next.js architecture providing fast page performance, SEO optimization, and scalable content management',
+      'Centralized digital platform supporting church communication, outreach efforts, and community engagement initiatives',
     ],
     coreTools: [
       'Next.js',
@@ -400,41 +482,18 @@ const Projects: ProjectType[] = [
       'Auto Animate',
       'Tailwind CSS',
       'TypeScript',
-      'React DOM',
     ],
-    image: TFHWebsite,
-    screenshots: [],
-  },
-  {
-    title: 'Real Estate Crowdfunding Portal',
-    slug: 'mono-web',
-    description:
-      'A corporate crowdfunding portal built with React and Material UI to showcase investment opportunities, campaign details, and investor onboarding content.',
-    features: [
-      'Project showcase pages for real estate and funding campaigns',
-      'Investor benefits and funding milestone presentation',
-      'Interactive UI sections for campaign testimonials and timelines',
-      'Material UI-driven page design and layout',
-      'Campaign contact and inquiry support flows',
-    ],
-    coreTools: [
-      'Material UI',
-      'Axios',
-      'Formik',
-      'Crypto JS',
-      'React',
-      'React Testing Library',
-      'Jest DOM',
-      'Qrcode.React',
-      'React Slick',
-      'React Hook Form',
-    ],
-    image: placeholderImage,
-    screenshots: [],
+    image: TFHWeb1,
+    screenshots: [TFHWeb1, TFHWeb2, TFHWeb3, TFHWeb4, TFHWeb5, TFHWeb6, TFHWeb7, TFHWeb8],
+    videoDemoLink: 'https://www.youtube.com/watch?v=_nPHEHTA67s',
+    apiLink: 'https://documenter.getpostman.com/view/25358026/2s8ZDU5ivU',
+    liveLink: 'https://tfh-website.netlify.app/',
+    codeLink: 'https://github.com/Golden-Ogbeka/church-website',
   },
   {
     title: 'TFH Mobile App',
     slug: 'tfhmobile',
+    featured: true,
     description:
       'A TFH mobile app with native navigation, form-driven account workflows, and mobile-first service interactions.',
     features: [
@@ -456,36 +515,59 @@ const Projects: ProjectType[] = [
       'TypeScript',
       'React',
     ],
-    image: placeholderImage,
-    screenshots: [],
+    image: TFHMobile1,
+    screenshots: [
+      TFHMobile1,
+      TFHMobile2,
+      TFHMobile3,
+      TFHMobile4,
+      TFHMobile5,
+      TFHMobile6,
+      TFHMobile7,
+      TFHMobile8,
+      TFHMobile9,
+      TFHMobile10,
+      TFHMobile11,
+      TFHMobile12,
+      TFHMobile13,
+      TFHMobile14,
+      TFHMobile15,
+      TFHMobile16,
+      TFHMobile17,
+      TFHMobile18,
+    ],
+    codeLink: 'https://github.com/Golden-Ogbeka/church-mobile-app',
+    apiLink: 'https://documenter.getpostman.com/view/25358026/2s8ZDU5ivU',
+    videoDemoLink: 'https://www.youtube.com/watch?v=8pnU6qYGDL0',
   },
-
   {
-    title: 'Afripie Bill Payment Frontend',
-    slug: 'afripie-frontend',
+    title: 'White-Label B2B Commerce and Logistics Operations Platform',
+    slug: 'vmi-admin-web',
     description:
-      'A bill payment gateway frontend for Afripie with customer onboarding, service selection, checkout flows, and authenticated transaction processing.',
+      'A customizable enterprise commerce and logistics management platform developed as a white-label solution for large-scale retail and distribution businesses. The application enables organizations to manage merchant operations, order fulfillment, logistics workflows, inventory visibility, customer onboarding, and operational analytics through a unified administrative interface. Designed for adaptability across different business models, the platform supports client-specific branding, workflows, and operational requirements while maintaining a scalable and data-driven architecture.',
+
     features: [
-      'Bill payment dashboard and service selection workflows',
-      'Secure user onboarding and login flows',
-      'Form-driven checkout and transaction status updates',
-      'Payment method and beneficiary management',
-      'Validation and client-side state handling for billing forms',
+      'Configurable order management and fulfillment workflows supporting order processing, dispatch, delivery tracking, and exception handling',
+      'White-label merchant, customer, driver, and operations management modules tailored to client-specific business requirements',
+      'Real-time logistics and delivery monitoring with route visibility, shipment tracking, and fleet performance management',
+      'Customizable analytics and reporting dashboards providing insights into operational efficiency, fulfillment performance, revenue, and business growth',
+      'Multi-tenant administrative infrastructure supporting client-specific branding, permissions, workflows, and operational configurations',
+      'Enterprise-grade role-based access control, audit logging, and secure administration of business-critical processes',
+      'Supply chain operations management tools for coordinating merchants, warehouses, logistics partners, and internal teams',
+      'Operational intelligence and monitoring systems delivering actionable insights, performance reporting, and issue resolution workflows',
     ],
+
     coreTools: [
-      'Next.js',
-      'Redux Toolkit',
-      'Formik',
-      'Yup',
-      'Axios',
       'React',
-      'Tailwind CSS',
-      'Eslint Config Next',
-      'Autoprefixer',
-      'Crypto JS',
+      'Apollo Client',
+      'Material UI',
+      'GraphQL',
+      'Sentry',
+      'Mapbox Polyline',
     ],
-    image: placeholderImage,
-    screenshots: [],
+    image: VMI1,
+    screenshots: [VMI1, VMI2, VMI3, VMI4, VMI5],
+    videoDemoLink: 'https://www.youtube.com/watch?v=mg3menZpkS4',
   },
 
   {
@@ -517,31 +599,40 @@ const Projects: ProjectType[] = [
     screenshots: [],
   },
   {
-    title: 'A1Quest Admin Dashboard',
+    title: 'A1Quest Learning Operations and Education Management Dashboard',
     slug: 'a1quest-admin-web',
     description:
-      'An enterprise admin dashboard for A1Quest with reporting panels, user management, and internal operational workflows.',
+      'An administrative platform built to manage the operational, academic, and business activities of the A1Quest learning ecosystem. The dashboard provides centralized tools for student management, content administration, performance monitoring, reporting, subscriptions, and platform operations. Designed for educational administrators and internal teams, it enables data-driven decision-making through analytics, user oversight, and operational workflow management.',
     features: [
-      'Admin reporting dashboards with role-based controls',
-      'User and service management screens',
-      'Data-driven task and booking panels',
-      'Interactive UI animations and transitions',
-      'Tested enterprise interfaces with Jest and React Testing Library',
+      'Centralized education management dashboard providing visibility into student activity, platform engagement, learning performance, and operational metrics',
+      'Comprehensive user administration tools for managing students, parents, educators, subscriptions, account access, and platform participation',
+      'Academic performance reporting and analytics dashboards that provide insights into learner progress, content engagement, and educational outcomes',
+      'Content and learning resource management workflows supporting the administration of educational materials, lessons, exercises, and platform content',
+      'Operational reporting tools delivering actionable insights into platform usage, subscription performance, user growth, and business metrics',
+      'Role-based access control and administrative permissions ensuring secure access to educational data and management functions',
+      'Task management and workflow coordination interfaces for handling administrative processes, support requests, and platform operations',
+      'Advanced data visualization and reporting capabilities for monitoring trends, identifying opportunities, and supporting strategic decision-making',
+      'Interactive and responsive user interfaces designed to improve administrator productivity and operational efficiency',
+      'Enterprise-grade frontend architecture with comprehensive testing using Jest and React Testing Library to ensure reliability and maintainability',
     ],
     coreTools: [
       'Redux Toolkit',
       'Auto Animate',
       'React',
       'Axios',
-      'Testing Library',
-      'Jest DOM',
-      'React Testing Library',
       'React Hooks',
       'Tailwind CSS',
       'Formik',
     ],
-    image: A1Quest,
-    screenshots: [],
+    image: A1QuestAdmin1,
+    screenshots: [
+      A1QuestAdmin1,
+      A1QuestAdmin2,
+      A1QuestAdmin3,
+      A1QuestAdmin4,
+      A1QuestAdmin5,
+    ],
+    videoDemoLink: 'https://www.youtube.com/watch?v=K9QCu_aOlKU',
   },
   {
     title: 'Cravings Customer Website',
@@ -598,60 +689,6 @@ const Projects: ProjectType[] = [
     screenshots: [],
   },
 
-  {
-    title: 'Cravings Logistics Client Portal',
-    slug: 'cravings-logistics-client-side',
-    description:
-      'A logistics client portal for Cravings that manages driver bookings, route planning, delivery schedules, and customer dispatch screens.',
-    features: [
-      'Route scheduling and pickup/dropoff workflows',
-      'Driver assignment and delivery confirmation screens',
-      'Form-based service request and fulfillment tracking',
-      'Client-side state management with Redux Toolkit',
-      'Next.js integration for server-rendered logistics pages',
-    ],
-    coreTools: [
-      'Next.js',
-      'Redux Toolkit',
-      'React Redux',
-      'Axios',
-      'Formik',
-      'React Modal',
-      'Yup',
-      'React',
-      'React DOM',
-      'Next Redux Wrapper',
-    ],
-    image: placeholderImage,
-    screenshots: [],
-  },
-  {
-    title: 'Keyla Gatsby Marketing Site',
-    slug: 'keyla-site-Frontend',
-    description:
-      'A Gatsby marketing site for Keyla with static page generation, styled-components theming, and lead contact forms.',
-    features: [
-      'Static page rendering for marketing content',
-      'Styled components theming and brand visuals',
-      'Lead capture and email contact forms',
-      'Campaign section presentation and service breakdowns',
-      'Gatsby image optimization and Netlify deployment support',
-    ],
-    coreTools: [
-      'Gatsby',
-      'Styled Components',
-      'React',
-      'EmailJS Browser',
-      'Animate.Css',
-      'Babel Plugin Styled Components',
-      'Gatsby Plugin Image',
-      'Gatsby Plugin Sharp',
-      'Gatsby Plugin Netlify',
-      'Gatsby Plugin React Helmet',
-    ],
-    image: placeholderImage,
-    screenshots: [],
-  },
   {
     title: 'Zwilt Multiplatform Client',
     slug: 'zwilt-client',
@@ -830,6 +867,217 @@ const Projects: ProjectType[] = [
     coreTools: ['Vite', 'React', 'JavaScript', 'HTML', 'CSS'],
     image: placeholderImage,
     screenshots: [],
+  },
+  {
+    title: 'Real Estate Investment and Crowdfunding Platform',
+    slug: 'mono-web',
+    description:
+      'A corporate real estate crowdfunding platform designed to connect investors with curated property investment opportunities through an engaging digital experience. The platform showcases investment projects, funding campaigns, expected returns, and investor resources while supporting lead generation and investor onboarding journeys. Built with a modern, responsive interface, it enables prospective investors to explore opportunities, evaluate project performance, and engage with investment offerings through a streamlined web experience.',
+    features: [
+      'Comprehensive investment opportunity showcase featuring real estate projects, funding campaigns, property details, and investment performance indicators',
+      'Detailed campaign pages presenting project objectives, funding goals, investment timelines, expected returns, and capital allocation insights',
+      'Investor onboarding experience designed to educate prospective investors, communicate value propositions, and support investment decision-making',
+      'Interactive project timelines and funding milestone visualizations that provide transparency into campaign progress and development stages',
+      'Social proof and credibility sections featuring investor testimonials, project highlights, success stories, and trust-building content',
+      'Responsive investment portal optimized for seamless access across desktop, tablet, and mobile devices',
+      'Material UI-powered design system delivering a consistent, accessible, and professional user experience',
+      'Lead generation and inquiry management workflows enabling prospective investors to request information and engage with investment advisors',
+      'Content-driven investment storytelling focused on market opportunities, project potential, and long-term value creation',
+      'Corporate-grade presentation of investment products, company information, and funding opportunities through an intuitive digital experience',
+    ],
+    coreTools: ['Material UI', 'Axios', 'Formik', 'Crypto JS', 'React'],
+    image: MonoWeb1,
+    screenshots: [MonoWeb1, MonoWeb2, MonoWeb3, MonoWeb4, MonoWeb5],
+    videoDemoLink: 'https://www.youtube.com/watch?v=qm_8HArKrLg',
+  },
+  {
+    title: 'Church Content Management and Digital Ministry Backend',
+    slug: 'tfh-backend',
+    description:
+      "A secure backend platform powering the church's digital ecosystem, including content management, media distribution, member engagement, and administrative operations. Built with Node.js and Express, the API provides authentication, content publishing services, media management, and protected administrative workflows. The system serves as the foundation for church communications, digital ministry resources, event information, and website content delivery.",
+    features: [
+      'Centralized backend infrastructure supporting church content management, ministry resources, announcements, events, and digital communications',
+      'Cloudinary-powered media management system for securely storing, optimizing, and delivering images, documents, sermon resources, and multimedia content',
+      'JWT-based authentication and authorization framework protecting administrative functions, content publishing workflows, and sensitive church data',
+      'Secure API architecture with request validation, input sanitization, and protected endpoints for church administration and content operations',
+      'Content publishing and management services enabling the creation, retrieval, updating, and distribution of ministry-related information',
+      'Member and visitor interaction workflows supporting contact requests, inquiries, registrations, and community engagement processes',
+      'Express middleware ecosystem handling authentication, security enforcement, file uploads, request processing, and error management',
+      'Role-based access control mechanisms ensuring appropriate permissions for administrators, content managers, and ministry leaders',
+      'Scalable backend services designed to support church websites, administrative dashboards, and future digital ministry initiatives',
+      'Reliable data management and API integrations facilitating seamless communication between frontend applications and church operational systems',
+    ],
+    coreTools: [
+      'Express',
+      'Cloudinary',
+      'JWT',
+      'Multer',
+      'Express Validator',
+      'Bcryptjs',
+      'Cookie Parser',
+      'CORS',
+      'Dotenv',
+      'Jsonwebtoken',
+      'Fs',
+    ],
+    image: TFHWeb1,
+    screenshots: [
+      TFHWeb1,
+      TFHWeb2,
+      TFHWeb4,
+      TFHAdmin1,
+      TFHAdmin2,
+      TFHMobile1,
+      TFHMobile2,
+      TFHMobile3,
+    ],
+    videoDemoLink: 'https://www.youtube.com/watch?v=_nPHEHTA67s',
+    apiLink: 'https://documenter.getpostman.com/view/25358026/2s8ZDU5ivU',
+    liveLink: 'https://tfh-website.netlify.app/',
+    codeLink: 'https://github.com/Golden-Ogbeka/church-backend',
+  },
+  {
+    title: 'Afripie Bill Payment Frontend',
+    slug: 'afripie-frontend',
+    description:
+      'A bill payment gateway frontend for Afripie with customer onboarding, service selection, checkout flows, and authenticated transaction processing.',
+    features: [
+      'Bill payment dashboard and service selection workflows',
+      'Secure user onboarding and login flows',
+      'Form-driven checkout and transaction status updates',
+      'Payment method and beneficiary management',
+      'Validation and client-side state handling for billing forms',
+    ],
+    coreTools: [
+      'Next.js',
+      'Redux Toolkit',
+      'Formik',
+      'Yup',
+      'Axios',
+      'React',
+      'Tailwind CSS',
+      'Eslint Config Next',
+      'Autoprefixer',
+      'Crypto JS',
+    ],
+    image: placeholderImage,
+    screenshots: [],
+  },
+  {
+    title: 'Cravings Logistics Client Portal',
+    slug: 'cravings-logistics-client-side',
+    description:
+      'A logistics client portal for Cravings that manages driver bookings, route planning, delivery schedules, and customer dispatch screens.',
+    features: [
+      'Route scheduling and pickup/dropoff workflows',
+      'Driver assignment and delivery confirmation screens',
+      'Form-based service request and fulfillment tracking',
+      'Client-side state management with Redux Toolkit',
+      'Next.js integration for server-rendered logistics pages',
+    ],
+    coreTools: [
+      'Next.js',
+      'Redux Toolkit',
+      'React Redux',
+      'Axios',
+      'Formik',
+      'React Modal',
+      'Yup',
+      'React',
+      'React DOM',
+      'Next Redux Wrapper',
+    ],
+    image: placeholderImage,
+    screenshots: [],
+  },
+  {
+    title: 'Keyla Gatsby Marketing Site',
+    slug: 'keyla-site-Frontend',
+    description:
+      'A Gatsby marketing site for Keyla with static page generation, styled-components theming, and lead contact forms.',
+    features: [
+      'Static page rendering for marketing content',
+      'Styled components theming and brand visuals',
+      'Lead capture and email contact forms',
+      'Campaign section presentation and service breakdowns',
+      'Gatsby image optimization and Netlify deployment support',
+    ],
+    coreTools: [
+      'Gatsby',
+      'Styled Components',
+      'React',
+      'EmailJS Browser',
+      'Animate.Css',
+      'Babel Plugin Styled Components',
+      'Gatsby Plugin Image',
+      'Gatsby Plugin Sharp',
+      'Gatsby Plugin Netlify',
+      'Gatsby Plugin React Helmet',
+    ],
+    image: placeholderImage,
+    screenshots: [],
+  },
+  {
+    title: 'Church Administration and Content Management Platform',
+    slug: 'tfh-admin-frontend',
+    description:
+      "A centralized administration platform built for The Father's House Church to manage church operations, content management, and community engagement. The dashboard enables church administrators to manage website content, ministry information, member interactions, events, communications, and resource distribution through a unified interface. Designed to support digital ministry operations, it streamlines content publishing, administrative workflows, and organizational management while maintaining a responsive and user-friendly experience.",
+    features: [
+      'Centralized church administration dashboard for managing ministry operations, website content, events, and organizational activities',
+      'Rich text content management system powered by Draft.js for publishing sermons, devotionals, announcements, ministry updates, and faith-based resources',
+      'Member engagement and inquiry management workflows supporting visitor communications, prayer requests, registrations, and community interactions',
+      'Event and ministry administration tools for coordinating church programs, conferences, outreach initiatives, and service schedules',
+      'Form-driven workflow management with validation, approval processes, and administrative controls for church operations',
+      'Content publishing and moderation capabilities enabling administrators to create, review, edit, and maintain digital ministry content',
+      'Responsive administrative interface optimized for managing church resources and communications across multiple devices',
+      'Redux-powered state management architecture ensuring efficient coordination of content, administrative actions, and operational data',
+      'Role-based administrative workflows supporting secure access to content management and organizational functions',
+      'Digital ministry management platform designed to streamline communication, outreach, content delivery, and church administration',
+    ],
+    coreTools: [
+      'Redux Toolkit',
+      'Draft.js',
+      'React',
+      'Axios',
+      'Formik',
+      'React Click Away Listener',
+      'Tailwind CSS',
+      'React Testing Library',
+      'TypeScript',
+    ],
+    image: TFHAdmin1,
+    screenshots: [TFHAdmin1, TFHAdmin2, TFHAdmin3, TFHAdmin4, TFHAdmin5],
+    codeLink: 'https://github.com/Golden-Ogbeka/church-admin-frontend,',
+    videoDemoLink: 'https://www.youtube.com/watch?v=Sv7eH33_op0',
+    apiLink: 'https://documenter.getpostman.com/view/25358026/2s8ZDU5ivU',
+  },
+  {
+    title: 'Truevoix Public Website',
+    slug: 'truevoix-website',
+    description:
+      'A campaign website for Truevoix featuring government engagement, stakeholder communication, and responsive content sections.',
+    features: [
+      'Campaign and initiative storytelling with multimedia sections',
+      'Stakeholder engagement points and contact prompts',
+      'Responsive hero, feature and testimonial presentation',
+      'Tailwind CSS page layout and animation effects',
+      'Branding and public relations content delivery',
+    ],
+    coreTools: [
+      'Next.js',
+      'Tailwind CSS',
+      'React',
+      'Motion',
+      'React Indiana Drag Scroll',
+      'Postcss',
+      'ESLint',
+      'React Testing Library',
+      'Jest DOM',
+      'Axios',
+    ],
+    image: Truevoix1,
+    screenshots: [Truevoix1, Truevoix2, Truevoix3, Truevoix4, Truevoix5],
+    videoDemoLink: 'https://www.youtube.com/watch?v=v1ac7ZXbe8M',
   },
   {
     title: 'Shipplug Vue Client Portal',
@@ -1187,90 +1435,7 @@ const Projects: ProjectType[] = [
     image: placeholderImage,
     screenshots: [],
   },
-  {
-    title: 'TFH Backend API',
-    slug: 'tfh-backend',
-    description:
-      'A TFH backend API with Cloudinary media handling, authentication, and secure Express validation routes.',
-    features: [
-      'Media upload and Cloudinary integration',
-      'JWT authentication and user session protection',
-      'Form validation and protected API routes',
-      'Express middleware for security and file handling',
-      'Backend data storage and auth flows',
-    ],
-    coreTools: [
-      'Express',
-      'Cloudinary',
-      'JWT',
-      'Express Validator',
-      'Bcryptjs',
-      'Cookie Parser',
-      'CORS',
-      'Dotenv',
-      'Jsonwebtoken',
-      'Fs',
-    ],
-    image: TFHAdmin,
-    screenshots: [],
-    apiLink: 'https://documenter.getpostman.com/view/25358026/2s8ZDU5ivU',
-  },
-  {
-    title: 'TFH Admin Dashboard',
-    slug: 'tfh-admin-frontend',
-    description:
-      'A TFH admin dashboard with responsive management screens, form workflows, draft-rich content editing, and order handling.',
-    features: [
-      'Admin management panels with workflow controls',
-      'Draft.js rich text content editing screens',
-      'Customer and order management flows',
-      'Form validation and admin action controls',
-      'Redux-powered state coordination for dashboard data',
-    ],
-    coreTools: [
-      'Redux Toolkit',
-      'Draft.js',
-      'React',
-      'Axios',
-      'Formik',
-      'Lodash',
-      'React Click Away Listener',
-      'Tailwind CSS',
-      'React Testing Library',
-      'TypeScript',
-    ],
-    image: TFHAdmin,
-    screenshots: [],
-  },
 
-  {
-    title: 'Truevoix Public Website',
-    slug: 'truevoix-website',
-    description:
-      'A campaign website for Truevoix featuring government engagement, stakeholder communication, and responsive content sections.',
-    features: [
-      'Campaign and initiative storytelling with multimedia sections',
-      'Stakeholder engagement points and contact prompts',
-      'Responsive hero, feature and testimonial presentation',
-      'Tailwind CSS page layout and animation effects',
-      'Branding and public relations content delivery',
-    ],
-    coreTools: [
-      'Next.js',
-      'Tailwind CSS',
-      'React',
-      'Motion',
-      'React Indiana Drag Scroll',
-      'Postcss',
-      'ESLint',
-      'React Testing Library',
-      'Jest DOM',
-      'Axios',
-    ],
-    image: Truevoix1,
-    screenshots: [Truevoix1, Truevoix2, Truevoix3, Truevoix4, Truevoix5],
-    videoDemoLink: 'https://www.youtube.com/watch?v=v1ac7ZXbe8M',
-  },
   {
     title: 'TCU Mobile App',
     slug: 'tcu-mobile',
