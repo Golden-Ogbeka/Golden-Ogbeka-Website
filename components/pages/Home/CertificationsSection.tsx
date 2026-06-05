@@ -50,6 +50,7 @@ export default function CertificationsSection() {
                   target='_blank'
                   rel='noreferrer'
                   className='text-accent hover:text-blue-400 p-2'
+                  aria-label={`View ${cert.title} certificate`}
                 >
                   <svg
                     className='w-5 h-5'

@@ -50,9 +50,9 @@ function Alert() {
 				/>
 				<span>{alertState.message}</span>
 			</div>
-			<span className={styles.closeButton} onClick={() => dispatch(closeAlert())}>
+			<button className={styles.closeButton} onClick={() => dispatch(closeAlert())} aria-label='Close alert' type='button'>
 				&times;
-			</span>
+			</button>
 		</div>
 	);
 }

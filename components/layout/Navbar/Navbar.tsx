@@ -63,6 +63,7 @@ function Navbar() {
           moonColor={isDark ? '#f4f4f5' : '#09090b'}
           sunColor={isDark ? '#f4f4f5' : '#09090b'}
           size={24}
+          aria-label='Toggle dark mode'
         />
       </div>
     </nav>

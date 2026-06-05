@@ -130,9 +130,9 @@ const OpenSourcePage: NextPage = () => {
               className='group block p-6 bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 hover:border-accent dark:hover:border-accent rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-accent/10'
             >
               <div className='flex justify-between items-start mb-4 gap-2'>
-                <h3 className='text-lg font-bold font-outfit text-zinc-900 dark:text-zinc-100 group-hover:text-accent transition-colors truncate flex-1'>
+                <h2 className='text-lg font-bold font-outfit text-zinc-900 dark:text-zinc-100 group-hover:text-accent transition-colors truncate flex-1'>
                   {repo.name}
-                </h3>
+                </h2>
                 <svg
                   className='w-5 h-5 text-zinc-400 group-hover:text-accent transform group-hover:-translate-y-1 group-hover:translate-x-1 transition-all flex-shrink-0 ml-2'
                   fill='none'
