@@ -14,7 +14,10 @@ const Custom404: NextPage = () => {
 
       <div className='min-h-[80vh] flex flex-col items-center justify-center text-center px-4'>
         <div className='animate-fade-in-up'>
-          <h1 className='mb-20 text-[12rem] sm:text-[16rem] font-display font-bold leading-none tracking-tighter text-zinc-200 dark:text-zinc-600 select-none '>
+          <h1
+            className='mb-20 text-[12rem] sm:text-[16rem] font-display font-bold leading-none tracking-tighter text-zinc-300 dark:text-zinc-500 select-none'
+            aria-hidden='true'
+          >
             404
           </h1>
         </div>

@@ -58,7 +58,7 @@ function CustomModal({ modalState, closeModal, children }) {
 		>
 			<div className={styles.modalTitleContainer}>
 				<h1>Please fill the information below </h1>
-				<button onClick={closeModal}>&#x2715;</button>
+				<button onClick={closeModal} aria-label='Close modal' type='button'>&#x2715;</button>
 			</div>
 			{children}
 		</ReactModal>

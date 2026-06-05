@@ -49,6 +49,11 @@
   @apply bg-zinc-400 dark:bg-zinc-600;
 }
 
+/* Focus styles for keyboard navigation */
+*:focus-visible {
+  @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-lightBg dark:ring-offset-darkBg;
+}
+
 /* Base animations */
 .reveal {
   opacity: 0;

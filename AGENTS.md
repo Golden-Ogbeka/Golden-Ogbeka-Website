@@ -33,6 +33,17 @@
 - All content (projects, experiences, etc.) is in TypeScript arrays in `data/`.
 - Never import data directly from external sources — only from `data/` files.
 
+## Accessibility (Must Maintain 100%)
+- All interactive elements must have visible focus indicators (`focus-visible:ring-2` or equivalent).
+- All icon-only buttons and links must have descriptive `aria-label` attributes.
+- All images must have meaningful `alt` text (empty `alt=""` only for decorative images with `aria-hidden="true"`).
+- Maintain proper heading hierarchy (`h1` → `h2` → `h3`, no skipping levels).
+- All form inputs must have associated labels with unique `id`/`htmlFor` pairs.
+- Error messages must use `role="alert"` or `aria-live="polite"`.
+- Skip-to-content link must be the first focusable element on every page.
+- Clickable elements must be semantic (`<button>`, `<a>`) or have `role="button"`, `tabIndex`, and `onKeyDown`.
+- Color contrast must meet WCAG AA (3:1 for large text, 4.5:1 for normal text).
+
 ## Before Making Changes
 - Understand the surrounding code conventions first.
 - Check existing similar components for patterns.

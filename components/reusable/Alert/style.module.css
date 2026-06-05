@@ -29,8 +29,13 @@
 
 .closeButton {
 	font-size: 25px;
+	background: none;
+	border: none;
+	color: inherit;
+	padding: 0;
+	cursor: pointer;
+	line-height: 1;
 }
 .closeButton:hover {
 	color: #000;
-	cursor: pointer;
 }

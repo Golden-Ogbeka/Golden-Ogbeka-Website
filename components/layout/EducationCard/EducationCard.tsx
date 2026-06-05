@@ -14,7 +14,7 @@ function EducationCard({
 	return (
 		<div className='flex flex-col gap-3'>
 			<div className='flex flex-row flex-wrap items-center justify-between gap-3'>
-				<span className='text-2xl dark:text-white'>{education.degree}</span>
+				<h3 className='text-2xl dark:text-white'>{education.degree}</h3>
 				<span className='dark:text-[#C4C4C4]'>{education.date}</span>
 			</div>
 

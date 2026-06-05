@@ -28,13 +28,15 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
 
   return (
     <div className='mt-16'>
-      <h2 className='text-2xl font-display font-semibold mb-6'>Project Gallery</h2>
+      <h2 id='gallery-heading' className='text-2xl font-display font-semibold mb-6'>Project Gallery</h2>
       <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
         {screenshots.map((src, index) => (
-          <div
+          <button
             key={index}
             onClick={() => openGallery(index)}
-            className='cursor-pointer relative aspect-video overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 group'
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') openGallery(index); }}
+            className='cursor-pointer relative aspect-video overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800 group text-left w-full'
+            aria-label={`View ${projectName} screenshot ${index + 1}`}
           >
             <Image
               src={src}
@@ -49,11 +51,11 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
                 View Full
               </span>
             </div>
-          </div>
+          </button>
         ))}
       </div>
 
-      <Dialog open={isOpen} onClose={() => setIsOpen(false)} className='relative z-50'>
+      <Dialog open={isOpen} onClose={() => setIsOpen(false)} className='relative z-50' aria-labelledby='gallery-heading'>
         <div className='fixed inset-0 bg-black/90 backdrop-blur-sm' aria-hidden='true' />
 
         <div className='fixed inset-0 flex items-center justify-center p-4 overflow-hidden'>
@@ -61,6 +63,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
             <button
               onClick={() => setIsOpen(false)}
               className='absolute -top-12 right-0 text-white hover:text-zinc-300 p-2'
+              aria-label='Close gallery'
             >
               <svg
                 className='w-8 h-8'
@@ -81,6 +84,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
               <button
                 onClick={prevImage}
                 className='absolute left-0 z-10 p-2 bg-black/50 text-white rounded-r-xl hover:bg-black/70 transition-colors'
+                aria-label='Previous image'
               >
                 <svg
                   className='w-8 h-8'
@@ -110,6 +114,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
               <button
                 onClick={nextImage}
                 className='absolute right-0 z-10 p-2 bg-black/50 text-white rounded-l-xl hover:bg-black/70 transition-colors'
+                aria-label='Next image'
               >
                 <svg
                   className='w-8 h-8'
