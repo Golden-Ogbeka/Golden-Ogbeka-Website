@@ -48,7 +48,7 @@ function Navbar() {
           </a>
         </Link>
         <a
-          href='/brand/Golden-Ogbeka-Resume.pdf'
+          href='/brand/Golden Ogbeka Resume.pdf'
           target='_blank'
           rel='noopener noreferrer'
           download='Golden_Ogbeka_Resume'
