@@ -159,6 +159,17 @@ import VFN2 from '../public/images/Projects/vfn-site/2.png';
 import VFN3 from '../public/images/Projects/vfn-site/3.png';
 import VFN4 from '../public/images/Projects/vfn-site/4.png';
 import VFN5 from '../public/images/Projects/vfn-site/5.png';
+import CravingsAdmin1 from '../public/images/Projects/cravings-admin/1.png';
+import CravingsAdmin2 from '../public/images/Projects/cravings-admin/2.png';
+import CravingsAdmin3 from '../public/images/Projects/cravings-admin/3.png';
+import CravingsAdmin4 from '../public/images/Projects/cravings-admin/4.png';
+import CravingsAdmin5 from '../public/images/Projects/cravings-admin/5.png';
+import CravingsWeb1 from '../public/images/Projects/cravings-web/1.png';
+import CravingsWeb2 from '../public/images/Projects/cravings-web/2.png';
+import CravingsWeb3 from '../public/images/Projects/cravings-web/3.png';
+import CravingsWeb4 from '../public/images/Projects/cravings-web/4.png';
+import CravingsWeb5 from '../public/images/Projects/cravings-web/5.png';
+import CravingsWeb6 from '../public/images/Projects/cravings-web/6.png';
 
 export interface ProjectType {
   title: string;
@@ -687,58 +698,61 @@ const Projects: ProjectType[] = [
     videoDemoLink: 'https://www.youtube.com/watch?v=K9QCu_aOlKU',
   },
   {
-    title: 'Cravings Customer Website',
+    title: 'Restaurant Ordering and Customer Experience Platform',
     slug: 'cravings-web-frontend',
     description:
-      'A customer web frontend for Cravings with menu browsing, booking flows, and order status tracking.',
+      'A customer-facing restaurant platform developed for Cravings to enable menu exploration, food ordering, booking requests, and customer engagement through a seamless digital experience. The application combines responsive design, location-based services, and streamlined ordering workflows to help customers discover offerings, place requests, and interact with the restaurant across multiple devices.',
     features: [
-      'Menu display and food ordering pathways',
-      'Booking and delivery status workflows',
-      'Customer support and contact request sections',
-      'Responsive Material UI layout with data-driven cards',
-      'Google Maps wrapper integration for location-based services',
+      'Interactive menu browsing experience showcasing food categories, product details, pricing information, and featured offerings',
+      'Customer ordering workflows enabling users to place food requests and engage with restaurant services through intuitive interfaces',
+      'Booking and reservation management experiences supporting dining requests, scheduling, and customer engagement',
+      'Order and delivery status tracking capabilities providing visibility into fulfillment progress and service updates',
+      'Customer support and inquiry channels facilitating communication between customers and restaurant staff',
+      'Google Maps integration supporting location discovery, navigation assistance, and location-based customer experiences',
+      'Responsive Material UI-powered interface delivering consistent user experiences across desktop, tablet, and mobile devices',
+      'Data-driven content presentation using interactive cards and structured layouts to improve service discovery',
+      'Conversion-focused customer journeys designed to increase bookings, orders, and restaurant engagement',
+      'Modern frontend architecture supporting scalable restaurant operations and customer interaction workflows',
     ],
-    coreTools: [
-      'Material UI',
-      'Emotion',
-      'React',
-      'Axios',
-      'MUI Icons',
-      'React Testing Library',
-      'Jest DOM',
-      'User Event',
-      'Google Maps React Wrapper',
-      'React Wrapper',
+    coreTools: ['Material UI', 'Google Maps', 'React', 'Axios', 'MUI Icons'],
+    image: CravingsWeb1,
+    screenshots: [
+      CravingsWeb1,
+      CravingsWeb2,
+      CravingsWeb3,
+      CravingsWeb4,
+      CravingsWeb5,
+      CravingsWeb6,
     ],
-    image: placeholderImage,
-    screenshots: [],
+    videoDemoLink: 'https://www.youtube.com/watch?v=h3IsX7Pyq_M',
   },
   {
-    title: 'Cravings Admin Dashboard',
+    title: 'Restaurant Operations and Order Management Dashboard',
     slug: 'cravings-admin-frontend',
     description:
-      'A restaurant admin dashboard for Cravings with order management, reporting, and operations controls built on Material UI.',
+      'A centralized restaurant operations platform developed for Cravings NG to manage orders, customer requests, menu administration, and business performance monitoring. The dashboard provides operational visibility across restaurant activities, enabling administrators to oversee fulfillment workflows, track performance metrics, manage dining operations, and make data-driven business decisions through a unified interface.',
     features: [
-      'Order and kitchen management dashboards',
-      'Customer booking and fulfillment tracking',
-      'Analytics panels for revenue and delivery performance',
-      'Table and menu management flows',
-      'Material UI-rich admin components and data grid views',
+      'Comprehensive order management dashboards supporting order processing, fulfillment monitoring, and operational oversight',
+      'Kitchen operations interfaces providing visibility into order preparation workflows, status updates, and service efficiency',
+      'Customer booking and reservation management tools supporting scheduling, confirmations, and service coordination',
+      'Revenue and business analytics dashboards delivering insights into sales performance, customer activity, and operational trends',
+      'Delivery and fulfillment tracking systems enabling administrators to monitor order completion and service performance',
+      'Menu administration capabilities for managing food offerings, pricing, categories, and product availability',
+      'Table management workflows supporting dining operations, reservations, and customer seating coordination',
+      'Advanced data grid and reporting interfaces enabling efficient exploration of operational and transactional data',
+      'Material UI-powered design system providing responsive, scalable, and enterprise-grade administrative experiences',
+      'Operational intelligence platform supporting informed decision-making through centralized reporting and performance monitoring',
     ],
-    coreTools: [
-      'Material UI',
-      'MUI Data Grid',
-      'Emotion',
-      'React',
-      'Axios',
-      'Date Fns',
-      'Moment',
-      'Jest DOM',
-      'Testing Library',
-      'React Testing Library',
+    coreTools: ['Material UI', 'MUI Data Grid', 'React', 'Date Fns', 'Moment'],
+    image: CravingsAdmin1,
+    screenshots: [
+      CravingsAdmin1,
+      CravingsAdmin2,
+      CravingsAdmin3,
+      CravingsAdmin4,
+      CravingsAdmin5,
     ],
-    image: placeholderImage,
-    screenshots: [],
+    videoDemoLink: 'https://www.youtube.com/watch?v=mQMvXEMlWXg',
   },
 
   {
