@@ -38,7 +38,7 @@ const Experiences: ExperienceType[] = [
     companyLogo: Keyla,
   },
   {
-    role: 'Senior Software Engineer',
+    role: 'Frontend Engineer',
     company: 'Rova (FCMB Group)',
     date: 'Aug 2024 - May 2026',
     companyLink: 'https://getrova.com/',
@@ -54,7 +54,7 @@ const Experiences: ExperienceType[] = [
     companyLogo: Rova,
   },
   {
-    role: 'Software Engineer',
+    role: 'Frontend Engineer',
     company: 'Alerzo',
     date: 'Oct 2022 - Mar 2025',
     companyLink: 'https://www.alerzo.com/',
@@ -69,7 +69,7 @@ const Experiences: ExperienceType[] = [
     companyLogo: Alerzo,
   },
   {
-    role: 'Software Engineer and CTO',
+    role: 'CTO and Frontend Engineer',
     company: 'Kanaga Technologies',
     date: 'Aug 2023 - Jul 2024',
     tasksAchieved: [
@@ -96,7 +96,7 @@ const Experiences: ExperienceType[] = [
     companyLogo: BOI, // Fallback
   },
   {
-    role: 'Full Stack Developer',
+    role: 'Full Stack Engineer',
     company: 'Composite Property Development',
     date: 'Feb 2021 - Dec 2021',
     companyLink: 'https://compositepropertydevelopment.com/',
@@ -110,7 +110,7 @@ const Experiences: ExperienceType[] = [
     invertCompanyLogoInDarkMode: true,
   },
   {
-    role: 'Full Stack Engineer and Founder',
+    role: 'Founder and Full Stack Engineer',
     company: 'The Chicken Universe',
     date: 'Oct 2019 - Jan 2021',
     companyLink: 'https://thechickenuniverse.onrender.com/',
