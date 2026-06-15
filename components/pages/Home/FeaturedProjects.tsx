@@ -3,7 +3,7 @@ import Link from 'next/link';
 import ProjectsData from '../../../data/Projects';
 
 export default function FeaturedProjects() {
-  const featuredProjects = ProjectsData.filter((p) => p.featured).slice(0, 10);
+  const featuredProjects = ProjectsData.filter((p) => p.featured);
 
   return (
     <section className='py-20'>
