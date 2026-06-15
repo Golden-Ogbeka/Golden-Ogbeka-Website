@@ -170,6 +170,24 @@ import CravingsWeb3 from '../public/images/Projects/cravings-web/3.png';
 import CravingsWeb4 from '../public/images/Projects/cravings-web/4.png';
 import CravingsWeb5 from '../public/images/Projects/cravings-web/5.png';
 import CravingsWeb6 from '../public/images/Projects/cravings-web/6.png';
+import KoneqtorAdmin1 from '../public/images/Projects/koneqtor-admin/1.png';
+import KoneqtorAdmin2 from '../public/images/Projects/koneqtor-admin/2.png';
+import KoneqtorAdmin3 from '../public/images/Projects/koneqtor-admin/3.png';
+import KoneqtorAdmin4 from '../public/images/Projects/koneqtor-admin/4.png';
+import KoneqtorAdmin5 from '../public/images/Projects/koneqtor-admin/5.png';
+import KoneqtorWeb1 from '../public/images/Projects/koneqtor-web/1.png';
+import KoneqtorWeb2 from '../public/images/Projects/koneqtor-web/2.png';
+import KoneqtorWeb3 from '../public/images/Projects/koneqtor-web/3.png';
+import KoneqtorWeb4 from '../public/images/Projects/koneqtor-web/4.png';
+import KoneqtorWeb5 from '../public/images/Projects/koneqtor-web/5.png';
+import KoneqtorWeb6 from '../public/images/Projects/koneqtor-web/6.png';
+import KoneqtorWeb7 from '../public/images/Projects/koneqtor-web/7.png';
+import KoneqtorWeb8 from '../public/images/Projects/koneqtor-web/8.png';
+import LandshopAdmin1 from '../public/images/Projects/landshop-admin/1.png';
+import LandshopAdmin2 from '../public/images/Projects/landshop-admin/2.png';
+import LandshopAdmin3 from '../public/images/Projects/landshop-admin/3.png';
+import LandshopAdmin4 from '../public/images/Projects/landshop-admin/4.png';
+import LandshopAdmin5 from '../public/images/Projects/landshop-admin/5.png';
 
 export interface ProjectType {
   title: string;
@@ -783,86 +801,116 @@ const Projects: ProjectType[] = [
     screenshots: [],
   },
   {
-    title: 'Koneqtor Client Web App',
+    title: 'Artisan Connection and Booking Application',
     slug: 'koneqtor-frontend',
     description:
-      'A client-facing Koneqtor portal with onboarding, service ordering, and support workflows backed by Redux state management.',
+      'A customer-facing web application developed for Koneqtor to streamline onboarding, service requests, account management, and customer support interactions. The platform provides users with a self-service experience for accessing business services, managing requests, completing verification processes, and tracking account activities through an intuitive and responsive interface.',
     features: [
-      'Service ordering and client request workflows',
-      'OTP and account verification pages',
-      'Form-heavy customer onboarding experience',
-      'Responsive client dashboard with action buttons',
-      'Redux-managed application state for service data',
+      'Self-service customer portal enabling users to discover, request, and manage business services through a centralized platform',
+      'End-to-end onboarding workflows supporting account registration, profile setup, verification, and customer activation processes',
+      'Service request and order management interfaces allowing customers to initiate, track, and manage service engagements',
+      'OTP verification and account security workflows protecting customer access and ensuring secure authentication processes',
+      'Form-driven user experiences designed to simplify data collection, onboarding, and customer interactions',
+      'Responsive customer dashboards providing visibility into account activities, service requests, and operational updates',
+      'Customer support and engagement workflows facilitating communication, issue resolution, and service assistance',
+      'Redux-powered state management architecture ensuring efficient handling of customer data, service information, and application workflows',
+      'Modern user interface optimized for accessibility, responsiveness, and seamless cross-device experiences',
+      'Scalable frontend platform supporting customer lifecycle management, service delivery, and business engagement objectives',
     ],
     coreTools: [
+      'Next JS',
       'Redux Toolkit',
-      'React Otp Input',
-      'Axios',
-      'Auto Animate',
+      'React',
       'React Modal',
       'Formik',
-      'Bufferutil',
-      'React',
       'TypeScript',
       'Tailwind CSS',
     ],
-    image: placeholderImage,
-    screenshots: [],
+    image: KoneqtorWeb1,
+    screenshots: [
+      KoneqtorWeb1,
+      KoneqtorWeb2,
+      KoneqtorWeb3,
+      KoneqtorWeb4,
+      KoneqtorWeb5,
+      KoneqtorWeb6,
+      KoneqtorWeb7,
+      KoneqtorWeb8,
+    ],
+    featured: true,
+    videoDemoLink: 'https://www.youtube.com/watch?v=By4WkK6QhmA',
   },
   {
-    title: 'Koneqtor Admin Panel',
+    title: 'Business Operations and Service Management Dashboard',
     slug: 'koneqtor-admin-frontend',
     description:
-      'A business admin panel for Koneqtor with analytics dashboards, account actions, and internal service workflows.',
+      'A centralized business administration platform developed for Koneqtor to manage operational workflows, customer accounts, service delivery processes, and business performance monitoring. The dashboard provides administrators with actionable insights, workflow controls, and account management capabilities through a scalable and data-driven interface designed to support day-to-day business operations.',
     features: [
-      'Operational dashboard widgets for service management',
-      'Client account and onboarding controls',
-      'Interactive admin flows with animated UI',
-      'Form validation and status management screens',
-      'Enterprise admin UI with reusable component patterns',
+      'Operational management dashboards providing visibility into service performance, business activities, and key operational metrics',
+      'Customer account administration tools supporting onboarding, profile management, account maintenance, and lifecycle tracking',
+      'Service workflow management interfaces enabling administrators to monitor, coordinate, and oversee business processes',
+      'Interactive administrative experiences featuring dynamic workflows, status monitoring, and operational controls',
+      'Form-driven management systems with validation, approval processes, and structured administrative actions',
+      'Business analytics and reporting capabilities supporting performance monitoring and data-driven decision-making',
+      'Status tracking and workflow monitoring tools providing visibility into operational progress and service delivery outcomes',
+      'Enterprise-grade administrative interface built with reusable UI patterns and scalable component architecture',
+      'Responsive dashboard experiences optimized for managing business operations across multiple devices',
+      'Centralized operations platform designed to improve efficiency, oversight, and organizational productivity',
     ],
     coreTools: [
       'Redux Toolkit',
       'Auto Animate',
       'React',
       'Axios',
-      'Testing Library',
-      'Jest DOM',
-      'React Testing Library',
       'Tailwind CSS',
       'Formik',
       'TypeScript',
     ],
-    image: placeholderImage,
-    screenshots: [],
+    image: KoneqtorAdmin1,
+    screenshots: [
+      KoneqtorAdmin1,
+      KoneqtorAdmin2,
+      KoneqtorAdmin3,
+      KoneqtorAdmin4,
+      KoneqtorAdmin5,
+    ],
+    videoDemoLink: 'https://www.youtube.com/watch?v=QA0YSiKmaKA',
   },
 
   {
-    title: 'Landshop Admin Panel',
+    title: 'Real Estate Operations and Property Management Dashboard',
     slug: 'landshop-adminpanel',
     description:
-      'A real estate admin panel for Landshop with inventory controls, listing management, and customer relationships.',
+      'A centralized real estate administration platform developed for Landshop to manage property inventories, listings, customer relationships, and operational workflows. The dashboard provides administrators with tools to oversee property portfolios, monitor lead activity, manage listing lifecycles, and streamline real estate operations through a scalable and data-driven interface.',
     features: [
-      'Property listing and inventory management screens',
-      'Customer and lead tracking dashboards',
-      'Listing approval and status workflows',
-      'Redux-driven state for admin forms and data tables',
-      'Responsive admin views for property portfolios',
+      'Comprehensive property inventory management tools supporting the administration of real estate assets, availability status, and portfolio oversight',
+      'Property listing management workflows enabling administrators to create, update, review, and maintain property information',
+      'Customer and lead management dashboards providing visibility into inquiries, engagement activities, and sales opportunities',
+      'Listing approval and moderation processes supporting quality control, publication workflows, and status management',
+      'Real estate portfolio monitoring interfaces delivering insights into property performance, inventory distribution, and operational activities',
+      'Advanced data management tools featuring search, filtering, sorting, and tabular exploration of property and customer records',
+      'Operational workflow controls supporting administrative actions, property lifecycle management, and business process coordination',
+      'Redux-powered state management architecture ensuring efficient handling of listings, customer data, and administrative workflows',
+      'Responsive administrative experience optimized for managing real estate operations across desktop and mobile devices',
+      'Centralized business management platform designed to improve efficiency, visibility, and control across real estate operations',
     ],
     coreTools: [
       'Redux Toolkit',
-      'Axios',
+      'Recharts',
       'React',
-      'Testing Library',
-      'Jest DOM',
-      'React Testing Library',
       'Tailwind CSS',
-      'Formik',
       'Auto Animate',
-      'TypeScript',
+      'Formik',
     ],
-    image: LandshopAdmin,
-    screenshots: [],
+    image: LandshopAdmin1,
+    screenshots: [
+      LandshopAdmin1,
+      LandshopAdmin2,
+      LandshopAdmin3,
+      LandshopAdmin4,
+      LandshopAdmin5,
+    ],
+    videoDemoLink: 'https://www.youtube.com/watch?v=87E8w8yZb0k',
   },
   {
     title: 'Ship Africa Admin Portal',
