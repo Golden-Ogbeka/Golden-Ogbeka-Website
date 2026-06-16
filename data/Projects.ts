@@ -188,6 +188,21 @@ import LandshopAdmin2 from '../public/images/Projects/landshop-admin/2.png';
 import LandshopAdmin3 from '../public/images/Projects/landshop-admin/3.png';
 import LandshopAdmin4 from '../public/images/Projects/landshop-admin/4.png';
 import LandshopAdmin5 from '../public/images/Projects/landshop-admin/5.png';
+import ShipAfricaAdmin1 from '../public/images/Projects/ship-africa-admin/1.png';
+import ShipAfricaAdmin2 from '../public/images/Projects/ship-africa-admin/2.png';
+import ShipAfricaAdmin3 from '../public/images/Projects/ship-africa-admin/3.png';
+import ShipAfricaAdmin4 from '../public/images/Projects/ship-africa-admin/4.png';
+import ShipAfricaAdmin5 from '../public/images/Projects/ship-africa-admin/5.png';
+import ShipPlugWeb1 from '../public/images/Projects/ship-plug-web/1.png';
+import ShipPlugWeb2 from '../public/images/Projects/ship-plug-web/2.png';
+import ShipPlugWeb3 from '../public/images/Projects/ship-plug-web/3.png';
+import ShipPlugWeb4 from '../public/images/Projects/ship-plug-web/4.png';
+import ShipPlugWeb5 from '../public/images/Projects/ship-plug-web/5.png';
+import ShipPlugVue1 from '../public/images/Projects/ship-plug-vue/1.png';
+import ShipPlugVue2 from '../public/images/Projects/ship-plug-vue/2.png';
+import ShipPlugVue3 from '../public/images/Projects/ship-plug-vue/3.png';
+import ShipPlugVue4 from '../public/images/Projects/ship-plug-vue/4.png';
+import ShipPlugVue5 from '../public/images/Projects/ship-plug-vue/5.png';
 
 export interface ProjectType {
   title: string;
@@ -874,7 +889,7 @@ const Projects: ProjectType[] = [
       KoneqtorAdmin4,
       KoneqtorAdmin5,
     ],
-    videoDemoLink: 'https://www.youtube.com/watch?v=QA0YSiKmaKA',
+    videoDemoLink: 'https://www.youtube.com/watch?v=deWCTu5uBBM',
   },
 
   {
@@ -913,43 +928,49 @@ const Projects: ProjectType[] = [
     videoDemoLink: 'https://www.youtube.com/watch?v=87E8w8yZb0k',
   },
   {
-    title: 'Ship Africa Admin Portal',
+    title: 'Logistics Operations and Shipment Management Dashboard',
     slug: 'ship-africa-admin-web',
     description:
-      'A logistics admin portal for Ship Africa with shipment management, carrier tracking, and operational dashboards.',
+      'A centralized logistics administration platform developed for Ship Africa to manage shipments, carrier operations, fulfillment workflows, and logistics performance monitoring. The dashboard provides operations teams with real-time visibility into shipment activities, route management, carrier coordination, and operational reporting, enabling efficient oversight of logistics processes across the delivery network.',
     features: [
-      'Shipment order tracking and fulfillment status panels',
-      'Carrier and route administration workflows',
-      'GraphQL-based admin data fetching and caching',
-      'Route and item-level reporting dashboards',
-      'Admin controls for logistics and operations teams',
+      'End-to-end shipment management dashboards providing visibility into order processing, fulfillment activities, and delivery progress',
+      'Shipment tracking and status monitoring tools enabling operations teams to oversee logistics workflows from initiation to completion',
+      'Carrier administration capabilities supporting partner management, operational coordination, and service oversight',
+      'Route management interfaces facilitating delivery planning, shipment monitoring, and logistics performance tracking',
+      'GraphQL-powered data architecture enabling efficient data retrieval, intelligent caching, and responsive operational experiences',
+      'Operational reporting dashboards delivering insights into shipment volumes, fulfillment efficiency, carrier performance, and logistics outcomes',
+      'Item-level tracking and monitoring capabilities providing granular visibility into shipment contents and delivery activities',
+      'Administrative workflow controls supporting logistics operations, exception handling, and operational decision-making',
+      'Responsive enterprise interface optimized for logistics coordinators, administrators, and operations teams',
+      'Centralized logistics intelligence platform supporting data-driven management of shipping, fulfillment, and delivery operations',
     ],
-    coreTools: [
-      'Apollo Client',
-      'Redux Toolkit',
-      'Auto Animate',
-      'React',
-      'Testing Library',
-      'Jest DOM',
-      'React Testing Library',
-      'MUI Icons',
-      'Material UI',
-      'TypeScript',
+    videoDemoLink: 'https://www.youtube.com/watch?v=meRmAjt3108',
+    coreTools: ['Apollo Client', 'Redux Toolkit', 'Auto Animate', 'React', 'TypeScript'],
+    image: ShipAfricaAdmin1,
+    screenshots: [
+      ShipAfricaAdmin1,
+      ShipAfricaAdmin2,
+      ShipAfricaAdmin3,
+      ShipAfricaAdmin4,
+      ShipAfricaAdmin5,
     ],
-    image: placeholderImage,
-    screenshots: [],
   },
   {
-    title: 'Ship Africa User Web App',
+    title: 'Customer Shipping and Logistics Management Platform',
     slug: 'ship-africa-web',
     description:
-      'A customer logistics app for Ship Africa with booking, shipment tracking, and service request workflows.',
+      'A customer-facing logistics platform developed for Ship Africa that enables individuals and businesses to create shipments, manage delivery requests, track packages, and access logistics services through a unified digital experience. The application streamlines the shipping lifecycle by providing real-time shipment visibility, booking workflows, and customer support tools designed to simplify local and international logistics operations.',
     features: [
-      'Customer booking and shipment creation screens',
-      'Real-time tracking and delivery status updates',
-      'GraphQL-driven shipment data and history',
-      'Customer support and service detail pages',
-      'Responsive logistics UI with Material components',
+      'Shipment booking and creation workflows enabling customers to initiate deliveries, manage shipping requests, and submit logistics requirements',
+      'Real-time shipment tracking capabilities providing visibility into package locations, delivery progress, and fulfillment milestones',
+      'Comprehensive shipment history and activity monitoring tools allowing users to review past and active logistics transactions',
+      'GraphQL-powered data architecture delivering responsive access to shipment information, tracking updates, and customer records',
+      'Customer account dashboards providing centralized access to deliveries, shipment activities, and logistics services',
+      'Service request workflows supporting customer interactions, logistics inquiries, and shipping-related assistance',
+      'Customer support and help center experiences designed to improve communication and issue resolution throughout the shipping lifecycle',
+      'Responsive Material UI-powered interface delivering a consistent and user-friendly experience across desktop and mobile devices',
+      'Logistics service discovery pages showcasing shipping solutions, delivery options, and platform capabilities',
+      'Scalable digital shipping platform designed to simplify logistics management for individuals, businesses, and frequent shippers',
     ],
     coreTools: [
       'Apollo Client',
@@ -963,8 +984,9 @@ const Projects: ProjectType[] = [
       'GraphQL',
       'TypeScript',
     ],
-    image: placeholderImage,
-    screenshots: [],
+    image: ShipPlugWeb1,
+    screenshots: [ShipPlugWeb1, ShipPlugWeb2, ShipPlugWeb3, ShipPlugWeb4, ShipPlugWeb5],
+    videoDemoLink: 'https://www.youtube.com/watch?v=Pr_fmIuTbh0',
   },
   {
     title: 'ShipMust Digital Logistics and Shipment Management Platform',
@@ -1179,16 +1201,21 @@ const Projects: ProjectType[] = [
     apiLink: 'https://documenter.getpostman.com/view/25358026/2s8ZDU5ivU',
   },
   {
-    title: 'Shipplug Vue Client Portal',
-    slug: 'shipplug',
+    title: 'Customer Logistics and Shipment Management Portal',
+    slug: 'shipplug-client-side',
     description:
-      'A Vue client portal for Shipplug with service workflows, responsive form handling, and real-time status updates.',
+      'A customer-facing logistics platform built for Shipplug to simplify shipment requests, service bookings, and delivery management through an intuitive digital experience. The application enables customers to initiate logistics services, track operational progress, monitor requests, and interact with shipping workflows through responsive and data-driven interfaces designed for efficiency and convenience.',
     features: [
-      'Service request and booking form interactions',
-      'Responsive Vue page layout and navigation',
-      'Form validation for client inputs',
-      'Order status and workflow summaries',
-      'Plugin-powered UI enhancements and transitions',
+      'Digital service request and shipment booking workflows enabling customers to initiate logistics and delivery operations online',
+      'Customer-facing dashboards providing visibility into active requests, shipment activities, and operational updates',
+      'Real-time status monitoring tools allowing users to track service progress and fulfillment milestones',
+      'Responsive Vue.js application architecture delivering seamless experiences across desktop, tablet, and mobile devices',
+      'Advanced form validation workflows ensuring accurate customer submissions and reliable data collection',
+      'Order management interfaces providing structured summaries of shipment requests, statuses, and service activities',
+      'Streamlined customer onboarding and engagement experiences designed to simplify logistics interactions',
+      'Plugin-powered user interface enhancements delivering smooth interactions, transitions, and improved usability',
+      'Scalable frontend architecture supporting growing logistics operations and customer service workflows',
+      'Modern self-service platform enabling efficient communication between customers and logistics operations teams',
     ],
     coreTools: [
       'Vue',
@@ -1202,8 +1229,9 @@ const Projects: ProjectType[] = [
       'Vue3 Composition API',
       'TypeScript',
     ],
-    image: placeholderImage,
-    screenshots: [],
+    image: ShipPlugVue1,
+    screenshots: [ShipPlugVue1, ShipPlugVue2, ShipPlugVue3, ShipPlugVue4, ShipPlugVue5],
+    videoDemoLink: 'https://www.youtube.com/watch?v=EGkMvcgm5NY',
   },
   {
     title: 'Truevoix Public Website',
