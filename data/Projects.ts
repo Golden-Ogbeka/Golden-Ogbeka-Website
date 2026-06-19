@@ -4,7 +4,6 @@ import Alerzo2 from '../public/images/Projects/alerzo-admin-web/2.png';
 import Alerzo3 from '../public/images/Projects/alerzo-admin-web/3.png';
 import Alerzo4 from '../public/images/Projects/alerzo-admin-web/4.png';
 import Alerzo5 from '../public/images/Projects/alerzo-admin-web/5.png';
-import Boldo from '../public/images/Projects/boldo.png';
 import CIBWeb1 from '../public/images/Projects/cib-web/1.png';
 import CIBWeb2 from '../public/images/Projects/cib-web/2.png';
 import CIBWeb3 from '../public/images/Projects/cib-web/3.png';
@@ -19,29 +18,21 @@ import EBike1 from '../public/images/Projects/e-bike/1.png';
 import EBike2 from '../public/images/Projects/e-bike/2.png';
 import EBike3 from '../public/images/Projects/e-bike/3.png';
 import EBike4 from '../public/images/Projects/e-bike/4.png';
-import FindIt from '../public/images/Projects/find-it.png';
 import FRSC1 from '../public/images/Projects/frsc-website/1.png';
 import FRSC2 from '../public/images/Projects/frsc-website/2.png';
 import FRSC3 from '../public/images/Projects/frsc-website/3.png';
 import FRSC4 from '../public/images/Projects/frsc-website/4.png';
-import GlowStopper from '../public/images/Projects/glowstopper.png';
-import LandshopAdmin from '../public/images/Projects/landshop-admin.png';
 import LexisKitchen1 from '../public/images/Projects/lexis-kitchen/1.png';
 import LexisKitchen2 from '../public/images/Projects/lexis-kitchen/2.png';
 import LexisKitchen3 from '../public/images/Projects/lexis-kitchen/3.png';
 import LexisKitchen4 from '../public/images/Projects/lexis-kitchen/4.png';
 import LexisKitchen5 from '../public/images/Projects/lexis-kitchen/5.png';
-import Library from '../public/images/Projects/library.png';
-import Ocpus from '../public/images/Projects/ocpus.png';
-import ProductCatalog from '../public/images/Projects/product-catalog.png';
 import Switch1 from '../public/images/Projects/switch/1.png';
 import Switch2 from '../public/images/Projects/switch/2.png';
 import Switch3 from '../public/images/Projects/switch/3.png';
 import Switch4 from '../public/images/Projects/switch/4.png';
 import Switch5 from '../public/images/Projects/switch/5.png';
 import Switch from '../public/images/Projects/switch/switch.png';
-import TCU from '../public/images/Projects/tcu.png';
-import Todo from '../public/images/Projects/todo.png';
 import Truevoix1 from '../public/images/Projects/truevoix-web/1.png';
 import Truevoix2 from '../public/images/Projects/truevoix-web/2.png';
 import Truevoix3 from '../public/images/Projects/truevoix-web/3.png';
@@ -62,7 +53,6 @@ import VMI2 from '../public/images/Projects/vmi-admin-web/2.png';
 import VMI3 from '../public/images/Projects/vmi-admin-web/3.png';
 import VMI4 from '../public/images/Projects/vmi-admin-web/4.png';
 import VMI5 from '../public/images/Projects/vmi-admin-web/5.png';
-// import mono-web here
 import A1QuestAdmin1 from '../public/images/Projects/a1quest-admin/1.png';
 import A1QuestAdmin2 from '../public/images/Projects/a1quest-admin/2.png';
 import A1QuestAdmin3 from '../public/images/Projects/a1quest-admin/3.png';
@@ -544,6 +534,7 @@ const Projects: ProjectType[] = [
     ],
     liveLink: 'https://clicknschedule.com/',
     apiLink: 'https://documenter.getpostman.com/view/11204995/2sA3kXDKh2',
+    videoDemoLink: 'https://www.youtube.com/watch?v=5vmcbC8H-t8',
   },
   {
     title: 'Church Digital Ministry and Community Engagement Platform',
@@ -665,35 +656,6 @@ const Projects: ProjectType[] = [
     screenshots: [VMI1, VMI2, VMI3, VMI4, VMI5],
     videoDemoLink: 'https://www.youtube.com/watch?v=mg3menZpkS4',
   },
-
-  {
-    title: 'Tennis Slide Backend Service',
-    slug: 'tennis-slide-api',
-    description:
-      'A backend service for Tennis Slide that powers booking, schedule management, match notifications, and player session handling.',
-    features: [
-      'Court booking and scheduling endpoints',
-      'Player registration and session management',
-      'Match notification workflows',
-      'Secure backend authentication and data persistence',
-      'API-first service for sports event coordination',
-    ],
-    coreTools: [
-      'Express',
-      'Agenda',
-      'Bcryptjs',
-      'Cloudinary',
-      'Compression',
-      'CORS',
-      'Dotenv',
-      'Hpp',
-      'Google Maps Services Js',
-      'Axios',
-    ],
-    image: placeholderImage,
-    apiLink: 'https://documenter.getpostman.com/view/11204995/2sA3rxqDJV',
-    screenshots: [],
-  },
   {
     title: 'A1Quest Learning Operations and Education Management Dashboard',
     slug: 'a1quest-admin-web',
@@ -788,33 +750,6 @@ const Projects: ProjectType[] = [
     videoDemoLink: 'https://www.youtube.com/watch?v=mQMvXEMlWXg',
   },
 
-  {
-    title: 'Zwilt Multiplatform Client',
-    slug: 'zwilt-client',
-    description:
-      'A multiplatform Zwilt client with Apollo GraphQL, Material UI, and web/mobile service dashboards.',
-    features: [
-      'GraphQL-driven dashboards and user portals',
-      'Material UI components for enterprise screens',
-      'Multiplatform support across web and mobile clients',
-      'Paymnent and transaction management flows',
-      'Interactive code editing and documentation integrations',
-    ],
-    coreTools: [
-      'Apollo Client',
-      'Material UI',
-      'Emotion',
-      'Monaco Editor',
-      'React',
-      'GraphQL',
-      'Redux Toolkit',
-      'Axios',
-      'React Spring',
-      'TypeScript',
-    ],
-    image: placeholderImage,
-    screenshots: [],
-  },
   {
     title: 'Artisan Connection and Booking Application',
     slug: 'koneqtor-frontend',
@@ -1080,31 +1015,27 @@ const Projects: ProjectType[] = [
     codeLink: 'https://github.com/Golden-Ogbeka/church-backend',
   },
   {
-    title: 'Afripie Bill Payment Frontend',
-    slug: 'afripie-frontend',
+    title: 'Keyla Digital Marketing and Customer Acquisition Platform',
+    slug: 'keyla-site-Frontend',
     description:
-      'A bill payment gateway frontend for Afripie with customer onboarding, service selection, checkout flows, and authenticated transaction processing.',
+      'A modern digital marketing platform built for Keyla to showcase services, communicate brand value, and drive customer acquisition through engaging content and lead generation workflows. The website combines high-performance static site generation, responsive user experiences, and conversion-focused design to support marketing campaigns, customer engagement, and business growth objectives.',
     features: [
-      'Bill payment dashboard and service selection workflows',
-      'Secure user onboarding and login flows',
-      'Form-driven checkout and transaction status updates',
-      'Payment method and beneficiary management',
-      'Validation and client-side state handling for billing forms',
+      'High-performance static website architecture delivering fast page loads, improved SEO visibility, and optimized user experiences',
+      'Comprehensive service showcase pages communicating business offerings, customer value propositions, and brand positioning',
+      'Lead generation and customer inquiry workflows designed to convert visitors into qualified business opportunities',
+      'Styled-components powered design system providing consistent branding, reusable UI patterns, and scalable theming capabilities',
+      'Marketing-focused landing pages supporting campaign promotion, customer engagement, and business growth initiatives',
+      'Responsive user experience optimized for seamless browsing across desktop, tablet, and mobile devices',
+      'Integrated contact and email inquiry forms enabling streamlined communication between prospective customers and the business',
+      'Content-driven storytelling framework highlighting services, customer benefits, and market differentiation',
+      'Gatsby image optimization techniques improving website performance, visual quality, and loading efficiency',
+      'Scalable deployment architecture leveraging modern Jamstack principles and Netlify hosting workflows',
     ],
-    coreTools: [
-      'Next.js',
-      'Redux Toolkit',
-      'Formik',
-      'Yup',
-      'Axios',
-      'React',
-      'Tailwind CSS',
-      'Eslint Config Next',
-      'Autoprefixer',
-      'Crypto JS',
-    ],
-    image: placeholderImage,
-    screenshots: [],
+    coreTools: ['Gatsby', 'React', 'Animate.Css'],
+    image: KeylaWeb1,
+    screenshots: [KeylaWeb1, KeylaWeb2, KeylaWeb3, KeylaWeb4, KeylaWeb5],
+    videoDemoLink: 'https://www.youtube.com/watch?v=Os2yTIBBhyI',
+    featured: true,
   },
   {
     title: 'Customer Logistics Inquiry and Booking Platform',
@@ -1141,30 +1072,6 @@ const Projects: ProjectType[] = [
       CravingsLogistics5,
     ],
     videoDemoLink: 'https://www.youtube.com/watch?v=n52S6GXCMBc',
-  },
-
-  {
-    title: 'Keyla Digital Marketing and Customer Acquisition Platform',
-    slug: 'keyla-site-Frontend',
-    description:
-      'A modern digital marketing platform built for Keyla to showcase services, communicate brand value, and drive customer acquisition through engaging content and lead generation workflows. The website combines high-performance static site generation, responsive user experiences, and conversion-focused design to support marketing campaigns, customer engagement, and business growth objectives.',
-    features: [
-      'High-performance static website architecture delivering fast page loads, improved SEO visibility, and optimized user experiences',
-      'Comprehensive service showcase pages communicating business offerings, customer value propositions, and brand positioning',
-      'Lead generation and customer inquiry workflows designed to convert visitors into qualified business opportunities',
-      'Styled-components powered design system providing consistent branding, reusable UI patterns, and scalable theming capabilities',
-      'Marketing-focused landing pages supporting campaign promotion, customer engagement, and business growth initiatives',
-      'Responsive user experience optimized for seamless browsing across desktop, tablet, and mobile devices',
-      'Integrated contact and email inquiry forms enabling streamlined communication between prospective customers and the business',
-      'Content-driven storytelling framework highlighting services, customer benefits, and market differentiation',
-      'Gatsby image optimization techniques improving website performance, visual quality, and loading efficiency',
-      'Scalable deployment architecture leveraging modern Jamstack principles and Netlify hosting workflows',
-    ],
-    coreTools: ['Gatsby', 'React', 'Animate.Css'],
-    image: KeylaWeb1,
-    screenshots: [KeylaWeb1, KeylaWeb2, KeylaWeb3, KeylaWeb4, KeylaWeb5],
-    videoDemoLink: 'https://www.youtube.com/watch?v=Os2yTIBBhyI',
-    featured: true,
   },
   {
     title: 'Church Administration and Content Management Platform',
@@ -1261,281 +1168,6 @@ const Projects: ProjectType[] = [
     screenshots: [Truevoix1, Truevoix2, Truevoix3, Truevoix4, Truevoix5],
     videoDemoLink: 'https://www.youtube.com/watch?v=v1ac7ZXbe8M',
   },
-
-  {
-    title: 'Secure Shift Backend API',
-    slug: 'secure-shift-api',
-    description:
-      'A secure shift management API with rate limiting, input sanitization, and protected Express endpoints for workforce scheduling.',
-    features: [
-      'Secure scheduler endpoints for shift assignment',
-      'Input sanitization and rate-limiting middleware',
-      'Express route validation and error handling',
-      'Protected API access for workforce operations',
-      'Security-first middleware with Helmet and HPP',
-    ],
-    coreTools: [
-      'Express',
-      'Express Rate Limit',
-      'Express Mongo Sanitize',
-      'Express Validator',
-      'Helmet',
-      'Hpp',
-      'Compression',
-      'CORS',
-      'Dotenv',
-      'Colors',
-    ],
-    image: placeholderImage,
-    screenshots: [],
-  },
-
-  {
-    title: 'Ocpus Mobile Client',
-    slug: 'ocpus-client',
-    description:
-      'A mobile client for Ocpus with Apollo GraphQL data fetching, map-based workflows, and native navigation flows.',
-    features: [
-      'Apollo GraphQL-powered remote data querying',
-      'Map search and pickup location selection',
-      'Mobile navigation with bottom tabs and stack flows',
-      'Media and picker integration for mobile forms',
-      'Business workflow screens for customer operations',
-    ],
-    coreTools: [
-      'Apollo Client',
-      'React Navigation',
-      'Redux Toolkit',
-      'Apollo Upload Client',
-      'React Native Picker',
-      'Expo',
-      'React Native Video',
-      'React Native Video Player',
-      'Axios',
-      'Google APIs',
-    ],
-    image: Ocpus,
-    screenshots: [],
-  },
-
-  {
-    title: 'TheChickenUniverse Platform',
-    slug: 'thechickenuniverse',
-    description:
-      'A full-stack hospitality platform for TheChickenUniverse with Express backend APIs, EJS frontend pages, and order/content workflows.',
-    features: [
-      'Order and menu management API endpoints',
-      'EJS-rendered frontend content pages',
-      'Session and cookie-based user flows',
-      'CMS-like order and booking workflows',
-      'MongoDB-backed content persistence and user sessions',
-    ],
-    coreTools: [
-      'Express',
-      'EJS',
-      'Cookie Parser',
-      'Connect Mongo',
-      'Bcryptjs',
-      'Connect Flash',
-      'Cors',
-      'Crypto JS',
-      'Mongoose',
-      'Express Session',
-    ],
-    image: placeholderImage,
-    screenshots: [],
-  },
-  {
-    title: 'Account Connect Full-Stack App',
-    slug: 'account-connect-app',
-    description:
-      'A full-stack account connection app with React client and Express backend for account linking and user onboarding.',
-    features: [
-      'Account linking and authentication flows',
-      'React client UI for profile and settings',
-      'Express backend API for account data',
-      'Secure session and user management',
-      'Data sync between front-end and API service',
-    ],
-    coreTools: [
-      'Concurrently',
-      'React',
-      'Express',
-      'Axios',
-      'TypeScript',
-      'GraphQL',
-      'JWT',
-      'Node.js',
-      'Redux Toolkit',
-      'React Router DOM',
-    ],
-    image: placeholderImage,
-    screenshots: [],
-  },
-  {
-    title: 'Transaction Viewer Full-Stack App',
-    slug: 'transaction-viewer',
-    description:
-      'A full-stack transaction viewing application with client-server integration for data inspection, filtering, and secure event tracking.',
-    features: [
-      'Transaction data visualization and table filtering',
-      'Client-server integration for live transaction records',
-      'Secure data routing and presentation layer',
-      'Audit-ready transaction history and tools',
-      'Responsive reporting dashboard for finance users',
-    ],
-    coreTools: [
-      'Concurrently',
-      'React',
-      'Express',
-      'Axios',
-      'TypeScript',
-      'Node.js',
-      'GraphQL',
-      'Material UI',
-      'Redux Toolkit',
-      'Jest',
-    ],
-    image: placeholderImage,
-    screenshots: [],
-  },
-
-  {
-    title: 'React Autocomplete Demo',
-    slug: 'autocomplete-component',
-    description:
-      'A React autocomplete component demo with intelligent filtering, keyboard navigation, and test coverage for UX reliability.',
-    features: [
-      'Search autocomplete suggestions with keyboard navigation',
-      'Fuzzy filtering and dynamic dropdown results',
-      'Accessible input handling and result highlighting',
-      'Component demo with focused user interaction flows',
-      'Test coverage for autocomplete and keyboard behaviors',
-    ],
-    coreTools: [
-      'React',
-      'React Testing Library',
-      'Jest DOM',
-      'Jest',
-      'Create React App',
-      'React Scripts',
-      'TypeScript',
-      'ESLint',
-      'Axios',
-      'React DOM',
-    ],
-    image: placeholderImage,
-    screenshots: [],
-    liveLink: 'https://autocomplete-component-golden.vercel.app/',
-    codeLink: 'https://github.com/Golden-Ogbeka/autocomplete-component',
-  },
-
-  {
-    title: 'Ceejayne Full-Stack Platform',
-    slug: 'ceejayne',
-    description:
-      'A full-stack business platform with Express backend APIs, React client workflows, authentication, and file upload handling.',
-    features: [
-      'Business workflow dashboards and user accounts',
-      'File upload handling with Multer and media processing',
-      'Secure authentication and session management',
-      'Express API endpoints for forms and data workflows',
-      'Client UX for business operations and admin tasks',
-    ],
-    coreTools: [
-      'Express',
-      'Multer',
-      'Bcryptjs',
-      'Helmet',
-      'Express Session',
-      'Cookie Parser',
-      'CORS',
-      'Config',
-      'Concurrently',
-      'React',
-    ],
-    image: placeholderImage,
-    screenshots: [],
-  },
-
-  {
-    title: 'Find It Location API',
-    slug: 'find-it',
-    description:
-      'A location search backend for Find It with geocoding, search endpoints, and Google Maps integration.',
-    features: [
-      'Geocoding search API for location discovery',
-      'Google Maps integration and coordinate lookup',
-      'Search endpoint for businesses or places',
-      'Backend routing and CORS-protected API access',
-      'Environment-based configuration for location services',
-    ],
-    coreTools: [
-      'Express',
-      'Google Maps Services Js',
-      'Axios',
-      'CORS',
-      'Dotenv',
-      'Nodemon',
-    ],
-    image: FindIt,
-    screenshots: [],
-  },
-  {
-    title: 'Glow Stopper Backend Service',
-    slug: 'glow-stopper',
-    description:
-      'A security-focused backend service for Glow Stopper with authentication, email workflows, file uploading, and MySQL persistence.',
-    features: [
-      'Secure user authentication and password protection',
-      'Email notification and workflow handling',
-      'File upload and document processing endpoints',
-      'MySQL-based data storage and backend persistence',
-      'API security with JWT, CORS, and Helmet middleware',
-    ],
-    coreTools: [
-      'Express',
-      'MySQL',
-      'JWT',
-      'Bcryptjs',
-      'Helmet',
-      'CORS',
-      'Nodemailer',
-      'Formidable',
-      'Uuid',
-      'Dotenv',
-    ],
-    image: GlowStopper,
-    screenshots: [],
-  },
-  {
-    title: 'Library Management App',
-    slug: 'library-app',
-    description:
-      'A library management web app with book browsing, borrowing workflows, reservation history, and inventory state management.',
-    features: [
-      'Book catalog browsing and search filters',
-      'Borrowing and lending workflow management',
-      'Inventory and reservation state handling',
-      'Redux-powered app state for library operations',
-      'Responsive browsing and detail views for book collections',
-    ],
-    coreTools: [
-      'Redux Toolkit',
-      'React Redux',
-      'React Router DOM',
-      'React',
-      'React DOM',
-      'React Elastic Carousel',
-      'Axios',
-      'React Testing Library',
-      'Jest DOM',
-      'Tailwind CSS',
-    ],
-    image: Library,
-    screenshots: [],
-  },
-
   {
     title: 'Women-Focused Digital Financial Services Platform',
     slug: 'value-female-network',
@@ -1672,7 +1304,7 @@ const Projects: ProjectType[] = [
     videoDemoLink: 'https://www.youtube.com/watch?v=DDOhFyQWZus',
   },
   {
-    title: 'FRSC Lagos Public Website',
+    title: 'FRSC Lagos Public Website Rebuild',
     slug: 'frsc-website',
     description:
       'A public-facing website for FRSC Lagos with road safety campaigns, service announcements, contact information, and public awareness content.',
