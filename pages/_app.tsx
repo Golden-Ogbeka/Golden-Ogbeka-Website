@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       let currentThemeCondition = currentTheme === 'dark' ? true : false;
       dispatch(setDarkMode(currentThemeCondition));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <>
