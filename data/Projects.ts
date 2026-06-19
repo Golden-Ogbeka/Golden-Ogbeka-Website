@@ -1103,7 +1103,7 @@ const Projects: ProjectType[] = [
     ],
     image: TFHAdmin1,
     screenshots: [TFHAdmin1, TFHAdmin2, TFHAdmin3, TFHAdmin4, TFHAdmin5],
-    codeLink: 'https://github.com/Golden-Ogbeka/church-admin-frontend,',
+    codeLink: 'https://github.com/Golden-Ogbeka/church-admin-frontend',
     videoDemoLink: 'https://www.youtube.com/watch?v=Sv7eH33_op0',
     apiLink: 'https://documenter.getpostman.com/view/25358026/2s8ZDU5ivU',
   },
