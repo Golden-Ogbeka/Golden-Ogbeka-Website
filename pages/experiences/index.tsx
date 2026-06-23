@@ -1,6 +1,7 @@
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
 import ExperiencesData from '../../data/Experiences';
+import { trackEvent } from '../../utils/analytics';
 
 export default function Experiences() {
   return (
@@ -42,6 +43,7 @@ export default function Experiences() {
                         target='_blank'
                         rel='noreferrer'
                         className='text-lg text-zinc-600 dark:text-zinc-400 hover:text-accent transition-colors font-medium'
+                        onClick={() => trackEvent('click', 'company_link', exp.company)}
                       >
                         {exp.company}
                       </a>

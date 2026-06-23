@@ -33,17 +33,26 @@ function Navbar() {
       </Link>
       <div className='flex flex-row items-center gap-6'>
         <Link href='/projects'>
-          <a className='text-zinc-600 dark:text-zinc-300 hover:text-accent dark:hover:text-accent font-medium hidden md:block'>
+          <a
+            className='text-zinc-600 dark:text-zinc-300 hover:text-accent dark:hover:text-accent font-medium hidden md:block'
+            onClick={() => trackEvent('click', 'navigation', 'Projects')}
+          >
             Projects
           </a>
         </Link>
         <Link href='/experiences'>
-          <a className='text-zinc-600 dark:text-zinc-300 hover:text-accent dark:hover:text-accent font-medium hidden md:block'>
+          <a
+            className='text-zinc-600 dark:text-zinc-300 hover:text-accent dark:hover:text-accent font-medium hidden md:block'
+            onClick={() => trackEvent('click', 'navigation', 'Experience')}
+          >
             Experience
           </a>
         </Link>
         <Link href='/open-source'>
-          <a className='text-zinc-600 dark:text-zinc-300 hover:text-accent dark:hover:text-accent font-medium hidden md:block'>
+          <a
+            className='text-zinc-600 dark:text-zinc-300 hover:text-accent dark:hover:text-accent font-medium hidden md:block'
+            onClick={() => trackEvent('click', 'navigation', 'Open Source')}
+          >
             Open Source
           </a>
         </Link>
@@ -59,7 +68,10 @@ function Navbar() {
         </a>
         <DarkModeSwitch
           checked={!isDark}
-          onChange={() => dispatch(toggleDarkMode())}
+          onChange={() => {
+            dispatch(toggleDarkMode());
+            trackEvent('toggle', 'preference', isDark ? 'light' : 'dark');
+          }}
           moonColor={isDark ? '#f4f4f5' : '#09090b'}
           sunColor={isDark ? '#f4f4f5' : '#09090b'}
           size={24}

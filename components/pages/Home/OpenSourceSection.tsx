@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import OpenSourceData from '../../../data/OpenSource';
+import { trackEvent } from '../../../utils/analytics';
 
 function OpenSourceSection() {
   // Get top 8 repositories sorted by combined stars and forks
@@ -26,7 +27,7 @@ function OpenSourceSection() {
           href='/open-source'
           className='items-center gap-2 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors'
         >
-          <a className='hidden md:inline-flex justify-center  mt-6 md:mt-0 items-center text-accent font-medium hover:text-blue-400 transition-colors'>
+          <a className='hidden md:inline-flex justify-center  mt-6 md:mt-0 items-center text-accent font-medium hover:text-blue-400 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Open Source')}>
             View All Open Source Projects
             <svg
               className='w-5 h-5 ml-1'
@@ -53,6 +54,7 @@ function OpenSourceSection() {
             target='_blank'
             rel='noopener noreferrer'
             className='group block p-6 bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 hover:border-accent dark:hover:border-accent rounded-2xl transition-all duration-300'
+            onClick={() => trackEvent('click', 'open_source', repo.name)}
           >
             <div className='flex justify-between items-start mb-4 gap-2'>
               <h3 className='text-lg font-bold font-outfit text-zinc-900 dark:text-zinc-100 group-hover:text-accent transition-colors truncate flex-1'>
@@ -128,7 +130,7 @@ function OpenSourceSection() {
         href='/open-source'
         className=' items-center gap-2 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors'
       >
-        <a className='md:hidden text-center justify-center mt-6 md:mt-0 inline-flex items-center text-accent font-medium hover:text-blue-400 transition-colors'>
+        <a className='md:hidden text-center justify-center mt-6 md:mt-0 inline-flex items-center text-accent font-medium hover:text-blue-400 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Open Source')}>
           View All Open Source Projects
           <svg
             className='w-5 h-5 ml-1'

@@ -1,6 +1,7 @@
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
 import CertificationsData from '../../data/Certifications';
+import { trackEvent } from '../../utils/analytics';
 
 export default function Certifications() {
   return (
@@ -44,6 +45,7 @@ export default function Certifications() {
                     target='_blank'
                     rel='noreferrer'
                     className='inline-flex items-center text-sm font-medium text-accent hover:text-blue-400 transition-colors'
+                    onClick={() => trackEvent('click', 'certification', cert.title)}
                   >
                     View Certificate
                     <svg

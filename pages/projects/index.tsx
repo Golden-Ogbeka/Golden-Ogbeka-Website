@@ -3,6 +3,7 @@ import Link from 'next/link';
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
 import ProjectsData from '../../data/Projects';
+import { trackEvent } from '../../utils/analytics';
 
 export default function Projects() {
   return (
@@ -28,6 +29,7 @@ export default function Projects() {
               <a
                 className='minimal-card flex flex-col group overflow-hidden animate-fade-in-up'
                 style={{ animationDelay: `${index * 0.1}s` }}
+                onClick={() => trackEvent('click', 'project_card', project.title)}
               >
                 <div className='relative w-full aspect-video bg-zinc-200 dark:bg-zinc-800 overflow-hidden'>
                   {project.screenshots && project.screenshots.length > 0 ? (

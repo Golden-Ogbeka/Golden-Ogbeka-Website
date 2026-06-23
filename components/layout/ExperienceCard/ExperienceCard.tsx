@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 import React from 'react';
+import { trackEvent } from '../../../utils/analytics';
 
 function ExperienceCard({
 	experience,
@@ -26,6 +27,7 @@ function ExperienceCard({
 				className='flex flex-row items-center gap-3 dark:text-lightSecondary text-secondary'
 				target='_blank'
 				rel='noreferrer'
+				onClick={() => trackEvent('click', 'company_link', experience.company)}
 			>
 				<Image
 					src={experience.companyLogo}

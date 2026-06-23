@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import CertificationsData from '../../../data/Certifications';
+import { trackEvent } from '../../../utils/analytics';
 
 export default function CertificationsSection() {
   const featuredCerts = CertificationsData.filter((c) => c.featured);
@@ -16,7 +17,7 @@ export default function CertificationsSection() {
           </p>
         </div>
         <Link href='/certifications'>
-          <a className='mt-6 md:mt-0 inline-flex items-center text-accent font-medium hover:text-blue-400 transition-colors'>
+          <a className='mt-6 md:mt-0 inline-flex items-center text-accent font-medium hover:text-blue-400 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Certifications')}>
             View All
             <svg
               className='w-5 h-5 ml-1'
@@ -51,6 +52,7 @@ export default function CertificationsSection() {
                   rel='noreferrer'
                   className='text-accent hover:text-blue-400 p-2'
                   aria-label={`View ${cert.title} certificate`}
+                  onClick={() => trackEvent('click', 'certification', cert.title)}
                 >
                   <svg
                     className='w-5 h-5'
