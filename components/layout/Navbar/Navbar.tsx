@@ -24,6 +24,7 @@ function Navbar() {
             width={48}
             height={48}
             objectFit='cover'
+            priority
             className='rounded-full cursor-pointer'
           />
           <span className='font-display font-semibold lg:text-3xl text-xl hidden md:block'>
