@@ -16,6 +16,7 @@ function AppLayout({ children }: { children: React.ReactNode }) {
     if (htmlHasDark !== isDark) {
       dispatch(setDarkMode(htmlHasDark));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
