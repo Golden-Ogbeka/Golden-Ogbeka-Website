@@ -1,6 +1,2 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-# Explicitly invoke the Windows batch binaries directly
-npm.cmd run type:check
-npm.cmd run lint:fix
+export PATH="$PATH:/c/Program Files/nodejs"
+node ./node_modules/typescript/bin/tsc --noEmit && node ./node_modules/next/dist/bin/next lint --fix
