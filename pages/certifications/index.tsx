@@ -13,6 +13,10 @@ export default function Certifications() {
       <HeadElement
         pageTitle='Certifications & Education | Golden Ogbeka'
         description='Academic degrees, professional certifications, and training achievements by Golden Ogbeka, Senior Software Engineer.'
+        breadcrumb={[
+          { name: 'Golden Ogbeka', url: '/' },
+          { name: t('common:certifications.title'), url: '/certifications' },
+        ]}
       />
       <div className='pt-32 pb-20 min-h-screen'>
         <div className='mb-16 animate-fade-in-up'>

@@ -13,6 +13,10 @@ export default function Experiences() {
       <HeadElement
         pageTitle='Professional Experience | Golden Ogbeka'
         description='My professional work experience and roles.'
+        breadcrumb={[
+          { name: 'Golden Ogbeka', url: '/' },
+          { name: t('common:nav.experience'), url: '/experiences' },
+        ]}
       />
       <div className='pt-32 pb-20 min-h-screen'>
         <div className='mb-16 animate-fade-in-up'>
