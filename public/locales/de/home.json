@@ -17,5 +17,7 @@
   "certifications.title": "Ausbildung & Zertifikate",
   "certifications.subtitle": "Akademischer Hintergrund und berufliche Weiterbildung.",
   "certifications.viewAll": "Alle ansehen",
-  "education.title": "Ausbildung"
+  "education.title": "Ausbildung",
+  "featured.thumbnailAlt": "{{title}} Vorschaubild",
+  "featured.moreTools": "+{{count}}"
 }

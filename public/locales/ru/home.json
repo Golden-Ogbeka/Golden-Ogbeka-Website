@@ -17,5 +17,7 @@
   "certifications.title": "Образование и сертификаты",
   "certifications.subtitle": "Академическое образование и профессиональная подготовка.",
   "certifications.viewAll": "Смотреть все",
-  "education.title": "Образование"
+  "education.title": "Образование",
+  "featured.thumbnailAlt": "{{title}} миниатюра",
+  "featured.moreTools": "+{{count}}"
 }

@@ -17,5 +17,7 @@
   "certifications.title": "学历与认证",
   "certifications.subtitle": "学术背景和专业培训。",
   "certifications.viewAll": "查看全部",
-  "education.title": "教育"
+  "education.title": "教育",
+  "featured.thumbnailAlt": "{{title}} 缩略图",
+  "featured.moreTools": "+{{count}}"
 }
