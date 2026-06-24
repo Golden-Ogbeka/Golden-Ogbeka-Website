@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState, useRef, useEffect } from 'react';
-import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useAppDispatch, useAppSelector } from '../../../app/hooks';
 import { toggleDarkMode } from '../../../app/slices/darkModeSlice';
 import { useTranslation } from 'next-i18next';
@@ -113,15 +112,15 @@ function Navbar() {
             aria-expanded={langOpen}
             aria-label={t('nav.language')}
           >
-            <Image
-              src={currentLocale.flag}
-              alt=''
-              aria-hidden='true'
-              width={20}
-              height={15}
-              className='rounded-sm'
-              unoptimized
-            />
+              <Image
+                src={currentLocale.flag}
+                alt=''
+                aria-hidden='true'
+                width={20}
+                height={10}
+                className='rounded-sm'
+                unoptimized
+              />
             <svg
               className={`w-3 h-3 transition-transform ${langOpen ? '' : 'rotate-180'}`}
               fill='none'
@@ -164,7 +163,7 @@ function Navbar() {
                     alt=''
                     aria-hidden='true'
                     width={20}
-                    height={15}
+                    height={10}
                     className='rounded-sm object-cover'
                     unoptimized
                   />
@@ -190,17 +189,24 @@ function Navbar() {
           )}
         </div>
 
-        <DarkModeSwitch
-          checked={!isDark}
-          onChange={() => {
+        <button
+          onClick={() => {
             dispatch(toggleDarkMode());
             trackEvent('toggle', 'preference', isDark ? 'light' : 'dark');
           }}
-          moonColor={isDark ? '#f4f4f5' : '#09090b'}
-          sunColor={isDark ? '#f4f4f5' : '#09090b'}
-          size={24}
           aria-label={t('a11y.toggleDarkMode')}
-        />
+          className='p-1 rounded-full transition-colors focus-visible:ring-2 focus-visible:ring-accent'
+        >
+          {isDark ? (
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#f4f4f5' width='24' height='24' aria-hidden='true'>
+              <path d='M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z' />
+            </svg>
+          ) : (
+            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#09090b' width='24' height='24' aria-hidden='true'>
+              <path d='M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75zM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0zM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59zM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75zM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591zM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18zM7.758 16.243a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59zM6.166 5.106a.75.75 0 0 0-1.06 1.061l1.59 1.591a.75.75 0 0 0 1.061-1.06l-1.591-1.592z' />
+            </svg>
+          )}
+        </button>
       </div>
     </nav>
   );

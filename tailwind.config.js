@@ -15,7 +15,7 @@ module.exports = {
       colors: {
         primary: '#0F172A',     // slate-900
         secondary: '#334155',   // slate-700
-        accent: '#3B82F6',      // blue-500
+        accent: '#2563EB',      // blue-600 (WCAG AA compliant on white: 4.5:1+)
         darkBg: '#09090b',      // zinc-950
         darkCard: '#18181b',    // zinc-900
         darkText: '#f4f4f5',    // zinc-100

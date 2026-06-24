@@ -36,7 +36,7 @@ export default function Certifications() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className='mb-4'>
-                <span className='text-sm font-medium text-zinc-500 bg-zinc-100 dark:bg-zinc-800 py-1 rounded-full inline-block'>
+                <span className='text-sm font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 py-1 rounded-full inline-block'>
                   {cert.date}
                 </span>
               </div>

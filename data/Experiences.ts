@@ -96,6 +96,18 @@ const Experiences: ExperienceType[] = [
     companyLogo: BOI, // Fallback
   },
   {
+    role: 'Media  Engineer and Live Audio Engineer',
+    company: "The Father's House Church",
+    date: 'Feb 2022 - Jun 2023',
+    tasksAchieved: [
+      'Learnt music production, handled complex audio mixing and mastering, graphics design, video production, photography, social media management',
+      'Produced and engineered live audio for events, concerts, and performances for top musical artist like Bidemi Olaoba, ensuring high-quality sound delivery and audience engagement',
+      "Serve as the Media unit head of the Youth Church of The Father's House Church",
+      'Web Development Tutor and Full Stack Engineer. Rebuilt the church\"s software applications and mobile application while managing a team of volunteers.',
+    ],
+    companyLogo: BOI, // Fallback
+  },
+  {
     role: 'Full Stack Engineer',
     company: 'Composite Property Development',
     date: 'Feb 2021 - Dec 2021',

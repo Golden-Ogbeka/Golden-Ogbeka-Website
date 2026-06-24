@@ -39,7 +39,7 @@ export default function Experiences() {
                 <div className='flex-1'>
                   <div className='flex flex-col md:flex-row md:items-center justify-between mb-2'>
                     <h2 className='text-2xl font-semibold'>{t(`experiences:experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.role`, exp.role)}</h2>
-                    <span className='text-sm font-medium text-zinc-500 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded-full mt-2 md:mt-0 inline-block w-max'>
+                    <span className='text-sm font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded-full mt-2 md:mt-0 inline-block w-max'>
                       {exp.date}
                     </span>
                   </div>

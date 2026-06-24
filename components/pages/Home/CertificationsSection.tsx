@@ -19,10 +19,10 @@ export default function CertificationsSection() {
           </p>
         </div>
         <Link href='/certifications'>
-          <a className='mt-6 md:mt-0 inline-flex items-center text-accent font-medium hover:text-blue-400 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Certifications')}>
+          <a className='hidden md:inline-flex justify-center mt-6 md:mt-0 items-center gap-2 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Certifications')}>
             {t('home:certifications.viewAll')}
             <svg
-              className='w-5 h-5 ml-1'
+              className='w-5 h-5'
               fill='none'
               stroke='currentColor'
               viewBox='0 0 24 24'
@@ -44,7 +44,7 @@ export default function CertificationsSection() {
             <h3 className='text-lg font-semibold mb-2'>{t(`certifications:certification.${index}.title`, cert.title)}</h3>
             <p className='text-zinc-600 dark:text-zinc-400 mb-4'>{t(`certifications:certification.${index}.organization`, cert.organization)}</p>
             <div className='mt-auto flex items-center justify-between'>
-              <span className='text-sm font-medium text-zinc-500 bg-zinc-100 dark:bg-zinc-800 py-1 rounded-full'>
+              <span className='text-sm font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 py-1 rounded-full'>
                 {cert.date}
               </span>
               {cert.link && cert.link !== '#' && (
@@ -75,6 +75,25 @@ export default function CertificationsSection() {
           </div>
         ))}
       </div>
+
+      <Link href='/certifications'>
+        <a className='md:hidden inline-flex items-center justify-center gap-2 mt-6 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Certifications')}>
+          {t('home:certifications.viewAll')}
+          <svg
+            className='w-5 h-5'
+            fill='none'
+            stroke='currentColor'
+            viewBox='0 0 24 24'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              strokeWidth={2}
+              d='M17 8l4 4m0 0l-4 4m4-4H3'
+            />
+          </svg>
+        </a>
+      </Link>
     </section>
   );
 }
