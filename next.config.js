@@ -1,11 +1,9 @@
-/** @type {import('next').NextConfig} */
+	const { i18n } = require('./next-i18next.config.js');
+
 const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
-	i18n: {
-		locales: ['en', 'zh', 'fr', 'de', 'es', 'ja', 'ko', 'pt', 'ru', 'ar'],
-		defaultLocale: 'en',
-	},
+	i18n,
 	images: {
 		domains: ['flagcdn.com'],
 	},

@@ -1,11 +1,13 @@
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
 import ExperiencesData from '../../data/Experiences';
-import { useTranslation } from '../../context/LocaleContext';
+import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../utils/analytics';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 
 export default function Experiences() {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['common', 'experiences']);
   return (
     <AppLayout>
       <HeadElement
@@ -15,10 +17,10 @@ export default function Experiences() {
       <div className='pt-32 pb-20 min-h-screen'>
         <div className='mb-16 animate-fade-in-up'>
           <h1 className='text-4xl md:text-5xl font-display font-semibold mb-4'>
-            {t('experiences.title')}
+            {t('experiences:experiences.title')}
           </h1>
           <p className='text-zinc-600 dark:text-zinc-400 text-lg max-w-2xl'>
-            {t('experiences.subtitle')}
+            {t('experiences:experiences.subtitle')}
           </p>
         </div>
 
@@ -32,7 +34,7 @@ export default function Experiences() {
               <div className='flex flex-col md:flex-row md:items-start gap-6'>
                 <div className='flex-1'>
                   <div className='flex flex-col md:flex-row md:items-center justify-between mb-2'>
-                    <h2 className='text-2xl font-semibold'>{t(`experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.role`, exp.role)}</h2>
+                    <h2 className='text-2xl font-semibold'>{t(`experiences:experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.role`, exp.role)}</h2>
                     <span className='text-sm font-medium text-zinc-500 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded-full mt-2 md:mt-0 inline-block w-max'>
                       {exp.date}
                     </span>
@@ -46,11 +48,11 @@ export default function Experiences() {
                         className='text-lg text-zinc-600 dark:text-zinc-400 hover:text-accent transition-colors font-medium'
                         onClick={() => trackEvent('click', 'company_link', exp.company)}
                       >
-                        {t(`experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.company`, exp.company)}
+                        {t(`experiences:experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.company`, exp.company)}
                       </a>
                     ) : (
                       <span className='text-lg text-zinc-600 dark:text-zinc-400 font-medium'>
-                        {t(`experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.company`, exp.company)}
+                        {t(`experiences:experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.company`, exp.company)}
                       </span>
                     )}
                   </div>
@@ -60,7 +62,7 @@ export default function Experiences() {
                       <li key={idx} className='flex items-start'>
                         <span className='w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-600 mt-2 mr-3 shrink-0'></span>
                         <span className='text-zinc-700 dark:text-zinc-300 leading-relaxed'>
-                          {t(`experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.tasks.${idx}`, task)}
+                          {t(`experiences:experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.tasks.${idx}`, task)}
                         </span>
                       </li>
                     ))}
@@ -73,4 +75,12 @@ export default function Experiences() {
       </div>
     </AppLayout>
   );
+}
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'experiences'])),
+    },
+  };
 }

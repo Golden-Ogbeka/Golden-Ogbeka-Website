@@ -1,13 +1,13 @@
 import React from 'react';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { setDarkMode } from '../../app/slices/darkModeSlice';
-import { useTranslation } from '../../context/LocaleContext';
+import { useTranslation } from 'next-i18next';
 import AntigravityCanvas from '../pages/Home/AntigravityCanvas';
 import Footer from './Footer/Footer';
 import Navbar from './Navbar/Navbar';
 
 function AppLayout({ children }: { children: React.ReactNode }) {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['common']);
   const { isDark } = useAppSelector((state) => state.darkMode);
   const dispatch = useAppDispatch();
 

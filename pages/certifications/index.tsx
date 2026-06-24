@@ -1,11 +1,13 @@
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
 import CertificationsData from '../../data/Certifications';
-import { useTranslation } from '../../context/LocaleContext';
+import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../utils/analytics';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 
 export default function Certifications() {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['common', 'certifications']);
   return (
     <AppLayout>
       <HeadElement
@@ -15,10 +17,10 @@ export default function Certifications() {
       <div className='pt-32 pb-20 min-h-screen'>
         <div className='mb-16 animate-fade-in-up'>
           <h1 className='text-4xl md:text-5xl font-display font-semibold mb-4'>
-            {t('certifications.title')}
+            {t('certifications:certifications.title')}
           </h1>
           <p className='text-zinc-600 dark:text-zinc-400 text-lg max-w-2xl'>
-            {t('certifications.subtitle')}
+            {t('certifications:certifications.subtitle')}
           </p>
         </div>
 
@@ -34,9 +36,9 @@ export default function Certifications() {
                   {cert.date}
                 </span>
               </div>
-              <h2 className='text-xl font-semibold mb-2'>{t(`certification.${index}.title`, cert.title)}</h2>
+              <h2 className='text-xl font-semibold mb-2'>{t(`certifications:certification.${index}.title`, cert.title)}</h2>
               <p className='text-zinc-600 dark:text-zinc-400 mb-6 flex-1'>
-                {t(`certification.${index}.organization`, cert.organization)}
+                {t(`certifications:certification.${index}.organization`, cert.organization)}
               </p>
 
               {cert.link && cert.link !== '#' && (
@@ -48,7 +50,7 @@ export default function Certifications() {
                     className='inline-flex items-center text-sm font-medium text-accent hover:text-blue-400 transition-colors'
                     onClick={() => trackEvent('click', 'certification', cert.title)}
                   >
-                    {t('a11y.viewCertificate').replace('{title}', t(`certification.${index}.title`, cert.title))}
+                    {t('a11y.viewCertificate').replace('{title}', t(`certifications:certification.${index}.title`, cert.title))}
                     <svg
                       className='w-4 h-4 ml-1'
                       fill='none'
@@ -71,4 +73,12 @@ export default function Certifications() {
       </div>
     </AppLayout>
   );
+}
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'certifications'])),
+    },
+  };
 }

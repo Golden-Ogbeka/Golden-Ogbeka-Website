@@ -1,0 +1,21 @@
+{
+  "intro.title": "Building scalable enterprise platforms.",
+  "intro.titleHighlight": "scalable enterprise",
+  "intro.subtitle": "I'm Golden Ogbeka, a Senior Software Engineer specializing in fintech, distributed systems, and crafting premium user experiences.",
+  "intro.viewWork": "View Work",
+  "intro.contactMe": "Contact Me",
+  "featured.title": "Featured Work",
+  "featured.subtitle": "A selection of my recent and most impactful projects across web, mobile, and backend development.",
+  "featured.viewAll": "View All Projects",
+  "experience.title": "Experience",
+  "experience.subtitle": "Over 6 years of experience building scalable applications and leading engineering teams.",
+  "experience.viewAll": "View All Experiences",
+  "experience.seeMore": "See more details...",
+  "openSource.title": "Open Source",
+  "openSource.subtitle": "A collection of public repositories, libraries, and templates I've built and shared with the developer community.",
+  "openSource.viewAll": "View All Open Source Projects",
+  "certifications.title": "Education & Certifications",
+  "certifications.subtitle": "Academic background and professional training.",
+  "certifications.viewAll": "View All",
+  "education.title": "Education"
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from '../../../context/LocaleContext';
+import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../../utils/analytics';
 
 interface VideoDemoProps {
@@ -7,7 +7,7 @@ interface VideoDemoProps {
 }
 
 export default function VideoDemo({ videoLink }: VideoDemoProps) {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['common', 'projects']);
   const getYoutubeEmbedUrl = (url: string) => {
     const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
     const match = url.match(regExp);

@@ -1,11 +1,12 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
 import ImageGallery from '../../components/pages/Project/ImageGallery';
 import VideoDemo from '../../components/pages/Project/VideoDemo';
 import ProjectsData, { ProjectType } from '../../data/Projects';
-import { useTranslation } from '../../context/LocaleContext';
+import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../utils/analytics';
 
 interface ProjectDetailsProps {
@@ -13,7 +14,7 @@ interface ProjectDetailsProps {
 }
 
 export default function ProjectDetails({ project }: ProjectDetailsProps) {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['common', 'projects']);
   if (!project) return null;
 
   return (
@@ -45,10 +46,10 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
 
         <header className='mb-12 animate-fade-in-up'>
           <h1 className='text-4xl md:text-5xl lg:text-6xl font-display font-semibold mb-6'>
-            {t(`project.${project.slug}.title`, project.title)}
+            {t(`projects:project.${project.slug}.title`, project.title)}
           </h1>
           <p className='text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl leading-relaxed'>
-            {t(`project.${project.slug}.description`, project.description)}
+            {t(`projects:project.${project.slug}.description`, project.description)}
           </p>
 
           <div className='flex flex-wrap gap-4 mt-8'>
@@ -142,7 +143,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                         d='M5 13l4 4L19 7'
                       />
                     </svg>
-                    <span className='text-zinc-700 dark:text-zinc-300'>{t(`project.${project.slug}.features.${idx}`, feature)}</span>
+                    <span className='text-zinc-700 dark:text-zinc-300'>{t(`projects:project.${project.slug}.features.${idx}`, feature)}</span>
                   </li>
                 ))}
               </ul>
@@ -158,7 +159,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                     key={tool}
                     className='bg-zinc-100 dark:bg-zinc-800 rounded-lg text-sm font-medium text-zinc-700 dark:text-zinc-300'
                   >
-                    {t(`project.${project.slug}.coreTools.${idx}`, tool)}
+                    {t(`projects:project.${project.slug}.coreTools.${idx}`, tool)}
                   </span>
                 ))}
               </div>
@@ -187,12 +188,13 @@ export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
   return { paths, fallback: false };
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   const project = ProjectsData.find((p) => p.slug === params?.slug);
 
   return {
     props: {
       project,
+      ...(await serverSideTranslations(locale || 'en', ['common', 'projects'])),
     },
   };
 };

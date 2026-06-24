@@ -6,7 +6,7 @@ import React from 'react';
 import { useAppDispatch } from '../app/hooks';
 import { setDarkMode } from '../app/slices/darkModeSlice';
 import Script from 'next/script';
-import { LocaleProvider } from '../context/LocaleContext';
+import { appWithTranslation } from 'next-i18next';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const dispatch = useAppDispatch();
@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <LocaleProvider>
+    <>
       {/* <!-- Google tag (gtag.js) --> */}
       <Script async src='https://www.googletagmanager.com/gtag/js?id=G-NZGV1R34HY' />
       <Script id='google-analytics'>
@@ -35,8 +35,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Script>
       <HeadElement />
       <Component {...pageProps} />
-    </LocaleProvider>
+    </>
   );
 }
 
-export default wrapper.withRedux(MyApp);
+export default wrapper.withRedux(appWithTranslation(MyApp));

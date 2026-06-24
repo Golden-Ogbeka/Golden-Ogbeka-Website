@@ -5,19 +5,38 @@ import { useState, useRef, useEffect } from 'react';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useAppDispatch, useAppSelector } from '../../../app/hooks';
 import { toggleDarkMode } from '../../../app/slices/darkModeSlice';
-import { useTranslation } from '../../../context/LocaleContext';
+import { useTranslation } from 'next-i18next';
 import AvatarImage from '../../../public/brand/golden-ogbeka.jpg';
 import { trackEvent } from '../../../utils/analytics';
+
+interface LocaleInfo {
+  code: string;
+  label: string;
+  flag: string;
+}
+
+const LOCALES: LocaleInfo[] = [
+  { code: 'en', label: 'English', flag: 'https://flagcdn.com/w40/gb.png' },
+  { code: 'zh', label: '中文', flag: 'https://flagcdn.com/w40/cn.png' },
+  { code: 'fr', label: 'Français', flag: 'https://flagcdn.com/w40/fr.png' },
+  { code: 'de', label: 'Deutsch', flag: 'https://flagcdn.com/w40/de.png' },
+  { code: 'es', label: 'Español', flag: 'https://flagcdn.com/w40/es.png' },
+  { code: 'ja', label: '日本語', flag: 'https://flagcdn.com/w40/jp.png' },
+  { code: 'ko', label: '한국어', flag: 'https://flagcdn.com/w40/kr.png' },
+  { code: 'pt', label: 'Português', flag: 'https://flagcdn.com/w40/pt.png' },
+  { code: 'ru', label: 'Русский', flag: 'https://flagcdn.com/w40/ru.png' },
+  { code: 'ar', label: 'العربية', flag: 'https://flagcdn.com/w40/sa.png' },
+];
 
 function Navbar() {
   const dispatch = useAppDispatch();
   const router = useRouter();
-  const { t, locales } = useTranslation();
+  const { t } = useTranslation(['common']);
   const { isDark } = useAppSelector((state) => state.darkMode);
   const [langOpen, setLangOpen] = useState(false);
   const langRef = useRef<HTMLDivElement>(null);
 
-  const currentLocale = locales.find((l) => l.code === router.locale) || locales[0];
+  const currentLocale = LOCALES.find((l) => l.code === router.locale) || LOCALES[0];
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
@@ -124,7 +143,7 @@ function Navbar() {
               role='listbox'
               aria-label={t('nav.language')}
             >
-              {locales.map((l) => (
+              {LOCALES.map((l) => (
                 <button
                   key={l.code}
                   onClick={() => {

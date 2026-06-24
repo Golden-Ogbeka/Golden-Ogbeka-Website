@@ -32,8 +32,8 @@
 ### Data & i18n
 - All content (projects, experiences, etc.) is in TypeScript arrays in `data/`.
 - Never import data directly from external sources — only from `data/` files.
-- Translations live in `public/locales/{locale}/common.json`. Use `useTranslation().t('key')` from `context/LocaleContext`. Interpolation with `String.replace('{var}', val)`.
-- The `t()` function signature is `(key: string, fallback?: string) => string` — no template objects.
+- Translations are split into namespaces in `public/locales/{locale}/*.json`. Use `useTranslation('namespace')` from `next-i18next`. Interpolation is native (e.g., `t('key', { var: val })`).
+- The `t()` function supports full i18n objects and standard interpolations.
 - Never hardcode UI text; always use `t()` for all user-facing strings.
 - When adding or modifying data in `data/` files (projects, experiences, open source, certifications, education), you MUST add/update the corresponding translations in ALL 10 locale files (`en`, `fr`, `de`, `es`, `pt`, `zh`, `ja`, `ko`, `ru`, `ar`). Use your multilingual capabilities to generate accurate translations. Translate only what the user reads — technology names, company names, organization names, institution names, and project/repo names should stay in English. Use the English locale as the source of truth; the locale key format is `{section}.{slug}.{field}` (e.g., `project.my-slug.title`). For slugs containing dots (e.g. `switch3.0`), use the literal dot in the locale key (e.g. `project.switch3.0.title`).
 

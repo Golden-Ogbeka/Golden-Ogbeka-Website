@@ -3,10 +3,12 @@ import Link from 'next/link';
 import React from 'react';
 import AppLayout from '../components/layout/AppLayout';
 import HeadElement from '../components/layout/HeadElement';
-import { useTranslation } from '../context/LocaleContext';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 
 const Custom404: NextPage = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['common']);
   return (
     <AppLayout>
       <HeadElement
@@ -59,3 +61,11 @@ const Custom404: NextPage = () => {
 };
 
 export default Custom404;
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+}

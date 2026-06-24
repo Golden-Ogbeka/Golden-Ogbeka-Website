@@ -1,7 +1,7 @@
 import { Dialog } from '@headlessui/react';
 import Image, { StaticImageData } from 'next/image';
 import { useState } from 'react';
-import { useTranslation } from '../../../context/LocaleContext';
+import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../../utils/analytics';
 
 interface ImageGalleryProps {
@@ -10,7 +10,7 @@ interface ImageGalleryProps {
 }
 
 export default function ImageGallery({ screenshots, projectName }: ImageGalleryProps) {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['common', 'projects']);
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 

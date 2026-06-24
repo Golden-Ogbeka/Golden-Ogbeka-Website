@@ -2,12 +2,12 @@ import Email from '../../../public/icons/email.png';
 import Github from '../../../public/icons/github.png';
 import Linkedin from '../../../public/icons/linkedin-white.png';
 import Whatsapp from '../../../public/icons/whatsapp-white.png';
-import { useTranslation } from '../../../context/LocaleContext';
+import { useTranslation } from 'next-i18next';
 import SectionDivider from '../SectionDivider';
 import ContactCard from './ContactCard';
 
 function Footer() {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['common']);
   return (
     <>
       <SectionDivider />
