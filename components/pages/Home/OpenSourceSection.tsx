@@ -58,7 +58,7 @@ function OpenSourceSection() {
           >
             <div className='flex justify-between items-start mb-4 gap-2'>
               <h3 className='text-lg font-bold font-outfit text-zinc-900 dark:text-zinc-100 group-hover:text-accent transition-colors truncate flex-1'>
-                {t(`openSource:openSource.${repo.id}.name`, repo.name)}
+                {t(`openSource:${repo.id}.name`, repo.name)}
               </h3>
               <svg
                 className='w-5 h-5 text-zinc-400 group-hover:text-accent transform group-hover:-translate-y-1 group-hover:translate-x-1 transition-all'
@@ -77,7 +77,7 @@ function OpenSourceSection() {
             </div>
 
             <p className='text-zinc-600 dark:text-zinc-400 mb-6 text-sm leading-relaxed line-clamp-3'>
-              {t(`openSource:openSource.${repo.id}.description`, repo.description)}
+              {t(`openSource:${repo.id}.description`, repo.description)}
             </p>
 
             <div className='flex flex-wrap gap-2 mb-6'>

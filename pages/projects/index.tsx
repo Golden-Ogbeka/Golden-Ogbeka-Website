@@ -19,10 +19,10 @@ export default function Projects() {
       <div className='pt-32 min-h-screen'>
         <div className='mb-12 animate-fade-in-up'>
           <h1 className='text-4xl md:text-5xl font-display font-semibold mb-4'>
-            {t('projects:projects.title')}
+            {t('projects:title')}
           </h1>
           <p className='text-zinc-600 dark:text-zinc-400 text-lg max-w-2xl'>
-            {t('projects:projects.subtitle')}
+            {t('projects:subtitle')}
           </p>
         </div>
 
