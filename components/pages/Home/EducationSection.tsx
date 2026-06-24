@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next';
 import EducationCard from '../../layout/EducationCard/EducationCard';
 
 function EducationSection() {
-	const { t } = useTranslation(['common', 'home']);
+	const { t } = useTranslation(['common', 'home', 'certifications']);
 	return (
 		<section id='education'>
 			<div className='grid grid-cols-1 lg:grid-cols-7 justify-items-stretch lg:gap-[95px]'>

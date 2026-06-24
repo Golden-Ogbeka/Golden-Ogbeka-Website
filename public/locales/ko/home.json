@@ -17,5 +17,7 @@
   "certifications.title": "학력 및 자격증",
   "certifications.subtitle": "학문적 배경과 전문 교육.",
   "certifications.viewAll": "모두 보기",
-  "education.title": "교육"
+  "education.title": "교육",
+  "featured.thumbnailAlt": "{{title}} 썸네일",
+  "featured.moreTools": "+{{count}}"
 }

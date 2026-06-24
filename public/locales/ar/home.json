@@ -17,5 +17,7 @@
   "certifications.title": "التعليم والشهادات",
   "certifications.subtitle": "الخلفية الأكاديمية والتدريب المهني.",
   "certifications.viewAll": "عرض الكل",
-  "education.title": "التعليم"
+  "education.title": "التعليم",
+  "featured.thumbnailAlt": "صورة مصغرة لـ {{title}}",
+  "featured.moreTools": "+{{count}}"
 }

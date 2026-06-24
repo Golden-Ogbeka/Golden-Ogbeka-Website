@@ -17,5 +17,7 @@
   "certifications.title": "学歴と資格",
   "certifications.subtitle": "学歴と専門的なトレーニング。",
   "certifications.viewAll": "すべてを見る",
-  "education.title": "学歴"
+  "education.title": "学歴",
+  "featured.thumbnailAlt": "{{title}} サムネイル",
+  "featured.moreTools": "+{{count}}"
 }

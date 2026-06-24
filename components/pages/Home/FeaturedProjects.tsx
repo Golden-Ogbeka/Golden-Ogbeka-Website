@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../../utils/analytics';
 
 export default function FeaturedProjects() {
-  const { t } = useTranslation(['common', 'home']);
+  const { t } = useTranslation(['common', 'home', 'projects']);
   const featuredProjects = FeaturedProjectsData;
 
   return (
@@ -47,7 +47,7 @@ export default function FeaturedProjects() {
                 {project.screenshots && project.screenshots.length > 0 ? (
                   <Image
                     src={project.screenshots[0]}
-                    alt={`${project.title} thumbnail`}
+                    alt={t('home:featured.thumbnailAlt', { title: t(`projects:project.${project.slug}.title`, project.title) })}
                     className='object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500'
                     layout='fill'
                     priority={index === 0}
@@ -55,7 +55,7 @@ export default function FeaturedProjects() {
                 ) : (
                   <Image
                     src={project.image}
-                    alt={`${project.title} thumbnail`}
+                    alt={t('home:featured.thumbnailAlt', { title: t(`projects:project.${project.slug}.title`, project.title) })}
                     layout='fill'
                     objectFit='cover'
                     className='transform group-hover:scale-105 transition-transform duration-500'
@@ -65,10 +65,10 @@ export default function FeaturedProjects() {
               </div>
               <div className='p-8 flex-1 flex flex-col'>
                 <h3 className='text-2xl font-semibold mb-3 group-hover:text-accent transition-colors'>
-                  {project.title}
+                  {t(`projects:project.${project.slug}.title`, project.title)}
                 </h3>
                 <p className='text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-6 flex-1 text-lg'>
-                  {project.description}
+                  {t(`projects:project.${project.slug}.description`, project.description)}
                 </p>
                 <div className='flex flex-wrap gap-2 mt-auto'>
                   {project.coreTools.slice(0, 3).map((tool) => (
@@ -81,7 +81,7 @@ export default function FeaturedProjects() {
                   ))}
                   {project.coreTools.length > 3 && (
                     <span className='text-sm font-medium px-3 py-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-zinc-700 dark:text-zinc-300'>
-                      +{project.coreTools.length - 3}
+                      {t('home:featured.moreTools', { count: project.coreTools.length - 3 })}
                     </span>
                   )}
                 </div>

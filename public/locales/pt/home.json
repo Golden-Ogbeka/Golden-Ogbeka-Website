@@ -17,5 +17,7 @@
   "certifications.title": "Formação e Certificações",
   "certifications.subtitle": "Formação acadêmica e treinamento profissional.",
   "certifications.viewAll": "Ver tudo",
-  "education.title": "Formação"
+  "education.title": "Formação",
+  "featured.thumbnailAlt": "{{title}} miniatura",
+  "featured.moreTools": "+{{count}}"
 }

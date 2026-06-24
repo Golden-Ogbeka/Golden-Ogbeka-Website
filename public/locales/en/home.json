@@ -17,5 +17,7 @@
   "certifications.title": "Education & Certifications",
   "certifications.subtitle": "Academic background and professional training.",
   "certifications.viewAll": "View All",
-  "education.title": "Education"
+  "education.title": "Education",
+  "featured.thumbnailAlt": "{{title}} thumbnail",
+  "featured.moreTools": "+{{count}}"
 }
