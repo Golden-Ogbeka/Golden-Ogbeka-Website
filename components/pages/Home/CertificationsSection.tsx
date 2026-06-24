@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import CertificationsData from '../../../data/Certifications';
 import { trackEvent } from '../../../utils/analytics';
+import { useTranslation } from '../../../context/LocaleContext';
 
 export default function CertificationsSection() {
+  const { t } = useTranslation();
   const featuredCerts = CertificationsData.filter((c) => c.featured);
 
   return (
@@ -10,15 +12,15 @@ export default function CertificationsSection() {
       <div className='flex flex-col md:flex-row md:items-end justify-between mb-12'>
         <div className='max-w-2xl'>
           <h2 className='text-3xl md:text-4xl font-display font-semibold mb-4'>
-            Education & Certifications
+            {t('home.certifications.title')}
           </h2>
           <p className='text-zinc-600 dark:text-zinc-400 text-lg'>
-            Academic background and professional training.
+            {t('home.certifications.subtitle')}
           </p>
         </div>
         <Link href='/certifications'>
           <a className='mt-6 md:mt-0 inline-flex items-center text-accent font-medium hover:text-blue-400 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Certifications')}>
-            View All
+            {t('home.certifications.viewAll')}
             <svg
               className='w-5 h-5 ml-1'
               fill='none'
@@ -39,8 +41,8 @@ export default function CertificationsSection() {
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
         {featuredCerts.map((cert, index) => (
           <div key={index} className='minimal-card p-6 flex flex-col'>
-            <h3 className='text-lg font-semibold mb-2'>{cert.title}</h3>
-            <p className='text-zinc-600 dark:text-zinc-400 mb-4'>{cert.organization}</p>
+            <h3 className='text-lg font-semibold mb-2'>{t(`certification.${index}.title`, cert.title)}</h3>
+            <p className='text-zinc-600 dark:text-zinc-400 mb-4'>{t(`certification.${index}.organization`, cert.organization)}</p>
             <div className='mt-auto flex items-center justify-between'>
               <span className='text-sm font-medium text-zinc-500 bg-zinc-100 dark:bg-zinc-800 py-1 rounded-full'>
                 {cert.date}
@@ -51,7 +53,7 @@ export default function CertificationsSection() {
                   target='_blank'
                   rel='noreferrer'
                   className='text-accent hover:text-blue-400 p-2'
-                  aria-label={`View ${cert.title} certificate`}
+                  aria-label={t('a11y.viewCertificate').replace('{title}', t(`certification.${index}.title`, cert.title))}
                   onClick={() => trackEvent('click', 'certification', cert.title)}
                 >
                   <svg

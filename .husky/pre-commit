@@ -1,2 +1,5 @@
-npm run type:check
-npm run lint:fix
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+cmd.exe /c "npm run type:check"
+cmd.exe /c "npm run lint:fix"

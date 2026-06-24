@@ -1,6 +1,7 @@
 import { Dialog } from '@headlessui/react';
 import Image, { StaticImageData } from 'next/image';
 import { useState } from 'react';
+import { useTranslation } from '../../../context/LocaleContext';
 import { trackEvent } from '../../../utils/analytics';
 
 interface ImageGalleryProps {
@@ -9,6 +10,7 @@ interface ImageGalleryProps {
 }
 
 export default function ImageGallery({ screenshots, projectName }: ImageGalleryProps) {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -30,7 +32,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
 
   return (
     <div className='mt-16'>
-      <h2 id='gallery-heading' className='text-2xl font-display font-semibold mb-6'>Project Gallery</h2>
+      <h2 id='gallery-heading' className='text-2xl font-display font-semibold mb-6'>{t('projectDetail.gallery')}</h2>
       <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
         {screenshots.map((src, index) => (
           <button
@@ -50,7 +52,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
             />
             <div className='absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center'>
               <span className='opacity-0 group-hover:opacity-100 text-white font-medium drop-shadow-md'>
-                View Full
+                {t('projectDetail.viewFull')}
               </span>
             </div>
           </button>
@@ -65,7 +67,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
             <button
               onClick={() => setIsOpen(false)}
               className='absolute -top-12 right-0 text-white hover:text-zinc-300 p-2'
-              aria-label='Close gallery'
+              aria-label={t('a11y.closeGallery')}
             >
               <svg
                 className='w-8 h-8'
@@ -86,7 +88,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
               <button
                 onClick={prevImage}
                 className='absolute left-0 z-10 p-2 bg-black/50 text-white rounded-r-xl hover:bg-black/70 transition-colors'
-                aria-label='Previous image'
+                aria-label={t('a11y.prevImage')}
               >
                 <svg
                   className='w-8 h-8'
@@ -116,7 +118,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
               <button
                 onClick={nextImage}
                 className='absolute right-0 z-10 p-2 bg-black/50 text-white rounded-l-xl hover:bg-black/70 transition-colors'
-                aria-label='Next image'
+                aria-label={t('a11y.nextImage')}
               >
                 <svg
                   className='w-8 h-8'

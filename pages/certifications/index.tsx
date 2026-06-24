@@ -1,9 +1,11 @@
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
 import CertificationsData from '../../data/Certifications';
+import { useTranslation } from '../../context/LocaleContext';
 import { trackEvent } from '../../utils/analytics';
 
 export default function Certifications() {
+  const { t } = useTranslation();
   return (
     <AppLayout>
       <HeadElement
@@ -13,11 +15,10 @@ export default function Certifications() {
       <div className='pt-32 pb-20 min-h-screen'>
         <div className='mb-16 animate-fade-in-up'>
           <h1 className='text-4xl md:text-5xl font-display font-semibold mb-4'>
-            Education & Certifications
+            {t('certifications.title')}
           </h1>
           <p className='text-zinc-600 dark:text-zinc-400 text-lg max-w-2xl'>
-            A comprehensive list of my academic achievements, degrees, and professional
-            training certifications.
+            {t('certifications.subtitle')}
           </p>
         </div>
 
@@ -33,9 +34,9 @@ export default function Certifications() {
                   {cert.date}
                 </span>
               </div>
-              <h2 className='text-xl font-semibold mb-2'>{cert.title}</h2>
+              <h2 className='text-xl font-semibold mb-2'>{t(`certification.${index}.title`, cert.title)}</h2>
               <p className='text-zinc-600 dark:text-zinc-400 mb-6 flex-1'>
-                {cert.organization}
+                {t(`certification.${index}.organization`, cert.organization)}
               </p>
 
               {cert.link && cert.link !== '#' && (
@@ -47,7 +48,7 @@ export default function Certifications() {
                     className='inline-flex items-center text-sm font-medium text-accent hover:text-blue-400 transition-colors'
                     onClick={() => trackEvent('click', 'certification', cert.title)}
                   >
-                    View Certificate
+                    {t('a11y.viewCertificate').replace('{title}', t(`certification.${index}.title`, cert.title))}
                     <svg
                       className='w-4 h-4 ml-1'
                       fill='none'
