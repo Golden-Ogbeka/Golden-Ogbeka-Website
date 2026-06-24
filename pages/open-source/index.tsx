@@ -156,7 +156,7 @@ const OpenSourcePage: NextPage = () => {
               </div>
 
               <p className='text-zinc-600 dark:text-zinc-400 mb-6 text-sm leading-relaxed line-clamp-3'>
-                {t(`openSource:openSource.${repo.id}.description`, repo.description)}
+                {t(`openSource:${repo.id}.description`, repo.description)}
               </p>
 
               <div className='flex flex-wrap gap-2 mb-6'>
