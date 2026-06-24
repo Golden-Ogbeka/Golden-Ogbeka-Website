@@ -15,6 +15,10 @@ export default function Projects() {
       <HeadElement
         pageTitle='All Projects | Golden Ogbeka'
         description='A complete list of projects built by Golden Ogbeka'
+        breadcrumb={[
+          { name: 'Golden Ogbeka', url: '/' },
+          { name: t('common:nav.projects'), url: '/projects' },
+        ]}
       />
       <div className='pt-32 min-h-screen'>
         <div className='mb-12 animate-fade-in-up'>

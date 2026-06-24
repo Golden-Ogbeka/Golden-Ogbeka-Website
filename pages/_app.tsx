@@ -1,6 +1,5 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import HeadElement from '../components/layout/HeadElement';
 import { wrapper } from '../app/store';
 import React from 'react';
 import { setDarkMode } from '../app/slices/darkModeSlice';
@@ -44,7 +43,6 @@ function MyApp({ Component, pageProps }: AppProps) {
             window.gtag('config', 'G-NZGV1R34HY');
         `}
       </Script>
-      <HeadElement />
       <Component {...props.pageProps} />
     </Provider>
   );

@@ -1,6 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
 import ImageGallery from '../../components/pages/Project/ImageGallery';
@@ -15,13 +16,27 @@ interface ProjectDetailsProps {
 
 export default function ProjectDetails({ project }: ProjectDetailsProps) {
   const { t } = useTranslation(['common', 'projects']);
+  const router = useRouter();
   if (!project) return null;
+
+  const projectUrl = `${router.locale === router.defaultLocale ? '' : '/' + router.locale}/projects/${project.slug}`;
 
   return (
     <AppLayout>
       <HeadElement
-        pageTitle={`${project.title} | Golden Ogbeka`}
-        description={project.description}
+        pageTitle={`${t(`projects:project.${project.slug}.title`, project.title)} | Golden Ogbeka`}
+        description={t(`projects:project.${project.slug}.description`, project.description)}
+        breadcrumb={[
+          { name: 'Golden Ogbeka', url: '/' },
+          { name: t('common:nav.projects'), url: '/projects' },
+          { name: t(`projects:project.${project.slug}.title`, project.title), url: projectUrl },
+        ]}
+        softwareApplication={{
+          name: t(`projects:project.${project.slug}.title`, project.title),
+          description: t(`projects:project.${project.slug}.description`, project.description),
+          url: projectUrl,
+          image: typeof project.image === 'string' ? project.image : project.image.src,
+        }}
       />
 
       <article className='pt-32 min-h-screen'>

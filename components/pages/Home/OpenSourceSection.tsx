@@ -23,14 +23,11 @@ function OpenSourceSection() {
           </p>
         </div>
 
-        <Link
-          href='/open-source'
-          className='items-center gap-2 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors'
-        >
-          <a className='hidden md:inline-flex justify-center  mt-6 md:mt-0 items-center text-accent font-medium hover:text-blue-400 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Open Source')}>
+        <Link href='/open-source'>
+          <a className='hidden md:inline-flex justify-center mt-6 md:mt-0 items-center gap-2 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Open Source')}>
             {t('home:openSource.viewAll')}
             <svg
-              className='w-5 h-5 ml-1'
+              className='w-5 h-5'
               fill='none'
               stroke='currentColor'
               viewBox='0 0 24 24'
@@ -125,14 +122,11 @@ function OpenSourceSection() {
         ))}
       </div>
 
-      <Link
-        href='/open-source'
-        className=' items-center gap-2 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors'
-      >
-        <a className='md:hidden text-center justify-center mt-6 md:mt-0 inline-flex items-center text-accent font-medium hover:text-blue-400 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Open Source')}>
+      <Link href='/open-source'>
+        <a className='md:hidden inline-flex items-center justify-center gap-2 mt-6 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Open Source')}>
           {t('home:openSource.viewAll')}
           <svg
-            className='w-5 h-5 ml-1'
+            className='w-5 h-5'
             fill='none'
             stroke='currentColor'
             viewBox='0 0 24 24'

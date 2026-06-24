@@ -45,6 +45,10 @@ const OpenSourcePage: NextPage = () => {
       <HeadElement
         pageTitle='Open Source Projects | Golden Ogbeka'
         description='A collection of open source repositories, libraries, and templates built and shared by Golden Ogbeka with the developer community.'
+        breadcrumb={[
+          { name: 'Golden Ogbeka', url: '/' },
+          { name: t('openSource:title'), url: '/open-source' },
+        ]}
       />
 
       {/* Hero Section */}
