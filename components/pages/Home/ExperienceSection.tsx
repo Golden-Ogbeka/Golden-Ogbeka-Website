@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import ExperiencesData from '../../../data/Experiences';
+import { trackEvent } from '../../../utils/analytics';
 
 export default function ExperienceSection() {
   const topExperiences = ExperiencesData.slice(0, 5);
@@ -17,7 +18,7 @@ export default function ExperienceSection() {
           </p>
         </div>
         <Link href='/experiences'>
-          <a className='mt-6 md:mt-0 inline-flex items-center text-accent font-medium hover:text-blue-400 transition-colors'>
+          <a className='mt-6 md:mt-0 inline-flex items-center text-accent font-medium hover:text-blue-400 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Experiences')}>
             View All Experiences
             <svg
               className='w-5 h-5 ml-1'
@@ -63,7 +64,7 @@ export default function ExperienceSection() {
                   {exp.tasksAchieved.length > 3 && (
                     <div className='pt-4'>
                       <Link href='/experiences'>
-                        <a className='text-sm font-medium text-accent hover:underline'>
+                        <a className='text-sm font-medium text-accent hover:underline' onClick={() => trackEvent('click', 'navigation', `See more - ${exp.role}`)}>
                           See more details...
                         </a>
                       </Link>

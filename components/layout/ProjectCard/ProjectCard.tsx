@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { ProjectType } from '../../../data/Projects';
+import { trackEvent } from '../../../utils/analytics';
 import FigmaIcon from '../../../public/icons/figma.png';
 import GithubIcon from '../../../public/icons/github.png';
 import LinkIcon from '../../../public/icons/link.png';
@@ -29,23 +30,23 @@ function ProjectCard({ project }: { project: ProjectType }) {
         <span className='dark:text-white text-2xl'>{project.title}</span>
         <div className='flex flex-row items-center gap-[19px]'>
           {project.codeLink && (
-            <a href={project.codeLink} target='_blank' rel='noreferrer'>
+            <a href={project.codeLink} target='_blank' rel='noreferrer' onClick={() => trackEvent('click', 'project_link', `${project.title} - Code`)}>
               <Image src={GithubIcon} alt='Github' className='invert dark:invert-0' />
             </a>
           )}
           {project.designLink && (
-            <a href={project.designLink} target='_blank' rel='noreferrer'>
+            <a href={project.designLink} target='_blank' rel='noreferrer' onClick={() => trackEvent('click', 'project_link', `${project.title} - Design`)}>
               <Image src={FigmaIcon} alt='Figma' />
             </a>
           )}
           {project.apiLink && (
-            <a href={project.apiLink} target='_blank' rel='noreferrer'>
+            <a href={project.apiLink} target='_blank' rel='noreferrer' onClick={() => trackEvent('click', 'project_link', `${project.title} - API`)}>
               <Image src={PostmanIcon} alt='Postman' />
             </a>
           )}
 
           {project.liveLink && (
-            <a href={project.liveLink} target='_blank' rel='noreferrer'>
+            <a href={project.liveLink} target='_blank' rel='noreferrer' onClick={() => trackEvent('click', 'project_link', `${project.title} - Demo`)}>
               <Image src={LinkIcon} alt='Demo' className='invert dark:invert-0' />
             </a>
           )}

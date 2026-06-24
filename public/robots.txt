@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
+# Host
+Host: https://goldenogbeka.com
+
+# Sitemaps
 Sitemap: https://goldenogbeka.com/sitemap.xml

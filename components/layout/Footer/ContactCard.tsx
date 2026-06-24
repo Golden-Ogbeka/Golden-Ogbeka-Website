@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 import React from 'react';
+import { trackEvent } from '../../../utils/analytics';
 
 function ContactCard({
 	text,
@@ -19,6 +20,7 @@ function ContactCard({
 			target='_blank'
 			rel='noreferrer'
 			aria-label={text}
+			onClick={() => trackEvent('click', 'contact', text)}
 		>
 			<div className={`contactCardImage items-center flex`} aria-hidden='true'>
 				<Image src={icon} alt='' className='invert dark:invert-0' />

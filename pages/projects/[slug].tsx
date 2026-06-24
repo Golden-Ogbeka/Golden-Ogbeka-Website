@@ -5,6 +5,7 @@ import HeadElement from '../../components/layout/HeadElement';
 import ImageGallery from '../../components/pages/Project/ImageGallery';
 import VideoDemo from '../../components/pages/Project/VideoDemo';
 import ProjectsData, { ProjectType } from '../../data/Projects';
+import { trackEvent } from '../../utils/analytics';
 
 interface ProjectDetailsProps {
   project: ProjectType;
@@ -22,7 +23,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
 
       <article className='pt-32 min-h-screen'>
         <Link href='/projects'>
-          <a className='inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-8 transition-colors'>
+          <a className='inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-8 transition-colors' onClick={() => trackEvent('click', 'navigation', 'Back to Projects')}>
             <svg
               className='w-4 h-4 mr-2'
               fill='none'
@@ -55,6 +56,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                 target='_blank'
                 rel='noreferrer'
                 className='inline-flex items-center px-5 py-2.5 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 rounded-full font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors'
+                onClick={() => trackEvent('click', 'project_link', `${project.title} - Live Preview`)}
               >
                 <svg
                   className='w-4 h-4 mr-2'
@@ -78,6 +80,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                 target='_blank'
                 rel='noreferrer'
                 className='inline-flex items-center px-5 py-2.5 minimal-card font-medium'
+                onClick={() => trackEvent('click', 'project_link', `${project.title} - Code`)}
               >
                 <svg className='w-4 h-4 mr-2' fill='currentColor' viewBox='0 0 24 24'>
                   <path
@@ -95,6 +98,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                 target='_blank'
                 rel='noreferrer'
                 className='inline-flex items-center px-5 py-2.5 minimal-card font-medium'
+                onClick={() => trackEvent('click', 'project_link', `${project.title} - Design`)}
               >
                 Design
               </a>
@@ -105,6 +109,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                 target='_blank'
                 rel='noreferrer'
                 className='inline-flex items-center px-5 py-2.5 minimal-card font-medium'
+                onClick={() => trackEvent('click', 'project_link', `${project.title} - API Docs`)}
               >
                 API Docs
               </a>

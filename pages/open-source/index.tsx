@@ -4,6 +4,7 @@ import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
 import SectionDivider from '../../components/layout/SectionDivider';
 import OpenSourceData from '../../data/OpenSource';
+import { trackEvent } from '../../utils/analytics';
 import { reveal } from '../../functions/animation';
 
 const OpenSourcePage: NextPage = () => {
@@ -128,6 +129,7 @@ const OpenSourcePage: NextPage = () => {
               target='_blank'
               rel='noopener noreferrer'
               className='group block p-6 bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 hover:border-accent dark:hover:border-accent rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-accent/10'
+              onClick={() => trackEvent('click', 'open_source', repo.name)}
             >
               <div className='flex justify-between items-start mb-4 gap-2'>
                 <h2 className='text-lg font-bold font-outfit text-zinc-900 dark:text-zinc-100 group-hover:text-accent transition-colors truncate flex-1'>

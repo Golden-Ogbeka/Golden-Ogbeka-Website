@@ -1,4 +1,5 @@
 import React from 'react';
+import { trackEvent } from '../../../utils/analytics';
 
 interface VideoDemoProps {
   videoLink?: string;
@@ -14,6 +15,12 @@ export default function VideoDemo({ videoLink }: VideoDemoProps) {
   };
 
   const embedUrl = videoLink ? getYoutubeEmbedUrl(videoLink) : null;
+
+  React.useEffect(() => {
+    if (embedUrl) {
+      trackEvent('video_view', 'engagement', 'Video Demo');
+    }
+  }, [embedUrl]);
 
   return (
     <div className="mt-16 mb-8">

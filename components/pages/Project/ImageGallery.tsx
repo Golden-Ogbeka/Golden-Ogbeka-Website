@@ -1,6 +1,7 @@
 import { Dialog } from '@headlessui/react';
 import Image, { StaticImageData } from 'next/image';
 import { useState } from 'react';
+import { trackEvent } from '../../../utils/analytics';
 
 interface ImageGalleryProps {
   screenshots: StaticImageData[];
@@ -16,6 +17,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
   const openGallery = (index: number) => {
     setCurrentIndex(index);
     setIsOpen(true);
+    trackEvent('click', 'gallery', `${projectName} - image ${index + 1}`);
   };
 
   const nextImage = () => {
