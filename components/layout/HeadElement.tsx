@@ -100,6 +100,7 @@ function HeadElement({
       <meta charSet='utf-8' />
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <meta name='theme-color' content='#000000' />
+      <meta name='google' content='notranslate' />
       <link rel='icon' href='/favicon.ico' />
       <meta name='author' content='Golden Ogbeka' />
 

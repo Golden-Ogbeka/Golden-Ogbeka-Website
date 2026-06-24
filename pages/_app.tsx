@@ -31,7 +31,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
       {/* <!-- Google tag (gtag.js) --> */}
-      <Script async src='https://www.googletagmanager.com/gtag/js?id=G-NZGV1R34HY' />
+      <Script
+        async
+        src='https://www.googletagmanager.com/gtag/js?id=G-NZGV1R34HY'
+        onError={() => console.log('Analytics unavailable (blocked by extension)')}
+      />
       <Script id='google-analytics'>
         {`
             window.dataLayer = window.dataLayer || [];

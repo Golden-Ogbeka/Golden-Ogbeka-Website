@@ -117,7 +117,7 @@ function Navbar() {
                 alt=''
                 aria-hidden='true'
                 width={20}
-                height={10}
+                height={14}
                 className='rounded-sm'
                 unoptimized
               />
@@ -163,7 +163,7 @@ function Navbar() {
                     alt=''
                     aria-hidden='true'
                     width={20}
-                    height={10}
+                    height={14}
                     className='rounded-sm object-cover'
                     unoptimized
                   />
