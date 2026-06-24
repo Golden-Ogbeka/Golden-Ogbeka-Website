@@ -17,10 +17,10 @@ export default function Experiences() {
       <div className='pt-32 pb-20 min-h-screen'>
         <div className='mb-16 animate-fade-in-up'>
           <h1 className='text-4xl md:text-5xl font-display font-semibold mb-4'>
-            {t('experiences:experiences.title')}
+            {t('experiences:title')}
           </h1>
           <p className='text-zinc-600 dark:text-zinc-400 text-lg max-w-2xl'>
-            {t('experiences:experiences.subtitle')}
+            {t('experiences:subtitle')}
           </p>
         </div>
 
