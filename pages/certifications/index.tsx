@@ -17,10 +17,10 @@ export default function Certifications() {
       <div className='pt-32 pb-20 min-h-screen'>
         <div className='mb-16 animate-fade-in-up'>
           <h1 className='text-4xl md:text-5xl font-display font-semibold mb-4'>
-            {t('certifications:certifications.title')}
+            {t('common:certifications.title')}
           </h1>
           <p className='text-zinc-600 dark:text-zinc-400 text-lg max-w-2xl'>
-            {t('certifications:certifications.subtitle')}
+            {t('common:certifications.subtitle')}
           </p>
         </div>
 
