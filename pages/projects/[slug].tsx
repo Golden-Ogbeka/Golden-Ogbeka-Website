@@ -4,8 +4,13 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
-import ImageGallery from '../../components/pages/Project/ImageGallery';
+import dynamic from 'next/dynamic';
 import VideoDemo from '../../components/pages/Project/VideoDemo';
+
+const ImageGallery = dynamic(
+  () => import('../../components/pages/Project/ImageGallery'),
+  { ssr: false }
+);
 import ProjectsData, { ProjectType } from '../../data/Projects';
 import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../utils/analytics';

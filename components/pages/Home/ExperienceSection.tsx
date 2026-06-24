@@ -19,10 +19,10 @@ export default function ExperienceSection() {
           </p>
         </div>
         <Link href='/experiences'>
-          <a className='mt-6 md:mt-0 inline-flex items-center text-accent font-medium hover:text-blue-400 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Experiences')}>
+          <a className='hidden md:inline-flex justify-center mt-6 md:mt-0 items-center gap-2 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Experiences')}>
             {t('home:experience.viewAll')}
             <svg
-              className='w-5 h-5 ml-1'
+              className='w-5 h-5'
               fill='none'
               stroke='currentColor'
               viewBox='0 0 24 24'
@@ -45,7 +45,7 @@ export default function ExperienceSection() {
               <div className='flex-1'>
                 <div className='flex flex-col md:flex-row md:items-center justify-between mb-1'>
                   <h3 className='text-xl font-semibold'>{t(`experiences:experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.role`, exp.role)}</h3>
-                  <span className='text-sm font-medium text-zinc-500 mt-1 md:mt-0'>
+                  <span className='text-sm font-medium text-zinc-600 mt-1 md:mt-0'>
                     {exp.date}
                   </span>
                 </div>
@@ -77,6 +77,25 @@ export default function ExperienceSection() {
           </div>
         ))}
       </div>
+
+      <Link href='/experiences'>
+        <a className='md:hidden inline-flex items-center justify-center gap-2 mt-6 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Experiences')}>
+          {t('home:experience.viewAll')}
+          <svg
+            className='w-5 h-5'
+            fill='none'
+            stroke='currentColor'
+            viewBox='0 0 24 24'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              strokeWidth={2}
+              d='M17 8l4 4m0 0l-4 4m4-4H3'
+            />
+          </svg>
+        </a>
+      </Link>
     </section>
   );
 }

@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import ProjectsData from '../../../data/Projects';
+import FeaturedProjectsData from '../../../data/FeaturedProjects';
 import { useTranslation } from 'next-i18next';
+import { trackEvent } from '../../../utils/analytics';
 
 export default function FeaturedProjects() {
-  const { t } = useTranslation(['common', 'home', 'projects']);
-  const featuredProjects = ProjectsData.filter((p) => p.featured);
+  const { t } = useTranslation(['common', 'home']);
+  const featuredProjects = FeaturedProjectsData;
 
   return (
     <section className='py-20'>
@@ -19,10 +20,10 @@ export default function FeaturedProjects() {
           </p>
         </div>
         <Link href='/projects'>
-          <a className='mt-6 md:mt-0 inline-flex items-center text-accent font-medium hover:text-blue-400 transition-colors'>
+          <a className='hidden md:inline-flex justify-center mt-6 md:mt-0 items-center gap-2 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Projects')}>
             {t('home:featured.viewAll')}
             <svg
-              className='w-5 h-5 ml-1'
+              className='w-5 h-5'
               fill='none'
               stroke='currentColor'
               viewBox='0 0 24 24'
@@ -46,26 +47,28 @@ export default function FeaturedProjects() {
                 {project.screenshots && project.screenshots.length > 0 ? (
                   <Image
                     src={project.screenshots[0]}
-                    alt={`${t(`projects:project.${project.slug}.title`, project.title)} thumbnail`}
+                    alt={`${project.title} thumbnail`}
                     className='object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500'
                     layout='fill'
+                    priority={index === 0}
                   />
                 ) : (
                   <Image
                     src={project.image}
-                    alt={`${t(`projects:project.${project.slug}.title`, project.title)} thumbnail`}
+                    alt={`${project.title} thumbnail`}
                     layout='fill'
                     objectFit='cover'
                     className='transform group-hover:scale-105 transition-transform duration-500'
+                    priority={index === 0}
                   />
                 )}
               </div>
               <div className='p-8 flex-1 flex flex-col'>
                 <h3 className='text-2xl font-semibold mb-3 group-hover:text-accent transition-colors'>
-                  {t(`projects:project.${project.slug}.title`, project.title)}
+                  {project.title}
                 </h3>
                 <p className='text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-6 flex-1 text-lg'>
-                  {t(`projects:project.${project.slug}.description`, project.description)}
+                  {project.description}
                 </p>
                 <div className='flex flex-wrap gap-2 mt-auto'>
                   {project.coreTools.slice(0, 3).map((tool) => (
@@ -87,6 +90,25 @@ export default function FeaturedProjects() {
           </Link>
         ))}
       </div>
+
+      <Link href='/projects'>
+        <a className='md:hidden inline-flex items-center justify-center gap-2 mt-6 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Projects')}>
+          {t('home:featured.viewAll')}
+          <svg
+            className='w-5 h-5'
+            fill='none'
+            stroke='currentColor'
+            viewBox='0 0 24 24'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              strokeWidth={2}
+              d='M17 8l4 4m0 0l-4 4m4-4H3'
+            />
+          </svg>
+        </a>
+      </Link>
     </section>
   );
 }
