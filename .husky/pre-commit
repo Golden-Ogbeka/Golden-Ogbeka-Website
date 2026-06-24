@@ -1,2 +1,3 @@
-npm run type:check
-npm run lint:fix
+export PATH="$PATH:/c/Program Files/nodejs"
+echo "Running type check..."
+node ./node_modules/typescript/bin/tsc --noEmit && echo "Type check passed" && echo "Running lint..." && node ./node_modules/next/dist/bin/next lint --fix && echo "Lint passed"

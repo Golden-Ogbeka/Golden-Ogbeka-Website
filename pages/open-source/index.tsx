@@ -4,10 +4,14 @@ import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
 import SectionDivider from '../../components/layout/SectionDivider';
 import OpenSourceData from '../../data/OpenSource';
+import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../utils/analytics';
 import { reveal } from '../../functions/animation';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 
 const OpenSourcePage: NextPage = () => {
+  const { t } = useTranslation(['common', 'openSource']);
   const [filterTech, setFilterTech] = useState<string>('');
   const [sortBy, setSortBy] = useState<'stars' | 'forks'>('stars');
 
@@ -47,12 +51,10 @@ const OpenSourcePage: NextPage = () => {
       <div className='min-h-screen pt-32 pb-12'>
         <div className='mb-12'>
           <h1 className='text-5xl md:text-6xl font-outfit font-bold text-zinc-900 dark:text-zinc-100 mb-6 tracking-tight'>
-            Open Source
+            {t('openSource:openSource.title')}
           </h1>
           <p className='text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl leading-relaxed'>
-            A comprehensive collection of {OpenSourceData.length} public repositories,
-            libraries, and templates I&apos;ve built and shared with the developer
-            community. From full-stack applications to reusable components and templates.
+            {t('openSource:openSource.subtitle')}
           </p>
         </div>
 
@@ -62,14 +64,14 @@ const OpenSourcePage: NextPage = () => {
             {/* Technology Filter */}
             <div>
               <label className='block text-sm font-semibold text-zinc-900 dark:text-zinc-100 mb-3'>
-                Filter by Technology
+                {t('openSource:openSource.filterByTech')}
               </label>
               <select
                 value={filterTech}
                 onChange={(e) => setFilterTech(e.target.value)}
                 className='w-full px-4 py-2 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-lg text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-accent'
               >
-                <option value=''>All Technologies</option>
+                <option value=''>{t('openSource:openSource.allTechs')}</option>
                 {allTechs.map((tech) => (
                   <option key={tech} value={tech}>
                     {tech}
@@ -81,15 +83,15 @@ const OpenSourcePage: NextPage = () => {
             {/* Sort By */}
             <div>
               <label className='block text-sm font-semibold text-zinc-900 dark:text-zinc-100 mb-3'>
-                Sort By
+                {t('openSource:openSource.sortBy')}
               </label>
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as 'stars' | 'forks')}
                 className='w-full px-4 py-2 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-lg text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-accent'
               >
-                <option value='stars'>Most Stars</option>
-                <option value='forks'>Most Forks</option>
+                <option value='stars'>{t('openSource:openSource.mostStars')}</option>
+                <option value='forks'>{t('openSource:openSource.mostForks')}</option>
               </select>
             </div>
           </div>
@@ -98,7 +100,7 @@ const OpenSourcePage: NextPage = () => {
           {filterTech && (
             <div className='mt-4 flex items-center gap-2'>
               <span className='text-sm text-zinc-600 dark:text-zinc-400'>
-                Active filter:
+                {t('openSource:openSource.activeFilter')}
               </span>
               <span className='inline-flex items-center gap-2 px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium'>
                 {filterTech}
@@ -116,7 +118,9 @@ const OpenSourcePage: NextPage = () => {
         {/* Results Count */}
         <div className='mb-8'>
           <p className='text-sm text-zinc-600 dark:text-zinc-400'>
-            Showing {filteredRepos.length} of {OpenSourceData.length} repositories
+            {t('openSource:openSource.showingResults')
+              .replace('{count}', String(filteredRepos.length))
+              .replace('{total}', String(OpenSourceData.length))}
           </p>
         </div>
 
@@ -133,7 +137,7 @@ const OpenSourcePage: NextPage = () => {
             >
               <div className='flex justify-between items-start mb-4 gap-2'>
                 <h2 className='text-lg font-bold font-outfit text-zinc-900 dark:text-zinc-100 group-hover:text-accent transition-colors truncate flex-1'>
-                  {repo.name}
+                  {t(`openSource:openSource.${repo.id}.name`, repo.name)}
                 </h2>
                 <svg
                   className='w-5 h-5 text-zinc-400 group-hover:text-accent transform group-hover:-translate-y-1 group-hover:translate-x-1 transition-all flex-shrink-0 ml-2'
@@ -152,7 +156,7 @@ const OpenSourcePage: NextPage = () => {
               </div>
 
               <p className='text-zinc-600 dark:text-zinc-400 mb-6 text-sm leading-relaxed line-clamp-3'>
-                {repo.description}
+                {t(`openSource:openSource.${repo.id}.description`, repo.description)}
               </p>
 
               <div className='flex flex-wrap gap-2 mb-6'>
@@ -208,7 +212,7 @@ const OpenSourcePage: NextPage = () => {
         {filteredRepos.length === 0 && (
           <div className='text-center py-12'>
             <p className='text-zinc-600 dark:text-zinc-400 text-lg'>
-              No repositories found with the selected technology.
+              {t('openSource:openSource.noResults')}
             </p>
           </div>
         )}
@@ -220,3 +224,11 @@ const OpenSourcePage: NextPage = () => {
 };
 
 export default OpenSourcePage;
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'openSource'])),
+    },
+  };
+}

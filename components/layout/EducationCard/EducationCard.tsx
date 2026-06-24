@@ -1,8 +1,10 @@
 import Image, { StaticImageData } from 'next/image';
 import React from 'react';
+import { useTranslation } from 'next-i18next';
 
 function EducationCard({
 	education,
+	index,
 }: {
 	education: {
 		degree: string;
@@ -10,11 +12,13 @@ function EducationCard({
 		date: string;
 		institutionLink?: string;
 	};
+	index: number;
 }) {
+	const { t } = useTranslation(['common', 'certifications']);
 	return (
 		<div className='flex flex-col gap-3'>
 			<div className='flex flex-row flex-wrap items-center justify-between gap-3'>
-				<h3 className='text-2xl dark:text-white'>{education.degree}</h3>
+				<h3 className='text-2xl dark:text-white'>{t(`certifications:education.${index}.degree`, education.degree)}</h3>
 				<span className='dark:text-[#C4C4C4]'>{education.date}</span>
 			</div>
 
@@ -24,7 +28,7 @@ function EducationCard({
 				target='_blank'
 				rel='noreferrer'
 			>
-				{education.institution}
+				{t(`certifications:education.${index}.institution`, education.institution)}
 			</a>
 		</div>
 	);

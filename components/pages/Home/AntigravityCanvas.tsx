@@ -2,6 +2,13 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { useEffect, useRef, useState } from 'react';
 import { useAppSelector } from '../../../app/hooks';
 
+// Suppress THREE.Clock deprecation warning in dev (Three.js 0.162+, R3F 8.x still uses Clock)
+const warn = console.warn;
+console.warn = (...args: any[]) => {
+  if (typeof args[0] === 'string' && args[0].includes('THREE.Clock')) return;
+  warn.apply(console, args);
+};
+
 function checkWebGLSupport() {
   if (typeof window === 'undefined' || typeof document === 'undefined') {
     return false;

@@ -9,6 +9,8 @@ import FeaturedProjects from '../components/pages/Home/FeaturedProjects';
 import Intro from '../components/pages/Home/Intro';
 import OpenSourceSection from '../components/pages/Home/OpenSourceSection';
 import { reveal } from '../functions/animation';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 
 const Home: NextPage = () => {
   // For scroll animation
@@ -35,3 +37,11 @@ const Home: NextPage = () => {
 };;
 
 export default Home;
+
+export async function getStaticProps({ locale }: { locale: string }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common', 'home', 'projects', 'experiences', 'openSource', 'certifications'])),
+    },
+  };
+}

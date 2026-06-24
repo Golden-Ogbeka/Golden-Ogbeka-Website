@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import OpenSourceData from '../../../data/OpenSource';
 import { trackEvent } from '../../../utils/analytics';
+import { useTranslation } from 'next-i18next';
 
 function OpenSourceSection() {
-  // Get top 8 repositories sorted by combined stars and forks
+  const { t } = useTranslation(['common', 'home', 'openSource']);
   const topRepos = OpenSourceData.sort((a, b) => {
     const aTotal = a.stars + a.forks;
     const bTotal = b.stars + b.forks;
@@ -15,11 +16,10 @@ function OpenSourceSection() {
       <div className='flex flex-col md:flex-row md:items-end justify-between mb-12'>
         <div className='max-w-2xl'>
           <h2 className='text-3xl md:text-4xl font-display font-semibold mb-4'>
-            Open Source
+            {t('home:openSource.title')}
           </h2>
           <p className='text-zinc-600 dark:text-zinc-400 text-lg'>
-            A collection of public repositories, libraries, and templates I&apos;ve built
-            and shared with the developer community.
+            {t('home:openSource.subtitle')}
           </p>
         </div>
 
@@ -28,7 +28,7 @@ function OpenSourceSection() {
           className='items-center gap-2 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors'
         >
           <a className='hidden md:inline-flex justify-center  mt-6 md:mt-0 items-center text-accent font-medium hover:text-blue-400 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Open Source')}>
-            View All Open Source Projects
+            {t('home:openSource.viewAll')}
             <svg
               className='w-5 h-5 ml-1'
               fill='none'
@@ -58,7 +58,7 @@ function OpenSourceSection() {
           >
             <div className='flex justify-between items-start mb-4 gap-2'>
               <h3 className='text-lg font-bold font-outfit text-zinc-900 dark:text-zinc-100 group-hover:text-accent transition-colors truncate flex-1'>
-                {repo.name}
+                {t(`openSource:openSource.${repo.id}.name`, repo.name)}
               </h3>
               <svg
                 className='w-5 h-5 text-zinc-400 group-hover:text-accent transform group-hover:-translate-y-1 group-hover:translate-x-1 transition-all'
@@ -77,7 +77,7 @@ function OpenSourceSection() {
             </div>
 
             <p className='text-zinc-600 dark:text-zinc-400 mb-6 text-sm leading-relaxed line-clamp-3'>
-              {repo.description}
+              {t(`openSource:openSource.${repo.id}.description`, repo.description)}
             </p>
 
             <div className='flex flex-wrap gap-2 mb-6'>
@@ -125,13 +125,12 @@ function OpenSourceSection() {
         ))}
       </div>
 
-      {/* Mobile View All Button */}
       <Link
         href='/open-source'
         className=' items-center gap-2 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors'
       >
         <a className='md:hidden text-center justify-center mt-6 md:mt-0 inline-flex items-center text-accent font-medium hover:text-blue-400 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Open Source')}>
-          View All Open Source Projects
+          {t('home:openSource.viewAll')}
           <svg
             className='w-5 h-5 ml-1'
             fill='none'

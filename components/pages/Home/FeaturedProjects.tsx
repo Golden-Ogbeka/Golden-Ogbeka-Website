@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ProjectsData from '../../../data/Projects';
+import { useTranslation } from 'next-i18next';
 
 export default function FeaturedProjects() {
+  const { t } = useTranslation(['common', 'home', 'projects']);
   const featuredProjects = ProjectsData.filter((p) => p.featured);
 
   return (
@@ -10,16 +12,15 @@ export default function FeaturedProjects() {
       <div className='flex flex-col md:flex-row md:items-end justify-between mb-12'>
         <div className='max-w-2xl'>
           <h2 className='text-3xl md:text-4xl font-display font-semibold mb-4'>
-            Featured Work
+            {t('home:featured.title')}
           </h2>
           <p className='text-zinc-600 dark:text-zinc-400 text-lg'>
-            A selection of my recent and most impactful projects across web, mobile, and
-            backend development.
+            {t('home:featured.subtitle')}
           </p>
         </div>
         <Link href='/projects'>
           <a className='mt-6 md:mt-0 inline-flex items-center text-accent font-medium hover:text-blue-400 transition-colors'>
-            View All Projects
+            {t('home:featured.viewAll')}
             <svg
               className='w-5 h-5 ml-1'
               fill='none'
@@ -45,14 +46,14 @@ export default function FeaturedProjects() {
                 {project.screenshots && project.screenshots.length > 0 ? (
                   <Image
                     src={project.screenshots[0]}
-                    alt={`${project.title} thumbnail`}
+                    alt={`${t(`projects:project.${project.slug}.title`, project.title)} thumbnail`}
                     className='object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500'
                     layout='fill'
                   />
                 ) : (
                   <Image
                     src={project.image}
-                    alt={`${project.title} thumbnail`}
+                    alt={`${t(`projects:project.${project.slug}.title`, project.title)} thumbnail`}
                     layout='fill'
                     objectFit='cover'
                     className='transform group-hover:scale-105 transition-transform duration-500'
@@ -61,10 +62,10 @@ export default function FeaturedProjects() {
               </div>
               <div className='p-8 flex-1 flex flex-col'>
                 <h3 className='text-2xl font-semibold mb-3 group-hover:text-accent transition-colors'>
-                  {project.title}
+                  {t(`projects:project.${project.slug}.title`, project.title)}
                 </h3>
                 <p className='text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-6 flex-1 text-lg'>
-                  {project.description}
+                  {t(`projects:project.${project.slug}.description`, project.description)}
                 </p>
                 <div className='flex flex-wrap gap-2 mt-auto'>
                   {project.coreTools.slice(0, 3).map((tool) => (

@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-// Actual Slice
 export const darkModeSlice = createSlice({
   name: 'darkMode',
   initialState: {
@@ -10,6 +9,7 @@ export const darkModeSlice = createSlice({
     toggleDarkMode(state) {
       state.isDark = !state.isDark;
       localStorage.setItem('theme', state.isDark ? 'dark' : 'light');
+      document.documentElement.classList.toggle('dark', state.isDark);
     },
     setDarkMode(state, action) {
       state.isDark = action.payload;

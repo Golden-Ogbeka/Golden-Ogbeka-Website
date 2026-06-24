@@ -1,0 +1,4 @@
+{
+  "test.key": "test value with \"quotes\" and newlines",
+  "test.num": 42
+}
