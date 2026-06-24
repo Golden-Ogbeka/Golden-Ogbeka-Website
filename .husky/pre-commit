@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-cmd.exe /c "npm run type:check"
-cmd.exe /c "npm run lint:fix"
+# Explicitly invoke the Windows batch binaries directly
+npm.cmd run type:check
+npm.cmd run lint:fix
