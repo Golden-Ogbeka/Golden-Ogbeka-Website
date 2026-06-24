@@ -5,11 +5,15 @@ import { wrapper } from '../app/store';
 import React from 'react';
 import { setDarkMode } from '../app/slices/darkModeSlice';
 import Script from 'next/script';
+import { useRouter } from 'next/router';
 import { appWithTranslation } from 'next-i18next';
 import { Provider } from 'react-redux';
 
+const RTL_LOCALES = ['ar'];
+
 function MyApp({ Component, pageProps }: AppProps) {
   const { store, props } = wrapper.useWrappedStore({ pageProps });
+  const router = useRouter();
 
   React.useEffect(() => {
     let currentTheme = localStorage.getItem('theme');
@@ -18,6 +22,12 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  React.useEffect(() => {
+    const dir = RTL_LOCALES.includes(router.locale || 'en') ? 'rtl' : 'ltr';
+    document.documentElement.dir = dir;
+    document.documentElement.lang = router.locale || 'en';
+  }, [router.locale]);
 
   return (
     <Provider store={store}>
