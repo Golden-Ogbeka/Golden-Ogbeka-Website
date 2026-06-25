@@ -112,15 +112,16 @@ function Navbar() {
             aria-expanded={langOpen}
             aria-label={t('nav.language')}
           >
-              <Image
-                src={currentLocale.flag}
-                alt=''
-                aria-hidden='true'
-                width={20}
-                height={14}
-                className='rounded-sm'
-                unoptimized
-              />
+              <span className='relative inline-flex items-center justify-center w-5 h-[14px] shrink-0 overflow-hidden rounded-sm'>
+                <Image
+                  src={currentLocale.flag}
+                  alt=''
+                  aria-hidden='true'
+                  layout='fill'
+                  className='object-cover'
+                  unoptimized
+                />
+              </span>
             <svg
               className={`w-3 h-3 transition-transform ${langOpen ? '' : 'rotate-180'}`}
               fill='none'
@@ -158,15 +159,16 @@ function Navbar() {
                   role='option'
                   aria-selected={l.code === router.locale}
                 >
-                  <Image
-                    src={l.flag}
-                    alt=''
-                    aria-hidden='true'
-                    width={20}
-                    height={14}
-                    className='rounded-sm object-cover'
-                    unoptimized
-                  />
+                  <span className='relative inline-flex items-center justify-center w-5 h-[14px] shrink-0 overflow-hidden rounded-sm'>
+                    <Image
+                      src={l.flag}
+                      alt=''
+                      aria-hidden='true'
+                      layout='fill'
+                      className='object-cover'
+                      unoptimized
+                    />
+                  </span>
                   <span className='tracking-wide'>{l.label.toUpperCase()}</span>
                   {l.code === router.locale && (
                     <svg

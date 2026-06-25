@@ -19,10 +19,12 @@ function AppLayout({ children }: { children: React.ReactNode }) {
     if (htmlHasDark !== isDark) {
       dispatch(setDarkMode(htmlHasDark));
     }
+    // Skip Three.js for users who prefer reduced motion
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     // Defer Three.js canvas mount until idle to reduce TBT / LCP impact
     const id = 'requestIdleCallback' in window
-      ? requestIdleCallback(() => setShowCanvas(true), { timeout: 3000 })
-      : setTimeout(() => setShowCanvas(true), 3000);
+      ? requestIdleCallback(() => setShowCanvas(true), { timeout: 5000 })
+      : setTimeout(() => setShowCanvas(true), 5000);
     return () => {
       if ('requestIdleCallback' in window) {
         cancelIdleCallback(id as number);
