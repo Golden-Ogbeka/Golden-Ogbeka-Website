@@ -5,12 +5,23 @@ import React from 'react';
 import { setDarkMode } from '../app/slices/darkModeSlice';
 import Script from 'next/script';
 import { useRouter } from 'next/router';
-import { appWithTranslation } from 'next-i18next';
+import { I18nextProvider } from 'react-i18next';
+import i18n from 'i18next';
 import { Provider } from 'react-redux';
+
+interface I18NextPageProps {
+  _nextI18Next?: {
+    initialI18nStore: Record<string, Record<string, Record<string, unknown>>>;
+    initialLocale: string;
+    ns: string[];
+    userConfig: { i18n: { defaultLocale: string; locales: string[] } };
+  };
+}
 
 const RTL_LOCALES = ['ar'];
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const p = pageProps as I18NextPageProps;
   const { store, props } = wrapper.useWrappedStore({ pageProps });
   const router = useRouter();
 
@@ -28,9 +39,36 @@ function MyApp({ Component, pageProps }: AppProps) {
     document.documentElement.lang = router.locale || 'en';
   }, [router.locale]);
 
-  return (
+  const i18nInstance = React.useMemo(() => {
+    const _nextI18Next = p._nextI18Next;
+    if (!_nextI18Next) return null;
+
+    const { initialI18nStore, initialLocale, ns, userConfig } = _nextI18Next;
+    const locale = initialLocale || userConfig?.i18n?.defaultLocale || 'en';
+    const namespaces = ns || ['common'];
+
+    const config = {
+      lng: locale,
+      ns: namespaces,
+      defaultNS: 'common',
+      resources: initialI18nStore,
+      fallbackLng: userConfig?.i18n?.defaultLocale || 'en',
+      interpolation: { escapeValue: false },
+      react: { useSuspense: false },
+      initImmediate: false,
+      load: 'currentOnly' as const,
+    };
+
+    const instance = i18n.createInstance(config);
+    if (!instance.isInitialized) {
+      instance.init(config);
+    }
+    return instance;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [p._nextI18Next]);
+
+  const appContent = (
     <Provider store={store}>
-      {/* <!-- Google tag (gtag.js) --> */}
       <Script
         async
         src='https://www.googletagmanager.com/gtag/js?id=G-NZGV1R34HY'
@@ -50,6 +88,14 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...props.pageProps} />
     </Provider>
   );
+
+  if (!i18nInstance) return appContent;
+
+  return (
+    <I18nextProvider i18n={i18nInstance}>
+      {appContent}
+    </I18nextProvider>
+  );
 }
 
-export default appWithTranslation(MyApp);
+export default MyApp;
