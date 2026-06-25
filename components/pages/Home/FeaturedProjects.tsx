@@ -50,6 +50,7 @@ export default function FeaturedProjects() {
                     alt={t('home:featured.thumbnailAlt', { title: t(`projects:project.${project.slug}.title`, project.title) })}
                     className='object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500'
                     layout='fill'
+                    sizes='(max-width: 768px) 100vw, 50vw'
                     priority={index === 0}
                   />
                 ) : (
@@ -58,6 +59,7 @@ export default function FeaturedProjects() {
                     alt={t('home:featured.thumbnailAlt', { title: t(`projects:project.${project.slug}.title`, project.title) })}
                     layout='fill'
                     objectFit='cover'
+                    sizes='(max-width: 768px) 100vw, 50vw'
                     className='transform group-hover:scale-105 transition-transform duration-500'
                     priority={index === 0}
                   />

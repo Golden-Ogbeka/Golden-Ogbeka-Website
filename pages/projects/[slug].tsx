@@ -1,5 +1,4 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import AppLayout from '../../components/layout/AppLayout';
@@ -210,11 +209,41 @@ export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
 
 export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   const project = ProjectsData.find((p) => p.slug === params?.slug);
+  const lng = locale || 'en';
+
+  const fs = require('fs');
+  const path = require('path');
+
+  function loadNs(ns: string): Record<string, unknown> {
+    const fp = path.resolve(process.cwd(), `public/locales/${lng}/${ns}.json`);
+    return JSON.parse(fs.readFileSync(fp, 'utf8'));
+  }
+
+  const common = loadNs('common');
+  const projects = loadNs('projects');
+
+  // keep only the current project's keys
+  const prefix = `project.${project?.slug}.`;
+  for (const key of Object.keys(projects)) {
+    if (key.startsWith('project.') && !key.startsWith(prefix)) {
+      delete projects[key];
+    }
+  }
+
+  const initialI18nStore: Record<string, Record<string, unknown>> = {};
+  initialI18nStore[lng] = { common, projects };
 
   return {
     props: {
       project,
-      ...(await serverSideTranslations(locale || 'en', ['common', 'projects'])),
+      _nextI18Next: {
+        initialI18nStore,
+        initialLocale: lng,
+        ns: ['common', 'projects'],
+        userConfig: {
+          i18n: { defaultLocale: 'en', locales: ['en', 'zh', 'fr', 'de', 'es', 'ja', 'ko', 'pt', 'ru', 'ar'] },
+        },
+      },
     },
   };
 };

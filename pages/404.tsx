@@ -4,9 +4,6 @@ import React from 'react';
 import AppLayout from '../components/layout/AppLayout';
 import HeadElement from '../components/layout/HeadElement';
 import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
-
 const Custom404: NextPage = () => {
   const { t } = useTranslation(['common']);
   return (
@@ -64,9 +61,25 @@ const Custom404: NextPage = () => {
 export default Custom404;
 
 export async function getStaticProps({ locale }: { locale: string }) {
+  const fs = require('fs');
+  const path = require('path');
+
+  const fp = path.resolve(process.cwd(), `public/locales/${locale}/common.json`);
+  const common = JSON.parse(fs.readFileSync(fp, 'utf8'));
+
+  const initialI18nStore: Record<string, Record<string, unknown>> = {};
+  initialI18nStore[locale] = { common };
+
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common'])),
+      _nextI18Next: {
+        initialI18nStore,
+        initialLocale: locale,
+        ns: ['common'],
+        userConfig: {
+          i18n: { defaultLocale: 'en', locales: ['en', 'zh', 'fr', 'de', 'es', 'ja', 'ko', 'pt', 'ru', 'ar'] },
+        },
+      },
     },
   };
 }

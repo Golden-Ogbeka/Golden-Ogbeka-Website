@@ -47,6 +47,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
               loading='lazy'
               layout='fill'
               objectFit='cover'
+              sizes='(max-width: 768px) 50vw, 33vw'
               alt={`${projectName} screenshot ${index + 1}`}
               className='object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500'
             />
@@ -111,6 +112,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
                   alt={`${projectName} full view ${currentIndex + 1}`}
                   layout='fill'
                   objectFit='contain'
+                  sizes='100vw'
                   className='rounded-md object-contain'
                 />
               </div>

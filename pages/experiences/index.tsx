@@ -3,9 +3,6 @@ import HeadElement from '../../components/layout/HeadElement';
 import ExperiencesData from '../../data/Experiences';
 import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../utils/analytics';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
-
 export default function Experiences() {
   const { t } = useTranslation(['common', 'experiences']);
   return (
@@ -82,9 +79,30 @@ export default function Experiences() {
 }
 
 export async function getStaticProps({ locale }: { locale: string }) {
+  const fs = require('fs');
+  const path = require('path');
+
+  function loadNs(ns: string): Record<string, unknown> {
+    const fp = path.resolve(process.cwd(), `public/locales/${locale}/${ns}.json`);
+    return JSON.parse(fs.readFileSync(fp, 'utf8'));
+  }
+
+  const initialI18nStore: Record<string, Record<string, unknown>> = {};
+  initialI18nStore[locale] = {
+    common: loadNs('common'),
+    experiences: loadNs('experiences'),
+  };
+
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'experiences'])),
+      _nextI18Next: {
+        initialI18nStore,
+        initialLocale: locale,
+        ns: ['common', 'experiences'],
+        userConfig: {
+          i18n: { defaultLocale: 'en', locales: ['en', 'zh', 'fr', 'de', 'es', 'ja', 'ko', 'pt', 'ru', 'ar'] },
+        },
+      },
     },
   };
 }

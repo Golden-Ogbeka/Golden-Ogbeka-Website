@@ -7,9 +7,6 @@ import OpenSourceData from '../../data/OpenSource';
 import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../utils/analytics';
 import { reveal } from '../../functions/animation';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
-
 const OpenSourcePage: NextPage = () => {
   const { t } = useTranslation(['common', 'openSource']);
   const [filterTech, setFilterTech] = useState<string>('');
@@ -230,9 +227,30 @@ const OpenSourcePage: NextPage = () => {
 export default OpenSourcePage;
 
 export async function getStaticProps({ locale }: { locale: string }) {
+  const fs = require('fs');
+  const path = require('path');
+
+  function loadNs(ns: string): Record<string, unknown> {
+    const fp = path.resolve(process.cwd(), `public/locales/${locale}/${ns}.json`);
+    return JSON.parse(fs.readFileSync(fp, 'utf8'));
+  }
+
+  const initialI18nStore: Record<string, Record<string, unknown>> = {};
+  initialI18nStore[locale] = {
+    common: loadNs('common'),
+    openSource: loadNs('openSource'),
+  };
+
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['common', 'openSource'])),
+      _nextI18Next: {
+        initialI18nStore,
+        initialLocale: locale,
+        ns: ['common', 'openSource'],
+        userConfig: {
+          i18n: { defaultLocale: 'en', locales: ['en', 'zh', 'fr', 'de', 'es', 'ja', 'ko', 'pt', 'ru', 'ar'] },
+        },
+      },
     },
   };
 }
