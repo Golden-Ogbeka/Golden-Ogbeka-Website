@@ -374,7 +374,7 @@ const Projects: ProjectType[] = [
     ],
     featured: true,
     videoDemoLink: 'https://www.youtube.com/watch?v=Lq-I5ZWkE9c',
-    liveLink: 'https://inquiry.lexkitchen.com/',
+    liveLink: 'https://inquiry.savorbylexi.com/',
   },
   {
     title: 'A1Quest Mathematics Learning and Student Success Platform',
