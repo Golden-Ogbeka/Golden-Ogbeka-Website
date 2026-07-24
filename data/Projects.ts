@@ -193,6 +193,21 @@ import ShipPlugVue2 from '../public/images/Projects/ship-plug-vue/2.png';
 import ShipPlugVue3 from '../public/images/Projects/ship-plug-vue/3.png';
 import ShipPlugVue4 from '../public/images/Projects/ship-plug-vue/4.png';
 import ShipPlugVue5 from '../public/images/Projects/ship-plug-vue/5.png';
+import TestimoniesWebClient1 from '../public/images/Projects/testimonies-web-client/1.png';
+import TestimoniesWebClient2 from '../public/images/Projects/testimonies-web-client/2.png';
+import TestimoniesWebClient3 from '../public/images/Projects/testimonies-web-client/3.png';
+import TestimoniesWebClient4 from '../public/images/Projects/testimonies-web-client/4.png';
+import TestimoniesWebClient5 from '../public/images/Projects/testimonies-web-client/5.png';
+import TestimoniesWebAdmin1 from '../public/images/Projects/testimonies-web-admin/1.png';
+import TestimoniesWebAdmin2 from '../public/images/Projects/testimonies-web-admin/2.png';
+import TestimoniesWebAdmin3 from '../public/images/Projects/testimonies-web-admin/3.png';
+import TestimoniesWebAdmin4 from '../public/images/Projects/testimonies-web-admin/4.png';
+import TestimoniesWebAdmin5 from '../public/images/Projects/testimonies-web-admin/5.png';
+import TestimoniesMobile1 from '../public/images/Projects/testimonies-mobile/1.png';
+import TestimoniesMobile2 from '../public/images/Projects/testimonies-mobile/2.png';
+import TestimoniesMobile3 from '../public/images/Projects/testimonies-mobile/3.png';
+import TestimoniesMobile4 from '../public/images/Projects/testimonies-mobile/4.png';
+import TestimoniesMobile5 from '../public/images/Projects/testimonies-mobile/5.png';
 
 export interface ProjectType {
   title: string;
@@ -209,7 +224,7 @@ export interface ProjectType {
   videoDemoLink?: string;
   featured?: boolean;
 }
-const placeholderImage = '/images/placeholder.jpg';
+// const placeholderImage = '/images/placeholder.jpg';
 const Projects: ProjectType[] = [
   {
     title: 'Enterprise Corporate Internet Banking Platform',
@@ -285,6 +300,50 @@ const Projects: ProjectType[] = [
     featured: true,
   },
   {
+    title: 'Faith-Based Social Platform for Sharing Testimonies',
+    slug: 'testimonies-com-web-client',
+    description:
+      "A social platform built for Testimonies.com that enables individuals and organizations to create, share, discover, and interact with faith-based testimony posts. The application delivers a Twitter-like experience centered around sharing testimonies of God's goodness, featuring an infinite-scroll feed, testimony creation with media attachments, user and organization profiles, follow/unfollow mechanics, like and reply interactions, and a comprehensive settings system. Built with a modern Next.js App Router architecture, the platform supports both personal and organization accounts with features like broadcast testimonies, trending content discovery, and progressive web app capabilities.",
+    features: [
+      'Infinite-scroll testimony feed with pull-to-refresh and cursor-based pagination for seamless content discovery',
+      'Testimony creation workflows supporting rich text composition, tag classification, and multi-image media attachments',
+      'Like and reply interactions with optimistic updates across feed, trending, and detail views for responsive engagement',
+      'User and organization profile pages with profile and cover image uploads, follower statistics, and testimony listings',
+      'Follow and unfollow mechanics with follow request approval workflows for private accounts',
+      'Explore page with trending testimonies, popular tags, and user search functionality',
+      'Comprehensive settings system with profile editing, account management, privacy controls, and session management',
+      'OTP-based two-factor authentication supporting sign up, sign in, and password reset workflows',
+      'Broadcast testimony system enabling verified users to send testimonies to organization channels',
+      'Progressive Web App implementation with Serwist service worker, offline support, and installability',
+      'Server-rendered OpenGraph and Twitter card images for social media sharing and SEO optimization',
+      'Secure JWT-based authentication with automatic token refresh, session management, and 401 auto-logout handling',
+    ],
+    coreTools: [
+      'Next.js',
+      'React',
+      'TanStack React Query',
+      'Tailwind CSS',
+      'React Hook Form',
+      'Zod',
+      'Axios',
+      'Serwist',
+      'TypeScript',
+    ],
+    image: TestimoniesWebClient1,
+    screenshots: [
+      TestimoniesWebClient1,
+      TestimoniesWebClient2,
+      TestimoniesWebClient3,
+      TestimoniesWebClient4,
+      TestimoniesWebClient5,
+    ],
+    featured: true,
+    apiLink: 'https://testimonies-com-backend.onrender.com/docs/user/',
+    codeLink: 'https://github.com/Golden-Ogbeka/testimonies-com-web-client',
+    liveLink: 'https://testimonies-com-web.vercel.app/',
+    videoDemoLink: 'https://www.youtube.com/watch?v=8_foaT-G4ys',
+  },
+  {
     title: 'Enterprise Corporate Digital Banking Mobile Platform',
     slug: 'rova-cba-cib-ng-app-lite',
     featured: true,
@@ -314,6 +373,49 @@ const Projects: ProjectType[] = [
     image: CIBApp1,
     screenshots: [CIBApp1, CIBApp2, CIBApp3, CIBApp4, CIBApp5, CIBApp6, CIBApp7],
     videoDemoLink: 'https://www.youtube.com/watch?v=AOd7ZjdbIQg',
+  },
+  {
+    title: 'Faith-Based Social Testimony Mobile Application',
+    slug: 'testimonies-mobile',
+    description:
+      'A React Native mobile application developed for Testimonies.com that enables users to share, discover, and engage with faith-based testimonies on the go. The app delivers a full-featured social experience through native mobile interfaces, supporting testimony creation with media attachments, infinite-scroll feed browsing, user profiles, follow interactions, direct messaging, and push notification workflows. Built with NativeWind for styling and Redux Toolkit for state management, the application provides a seamless cross-platform experience for both Android and iOS, featuring secure authentication, optimistic UI updates, and offline-aware data synchronization through TanStack React Query.',
+    features: [
+      'Infinite-scroll testimony feed with pull-to-refresh, cursor-based pagination, and Optimistic like interactions',
+      'Testimony creation modal with type selection, tag input, media picker, and multi-image attachment support',
+      'Testimony detail screens with paginated reply threads, reply composition, and engagement interactions',
+      'User and organization profile pages with profile and cover photo uploads, follower statistics, and testimony listings',
+      'Follow and unfollow mechanics with follower and following list management',
+      'Direct messaging system with conversation threads, message bubbles, typing indicators, and read status',
+      'User search and trending content discovery with debounced search input',
+      'Notification center displaying follow requests, broadcast requests, and platform updates',
+      'Subscription management with plan browsing, subscription status, and billing history',
+      'Secure authentication supporting individual and organization account types with OTP email verification',
+      'Redux Toolkit-powered global auth state with AsyncStorage persistence and bootstrap session restoration',
+      'Custom floating action button navigation pattern for testimony creation accessibility from any tab',
+    ],
+    coreTools: [
+      'React Native',
+      'NativeWind',
+      'Redux Toolkit',
+      'TanStack React Query',
+      'React Navigation',
+      'React Hook Form',
+      'Zod',
+      'Axios',
+      'TypeScript',
+    ],
+    image: TestimoniesMobile1,
+    screenshots: [
+      TestimoniesMobile1,
+      TestimoniesMobile2,
+      TestimoniesMobile3,
+      TestimoniesMobile4,
+      TestimoniesMobile5,
+    ],
+    featured: true,
+    apiLink: 'https://testimonies-com-backend.onrender.com/docs/user/',
+    codeLink: 'https://github.com/Golden-Ogbeka/testimonies_mobile_react_native',
+    videoDemoLink: 'https://www.youtube.com/watch?v=rzhaCN63onw',
   },
   {
     title: 'Enterprise B2B Supply Chain and Commerce Management Platform',
@@ -376,6 +478,7 @@ const Projects: ProjectType[] = [
     videoDemoLink: 'https://www.youtube.com/watch?v=Lq-I5ZWkE9c',
     liveLink: 'https://inquiry.savorbylexi.com/',
   },
+
   {
     title: 'A1Quest Mathematics Learning and Student Success Platform',
     slug: 'a1quest-web',
@@ -571,6 +674,48 @@ const Projects: ProjectType[] = [
     apiLink: 'https://documenter.getpostman.com/view/25358026/2s8ZDU5ivU',
     liveLink: 'https://tfh-website.netlify.app/',
     codeLink: 'https://github.com/Golden-Ogbeka/church-website',
+  },
+  {
+    title: 'Platform Administration and Content Moderation Dashboard',
+    slug: 'testimonies-com-web-admin',
+    description:
+      'A centralized administrative dashboard built for Testimonies.com that provides platform administrators with comprehensive tools for managing users, moderating content, monitoring subscriptions, overseeing promotions, and configuring platform settings. The dashboard delivers real-time operational visibility through analytics and reporting interfaces, enabling data-driven decision-making across user management, testimony moderation, subscription administration, and audit logging workflows. Built with React Router 7 and Vite, the platform features secure OTP-based authentication, role-based access controls, and a scalable architecture designed for internal operations teams.',
+    features: [
+      'Comprehensive user management dashboards supporting account administration, activation controls, subscription oversight, and verification monitoring',
+      'Testimony moderation and content management interfaces enabling administrators to review, flag, and manage platform content',
+      'Flagged content and reported testimony review workflows supporting community safety and content quality enforcement',
+      'Testimony analytics dashboards delivering engagement metrics including likes, replies, views, and active user statistics',
+      'Subscription management system supporting plan administration, active subscription monitoring, and cancellation tracking',
+      'Promotion campaign management interfaces for creating, monitoring, flagging, and analyzing promotional activities',
+      'CMS-style content editors for managing FAQs, privacy policy, terms of service, and community guidelines',
+      'Role-based access control and admin permission management supporting super admin and standard admin hierarchies',
+      'Audit logging system providing detailed activity tracking, event categorization, and operational accountability',
+      'OTP-based two-factor authentication with encrypted session storage and secure admin access workflows',
+      'Redux Toolkit-powered state management for global admin profile and authentication state',
+      'Docker-ready deployment architecture with multi-stage builds optimized for containerized environments',
+    ],
+    coreTools: [
+      'React Router',
+      'Vite',
+      'Redux Toolkit',
+      'React Hook Form',
+      'Zod',
+      'Tailwind CSS',
+      'Axios',
+      'Heroicons',
+      'TypeScript',
+    ],
+    image: TestimoniesWebAdmin1,
+    screenshots: [
+      TestimoniesWebAdmin1,
+      TestimoniesWebAdmin2,
+      TestimoniesWebAdmin3,
+      TestimoniesWebAdmin4,
+      TestimoniesWebAdmin5,
+    ],
+    apiLink: 'https://testimonies-com-backend.onrender.com/docs/user/',
+    codeLink: 'https://github.com/Golden-Ogbeka/testimonies-com-web-admin',
+    videoDemoLink: 'https://www.youtube.com/watch?v=0MKILEaQpbc',
   },
   {
     title: 'Church Community and Digital Ministry Mobile Application',
