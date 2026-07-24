@@ -7,8 +7,7 @@ import dynamic from 'next/dynamic';
 import VideoDemo from '../../components/pages/Project/VideoDemo';
 
 const ImageGallery = dynamic(
-  () => import('../../components/pages/Project/ImageGallery'),
-  { ssr: false }
+  () => import('../../components/pages/Project/ImageGallery')
 );
 import ProjectsData, { ProjectType } from '../../data/Projects';
 import { useTranslation } from 'next-i18next';
