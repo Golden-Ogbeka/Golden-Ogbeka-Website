@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1A1A2E"/>
+    </linearGradient>
+    <radialGradient id="brainGlow" cx="50%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="960" cy="500" r="350" fill="url(#brainGlow)"/>
+  <!-- Neural network -->
+  <g transform="translate(960,500)">
+    <g stroke="#2563EB" stroke-width="3" opacity="0.4" fill="none">
+      <line x1="-300" y1="-120" x2="-120" y2="-50"/><line x1="-300" y1="0" x2="-120" y2="-50"/>
+      <line x1="-300" y1="120" x2="-120" y2="50"/><line x1="-120" y1="-50" x2="0" y2="0"/>
+      <line x1="-120" y1="50" x2="0" y2="0"/><line x1="0" y1="0" x2="120" y2="-50"/>
+      <line x1="0" y1="0" x2="120" y2="50"/><line x1="120" y1="-50" x2="300" y2="-120"/>
+      <line x1="120" y1="-50" x2="300" y2="0"/><line x1="120" y1="50" x2="300" y2="120"/>
+    </g>
+    <circle cx="-300" cy="-120" r="14" fill="#2563EB" opacity="0.9"/>
+    <circle cx="-300" cy="0" r="14" fill="#2563EB" opacity="0.9"/>
+    <circle cx="-300" cy="120" r="14" fill="#2563EB" opacity="0.9"/>
+    <circle cx="-120" cy="-50" r="18" fill="#3B82F6" opacity="0.95"/>
+    <circle cx="-120" cy="50" r="18" fill="#3B82F6" opacity="0.95"/>
+    <circle cx="0" cy="0" r="24" fill="#38BDF8" opacity="1"/>
+    <circle cx="120" cy="-50" r="18" fill="#3B82F6" opacity="0.95"/>
+    <circle cx="120" cy="50" r="18" fill="#3B82F6" opacity="0.95"/>
+    <circle cx="300" cy="-120" r="14" fill="#2563EB" opacity="0.9"/>
+    <circle cx="300" cy="0" r="14" fill="#2563EB" opacity="0.9"/>
+    <circle cx="300" cy="120" r="14" fill="#2563EB" opacity="0.9"/>
+    <circle cx="0" cy="0" r="8" fill="white" opacity="0.6"/>
+    <circle cx="-120" cy="-50" r="5" fill="white" opacity="0.4"/>
+    <circle cx="120" cy="-50" r="5" fill="white" opacity="0.4"/>
+  </g>
+  <!-- Growth bars -->
+  <g opacity="0.2">
+    <rect x="250" y="680" width="80" height="200" rx="6" fill="#2563EB"/>
+    <rect x="370" y="600" width="80" height="280" rx="6" fill="#3B82F6"/>
+    <rect x="490" y="540" width="80" height="340" rx="6" fill="#38BDF8"/>
+    <rect x="1350" y="560" width="80" height="320" rx="6" fill="#38BDF8"/>
+    <rect x="1470" y="620" width="80" height="260" rx="6" fill="#3B82F6"/>
+    <rect x="1590" y="660" width="80" height="220" rx="6" fill="#2563EB"/>
+  </g>
+  <g stroke="#38BDF8" stroke-width="3" fill="none" opacity="0.3">
+    <line x1="960" y1="780" x2="960" y2="350"/>
+    <polyline points="935,390 960,350 985,390"/>
+  </g>
+  <g fill="white" opacity="0.5">
+    <circle cx="180" cy="200" r="2"/><circle cx="600" cy="160" r="1.5"/>
+    <circle cx="1000" cy="140" r="2"/><circle cx="1400" cy="180" r="2"/>
+    <circle cx="1750" cy="200" r="1.5"/>
+  </g>
+  <rect x="0" y="1040" width="1920" height="4" fill="url(#accent)" opacity="0.5"/>
+</svg>

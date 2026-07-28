@@ -4,16 +4,15 @@ import { BlogCategory } from '../../../data/BlogPosts';
 interface CategoryFilterProps {
   activeCategory: BlogCategory | 'all';
   onCategoryChange: (category: BlogCategory | 'all') => void;
+  availableCategories: (BlogCategory | 'all')[];
 }
 
-const CATEGORIES: (BlogCategory | 'all')[] = ['all', 'tech', 'ai', 'tips'];
-
-function CategoryFilter({ activeCategory, onCategoryChange }: CategoryFilterProps) {
+function CategoryFilter({ activeCategory, onCategoryChange, availableCategories }: CategoryFilterProps) {
   const { t } = useTranslation(['blog']);
 
   return (
     <div className='flex flex-wrap gap-3 mb-10' role='tablist' aria-label={t('blog:category.all')}>
-      {CATEGORIES.map((cat) => (
+      {availableCategories.map((cat) => (
         <button
           key={cat}
           onClick={() => onCategoryChange(cat)}

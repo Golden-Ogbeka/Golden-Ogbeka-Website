@@ -12,39 +12,82 @@
   },
   "readMore": "Read more",
   "backToBlog": "Back to blog",
+  "sort": {
+    "label": "Sort by",
+    "newest": "Newest first",
+    "oldest": "Oldest first"
+  },
+  "pagination": {
+    "label": "Blog pagination",
+    "prev": "Previous",
+    "next": "Next",
+    "page": "Page"
+  },
   "post": {
-    "nextjs-static-generation": {
-      "title": "Next.js Static Generation: A Deep Dive",
-      "summary": "Understanding when and how to use Static Site Generation in Next.js for performant, scalable web applications.",
+    "africa-needs-more-creators": {
+      "title": "Africa Needs More Creators",
+      "summary": "Africa's dependence on external technology is a vulnerability. It's time to shift from consuming to creating.",
       "paragraphs": [
-        "Static Site Generation (SSG) is one of the most powerful features in Next.js, enabling developers to pre-render pages at build time for lightning-fast load times and excellent SEO. Unlike traditional client-side rendering, SSG produces plain HTML files that can be served directly from a CDN, eliminating server round-trips entirely.",
-        "The core idea behind SSG is simple: generate your HTML, CSS, and JavaScript at build time, not at request time. This means your pages are ready to serve the moment a user requests them. For content that doesn't change frequently — portfolios, documentation, blogs, marketing pages — this approach delivers unmatched performance.",
-        "In Next.js, you enable SSG by exporting a getStaticProps function from your page component. This function runs at build time and returns the props that your page needs. Combined with getStaticPaths for dynamic routes, you can generate hundreds or thousands of pages statically while still maintaining dynamic URL structures.",
-        "One common misconception is that SSG means your content is permanently frozen. In reality, Next.js supports Incremental Static Regeneration (ISR), which allows you to update static pages after deployment by re-generating them in the background at configurable intervals. This gives you the performance benefits of static generation with the flexibility of server-side rendering.",
-        "When deciding between SSG, SSR, and client-side rendering, consider your content's update frequency, your performance requirements, and your infrastructure constraints. SSG is ideal for content that changes infrequently and needs to be SEO-friendly. For real-time data or highly personalized content, server-side rendering or client-side fetching may be more appropriate."
+        "On June 15, 2026, the Central Bank of Nigeria mandated all banks, fintech companies, and payment service providers to begin using local servers to manage all payment transactions within Nigeria. At first this felt infuriating — how could companies be expected to meet an obligation when the basic infrastructure hasn't been provided? But then it reminded me of one of my core worries about Africa: we are too dependent on external creators.",
+        "Africa is hailed as one of the most promising continents for innovation and entrepreneurship, yet what we see is almost total dependence on other continents for creation so that we can then leverage those creations and build ours for profit. If AWS shuts down today, tens of thousands of companies in Africa would experience a digital blackout with no sustainable alternative. When PayPal blacklisted Nigeria from international payments, it caused massive disruption until African companies rose to fill the gap.",
+        "That's the paradox — when put under pressure, Africa does have the potential to be creative. About 12 companies from Africa created international payment solutions when PayPal blocked Nigeria. The CBN directive would similarly be met by companies arising to find solutions. That's the power resident in Africa. However, I'm calling for it to become our common theme — not only when things go wrong.",
+        "It's time to begin searching for inventions and create a culture that encourages people to think, create, and innovate. Instead of sitting and just using the tools, software, and programs created by other continents, begin to learn how you can also create those tools. The knowledge is out there. We just need to search it out.",
+        "Be a creator and not just a consumer. You also have the Creator's Gene in you. My name is Golden Ogbeka, and I'm a Solutions Expert specializing in solving problems across tech, finance, agriculture, logistics, real estate, education, and various other sectors."
       ]
     },
-    "building-ai-agents": {
-      "title": "Building Autonomous AI Agents: Patterns and Pitfalls",
-      "summary": "A practical guide to designing and implementing AI agents that can reason, plan, and act autonomously.",
+    "do-the-difficult-things": {
+      "title": "Do The Difficult Things",
+      "summary": "Comfort is the enemy of growth. Stepping out of your zone is the only way to become a better version of yourself.",
       "paragraphs": [
-        "AI agents represent a paradigm shift from simple request-response systems to autonomous entities that can plan, reason, and execute multi-step tasks. Unlike a basic chatbot that responds to prompts, an agent can break down complex goals, choose appropriate tools, and iterate on its approach based on intermediate results.",
-        "The foundation of any AI agent is the reasoning loop. At its core, this loop consists of three phases: observation, reasoning, and action. The agent observes its environment (user input, tool outputs, error messages), reasons about what to do next (planning, reflection, decision-making), and then takes an action (calling a tool, generating content, making an API request).",
-        "Tool integration is what transforms a language model from a text generator into a capable agent. By providing models with well-defined tool schemas — functions for web search, code execution, database queries, or API calls — you enable them to interact with the real world. The key is designing tool interfaces that are clear, well-documented, and fail gracefully.",
-        "One of the biggest pitfalls in agent design is the lack of proper error handling and recovery mechanisms. Agents will encounter failures — API timeouts, malformed outputs, unexpected user inputs. A robust agent needs retry logic, fallback strategies, and the ability to recognize when it's stuck and ask for help rather than hallucinating a solution.",
-        "As AI agents become more capable, the importance of safety guardrails grows proportionally. Implementing rate limits, output validation, human-in-the-loop checkpoints, and clear boundaries on what an agent can and cannot do is essential. The goal is to build agents that are helpful and autonomous while remaining predictable and safe."
+        "These recent months have been the most enlightening to me — months that made me reflect on my journey and make hard choices. Before the popularity of artificial intelligence, I felt really comfortable. I was good at building frontend applications and was never afraid to take on any project. But before I took frontend as my core skill, I actually began my journey with Java. Not many people know that I was originally a backend engineer.",
+        "What changed? While attempting to build a global business solving customer acquisition in the poultry industry, I did basically everything — managed the cash book, built the backend with Node.js, built the web with EJS and later React, built mobile with React Native, created video content, did illustrations, marketing, customer research, and customer support. I did it all because I didn't have the money to pay people. But what did this do to me? I got burned out when COVID hit.",
+        "Because of the burnout and trying to recover slowly, I tilted towards what came easily. I realized most people ran away from CSS, but to me it was easy. I noticed my brain had to do more work when coding backend, so I chose to focus only on frontend even when I knew it was too easy for me. Fast forward to this year, I had become an expert — no UI was impossible for me. But then AI came and jolted me from my sleep.",
+        "Because I was good at my job, I didn't pay much attention to learning things that really mattered — machine learning, complex algorithms, distributed computing system design, complex architectures. I learned what I needed to and felt comfortable, but I didn't know deep enough. That's what AI came to remind me, and by extension, you. Trust me, I have learned my lesson.",
+        "So learn from my experience. Don't sit back and think because you mastered a skill means you would always enjoy comfort. Sometimes our worst enemy is the very comfort we enjoy. Go out of your comfort zone. Be a better you. Challenge yourself to do the difficult things. Watch those long video lessons. It might seem difficult at the beginning, but that's how everything in life seems when you begin. Remember when you first started learning to type? Well, look at you now."
       ]
     },
-    "clean-code-habits": {
-      "title": "Daily Habits That Made Me a Better Developer",
-      "summary": "Small, consistent practices that compound into significant improvements in code quality and productivity.",
+    "more-countries-need-to-be-like-canada": {
+      "title": "More Countries Need To Be Like Canada",
+      "summary": "While the world chases AI, Canada reminds us that investment in human capital is the real key to survival.",
       "paragraphs": [
-        "Writing clean code isn't about knowing every design pattern or mastering every framework. It's about developing small, consistent habits that compound over time. After years of professional development, the practices that have had the most impact on my code quality are surprisingly simple.",
-        "Start every coding session by reading code before writing it. Before adding a new feature or fixing a bug, spend five to ten minutes understanding the surrounding context. Read the existing functions, understand the data flow, and identify the conventions already in place. This habit alone prevents countless bugs and reduces the need for refactoring later.",
-        "Name things as if the reader has no context. Variables, functions, and files should communicate their purpose without requiring comments. If you find yourself writing a comment to explain what a function does, consider whether the function name or its parameters could be more descriptive. Good naming is the cheapest form of documentation.",
-        "Commit early and commit often. Small, focused commits with clear messages make code review easier, bisecting simpler, and rollbacks safer. Don't wait until a feature is complete — commit when you've implemented a single logical unit of work. Your future self and your teammates will thank you.",
-        "Refactor continuously, not in large batches. When you encounter code that could be improved, make the improvement immediately rather than adding it to a backlog. Small refactors — extracting a function, renaming a variable, simplifying a conditional — keep the codebase healthy without requiring dedicated cleanup sprints.",
-        "Finally, write tests not for coverage metrics, but for confidence. A good test suite lets you make changes fearfully. Start with the critical paths and edge cases, then expand coverage as time allows. The goal isn't 100% coverage — it's the confidence to deploy on Friday afternoon without anxiety."
+        "The entire world is in a frenzy about AI. This frenzy is not a delusion — AI is arguably the best discovery of man in recent generations. However, it puts too much emphasis on what machines can do and less focus on what humans can do. Canada is one of the major countries not to be carried away by this frenzy. It has structures in place not to be left behind in the AI race, but also major systems to prevent losing the core fabric of economics: human capital.",
+        "In Canada's Spring Economic Update of 2026, an announcement was made for the launch of Team Canada Strong — an initiative to make major investments in skilled trades, a sector increasingly in short supply. The initiative makes apprenticeship easier so more people are equipped with skillsets highly required for human survival. When last have we heard anyone advise a young person to learn a skilled trade like plumbing, electrical engineering, or carpentry?",
+        "We see someone learning to play the piano or understanding construction and try to convince them there's more money in tech. Yet we all need these services every day and we know AI is not the replacement. Human ingenuity is irreplaceable. It is my wish for more nations, organizations, and communities to become more like Canada — not losing track of the AI race but also not losing track of raw investment in human capital.",
+        "There are many applications for companies in this space. We have already seen platforms like TaskRabbit, Wrkman, and LaborHack setting up platforms for hiring skilled tradespeople. Financial companies can invest in organizations providing these services, just like Piggyvest and Front Fundr are doing. Another avenue is to partner with governments to participate in skill development and facilitate sending skilled artisans into the marketplace.",
+        "Investment in human capital is the key to the nation's survival. Tech and AI are tools to make life easier and things faster, but they cannot replace the very core of our existence: the ability to learn, build, create, and manage. This should not be forgotten."
+      ]
+    },
+    "the-myth-about-ai-for-businesses": {
+      "title": "The Myth About AI — For Businesses",
+      "summary": "AI is not a replacement for your team. It's a tool that enables businesses to achieve goals they never could before.",
+      "paragraphs": [
+        "When ChatGPT launched on November 30, 2022, the world was thrown into panic mode. One side was excited about AI replacing human capacity. Another was concerned about job security. And another didn't even care. But the myth we're discussing today is the business side: 'Why do I have to pay someone to do it when I can use AI for it?' That statement makes a good financial argument but fails from a mission angle.",
+        "AI did not come to put business teams out of their jobs. AI came to make it possible for businesses to achieve outrageous goals within impossible deadlines. Before Generative AI, businesses had milestones with strict timelines, but because of limited human resources, they could only pursue one or two milestones at a time to prevent burnout. Now, with AI, businesses have the opportunity to build much more than before.",
+        "That introduces the need for more hands — not just normal hands, but AI-powered hands. Individuals who understand how to integrate AI into their workflow for massive results. Consider a company that builds tech solutions for rural communities. They've created commerce solutions but also dream of government and agriculture solutions. They couldn't pursue everything because of cost and burnout. Then an engineer introduced them to Claude.",
+        "With strategic thinking, they split their team into three groups — one to maintain current projects, one to build government solutions, and one to build agriculture solutions. Now they can think of new directions, have more solutions to validate investment, and can scale because real solutions create edge cases that present opportunities for more AI-powered hands.",
+        "Businesses should not see AI as a replacement for their team members. AI was never the solution — it's a tool. Don't throw away your team because you can use AI. Instead, empower your team with this amazing 21st-century tool and expand the business vision, because now you can build at a speed that was never humanly achievable before AI became a tool."
+      ]
+    },
+    "the-myth-about-ai-for-individuals": {
+      "title": "The Myth About AI — For Individuals",
+      "summary": "AI is not taking your job. It's giving you the tools to finally pursue your dreams while keeping your income.",
+      "paragraphs": [
+        "In my last post, I explained how businesses should approach AI with confidence, not fear. In this post, I focus on the individuals who feel lost or left out — people affected by mass layoffs who are considering pivoting to non-technical careers just to remain relevant. I have good news for you: it's not over yet.",
+        "Before AI became the new gold, motivational speakers said things like 'Your salary is the drug your company gives you to prevent you from pursuing your dream' or 'You cannot be wealthy by being an employee.' These put people in a dilemma: either quit and begin their dreams, or quit dreaming and hold on to their jobs. The truth is you could have made either choice and be joyful or regretting it today.",
+        "But what matters now is: what can you do about it? Before AI, most employees had dreams they wished they had time or energy for but never got to do. Well, that's until now! AI is God's gift to man — God finally saying 'now you no longer have any excuse' because we finally have tools that can do the work we needed time and energy for.",
+        "Now we can finally focus on the things we really need to do — think, negotiate, and interact — and let this wonderful tool do the hard lifting. So stop thinking about the next field to pivot into and begin building that dream you've had so long in your heart by leveraging AI. AI didn't come to take your job. It came to help you achieve your dream while you keep your job.",
+        "That's the shift in perspective that changes everything. AI is a gift, not a threat. The people who thrive won't be those who avoid AI or fear it — they'll be those who harness it as a force multiplier for their ambitions while maintaining the stability of their current income."
+      ]
+    },
+    "the-myth-about-ai-for-non-ai-users": {
+      "title": "The Myth About AI — AI Is Expensive",
+      "summary": "AI costs are declining fast. Open source models and local hardware are making AI accessible to everyone.",
+      "paragraphs": [
+        "In my previous posts, I showed how AI is an advantage for everyone who dreams and how individuals should not worry about job replacement but focus on how AI creates new opportunities. In this post, I address those who aren't excited about AI and believe the normal way of doing business should continue without it. The biggest concern I hear is cost — and even major organizations have been lamenting about this.",
+        "There is no sugarcoating it: AI usage is costing billions worldwide. Google just paid SpaceX almost one billion for AI compute storage, and to stay profitable, that expense must be passed to end-users. So why should non-AI users consider it? Because it would be FREE soon. Knowledge can neither be created nor destroyed, and AI is built on knowledge — LLMs get their intelligence from mass data input from already existing systems and content.",
+        "It is actually immoral to put a price on access to that knowledge. What people pay for is the compute power that processes it. Study the trends: LLM profitability is a dying dream. Companies depending solely on that model have been pivoting. Everyone believes there's an AI bubble about to burst. But one company showed us how the future of AI looks, and the world missed it.",
+        "In June 2026, Nvidia announced RTX Spark PCs with up to 128GB unified memory and up to 1 Petaflop FP4 AI performance — computers that can run AI locally with ease. What if you didn't need software to interact with servers? What if the server was your own computer? What if you didn't need an internet connection to communicate with AI because it's sitting right in your machine? That is the power of local models.",
+        "Nvidia just showed the world that Jarvis is no longer just for one rich billionaire named Iron Man. In a few years, AI will be for everyone with a computer. Start your journey with local models and open source tools like Ollama. Within the next five years, software AI agents will be out of vogue — everyone with a modern computer will have an AI agent working locally. That is the future I envision."
       ]
     }
   }

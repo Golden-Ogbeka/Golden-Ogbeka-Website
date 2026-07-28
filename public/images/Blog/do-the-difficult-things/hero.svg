@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="mtn1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="mtn2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#1E3A5F"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#2563EB" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <!-- Summit glow -->
+  <circle cx="1100" cy="220" r="80" fill="url(#sun)"/>
+  <circle cx="1100" cy="220" r="12" fill="#38BDF8" opacity="0.95"/>
+  <!-- Mountain layers -->
+  <polygon points="0,1080 350,550 750,1080" fill="url(#mtn1)" opacity="0.6"/>
+  <polygon points="200,1080 750,380 1300,1080" fill="url(#mtn2)" opacity="0.45"/>
+  <polygon points="600,1080 1100,220 1650,800 1920,1080" fill="url(#mtn2)" opacity="0.7"/>
+  <polygon points="900,1080 1350,400 1920,950 1920,1080" fill="url(#mtn1)" opacity="0.5"/>
+  <!-- Mountain edge highlights -->
+  <g stroke="#38BDF8" stroke-width="2" opacity="0.2" fill="none">
+    <polyline points="750,380 800,420 850,400 900,450 960,380 1020,320 1100,220"/>
+    <polyline points="350,550 400,580 500,540 600,600 750,380"/>
+  </g>
+  <!-- Ascending path dots -->
+  <g fill="#38BDF8" opacity="0.7">
+    <circle cx="250" cy="900" r="5"/><circle cx="380" cy="800" r="5"/>
+    <circle cx="500" cy="720" r="5"/><circle cx="620" cy="640" r="5"/>
+    <circle cx="740" cy="560" r="5"/><circle cx="860" cy="470" r="6"/>
+    <circle cx="980" cy="370" r="6"/><circle cx="1100" cy="220" r="8"/>
+  </g>
+  <g stroke="#38BDF8" stroke-width="1.5" opacity="0.25" fill="none" stroke-dasharray="6,10">
+    <polyline points="250,900 380,800 500,720 620,640 740,560 860,470 980,370 1100,220"/>
+  </g>
+  <g fill="white">
+    <circle cx="180" cy="100" r="2" opacity="0.7"/><circle cx="420" cy="60" r="1.5" opacity="0.5"/>
+    <circle cx="700" cy="130" r="2" opacity="0.6"/><circle cx="1000" cy="80" r="1.5" opacity="0.4"/>
+    <circle cx="1350" cy="110" r="2.5" opacity="0.7"/><circle cx="1650" cy="70" r="2" opacity="0.5"/>
+  </g>
+  <rect x="0" y="1040" width="1920" height="4" fill="#2563EB" opacity="0.5"/>
+</svg>

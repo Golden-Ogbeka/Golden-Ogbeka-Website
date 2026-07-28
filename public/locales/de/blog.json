@@ -1,50 +1,93 @@
 {
   "page": {
     "title": "Blog",
-    "subtitle": "Gedanken zu Engineering, KI und Software-Handwerk.",
+    "subtitle": "Gedanken zu Technik, KI und Software-Handwerk.",
     "noPosts": "Keine Beiträge in dieser Kategorie gefunden."
   },
   "category": {
     "all": "Alle",
-    "tech": "Tech",
+    "tech": "Technik",
     "ai": "KI",
     "tips": "Tipps"
   },
   "readMore": "Weiterlesen",
   "backToBlog": "Zurück zum Blog",
+  "sort": {
+    "label": "Sortieren nach",
+    "newest": "Neueste zuerst",
+    "oldest": "Älteste zuerst"
+  },
+  "pagination": {
+    "label": "Blog-Seitenzahl",
+    "prev": "Vorherige",
+    "next": "Nächste",
+    "page": "Seite"
+  },
   "post": {
-    "nextjs-static-generation": {
-      "title": "Next.js Static Generation: Ein tiefer Einblick",
-      "summary": "Wann und wie man Static Site Generation in Next.js für performante, skalierbare Webanwendungen einsetzt.",
+    "africa-needs-more-creators": {
+      "title": "Afrika braucht mehr Schöpfer",
+      "summary": "Afrikas Abhängigkeit von externer Technologie ist eine Schwachstelle. Es ist an der Zeit, vom Konsumieren zum Erschaffen zu wechseln.",
       "paragraphs": [
-        "Static Site Generation (SSG) ist eine der leistungsstärksten Funktionen in Next.js und ermöglicht es Entwicklern, Seiten bei der Kompilierung vorzu_rendern, um blitzschnelle Ladezeiten und ein hervorragendes SEO zu erreichen. Im Gegensatz zum traditionellen Client-Side Rendering erzeugt SSG einfache HTML-Dateien, die direkt von einem CDN ausgeliefert werden können und Server-Roundtrips vollständig eliminieren.",
-        "Die Kernidee hinter SSG ist einfach: Erstellen Sie Ihr HTML, CSS und JavaScript bei der Kompilierung, nicht bei der Anfrage. Das bedeutet, dass Ihre Seiten bereit sind, bedient zu werden, sobald ein Benutzer sie anfordert. Für Inhalte, die sich nicht häufig ändern — Portfolios, Dokumentationen, Blogs, Marketingseiten — bietet dieser Ansatz unerreichte Leistung.",
-        "In Next.js aktivieren Sie SSG, indem Sie eine getStaticProps-Funktion aus Ihrer Seitenkomponente exportieren. Diese Funktion wird bei der Kompilierung ausgeführt und gibt die Props zurück, Ihre Seite benötigt. Kombiniert mit getStaticPaths für dynamische Routen können Sie Hunderte oder Tausende von Seiten statisch generieren und gleichzeitig dynamische URL-Strukturen beibehalten.",
-        "Ein weit verbreitetes Missverständnis ist, dass SSG bedeutet, Ihr Inhalt wäre dauerhaft eingefroren. Tatsächlich unterstützt Next.js Incremental Static Regeneration (ISR), mit dem Sie statische Seiten nach dem Deployment aktualisieren können, indem Sie sie im Hintergrund in konfigurierbaren Intervallen neu generieren. So erhalten Sie die Leistungsvorteile der statischen Generierung mit der Flexibilität des Server-Side Renderings.",
-        "Bei der Entscheidung zwischen SSG, SSR und Client-Side Rendering sollten Sie die Aktualisierungshäufigkeit Ihrer Inhalte, Ihre Leistungsanforderungen und Ihre Infrastruktur Constraints berücksichtigen. SSG ist ideal für Inhalte, die sich selten ändern und SEO-freundlich sein müssen. Für Echtzeitdaten oder hoch personalisierte Inhalte können Server-Side Rendering oder Client-Side Fetching geeigneter sein."
+        "Am 15. Juni 2026 ordnete die Zentralbank von Nigeria an, dass alle Banken, Fintech-Unternehmen und Zahlungsdienstleister lokale Server nutzen müssen, um alle Zahlungstransaktionen innerhalb Nigerias abzuwickeln. Anfangs wirkte das frustrierend — wie sollte man von Unternehmen erwarten, dass sie einer Pflicht nachkommen, wenn die grundlegende Infrastruktur nicht bereitgestellt wurde? Doch dann erinnerte mich das an eine meiner größten Sorgen über Afrika: Wir sind zu sehr von externen Schöpfern abhängig.",
+        "Afrika wird als einer der vielversprechendsten Kontinente für Innovation und Unternehmertum gefeiert, doch was wir sehen, ist eine beinahe vollständige Abhängigkeit von anderen Kontinenten beim Erschaffen, damit wir deren Schöpfungen nutzen und für unseren eigenen Profit aufbauen können. Wenn AWS heute abgeschaltet wird, würden Zehntausende von Unternehmen in Afrika einen digitalen Blackout erleben, ohne nachhaltige Alternative. Als PayPal Nigeria von internationalen Zahlungen aussperrte, entstand massive Störung, bis afrikanische Unternehmen entstanden, um die Lücke zu füllen.",
+        "Genau das ist das Paradoxon — unter Druck hat Afrika durchaus das Potenzial kreativ zu sein. Etwa 12 Unternehmen aus Afrika entwickelten internationale Zahlungslösungen, als PayPal Nigeria blockierte. Die Anordnung der CBN wird ähnlich darauf treffen, dass Unternehmen entstehen, um Lösungen zu finden. Das ist die Kraft, die in Afrika steckt. Doch ich fordere, dass dies unser gemeinsames Thema wird — nicht nur, wenn etwas schiefgeht.",
+        "Es ist an der Zeit, nach Erfindungen zu suchen und eine Kultur zu schaffen, die Menschen ermutigt zu denken, zu erschaffen und zu innovieren. Anstatt zu sitzen und einfach nur die Werkzeuge, Software und Programme zu nutzen, die von anderen Kontinenten geschaffen wurden, fangt an zu lernen, wie ihr diese Werkzeuge selbst erschaffen könnt. Das Wissen existiert bereits. Wir müssen es nur finden.",
+        "Sei ein Schöpfer und nicht nur ein Konsument. Auch du hast das Schöpfer-Gen in dir. Mein Name ist Golden Ogbeka, und ich bin ein Lösungsexperte, spezialisiert auf die Lösung von Problemen in den Bereichen Technik, Finanzen, Landwirtschaft, Logistik, Immobilien, Bildung und zahlreichen weiteren Sektoren."
       ]
     },
-    "building-ai-agents": {
-      "title": "Autonome KI-Agenten bauen: Muster und Fallstricke",
-      "summary": "Ein praktischer Leitfaden zum Entwurf und zur Implementierung von KI-Agenten, die autonom_reasonn, planen und handeln können.",
+    "do-the-difficult-things": {
+      "title": "Tue die schwierigen Dinge",
+      "summary": "Komfort ist der Feind des Wachstums. Aus seiner Komfortzone zu treten ist der einzige Weg, eine bessere Version von sich selbst zu werden.",
       "paragraphs": [
-        "KI-Agenten stellen einen Paradigmenwechsel von einfachen Anfrage-Antwort-Systemen zu autonomen Entitäten dar, die mehrstufige Aufgaben planen, begründen und ausführen können. Im Gegensatz zu einem einfachen Chatbot, der auf Prompts antwortet, kann ein Agent komplexe Ziele aufteilen, passende Werkzeuge wählen und seinen Ansatz basierend auf Zwischenergebnissen iterieren.",
-        "Die Grundlage jedes KI-Agenten ist die Reasoning-Schleife. Im Kern besteht diese Schleife aus drei Phasen: Beobachtung, Reasoning und Handlung. Der Agent beobachtet seine Umgebung (Benutzereingaben, Werkzeugausgaben, Fehlermeldungen), überlegt, was als Nächstes zu tun ist (Planung, Reflexion, Entscheidungsfindung) und führt dann eine Handlung aus (Werkzeugaufruf, Inhaltsgenerierung, API-Anfrage).",
-        "Die Werkzeugintegration ist das, was ein Sprachmodell von einem Textgenerator zu einem fähigen Agenten macht. Indem Sie Modellen gut definierte Werkzeugschemata bereitstellen — Funktionen für Websuche, Codeausführung, Datenbankabfragen oder API-Aufrufe — ermöglichen Sie ihnen, mit der realen Welt zu interagieren. Der Schlüssel liegt darin, Werkzeugschnittstellen zu entwerfen, die klar, gut dokumentiert und bei Fehlern graziös sind.",
-        "Eines der größten Fallstricke beim Agenten-Design ist das Fehlen angemessener Fehlerbehandlungs- und Wiederherstellungsmechanismen. Agenten werden auf Fehler stoßen — API-Timeouts, fehlerhafte Ausgaben, unerwartete Benutzereingaben. Ein robuster Agent braucht Wiederholungslogik, Ausweichstrategien und die Fähigkeit zu erkennen, wenn er feststeckt, und um Hilfe zu bitten, anstatt eine Lösung zu halluzinieren.",
-        "Je fähiger KI-Agenten werden, desto wichtiger werden Sicherheitsvorkehrungen. Die Implementierung von Rate Limits, Output-Validierung, Human-in-the-Loop-Checkpoints und klaren Grenzen dafür, was ein Agent kann und nicht kann, ist essenziell. Das Ziel ist es, Agenten zu bauen, die hilfreich und autonom sind und dabei vorhersehbar und sicher bleiben."
+        "Die letzten Monate waren für mich die aufschlussreichsten — Monate, die mich dazu brachten, über meinen Weg nachzudenken und schwere Entscheidungen zu treffen. Vor der Verbreitung von künstlicher Intelligenz war ich wirklich sehr comfortable. Ich war gut im Erstellen von Frontend-Anwendungen und hatte nie Angst, jedes Projekt anzugehen. Bevor ich Frontend zu meinem Hauptskill machte, hatte ich meine Reise eigentlich mit Java begonnen. Viele wissen nicht, dass ich ursprünglich Backend-Ingenieur war.",
+        "Was hat sich geändert? Bei dem Versuch, ein globales Unternehmen zur Kundengewinnung in der Geflügelbranche aufzubauen, habe ich im Grunde alles gemacht — das Kassibuch geführt, das Backend mit Node.js gebaut, die Webseite mit EJS und später React erstellt, mobile Apps mit React Native entwickelt, Videoinhalte erstellt, Illustrationen gemacht, Marketing betrieben, Kundenforschung durchgeführt und Kundensupport geleistet. Ich machte alles, weil ich das Geld nicht hatte, Leute zu bezahlen. Aber was hat das mit mir gemacht? Als COVID kam, war ich ausgebrannt.",
+        "Wegen des Burnouts und dem langsamen Versuch mich zu erholen, neigte ich zu dem, was leichtfiel. Mir fiel auf, dass die meisten Leute CSS mieden, aber für mich war es einfach. Ich merkte, dass mein Gehirn bei Backend-Coding mehr arbeiten musste, also entschied ich mich, mich nur auf Frontend zu konzentrieren, selbst wenn ich wusste, dass es zu einfach für mich war. Schnell vorgelesen zu diesem Jahr — ich war Experte geworden. Keine UI war für mich unmöglich. Doch dann kam die KI und weckte mich aus meinem Schlaf.",
+        "Weil ich gut in meinem Job war, lernte ich nicht genug über Dinge, die wirklich zählten — maschinelles Lernen, komplexe Algorithmen, verteilte Computing-Systemarchitektur, komplexe Architekturen. Ich lernte, was ich brauchte, und fühlte mich wohl, aber ich kannte nicht tief genug. Das kam die KI mir zu sagen — und dich im Übrigen auch. Glaub mir, ich habe meine Lektion gelernt.",
+        "Lerne also aus meiner Erfahrung. Denk nicht einfach zurück und glaube nicht, dass du es dir bequem machen kannst, weil du eine Fertigkeit gemeistert hast. Manchmal ist unser größter Feind genau der Komfort, den wir genießen. Verlasse deine Komfortzone. Werde eine bessere Version von dir selbst. Fordere dich heraus, die schwierigen Dinge zu tun. Schau dir diese langen Videolektionen an. Am Anfang mag es schwierig erscheinen, aber so scheint alles im Leben, wenn du anfängst. Erinnerst du dich, als du zum ersten Mal tippen gelernt hast? Nun, sieh dich jetzt an."
       ]
     },
-    "clean-code-habits": {
-      "title": "Tägliche Gewohnheiten, die mich zu einem besseren Entwickler machten",
-      "summary": "Kleine, konstante Praktiken, die sich zu bedeutenden Verbesserungen in Codequalität und Produktivität aufsummieren.",
+    "more-countries-need-to-be-like-canada": {
+      "title": "Mehr Länder sollten so sein wie Kanada",
+      "summary": "Während die Welt der KI hinterherjagt, erinnert uns Kanada daran, dass Investitionen in Humankapital der wahre Schlüssel zum Überleben sind.",
       "paragraphs": [
-        "Sauberen Code zu schreiben bedeutet nicht, jedes Design Pattern zu kennen oder jedes Framework zu meistern. Es geht darum, kleine, konstante Gewohnheiten zu entwickeln, die sich über die Zeit aufsummieren. Nach Jahren der professionellen Entwicklung sind die Praktiken, die den größten Einfluss auf meine Codequalität hatten, überraschend einfach.",
-        "Beginnen Sie jede Codingsitzung damit, Code zu lesen, bevor Sie schreiben. Bevor Sie eine neue Funktion hinzufügen oder einen Bug beheben, nehmen Sie sich fünf bis zehn Minuten Zeit, den umgebenden Kontext zu verstehen. Lesen Sie die vorhandenen Funktionen, verstehen Sie den Datenfluss und identifizieren Sie die bereits etablierten Konventionen. Diese Gewohnheit allein verhindert unzählige Bugs und reduziert die Notwendigkeit für Refactoring später.",
-        "Benennen Sie Dinge so, als hätte der Leser keinen Kontext. Variablen, Funktionen und Dateien sollen ihren Zweck kommunizieren, ohne Kommentare zu erfordern. Wenn Sie einen Kommentar schreiben müssen, um zu erklären, was eine Funktion tut, überlegen Sie, ob der Funktionsname oder ihre Parameter beschreibender sein könnten. Gutes Naming ist die kostengünstigste Form der Dokumentation.",
-        "Comitten Sie früh und comitten Sie oft. Kleine, fokussierte Commits mit klaren Nachrichten machen Code-Reviews einfacher, Bisecting simpler und Rollbacks sicherer. Warten Sie nicht, bis ein Feature fertig ist — committen Sie, wenn Sie eine einzelne logische Arbeitseinheit implementiert haben.",
-        "Refactoren Sie kontinuierlich, nicht in großen Chargen. Wenn Sie auf Code stoßen, der verbessert werden könnte, führen Sie die Verbesserung sofort durch, anstatt sie auf eine Warteliste zu setzen. Kleine Refactorings — eine Funktion extrahieren, eine Variable umbenennen, eine Bedingung vereinfachen — halten die Codebasis gesund, ohne dedizierte Aufräum-Sprints zu erfordern.",
-        "Schließlich: Schreiben Sie Tests nicht für Coverage-Metriken, sondern für Vertrauen. Eine gute Testsuite lässt Sie Änderungen ohne Angst vornehmen. Beginnen Sie mit den kritischen Pfaden und Edge Cases und erweitern Sie die Coverage nach Bedarf. Das Ziel ist nicht 100% Coverage — es ist das Vertrauen, am Freitagnachmittag ohne Angst deployen zu können."
+        "Die gesamte Welt gerät wegen der KI in Raserei. Diese Raserei ist kein Wahn — KI ist zweifellos die beste Entdeckung der Menschen in den letzten Generationen. Doch sie legt zu viel Wert darauf, was Maschinen können, und zu wenig darauf, was Menschen können. Kanada ist eines der wenigen großen Länder, die sich nicht von dieser Raserei mitreißen lassen. Es hat Strukturen, um in der KI-Rennen nicht hintenanzustehen, aber auch wesentliche Systeme, um den Kern des Wirtschaftssystems nicht zu verlieren: das Humankapital.",
+        "In Kanadas Frühjahrs-Wirtschaftsaktualisierung 2026 wurde der Start von Team Canada Strong angekündigt — eine Initiative, um großangelegte Investitionen in qualifizierte Handwerke zu tätigen, ein Sektor, der zunehmend unter Fachkräftemangel leidet. Die Initiative macht die Lehre zugänglicher, damit mehr Menschen mit Fertigkeiten ausgestattet werden, die für das menschliche Überleben dringend benötigt werden. Wann haben wir zuletzt jemandem geraten, ein Handwerk wie Elektrotechnik, Sanitärinstallation oder Schreinerei zu erlernen?",
+        "Wir sehen jemanden, der Klavier lernen oder das Bauwesen verstehen will, und versuchen, sie zu überzeugen, dass es in der Tech-Branche mehr Geld gibt. Doch wir alle brauchen diese Dienste täglich, und wir wissen, dass KI nicht die Lösung ist. Menschliche Kreativität ist unersetzlich. Mein Wunsch ist, dass mehr Nationen, Organisationen und Gemeinschaften mehr wie Kanada werden — den KI-Wettbewerb nicht aus den Augen verlieren, aber auch die direkte Investition in Humankapital nicht vergessen.",
+        "Es gibt viele Anwendungsmöglichkeiten für Unternehmen in diesem Bereich. Wir haben bereits gesehen, wie Plattformen wie TaskRabbit, Wrkman und LaborHack Plattformen für die Einstellung qualifizierter Handwerker aufbauen. Finanzunternehmen können in Organisationen investieren, die diese Dienste anbieten, so wie es Piggyvest und Front Fundr bereits tun. Ein weiterer Weg ist es, mit Regierungen zusammenzuarbeiten, um an der Entwicklung von Fertigkeiten mitzuwirken und qualifizierte Handwerker auf den Markt zu bringen.",
+        "Investitionen in Humankapital sind der Schlüssel zum Überleben der Nation. Technik und KI sind Werkzeuge, um das Leben einfacher und Dinge schneller zu machen, aber sie können den Kern unserer Existenz nicht ersetzen: die Fähigkeit zu lernen, zu bauen, zu erschaffen und zu verwalten. Das sollte nicht vergessen werden."
+      ]
+    },
+    "the-myth-about-ai-for-businesses": {
+      "title": "Der Mythos über KI — Für Unternehmen",
+      "summary": "KI ist kein Ersatz für dein Team. Sie ist ein Werkzeug, das Unternehmen dabei hilmt, Ziele zu erreichen, die vorher unmöglich waren.",
+      "paragraphs": [
+        "Als ChatGPT am 30. November 2022 gestartet wurde, geriet die Welt in Panik. Die einen waren begeistert davon, dass KI menschliche Arbeitskräfte ersetzen könnte. Die anderen machten sich Sorgen um ihre Arbeitsplätze. Und wieder andere interessierten sich überhaupt nicht dafür. Aber der Mythos, über den wir heute sprechen, ist die geschäftliche Seite: 'Warum soll ich jemanden dafür bezahlen, wenn ich KI verwenden kann?' Diese Aussage ist finanziell zwar ein starkes Argument, versagt aber aus Sicht der Mission.",
+        "KI ist nicht gekommen, um Geschäftsteams aus ihren Jobs zu verdrängen. KI ist gekommen, um es Unternehmen möglich zu machen, utopische Ziele in unmöglichen Zeiträumen zu erreichen. Vor Generativer KI hatten Unternehmen Meilensteine mit strengen Zeitvorgaben, doch wegen begrenzter Personalressourcen konnten sie nur ein bis zwei Meilensteine gleichzeitig verfolgen, um Burnout zu vermeiden. Jetzt, mit KI, haben Unternehmen die Möglichkeit, viel mehr zu bauen als zuvor.",
+        "Das erfordert mehr Hände — nicht nur normale Hände, sondern KI-gestützte Hände. Personen, die verstehen, wie man KI in ihren Arbeitsablauf integriert, um enorme Ergebnisse zu erzielen. Stellen Sie sich ein Unternehmen vor, das technologische Lösungen für ländliche Gemeinschaften entwickelt. Es hat Handelslösungen geschaffen, aber träumt auch von Lösungen für Regierung und Landwirtschaft. Wegen Kosten und Burnout konnte es nicht alles gleichzeitig verfolgen. Dann führte ein Ingenieur sie mit Claude ein.",
+        "Mit strategischem Denken teilten sie ihr Team in drei Gruppen auf — eine zur Pflege bestehender Projekte, eine zur Entwicklung von Regierungslösungen und eine zur Entwicklung von Landwirtschaftslösungen. Jetzt können sie über neue Richtungen nachdenken, haben mehr Lösungen, um Investitionen zu prüfen, und können skalieren, weil echte Lösungen Edge Cases schaffen, die Möglichkeiten für weitere KI-gestützte Hände eröffnen.",
+        "Unternehmen sollten KI nicht als Ersatz für ihre Teammitglieder betrachten. KI war nie die Lösung — sie ist ein Werkzeug. Werf nicht dein Team weg, weil du KI einsetzen kannst. Stattdessen, stärke dein Team mit diesem erstaunlichen Werkzeug des 21. Jahrhunderts und erweitere die Geschäftsvision, denn jetzt kannst du mit einer Geschwindigkeit bauen, die vor der KI menschlich nie erreichbar war."
+      ]
+    },
+    "the-myth-about-ai-for-individuals": {
+      "title": "Der Mythos über KI — Für Einzelpersonen",
+      "summary": "KI nimmt dir nicht deinen Job. Sie gibt dir die Werkzeuge, um endlich deinen Träumen nachzujagen und dabei dein Einkommen zu behalten.",
+      "paragraphs": [
+        "In meinem letzten Beitrag habe ich erklärt, wie Unternehmen der KI mit Zuversicht und nicht mit Angst begegnen sollten. In diesem Beitrag konzentriere ich mich auf die Menschen, die sich verloren oder ausgegrenzt fühlen — Menschen, die von Massenentlassungen betroffen sind und in Erwägung ziehen, in nicht-technische Bereiche zu wechseln, nur um relevant zu bleiben. Ich habe gute Nachrichten für dich: Es ist noch nicht vorbei.",
+        "Bevor KI das neue Gold wurde, sagten Motivationsredner Dinge wie 'Dein Gehalt ist die Droge, die dein Unternehmen dir gibt, um dich davon abzuhalten, deinen Traum zu verfolgen' oder 'Du kannst nicht reich werden, wenn du Angestellter bist.' Das brachte Menschen in ein Dilemma: Entweder kündigen und ihren Träumen nachjagen, oder aufhören zu träumen und an ihrem Job festhalten. Die Wahrheit ist, du hättest jede Entscheidung treffen können und wärst heute glücklich oder bereuend.",
+        "Doch was jetzt zählt, ist: Was kannst du davor tun? Vor der KI hatten die meisten Angestellten Träume, für die sie sich Zeit oder Energie gewünscht hätten, aber nie verwirklichten. Nun, das war bis jetzt der Fall! KI ist Gottes Geschenk an die Menschheit — Gott sagt endlich 'jetzt hast du keine Ausrede mehr', weil wir endlich Werkzeuge haben, die die Arbeit erledigen können, für die wir Zeit und Energie gebraucht hätten.",
+        "Jetzt können wir uns endlich auf die Dinge konzentrieren, die wir wirklich tun müssen — denken, verhandeln und interagieren — und dieses großartige Werkzeug die schwere Arbeit machen lassen. Hör also auf, über das nächste Feld nachzudenken, in das du wechseln solltest, und fang an, den Traum aufzubauen, den du so lange in deinem Herzen getragen hast, indem du KI nutzt. KI ist nicht gekommen, um dir deinen Job zu nehmen. Sie ist gekommen, um dir zu helfen, deinen Traum zu verwirklichen und dabei deinen Job zu behalten.",
+        "Das ist die Perspektivverschiebung, die alles verändert. KI ist ein Geschenk, keine Bedrohung. Die Menschen, die erfolgreich sein werden, sind nicht diejenigen, die KI meiden oder sich davor fürchten — es sind diejenigen, die sie als Verstärker für ihre Ambitionen einsetzen und dabei die Stabilität ihres aktuellen Einkommens bewahren."
+      ]
+    },
+    "the-myth-about-ai-for-non-ai-users": {
+      "title": "Der Mythos über KI — KI ist teuer",
+      "summary": "KI-Kosten sinken rasant. Open-Source-Modelle und lokale Hardware machen KI für jedermann zugänglich.",
+      "paragraphs": [
+        "In meinen vorherigen Beiträgen habe ich gezeigt, wie KI ein Vorteil für jeden ist, der träumt, und wie Einzelpersonen sich nicht um Jobverlust sorgen sollten, sondern sich darauf konzentrieren sollten, wie KI neue Möglichkeiten schafft. In diesem Beitrag wende ich mich an diejenigen, die nicht begeistert von KI sind und glauben, dass die normale Art des Geschäftemachens ohne KI fortgesetzt werden sollte. Die größte Sorge, die ich höre, sind die Kosten — und selbst große Organisationen haben darüber geklagt.",
+        "Es gibt nichts zu beschönigen: Die Nutzung von KI kostet weltweit Milliarden. Google hat SpaceX gerade fast eine Milliarde für KI-Rechenkapazität bezahlt, und um profitabel zu bleiben, müssen diese Kosten an die Endverbraucher weitergegeben werden. Warum sollten also Nicht-KI-Nutzer darüber nachdenken? Bald wird es nämlich GRATIS sein. Wissen kann weder erzeugt noch zerstört werden, und KI basiert auf Wissen — LLMs beziehen ihre Intelligenz aus massivem Dateneingang bestehender Systeme und Inhalte.",
+        "Es ist eigentlich unmoralisch, Zugang zu diesem Wissen mit einem Preis zu versehen. Wofür Menschen bezahlen, ist die Rechenleistung, die es verarbeitet. Studiere die Trends: Die Rentabilität von LLMs ist ein sterbender Traum. Unternehmen, die ausschließlich auf dieses Modell setzen, haben sich neu ausgerichtet. Jeder glaubt, dass eine KI-Blase kurz platzen wird. Aber ein Unternehmen hat uns gezeigt, wie die Zukunft der KI aussieht, und die Welt hat es verpasst.",
+        "Im Juni 2026 kündigte Nvidia RTX Spark-PCs mit bis zu 128 GB einheitlichem Speicher und bis zu 1 Petaflop FP4 KI-Leistung an — Computer, die KI mühelos lokal ausführen können. Was, wenn du keine Software bräuchtest, um mit Servern zu interagieren? Was, wenn der Server dein eigener Computer wäre? Was, wenn du keine Internetverbindung brauchst, um mit KI zu kommunizieren, weil sie direkt in deinem Gerät sitzt? Das ist die Kraft lokaler Modelle.",
+        "Nvidia hat gerade der Welt gezeigt, dass Jarvis nicht mehr nur einem reichen Milliardär namens Iron Man vorbehalten ist. In wenigen Jahren wird KI für jeden mit einem Computer verfügbar sein. Starte deine Reise mit lokalen Modellen und Open-Source-Werkzeugen wie Ollama. Innerhalb der nächsten fünf Jahre werden Software-KI-Agenten aus der Mode kommen — jeder mit einem modernen Computer wird einen KI-Agenten haben, der lokal arbeitet. Das ist die Zukunft, die ich mir vorstelle."
       ]
     }
   }
