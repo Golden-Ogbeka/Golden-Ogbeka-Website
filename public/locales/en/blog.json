@@ -1,0 +1,51 @@
+{
+  "page": {
+    "title": "Blog",
+    "subtitle": "Thoughts on engineering, AI, and software craft.",
+    "noPosts": "No posts found in this category."
+  },
+  "category": {
+    "all": "All",
+    "tech": "Tech",
+    "ai": "AI",
+    "tips": "Tips"
+  },
+  "readMore": "Read more",
+  "backToBlog": "Back to blog",
+  "post": {
+    "nextjs-static-generation": {
+      "title": "Next.js Static Generation: A Deep Dive",
+      "summary": "Understanding when and how to use Static Site Generation in Next.js for performant, scalable web applications.",
+      "paragraphs": [
+        "Static Site Generation (SSG) is one of the most powerful features in Next.js, enabling developers to pre-render pages at build time for lightning-fast load times and excellent SEO. Unlike traditional client-side rendering, SSG produces plain HTML files that can be served directly from a CDN, eliminating server round-trips entirely.",
+        "The core idea behind SSG is simple: generate your HTML, CSS, and JavaScript at build time, not at request time. This means your pages are ready to serve the moment a user requests them. For content that doesn't change frequently — portfolios, documentation, blogs, marketing pages — this approach delivers unmatched performance.",
+        "In Next.js, you enable SSG by exporting a getStaticProps function from your page component. This function runs at build time and returns the props that your page needs. Combined with getStaticPaths for dynamic routes, you can generate hundreds or thousands of pages statically while still maintaining dynamic URL structures.",
+        "One common misconception is that SSG means your content is permanently frozen. In reality, Next.js supports Incremental Static Regeneration (ISR), which allows you to update static pages after deployment by re-generating them in the background at configurable intervals. This gives you the performance benefits of static generation with the flexibility of server-side rendering.",
+        "When deciding between SSG, SSR, and client-side rendering, consider your content's update frequency, your performance requirements, and your infrastructure constraints. SSG is ideal for content that changes infrequently and needs to be SEO-friendly. For real-time data or highly personalized content, server-side rendering or client-side fetching may be more appropriate."
+      ]
+    },
+    "building-ai-agents": {
+      "title": "Building Autonomous AI Agents: Patterns and Pitfalls",
+      "summary": "A practical guide to designing and implementing AI agents that can reason, plan, and act autonomously.",
+      "paragraphs": [
+        "AI agents represent a paradigm shift from simple request-response systems to autonomous entities that can plan, reason, and execute multi-step tasks. Unlike a basic chatbot that responds to prompts, an agent can break down complex goals, choose appropriate tools, and iterate on its approach based on intermediate results.",
+        "The foundation of any AI agent is the reasoning loop. At its core, this loop consists of three phases: observation, reasoning, and action. The agent observes its environment (user input, tool outputs, error messages), reasons about what to do next (planning, reflection, decision-making), and then takes an action (calling a tool, generating content, making an API request).",
+        "Tool integration is what transforms a language model from a text generator into a capable agent. By providing models with well-defined tool schemas — functions for web search, code execution, database queries, or API calls — you enable them to interact with the real world. The key is designing tool interfaces that are clear, well-documented, and fail gracefully.",
+        "One of the biggest pitfalls in agent design is the lack of proper error handling and recovery mechanisms. Agents will encounter failures — API timeouts, malformed outputs, unexpected user inputs. A robust agent needs retry logic, fallback strategies, and the ability to recognize when it's stuck and ask for help rather than hallucinating a solution.",
+        "As AI agents become more capable, the importance of safety guardrails grows proportionally. Implementing rate limits, output validation, human-in-the-loop checkpoints, and clear boundaries on what an agent can and cannot do is essential. The goal is to build agents that are helpful and autonomous while remaining predictable and safe."
+      ]
+    },
+    "clean-code-habits": {
+      "title": "Daily Habits That Made Me a Better Developer",
+      "summary": "Small, consistent practices that compound into significant improvements in code quality and productivity.",
+      "paragraphs": [
+        "Writing clean code isn't about knowing every design pattern or mastering every framework. It's about developing small, consistent habits that compound over time. After years of professional development, the practices that have had the most impact on my code quality are surprisingly simple.",
+        "Start every coding session by reading code before writing it. Before adding a new feature or fixing a bug, spend five to ten minutes understanding the surrounding context. Read the existing functions, understand the data flow, and identify the conventions already in place. This habit alone prevents countless bugs and reduces the need for refactoring later.",
+        "Name things as if the reader has no context. Variables, functions, and files should communicate their purpose without requiring comments. If you find yourself writing a comment to explain what a function does, consider whether the function name or its parameters could be more descriptive. Good naming is the cheapest form of documentation.",
+        "Commit early and commit often. Small, focused commits with clear messages make code review easier, bisecting simpler, and rollbacks safer. Don't wait until a feature is complete — commit when you've implemented a single logical unit of work. Your future self and your teammates will thank you.",
+        "Refactor continuously, not in large batches. When you encounter code that could be improved, make the improvement immediately rather than adding it to a backlog. Small refactors — extracting a function, renaming a variable, simplifying a conditional — keep the codebase healthy without requiring dedicated cleanup sprints.",
+        "Finally, write tests not for coverage metrics, but for confidence. A good test suite lets you make changes fearfully. Start with the critical paths and edge cases, then expand coverage as time allows. The goal isn't 100% coverage — it's the confidence to deploy on Friday afternoon without anxiety."
+      ]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "page": {
+    "title": "Blog",
+    "subtitle": "Reflexões sobre engenharia, IA e ofício de software.",
+    "noPosts": "Nenhum post encontrado nesta categoria."
+  },
+  "category": {
+    "all": "Todos",
+    "tech": "Tech",
+    "ai": "IA",
+    "tips": "Dicas"
+  },
+  "readMore": "Ler mais",
+  "backToBlog": "Voltar ao blog",
+  "post": {
+    "nextjs-static-generation": {
+      "title": "Geração Estática no Next.js: Uma Análise Profunda",
+      "summary": "Entendendo quando e como usar a Geração de Sites Estáticos no Next.js para aplicações web performáticas e escaláveis.",
+      "paragraphs": [
+        "A Geração de Sites Estáticos (SSG) é uma das funcionalidades mais poderosas do Next.js, permitindo que desenvolvedores pré-renderizem páginas no momento da compilação para tempos de carregamento ultrarrápidos e excelente SEO. Diferente do renderizado tradicional do lado do cliente, a SSG produz arquivos HTML simples que podem ser servidos diretamente de um CDN, eliminando completamente as idas e voltas ao servidor.",
+        "A ideia central por trás da SSG é simples: gere seu HTML, CSS e JavaScript no momento da compilação, não no momento da requisição. Isso significa que suas páginas estão prontas para serem servidas assim que um usuário as solicita. Para conteúdo que não muda frequentemente — portfólios, documentação, blogs, páginas de marketing — essa abordagem oferece desempenho incomparável.",
+        "No Next.js, você ativa a SSG exportando uma função getStaticProps do seu componente de página. Essa função é executada no momento da compilação e retorna as props que sua página precisa. Combinada com getStaticPaths para rotas dinâmicas, você pode gerar centenas ou milhares de páginas estaticamente enquanto mantém estruturas de URL dinâmicas.",
+        "Um equívoco comum é que a SSG significa que seu conteúdo está permanentemente congelado. Na realidade, o Next.js suporta Regeneração Estática Incremental (ISR), que permite atualizar páginas estáticas após o deploy regenerando-as em segundo plano em intervalos configuráveis. Isso给了 você os benefícios de desempenho da geração estática com a flexibilidade do renderizado do lado do servidor.",
+        "Ao decidir entre SSG, SSR e renderizado do lado do cliente, considere a frequência de atualização do seu conteúdo, seus requisitos de desempenho e suas restrições de infraestrutura. A SSG é ideal para conteúdo que muda raramente e precisa ser amigável ao SEO. Para dados em tempo real ou conteúdo altamente personalizado, o renderizado do lado do servidor ou a busca do lado do cliente podem ser mais apropriados."
+      ]
+    },
+    "building-ai-agents": {
+      "title": "Construindo Agentes de IA Autônomos: Padrões e Armadilhas",
+      "summary": "Um guia prático para projetar e implementar agentes de IA que possam raciocinar, planejar e agir de forma autônoma.",
+      "paragraphs": [
+        "Os agentes de IA representam uma mudança de paradigma de sistemas simples de solicitação-resposta para entidades autônomas que podem planejar, raciocinar e executar tarefas de múltiplas etapas. Diferente de um chatbot básico que responde a prompts, um agente pode decompor objetivos complexos, escolher ferramentas apropriadas e iterar sua abordagem com base em resultados intermediários.",
+        "A fundação de qualquer agente de IA é o loop de raciocínio. Em seu núcleo, este loop consiste em três fases: observação, raciocínio e ação. O agente observa seu ambiente (entrada do usuário, saídas de ferramentas, mensagens de erro), raciocina sobre o que fazer a seguir (planejamento, reflexão, tomada de decisão) e então realiza uma ação (chamar uma ferramenta, gerar conteúdo, fazer uma requisição API)",
+        "A integração de ferramentas é o que transforma um modelo de linguagem de um gerador de texto em um agente capaz. Ao fornecer aos modelos esquemas de ferramentas bem definidos — funções de busca web, execução de código, consultas de banco de dados ou chamadas API — você permite que interajam com o mundo real. A chave está em projetar interfaces de ferramentas claras, bem documentadas e que falhem graciosamente.",
+        "Uma das maiores armadilhas no design de agentes é a falta de mecanismos adequados de tratamento de erros e recuperação. Agentes encontrarão fallos — timeouts de API, saídas malformadas, entradas inesperadas do usuário. Um agente robusto precisa de lógica de retry, estratégias de fallback e a capacidade de reconhecer quando está preso e pedir ajuda em vez de alucinar uma solução.",
+        "À medida que os agentes de IA se tornam mais capazes, a importância das barreiras de segurança cresce proporcionalmente. Implementar limites de taxa, validação de saída, checkpoints human-in-the-loop e limites claros sobre o que um agente pode e não pode fazer é essencial. O objetivo é construir agentes que sejam úteis e autônomos enquanto permanecem previsíveis e seguros."
+      ]
+    },
+    "clean-code-habits": {
+      "title": "Hábitos Diários que Me Tornaram um Melhor Desenvolvedor",
+      "summary": "Práticas pequenas e consistentes que se acumulam em melhorias significativas na qualidade do código e produtividade.",
+      "paragraphs": [
+        "Escrever código limpo não se trata de conhecer todos os padrões de projeto ou dominar todos os frameworks. Trata-se de desenvolver hábitos pequenos e consistentes que se acumulam ao longo do tempo. Depois de anos de desenvolvimento profissional, as práticas que tiveram maior impacto na qualidade do meu código são surpreendentemente simples.",
+        "Comece cada sessão de código lendo o código antes de escrever. Antes de adicionar uma nova funcionalidade ou corrigir um bug, dedique cinco a dez minutos para entender o contexto existente. Leia as funções existentes, entenda o fluxo de dados e identifique as convenções já estabelecidas. Este hábito sozinho previne inúmeros bugs e reduz a necessidade de refactoring posterior.",
+        "Nomeie as coisas como se o leitor não tivesse contexto. Variáveis, funções e arquivos devem comunicar seu propósito sem exigir comentários. Se você se encontrar escrevendo um comentário para explicar o que uma função faz, considere se o nome da função ou seus parâmetros poderiam ser mais descritivos. Uma boa nomenclatura é a forma de documentação mais econômica.",
+        "Faça commits cedo e commits frequentemente. Commits pequenos e focados com mensagens claras facilitam a revisão de código, tornam o bisect mais simples e os rollbacks mais seguros. Não espere até que uma funcionalidade esteja completa — faça commit quando você implementou uma unidade lógica de trabalho individual.",
+        "Refatore continuamente, não em grandes lotes. Quando encontrar código que poderia ser melhorado, faça a melhoria imediatamente em vez de adicioná-la a uma fila de pendências. Pequenas refactorings — extrair uma função, renomear uma variável, simplificar uma condição — mantêm o codebase saudável sem exigir sprints de limpeza dedicados.",
+        "Finalmente, escreva testes não por métricas de cobertura, mas por confiança. Uma boa suíte de testes permite que você faça mudanças sem medo. Comece com os caminhos críticos e casos extremos, depois expanda a cobertura quando o tempo permitir. O objetivo não é 100% de cobertura — é a confiança de fazer deploy numa sexta à tarde sem ansiedade."
+      ]
+    }
+  }
+}

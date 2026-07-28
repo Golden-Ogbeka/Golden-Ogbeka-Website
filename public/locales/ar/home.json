@@ -19,5 +19,8 @@
   "certifications.viewAll": "عرض الكل",
   "education.title": "التعليم",
   "featured.thumbnailAlt": "صورة مصغرة لـ {{title}}",
-  "featured.moreTools": "+{{count}}"
+  "featured.moreTools": "+{{count}}",
+  "featuredBlog.title": "مقالات المدونة",
+  "featuredBlog.subtitle": "أفكار حول هندسة البرمجيات والذكاء الاصطناعي وحرفة تطوير البرمجيات.",
+  "featuredBlog.viewAll": "عرض جميع المقالات"
 }

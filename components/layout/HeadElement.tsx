@@ -37,6 +37,9 @@ function HeadElement({
   noIndex = false,
   siteLink = SITE_URL,
   ogImage = '/og-image.png',
+  ogType = 'website',
+  articlePublishedTime,
+  articleAuthor,
   breadcrumb,
   softwareApplication,
 }: {
@@ -45,6 +48,9 @@ function HeadElement({
   noIndex?: boolean;
   siteLink?: string;
   ogImage?: string;
+  ogType?: 'website' | 'article';
+  articlePublishedTime?: string;
+  articleAuthor?: string;
   breadcrumb?: BreadcrumbItem[];
   softwareApplication?: SoftwareApplicationSchema;
 }) {
@@ -117,7 +123,7 @@ function HeadElement({
       ))}
 
       {/* Open Graph / Facebook */}
-      <meta property='og:type' content='website' />
+      <meta property='og:type' content={ogType} />
       <meta property='og:site_name' content='Golden Ogbeka' />
       <meta property='og:locale' content={router.locale === 'en' ? 'en_US' : router.locale} />
       <meta property='og:url' content={siteLink} />
@@ -126,6 +132,12 @@ function HeadElement({
       <meta property='og:image' content={fullOgImageUrl} />
       <meta property='og:image:width' content='1200' />
       <meta property='og:image:height' content='630' />
+      {ogType === 'article' && articlePublishedTime && (
+        <meta property='article:published_time' content={articlePublishedTime} />
+      )}
+      {ogType === 'article' && articleAuthor && (
+        <meta property='article:author' content={articleAuthor} />
+      )}
 
       {/* Twitter / X */}
       <meta name='twitter:card' content='summary_large_image' />

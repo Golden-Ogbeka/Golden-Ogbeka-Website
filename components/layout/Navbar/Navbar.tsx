@@ -93,6 +93,14 @@ function Navbar() {
             {t('nav.openSource')}
           </a>
         </Link>
+        <Link href='/blog'>
+          <a
+            className='text-zinc-600 dark:text-zinc-300 hover:text-accent dark:hover:text-accent font-medium hidden md:block'
+            onClick={() => trackEvent('click', 'navigation', 'Blog')}
+          >
+            {t('nav.blog')}
+          </a>
+        </Link>
         <a
           href='/brand/Golden%20Ogbeka%20Resume.pdf'
           target='_blank'

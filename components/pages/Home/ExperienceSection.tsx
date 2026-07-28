@@ -3,6 +3,29 @@ import ExperiencesData from '../../../data/Experiences';
 import { trackEvent } from '../../../utils/analytics';
 import { useTranslation } from 'next-i18next';
 
+function slugify(str: string): string {
+  return str
+    .toLowerCase()
+    .replace(/[()&]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/\./g, '')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+function slugifyCompany(str: string): string {
+  return str
+    .toLowerCase()
+    .replace(/\([^)]*\)/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/\./g, '')
+    .replace(/-$/g, '');
+}
+
+function getExpKey(role: string, company: string): string {
+  return `${slugify(role)}-${slugifyCompany(company)}`;
+}
+
 export default function ExperienceSection() {
   const { t } = useTranslation(['common', 'home', 'experiences']);
   const topExperiences = ExperiencesData.slice(0, 5);
@@ -44,13 +67,13 @@ export default function ExperienceSection() {
             <div className='flex flex-col md:flex-row md:items-start gap-6 mb-4'>
               <div className='flex-1'>
                 <div className='flex flex-col md:flex-row md:items-center justify-between mb-1'>
-                  <h3 className='text-xl font-semibold'>{t(`experiences:experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.role`, exp.role)}</h3>
+                  <h3 className='text-xl font-semibold'>{t(`experiences:experience.${getExpKey(exp.role, exp.company)}.role`, exp.role)}</h3>
                   <span className='text-sm font-medium text-zinc-600 mt-1 md:mt-0'>
                     {exp.date}
                   </span>
                 </div>
                 <div className='text-zinc-600 dark:text-zinc-400 font-medium mb-4'>
-                  {t(`experiences:experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.company`, exp.company)}
+                  {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}
                 </div>
 
                 <div className='space-y-2 relative'>
@@ -58,7 +81,7 @@ export default function ExperienceSection() {
                     <div key={idx} className='flex items-start'>
                       <span className='w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-600 mt-2 mr-3 shrink-0'></span>
                       <span className='text-zinc-700 dark:text-zinc-300 line-clamp-2'>
-                        {t(`experiences:experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.tasks.${idx}`, task)}
+                        {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.tasks.${idx}`, task)}
                       </span>
                     </div>
                   ))}

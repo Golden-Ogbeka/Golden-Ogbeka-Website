@@ -19,5 +19,8 @@
   "certifications.viewAll": "Смотреть все",
   "education.title": "Образование",
   "featured.thumbnailAlt": "{{title}} миниатюра",
-  "featured.moreTools": "+{{count}}"
+  "featured.moreTools": "+{{count}}",
+  "featuredBlog.title": "Статьи блога",
+  "featuredBlog.subtitle": "Мысли об инженерии, ИИ и мастерстве разработки.",
+  "featuredBlog.viewAll": "Все статьи"
 }

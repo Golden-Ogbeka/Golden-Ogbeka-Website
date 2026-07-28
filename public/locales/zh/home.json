@@ -19,5 +19,8 @@
   "certifications.viewAll": "查看全部",
   "education.title": "教育",
   "featured.thumbnailAlt": "{{title}} 缩略图",
-  "featured.moreTools": "+{{count}}"
+  "featured.moreTools": "+{{count}}",
+  "featuredBlog.title": "博客文章",
+  "featuredBlog.subtitle": "关于工程、AI 和软件技术的思考。",
+  "featuredBlog.viewAll": "查看所有文章"
 }

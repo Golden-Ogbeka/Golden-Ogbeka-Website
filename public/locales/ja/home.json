@@ -19,5 +19,8 @@
   "certifications.viewAll": "すべてを見る",
   "education.title": "学歴",
   "featured.thumbnailAlt": "{{title}} サムネイル",
-  "featured.moreTools": "+{{count}}"
+  "featured.moreTools": "+{{count}}",
+  "featuredBlog.title": "ブログ記事",
+  "featuredBlog.subtitle": "エンジニアリング、AI、ソフトウェアの匠についての考察。",
+  "featuredBlog.viewAll": "すべての記事を見る"
 }

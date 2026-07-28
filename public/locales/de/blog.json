@@ -1,0 +1,51 @@
+{
+  "page": {
+    "title": "Blog",
+    "subtitle": "Gedanken zu Engineering, KI und Software-Handwerk.",
+    "noPosts": "Keine Beiträge in dieser Kategorie gefunden."
+  },
+  "category": {
+    "all": "Alle",
+    "tech": "Tech",
+    "ai": "KI",
+    "tips": "Tipps"
+  },
+  "readMore": "Weiterlesen",
+  "backToBlog": "Zurück zum Blog",
+  "post": {
+    "nextjs-static-generation": {
+      "title": "Next.js Static Generation: Ein tiefer Einblick",
+      "summary": "Wann und wie man Static Site Generation in Next.js für performante, skalierbare Webanwendungen einsetzt.",
+      "paragraphs": [
+        "Static Site Generation (SSG) ist eine der leistungsstärksten Funktionen in Next.js und ermöglicht es Entwicklern, Seiten bei der Kompilierung vorzu_rendern, um blitzschnelle Ladezeiten und ein hervorragendes SEO zu erreichen. Im Gegensatz zum traditionellen Client-Side Rendering erzeugt SSG einfache HTML-Dateien, die direkt von einem CDN ausgeliefert werden können und Server-Roundtrips vollständig eliminieren.",
+        "Die Kernidee hinter SSG ist einfach: Erstellen Sie Ihr HTML, CSS und JavaScript bei der Kompilierung, nicht bei der Anfrage. Das bedeutet, dass Ihre Seiten bereit sind, bedient zu werden, sobald ein Benutzer sie anfordert. Für Inhalte, die sich nicht häufig ändern — Portfolios, Dokumentationen, Blogs, Marketingseiten — bietet dieser Ansatz unerreichte Leistung.",
+        "In Next.js aktivieren Sie SSG, indem Sie eine getStaticProps-Funktion aus Ihrer Seitenkomponente exportieren. Diese Funktion wird bei der Kompilierung ausgeführt und gibt die Props zurück, Ihre Seite benötigt. Kombiniert mit getStaticPaths für dynamische Routen können Sie Hunderte oder Tausende von Seiten statisch generieren und gleichzeitig dynamische URL-Strukturen beibehalten.",
+        "Ein weit verbreitetes Missverständnis ist, dass SSG bedeutet, Ihr Inhalt wäre dauerhaft eingefroren. Tatsächlich unterstützt Next.js Incremental Static Regeneration (ISR), mit dem Sie statische Seiten nach dem Deployment aktualisieren können, indem Sie sie im Hintergrund in konfigurierbaren Intervallen neu generieren. So erhalten Sie die Leistungsvorteile der statischen Generierung mit der Flexibilität des Server-Side Renderings.",
+        "Bei der Entscheidung zwischen SSG, SSR und Client-Side Rendering sollten Sie die Aktualisierungshäufigkeit Ihrer Inhalte, Ihre Leistungsanforderungen und Ihre Infrastruktur Constraints berücksichtigen. SSG ist ideal für Inhalte, die sich selten ändern und SEO-freundlich sein müssen. Für Echtzeitdaten oder hoch personalisierte Inhalte können Server-Side Rendering oder Client-Side Fetching geeigneter sein."
+      ]
+    },
+    "building-ai-agents": {
+      "title": "Autonome KI-Agenten bauen: Muster und Fallstricke",
+      "summary": "Ein praktischer Leitfaden zum Entwurf und zur Implementierung von KI-Agenten, die autonom_reasonn, planen und handeln können.",
+      "paragraphs": [
+        "KI-Agenten stellen einen Paradigmenwechsel von einfachen Anfrage-Antwort-Systemen zu autonomen Entitäten dar, die mehrstufige Aufgaben planen, begründen und ausführen können. Im Gegensatz zu einem einfachen Chatbot, der auf Prompts antwortet, kann ein Agent komplexe Ziele aufteilen, passende Werkzeuge wählen und seinen Ansatz basierend auf Zwischenergebnissen iterieren.",
+        "Die Grundlage jedes KI-Agenten ist die Reasoning-Schleife. Im Kern besteht diese Schleife aus drei Phasen: Beobachtung, Reasoning und Handlung. Der Agent beobachtet seine Umgebung (Benutzereingaben, Werkzeugausgaben, Fehlermeldungen), überlegt, was als Nächstes zu tun ist (Planung, Reflexion, Entscheidungsfindung) und führt dann eine Handlung aus (Werkzeugaufruf, Inhaltsgenerierung, API-Anfrage).",
+        "Die Werkzeugintegration ist das, was ein Sprachmodell von einem Textgenerator zu einem fähigen Agenten macht. Indem Sie Modellen gut definierte Werkzeugschemata bereitstellen — Funktionen für Websuche, Codeausführung, Datenbankabfragen oder API-Aufrufe — ermöglichen Sie ihnen, mit der realen Welt zu interagieren. Der Schlüssel liegt darin, Werkzeugschnittstellen zu entwerfen, die klar, gut dokumentiert und bei Fehlern graziös sind.",
+        "Eines der größten Fallstricke beim Agenten-Design ist das Fehlen angemessener Fehlerbehandlungs- und Wiederherstellungsmechanismen. Agenten werden auf Fehler stoßen — API-Timeouts, fehlerhafte Ausgaben, unerwartete Benutzereingaben. Ein robuster Agent braucht Wiederholungslogik, Ausweichstrategien und die Fähigkeit zu erkennen, wenn er feststeckt, und um Hilfe zu bitten, anstatt eine Lösung zu halluzinieren.",
+        "Je fähiger KI-Agenten werden, desto wichtiger werden Sicherheitsvorkehrungen. Die Implementierung von Rate Limits, Output-Validierung, Human-in-the-Loop-Checkpoints und klaren Grenzen dafür, was ein Agent kann und nicht kann, ist essenziell. Das Ziel ist es, Agenten zu bauen, die hilfreich und autonom sind und dabei vorhersehbar und sicher bleiben."
+      ]
+    },
+    "clean-code-habits": {
+      "title": "Tägliche Gewohnheiten, die mich zu einem besseren Entwickler machten",
+      "summary": "Kleine, konstante Praktiken, die sich zu bedeutenden Verbesserungen in Codequalität und Produktivität aufsummieren.",
+      "paragraphs": [
+        "Sauberen Code zu schreiben bedeutet nicht, jedes Design Pattern zu kennen oder jedes Framework zu meistern. Es geht darum, kleine, konstante Gewohnheiten zu entwickeln, die sich über die Zeit aufsummieren. Nach Jahren der professionellen Entwicklung sind die Praktiken, die den größten Einfluss auf meine Codequalität hatten, überraschend einfach.",
+        "Beginnen Sie jede Codingsitzung damit, Code zu lesen, bevor Sie schreiben. Bevor Sie eine neue Funktion hinzufügen oder einen Bug beheben, nehmen Sie sich fünf bis zehn Minuten Zeit, den umgebenden Kontext zu verstehen. Lesen Sie die vorhandenen Funktionen, verstehen Sie den Datenfluss und identifizieren Sie die bereits etablierten Konventionen. Diese Gewohnheit allein verhindert unzählige Bugs und reduziert die Notwendigkeit für Refactoring später.",
+        "Benennen Sie Dinge so, als hätte der Leser keinen Kontext. Variablen, Funktionen und Dateien sollen ihren Zweck kommunizieren, ohne Kommentare zu erfordern. Wenn Sie einen Kommentar schreiben müssen, um zu erklären, was eine Funktion tut, überlegen Sie, ob der Funktionsname oder ihre Parameter beschreibender sein könnten. Gutes Naming ist die kostengünstigste Form der Dokumentation.",
+        "Comitten Sie früh und comitten Sie oft. Kleine, fokussierte Commits mit klaren Nachrichten machen Code-Reviews einfacher, Bisecting simpler und Rollbacks sicherer. Warten Sie nicht, bis ein Feature fertig ist — committen Sie, wenn Sie eine einzelne logische Arbeitseinheit implementiert haben.",
+        "Refactoren Sie kontinuierlich, nicht in großen Chargen. Wenn Sie auf Code stoßen, der verbessert werden könnte, führen Sie die Verbesserung sofort durch, anstatt sie auf eine Warteliste zu setzen. Kleine Refactorings — eine Funktion extrahieren, eine Variable umbenennen, eine Bedingung vereinfachen — halten die Codebasis gesund, ohne dedizierte Aufräum-Sprints zu erfordern.",
+        "Schließlich: Schreiben Sie Tests nicht für Coverage-Metriken, sondern für Vertrauen. Eine gute Testsuite lässt Sie Änderungen ohne Angst vornehmen. Beginnen Sie mit den kritischen Pfaden und Edge Cases und erweitern Sie die Coverage nach Bedarf. Das Ziel ist nicht 100% Coverage — es ist das Vertrauen, am Freitagnachmittag ohne Angst deployen zu können."
+      ]
+    }
+  }
+}

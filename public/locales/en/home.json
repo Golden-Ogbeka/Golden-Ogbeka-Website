@@ -19,5 +19,8 @@
   "certifications.viewAll": "View All",
   "education.title": "Education",
   "featured.thumbnailAlt": "{{title}} thumbnail",
-  "featured.moreTools": "+{{count}}"
+  "featured.moreTools": "+{{count}}",
+  "featuredBlog.title": "Blog Posts",
+  "featuredBlog.subtitle": "Thoughts on engineering, AI, and software craft.",
+  "featuredBlog.viewAll": "View All Posts"
 }

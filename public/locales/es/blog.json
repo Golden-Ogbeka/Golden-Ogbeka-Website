@@ -1,0 +1,51 @@
+{
+  "page": {
+    "title": "Blog",
+    "subtitle": "Reflexiones sobre ingeniería, IA y oficio del software.",
+    "noPosts": "No se encontraron publicaciones en esta categoría."
+  },
+  "category": {
+    "all": "Todos",
+    "tech": "Tech",
+    "ai": "IA",
+    "tips": "Consejos"
+  },
+  "readMore": "Leer más",
+  "backToBlog": "Volver al blog",
+  "post": {
+    "nextjs-static-generation": {
+      "title": "Generación estática en Next.js: Un análisis profundo",
+      "summary": "Cuándo y cómo usar la generación de sitios estáticos en Next.js para aplicaciones web rendidas y escalables.",
+      "paragraphs": [
+        "La generación de sitios estáticos (SSG) es una de las características más poderosas de Next.js, que permite a los desarrolladores pre-renderizar páginas en tiempo de compilación para tiempos de carga ultrarrápidos y un excelente SEO. A diferencia del renderizado tradicional del lado del cliente, SSG produce archivos HTML simples que pueden servirse directamente desde un CDN, eliminando por completo las idas y vueltas al servidor.",
+        "La idea central detrás de SSG es simple: genera tu HTML, CSS y JavaScript en tiempo de compilación, no en tiempo de solicitud. Esto significa que tus páginas están listas para servirse en cuanto un usuario las solicita. Para contenido que no cambia con frecuencia — portafolios, documentación, blogs, páginas de marketing — este enfoque ofrece un rendimiento inigualable.",
+        "En Next.js, activas SSG exportando una función getStaticProps desde tu componente de página. Esta función se ejecuta en tiempo de compilación y devuelve las props que necesita tu página. Combinada con getStaticPaths para rutas dinámicas, puedes generar cientos o miles de páginas de forma estática manteniendo estructuras de URL dinámicas.",
+        "Un concepto erróneo común es que SSG significa que tu contenido está permanentemente congelado. En realidad, Next.js soporta la regeneración estática incremental (ISR), que te permite actualizar páginas estáticas después del despliegue regenerándolas en segundo plano a intervalos configurables. Esto te da los beneficios de rendimiento de la generación estática con la flexibilidad del renderizado del lado del servidor.",
+        "Al decidir entre SSG, SSR y renderizado del lado del cliente, considera la frecuencia de actualización de tu contenido, tus requisitos de rendimiento y tus restricciones de infraestructura. SSG es ideal para contenido que cambia raramente y necesita ser amigable con el SEO. Para datos en tiempo real o contenido altamente personalizado, el renderizado del lado del servidor o la obtención del lado del cliente pueden ser más apropiados."
+      ]
+    },
+    "building-ai-agents": {
+      "title": "Construyendo agentes de IA autónomos: Patrones y obstáculos",
+      "summary": "Una guía práctica para diseñar e implementar agentes de IA que puedan razonar, planificar y actuar de forma autónoma.",
+      "paragraphs": [
+        "Los agentes de IA representan un cambio de paradigma desde sistemas simples de solicitud-respuesta hasta entidades autónomas que pueden planificar, razonar y ejecutar tareas de múltiples pasos. A diferencia de un chatbot básico que responde a prompts, un agent puede descomponer objetivos complejos, elegir las herramientas apropiadas y iterar sobre su enfoque basándose en resultados intermedios.",
+        "La fundación de cualquier agente de IA es el bucle de razonamiento. En su núcleo, este bucle consta de tres fases: observación, razonamiento y acción. El agente observa su entorno (entrada del usuario, salidas de herramientas, mensajes de error), razona sobre qué hacer a continuación (planificación, reflexión, toma de decisiones) y luego realiza una acción (llamar a una herramienta, generar contenido, hacer una solicitud API).",
+        "La integración de herramientas es lo que transforma un modelo de lenguaje de un generador de texto en un agente capaz. Al proporcionar a los modelos esquemas de herramientas bien definidos — funciones de búsqueda web, ejecución de código, consultas de bases de datos o llamadas API — les permites interactuar con el mundo real. La clave está en diseñar interfaces de herramientas claras, bien documentadas y que fallen graciosamente.",
+        "Uno de los mayores obstáculos en el diseño de agentes es la falta de mecanismos adecuados de manejo de errores y recuperación. Los agentes encontrarán fallos — timeouts de API, salidas malformadas, entradas inesperadas del usuario. Un agente robusto necesita lógica de reintento, estrategias de respaldo y la capacidad de reconocer cuando está atascado y pedir ayuda en lugar de alucinar una solución.",
+        "A medida que los agentes de IA se vuelven más capaces, la importancia de las barreras de seguridad crece proporcionalmente. Implementar límites de velocidad, validación de salidas, puntos de control human-in-the-loop y límites claros sobre lo que un agente puede y no puede hacer es esencial. El objetivo es construir agentes que sean útiles y autónomos mientras permanecen predecibles y seguros."
+      ]
+    },
+    "clean-code-habits": {
+      "title": "Hábitos diarios que me hicieron un mejor desarrollador",
+      "summary": "Prácticas pequeñas y constantes que se acumulan en mejoras significativas en la calidad del código y la productividad.",
+      "paragraphs": [
+        "Escribir código limpio no se trata de conocer todos los patrones de diseño o dominar todos los frameworks. Se trata de desarrollar hábitos pequeños y constantes que se acumulan con el tiempo. Después de años de desarrollo profesional, las prácticas que mayor impacto tuvieron en la calidad de mi código son sorprendentemente simples.",
+        "Comienza cada sesión de código leyendo el código antes de escribir. Antes de agregar una nueva función o corregir un bug, dedica de cinco a diez minutos a entender el contexto existente. Lee las funciones existentes, comprende el flujo de datos e identifica las convenciones ya establecidas. Este hábito solo previene innumerables bugs y reduce la necesidad de refactoring más adelante.",
+        "Nombra las cosas como si el lector no tuviera contexto. Las variables, funciones y archivos deben comunicar su propósito sin requerir comentarios. Si te encuentras escribiendo un comentario para explicar qué hace una función, considera si el nombre de la función o sus parámetros podrían ser más descriptivos. Un buen nombrado es la forma de documentación más económica.",
+        "Commitea temprano y commitea seguido. Commits pequeños y enfocados con mensajes claros hacen la revisión de código más fácil, el bisect más simple y lasrollback más seguras. No esperes a que una功能 esté completa — commitea cuando hayas implementado una unidad lógica de trabajo individual.",
+        "Refactoriza continuamente, no en lotes grandes. Cuando encuentres código que podría mejorarse, haz la mejora inmediatamente en lugar de agregarla a una lista de pendientes. Los refactorings pequeños — extraer una función, renombrar una variable, simplificar una condición — mantienen el codebase saludable sin requerir sprints de limpieza dedicados.",
+        "Finalmente, escribe tests no por métricas de cobertura, sino por confianza. Un buen suite de tests te permite hacer cambios sin miedo. Comienza con las rutas críticas y casos extremos, luego expande la cobertura cuando el tiempo lo permita. El objetivo no es 100% de cobertura — es la confianza de desplegar un viernes por la tarde sin ansiedad."
+      ]
+    }
+  }
+}
