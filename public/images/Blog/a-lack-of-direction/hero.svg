@@ -1,11 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
-    <radialGradient id="glow"><stop offset="50%" stop-color="#f59e0b" stop-opacity="0.15"/><stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/></radialGradient>
-    <filter id="g"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <radialGradient id="glow"><stop offset="40%" stop-color="#fbbf24" stop-opacity="0.12"/><stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/></radialGradient>
   </defs>
   <rect width="1920" height="1080" fill="url(#bg)"/>
-  <circle cx="960" cy="500" r="350" fill="url(#glow)"/>
-  <g transform="translate(960,420)" filter="url(#g)"><g><circle cx="0" cy="0" r="70" fill="none" stroke="#f59e0b" stroke-width="4"/><line x1="0" y1="0" x2="0" y2="-60" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><line x1="0" y1="0" x2="45" y2="-25" stroke="#f59e0b" stroke-width="3" opacity="0.5"/><line x1="0" y1="0" x2="-30" y2="-40" stroke="#f59e0b" stroke-width="3" opacity="0.5"/><line x1="0" y1="0" x2="20" y2="30" stroke="#f59e0b" stroke-width="3" opacity="0.4"/><circle cx="0" cy="0" r="8" fill="#fbbf24"/><path d="M0,-60 L-8,-45 L8,-45 Z" fill="#fbbf24"/></g></g>
-  <text x="960" y="780" text-anchor="middle" fill="#64748b" font-family="serif" font-size="22" letter-spacing="2" opacity="0.6">FIND YOUR DIRECTION</text>
+  <circle cx="960" cy="500" r="400" fill="url(#glow)"/>
+  <g transform="translate(960,420)"><circle cx="0" cy="0" r="90" fill="none" stroke="#fbbf24" stroke-width="8"/><line x1="0" y1="0" x2="0" y2="-80" stroke="#fbbf24" stroke-width="8" stroke-linecap="round"/><line x1="0" y1="0" x2="60" y2="-35" stroke="#fbbf24" stroke-width="5"/><line x1="0" y1="0" x2="-40" y2="-55" stroke="#fbbf24" stroke-width="5"/><line x1="0" y1="0" x2="30" y2="40" stroke="#fbbf24" stroke-width="5"/><line x1="0" y1="0" x2="-40" y2="25" stroke="#fbbf24" stroke-width="5"/><circle cx="0" cy="0" r="12" fill="#fbbf24"/><circle cx="0" cy="0" r="6" fill="#b38f00"/><path d="M0,-80 L-12,-60 L12,-60 Z" fill="#fbbf24"/></g>
+  <text x="960" y="820" text-anchor="middle" fill="#94a3b8" font-family="Outfit, sans-serif" font-size="26" letter-spacing="3" font-weight="bold">FIND YOUR DIRECTION</text>
 </svg>

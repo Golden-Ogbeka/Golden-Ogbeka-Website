@@ -1,11 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
-    <radialGradient id="glow"><stop offset="50%" stop-color="#dc2626" stop-opacity="0.15"/><stop offset="100%" stop-color="#dc2626" stop-opacity="0"/></radialGradient>
-    <filter id="g"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <radialGradient id="glow"><stop offset="40%" stop-color="#f87171" stop-opacity="0.12"/><stop offset="100%" stop-color="#f87171" stop-opacity="0"/></radialGradient>
   </defs>
   <rect width="1920" height="1080" fill="url(#bg)"/>
-  <circle cx="960" cy="500" r="350" fill="url(#glow)"/>
-  <g transform="translate(960,420)" filter="url(#g)"><g><path d="M0,-90 L0,70" stroke="#dc2626" stroke-width="6" stroke-linecap="round"/><line x1="0" y1="-90" x2="-30" y2="-60" stroke="#dc2626" stroke-width="5" stroke-linecap="round"/><line x1="0" y1="-90" x2="30" y2="-60" stroke="#dc2626" stroke-width="5" stroke-linecap="round"/><path d="M-50,70 L0,30 L50,70" fill="none" stroke="#dc2626" stroke-width="5" stroke-linejoin="round"/><path d="M-80,0 L-40,-20" stroke="#fbbf24" stroke-width="4" stroke-linecap="round" opacity="0.4"/><path d="M80,0 L40,-20" stroke="#fbbf24" stroke-width="4" stroke-linecap="round" opacity="0.4"/><circle cx="0" cy="-110" r="15" fill="#fbbf24" opacity="0.6"/></g></g>
-  <text x="960" y="780" text-anchor="middle" fill="#64748b" font-family="serif" font-size="22" letter-spacing="2" opacity="0.6">REAL LOVE - CHRIST'S SACRIFICE</text>
+  <circle cx="960" cy="500" r="400" fill="url(#glow)"/>
+  <g transform="translate(960,420)"><path d="M0,-110 L0,90" stroke="#f87171" stroke-width="8" stroke-linecap="round"/><line x1="0" y1="-110" x2="-40" y2="-70" stroke="#f87171" stroke-width="7" stroke-linecap="round"/><line x1="0" y1="-110" x2="40" y2="-70" stroke="#f87171" stroke-width="7" stroke-linecap="round"/><path d="M-65,90 L0,40 L65,90" fill="none" stroke="#f87171" stroke-width="8" stroke-linejoin="round"/><path d="M-100,0 L-50,-25" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/><path d="M100,0 L50,-25" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/><circle cx="0" cy="-135" r="22" fill="#fbbf24"/><circle cx="0" cy="-135" r="10" fill="#b38f00"/></g>
+  <text x="960" y="820" text-anchor="middle" fill="#94a3b8" font-family="Outfit, sans-serif" font-size="26" letter-spacing="3" font-weight="bold">REAL LOVE - CHRIST'S SACRIFICE</text>
 </svg>
