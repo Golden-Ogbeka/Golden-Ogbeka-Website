@@ -27,6 +27,7 @@ function BlogCard({ post, index }: BlogCardProps) {
             objectFit='cover'
             sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
             className='transform group-hover:scale-105 transition-transform duration-500'
+            priority={index < 3}
           />
           <span className='absolute top-3 left-3 px-3 py-1 text-xs font-semibold rounded-full bg-accent text-white'>
             {t(`blog:category.${post.category}`)}

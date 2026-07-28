@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
@@ -8,6 +8,7 @@ import CategoryFilter from '../../components/pages/Blog/CategoryFilter';
 import { useTranslation } from 'next-i18next';
 
 const POSTS_PER_PAGE = 6;
+const VALID_CATEGORIES: BlogCategory[] = ['ai', 'tips', 'tech', 'faith'];
 
 type SortOrder = 'newest' | 'oldest';
 
@@ -22,6 +23,7 @@ export default function Blog() {
   const [activeCategory, setActiveCategory] = useState<BlogCategory | 'all'>('all');
   const [sortOrder, setSortOrder] = useState<SortOrder>('newest');
   const [currentPage, setCurrentPage] = useState(1);
+  const hasInitialized = useRef(false);
 
   const availableCategories = useMemo(() => {
     const cats = new Set<BlogCategory>(BlogPosts.map((p) => p.category));
@@ -33,6 +35,22 @@ export default function Blog() {
     return result;
   }, []);
 
+  useEffect(() => {
+    if (!router.isReady || hasInitialized.current) return;
+    hasInitialized.current = true;
+    const { category, sort, page } = router.query;
+    if (category && typeof category === 'string' && VALID_CATEGORIES.includes(category as BlogCategory)) {
+      setActiveCategory(category as BlogCategory);
+    }
+    if (sort && (sort === 'newest' || sort === 'oldest')) {
+      setSortOrder(sort);
+    }
+    if (page && typeof page === 'string') {
+      const p = parseInt(page, 10);
+      if (p > 0) setCurrentPage(p);
+    }
+  }, [router.isReady, router.query]);
+
   const filteredAndSorted = useMemo(() => {
     const filtered = activeCategory === 'all'
       ? BlogPosts
@@ -41,24 +59,65 @@ export default function Blog() {
   }, [activeCategory, sortOrder]);
 
   const totalPages = Math.ceil(filteredAndSorted.length / POSTS_PER_PAGE);
+  const safePage = Math.min(currentPage, Math.max(1, totalPages));
   const paginatedPosts = filteredAndSorted.slice(
-    (currentPage - 1) * POSTS_PER_PAGE,
-    currentPage * POSTS_PER_PAGE
+    (safePage - 1) * POSTS_PER_PAGE,
+    safePage * POSTS_PER_PAGE
   );
+
+  const syncUrl = useCallback((cat: BlogCategory | 'all', sort: SortOrder, page: number) => {
+    const params = new URLSearchParams();
+    if (cat !== 'all') params.set('category', cat);
+    if (sort !== 'newest') params.set('sort', sort);
+    if (page > 1) params.set('page', String(page));
+    const qs = params.toString();
+    const href = qs ? `/blog?${qs}` : '/blog';
+    router.replace(href, undefined, { shallow: true });
+  }, [router]);
 
   const handleCategoryChange = (cat: BlogCategory | 'all') => {
     setActiveCategory(cat);
     setCurrentPage(1);
+    syncUrl(cat, sortOrder, 1);
   };
 
   const handleSortChange = (order: SortOrder) => {
     setSortOrder(order);
     setCurrentPage(1);
+    syncUrl(activeCategory, order, 1);
+  };
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    syncUrl(activeCategory, sortOrder, page);
   };
 
   const blogUrl = router.locale === router.defaultLocale
     ? 'https://goldenogbeka.com/blog'
     : `https://goldenogbeka.com/${router.locale}/blog`;
+
+  const blogListingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: t('blog:page.title'),
+    description: t('blog:page.subtitle'),
+    url: blogUrl,
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: paginatedPosts.map((post, i) => ({
+        '@type': 'ListItem',
+        position: (safePage - 1) * POSTS_PER_PAGE + i + 1,
+        url: `${blogUrl}/${post.slug}`,
+        item: {
+          '@type': 'BlogPosting',
+          headline: t(`blog:post.${post.slug}.title`, post.slug),
+          description: t(`blog:post.${post.slug}.summary`, post.slug),
+          datePublished: post.date,
+          url: `${blogUrl}/${post.slug}`,
+        },
+      })),
+    },
+  };
 
   return (
     <AppLayout>
@@ -70,6 +129,7 @@ export default function Blog() {
           { name: 'Golden Ogbeka', url: '/' },
           { name: t('common:nav.blog'), url: '/blog' },
         ]}
+        overrideSchemas={[blogListingSchema]}
       />
       <div className='pt-32 min-h-screen'>
         <div className='mb-12 animate-fade-in-up'>
@@ -121,8 +181,8 @@ export default function Blog() {
         {totalPages > 1 && (
           <nav className='flex items-center justify-center gap-2 mt-16' aria-label={t('blog:pagination.label')}>
             <button
-              onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-              disabled={currentPage === 1}
+              onClick={() => handlePageChange(Math.max(1, safePage - 1))}
+              disabled={safePage === 1}
               className='px-4 py-2 rounded-lg text-sm font-medium minimal-card text-zinc-600 dark:text-zinc-400 hover:text-accent dark:hover:text-accent transition-colors disabled:opacity-30 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-accent'
               aria-label={t('blog:pagination.prev')}
             >
@@ -131,21 +191,21 @@ export default function Blog() {
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
               <button
                 key={page}
-                onClick={() => setCurrentPage(page)}
+                onClick={() => handlePageChange(page)}
                 className={`w-10 h-10 rounded-lg text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-accent ${
-                  currentPage === page
+                  safePage === page
                     ? 'bg-accent text-white'
                     : 'minimal-card text-zinc-600 dark:text-zinc-400 hover:text-accent dark:hover:text-accent'
                 }`}
                 aria-label={`${t('blog:pagination.page')} ${page}`}
-                aria-current={currentPage === page ? 'page' : undefined}
+                aria-current={safePage === page ? 'page' : undefined}
               >
                 {page}
               </button>
             ))}
             <button
-              onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-              disabled={currentPage === totalPages}
+              onClick={() => handlePageChange(Math.min(totalPages, safePage + 1))}
+              disabled={safePage === totalPages}
               className='px-4 py-2 rounded-lg text-sm font-medium minimal-card text-zinc-600 dark:text-zinc-400 hover:text-accent dark:hover:text-accent transition-colors disabled:opacity-30 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-accent'
               aria-label={t('blog:pagination.next')}
             >

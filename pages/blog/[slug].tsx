@@ -20,22 +20,50 @@ export default function BlogPost({ post }: BlogPostProps) {
   if (!post) return null;
 
   const postUrl = `${router.locale === router.defaultLocale ? '' : '/' + router.locale}/blog/${post.slug}`;
+  const fullPageUrl = `https://goldenogbeka.com${postUrl}`;
+  const paragraphs = t(`blog:post.${post.slug}.paragraphs`, {
+    returnObjects: true,
+    defaultValue: [],
+  }) as string[];
+
+  const blogPostingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: t(`blog:post.${post.slug}.title`, post.slug),
+    description: t(`blog:post.${post.slug}.summary`, post.slug),
+    articleBody: Array.isArray(paragraphs) ? paragraphs.join('\n') : '',
+    datePublished: post.date,
+    author: {
+      '@type': 'Person',
+      name: 'Golden Ogbeka',
+      url: 'https://goldenogbeka.com',
+    },
+    image: `${'https://goldenogbeka.com'}${post.ogImagePath}`,
+    url: fullPageUrl,
+    mainEntityOfPage: fullPageUrl,
+    publisher: {
+      '@type': 'Person',
+      name: 'Golden Ogbeka',
+    },
+  };
 
   return (
     <AppLayout>
       <HeadElement
         pageTitle={`${t(`blog:post.${post.slug}.title`, post.slug)} | Golden Ogbeka`}
         description={t(`blog:post.${post.slug}.summary`, post.slug)}
-        siteLink={`https://goldenogbeka.com${postUrl}`}
+        siteLink={fullPageUrl}
         ogImage={post.ogImagePath}
         ogType='article'
         articlePublishedTime={post.date}
         articleAuthor='Golden Ogbeka'
+        articleTags={[t(`blog:category.${post.category}`)]}
         breadcrumb={[
           { name: 'Golden Ogbeka', url: '/' },
           { name: t('common:nav.blog'), url: '/blog' },
           { name: t(`blog:post.${post.slug}.title`, post.slug), url: postUrl },
         ]}
+        overrideSchemas={[blogPostingSchema]}
       />
 
       <article className='pt-32 min-h-screen'>
