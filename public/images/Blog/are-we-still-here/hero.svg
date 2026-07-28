@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="glow"><stop offset="50%" stop-color="#dc2626" stop-opacity="0.15"/><stop offset="100%" stop-color="#dc2626" stop-opacity="0"/></radialGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="960" cy="500" r="350" fill="url(#glow)"/>
+  <g transform="translate(960,400)" filter="url(#g)"><g><rect x="-40" y="-30" width="80" height="90" rx="10" fill="none" stroke="#dc2626" stroke-width="5"/><circle cx="0" cy="-55" r="35" fill="none" stroke="#dc2626" stroke-width="5"/><path d="M-60,60 L-100,80" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/><path d="M60,60 L100,80" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/><path d="M0,60 L0,100" stroke="#dc2626" stroke-width="4" stroke-linecap="round"/></g></g>
+  <text x="960" y="780" text-anchor="middle" fill="#64748b" font-family="serif" font-size="22" letter-spacing="2" opacity="0.6">STAND FIRM</text>
+</svg>

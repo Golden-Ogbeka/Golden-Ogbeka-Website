@@ -42,7 +42,7 @@
 ### Blog Section
 - Blog data lives in `data/BlogPosts.ts` — exports `BlogPostType[]` with `slug`, `category`, `image`, `ogImagePath`, `date`, and optional `featured`.
 - Featured blog subset lives in `data/FeaturedBlogPosts.ts` — exports the posts shown on the homepage.
-- Categories are: `tech`, `ai`, `tips`. The `BlogCategory` type is exported from `data/BlogPosts.ts`.
+- Categories are: `tech`, `ai`, `tips`, `faith`. The `BlogCategory` type is exported from `data/BlogPosts.ts`.
 - Blog post content (title, summary, paragraphs) lives entirely in the `blog` translation namespace (`public/locales/{locale}/blog.json`).
 - Translation key pattern for blog posts: `blog:post.{slug}.title`, `blog:post.{slug}.summary`, `blog:post.{slug}.paragraphs` (array).
 - Category labels: `blog:category.{category}` (e.g., `blog:category.tech`).

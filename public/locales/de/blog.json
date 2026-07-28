@@ -8,7 +8,8 @@
     "all": "Alle",
     "tech": "Technik",
     "ai": "KI",
-    "tips": "Tipps"
+    "tips": "Tipps",
+    "faith": "Glaube"
   },
   "readMore": "Weiterlesen",
   "backToBlog": "Zurück zum Blog",
@@ -42,7 +43,7 @@
         "Die letzten Monate waren für mich die aufschlussreichsten — Monate, die mich dazu brachten, über meinen Weg nachzudenken und schwere Entscheidungen zu treffen. Vor der Verbreitung von künstlicher Intelligenz war ich wirklich sehr comfortable. Ich war gut im Erstellen von Frontend-Anwendungen und hatte nie Angst, jedes Projekt anzugehen. Bevor ich Frontend zu meinem Hauptskill machte, hatte ich meine Reise eigentlich mit Java begonnen. Viele wissen nicht, dass ich ursprünglich Backend-Ingenieur war.",
         "Was hat sich geändert? Bei dem Versuch, ein globales Unternehmen zur Kundengewinnung in der Geflügelbranche aufzubauen, habe ich im Grunde alles gemacht — das Kassibuch geführt, das Backend mit Node.js gebaut, die Webseite mit EJS und später React erstellt, mobile Apps mit React Native entwickelt, Videoinhalte erstellt, Illustrationen gemacht, Marketing betrieben, Kundenforschung durchgeführt und Kundensupport geleistet. Ich machte alles, weil ich das Geld nicht hatte, Leute zu bezahlen. Aber was hat das mit mir gemacht? Als COVID kam, war ich ausgebrannt.",
         "Wegen des Burnouts und dem langsamen Versuch mich zu erholen, neigte ich zu dem, was leichtfiel. Mir fiel auf, dass die meisten Leute CSS mieden, aber für mich war es einfach. Ich merkte, dass mein Gehirn bei Backend-Coding mehr arbeiten musste, also entschied ich mich, mich nur auf Frontend zu konzentrieren, selbst wenn ich wusste, dass es zu einfach für mich war. Schnell vorgelesen zu diesem Jahr — ich war Experte geworden. Keine UI war für mich unmöglich. Doch dann kam die KI und weckte mich aus meinem Schlaf.",
-        "Weil ich gut in meinem Job war, lernte ich nicht genug über Dinge, die wirklich zählten — maschinelles Lernen, komplexe Algorithmen, verteilte Computing-Systemarchitektur, komplexe Architekturen. Ich lernte, was ich brauchte, und fühlte mich wohl, aber ich kannte nicht tief genug. Das kam die KI mir zu sagen — und dich im Übrigen auch. Glaub mir, ich habe meine Lektion gelernt.",
+        "Weil ich gut in meinem Job war, lernte ich nicht genug über Dinge, die wirklich zählten — maschinelles Lernen, komplexe Algorithmen, verteilte Computing-Systemarchitektur, komplexe Architekturen. Ich lernte, was ich brauchte, und fühlte mich wohl, aber ich kannte nicht tief genug. Das kam die KI mir zu sagen — und dir im Übrigen auch. Glaub mir, ich habe meine Lektion gelernt.",
         "Lerne also aus meiner Erfahrung. Denk nicht einfach zurück und glaube nicht, dass du es dir bequem machen kannst, weil du eine Fertigkeit gemeistert hast. Manchmal ist unser größter Feind genau der Komfort, den wir genießen. Verlasse deine Komfortzone. Werde eine bessere Version von dir selbst. Fordere dich heraus, die schwierigen Dinge zu tun. Schau dir diese langen Videolektionen an. Am Anfang mag es schwierig erscheinen, aber so scheint alles im Leben, wenn du anfängst. Erinnerst du dich, als du zum ersten Mal tippen gelernt hast? Nun, sieh dich jetzt an."
       ]
     },
@@ -88,6 +89,219 @@
         "Es ist eigentlich unmoralisch, Zugang zu diesem Wissen mit einem Preis zu versehen. Wofür Menschen bezahlen, ist die Rechenleistung, die es verarbeitet. Studiere die Trends: Die Rentabilität von LLMs ist ein sterbender Traum. Unternehmen, die ausschließlich auf dieses Modell setzen, haben sich neu ausgerichtet. Jeder glaubt, dass eine KI-Blase kurz platzen wird. Aber ein Unternehmen hat uns gezeigt, wie die Zukunft der KI aussieht, und die Welt hat es verpasst.",
         "Im Juni 2026 kündigte Nvidia RTX Spark-PCs mit bis zu 128 GB einheitlichem Speicher und bis zu 1 Petaflop FP4 KI-Leistung an — Computer, die KI mühelos lokal ausführen können. Was, wenn du keine Software bräuchtest, um mit Servern zu interagieren? Was, wenn der Server dein eigener Computer wäre? Was, wenn du keine Internetverbindung brauchst, um mit KI zu kommunizieren, weil sie direkt in deinem Gerät sitzt? Das ist die Kraft lokaler Modelle.",
         "Nvidia hat gerade der Welt gezeigt, dass Jarvis nicht mehr nur einem reichen Milliardär namens Iron Man vorbehalten ist. In wenigen Jahren wird KI für jeden mit einem Computer verfügbar sein. Starte deine Reise mit lokalen Modellen und Open-Source-Werkzeugen wie Ollama. Innerhalb der nächsten fünf Jahre werden Software-KI-Agenten aus der Mode kommen — jeder mit einem modernen Computer wird einen KI-Agenten haben, der lokal arbeitet. Das ist die Zukunft, die ich mir vorstelle."
+      ]
+    },
+    "hand-it-over": {
+      "title": "Übergib es Ihm",
+      "summary": "Eine Betrachtung darüber, hoffnungslose Situationen Gott zu übergeben, inspiriert von drei biblischen Berichten über Mütter, deren tote Söhne ihnen zurückgegeben wurden.",
+      "paragraphs": [
+        "Mir ist etwas in der Schrift aufgefallen. In Lukas 7 gab Jesus einer Witwe ihren toten Sohn zurück. In 1. Könige 17 gab Elia der Witwe von Zarpat ihren Sohn zurück. In 2. Könige 4 gab Elisa der Sunamitin ihren Sohn zurück. Diese drei Frauen taten alle etwas Mächtiges: Sie übergaben ihre Situationen Gott.",
+        "Egal wie tot oder hoffnungslos die Situation schien, sie waren bereit, sie dem Meister zu übergeben. In dem Moment, als ihre Situationen ihre Hände verließen und in die Hände des Meisters kamen, erhielten sie ein vollständiges Paket zurück. Ich fragte mich: Welche Situation halte ich fest, die tot oder hoffnungslos erscheint?",
+        "Ich versuche vielleicht sogar, sie selbst wiederzubeleben, aber die Auferstehung ist nicht in mir. Die Auferstehung ist im Meister. Wenn du bereit bist, diese Situation loszulassen und Ihm zu übergeben, kannst du einer vollständigen Rückkehr sicher sein. Wenn Jesus dir diese Situation zurückgibt, wird sie in einem perfekten Zustand sein. Alles, was Er dich heute bittet, ist: Übergib es Ihm und lass Mich mich darum kümmern."
+      ]
+    },
+    "are-you-using-the-right-fuse": {
+      "title": "Benutzt du die richtige Sicherung?",
+      "summary": "Anhand der Analogie einer defekten Sicherung in einem Dampfbügeleisen zeigt dieser Beitrag, wie Liebe die wesentliche Komponente ist, die das Leben eines Christen richtig funktionieren lässt.",
+      "paragraphs": [
+        "Eines Tages bekam ich ein Bügeleisen für die Schule und war stolz, mein eigenes Dampfbügeleisen zu haben. Am ersten Tag der Benutzung ging das Licht am Bügeleisen aus und kam nie wieder an. Ich probierte verschiedene Steckdosen, aber nichts funktionierte. Monate später entdeckte ein Elektriker das Problem: Die Sicherung war einfach durchgebrannt. Ein ganzes Dampfbügeleisen funktionierte nicht wegen seiner Sicherung — eines der kleinsten und unbedeutendsten Elemente.",
+        "Die Liebe Gottes in uns ist wie diese Sicherung. Sie ist eine der am meisten ignorierten Tugenden, in denen wir zu wandeln versäumen, und doch ist sie die stärkste Kraft im Leben eines Christen. Wenn man sie ignoriert, kann sie das gesamte System zum Stillstand bringen. Unser Glaube ist ohne Liebe nichtig, und der Glaube ist die Substanz unserer Hoffnung. Ohne Liebe sind Glaube und Hoffnung nichtig.",
+        "Liebe ist unser Kraftwerk. Unsere Gebete haben ohne Liebe keinen Zugang, denn Jesus sagte in Markus 11, dass wenn wir nicht vergeben, wird unser Vater uns auch nicht vergeben. Wenn wir nicht vergeben, werden unsere Sünden nicht vergeben und wir werden als Sünder angesehen. Liebe vergibt und gewährt unseren Gebeten Zugang zu Antworten.",
+        "Du denkst vielleicht: 'Wo verfehle ich es?' und erwägst extreme Maßnahmen wie Befreiungsdienst oder 21 Tage Fasten. Bevor du das ganze Bügeleisen öffnest, überprüfe deine Sicherung. Vielleicht hast du deine Liebessicherung gegen Unvergebung, Hass oder Bosheit ausgetauscht. Gott sagt dir heute, die richtige Sicherung einzusetzen, nämlich Seine Liebe, die in das Herz jedes Gläubigen ausgegossen ist. Wende den ganzen 1. Korinther 13 auf dein Leben an und beobachte, wie dein Leben funktioniert."
+      ]
+    },
+    "are-we-still-here": {
+      "title": "Sind wir noch hier?",
+      "summary": "Eine Reihe herausfordernder Fragen für Christen über Standhaftigkeit im Glauben, Widerstand gegen Versuchung, Gehorsam gegenüber Gott und Engagement für Seine Aufgabe.",
+      "paragraphs": [
+        "Ich habe einige Fragen an alle Christen, gegründet auf unserem Verhalten und unseren Reaktionen auf die Geschehnisse auf dieser Erde. Gibt es noch Christen, die stehen können wie die drei hebräischen Jünglinge, als eine ganze Nation sich niederbeugte? Ihnen wurde ein siebenmal geheizter Feuerofen angedroht, und doch standen sie fest.",
+        "Gibt es noch Christen, die der Versuchung widerstehen können, selbst wenn eine wunderbare Beförderung in Aussicht ist, wie Josef es mit Potiphars Frau tat? Er widerstand, bis er floh. Gibt es noch Menschen, die nein zu einer Bestechung sagen können, so angenehm sie auch scheint? Gibt es noch Christen, die bereit sind, Gott um jeden Preis zu gehorchen, wie Abraham, der das Haus seines Vaters verließ und bereit war, Isaak zu opfern?",
+        "Gibt es noch Christen, die sich ihrer Aufgabe von Gott verpflichtet fühlen? Denk an Jesus, der sagte: 'Meine Speise ist die, den Willen dessen zu tun, der mich gesandt hat, und sein Werk zu vollenden.' Paulus sagte: 'Wehe mir, wenn ich das Evangelium nicht predige.' Petrus antwortete den Richtern: 'Müssen wir Gott mehr gehorchen als den Menschen?' Daniel war so engagiert, dass er vor Königen stand.",
+        "All diese Fragen sollen dich auf die Beine stellen. Es ist Zeit aufzustehen und der zu sein, der Er will, dass du bist, nicht der, der du sein willst. Er will Soldaten, also verlasse das Baby-Stadium und wachse. Gibt es noch echte Christen, die das Leben Christi widerspiegeln, wo immer sie sich befinden? Wenn es sie gibt, ist die Frage: Gehörst du dazu?"
+      ]
+    },
+    "what-is-in-thanksgiving": {
+      "title": "Was steckt in der Danksagung?",
+      "summary": "Erforschung der Kraft der Danksagung, um Vermehrung, Auferstehung, göttliches Eingreifen und Offenbarung im Leben des Gläubigen freizusetzen.",
+      "paragraphs": [
+        "Meistens neigen wir dazu, uns zu beschweren, wenn bestimmte Ereignisse eintreten, selbst als Christen, ohne zu wissen, dass wir die Sache nur verkomplizieren. Die Wahrheit ist, dass Danksagung Gottes Aufmerksamkeit und Eingreifen erwirkt.",
+        "Danksagung ist dein Zugang zu Vermehrung und Wachstum. In Johannes 6 speiste Jesus fünftausend Männer mit fünf Gerstenbroten und zwei kleinen Fischen. Er nahm die Speisen und dankte, und als Er sie verteilte, waren die Speisen durch die Danksagung von einem einzelnen in einen vervielfachten Zustand verwandelt worden.",
+        "Danksagung ist dein Zugang zur Auferstehung und zum Leben. Es mag tote Situationen um dein Leben herum, in deinem Leben und über dein Leben geben. Alles, was du tun musst, ist Gott zu danken. In Johannes 11 dankte Jesus am Grab des Lazarus, und ein Wunder geschah. Danksagung bringt auch Gottes Eingreifen. In 2. Chronik 20 stellten die Israeliten Sänger vor ihr Heer, und als sie anfingen, Loblieder zu singen, legte der Herr einen Hinterhalt gegen ihre Feinde.",
+        "Danksagung ist dein Zugang zur Offenbarung. Wenn du dich Gottes Wort ohne Freude in deinem Herzen näherst, hast du vielleicht keinen Zugang zu seinen Wahrheiten. Jesaja 12:3 sagt uns, dass Freude unser Zugang zu den verborgenen Verheißungen in den Brunnen des Heils ist. Also freue dich und stimme in den Lobpreis Gottes ein, um Sein Eingreifen in dein Leben zu sichern. Verwechsele niemals deinen Zustand mit deinem Anteil."
+      ]
+    },
+    "he-called-you-friend": {
+      "title": "Er nannte dich Freund",
+      "summary": "Verstehen des unglaublichen Privilegs, ein Freund Christi genannt zu werden, und der drei Schichten göttlichen Schutzes, die jedem Gläubigen zur Verfügung stehen.",
+      "paragraphs": [
+        "In Johannes 15:14-15 sagte Jesus: 'Ihr seid meine Freunde, wenn ihr tut, was immer ich euch gebiete... Ich habe euch Freunde genannt; denn alles, was ich von meinem Vater gehört habe, habe ich euch kundgetan.' Das ist eine ultimative Aussage. Wenn der Präsident deiner Nation bekanntgibt, dass du sein Freund bist, sag mir, welches Gefängnis kann dich gefangen halten? Stell dir nun das mächtigste Wesen im Universum vor, das dich Seinen Freund nennt.",
+        "Als Kind Gottes hast du eine dreifache Schutzbarriere um dich herum. Die erste Schicht ist Christus selbst. Wir sind zusammen in den himmlischen Örtern in Christus Jesus gesetzt, weit über alle Fürstentümer, Gewalten, Mächte und Herrschaften. Was immer zu dir gelangen will, muss zuerst durch Ihn gehen.",
+        "Die zweite Schicht ist Gott selbst. Psalm 125:2 sagt, dass der Herr um Sein Volk herum ist. Gott sagte in Sacharja 2:5, dass Er eine feurige Mauer um Sein Volk sein wird. Die dritte Schicht ist eine engelhafte Bedeckung. Psalm 34:7 sagt, dass der Engel des Herrn sich um diejenigen lagert, die Ihn fürchten. In 2. Könige 19 tötete ein einziger Engel 185.000 Soldaten.",
+        "Was können wir noch sagen? Wenn Gott für uns ist, wer kann gegen uns sein? Wähle heute, zur Erkenntnis der Wahrheit zu kommen, dass Gott als Kind Gottes auf deiner Seite ist und sich für dein Wohlergehen einsetzt."
+      ]
+    },
+    "what-exactly-was-christs-commandment": {
+      "title": "Was genau war Christi Gebot?",
+      "summary": "Christi Gebot geht über das Lieben deines Nächsten wie dich selbst hinaus — es ruft uns dazu auf, einander zu lieben, wie Er uns geliebt hat, mit derselben bedingungslosen, opferbereiten Liebe.",
+      "paragraphs": [
+        "Die meisten von uns denken, dass das Gebot, das Christus uns gab, 'Liebe deinen Nächsten wie dich selbst' war, aber das ist falsch. Er gab uns etwas Tieferes und Wirksameres — was ich die stärkste Waffe nenne, die wir gegen die Welt haben. In Johannes 13:34 sagte Jesus: 'Ein neues Gebot gebe ich euch, dass ihr einander liebt, wie ich euch geliebt habe, damit auch ihr einander liebt.'",
+        "Wir wurden aus dem Bereich 'Liebe deinen Nächsten wie dich selbst' herausgenommen und in den Bereich 'Liebt einander, wie ich euch geliebt habe' versetzt. Das bedeutet dieselbe bedingungslose Liebe, die Er für uns hatte, dass Er, selbst nachdem wir Ihn verfolgt, angespuckt, gegeißelt und gekreuzigt hatten, vom Kreuz sagte: 'Vater, vergib ihnen, denn sie wissen nicht, was sie tun.'",
+        "Dieselbe Liebe, die den König der Könige als Baby auf die Erde kommen ließ, damit wir Zugang zum Heil haben — das ist die Liebe, die Er uns geboten hat zu haben. Die Frage ist: Bist du gehorsam?"
+      ]
+    },
+    "it-is-not-just-about-you": {
+      "title": "Es geht nicht nur um dich",
+      "summary": "Die Errettung dient nicht nur dem persönlichen Nutzen — sie ist ein Ruf zum Dienst, um Frucht für Christus zu bringen und für Seine Schafe zu sorgen.",
+      "paragraphs": [
+        "Die Wahrheit ist, dass die meisten von uns Christen nicht wirklich wissen, wozu unsere Errettung gedacht war, und deshalb bleiben wir unerfüllt, weil wir unseren Auftrag nicht wirklich ausführen. In Johannes 15 sagte Jesus: 'Ich bin der wahre Weinstock... Jede Rebe an mir, die keine Frucht bringt, nimmt er weg.' Der wahre Grund für deine Errettung ist das Fruchtbringen.",
+        "Deine Errettung war nicht nur für dich. Sie war ein Ruf zum Dienst, zu dem Christus dich eingeladen hat, damit du durch Ihn Frucht bringen kannst. Die meisten von uns behalten die Botschaft der Errettung für sich, ohne sich darum zu kümmern, was die Menschen um uns herum durchmachen.",
+        "In Johannes 21:15-17 gab Jesus einen Beweis unserer Liebe zu Ihm: 'Weide meine Schafe.' Unsere Liebe zu unserem Erlöser wird durch unsere Fürsorge für Seine Schafe und Seine Lämmer ausgedrückt. Wähle heute, hinauszugehen und Seine verlorenen Schafe zurückzuholen, denn das ist deine Berufung.",
+        "Hesekiel 34 warnt vor selbstsüchtigen Hirten, die sich selbst statt der Herde weiden. Vermeide dies, indem du dich den Verlorenen, Ungeretteten und Kranken zuwendest — all denen, die Christus erreicht hat, denn du bist Sein Vertreter."
+      ]
+    },
+    "now-a-christian-what-next": {
+      "title": "Jetzt ein Christ, was nun?",
+      "summary": "Der Name Christ wurde gegeben, um einen Lebensstil widerzuspiegeln — er ist kein Banner oder Emblem, sondern ein Leben, das Christus widerspiegelt.",
+      "paragraphs": [
+        "Der Name 'Christ' wurde in Apostelgeschichte 11:26 wegen der Werke und des Lebensstils der Apostel gegeben. In Apostelgeschichte 4 wurden Petrus und Johannes für ungelehrte Männer gehalten, aber die Menschen erkannten, dass sie mit Christus gewesen waren. Ein christliches Leben kann nicht vorgetäuscht werden; es ist reflektierend und real.",
+        "Die Apostel nannten sich nicht selbst Christen. Sie wurden so genannt wegen der Art von Leben, das sie führten. Sie spiegelten das Leben Christi wider. Daher ist der Name Christ kein Banner, Emblem, keine Fahne oder Geschichte. Er ist ein Lebensstil.",
+        "Du trägst also den Namen, aber lebst du das Leben? Was dich ausmacht, ist nicht nur der Name, sondern das Leben. Entscheide dich, das Leben Christi zu leben. Wie Galater 2:20 sagt: 'Ich bin mit Christus gekreuzigt; ich lebe, doch nicht ich, sondern Christus lebt in mir.'"
+      ]
+    },
+    "why-were-you-saved": {
+      "title": "Warum wurdest du gerettet?",
+      "summary": "Die Errettung ist nicht das Ende — sie ist ein Ruf zum Dienst. Wir wurden gerettet, um Frucht für Christus zu bringen und zuerst Sein Reich zu suchen.",
+      "paragraphs": [
+        "Meistens denken wir, dass das Leben endet, sobald wir gerettet sind, und dass unsere Pflicht dort aufhört. Der Heilige Geist nutzt diesen Beitrag, um unsere Denkweise zu ändern. Deine Errettung ist nicht nur für dich selbst — sie ist ein Ruf zum Dienst. Wir wurden gerettet, um zu dienen.",
+        "Jesus sagte in Johannes 15:16: 'Nicht ihr habt mich erwählt, sondern ich habe euch erwählt und euch dazu bestimmt, dass ihr hingeht und Frucht bringt und eure Frucht bleibt.' Der Hauptzweck unserer Errettung ist, dass wir Fruchtträger für Christus sind und dafür sorgen, dass diese Früchte bleiben.",
+        "Trachtet aber zuerst nach dem Reich Gottes und nach seiner Gerechtigkeit, so wird euch dies alles hinzugefügt werden. Das ist die Verheißung von Matthäus 6:33. Wenn wir Gottes Reich priorisieren, fügt sich alles andere an seinen Platz."
+      ]
+    },
+    "what-do-you-do-before-your-manifestation": {
+      "title": "Was tust du vor deiner Offenbarung?",
+      "summary": "Die ganze Schöpfung wartet sehnsüchtig auf das Offenbarwerden der Söhne Gottes — die Frage ist, ob wir bereit sein werden, wenn unsere Zeit der Offenbarung kommt.",
+      "paragraphs": [
+        "Römer 8:19 sagt: 'Denn das ängstliche Harren der Kreatur wartet auf das Offenbarwerden der Söhne Gottes.' Die ganze Erde wartet auf unsere Offenbarung als Söhne Gottes. Die Welt liegt in Finsternis und wartet darauf, dass wir kommen und das Licht sein.",
+        "Aber es gibt eine Frage zu bedenken: Wenn du offenbart wirst, wirst du bereit sein? Stell dir ein Szenario vor, in dem alle darauf warten, dass der Präsident einen Raum verlässt, und stattdessen kommt ein Baby in Windeln heraus. Was würde der Gesichtsausdruck aller sein?",
+        "Wir alle sollen uns auf unsere Offenbarung vorbereiten, denn die Zeit unserer Manifestation ist nahe. Wenn wir unvorbereitet erscheinen, was erwarten wir, dass mit der Erde geschieht? Also, mach dich bereit!"
+      ]
+    },
+    "its-a-commandment": {
+      "title": "Es ist ein Gebot",
+      "summary": "Als Tempel Gottes und Licht der Welt haben wir den Auftrag, in die Welt zu gehen und das Evangelium mit der Autorität Christi zu predigen.",
+      "paragraphs": [
+        "1. Korinther 3:16 sagt: 'Wisst ihr nicht, dass ihr Gottes Tempel seid und der Geist Gottes in euch wohnt?' Wir sind die Bundeslade des Neuen Testaments, weil wir Seine Gegenwart tragen. Aber der Punkt ist: Als Christ, was tust du mit der Gegenwart und Kraft Gottes in dir?",
+        "Wir wurden von Gott nicht für uns allein gerettet. Wir wurden gerettet, um andere Seelen in das Reich Gottes zu bringen. In Matthäus 28:18-20 sagte Jesus: 'Mir ist gegeben alle Gewalt im Himmel und auf Erden. Darum gehet hin und lehret alle Völker.' Er sagte, dass Ihm alle Macht gegeben ist, und dann sagte Er: 'Geht hin.' Wir sollen in die Welt gehen in Seiner Autorität und Kraft, um das Evangelium zu predigen.",
+        "Jesu Blut wurde nicht umsonst am Kreuz vergossen. Er vergoss Sein Blut, um die ganze Welt von Sünde und Tod zu erlösen. Wir sollen hinausgehen und diesen Sieg durchsetzen. Die Welt wird dunkler, aber eine kleine Kerze leuchtet am hellsten im dunkelsten Raum. Da Er sagte, wir seien das Licht der Welt, sei das Licht und zeige den Menschen den Weg zu leben.",
+        "Wir sind das Salz der Erde — unser Leben soll den Menschen Wert und Bedeutung geben. Wir haben den Auftrag, das Evangelium zu predigen, also erfülle ihn bitte."
+      ]
+    },
+    "purpose-and-spirituality": {
+      "title": "Zweck und Spiritualität",
+      "summary": "Das Verstehen deines von Gott gegebenen Zwecks erfordert eine persönliche Beziehung zu deinem himmlischen Vater, denn nur Er kennt die Pläne, die Er für dich hat.",
+      "paragraphs": [
+        "Bischof David Oyedepo sagte: 'Wenn der Zweck einer Sache nicht bekannt ist, ist Missbrauch unvermeidlich.' Wir haben zuvor untersucht, warum wir Gott dienen sollten, und festgestellt, dass es zu unserem eigenen Besten ist. Jetzt erkunden wir einen weiteren Vorteil: das Erreichen von Gottes Zweck für dein Leben. Als Produkt Gottes hast du einen Zweck, der von deinem himmlischen Vater vorherbestimmt wurde.",
+        "Jeremia 29:11 sagt: 'Denn ich weiß, was ich für Gedanken über euch habe, spricht der HERR, Gedanken des Friedens und nicht des Unheils, um euch eine Zukunft und eine Hoffnung zu geben.' Gott hat ein erwartetes Ende für dich, und deshalb hat Er dich erschaffen. Noch bevor Jeremia im Mutterleib gebildet wurde, hatte Gott ihm bereits einen Auftrag gegeben.",
+        "Wie kommt Spiritualität ins Spiel? Christentum ist keine Religion, sondern ein Lebensstil — eine persönliche Beziehung zu deinem himmlischen Vater. Jeremia 33:3 sagt: 'Rufe mich an, so will ich dir antworten und dir große und unbegreifliche Dinge mitteilen, die du nicht kennst.' Wenn du nicht mit deinem irdischen Vater sprichst, wird er dir nie einige Dinge sagen. Genauso wirst du, wenn du keine persönliche Beziehung zu deinem himmlischen Vater hast, nie Seine Pläne für dich kennen.",
+        "Dein Leben zählt; du bist kein biologischer Unfall. Du hast einen Zweck, also setze dich mit Seinem Wort hin und entwirre mit Hilfe des Heiligen Geistes deinen göttlichen Auftrag. Denk daran: Eine Beziehung kann nur besser werden, wenn du an ihr arbeitest."
+      ]
+    },
+    "it-pays-to-serve-god": {
+      "title": "Es lohnt sich, Gott zu dienen",
+      "summary": "Alles, was Gott von uns verlangt — Gebet, Bibellesen, Gottesdienst, Anbetung — ist zu unserem eigenen Besten, wie Deuteronomium 10:13 deutlich macht.",
+      "paragraphs": [
+        "Dieser Beitrag soll dir die Vorteile des Dienstes für Gott zeigen. Was ist das Wesen von Hingabe, Gottesdienst, Gebet und Bibellesen? Alles läuft auf Deuteronomium 10:12-13 hinaus: 'Und nun, Israel, was fordert der HERR, dein Gott, von dir, als dass du den HERRN, deinen Gott, fürchtest... dass du die Gebote des HERRN hältst... zu deinem Besten?'",
+        "Beachte die letzten drei Worte: 'zu deinem Besten.' Du tust alles, was oben aufgeführt ist, zu deinem eigenen Besten. Bischof David Oyedepo sagte: 'Gott braucht weder dich noch mich — wir sind diejenigen, die Ihn in jedem Aspekt unseres Lebens brauchen.' Nichts, was du tust, ändert, wer Gott ist, aber alles, was du tust, ändert, wer du bist, entweder positiv oder negativ.",
+        "Matthäus 6:33 und Josua 1:8 sind Schlüsselschriftstellen für das, worüber wir sprechen. Als Christ verstehe, dass alles, was du für Gott zu tun beschließt, zu deinem eigenen Besten ist. Will Rogers sagte: 'Du könntest auf der richtigen Spur sein, aber wenn du einfach nur dasitzt, wirst du überfahren.' Gott will, dass du vorankommst, wächst, Ihn mehr kennst und heute stärker wirst als gestern."
+      ]
+    },
+    "your-first-love": {
+      "title": "Deine erste Liebe",
+      "summary": "Ein Aufruf, sich an die ersten Werke zu erinnern und zu ihnen zurückzukehren, die wir taten, als wir für Gott brannten, bevor wir kalt oder zu reif dafür wurden.",
+      "paragraphs": [
+        "Offenbarung 2:4 sagt: 'Aber ich habe gegen dich, dass du deine erste Liebe verlassen hast.' Jesus bezog sich auf die Gemeinde in Ephesus. Er lobte sie zunächst für ihre Arbeit und Geduld, dann sagte Er, dass sie ihre erste Liebe verlassen hatten, und Er hielt es ihnen vor.",
+        "Was bedeutet 'erste Liebe'? Aus Offenbarung 2:5 verstehen wir, dass deine erste Liebe die ersten Werke sind, die du geliebt hast zu tun. Als du wiedergeboren wurdest, wolltest du Gott um jeden Preis gefallen, so wie Babys die Aufmerksamkeit ihrer Eltern wollen. Du hast dich in verschiedene Aktivitäten vertieft, um zu wachsen, zu lernen und Gott zu gefallen.",
+        "Denk an dein Leben jetzt. Was waren die Dinge, die du tatest, als du noch jung im Glauben warst, die du nicht mehr tust? Vielleicht warst du ein lebendiger Anbeter, ein Chormitglied, ein Gebetskrieger oder jemand, der Gottes Wort überall predigte, wo er hinging.",
+        "Du magst immer noch gute Werke tun, aber die Dinge, die du jetzt ansiehst und sagst 'Dafür bin ich zu alt' oder 'Dafür bin ich zu groß' — Jesus sagt dir heute: 'Gedenke, wovon du gefallen bist, und tue Buße und tue die ersten Werke.' Bitte kehre um."
+      ]
+    },
+    "just-a-reminder": {
+      "title": "Nur eine Erinnerung",
+      "summary": "Eine sanfte Erinnerung, dass ohne eine Verbindung zu Jesus unsere Namen nicht im Buch des Lebens geschrieben werden können, und eine Ermutigung, standhaft zu bleiben.",
+      "paragraphs": [
+        "Dies ist kein Brief der Verurteilung, sondern eine Erinnerung. Aus wissenschaftlicher Kenntnis wissen wir, dass ein Buch aus Bäumen gemacht ist. Der Heilige Geist ließ mich verstehen, dass Jesus unser Baum des Lebens ist, genau wie der Baum des Lebens im Garten Eden. Das Buch des Lebens kommt von Jesus, der unser Baum des Lebens ist.",
+        "Das bedeutet, dass ohne eine Beziehung zu Ihm dein Name nicht im Buch des Lebens geschrieben werden kann. Viele Menschen sprechen nicht gerne über dieses Thema, aber es ist real, und Jesus kommt bald. Wie Offenbarung 20:15 sagt: 'Und wenn jemand nicht geschrieben erfunden wurde in dem Buch des Lebens, wurde er in den Feuersee geworfen.'",
+        "Dies ist auch eine Ermahnung an Christen. Jesus sagte in Lukas 9:62: 'Wer seine Hand an den Pflug legt und zurückblickt, ist nicht geschickt für das Reich Gottes.' Wenn du Gott dienst, blicke nicht zurück. Halte fester, denn die Leiden der jetzigen Zeit sind nicht wert, verglichen zu werden mit der Herrlichkeit, die an uns offenbart werden soll.",
+        "Wenn du keine Beziehung zu Jesus hast, mach es jetzt richtig mit Ihm, indem du Ihn als deinen Herrn und Erlöser bekennst. Triff die Entscheidung, niemals zu deinen alten Wegen zurückzukehren, und bitte um die Gnade, in Ihm standhaft zu bleiben. Wähle heute, wem du dienen willst."
+      ]
+    },
+    "your-role-to-play-as-a-christian": {
+      "title": "Deine Rolle als Christ",
+      "summary": "Anhand von Kain und Abel als Beispiele untersucht dieser Beitrag die zwei Hauptaufgaben eines jeden Christen: Evangelisation und Jüngerschaft.",
+      "paragraphs": [
+        "Die meisten Christen wissen nicht, dass wir nach der Errettung wichtige Rollen im Dienst für Gott zu spielen haben. Anhand von zwei biblischen Gestalten — Kain und Abel — erklären ihre Berufe unsere Pflichten. 1. Mose 4:2 sagt: 'Abel war ein Schafhirt, Kain aber ein Ackerbauer.'",
+        "Kain war ein Ackerbauer, was die Rolle der Evangelisation darstellt — anderen zu predigen und für ihre Errettung zu beten. Diese Menschen haben das Talent, der Menge gegenüberzutreten und das Evangelium zu predigen, egal welche Herausforderungen kommen. Sie gehen bis zum Äußersten, um sicherzustellen, dass die Menschen um sie herum Christus kennen.",
+        "Abel war der Hüter der Schafe, was die Rolle der Betreuung von Gläubigen darstellt. Diese Menschen haben die Aufgabe, die Schafe Christi zu hüten — sicherzustellen, dass ihre Geschwister in Christus verbunden bleiben und nicht von der Liebe zu Ihm abweichen. Dies kann durch das Lehren von Mitchristen und das Beten für ihren Verbleib im Glauben geschehen.",
+        "Inzwischen solltest du wissen, an welchem Teil du teilnehmen kannst. Was zählt, ist: Sei nicht untätig. Was Kain von Abel unterschied, war, dass Gott Abels Opfer annahm und Kains ablehnte, weil er nicht richtig gehandelt hatte. Was auch immer du für Christus tust, tu es gut und von ganzem Herzen, damit dein Ergebnis von Gott angenommen wird."
+      ]
+    },
+    "the-tree-of-life": {
+      "title": "Der Baum des Lebens",
+      "summary": "Eine Betrachtung darüber, wie Jesus unser Baum des Lebens ist, und warum das Jagen nach Wissen ohne Christus bedeutet, den Baum der Erkenntnis dem Baum des Lebens vorzuziehen.",
+      "paragraphs": [
+        "In 1. Mose 2 machte Gott den Baum des Lebens und den Baum der Erkenntnis von Gut und Böse. Er sagte Adam, er solle nicht vom Baum der Erkenntnis essen, aber Adam konnte vom Baum des Lebens essen und ewiges Leben haben. Dennoch wählten Adam und Eva stattdessen den Baum der Erkenntnis.",
+        "Du magst auf Adam wütend sein, aber du tust dasselbe, wenn du nicht wiedergeboren bist. Jesus sagte in Johannes 14:6: 'Ich bin der Weg, die Wahrheit und das Leben.' Er ist unser Baum des Lebens. Aber statt dich mit Ihm zu verbinden und ewiges Leben zu empfangen, jagen viele nach Wissen, Abschlüssen und Zertifikaten.",
+        "Es ist nichts falsch daran, Wissen zu erwerben, aber es ist falsch, dies zu tun, ohne Christus in dir zu haben. Markus 8:36 fragt: 'Was nützt es einem Menschen, die ganze Welt zu gewinnen, aber seine Seele zu verlieren?' Alles ist nichtig ohne Christus. Dies sind die Endzeit, und du wirst nicht nach Seinem zweiten Kommen zurückbleiben wollen.",
+        "Die gute Nachricht ist, dass dies eine Gelegenheit ist, Christus in dein Leben aufzunehmen und ewiges Leben zu empfangen. Wenn du dich entschieden hast, bekenne Ihn als Herrn und glaube in deinem Herzen, dass Gott Ihn von den Toten auferweckt hat, und du wirst gerettet."
+      ]
+    },
+    "its-a-summary": {
+      "title": "Es ist eine Zusammenfassung",
+      "summary": "Das ganze Gesetz ist in einem Gebot zusammengefasst: Liebe deinen Nächsten wie dich selbst. Durch Liebe erfüllen wir alle Anforderungen Gottes.",
+      "paragraphs": [
+        "Die meisten Menschen glauben, dass das Gesetz des Alten Testaments verschwunden ist, weil wir jetzt in der Zeit der Gnade leben. Aber der Heilige Geist führte mich zu Römer 13:9-10, das alles zusammenfasst: 'Liebe deinen Nächsten wie dich selbst... Die Liebe tut dem Nächsten nichts Böses; so ist nun die Liebe des Gesetzes Erfüllung.'",
+        "Wie liebst du deinen Nächsten wie dich selbst? Was immer du für dich selbst begehrst, begehre dasselbe für deinen Nächsten. Matthäus 7:12 sagt: 'Alles nun, was ihr wollt, dass euch die Menschen tun, das tut ihr ihnen auch.' Das erklärt, wie man seinen Nächsten liebt. Wenn du nicht zulassen würdest, dass dir etwas passiert, lass es nicht deinem Nächsten passieren.",
+        "Dein Nächster ist nicht nur dein Freund. Aus der Geschichte vom barmherzigen Samariter wissen wir, dass dein Nächster jeder andere außer dir ist. Das Gesetz ist immer noch in Kraft, aber wir leben nicht unter dem Gesetz — wir sind unter der Gnade, und das Gesetz wurde auf eines zusammengefasst: Liebe deinen Nächsten wie dich selbst.",
+        "Einige mögen denken, dass wir seit der Zeit der Gnade tun können, was wir wollen. Römer 6:1-2 antwortet darauf: 'Das sei ferne! Wie sollten wir, die wir der Sünde gestorben sind, noch in ihr leben?' Versuche immer, die Gebote Gottes zu halten, und der beste Weg, dies zu tun, ist, deine Nächsten zu lieben."
+      ]
+    },
+    "a-lack-of-direction": {
+      "title": "Ein Mangel an Richtung",
+      "summary": "Vielen Menschen fehlt die Richtung im Leben, weil sie nicht innehalten, um über ihre Entscheidungen nachzudenken, und die einzig wahre Quelle der Richtung ist Jesus Christus.",
+      "paragraphs": [
+        "Die meisten Menschen heute liegen falsch, weil ihnen die Richtung fehlt. Viele Eltern sagen: 'Wenn ich diese Gelegenheit gehabt hätte, dass mir jemand diese Dinge sagt, wäre ich heute nicht hier.' Doch die meisten Jugendlichen kümmern sich immer noch nicht um die Planung ihres Weges und werden leicht von den Entscheidungen ihrer Freunde beeinflusst.",
+        "Der einzige Weg, dies anzugehen, ist, der Jugend die Wahrheit zu sagen: Wir denken nicht. Nicht denken in dem Sinne, dass wir uns nicht um die Konsequenzen oder Gewinne jeder unserer Aktivitäten kümmern. Das Leben ist kein Jahrmarkt. Wir können nicht einfach in dieses Leben kommen und Ressourcen verschwenden.",
+        "Wir müssen anfangen zu denken, und um anzufangen zu denken, müssen wir uns mit einer Quelle verbinden. Es gibt nur eine wahre Quelle, und das ist Jesus Christus, denn ohne Ihn können wir nichts tun. Also, bitte fangen wir an zu denken."
+      ]
+    },
+    "a-message-for-you": {
+      "title": "Eine Nachricht für dich",
+      "summary": "Anhand der Geschichte des Auszugs aus Ägypten zeigt dieser Beitrag, wie die Rückkehr zur Sünde nach der Errettung durch Christus wie die Wahl eines Israeliten ist, in die Sklaverei Ägyptens zurückzukehren.",
+      "paragraphs": [
+        "Der Heilige Geist möchte mit dir sprechen. Vor langer Zeit benutzte Gott Mose, um Sein Volk vom Pharao zu befreien. Sie durchliefen viel, bevor sie schließlich das Gelobte Land erreichten. Stell dir vor, einer der Israeliten wacht eines Morgens auf und beschließt, nach Ägypten zurückzukehren, um als Diener zu arbeiten, nur weil er das Essen der Ägypter kosten will.",
+        "Du und ich sind wie dieser Sohn der Israeliten, wenn wir sündigen. Jesus Christus wurde von Gott benutzt, um uns von der Sünde zu erlösen und uns vom Leiden zu retten. Er durchlitt so viel und starb schließlich für uns, damit wir von Sünde und Tod gerettet werden konnten. Aber wenn wir uns entscheiden, zur Sünde zurückzukehren, sind wir wie jener Sohn, der wählte, in den Händen des Pharao zu leiden, nur für Essen.",
+        "Was glaubst du, wie Christus sich fühlt, wenn wir sündigen? Er war rein, aber erhielt den Auftrag, uns zu befreien. Er ist nicht glücklich, wenn wir zur Sünde zurückkehren. Es ist, als würde man Ihm sagen, den ganzen Prozess von vorne zu beginnen. Überdenken wir unsere Wege. Wie lässt dein Leben Christus sich jetzt fühlen?",
+        "Wenn du zur Sünde zurückgekehrt bist, ist Er bereit, den Prozess zu wiederholen und dich zurückzubringen. Jesaja 30-31 zeigt Gottes Zorn, wenn wir rebellieren, aber auch den Segen, Ihm zu folgen. Wenn du die Entscheidung getroffen hast, zu Christus zurückzukehren, bekenne deine Sünden und bitte Ihn, wieder in dein Leben zu kommen."
+      ]
+    },
+    "what-real-love-is-like": {
+      "title": "Wie wahre Liebe aussieht",
+      "summary": "Ein Gleichnis von einem König und seinem Sohn veranschaulicht die Tiefe von Gottes Liebe zu uns — Er gab Seinen einzigen Sohn, um die Konsequenzen unserer Sünden zu tragen.",
+      "paragraphs": [
+        "Es war ein König, der einen einzigen Sohn hatte, den er sehr liebte. Seine Untertanen waren ihm nicht treu, aber wegen seiner Liebe zu ihnen wollte er sie nicht hinrichten. Jemand musste die Konsequenzen ihrer Vergehen tragen, aber er fand niemanden Reinen unter seinen Untertanen. Also meldete sich sein einziger Sohn freiwillig, die Strafe für alle Vergehen zu tragen.",
+        "Was kannst du über die Liebe eines Vaters sagen, der seinem einzigen Sohn erlaubte, die Last anderer zu tragen? Und was kannst du über einen Sohn sagen, der sich freiwillig meldete, Konsequenzen für Vergehen zu tragen, die er nicht begangen hatte? Das ist reine und wahre Liebe, die nicht angetastet werden kann.",
+        "Du und ich sind wie die Untertanen in der Geschichte. Wir sündigten, und Gott der König sandte Seinen einzigen Sohn, Jesus Christus, um für uns zu sterben, damit wir gerettet werden können. Aber statt das Richtige zu wählen, fahren wir in der Sünde fort. Hast du Gott die Liebe gegeben, die Er verdient? Hast du den Weg des Heils durch Christus gewählt?",
+        "Wenn du noch nicht gerettet bist, ist der einzige Weg, Ihm die Liebe zurückzugeben, die Er dir gab, indem du Ihm zuerst dein Leben gibst. Nimm Jesus Christus in dein Leben auf und lass Ihn regieren, denn ohne Ihn kannst du nichts tun. Und wenn du gerettet bist, denk daran: Es ist eine Sache, gerettet zu werden, und eine andere, gerettet zu bleiben. Lass dein tägliches Leben Christus ähnlich sein."
+      ]
+    },
+    "where-do-you-stand": {
+      "title": "Wo stehst du?",
+      "summary": "Ein Aufruf zu prüfen, wo du mit Gott stehst, anhand der Geschichte vom Sündenfall Adams und Evas, die die Wahl zwischen Leben und Tod veranschaulicht, vor der jeder Mensch steht.",
+      "paragraphs": [
+        "Es war ein König, der zwei kleinere Könige machte und sie in einen Palast mit allem Nötigen setzte, ihnen aber sagte, sie sollten eine bestimmte Speise nicht essen. Ein Diener des großen Königs belog sie, und sie aßen die verbotene Speise. Dieser Ungehorsam hinderte sie daran, das Übernatürliche zu sehen.",
+        "Du und ich sind wie diese beiden kleineren Könige. Gib nicht Adam und Eva die Schuld für das, was du jetzt durchmachst. Genauso wie sie eine Wahl hatten, gibt Jesus uns eine Wahl in Deuteronomium 30:19 — Leben oder Tod. Dennoch verfallen wir immer noch der Sünde und geben dem Teufel die Schuld.",
+        "Gott gab uns Seinen einzigen Sohn, um für uns zu sterben, damit wir gerettet werden können, aber wir wählen immer noch, in der Sünde fortzufahren. Sehr bald wird Er kommen, um die Treuen ins Paradies zu holen, während die Untreuen in den Feuersee geworfen werden. Auf welcher Seite stehst du? Es geht nicht um deine Kirche, deinen Pastor oder deine Familie — es geht nur um dein Leben, denn ihre Errettung kann dich nicht in den Himmel bringen.",
+        "Wenn du behauptest, auf der Seite des Herrn zu sein, aber eines der Werke des Fleisches, die in Galater 5:19-21 aufgeführt sind, in deinem Leben gefunden wird, musst du zu Gott zurückgehen und um Vergebung bitten. Es gibt einen Weg, der einem Menschen recht erscheint, aber sein Ende ist der Tod. Am letzten Tag wirst du allein stehen und dich deinem Urteil stellen müssen. Du musst wissen, wem du dienst und ob du Ihm wahrhaftig und von ganzem Herzen dienst."
       ]
     }
   }

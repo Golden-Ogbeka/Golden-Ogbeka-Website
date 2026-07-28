@@ -29,6 +29,7 @@ export default function Blog() {
     if (cats.has('ai')) result.push('ai');
     if (cats.has('tips')) result.push('tips');
     if (cats.has('tech')) result.push('tech');
+    if (cats.has('faith')) result.push('faith');
     return result;
   }, []);
 

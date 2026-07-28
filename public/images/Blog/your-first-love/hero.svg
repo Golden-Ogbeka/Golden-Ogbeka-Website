@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="glow"><stop offset="50%" stop-color="#dc2626" stop-opacity="0.15"/><stop offset="100%" stop-color="#dc2626" stop-opacity="0"/></radialGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="960" cy="500" r="350" fill="url(#glow)"/>
+  <g transform="translate(960,420)" filter="url(#g)"><g><path d="M0,-80 Q-80,20 0,80 Q80,20 0,-80 Z" fill="none" stroke="#dc2626" stroke-width="5"/><path d="M0,-50 Q-40,0 0,40 Q40,0 0,-50 Z" fill="none" stroke="#fbbf24" stroke-width="3" opacity="0.5"/><circle cx="0" cy="-30" r="8" fill="#fbbf24" opacity="0.7"/></g></g>
+  <text x="960" y="780" text-anchor="middle" fill="#64748b" font-family="serif" font-size="22" letter-spacing="2" opacity="0.6">RETURN TO YOUR FIRST LOVE</text>
+</svg>

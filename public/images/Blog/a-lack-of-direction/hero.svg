@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="glow"><stop offset="50%" stop-color="#f59e0b" stop-opacity="0.15"/><stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/></radialGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="960" cy="500" r="350" fill="url(#glow)"/>
+  <g transform="translate(960,420)" filter="url(#g)"><g><circle cx="0" cy="0" r="70" fill="none" stroke="#f59e0b" stroke-width="4"/><line x1="0" y1="0" x2="0" y2="-60" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/><line x1="0" y1="0" x2="45" y2="-25" stroke="#f59e0b" stroke-width="3" opacity="0.5"/><line x1="0" y1="0" x2="-30" y2="-40" stroke="#f59e0b" stroke-width="3" opacity="0.5"/><line x1="0" y1="0" x2="20" y2="30" stroke="#f59e0b" stroke-width="3" opacity="0.4"/><circle cx="0" cy="0" r="8" fill="#fbbf24"/><path d="M0,-60 L-8,-45 L8,-45 Z" fill="#fbbf24"/></g></g>
+  <text x="960" y="780" text-anchor="middle" fill="#64748b" font-family="serif" font-size="22" letter-spacing="2" opacity="0.6">FIND YOUR DIRECTION</text>
+</svg>

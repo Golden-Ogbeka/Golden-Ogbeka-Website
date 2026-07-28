@@ -8,7 +8,8 @@
     "all": "Tous",
     "tech": "Tech",
     "ai": "IA",
-    "tips": "Conseils"
+    "tips": "Conseils",
+    "faith": "Foi"
   },
   "readMore": "Lire la suite",
   "backToBlog": "Retour au blog",
@@ -43,7 +44,7 @@
         "Qu'est-ce qui a changé ? En essayant de créer une entreprise mondiale résolvant l'acquisition de clients dans l'industrie avicole, j'ai fait pratiquement tout — géré le livre de caisse, construit le backend avec Node.js, développé le web avec EJS puis React, créé l'application mobile avec React Native, produit du contenu vidéo, fait des illustrations, du marketing, de la recherche client et du support client. J'ai tout fait parce que je n'avais pas l'argent pour payer des gens. Mais qu'est-ce que cela m'a coûté ? J'ai fait un burn-out quand la COVID est arrivée.",
         "À cause du burn-out et en essayant de récupérer progressivement, je me suis orienté vers ce qui venait facilement. J'ai réalisé que la plupart des gens fuyaient le CSS, mais pour moi c'était facile. J'ai remarqué que mon cerveau devait fournir plus d'efforts pour coder le backend, alors j'ai choisi de me concentrer uniquement sur le frontend même en sachant que c'était trop facile pour moi. Pour faire court, cette année j'étais devenu un expert — aucune interface ne m'était impossible. Mais alors l'IA est arrivée et m'a réveillé de mon sommeil.",
         "Parce que j'étais doué dans mon travail, je n'ai pas accordé suffisamment d'importance à l'apprentissage de ce qui comptait vraiment — l'apprentissage automatique, les algorithmes complexes, la conception de systèmes informatiques distribués, les architectures complexes. J'ai appris ce dont j'avais besoin et me suis senti à l'aise, mais je n'avais pas creusé assez profondément. C'est ce que l'IA est venue me rappeler, et par extension, vous rappeler. Croyez-moi, j'ai appris ma leçon.",
-        "Alors apprenez de mon expérience. Ne vous reposez pas en pensant que maîtriser une compétent signifie toujours profiter du confort. Parfois, notre pire ennemi est le confort même que nous apprécions. Sortez de votre zone de confort. Devenez une meilleure version de vous-même. Mettez-vous au défi de faire les choses difficiles. Regardez ces longues vidéos de cours. Cela peut sembler difficile au début, mais c'est comme ça que tout semble dans la vie quand on commence. Vous souvenez-vous quand vous avez commencé à apprendre à taper au clavier ? Eh bien, regardez-vous maintenant."
+        "Alors apprenez de mon expérience. Ne vous reposez pas en pensant que maîtriser une compétence signifie toujours profiter du confort. Parfois, notre pire ennemi est le confort même que nous apprécions. Sortez de votre zone de confort. Devenez une meilleure version de vous-même. Mettez-vous au défi de faire les choses difficiles. Regardez ces longues vidéos de cours. Cela peut sembler difficile au début, mais c'est comme ça que tout semble dans la vie quand on commence. Vous souvenez-vous quand vous avez commencé à apprendre à taper au clavier ? Eh bien, regardez-vous maintenant."
       ]
     },
     "more-countries-need-to-be-like-canada": {
@@ -88,6 +89,219 @@
         "Il est en réalité immoral de fixer un prix à l'accès à cette connaissance. Ce pour quoi les gens paient, c'est la puissance de calcul qui la traite. Étudiez les tendances : la rentabilité des LLM est un rêve en voie de disparition. Les entreprises qui dépendent uniquement de ce modèle ont pivotté. Tout le monde croit qu'il y a une bulle de l'IA sur le point d'éclater. Mais une entreprise nous a montré à quoi ressemble l'avenir de l'IA, et le monde l'a manqué.",
         "En juin 2026, Nvidia a annoncé les PC RTX Spark avec jusqu'à 128 Go de mémoire unifiée et jusqu'à 1 Petaflop de performance IA en FP4 — des ordinateurs capables de faire tourner l'IA localement avec facilité. Et si vous n'aviez pas besoin de logiciel pour communiquer avec des serveurs ? Et si le serveur était votre propre ordinateur ? Et si vous n'aviez pas besoin de connexion internet pour communiquer avec l'IA parce qu'elle se trouve directement dans votre machine ? Voilà la puissance des modèles locaux.",
         "Nvidia vient de montrer au monde que Jarvis n'est plus réservé à un seul milliardaire riche nommé Iron Man. Dans quelques années, l'IA sera à la portée de tous ceux qui ont un ordinateur. Commencez votre parcours avec des modèles locaux et des outils open source comme Ollama. D'ici cinq ans, les agents logiciels IA seront démodés — chaque personne possédant un ordinateur moderne aura un agent IA fonctionnant en local. Voilà l'avenir que je vois."
+      ]
+    },
+    "hand-it-over": {
+      "title": "Remets-le Lui",
+      "summary": "Une réflexion sur l'abandon de nos situations désespérées à Dieu, inspirée par trois récits bibliques de mères dont les fils morts ont été rendus à la vie.",
+      "paragraphs": [
+        "J'ai remarqué quelque chose dans les Écritures. Dans Luc 7, Jésus a rendu son fils mort à une veuve. Dans 1 Rois 17, Élie a rendu son fils à la veuve de Sarepta. Dans 2 Rois 4, Élisée a rendu son fils à la femme de Sunem. Ces trois femmes ont toutes fait quelque chose de puissant : elles ont abandonné leurs situations à Dieu.",
+        "Peu importe à quel point la situation semblait morte ou désespérée, elles étaient prêtes à la remettre entre les mains du Maître. Au moment où leurs situations ont quitté leurs mains pour entrer dans celles du Maître, elles ont reçu un retour complet. Je me suis demandé : quelle situation est-ce que je retiens qui semble morte ou désespérée ?",
+        "Je peux même essayer de la ramener à la vie par moi-même, mais la résurrection n'est pas en moi. La résurrection est dans le Maître. Si vous êtes prêt à lâcher prise et à remettre cette situation entre Ses mains, vous pouvez être assuré d'un retour complet. Quand Jésus vous rendra cette situation, elle sera dans un état parfait. Tout ce qu'Il vous demande aujourd'hui, c'est : remets-la Lui et laisse-Moi m'en occuper."
+      ]
+    },
+    "are-you-using-the-right-fuse": {
+      "title": "Utilises-tu le bon fusible ?",
+      "summary": "À travers l'analogie d'un fusible défectueux dans un fer à vapeur, cet article explore comment l'amour est le composant essentiel qui fait fonctionner la vie d'un chrétien.",
+      "paragraphs": [
+        "Un jour, j'ai eu un fer à repasser pour l'école et j'étais fier d'avoir mon propre fer à vapeur. Dès le premier jour d'utilisation, le voyant du fer s'est éteint et ne s'est jamais rallumé. J'ai essayé différentes prises, mais rien n'a fonctionné. Des mois plus tard, un électricien a découvert le problème : le fusible était simplement grillé. Un fer à vapeur entier ne fonctionnait pas à cause de son fusible — l'un des éléments les plus petits et les plus insignifiants.",
+        "L'amour de Dieu à l'intérieur de nous est comme ce fusible. C'est l'une des vertus les plus ignorées dans lesquelles nous négligeons de marcher, pourtant c'est la force la plus puissante dans la vie d'un chrétien. Si on l'ignore, elle peut empêcher tout le système de fonctionner. Notre foi est vide sans amour, et la foi est la substance de notre espérance. Sans amour, la foi et l'espérance sont vides.",
+        "L'amour est notre centrale électrique. Nos prières n'ont pas d'accès sans amour, parce que Jésus a dit dans Marc 11 que si nous ne pardonnons pas, notre Père non plus ne nous pardonnera pas. Si nous ne pardonnons pas, nos péchés ne sont pas pardonnés et nous sommes considérés comme des pécheurs. L'amour pardonne et donne à nos prières accès à des réponses.",
+        "Vous vous demandez peut-être : « Où est-ce que je manque la cible ? » et vous envisagez des mesures extrêmes comme aller en délivrance ou jeûner 21 jours. Avant d'ouvrir tout le fer, vérifiez votre fusible. Peut-être avez-vous échangé votre fusible d'amour contre du pardon, de la haine ou de la malice. Dieu vous dit aujourd'hui de mettre le bon fusible, qui est Son amour répandu dans le cœur de tout croyant. Appliquez tout 1 Corinthiens 13 à votre vie et regardez votre vie fonctionner."
+      ]
+    },
+    "are-we-still-here": {
+      "title": "Sommes-nous encore là ?",
+      "summary": "Une série de questions provocatrices pour les chrétiens sur la fermeté dans la foi, la résistance à la tentation, l'obéissance à Dieu et l'engagement dans Sa mission.",
+      "paragraphs": [
+        "J'ai quelques questions pour tous les chrétiens, fondées sur nos comportements et nos réponses face à ce qui se passe sur terre. Y a-t-il encore des chrétiens qui peuvent se tenir comme les trois jeunes Hébreux quand toute une nation se prosterne ? Ils ont été menacés d'une fournaise ardente chauffée sept fois, et pourtant ils sont restés debout.",
+        "Y a-t-il encore des chrétiens qui peuvent résister à la tentation même avec une merveilleuse promotion en vue, comme Joseph l'a fait avec la femme de Potiphar ? Il a résisté jusqu'à fuir. Y a-t-il encore des gens qui peuvent dire non à un pot-de-vin, aussi agréable soit-il ? Y a-t-il encore des chrétiens prêts à obéir à Dieu quoi qu'il arrive, comme Abraham qui a quitté la maison de son père et était prêt à offrir Isaac ?",
+        "Y a-t-il encore des chrétiens engagés dans la mission que Dieu leur a donnée ? Pensez à Jésus qui a dit : « Ma nourriture est de faire la volonté de Celui qui m'a envoyé et d'accomplir Son œuvre. » Paul a dit : « Malheur à moi si je n'annonce pas l'Évangile. » Pierre a répondu aux juges : « Devons-nous obéir à l'homme plutôt qu'à Dieu ? » Daniel était si engagé qu'il s'est tenu devant les rois.",
+        "Toutes ces questions sont pour vous remettre sur pied. Il est temps de vous lever et d'être qui Il veut que vous soyez, pas qui vous voulez être. Il veut des soldats, alors sortez de ce stade de bébé et grandissez. Y a-t-il encore de vrais chrétiens qui reflètent la vie de Christ partout où ils se trouvent ? Si oui, la question est : faites-vous partie d'eux ?"
+      ]
+    },
+    "what-is-in-thanksgiving": {
+      "title": "Qu'y a-t-il dans l'action de grâce ?",
+      "summary": "Explorer le pouvoir de l'action de grâce pour débloquer la multiplication, la résurrection, l'intervention divine et la révélation dans la vie du croyant.",
+      "paragraphs": [
+        "La plupart du temps, même en tant que chrétiens, lorsque certains événements surviennent, nous avons tendance à nous plaindre, sans savoir que nous ne faisons que compliquer les choses. La vérité est que l'action de grâce obtient l'attention et l'intervention de Dieu.",
+        "L'action de grâce est votre accès à la multiplication et à l'accroissement. Dans Jean 6, Jésus a nourri cinq mille hommes avec cinq pains d'orge et deux petits poissons. Il a pris les aliments et a rendu grâces, et au moment de les distribuer, les aliments étaient passés d'un état singulier à un état multiplié par l'action de grâce.",
+        "L'action de grâce est votre accès à la résurrection et à la vie. Il peut y avoir des situations mortes autour de votre vie, dans votre vie et concernant votre vie. Tout ce que vous avez à faire, c'est rendre grâces à Dieu. Dans Jean 11, Jésus a rendu grâces au tombeau de Lazare et un miracle s'est produit. L'action de grâce apporte aussi l'intervention de Dieu. Dans 2 Chroniques 20, les Israélites ont placé des chantres devant leur armée et lorsqu'ils ont commencé à chanter des louanges, l'Éternel a dressé des embuscades contre leurs ennemis.",
+        "L'action de grâce est votre accès à la révélation. Quand vous abordez la Parole de Dieu sans joie dans votre cœur, vous n'avez peut-être pas accès à ses vérités. Ésaïe 12:3 nous dit que la joie est notre accès aux promesses cachées dans les puits du salut. Alors réjouissez-vous et entrez dans les louanges à Dieu pour obtenir Son intervention dans votre vie. Ne confondez jamais votre condition avec votre portion."
+      ]
+    },
+    "he-called-you-friend": {
+      "title": "Il t'a appelé ami",
+      "summary": "Comprendre l'incroyable privilège d'être appelé ami de Christ et les trois couches de protection divine disponibles pour chaque croyant.",
+      "paragraphs": [
+        "Dans Jean 15:14-15, Jésus a dit : « Vous êtes mes amis, si vous faites tout ce que je vous commande... Je vous ai appelés amis, parce que je vous ai fait connaître tout ce que j'ai entendu de mon Père. » C'est une déclaration ultime. Si le Président de votre nation annonce que vous êtes son ami, dites-moi quelle prison peut vous retenir captif ? Imaginez maintenant l'être le plus puissant de l'univers vous appelant Son ami.",
+        "En tant qu'enfant de Dieu, vous avez une triple barrière de protection autour de vous. La première couche est Christ Lui-même. Nous sommes assis ensemble dans les lieux célestes en Jésus-Christ, bien au-dessus de toute principauté, puissance, force et domination. Tout ce qui veut vous atteindre doit d'abord passer par Lui.",
+        "La deuxième couche est Dieu Lui-même. Psaume 125:2 dit que l'Éternel entoure Son peuple. Dieu a dit dans Zacharie 2:5 qu'Il sera une muraille de feu autour de Son peuple. La troisième couche est une couverture angélique. Psaume 34:7 dit que l'ange de l'Éternel campe autour de ceux qui Le craignent. Dans 2 Rois 19, un seul ange a tué 185 000 soldats.",
+        "Que pouvons-nous dire de plus ? Si Dieu est pour nous, qui peut être contre nous ? Aujourd'hui, choisissez de venir à la connaissance de la vérité qu'en tant qu'enfant de Dieu, Il est de votre côté et engagé pour votre bien-être."
+      ]
+    },
+    "what-exactly-was-christs-commandment": {
+      "title": "Quel était exactement le commandement de Christ ?",
+      "summary": "Le commandement de Christ va au-delà d'aimer son prochain comme soi-même — il nous appelle à nous aimer les uns les autres comme Il nous a aimés, du même amour inconditionnel et sacrificiel.",
+      "paragraphs": [
+        "La plupart d'entre nous pensent que le commandement que Christ nous a donné était « aime ton prochain comme toi-même », mais nous avons tort. Il nous a donné quelque chose de plus profond et de plus efficace — ce que j'appelle l'arme la plus puissante que nous ayons contre le monde. Dans Jean 13:34, Jésus a dit : « Je vous donne un commandement nouveau : Aimez-vous les uns les autres ; comme je vous ai aimés, aimez-vous les uns les autres. »",
+        "Nous avons été transportés du domaine de « aime ton prochain comme toi-même » au domaine de « aimez-vous les uns les autres comme je vous ai aimés. » Cela signifie le même amour inconditionnel qu'Il avait pour nous, qu'après que nous L'ayons persécuté, craché sur Lui, flagellé et crucifié, Il a dit depuis la croix : « Père, pardonne-leur, car ils ne savent pas ce qu'ils font. »",
+        "Ce même amour qui a fait descendre le Roi des rois sur terre comme un bébé afin que nous ayons accès au salut — c'est l'amour qu'Il nous a commandé d'avoir. La question est : êtes-vous obéissant ?"
+      ]
+    },
+    "it-is-not-just-about-you": {
+      "title": "Il ne s'agit pas seulement de toi",
+      "summary": "Le salut n'est pas seulement pour un bénéfice personnel — c'est un appel au service, à porter du fruit pour Christ et à prendre soin de Ses brebis.",
+      "paragraphs": [
+        "La vérité est que la plupart d'entre nous, chrétiens, ne savons pas vraiment à quoi notre salut était destiné, et nous restons donc insatisfaits parce que nous n'accomplissons pas vraiment notre mission. Dans Jean 15, Jésus a dit : « Je suis le vrai cep... Tout sarment qui est en moi et qui ne porte pas de fruit, il l'enlève. » La vraie raison de votre salut est de porter du fruit.",
+        "Votre salut n'était pas seulement pour vous. C'était un appel au service auquel Christ vous a invité pour que, par Lui, vous puissiez porter des fruits. La plupart d'entre nous gardons le message du salut pour nous-mêmes, sans nous soucier de ce que les gens autour de nous peuvent traverser.",
+        "Dans Jean 21:15-17, Jésus a donné une preuve de notre amour pour Lui : « Pais mes brebis. » Notre amour pour notre Sauveur s'exprime par notre soin pour Ses brebis et Ses agneaux. Aujourd'hui, choisissez d'aller récupérer Ses brebis perdues, car c'est votre appel.",
+        "Ézéchiel 34 met en garde contre les bergers égoïstes qui se nourrissent eux-mêmes au lieu du troupeau. Évitez cela en tendant la main aux perdus, aux non-sauvés et aux malades — tous ceux que Christ a atteints, car vous êtes Son représentant."
+      ]
+    },
+    "now-a-christian-what-next": {
+      "title": "Maintenant chrétien, et ensuite ?",
+      "summary": "Le nom chrétien a été donné pour refléter un mode de vie — ce n'est pas une bannière ou un emblème, mais une vie qui reflète Christ.",
+      "paragraphs": [
+        "Le nom « chrétien » a été donné dans Actes 11:26 à cause des œuvres et du mode de vie des apôtres. Dans Actes 4, Pierre et Jean étaient perçus comme des hommes illettrés, mais les gens reconnaissaient qu'ils avaient été avec Christ. Une vie chrétienne ne peut pas être feinte ; elle est réfléchissante et réelle.",
+        "Les apôtres ne se sont pas nommés eux-mêmes chrétiens. Ils ont été nommés ainsi à cause du genre de vie qu'ils menaient. Ils reflétaient la vie de Christ. Par conséquent, le nom chrétien n'est pas une bannière, un emblème, un drapeau ou une histoire. C'est un mode de vie.",
+        "Vous portez donc le nom, mais vivez-vous la vie ? Ce qui fait de vous un chrétien n'est pas seulement le nom, mais la vie. Décidez de vivre la vie de Christ. Comme Galates 2:20 le dit : « Je suis crucifié avec Christ ; ce n'est plus moi qui vis, c'est Christ qui vit en moi. »"
+      ]
+    },
+    "why-were-you-saved": {
+      "title": "Pourquoi as-tu été sauvé ?",
+      "summary": "Le salut n'est pas la fin — c'est un appel au service. Nous avons été sauvés pour porter du fruit pour Christ et pour rechercher premièrement Son royaume.",
+      "paragraphs": [
+        "La plupart du temps, nous pensons que la vie s'arrête une fois que nous sommes sauvés et que notre devoir s'arrête là. Le Saint-Esprit utilise cet article pour changer notre mentalité. Votre salut n'est pas seulement pour vous-même — c'est un appel au service. Nous avons été sauvés pour servir.",
+        "Jésus a dit dans Jean 15:16 : « Ce n'est pas vous qui m'avez choisi, mais moi je vous ai choisis et je vous ai établis afin que vous alliez et que vous portiez du fruit, et que votre fruit demeure. » Le but principal de notre salut est que nous soyons des porteurs de fruit pour Christ et que nous assurions que ces fruits demeurent.",
+        "Mais cherchez premièrement le royaume et la justice de Dieu, et toutes ces choses vous seront données par-dessus. C'est la promesse de Matthieu 6:33. Quand nous priorisons le royaume de Dieu, tout le reste se met en place."
+      ]
+    },
+    "what-do-you-do-before-your-manifestation": {
+      "title": "Que fais-tu avant ta manifestation ?",
+      "summary": "Toute la création attend avec impatience la révélation des fils de Dieu — la question est de savoir si nous serons prêts quand notre temps de manifestation viendra.",
+      "paragraphs": [
+        "Romains 8:19 dit : « Aussi la création attend-elle avec un ardent désir la révélation des fils de Dieu. » Toute la terre attend notre manifestation en tant que fils de Dieu. Le monde est dans les ténèbres, attendant que nous venions pour être la lumière.",
+        "Mais il y a une question à méditer : quand vous serez révélé, serez-vous prêt ? Imaginez un scénario où tout le monde attend que le président sorte d'une pièce, et qu'un bébé en couches en sorte à la place. Quelle serait l'expression sur le visage de chacun ?",
+        "Nous sommes tous appelés à nous préparer pour notre révélation, car le temps de notre manifestation est proche. Si nous apparaissons non préparés, qu'attendons-nous qu'il arrive à la terre ? Alors, préparez-vous !"
+      ]
+    },
+    "its-a-commandment": {
+      "title": "C'est un commandement",
+      "summary": "En tant que temple de Dieu et lumière du monde, nous avons le commandement d'aller dans le monde et de prêcher l'Évangile avec l'autorité de Christ.",
+      "paragraphs": [
+        "1 Corinthiens 3:16 dit : « Ne savez-vous pas que vous êtes le temple de Dieu et que l'Esprit de Dieu habite en vous ? » Nous sommes l'Arche de Dieu du Nouveau Testament parce que nous portons Sa présence. Mais le point est celui-ci : en tant que chrétien, que faites-vous de la présence et de la puissance de Dieu qui sont en vous ?",
+        "Nous n'avons pas été sauvés par Dieu pour nous seuls. Nous avons été sauvés pour amener d'autres âmes dans le Royaume de Dieu. Dans Matthieu 28:18-20, Jésus a dit : « Tout pouvoir m'a été donné dans le ciel et sur la terre. Allez donc et faites de toutes les nations des disciples. » Il a dit que tout pouvoir Lui a été donné, puis Il a dit : « Allez. » Nous devons aller dans le monde avec Son autorité et Sa puissance pour prêcher l'Évangile.",
+        "Le sang de Jésus n'a pas été versé sur la croix en vain. Il a versé Son sang pour racheter le monde entier du péché et de la mort. Nous devons sortir pour faire respecter cette victoire. Le monde devient plus sombre, mais une petite bougie brille le plus dans la pièce la plus sombre. Puisqu'Il a dit que nous sommes la lumière du monde, soyez la lumière et montrez aux gens le chemin de la vie.",
+        "Nous sommes le sel de la terre — nos vies doivent donner de la valeur et du sens aux gens. Nous avons le commandement de prêcher l'Évangile, alors veuillez l'accomplir."
+      ]
+    },
+    "purpose-and-spirituality": {
+      "title": "But et spiritualité",
+      "summary": "Comprendre le but que Dieu vous a donné nécessite une relation personnelle avec votre Père céleste, car Lui seul connaît les plans qu'Il a pour vous.",
+      "paragraphs": [
+        "L'évêque David Oyedepo a dit : « Si le but d'une chose n'est pas connu, l'abus est inévitable. » Nous avons précédemment examiné pourquoi nous devrions servir Dieu, découvrant que c'est pour notre propre bien. Maintenant, nous explorons un autre avantage : atteindre le but de Dieu pour votre vie. En tant que produit de Dieu, vous avez un but qui a été prédéterminé par votre Père céleste.",
+        "Jérémie 29:11 dit : « Car je connais les projets que j'ai formés sur vous, dit l'Éternel, projets de paix et non de malheur, afin de vous donner un avenir et de l'espérance. » Dieu a une fin attendue pour vous, et c'est pourquoi Il vous a créé. Même avant que Jérémie ne soit formé dans le ventre, Dieu lui avait déjà donné une mission.",
+        "Comment la spiritualité entre-t-elle en jeu ? Le christianisme n'est pas une religion mais un mode de vie — une relation personnelle avec votre Père céleste. Jérémie 33:3 dit : « Invoque-moi, et je te répondrai, et je te montrerai de grandes choses et des choses cachées que tu ne connais pas. » Si vous ne parlez pas à votre père terrestre, il ne vous dira jamais certaines choses. De la même manière, si vous n'avez pas de relation personnelle avec votre Père céleste, vous ne pourrez jamais connaître Ses plans pour vous.",
+        "Votre vie compte ; vous n'êtes pas un accident biologique. Vous avez un but, alors asseyez-vous avec Sa Parole et avec l'aide du Saint-Esprit, dénouez votre mission divine. Souvenez-vous : une relation ne peut s'améliorer que si vous travaillez dessus."
+      ]
+    },
+    "it-pays-to-serve-god": {
+      "title": "Il paie de servir Dieu",
+      "summary": "Tout ce que Dieu exige de nous — la prière, la lecture de la Bible, le service à l'église, l'adoration — est pour notre propre bien, comme Deutéronome 10:13 le précise.",
+      "paragraphs": [
+        "Cet article vise à vous montrer les avantages de servir Dieu. Quelle est l'essence de la dévotion, du service à l'église, de la prière et de la lecture de la Bible ? Tout se résume à Deutéronome 10:12-13 : « Et maintenant, Israël, qu'est-ce que l'Éternel ton Dieu demande de toi, sinon que tu craignes l'Éternel ton Dieu... que tu gardes les commandements de l'Éternel... pour ton bien ? »",
+        "Notez les trois derniers mots : « pour ton bien. » Vous faites tout ce qui est énuméré ci-dessus pour votre propre bien. L'évêque David Oyedepo a dit : « Dieu n'a pas besoin de vous ou de moi — c'est nous qui avons besoin de Lui dans tous les aspects de notre vie. » Rien de ce que vous faites ne change qui Dieu est, mais tout ce que vous faites change qui vous êtes, soit positivement, soit négativement.",
+        "Matthieu 6:33 et Josué 1:8 sont des écritures clés pour ce dont nous discutons. En tant que chrétien, comprenez que tout ce que vous décidez de faire pour Dieu est pour votre propre bien. Will Rogers a dit : « Vous pourriez être sur la bonne voie, mais si vous restez assis là, vous vous ferez écraser. » Dieu veut que vous avanciez, que vous grandissiez, que vous Le connaissiez davantage et que vous deveniez plus fort aujourd'hui qu'hier."
+      ]
+    },
+    "your-first-love": {
+      "title": "Ton premier amour",
+      "summary": "Un appel à se souvenir et à retourner aux premières œuvres que nous faisions quand nous étions passionnés pour Dieu, avant de devenir froids ou trop matures pour elles.",
+      "paragraphs": [
+        "Apocalypse 2:4 dit : « Mais ce que j'ai contre toi, c'est que tu as abandonné ton premier amour. » Jésus parlait à l'église d'Éphèse. Il les a d'abord félicités pour leur travail et leur patience, puis Il a dit qu'ils avaient abandonné leur premier amour, et Il le leur reprochait.",
+        "Que signifie « premier amour » ? D'Apocalypse 2:5, nous comprenons que votre premier amour est constitué des premières œuvres que vous aimiez faire. Quand vous étiez nouvellement né de nouveau, vous vouliez plaire à Dieu par tous les moyens, comme les bébés veulent l'attention de leurs parents. Vous vous adonniez à diverses activités pour grandir, apprendre et plaire à Dieu.",
+        "Pensez à votre vie maintenant. Quelles sont ces choses que vous faisiez quand vous étiez encore jeune dans la foi que vous ne faites plus ? Peut-être étiez-vous un adorateur vibrant, un membre de chorale, un guerrier de prière, ou quelqu'un qui aimait prêcher la Parole de Dieu partout où vous alliez.",
+        "Vous faites peut-être encore de bonnes œuvres, mais ces choses que vous regardez maintenant en disant « Je suis trop vieux pour ça » ou « Je suis trop grand pour ça » — Jésus vous dit aujourd'hui : « Souviens-toi d'où tu es tombé, repens-toi et pratique tes premières œuvres. » S'il vous plaît, repentez-vous."
+      ]
+    },
+    "just-a-reminder": {
+      "title": "Juste un rappel",
+      "summary": "Un doux rappel que sans une connexion avec Jésus, nos noms ne peuvent pas être écrits dans le Livre de Vie, et un encouragement à rester fermes.",
+      "paragraphs": [
+        "Ce n'est pas une lettre de condamnation mais un rappel. D'après les connaissances scientifiques, nous savons qu'un livre est fait d'arbres. Le Saint-Esprit m'a fait comprendre que Jésus est notre arbre de Vie, tout comme l'arbre de vie dans le Jardin d'Éden. Le Livre de Vie vient de Jésus, qui est notre arbre de Vie.",
+        "Cela signifie que sans une relation avec Lui, votre nom ne peut pas être écrit dans le Livre de Vie. Beaucoup de gens n'aiment pas discuter de ce sujet, mais il est réel, et Jésus revient bientôt. Comme Apocalypse 20:15 le dit : « Quiconque ne fut pas trouvé écrit dans le livre de vie fut jeté dans l'étang de feu. »",
+        "C'est aussi une exhortation aux chrétiens. Jésus a dit dans Luc 9:62 : « Quiconque met la main à la charrue et regarde en arrière n'est pas propre au royaume de Dieu. » Si vous servez Dieu, ne regardez pas en arrière. Tenez ferme, car les souffrances du temps présent ne sont pas à comparer à la gloire qui sera révélée en nous.",
+        "Si vous n'avez pas de relation avec Jésus, réglez cela avec Lui dès maintenant en Le confessant comme votre Seigneur et Sauveur. Prenez la décision de ne jamais retourner à vos anciennes voies et demandez la grâce de rester ferme en Lui. Choisissez aujourd'hui qui vous servirez."
+      ]
+    },
+    "your-role-to-play-as-a-christian": {
+      "title": "Ton rôle à jouer en tant que chrétien",
+      "summary": "En utilisant Caïn et Abel comme exemples, cet article explore les deux devoirs clés de tout chrétien : l'évangélisation et la formation de disciples.",
+      "paragraphs": [
+        "La plupart des chrétiens ne savent pas qu'une fois sauvés, nous avons des rôles importants à jouer dans le service de Dieu. En utilisant deux personnages de la Bible — Caïn et Abel — leurs vocations expliquent nos devoirs. Genèse 4:2 dit : « Abel fut berger de brebis, et Caïn fut cultivateur de la terre. »",
+        "Caïn était un cultivateur de la terre, représentant le rôle d'évangélisation — prêcher aux autres et prier pour qu'ils soient sauvés. Ces personnes ont le talent d'affronter la foule et de prêcher l'Évangile quels que soient les défis. Elles vont jusqu'au bout pour s'assurer que les gens autour d'elles connaissent Christ.",
+        "Abel était le gardien des brebis, représentant le rôle de nourrir les croyants. Ces personnes ont pour rôle de garder les brebis de Christ — veiller à ce que leurs frères et sœurs restent connectés à Lui et ne s'écartent pas de l'amour pour Lui. Cela peut se faire en enseignant les autres croyants et en priant pour qu'ils restent dans la foi.",
+        "Maintenant, vous devriez savoir à quelle partie vous pouvez participer. Ce qui compte, c'est : ne soyez pas inactif. Ce qui a séparé Caïn d'Abel, c'est que Dieu a accepté l'offrande d'Abel et rejeté celle de Caïn parce qu'il n'avait pas bien fait. Quoi que vous fassiez pour Christ, faites-le bien et de tout votre cœur afin que votre résultat soit accepté par Dieu."
+      ]
+    },
+    "the-tree-of-life": {
+      "title": "L'arbre de vie",
+      "summary": "Une réflexion sur comment Jésus est notre Arbre de Vie, et pourquoi chercher la connaissance sans Christ revient à choisir l'arbre de la connaissance plutôt que l'arbre de vie.",
+      "paragraphs": [
+        "Dans Genèse 2, Dieu a créé l'arbre de vie et l'arbre de la connaissance du bien et du mal. Il a dit à Adam de ne pas manger de l'arbre de la connaissance, mais Adam pouvait manger de l'arbre de vie et avoir la vie éternelle. Pourtant, Adam et Ève ont choisi l'arbre de la connaissance à la place.",
+        "Vous êtes peut-être en colère contre Adam, mais vous faites la même chose si vous n'êtes pas né de nouveau. Jésus a dit dans Jean 14:6 : « Je suis le chemin, la vérité et la vie. » Il est notre arbre de vie. Mais au lieu de vous connecter à Lui et de recevoir la vie éternelle, beaucoup courent après la connaissance, les diplômes et les certificats.",
+        "Il n'y a rien de mal à acquérir des connaissances, mais il est mal de le faire sans avoir Christ en vous. Marc 8:36 demande : « Que sert-il à un homme de gagner tout le monde, s'il perd son âme ? » Tout est vanité sans Christ. Ce sont les derniers temps, et vous ne voudrez pas être laissé de côté après Son second avènement.",
+        "La bonne nouvelle, c'est que c'est une opportunité de recevoir Christ dans votre vie et de recevoir la vie éternelle. Si vous avez pris votre décision, confessez-Le comme Seigneur et croyez dans votre cœur que Dieu L'a ressuscité des morts, et vous serez sauvé."
+      ]
+    },
+    "its-a-summary": {
+      "title": "C'est un résumé",
+      "summary": "Toute la loi est résumée en un seul commandement : aime ton prochain comme toi-même. Par l'amour, nous accomplissons toutes les exigences de Dieu.",
+      "paragraphs": [
+        "La plupart des gens croient que la loi de l'Ancien Testament est révolue parce que nous sommes maintenant au temps de la grâce. Mais le Saint-Esprit m'a conduit à Romains 13:9-10, qui résume tout : « Tu aimeras ton prochain comme toi-même... L'amour ne fait point de mal au prochain ; l'amour est donc l'accomplissement de la loi. »",
+        "Comment aimer votre prochain comme vous-même ? Tout ce que vous désirez pour vous-même, désirez-le aussi pour votre prochain. Matthieu 7:12 dit : « Tout ce que vous voulez que les hommes fassent pour vous, faites-le de même pour eux. » Cela explique comment aimer votre prochain. Si vous ne permettriez pas que quelque chose vous arrive, ne le permettez pas pour votre prochain.",
+        "Votre prochain n'est pas seulement votre ami. D'après l'histoire du Bon Samaritain, nous savons que votre prochain est toute autre personne que vous. La loi est toujours en vigueur, mais nous ne vivons pas sous la loi — nous sommes sous la grâce, et la loi a été résumée en une seule : aime ton prochain comme toi-même.",
+        "Certains pourraient penser que puisque nous sommes au temps de la grâce, nous pouvons faire ce que nous voulons. Romains 6:1-2 répond à cela : « Certes non ! Nous qui sommes morts au péché, comment vivrions-nous encore dans le péché ? » Essayez toujours de garder les commandements de Dieu, et la meilleure façon d'y parvenir est d'aimer vos prochains."
+      ]
+    },
+    "a-lack-of-direction": {
+      "title": "Un manque de direction",
+      "summary": "Beaucoup de gens manquent de direction dans la vie parce qu'ils ne s'arrêtent pas pour réfléchir à leurs choix, et la seule véritable source de direction est Jésus-Christ.",
+      "paragraphs": [
+        "La plupart des humains aujourd'hui se trompent parce qu'ils manquent de direction. Beaucoup de parents disent : « Si j'avais eu cette opportunité que quelqu'un me dise ces choses, je ne serais pas là aujourd'hui. » Pourtant, la plupart des jeunes ne se soucient toujours pas de planifier leur chemin et sont facilement influencés par les décisions de leurs amis.",
+        "La seule façon d'aborder cela est de dire la vérité aux jeunes : nous ne réfléchissons pas. Pas réfléchir dans le sens que nous ne sommes pas concernés par les conséquences ou les gains de chaque activité que nous faisons. La vie n'est pas une fête foraine. Nous ne pouvons pas simplement entrer dans cette vie et gaspiller des ressources.",
+        "Nous devons commencer à réfléchir, et pour commencer à réfléchir, nous devons nous connecter à une source. Il n'y a qu'une seule vraie source, qui est Jésus-Christ, car sans Lui nous ne pouvons rien faire. Alors s'il vous plaît, commençons à réfléchir."
+      ]
+    },
+    "a-message-for-you": {
+      "title": "Un message pour toi",
+      "summary": "En utilisant l'histoire de l'Exode, cet article illustre comment le retour au péché après avoir été sauvé par Christ revient à choisir de retourner en esclavage en Égypte.",
+      "paragraphs": [
+        "Le Saint-Esprit voudrait vous parler. Il y a longtemps, Dieu a utilisé Moïse pour délivrer Son peuple de Pharaon. Ils ont traversé beaucoup d'épreuves avant d'atteindre la Terre Promise. Imaginez qu'après y être arrivé, l'un des Israélites se réveille un matin et décide de retourner en Égypte pour servir comme esclave, juste parce qu'il veut goûter à la nourriture des Égyptiens.",
+        "Vous et moi sommes comme ce fils de l'Israélite quand nous péchons. Jésus-Christ a été utilisé par Dieu pour nous racheter du péché et nous sauver de la souffrance. Il a tant souffert et est finalement mort pour nous afin que nous puissions être délivrés du péché et de la mort. Mais quand nous décidons de retourner au péché, nous sommes comme ce fils qui a choisi de souffrir entre les mains de Pharaon juste pour de la nourriture.",
+        "Comment pensez-vous que Christ se sent quand nous péchons ? Il était pur mais a reçu la mission de nous libérer. Il n'est pas heureux quand nous retournons au péché. C'est comme Lui demander de recommencer tout le processus. Repensons nos voies. Comment votre vie fait-elle sentir Christ en ce moment ?",
+        "Si vous êtes retourné au péché, Il est prêt à refaire le processus et à vous ramener. Ésaïe 30-31 montre la colère de Dieu quand nous nous rebellons mais aussi la bénédiction de Le suivre. Si vous avez pris la décision de revenir à Christ, confessez vos péchés et demandez-Lui de revenir dans votre vie."
+      ]
+    },
+    "what-real-love-is-like": {
+      "title": "À quoi ressemble le véritable amour",
+      "summary": "Une parabole d'un roi et de son fils illustre la profondeur de l'amour de Dieu pour nous — Il a donné Son Fils unique pour porter les conséquences de nos péchés.",
+      "paragraphs": [
+        "Il y avait un Roi qui avait un fils unique qu'il aimait tendrement. Ses sujets n'étaient pas loyaux envers lui, mais à cause de son amour pour eux, il ne voulait pas les exécuter. Quelqu'un devait porter les conséquences de leurs offenses, mais il n'a trouvé personne de pur parmi ses sujets. Alors son fils unique s'est porté volontaire pour porter la punition de toutes les offenses.",
+        "Que pouvez-vous dire de l'amour d'un père qui a permis à son fils unique de porter le fardeau des autres ? Et que pouvez-vous dire d'un fils qui s'est porté volontaire pour porter les conséquences d'offenses qu'il n'a pas commises ? C'est un amour pur et véritable qui ne peut être altéré.",
+        "Vous et moi sommes comme les sujets de l'histoire. Nous avons péché, et Dieu le Roi a envoyé Son Fils unique, Jésus-Christ, mourir pour nous afin que nous puissions être sauvés. Mais au lieu de choisir la bonne chose, nous continuons dans le péché. Avez-vous donné à Dieu l'amour qu'Il mérite ? Avez-vous choisi la voie du salut par Christ ?",
+        "Si vous n'êtes pas encore sauvé, la seule façon de Lui rendre l'amour qu'Il vous a donné est de Lui donner votre vie d'abord. Acceptez Jésus-Christ dans votre vie et permettez-Lui de régner, car sans Lui vous ne pouvez rien faire. Et si vous êtes sauvé, souvenez-vous qu'une chose est d'être sauvé et une autre de le rester. Que votre vie quotidienne soit semblable à celle de Christ."
+      ]
+    },
+    "where-do-you-stand": {
+      "title": "Où te tiens-tu ?",
+      "summary": "Un appel à examiner où vous en êtes avec Dieu, en utilisant l'histoire de la chute d'Adam et Ève pour illustrer le choix entre la vie et la mort qui se présente à chaque personne.",
+      "paragraphs": [
+        "Il y avait un Roi qui a fait deux petits rois et les a placés dans un palais avec tout ce dont ils avaient besoin, mais leur a dit de ne pas manger d'un aliment particulier. Un serviteur du grand Roi leur a menti, et ils ont mangé l'aliment défendu. Cette désobéissance les a empêchés de voir le surnaturel.",
+        "Vous et moi sommes comme ces deux petits rois. Ne blâmez pas Adam et Ève pour ce que vous traversez maintenant. De la même manière qu'ils ont eu un choix, Jésus nous donne un choix dans Deutéronome 30:19 — la vie ou la mort. Pourtant, nous succombons encore au péché et blâmons le diable.",
+        "Dieu nous a donné Son Fils unique pour mourir pour nous afin que nous soyons sauvés, mais nous choisissons encore de continuer dans le péché. Très bientôt, Il viendra prendre ceux qui Lui sont fidèles pour le Paradis tandis que les infidèles seront jetés dans l'étang de feu. De quel côté êtes-vous ? Il ne s'agit pas de votre église, de votre pasteur ou de votre famille — il s'agit seulement de votre vie, car leur salut ne peut pas vous emmener au ciel.",
+        "Si vous prétendez être du côté du Seigneur mais que l'une des œuvres de la chair énumérées dans Galates 5:19-21 se trouve dans votre vie, vous devez retourner à Dieu et demander pardon. Il y a une voie qui semble droite à l'homme, mais son issue est la destruction. Au dernier jour, vous vous tiendrez seul et ferez face à votre jugement. Vous devez savoir qui vous servez et si vous Le servez sincèrement et de tout votre cœur."
       ]
     }
   }
