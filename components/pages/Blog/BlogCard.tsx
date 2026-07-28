@@ -49,7 +49,7 @@ function BlogCard({ post, index }: BlogCardProps) {
             {t(`blog:post.${post.slug}.summary`, post.slug)}
           </p>
           <div className='flex items-center justify-between mt-auto'>
-            <time className='text-sm text-zinc-500 dark:text-zinc-500' dateTime={post.date}>
+            <time className='text-sm text-zinc-600 dark:text-zinc-400' dateTime={post.date}>
               {new Date(post.date).toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',
