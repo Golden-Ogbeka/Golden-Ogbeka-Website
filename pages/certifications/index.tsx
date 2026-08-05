@@ -48,12 +48,12 @@ export default function Certifications() {
                     href={cert.link}
                     target='_blank'
                     rel='noreferrer'
-                    className='inline-flex items-center text-sm font-medium text-accent hover:text-blue-400 transition-colors'
+                    aria-label={t('a11y.viewCertificate').replace('{title}', t(`certifications:certification.${index}.title`, cert.title))}
+                    className='inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-blue-400 focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none transition-colors rounded-md px-2 py-1.5 -ml-2'
                     onClick={() => trackEvent('click', 'certification', cert.title)}
                   >
-                    {t('a11y.viewCertificate').replace('{title}', t(`certifications:certification.${index}.title`, cert.title))}
                     <svg
-                      className='w-4 h-4 ml-1'
+                      className='w-4 h-4'
                       fill='none'
                       stroke='currentColor'
                       viewBox='0 0 24 24'
@@ -65,6 +65,7 @@ export default function Certifications() {
                         d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
                       />
                     </svg>
+                    {t('certifications:viewCertificate')}
                   </a>
                 </div>
               )}
