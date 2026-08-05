@@ -1,0 +1,308 @@
+{
+  "page": {
+    "title": "Blog",
+    "subtitle": "Thoughts on engineering, AI, and software craft.",
+    "noPosts": "No posts found in this category."
+  },
+  "category": {
+    "all": "All",
+    "tech": "Tech",
+    "ai": "AI",
+    "tips": "Tips",
+    "faith": "Faith"
+  },
+  "readMore": "Read more",
+  "backToBlog": "Back to blog",
+  "sort": {
+    "label": "Sort by",
+    "newest": "Newest first",
+    "oldest": "Oldest first"
+  },
+  "pagination": {
+    "label": "Blog pagination",
+    "prev": "Previous",
+    "next": "Next",
+    "page": "Page"
+  },
+  "post": {
+    "africa-needs-more-creators": {
+      "title": "Africa Needs More Creators",
+      "summary": "Africa's dependence on external technology is a vulnerability. It's time to shift from consuming to creating.",
+      "paragraphs": [
+        "On June 15, 2026, the Central Bank of Nigeria mandated all banks, fintech companies, and payment service providers to begin using local servers to manage all payment transactions within Nigeria. At first this felt infuriating — how could companies be expected to meet an obligation when the basic infrastructure hasn't been provided? But then it reminded me of one of my core worries about Africa: we are too dependent on external creators.",
+        "Africa is hailed as one of the most promising continents for innovation and entrepreneurship, yet what we see is almost total dependence on other continents for creation so that we can then leverage those creations and build ours for profit. If AWS shuts down today, tens of thousands of companies in Africa would experience a digital blackout with no sustainable alternative. When PayPal blacklisted Nigeria from international payments, it caused massive disruption until African companies rose to fill the gap.",
+        "That's the paradox — when put under pressure, Africa does have the potential to be creative. About 12 companies from Africa created international payment solutions when PayPal blocked Nigeria. The CBN directive would similarly be met by companies arising to find solutions. That's the power resident in Africa. However, I'm calling for it to become our common theme — not only when things go wrong.",
+        "It's time to begin searching for inventions and create a culture that encourages people to think, create, and innovate. Instead of sitting and just using the tools, software, and programs created by other continents, begin to learn how you can also create those tools. The knowledge is out there. We just need to search it out.",
+        "Be a creator and not just a consumer. You also have the Creator's Gene in you. My name is Golden Ogbeka, and I'm a Solutions Expert specializing in solving problems across tech, finance, agriculture, logistics, real estate, education, and various other sectors."
+      ]
+    },
+    "do-the-difficult-things": {
+      "title": "Do The Difficult Things",
+      "summary": "Comfort is the enemy of growth. Stepping out of your zone is the only way to become a better version of yourself.",
+      "paragraphs": [
+        "These recent months have been the most enlightening to me — months that made me reflect on my journey and make hard choices. Before the popularity of artificial intelligence, I felt really comfortable. I was good at building frontend applications and was never afraid to take on any project. But before I took frontend as my core skill, I actually began my journey with Java. Not many people know that I was originally a backend engineer.",
+        "What changed? While attempting to build a global business solving customer acquisition in the poultry industry, I did basically everything — managed the cash book, built the backend with Node.js, built the web with EJS and later React, built mobile with React Native, created video content, did illustrations, marketing, customer research, and customer support. I did it all because I didn't have the money to pay people. But what did this do to me? I got burned out when COVID hit.",
+        "Because of the burnout and trying to recover slowly, I tilted towards what came easily. I realized most people ran away from CSS, but to me it was easy. I noticed my brain had to do more work when coding backend, so I chose to focus only on frontend even when I knew it was too easy for me. Fast forward to this year, I had become an expert — no UI was impossible for me. But then AI came and jolted me from my sleep.",
+        "Because I was good at my job, I didn't pay much attention to learning things that really mattered — machine learning, complex algorithms, distributed computing system design, complex architectures. I learned what I needed to and felt comfortable, but I didn't know deep enough. That's what AI came to remind me, and by extension, you. Trust me, I have learned my lesson.",
+        "So learn from my experience. Don't sit back and think because you mastered a skill means you would always enjoy comfort. Sometimes our worst enemy is the very comfort we enjoy. Go out of your comfort zone. Be a better you. Challenge yourself to do the difficult things. Watch those long video lessons. It might seem difficult at the beginning, but that's how everything in life seems when you begin. Remember when you first started learning to type? Well, look at you now."
+      ]
+    },
+    "more-countries-need-to-be-like-canada": {
+      "title": "More Countries Need To Be Like Canada",
+      "summary": "While the world chases AI, Canada reminds us that investment in human capital is the real key to survival.",
+      "paragraphs": [
+        "The entire world is in a frenzy about AI. This frenzy is not a delusion — AI is arguably the best discovery of man in recent generations. However, it puts too much emphasis on what machines can do and less focus on what humans can do. Canada is one of the major countries not to be carried away by this frenzy. It has structures in place not to be left behind in the AI race, but also major systems to prevent losing the core fabric of economics: human capital.",
+        "In Canada's Spring Economic Update of 2026, an announcement was made for the launch of Team Canada Strong — an initiative to make major investments in skilled trades, a sector increasingly in short supply. The initiative makes apprenticeship easier so more people are equipped with skillsets highly required for human survival. When last have we heard anyone advise a young person to learn a skilled trade like plumbing, electrical engineering, or carpentry?",
+        "We see someone learning to play the piano or understanding construction and try to convince them there's more money in tech. Yet we all need these services every day and we know AI is not the replacement. Human ingenuity is irreplaceable. It is my wish for more nations, organizations, and communities to become more like Canada — not losing track of the AI race but also not losing track of raw investment in human capital.",
+        "There are many applications for companies in this space. We have already seen platforms like TaskRabbit, Wrkman, and LaborHack setting up platforms for hiring skilled tradespeople. Financial companies can invest in organizations providing these services, just like Piggyvest and Front Fundr are doing. Another avenue is to partner with governments to participate in skill development and facilitate sending skilled artisans into the marketplace.",
+        "Investment in human capital is the key to the nation's survival. Tech and AI are tools to make life easier and things faster, but they cannot replace the very core of our existence: the ability to learn, build, create, and manage. This should not be forgotten."
+      ]
+    },
+    "the-myth-about-ai-for-businesses": {
+      "title": "The Myth About AI — For Businesses",
+      "summary": "AI is not a replacement for your team. It's a tool that enables businesses to achieve goals they never could before.",
+      "paragraphs": [
+        "When ChatGPT launched on November 30, 2022, the world was thrown into panic mode. One side was excited about AI replacing human capacity. Another was concerned about job security. And another didn't even care. But the myth we're discussing today is the business side: 'Why do I have to pay someone to do it when I can use AI for it?' That statement makes a good financial argument but fails from a mission angle.",
+        "AI did not come to put business teams out of their jobs. AI came to make it possible for businesses to achieve outrageous goals within impossible deadlines. Before Generative AI, businesses had milestones with strict timelines, but because of limited human resources, they could only pursue one or two milestones at a time to prevent burnout. Now, with AI, businesses have the opportunity to build much more than before.",
+        "That introduces the need for more hands — not just normal hands, but AI-powered hands. Individuals who understand how to integrate AI into their workflow for massive results. Consider a company that builds tech solutions for rural communities. They've created commerce solutions but also dream of government and agriculture solutions. They couldn't pursue everything because of cost and burnout. Then an engineer introduced them to Claude.",
+        "With strategic thinking, they split their team into three groups — one to maintain current projects, one to build government solutions, and one to build agriculture solutions. Now they can think of new directions, have more solutions to validate investment, and can scale because real solutions create edge cases that present opportunities for more AI-powered hands.",
+        "Businesses should not see AI as a replacement for their team members. AI was never the solution — it's a tool. Don't throw away your team because you can use AI. Instead, empower your team with this amazing 21st-century tool and expand the business vision, because now you can build at a speed that was never humanly achievable before AI became a tool."
+      ]
+    },
+    "the-myth-about-ai-for-individuals": {
+      "title": "The Myth About AI — For Individuals",
+      "summary": "AI is not taking your job. It's giving you the tools to finally pursue your dreams while keeping your income.",
+      "paragraphs": [
+        "In my last post, I explained how businesses should approach AI with confidence, not fear. In this post, I focus on the individuals who feel lost or left out — people affected by mass layoffs who are considering pivoting to non-technical careers just to remain relevant. I have good news for you: it's not over yet.",
+        "Before AI became the new gold, motivational speakers said things like 'Your salary is the drug your company gives you to prevent you from pursuing your dream' or 'You cannot be wealthy by being an employee.' These put people in a dilemma: either quit and begin their dreams, or quit dreaming and hold on to their jobs. The truth is you could have made either choice and be joyful or regretting it today.",
+        "But what matters now is: what can you do about it? Before AI, most employees had dreams they wished they had time or energy for but never got to do. Well, that's until now! AI is God's gift to man — God finally saying 'now you no longer have any excuse' because we finally have tools that can do the work we needed time and energy for.",
+        "Now we can finally focus on the things we really need to do — think, negotiate, and interact — and let this wonderful tool do the hard lifting. So stop thinking about the next field to pivot into and begin building that dream you've had so long in your heart by leveraging AI. AI didn't come to take your job. It came to help you achieve your dream while you keep your job.",
+        "That's the shift in perspective that changes everything. AI is a gift, not a threat. The people who thrive won't be those who avoid AI or fear it — they'll be those who harness it as a force multiplier for their ambitions while maintaining the stability of their current income."
+      ]
+    },
+    "the-myth-about-ai-for-non-ai-users": {
+      "title": "The Myth About AI — AI Is Expensive",
+      "summary": "AI costs are declining fast. Open source models and local hardware are making AI accessible to everyone.",
+      "paragraphs": [
+        "In my previous posts, I showed how AI is an advantage for everyone who dreams and how individuals should not worry about job replacement but focus on how AI creates new opportunities. In this post, I address those who aren't excited about AI and believe the normal way of doing business should continue without it. The biggest concern I hear is cost — and even major organizations have been lamenting about this.",
+        "There is no sugarcoating it: AI usage is costing billions worldwide. Google just paid SpaceX almost one billion for AI compute storage, and to stay profitable, that expense must be passed to end-users. So why should non-AI users consider it? Because it would be FREE soon. Knowledge can neither be created nor destroyed, and AI is built on knowledge — LLMs get their intelligence from mass data input from already existing systems and content.",
+        "It is actually immoral to put a price on access to that knowledge. What people pay for is the compute power that processes it. Study the trends: LLM profitability is a dying dream. Companies depending solely on that model have been pivoting. Everyone believes there's an AI bubble about to burst. But one company showed us how the future of AI looks, and the world missed it.",
+        "In June 2026, Nvidia announced RTX Spark PCs with up to 128GB unified memory and up to 1 Petaflop FP4 AI performance — computers that can run AI locally with ease. What if you didn't need software to interact with servers? What if the server was your own computer? What if you didn't need an internet connection to communicate with AI because it's sitting right in your machine? That is the power of local models.",
+        "Nvidia just showed the world that Jarvis is no longer just for one rich billionaire named Iron Man. In a few years, AI will be for everyone with a computer. Start your journey with local models and open source tools like Ollama. Within the next five years, software AI agents will be out of vogue — everyone with a modern computer will have an AI agent working locally. That is the future I envision."
+      ]
+    },
+    "hand-it-over": {
+      "title": "Hand It Over",
+      "summary": "A reflection on surrendering hopeless situations to God, inspired by three biblical accounts of mothers whose dead sons were restored to them.",
+      "paragraphs": [
+        "I noticed something in Scripture. In Luke 7, Jesus gave a widow her dead son back. In 1 Kings 17, Elijah gave the widow of Zarephath her son back. In 2 Kings 4, Elisha gave the Shunammite woman her son back. These three women all did something powerful: they surrendered their situations to God.",
+        "No matter how dead or hopeless the situation seemed, they were willing to hand it over to the Master. The moment their situations left their hands and entered into the hands of the Master, they received a whole package in return. I asked myself, what situation am I holding on to that seems dead or hopeless?",
+        "I may even be trying to bring it back to life myself, but the resurrection is not in me. The resurrection is in the Master. If you are willing to let go of that situation and hand it over to Him, you can be guaranteed of a wholesome return. When Jesus gives you that situation back, it will be in a perfect state. All He is asking you to do today is: hand it over and let Him take care of it."
+      ]
+    },
+    "are-you-using-the-right-fuse": {
+      "title": "Are You Using the Right Fuse?",
+      "summary": "Using the analogy of a broken fuse in a steam iron, this post explores how love is the essential component that makes a Christian's life function properly.",
+      "paragraphs": [
+        "One day I got a pressing iron for school and was proud to have my own steam iron. On the first day of use, the light on the iron went off and it never came back on. I tried different sockets but nothing worked. Months later, an electrician discovered the problem: the fuse was simply blown. A whole steam iron wasn't functioning because of its fuse — one of the smallest and most insignificant elements.",
+        "The love of God inside us is like that fuse. It is one of the most ignored virtues we fail to walk in, yet it is the most potent force in a Christian's life. If ignored, it can stop the whole system from functioning. Our faith is void without love, and faith is the substance of our hope. Without love, faith and hope are void.",
+        "Love is our powerhouse. Our prayers don't have access without love, because Jesus said in Mark 11 that if we don't forgive, neither will our Father forgive us. So if we don't forgive, our sins are not forgiven and we are seen as sinners. Love forgives and grants our prayers access to answers.",
+        "You might be thinking, 'Where am I missing it?' and considering extreme measures like going for deliverance or fasting for 21 days. Before you open the whole iron, check your fuse. Maybe you have switched your love fuse for unforgiveness, hatred, or malice. God is telling you today to put in the right fuse, which is His love shed in the heart of every believer. Apply the whole of 1 Corinthians 13 to your life and watch your life work."
+      ]
+    },
+    "are-we-still-here": {
+      "title": "Are We Still Here?",
+      "summary": "A challenging set of questions for Christians about standing firm in faith, resisting temptation, obeying God, and staying committed to His assignment.",
+      "paragraphs": [
+        "I have some questions for all Christians, formed on the foundation of our behaviors and responses to the happenings on this earth. Are there still Christians who can stand like the three Hebrew boys when a whole nation is bowing down? They were threatened with a burning furnace heated seven times, yet they stood.",
+        "Are there still Christians who can resist temptation even with a wonderful promotion in view, just like Joseph did with Potiphar's wife? He resisted until he fled. Are there still people who can say no to a bribe no matter how pleasant it seems? Are there still Christians ready to obey God no matter the odds, like Abraham who left his father's house and was willing to offer Isaac?",
+        "Are there still Christians committed to the assignment God has given them? Think of Jesus who said 'My food is to do the will of Him that sent me and to finish His work.' Paul said 'Woe unto me if I preach not the gospel.' Peter answered the judges 'Are we to obey man rather than God?' Daniel was so committed that he stood before kings.",
+        "All these questions are to set you on your feet. It is time to get up and be who He wants you to be, not who you want to be. He wants soldiers, so step out of that baby stage and grow. Are there still real Christians reflecting the life of Christ wherever they find themselves? If there are, the question is: are you part of them?"
+      ]
+    },
+    "what-is-in-thanksgiving": {
+      "title": "What Is in Thanksgiving?",
+      "summary": "Exploring the power of thanksgiving to unlock multiplication, resurrection, divine intervention, and revelation in a believer's life.",
+      "paragraphs": [
+        "Most times, even as Christians, when certain occurrences come our way, we tend to complain, not knowing that we are just complicating the matter. The truth is that thanksgiving procures God's attention and intervention.",
+        "Thanksgiving is your access to multiplication and increase. In John 6, Jesus fed five thousand men with five barley loaves and two small fishes. He took the items and gave thanks, and by the time He was distributing them, the items had been transformed from a singular state to a multiplied state through thanksgiving.",
+        "Thanksgiving is your access to resurrection and life. There may be dead situations around your life, in your life, and about your life. All you have to do is give God thanks. In John 11, Jesus gave thanks at the tomb of Lazarus and a miracle happened. Thanksgiving also brings God's intervention. In 2 Chronicles 20, the Israelites set singers before their army and when they began singing praises, the Lord set ambushments against their enemies.",
+        "Thanksgiving is your access to revelation. When you approach God's Word without joy in your heart, you may not have access to its truths. Isaiah 12:3 tells us that joy is our access to the promises hidden in the wells of salvation. So cheer up and get into praises to God to secure His intervention in your life. Don't ever mistake your condition for your portion."
+      ]
+    },
+    "he-called-you-friend": {
+      "title": "He Called You Friend",
+      "summary": "Understanding the incredible privilege of being called a friend of Christ and the three layers of divine protection available to every believer.",
+      "paragraphs": [
+        "In John 15:14-15, Jesus said 'Ye are my friends, if ye do whatsoever I command you... I have called you friends; for all things that I have heard of my Father I have made known unto you.' This is an ultimate statement. If the President of your nation announces that you are his friend, tell me which prison can hold you captive? Now imagine the most powerful being in the universe calling you His friend.",
+        "As a child of God, you have a three-fold barrier of protection around you. The first layer is Christ Himself. We are seated together in heavenly places in Christ Jesus, far above all principality, power, might, and dominion. Whatever wants to get to you has to go through Him first.",
+        "The second layer is God Himself. Psalm 125:2 says the Lord is round about His people. God said in Zechariah 2:5 that He will be a wall of fire round about His people. The third layer is an angelic covering. Psalm 34:7 says the angel of the Lord encamps around those who fear Him. In 2 Kings 19, one angel killed 185,000 soldiers.",
+        "What more can we say? If God be for us, who can be against us? Today, choose to come to the knowledge of the truth that as a child of God, He is on your side and committed to your well-being."
+      ]
+    },
+    "what-exactly-was-christs-commandment": {
+      "title": "What Exactly Was Christ's Commandment?",
+      "summary": "Christ's commandment goes beyond loving your neighbor as yourself — it calls us to love one another as He loved us, with the same unconditional, sacrificial love.",
+      "paragraphs": [
+        "Most of us think the commandment Christ gave us was 'love your neighbor as yourself,' but we are wrong. He gave us something deeper and more effective — what I call the strongest weapon we have against the world. In John 13:34, Jesus said 'A new commandment I give unto you, That ye love one another; as I have loved you.'",
+        "We have been taken away from the realm of 'love your neighbor as yourself' and into the realm of 'love one another as I have loved you.' This means the same unconditional love He had for us that even after we persecuted Him, spat on Him, flogged Him, and crucified Him, He said from the cross 'Father forgive them, for they don't know what they are doing.'",
+        "That same love that made the King of kings come down to earth as a baby just so we could have access to salvation — that is the love He commanded us to have. The question is: are you obedient?"
+      ]
+    },
+    "it-is-not-just-about-you": {
+      "title": "It Is Not Just About You",
+      "summary": "Salvation is not just for personal benefit — it is a calling to service, to bear fruit for Christ and care for His sheep.",
+      "paragraphs": [
+        "The truth is that most of us Christians don't really know what our salvation was meant for, and therefore we remain unfulfilled because we are not actually doing our assignment. In John 15, Jesus said 'I am the true vine... Every branch in me that beareth not fruit he taketh away.' The real reason for your salvation is fruit bearing.",
+        "Your salvation was not just about you. It was a calling to service that Christ invited you to so that through Him, you can bear fruits. Most of us keep the message of salvation to ourselves, not minding what the people around us may be going through.",
+        "In John 21:15-17, Jesus gave evidence of our love for Him: 'Feed my sheep.' Our love for our Savior is expressed by our care for His sheep and His lambs. Today, choose to go out there and recover His lost sheep, because that is your calling.",
+        "Ezekiel 34 warns against selfish shepherds who feed themselves instead of the flock. Avoid this by reaching out to the lost, unsaved, and sick — all those that Christ reached out to, because you are His representative."
+      ]
+    },
+    "now-a-christian-what-next": {
+      "title": "Now a Christian, What Next?",
+      "summary": "The name Christian was given to reflect a lifestyle — it is not a banner or emblem, but a life that reflects Christ.",
+      "paragraphs": [
+        "The name 'Christian' was given in Acts 11:26 because of the works and lifestyles of the apostles. In Acts 4, Peter and John were perceived to be unlearned men, but people took knowledge of them that they had been with Christ. A Christian life cannot be faked; it is reflective and real.",
+        "The apostles did not name themselves Christians. They were named so because of the kind of life they lived. They were reflecting the life of Christ. Therefore, the name Christian is not a banner, emblem, flag, or story. It is a lifestyle.",
+        "So you now bear the name, but are you living the life? What makes you is not just the name, but the life. Decide to live the life of Christ. As Galatians 2:20 says, 'I am crucified with Christ: nevertheless I live; yet not I, but Christ liveth in me.'"
+      ]
+    },
+    "why-were-you-saved": {
+      "title": "Why Were You Saved?",
+      "summary": "Salvation is not the end — it is a calling to service. We were saved to bear fruit for Christ and to seek His kingdom first.",
+      "paragraphs": [
+        "Most times we think that life ends once we get saved and that our duty ends there. The Holy Spirit is using this post to change our mentality. Your salvation is not just for yourself — it is a calling to service. We were saved to serve.",
+        "Jesus said in John 15:16, 'You did not choose Me, but I chose you and appointed you that you should go and bear fruit, and that your fruit should remain.' The main purpose of our salvation is that we should be fruit bearers for Christ and ensure that those fruits remain.",
+        "But seek first the kingdom of God and His righteousness, and all these things shall be added to you. This is the promise of Matthew 6:33. When we prioritize God's kingdom, everything else falls into place."
+      ]
+    },
+    "what-do-you-do-before-your-manifestation": {
+      "title": "What Do You Do Before Your Manifestation?",
+      "summary": "The whole creation eagerly awaits the revealing of the sons of God — the question is whether we will be ready when our time of manifestation comes.",
+      "paragraphs": [
+        "Romans 8:19 says, 'The earnest expectation of the creation eagerly waits for the revealing of the sons of God.' The whole earth is waiting for our manifestation as sons of God. The world is in darkness, waiting for us to come and be the light.",
+        "But there is one question to ponder: when you are revealed, will you be ready? Imagine a scenario where everyone is waiting for the president to come out of a room, and a baby in diapers comes out instead. What would be the expression on everyone's face?",
+        "We are all expected to prepare for our revealing, for the time of our manifestation is at hand. If we appear unprepared, what do we expect to happen to the earth? Therefore, get ready!"
+      ]
+    },
+    "its-a-commandment": {
+      "title": "It's a Commandment",
+      "summary": "As the temple of God and the light of the world, we have a commandment to go into the world and preach the gospel with the authority of Christ.",
+      "paragraphs": [
+        "1 Corinthians 3:16 says, 'Know ye not that ye are the temple of God, and that the Spirit of God dwelleth in you?' We are the New Testament Ark of God because we carry His presence. But the point is: as a Christian, what are you doing with the presence and power of God within you?",
+        "We were not saved by God for ourselves alone. We were saved to bring other souls into the Kingdom of God. In Matthew 28:18-20, Jesus said, 'All power is given unto me in heaven and in earth. Go ye therefore, and teach all nations.' He said all power has been given to Him, and then He said 'Go.' We are to go into the world in His authority and power to preach the gospel.",
+        "Jesus' blood was not shed on the cross in vain. He shed His blood to redeem the whole world from sin and death. We are to go out and enforce that victory. The world is getting darker, but a little candle shines brightest in the darkest room. Since He said we are the light of the world, be the light and show people the way to live.",
+        "We are the salt of the earth — our lives are to give people value and meaning. We have the commandment to preach the gospel, so please fulfill it."
+      ]
+    },
+    "purpose-and-spirituality": {
+      "title": "Purpose and Spirituality",
+      "summary": "Understanding your God-given purpose requires a personal relationship with your Heavenly Father, because only He knows the plans He has for you.",
+      "paragraphs": [
+        "Bishop David Oyedepo said, 'If the purpose of a thing is not known, abuse is inevitable.' We previously looked at why we should serve God, finding that it is for our own good. Now we explore another benefit: achieving God's purpose for your life. As a product of God, you have a purpose that has been predetermined by your Heavenly Father.",
+        "Jeremiah 29:11 says, 'For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end.' God has an expected end for you, and that is why He created you. Even before Jeremiah was formed in the womb, God had already given him an assignment.",
+        "How does spirituality come into play? Christianity is not a religion but a lifestyle — a personal relationship with your Heavenly Father. Jeremiah 33:3 says, 'Call unto me, and I will answer thee, and shew thee great and mighty things, which thou knowest not.' If you don't talk to your earthly father, he would never tell you some things. The same way, if you don't have a personal relationship with your Heavenly Father, you can never know His plans for you.",
+        "Your life counts; you are not a biological accident. You have a purpose, so sit down with His Word and with the help of the Holy Spirit, unravel your divine assignment. Remember: a relationship can only become better if you work on it."
+      ]
+    },
+    "it-pays-to-serve-god": {
+      "title": "It Pays to Serve God",
+      "summary": "Everything God requires of us — prayer, Bible reading, church service, worship — is for our own good, as Deuteronomy 10:13 makes clear.",
+      "paragraphs": [
+        "This post aims to show you the benefits of serving God. What is the essence of devotion, church service, prayer, and Bible reading? Everything comes down to Deuteronomy 10:12-13: 'And now, Israel, what doth the Lord thy God require of thee, but to fear the Lord thy God... to keep the commandments of the Lord... for thy good?'",
+        "Note the last three words: 'for thy good.' You do everything listed above for your own good. Bishop David Oyedepo said, 'God doesn't need you or me — we are the ones that need Him in every aspect of our lives.' Nothing you do changes who God is, but everything you do changes who you are, either positively or negatively.",
+        "Matthew 6:33 and Joshua 1:8 are key scriptures for what we are discussing. As a Christian, understand that everything you decide to do for God is for your own good. Will Rogers said, 'You might be on the right track but if you just sit there, you would get run over.' God wants you to move ahead, grow, know Him more, and become stronger today than you were yesterday."
+      ]
+    },
+    "your-first-love": {
+      "title": "Your First Love",
+      "summary": "A call to remember and return to the first works we did when we were passionate about God, before we grew cold or too mature for them.",
+      "paragraphs": [
+        "Revelation 2:4 says, 'Nevertheless I have somewhat against thee, because thou hast left thy first love.' Jesus was referring to the church at Ephesus. He first commended them for their labor and patience, then said they had abandoned their first love, and He held it against them.",
+        "What does 'first love' refer to? From Revelation 2:5, we understand that your first love is the first works you loved doing. When you were newly born again, you wanted to please God by all means, just as babies want attention from their parents. You indulged in diverse activities to grow, learn, and please God.",
+        "Think about your life now. What were those things you did when you were still young in Christ that you don't do anymore? Maybe you were a vibrant worshipper, a choir member, a prayer warrior, or someone who loved preaching God's Word wherever you went.",
+        "You may still be doing good works, but those things you now look at and say 'I am too old for that' or 'I am too big for that' — Jesus is telling you today: 'Remember therefore from whence thou art fallen, and repent, and do the first works.' Please repent."
+      ]
+    },
+    "just-a-reminder": {
+      "title": "Just a Reminder",
+      "summary": "A gentle reminder that without a connection to Jesus, our names cannot be written in the Book of Life, and an encouragement to remain steadfast.",
+      "paragraphs": [
+        "This is not a letter of condemnation but a reminder. From scientific knowledge, we know a book is made from trees. The Holy Spirit made me understand that Jesus is our tree of Life, just as the tree of life in the Garden of Eden. The Book of Life comes from Jesus, who is our tree of Life.",
+        "This means that without a relationship with Him, your name cannot be written in the Book of Life. Many people don't like discussing this topic, but it is real, and Jesus is coming soon. As Revelation 20:15 says, 'And whosoever was not found written in the book of life was cast into the lake of fire.'",
+        "This is also an admonition to Christians. Jesus said in Luke 9:62, 'No man, having put his hand to the plough, and looking back, is fit for the kingdom of God.' If you are serving God, don't look back. Hold on tighter, because the sufferings of this present time are not worthy to be compared with the glory that shall be revealed in us.",
+        "If you don't have a relationship with Jesus, make it right with Him right now by confessing Him as your Lord and Savior. Make a decision never to go back to your old ways and ask for the grace to remain steadfast in Him. Choose this day whom you will serve."
+      ]
+    },
+    "your-role-to-play-as-a-christian": {
+      "title": "Your Role to Play as a Christian",
+      "summary": "Using Cain and Abel as examples, this post explores the two key duties of every Christian: evangelism and discipleship.",
+      "paragraphs": [
+        "Most Christians don't know that once we are saved, we have important roles to play in service to God. Using two characters from the Bible — Cain and Abel — their vocations explain our duties. Genesis 4:2 says, 'Abel was a keeper of sheep, but Cain was a tiller of the ground.'",
+        "Cain was a tiller of the ground, representing the role of evangelism — preaching to others and praying for them to get saved. This set of people has the flair to face the crowd and preach the gospel no matter the challenges. They go to any length to make sure people around them know who Christ is.",
+        "Abel was the keeper of the sheep, representing the role of nurturing believers. These people have the role of keeping the sheep of Christ — ensuring that their brethren stay connected to Christ and don't deviate from loving Him. This can be done by teaching fellow believers and praying for them to remain in the faith.",
+        "By now you should know what part you can participate in. What matters is: don't be idle. What separated Cain from Abel was that God accepted Abel's offering and rejected Cain's because he did not do well. Whatever you find yourself doing for Christ, do it well and with all your heart so that your result may be accepted by God."
+      ]
+    },
+    "the-tree-of-life": {
+      "title": "The Tree of Life",
+      "summary": "A reflection on how Jesus is our Tree of Life, and why chasing knowledge without Christ is like choosing the tree of knowledge over the tree of life.",
+      "paragraphs": [
+        "In Genesis 2, God made the tree of life and the tree of knowledge of good and evil. He told Adam not to eat from the tree of knowledge, but Adam could eat from the tree of life and have everlasting life. Yet Adam and Eve chose the tree of knowledge instead.",
+        "You might be angry with Adam, but you are doing the same thing if you are not born again. Jesus said in John 14:6, 'I am the way, the truth, and the life.' He is our tree of life. But instead of connecting to Him and receiving eternal life, many chase after knowledge, degrees, and certificates instead.",
+        "There is nothing wrong with acquiring knowledge, but it is wrong to do so without having Christ in you. Mark 8:36 asks, 'For what shall it profit a man, if he shall gain the whole world, and lose his own soul?' All is vanity without Christ. These are the end times, and you won't want to be left out after His second coming.",
+        "The good news is that this is an opportunity to receive Christ into your life and receive everlasting life. If you have made up your mind, confess Him as Lord and believe in your heart that God raised Him from the dead, and you will be saved."
+      ]
+    },
+    "its-a-summary": {
+      "title": "It's a Summary",
+      "summary": "The entire law is summarized in one commandment: love your neighbor as yourself. Through love, we fulfill all of God's requirements.",
+      "paragraphs": [
+        "Most people believe the law of the Old Testament is gone because we are now in the time of grace. But the Holy Spirit led me to Romans 13:9-10, which summarizes everything: 'Love thy neighbor as thyself... Love worketh no ill to his neighbor, therefore love is the fulfilling of the law.'",
+        "How do you love your neighbor as yourself? Whatever you desire for yourself, desire the same for your neighbor. Matthew 7:12 says, 'Therefore whatsoever ye would that men should do to you, do ye even so to them.' This explains how to love your neighbor. If you wouldn't allow something to happen to you, don't allow it to happen to your neighbor.",
+        "Your neighbor is not just your friend. From the story of the Good Samaritan, we know that your neighbor is everyone else apart from you. The law is still in effect, but we are not living under the law — we are under grace, and the law has been summarized to one: love your neighbor as yourself.",
+        "Some may think that since we are in the time of grace, we can do whatever we like. Romans 6:1-2 answers that: 'God forbid. How shall we, that are dead to sin, live any longer therein?' Always try to keep the commandments of God, and the best way to do that is to love your neighbors."
+      ]
+    },
+    "a-lack-of-direction": {
+      "title": "A Lack of Direction",
+      "summary": "Many people lack direction in life because they don't stop to think about their choices, and the only true source of direction is Jesus Christ.",
+      "paragraphs": [
+        "Most humans today get it wrong because they lack direction. Many parents say, 'If I had this opportunity of someone telling me these things, I wouldn't have been here today.' Yet most youths still don't care about planning their path and are easily influenced by the decisions of their friends.",
+        "The only way to address this is to tell the youth the truth: we are not thinking. Not thinking in the sense that we are not concerned about the consequences or gains of every activity we do. Life is not a funfair. We cannot just come into this life and waste resources.",
+        "We need to start thinking, and to start thinking we need to connect to a source. There is only one true source, which is Jesus Christ, because without Him we can do nothing. So please, let's begin to think."
+      ]
+    },
+    "a-message-for-you": {
+      "title": "A Message for You",
+      "summary": "Using the story of the Exodus, this post illustrates how returning to sin after being saved by Christ is like an Israelite choosing to go back to slavery in Egypt.",
+      "paragraphs": [
+        "The Holy Spirit would like to speak to you. A long time ago, God used Moses to deliver His people from Pharaoh. They passed through a lot before finally reaching the Promised Land. Imagine after getting there, one of the Israelites wakes up one morning and decides to go back to Egypt to serve as a servant, just because he wants to taste the food of the Egyptians.",
+        "You and I are like that son of the Israelite when we sin. Jesus Christ was used by God to redeem us from sin and save us from suffering. He went through so much and finally died for us so we could be rescued from sin and death. But when we decide to go back to sin, we are like that son who chose to suffer in Pharaoh's hands just for food.",
+        "How do you think Christ feels when we sin? He was pure but was given the assignment to liberate us. He doesn't feel happy when we return to sin. It is like telling Him to start the process all over again. Let's reconsider our ways. How is your life making Christ feel right now?",
+        "If you have gone back to sin, He is willing to go through the process again and bring you back. Isaiah 30-31 shows God's anger when we rebel but also the blessing of following Him. If you have made the decision to return to Christ, confess your sins and ask Him to come back into your life."
+      ]
+    },
+    "what-real-love-is-like": {
+      "title": "What Real Love Is Like",
+      "summary": "A parable of a king and his son illustrates the depth of God's love for us — He gave His only Son to bear the consequences of our sins.",
+      "paragraphs": [
+        "There was a King who had one son whom he loved dearly. His subjects were not loyal to him, but because of his love for them, he didn't want to execute them. Someone had to bear the consequences of their offenses, but he found no one pure among his subjects. So his only son volunteered to bear the punishment for all the offenses.",
+        "What can you say about the love of a father who allowed his only son to bear the burden of others? And what can you say about a son who volunteered to bear consequences for offenses he didn't commit? This is pure and real love that cannot be tampered with.",
+        "You and I are like the subjects in the story. We sinned, and God the King sent His only Son, Jesus Christ, to die for us so that we may be saved. But instead of choosing the right thing, we continue in sin. Have you given God the love He deserves? Have you chosen the way of salvation through Christ?",
+        "If you haven't been saved, the only way to give Him the love He gave you is by giving your life to Him first. Accept Jesus Christ into your life and allow Him to reign, because without Him you can do nothing. And if you are saved, remember it is one thing to be saved and another to remain saved. Let your daily life be Christ-like."
+      ]
+    },
+    "where-do-you-stand": {
+      "title": "Where Do You Stand?",
+      "summary": "A call to examine where you stand with God, using the story of Adam and Eve's fall to illustrate the choice between life and death that faces every person.",
+      "paragraphs": [
+        "There was a King who made two smaller kings and put them in a palace with everything they needed, but told them not to eat a particular food. A servant of the big King lied to them, and they ate the forbidden food. This disobedience disabled them from seeing the supernatural.",
+        "You and I are like those two smaller kings. Don't blame Adam and Eve for what you are going through now. The same way they were given a choice, Jesus gives us a choice in Deuteronomy 30:19 — life or death. Yet we still fall for sin and blame the devil.",
+        "God gave us His only Son to die for us so we could be saved, but we still choose to continue in sin. Very soon He will come to take those who were faithful to Paradise while the unfaithful will be thrown into hell fire. Which side are you on? It is not about your church, pastor, or family — it is about your life only, because their salvation cannot take you to heaven.",
+        "If you claim to be on the Lord's side but any of the works of the flesh listed in Galatians 5:19-21 are found in your life, you need to go back to God and ask for forgiveness. There is a way that seems right to a man, but the end thereof is destruction. On the last day, you will stand and face your judgment alone. You have to know who you serve and whether you serve Him truthfully with all your heart."
+      ]
+    }
+  }
+}

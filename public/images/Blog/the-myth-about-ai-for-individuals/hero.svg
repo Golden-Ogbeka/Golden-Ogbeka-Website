@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <radialGradient id="personGlow" cx="50%" cy="50%" r="30%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="960" cy="500" r="300" fill="url(#personGlow)"/>
+  <!-- Person silhouette -->
+  <g transform="translate(960,500)" opacity="0.7">
+    <circle cy="-70" r="55" fill="#2563EB"/>
+    <path d="M-90,40 Q-90,-15 0,-15 Q90,-15 90,40 L95,130 L-95,130Z" fill="#2563EB"/>
+  </g>
+  <!-- Light rays -->
+  <g stroke="#38BDF8" stroke-width="2.5" opacity="0.2">
+    <line x1="960" y1="430" x2="960" y2="240"/>
+    <line x1="960" y1="430" x2="830" y2="270"/>
+    <line x1="960" y1="430" x2="1090" y2="270"/>
+    <line x1="960" y1="430" x2="750" y2="340"/>
+    <line x1="960" y1="430" x2="1170" y2="340"/>
+    <line x1="960" y1="430" x2="680" y2="430"/>
+    <line x1="960" y1="430" x2="1240" y2="430"/>
+  </g>
+  <!-- Gear icons -->
+  <g fill="none" stroke="#38BDF8" stroke-width="3" opacity="0.4">
+    <circle cx="620" cy="470" r="45"/><circle cx="620" cy="470" r="28"/>
+    <circle cx="1300" cy="470" r="45"/><circle cx="1300" cy="470" r="28"/>
+    <line x1="620" y1="420" x2="620" y2="410"/><line x1="620" y1="520" x2="620" y2="530"/>
+    <line x1="570" y1="470" x2="560" y2="470"/><line x1="670" y1="470" x2="680" y2="470"/>
+    <line x1="1300" y1="420" x2="1300" y2="410"/><line x1="1300" y1="520" x2="1300" y2="530"/>
+    <line x1="1250" y1="470" x2="1240" y2="470"/><line x1="1350" y1="470" x2="1360" y2="470"/>
+  </g>
+  <!-- Connection lines to person -->
+  <g stroke="url(#accent)" stroke-width="2" opacity="0.3" fill="none" stroke-dasharray="6,8">
+    <line x1="665" y1="470" x2="865" y2="500"/>
+    <line x1="1255" y1="470" x2="1055" y2="500"/>
+  </g>
+  <!-- Floating particles -->
+  <g fill="#38BDF8" opacity="0.6">
+    <circle cx="400" cy="300" r="5"/><circle cx="550" cy="250" r="3"/>
+    <circle cx="1350" cy="280" r="4"/><circle cx="1500" cy="320" r="3"/>
+    <circle cx="300" cy="700" r="3"/><circle cx="1600" cy="680" r="4"/>
+  </g>
+  <g fill="white" opacity="0.5">
+    <circle cx="200" cy="200" r="2"/><circle cx="800" cy="170" r="1.5"/>
+    <circle cx="1200" cy="190" r="2"/><circle cx="1700" cy="210" r="1.5"/>
+  </g>
+  <rect x="0" y="1040" width="1920" height="4" fill="url(#accent)" opacity="0.5"/>
+</svg>

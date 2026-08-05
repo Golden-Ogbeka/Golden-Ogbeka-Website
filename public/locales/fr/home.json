@@ -19,5 +19,8 @@
   "certifications.viewAll": "Tout voir",
   "education.title": "Formation",
   "featured.thumbnailAlt": "{{title}} miniature",
-  "featured.moreTools": "+{{count}}"
+  "featured.moreTools": "+{{count}}",
+  "featuredBlog.title": "Articles du blog",
+  "featuredBlog.subtitle": "Réflexions sur l'ingénierie, l'IA et l'art du logiciel.",
+  "featuredBlog.viewAll": "Voir tous les articles"
 }

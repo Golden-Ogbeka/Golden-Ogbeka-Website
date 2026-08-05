@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="glow"><stop offset="40%" stop-color="#a78bfa" stop-opacity="0.12"/><stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="960" cy="500" r="400" fill="url(#glow)"/>
+  <g transform="translate(960,420)"><circle cx="-55" cy="-35" r="35" fill="none" stroke="#a78bfa" stroke-width="8"/><circle cx="55" cy="-35" r="35" fill="none" stroke="#a78bfa" stroke-width="8"/><path d="M-55,0 Q-55,45 -30,55" fill="none" stroke="#a78bfa" stroke-width="6"/><path d="M55,0 Q55,45 30,55" fill="none" stroke="#a78bfa" stroke-width="6"/><line x1="-30" y1="55" x2="30" y2="55" stroke="#a78bfa" stroke-width="8"/><line x1="-88" y1="-35" x2="-72" y2="-35" stroke="#a78bfa" stroke-width="4"/><line x1="72" y1="-35" x2="88" y2="-35" stroke="#a78bfa" stroke-width="4"/><path d="M0,55 L0,90" stroke="#a78bfa" stroke-width="6" stroke-linecap="round"/><circle cx="0" cy="-105" r="18" fill="#fbbf24"/></g>
+  <text x="960" y="820" text-anchor="middle" fill="#94a3b8" font-family="Outfit, sans-serif" font-size="26" letter-spacing="3" font-weight="bold">CALLED AS FRIENDS</text>
+</svg>

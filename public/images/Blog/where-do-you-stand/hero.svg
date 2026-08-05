@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="glow"><stop offset="40%" stop-color="#60a5fa" stop-opacity="0.12"/><stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="960" cy="500" r="400" fill="url(#glow)"/>
+  <g transform="translate(960,420)"><line x1="-100" y1="-130" x2="0" y2="100" stroke="#60a5fa" stroke-width="8" stroke-linecap="round"/><line x1="100" y1="-130" x2="0" y2="100" stroke="#64748b" stroke-width="8" stroke-linecap="round"/><line x1="-100" y1="-130" x2="100" y2="-130" stroke="#60a5fa" stroke-width="7" stroke-linecap="round"/><circle cx="0" cy="-75" r="28" fill="none" stroke="#60a5fa" stroke-width="7"/><circle cx="0" cy="-75" r="12" fill="#fbbf24"/><line x1="0" y1="-130" x2="0" y2="-103" stroke="#60a5fa" stroke-width="7"/><circle cx="-35" cy="-75" r="10" fill="#fbbf24"/></g>
+  <text x="960" y="820" text-anchor="middle" fill="#94a3b8" font-family="Outfit, sans-serif" font-size="26" letter-spacing="3" font-weight="bold">CHOOSE LIFE</text>
+</svg>

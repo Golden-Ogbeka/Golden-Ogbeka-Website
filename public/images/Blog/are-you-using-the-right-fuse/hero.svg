@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="glow"><stop offset="40%" stop-color="#60a5fa" stop-opacity="0.12"/><stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="960" cy="500" r="400" fill="url(#glow)"/>
+  <g transform="translate(960,420)"><rect x="-90" y="-110" width="180" height="240" rx="20" fill="none" stroke="#60a5fa" stroke-width="8"/><rect x="-40" y="-40" width="80" height="100" rx="8" fill="none" stroke="#fbbf24" stroke-width="6"/><path d="M-20,-40 L-20,-70 L20,-70 L20,-40" fill="none" stroke="#fbbf24" stroke-width="5"/><line x1="-12" y1="-62" x2="12" y2="-62" stroke="#fbbf24" stroke-width="4"/><circle cx="0" cy="10" r="16" fill="#fbbf24"/><line x1="-90" y1="-70" x2="-140" y2="-70" stroke="#64748b" stroke-width="6" stroke-linecap="round"/><line x1="90" y1="-70" x2="140" y2="-70" stroke="#64748b" stroke-width="6" stroke-linecap="round"/></g>
+  <text x="960" y="820" text-anchor="middle" fill="#94a3b8" font-family="Outfit, sans-serif" font-size="26" letter-spacing="3" font-weight="bold">THE RIGHT FUSE</text>
+</svg>

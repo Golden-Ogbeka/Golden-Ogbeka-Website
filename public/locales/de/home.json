@@ -19,5 +19,8 @@
   "certifications.viewAll": "Alle ansehen",
   "education.title": "Ausbildung",
   "featured.thumbnailAlt": "{{title}} Vorschaubild",
-  "featured.moreTools": "+{{count}}"
+  "featured.moreTools": "+{{count}}",
+  "featuredBlog.title": "Blog-Beiträge",
+  "featuredBlog.subtitle": "Gedanken zu Engineering, KI und Software-Handwerk.",
+  "featuredBlog.viewAll": "Alle Beiträge ansehen"
 }

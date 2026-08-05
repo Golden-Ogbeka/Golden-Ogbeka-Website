@@ -12,6 +12,7 @@ import { reveal } from '../functions/animation';
 const OpenSourceSection = dynamic(() => import('../components/pages/Home/OpenSourceSection'), { ssr: false });
 const ExperienceSection = dynamic(() => import('../components/pages/Home/ExperienceSection'), { ssr: false });
 const CertificationsSection = dynamic(() => import('../components/pages/Home/CertificationsSection'), { ssr: false });
+const FeaturedBlogPosts = dynamic(() => import('../components/pages/Home/FeaturedBlogPosts'), { ssr: false });
 
 const Home: NextPage = () => {
   React.useEffect(() => {
@@ -31,6 +32,8 @@ const Home: NextPage = () => {
       <ExperienceSection />
       <SectionDivider />
       <CertificationsSection />
+      <SectionDivider />
+      <FeaturedBlogPosts />
     </AppLayout>
   );
 };
@@ -38,6 +41,7 @@ const Home: NextPage = () => {
 export default Home;
 
 import FeaturedProjectsData from '../data/FeaturedProjects';
+import FeaturedBlogPostsData from '../data/FeaturedBlogPosts';
 import OpenSourceData from '../data/OpenSource';
 import ExperiencesData from '../data/Experiences';
 import CertificationsData from '../data/Certifications';
@@ -68,7 +72,7 @@ function trimNs<T extends Record<string, unknown>>(ns: T, keep: Set<string>): T 
   return ns;
 }
 
-const ALL_NS = ['certifications', 'common', 'experiences', 'home', 'openSource', 'projects'] as const;
+const ALL_NS = ['blog', 'certifications', 'common', 'experiences', 'home', 'openSource', 'projects'] as const;
 type NsName = typeof ALL_NS[number];
 
 function loadNamespace(locale: string, ns: NsName): Record<string, unknown> {
@@ -159,6 +163,22 @@ export async function getStaticProps({ locale }: { locale: string }) {
     certKeysToKeep.add(key);
   }
   initialI18nStore[locale].certifications = trimNs(certifications, certKeysToKeep);
+
+  // Featured blog posts
+  const featuredBlogSlugs = new Set(FeaturedBlogPostsData.map((p) => p.slug));
+  const blog = loadNamespace(locale, 'blog');
+  const blogKeysToKeep = new Set<string>();
+  for (const key of Object.keys(blog)) {
+    if (key.startsWith('post.')) {
+      const keySlug = key.substring(5, key.indexOf('.', 5));
+      if (featuredBlogSlugs.has(keySlug)) {
+        blogKeysToKeep.add(key);
+      }
+    } else {
+      blogKeysToKeep.add(key);
+    }
+  }
+  initialI18nStore[locale].blog = trimNs(blog, blogKeysToKeep);
 
   return {
     props: {

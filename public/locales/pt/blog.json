@@ -1,0 +1,293 @@
+{
+  "page": {
+    "title": "Blog",
+    "subtitle": "Reflexões sobre engenharia, IA e ofício de software.",
+    "noPosts": "Nenhum post encontrado nesta categoria."
+  },
+  "category": {
+    "all": "Todos",
+    "tech": "Tech",
+    "ai": "IA",
+    "tips": "Dicas",
+    "faith": "Fé"
+  },
+  "readMore": "Ler mais",
+  "backToBlog": "Voltar ao blog",
+  "sort": {
+    "label": "Ordenar por",
+    "newest": "Mais recentes",
+    "oldest": "Mais antigos"
+  },
+  "pagination": {
+    "label": "Paginação do blog",
+    "prev": "Anterior",
+    "next": "Próximo",
+    "page": "Página"
+  },
+  "post": {
+    "africa-needs-more-creators": {
+      "title": "A África Precisa de Mais Criadores",
+      "summary": "A dependência da África em tecnologia externa é uma vulnerabilidade. É hora de mudar de consumidor para criador.",
+      "paragraphs": [
+        "Em 15 de junho de 2026, o Banco Central da Nigéria ordenou que todos os bancos, empresas de fintech e provedores de serviços de pagamento começassem a usar servidores locais para gerenciar todas as transações de pagamento dentro da Nigéria. No início, isso pareceu irritante — como poderia-se esperar que as empresas cumprissem uma obrigação quando a infraestrutura básica não havia sido fornecida? Mas depois isso me lembrou uma das minhas principais preocupações sobre a África: somos muito dependentes de criadores externos.",
+        "A África é aclamada como um dos continentes mais promissores para inovação e empreendedorismo, mas o que vemos é quase total dependência de outros continentes para criação, para que possamos aproveitar essas criações e construir as nossas para fins de lucro. Se a AWS fechar hoje, dezenas de milhares de empresas na África teriam uma falha digital sem alternativa sustentável. Quando o PayPal bloqueou a Nigéria de pagamentos internacionais, causou uma interrupção massiva até que empresas africanas surgiram para preencher a lacuna.",
+        "É o paradoxo — quando sob pressão, a África tem o potencial de ser criativa. Cerca de 12 empresas da África criaram soluções de pagamento internacionais quando o PayPal bloqueou a Nigéria. A diretriz do BCB seria semelhantemente atendida por empresas surgindo para encontrar soluções. É o poder que reside na África. No entanto, estou chamando para que se torne nosso tema comum — não apenas quando as coisas dão errado.",
+        "É hora de começar a buscar invenções e criar uma cultura que incentive as pessoas a pensar, criar e inovar. Em vez de ficar apenas usando as ferramentas, software e programas criados por outros continentes, comece a aprender como você também pode criar essas ferramentas. O conhecimento está lá fora. Nós só precisamos procurar.",
+        "Seja um criador e não apenas um consumidor. Você também tem o Gene do Criador em você. Meu nome é Golden Ogbeka, e sou um Especialista em Soluções especializado em resolver problemas em tecnologia, finanças, agricultura, logística, imobiliário, educação e vários outros setores."
+      ]
+    },
+    "do-the-difficult-things": {
+      "title": "Faça as Coisas Difíceis",
+      "summary": "O conforto é o inimigo do crescimento. Sair da sua zona é a única maneira de se tornar uma versão melhor de si mesmo.",
+      "paragraphs": [
+        "Estes últimos meses foram os mais esclarecedores para mim — meses que me fizeram refletir sobre minha jornada e tomar decisões difíceis. Antes da popularidade da inteligência artificial, eu me sentia muito confortável. Eu era bom em construir aplicações frontend e nunca tinha medo de assumir qualquer projeto. Mas antes de tomar o frontend como minha habilidade principal, eu comecei minha jornada com Java. Nem muitas pessoas sabem que eu era originalmente um engenheiro backend.",
+        "O que mudou? Enquanto tentava construir um negócio global resolvendo a aquisição de clientes na indústria avícola, eu basicamente fazia tudo — gerenci o livro-caixa, construía o backend com Node.js, construía a web com EJS e depois React, construía o mobile com React Native, criava conteúdo em vídeo, fazia ilustrações, marketing, pesquisa de clientes e suporte ao cliente. Eu fazia tudo porque não tinha dinheiro para pagar pessoas. Mas o que isso fez comigo? Eu tive um esgotamento quando a COVID chegou.",
+        "Por causa do esgotamento e tentar me recuperar lentamente, eu me inclinei para o que vinha facilmente. Percebi que a maioria das pessoas fugia do CSS, mas para mim era fácil. Notei que meu cérebro tinha que fazer mais trabalho quando programava backend, então escolhi focar apenas no frontend, mesmo sabendo que era fácil demais para mim. Passando para este ano, eu me tornei um especialista — nenhuma UI era impossível para mim construir. Mas então a IA veio e me acordou do sono.",
+        "Como eu era bom no meu trabalho, não prestei muita atenção em aprender coisas que realmente importavam — aprendizado de máquina, algoritmos complexos, design de sistemas de computação distribuída complexos, arquiteturas complexas. Aprendi o que precisava e me senti confortável, mas não sabia profundamente o suficiente. Foi isso que a IA veio me lembrar, e por extensão, a você. Acredite, eu aprendi minha lição.",
+        "Então aprenda com minha experiência. Não fique parado pensando que porque você dominou uma habilidade sempre desfrutará de conforto. Às vezes nosso pior inimigo é o próprio conforto que desfrutamos. Saia da sua zona de conforto. Seja uma versão melhor de você. Desafie-se a fazer as coisas difíceis. Assista aqueles vídeos longos de aula. Pode parecer difícil no início, mas é assim que tudo na vida parece quando você começa. Lembra quando você começou a aprender a digitar? Bem, olhe para você agora."
+      ]
+    },
+    "more-countries-need-to-be-like-canada": {
+      "title": "Mais Países Precisam Ser Como o Canadá",
+      "summary": "Enquanto o mundo persegue a IA, o Canadá nos lembra que o investimento em capital humano é a chave real da sobrevivência.",
+      "paragraphs": [
+        "O mundo inteiro está em frenesi sobre a IA. Essa frenesi não é uma ilusão — a IA é, sem dúvida, a melhor descoberta do homem nas últimas gerações. No entanto, ela coloca muita ênfase no que as máquinas podem fazer e menos foco no que os humanos podem fazer. O Canadá é um dos principais países a não se deixar levar por essa frenesi. Ele tem estruturas para não ficar para trás na corrida da IA, mas também sistemas importantes para evitar perder o tecido fundamental da economia: o capital humano.",
+        "Na Atualização Econômica de Primavera do Canadá de 2026, foi anunciado o lançamento do Team Canada Strong — uma iniciativa para fazer investimentos significativos em ofícios qualificados, um setor cada vez mais em escassez. A iniciativa facilita o aprendizado para que mais pessoas sejam equipadas com habilidades altamente necessárias para a sobrevivência humana. Quando foi a última vez que ouvimos alguém aconselhar um jovem a aprender um ofício qualificado como encanamento, engenharia elétrica ou carpintaria?",
+        "Vemos alguém aprendendo a tocar piano ou entendendo construção e tentamos convencê-lo de que há mais dinheiro em tecnologia. No entanto, todos precisamos desses serviços todos os dias e sabemos que a IA não é a substituição. O engenho humano é insubstituível. É meu desejo que mais nações, organizações e comunidades se tornem mais como o Canadá — não perdendo o ritmo da corrida da IA, mas também não perdendo o investimento bruto em capital humano.",
+        "Existem muitas aplicações para empresas nesse espaço. Já vimos plataformas como TaskRabbit, Wrkman e LaborHack criando plataformas para contratar trabalhadores qualificados. Empresas financeiras podem investir em organizações que prestam esses serviços, assim como Piggyvest e Front Fundr estão fazendo. Outra via é se associar aos governos para participar do desenvolvimento de habilidades e facilitar o envio de artesãos qualificados ao mercado.",
+        "O investimento em capital humano é a chave para a sobrevivência da nação. Tecnologia e IA são ferramentas para facilitar a vida e acelerar as coisas, mas não podem substituir o cerne da nossa existência: a capacidade de aprender, construir, criar e gerenciar. Isso não deve ser esquecido."
+      ]
+    },
+    "the-myth-about-ai-for-businesses": {
+      "title": "O Mito da IA — Para Empresas",
+      "summary": "A IA não é um substituto para sua equipe. É uma ferramenta que permite às empresas alcançar objetivos que nunca poderiam antes.",
+      "paragraphs": [
+        "Quando o ChatGPT foi lançado em 30 de novembro de 2022, o mundo entrou em pânico. Um lado estava empolgado com a IA substituindo a capacidade humana. Outro estava preocupado com a segurança no emprego. E outro nem se importava. Mas o mito que discutimos hoje é o lado empresarial: 'Por que eu tenho que pagar alguém para fazer isso quando posso usar a IA?' Essa afirmação faz um bom argumento financeiro, mas falha do ponto de vista da missão.",
+        "A IA não veio para tirar as equipes de negócios de seus empregos. A IA veio para tornar possível que as empresas alcancem metas absurdas dentro de prazos impossíveis. Antes da IA Generativa, as empresas tinham marcos com prazos rigorosos, mas devido aos recursos humanos limitados, só podiam perseguir um ou dois marcos por vez para evitar esgotamento. Agora, com a IA, as empresas têm a oportunidade de construir muito mais do que antes.",
+        "Isso introduz a necessidade de mais mãos — não apenas mãos normais, mas mãos com IA. Indivíduos que entendem como integrar IA em seu fluxo de trabalho para resultados massivos. Considere uma empresa que constrói soluções tecnológicas para comunidades rurais. Elas criaram soluções de comércio, mas também sonham com soluções governamentais e agrícolas. Não podiam perseguir tudo devido ao custo e esgotamento. Então um engenheiro as apresentou ao Claude.",
+        "Com pensamento estratégico, eles dividiram sua equipe em três grupos — um para manter projetos atuais, um para construir soluções governamentais e um para construir soluções agrícolas. Agora podem pensar em novas direções, ter mais soluções para validar investimentos e escalar, porque soluções reais criam casos extremos que apresentam oportunidades para mais mãos com IA.",
+        "As empresas não devem ver a IA como um substituto para seus membros de equipe. A IA nunca foi a solução — é uma ferramenta. Não descarte sua equipe porque pode usar a IA. Em vez disso, capacite sua equipe com esta incrível ferramenta do século XXI e expanda a visão do negócio, porque agora você pode construir a uma velocidade que nunca foi humanamente alcançável antes da IA se tornar uma ferramenta."
+      ]
+    },
+    "the-myth-about-ai-for-individuals": {
+      "title": "O Mito da IA — Para Indivíduos",
+      "summary": "A IA não está pegando seu emprego. Ela está dando a você as ferramentas finalmente para perseguir seus sonhos mantendo sua renda.",
+      "paragraphs": [
+        "No meu último post, expliquei como as empresas devem abordar a IA com confiança, não com medo. Neste post, foco nos indivíduos que se sentem perdidos ou deixados de fora — pessoas afetadas por demissões em massa que estão considerando mudar para carreiras não técnicas apenas para se manter relevantes. Tenho boas notícias para você: ainda não acabou.",
+        "Antes da IA se tornar o novo ouro, palestrantes motivacionais diziam coisas como 'Seu salário é a droga que sua empresa dá para você para impedir que você persiga seu sonho' ou 'Você não pode ficar rico sendo um funcionário.' Isso colocava as pessoas em um dilema: ou saíam e começavam seus sonhos, ou paravam de sonhar e seguravam seus empregos. A verdade é que você poderia ter feito qualquer escolha e estar alegre ou se arrependendo hoje.",
+        "Mas o que importa agora é: o que você pode fazer sobre isso? Antes da IA, a maioria dos funcionários tinha sonhos dos quais desejavam ter tempo ou energia, mas nunca conseguiram realizar. Bem, isso é até agora! A IA é o presente de Deus para o homem — Deus finalmente dizendo 'agora você não tem mais desculpas' porque finalmente temos ferramentas que podem fazer o trabalho para o qual precisávamos de tempo e energia.",
+        "Agora finalmente podemos focar nas coisas que realmente precisamos fazer — pensar, negociar e interagir — e deixar esta ferramenta maravilhosa fazer o trabalho pesado. Então pare de pensar no próximo campo para mudar e comece a construir aquele sonho que você teve há tanto tempo no seu coração aproveitando a IA. A IA não veio para pegar seu emprego. Veio para ajudá-lo a alcançar seu sonho enquanto mantém seu emprego.",
+        "Essa é a mudança de perspectiva que muda tudo. A IA é um presente, não uma ameaça. As pessoas que prosperarão não serão aquelas que evitam a IA ou têm medo dela — serão aquelas que a aproveitam como um multiplicador de força para suas ambições, mantendo a estabilidade de sua renda atual."
+      ]
+    },
+    "the-myth-about-ai-for-non-ai-users": {
+      "title": "O Mito da IA — IA É Cara",
+      "summary": "Os custos da IA estão caindo rápido. Modelos de código aberto e hardware local estão tornando a IA acessível a todos.",
+      "paragraphs": [
+        "Nos meus posts anteriores, mostrei como a IA é uma vantagem para todos que sonham e como os indivíduos não devem se preocupar com substituição de emprego, mas focar em como a IA cria novas oportunidades. Neste post, abordo aqueles que não estão empolgados com a IA e acreditam que a maneira normal de fazer negócios deve continuar sem ela. A maior preocupação que ouço são os custos — e até grandes organizações têm se queixado disso.",
+        "Não há como amenizar: o uso da IA está custando bilhões no mundo todo. O Google acabou de pagar quase um bilhão para a SpaceX para armazenamento de computação em nuvem para IA, e para se manter lucrativa, essa despesa precisa ser repassada aos usuários finais. Então, por que os não usuários de IA deveriam considerá-la? Porque será GRATUITA em breve. O conhecimento não pode ser criado nem destruído, e a IA é construída sobre conhecimento — os LLMs obtêm sua inteligência de entrada massiva de dados de sistemas e conteúdos já existentes.",
+        "É na verdade imoral colocar um preço no acesso a esse conhecimento. O que as pessoas pagam é pela potência de processamento que processa esse conhecimento. Estude as tendências: a lucratividade dos LLMs é um sonho moribundo. Empresas que dependem exclusivamente desse modelo têm se reinventado. Todos acreditam que há uma bolha da IA prestes a explodir. Mas uma empresa nos mostrou como o futuro da IA se parece, e o mundo perdeu.",
+        "Em junho de 2026, a Nvidia anunciou os PCs RTX Spark com até 128GB de memória unificada e até 1 Petaflop de desempenho FP4 para IA — computadores que podem rodar IA localmente com facilidade. E se você não precisasse de software para interagir com servidores? E se o servidor fosse seu próprio computador? E se você não precisasse de uma conexão com a internet para se comunicar com a IA porque ela está sentada na sua máquina? Esse é o poder dos modelos locais.",
+        "A Nvidia acabou de mostrar ao mundo que o Jarvis não é mais apenas para um bilionário rico chamado Homem de Ferro. Em alguns anos, a IA será para todos com um computador. Comece sua jornada com modelos locais e ferramentas de código aberto como Ollama. Nos próximos cinco anos, agentes de IA baseados em software estarão fora de moda — todos com um computador moderno terão um agente de IA trabalhando localmente. Esse é o futuro que imagino."
+      ]
+    },
+    "hand-it-over": {
+      "title": "Entregue a Ele",
+      "summary": "Quando você entrega suas situações sem esperança a Deus, Ele as devolve a você em um estado aperfeiçoado.",
+      "paragraphs": [
+        "Notei algo nas Escrituras. Em três relatos separados — a viúva de Naim, a viúva de Sarepta e a mulher sunamita — cada mulher havia perdido seu filho. Jesus, Elias e Eliseu restauraram cada um um filho morto de volta à sua mãe. O fio comum era que essas mulheres estavam dispostas a entregar o que tinham ao Mestre.",
+        "Não importava quão profunda ou desesperadora a situação parecesse, elas a entregaram a Ele. No momento em que suas situações saíram de suas mãos e entraram nas mãos do Mestre, receberam um pacote completo em troca. A ressurreição não estava nelas mesmas — estava no Mestre.",
+        "Que situação você está segurando que parece morta, sem esperança ou prestes a ser enterrada? Você pode até estar tentando trazer de volta à vida por si mesmo. Mas o poder da ressurreição não está em você. Se você estiver disposto a soltar e entregar ao Mestre, pode ter a garantia de um retorno completo. Quando Jesus devolver essa situação, estará em um estado perfeito."
+      ]
+    },
+    "are-you-using-the-right-fuse": {
+      "title": "Você Está Usando o Fusível Certo?",
+      "summary": "O amor é a força mais ignorada, porém mais poderosa na vida do cristão — sem ele, nada mais funciona.",
+      "paragraphs": [
+        "Certa vez, tive um ferro a vapor que parou de funcionar. Um eletricista verificou tudo e finalmente descobriu que o problema era apenas um fusível com defeito. Um componente pequeno, quase insignificante, havia desabilitado o aparelho inteiro. Isso me lembrou como o amor de Deus funciona em nossas vidas.",
+        "O amor é uma das virtudes mais ignoradas que deixamos de aplicar, mas é a força mais potente na vida de um cristão. Se ignorado, pode parar todo o sistema. Gálatas 5:6 nos diz que a fé opera pelo amor — sem amor, a fé e a esperança são vãs. O amor é nossa central de poder.",
+        "Seu problema pode não estar longe. Antes de fazer um jejum prolongado ou buscar libertação, verifique seu fusível. Talvez você tenha trocado seu fusível de amor por falta de perdão, ódio, dor, ira ou malícia. Deus está dizendo a você hoje para colocar o fusível certo — Seu amor, que é derramado no coração de todo crente. Aplique todo o Primeira Coríntios 13 e veja sua vida funcionar."
+      ]
+    },
+    "are-we-still-here": {
+      "title": "Ainda Estamos Aqui?",
+      "summary": "Um desafio aos cristãos para examinar se ainda refletem a fé, a obediência e o compromisso dos heróis da Bíblia.",
+      "paragraphs": [
+        "Ainda existem cristãos que podem permanecer firmes como os três jovens hebreus quando uma nação inteira se curvava diante de uma imagem de ouro? Eles foram ameaçados com uma fornalha ardente, a fornalha foi aquecida sete vezes, mas eles permaneceram. Podemos permanecer firmes hoje quando a pressão aumenta?",
+        "Ainda existem cristãos que podem resistir à tentação com uma promoção à vista, como José fez? Ele fugiu da esposa de Potifar, mesmo que cair pudesse ter lhe trazido avanço. Ainda existem pessoas que podem dizer não ao suborno, por mais agradável que pareça? Ainda existem cristãos que obedecem a Deus aconteça o que acontecer, como Abraão, que deixou a casa de seu pai e estava disposto a oferecer Isaque?",
+        "Ainda existem cristãos comprometidos com a missão que Deus lhes deu? Jesus disse que Sua comida era fazer a vontade do Pai. Paulo disse que ai dele se não pregasse o evangelho. É hora de se levantar e se tornar quem Ele quer que você seja, não quem você quer ser. Saia dessa fase de bebê e cresça."
+      ]
+    },
+    "what-is-in-thanksgiving": {
+      "title": "O Que Há na Ação de Graças?",
+      "summary": "A ação de graças não é apenas um ritual — é o seu acesso à multiplicação, ressurreição, intervenção divina e revelação.",
+      "paragraphs": [
+        "Quando certas ocorrências acontecem, tendemos a reclamar, sem saber que estamos apenas complicando a situação. A verdade é que a ação de graças obtém a atenção e intervenção de Deus. Em qualquer caso de diminuição ou escassez, a ação de graças é a resposta.",
+        "Quando Jesus alimentou cinco mil homens com cinco pães de cevada e dois peixes pequenos, Ele deu graças, e os itens foram transformados de um estado singular para um estado multiplicado. Não importa a falta em sua vida, tudo o que você precisa fazer é dar graças a Deus. A ação de graças também traz ressurreição a situações mortas — Jesus deu graças no túmulo de Lázaro e um milagre aconteceu.",
+        "Em 2 Crônicas 20, quando três nações atacaram Israel, eles colocaram cantores na frente do exército. Quando começaram a cantar louvores a Deus, o Senhor colocou emboscadas contra o inimigo e eles se destruíram mutuamente. O louvor traz a intervenção de Deus. Anime-se e entre em louvor a Deus. Ele habita nos louvores do Seu povo."
+      ]
+    },
+    "he-called-you-friend": {
+      "title": "Ele Te Chamou de Amigo",
+      "summary": "Jesus te chama de Seu amigo, e como filho de Deus, você está cercado por uma proteção tripla que nenhum inimigo pode penetrar.",
+      "paragraphs": [
+        "Em João 15:14-15, Jesus disse: 'Vós sois meus amigos, se fizerdes o que eu vos mando.' Se o presidente da sua nação anunciasse na televisão nacional que você é seu amigo, qual prisão poderia te segurar? Imagine agora o Criador do universo te chamando de Seu amigo.",
+        "Como filho de Deus, você tem uma barreira de proteção de três camadas. A primeira camada é o próprio Cristo — estamos assentados juntos nos lugares celestiais em Cristo Jesus, muito acima de todo principado e poder. O que quer chegar até você deve passar por Ele primeiro.",
+        "A segunda camada é o próprio Deus, que te rodeia como um muro de fogo. A terceira camada é a cobertura angelical — o anjo do Senhor acampa ao redor dos que O temem. Um anjo matou 185.000 soldados em uma noite. Se Deus é por você, quem pode ser contra você? Escolha vir ao conhecimento da verdade de que Deus está ao seu lado e comprometido com seu bem-estar."
+      ]
+    },
+    "what-exactly-was-christs-commandment": {
+      "title": "Qual Foi Exatamente o Mandamento de Cristo?",
+      "summary": "O mandamento de Cristo vai além de amar o próximo como a si mesmo — Ele nos chama a amar uns aos outros como Ele nos amou.",
+      "paragraphs": [
+        "A maioria de nós pensa que o mandamento que Cristo nos deu era amar ao próximo como a si mesmo. Mas Ele nos deu algo mais profundo e mais eficaz. Em João 13:34, Jesus disse: 'Um novo mandamento vos dou: Que vos ameis uns aos outros; como eu vos amei.' Ele nos moveu do reino de amar o próximo como a si mesmo para o reino de amar uns aos outros como Ele nos amou.",
+        "Este é o mesmo amor incondicional que Ele teve por nós, mesmo depois que O perseguimos, cuspimos Nele e O crucificamos. Enquanto estava na cruz, Ele disse: 'Pai, perdoa-lhes, porque não sabem o que fazem.' Esse mesmo amor que fez o Rei dos reis descer à terra como um bebê para que tivéssemos acesso à salvação — esse é o que Ele nos mandou ter.",
+        "Foi o amor que não foi ganancioso quanto à posição de ser o único Filho de Deus, mas estava disposto a dar Sua vida para que Seu Pai pudesse ter mais filhos através Dele. A pergunta é: você está andando neste amor?"
+      ]
+    },
+    "it-is-not-just-about-you": {
+      "title": "Não se Trata Apenas de Você",
+      "summary": "Sua salvação não foi apenas para seu benefício — foi um chamado para dar fruto e alimentar as ovelhas de Cristo.",
+      "paragraphs": [
+        "A maioria dos cristãos não sabe realmente para que foi sua salvação e, portanto, permanece insatisfeita porque não está fazendo sua tarefa. Em João 15:16, Jesus disse que nos escolheu e nos nomeou para irmos e darmos fruto. A verdadeira razão da sua salvação é dar fruto.",
+        "Sua salvação não era apenas sobre você. Era um chamado ao serviço ao qual Cristo o convidou para que, através Dele, você possa dar frutos. A maioria de nós guarda a mensagem da salvação para si mesma, não se importando com o que aqueles ao nosso redor podem estar passando.",
+        "Em João 21:15-17, Jesus deu evidência do nosso amor por Ele, e essa evidência é 'Apascenta as minhas ovelhas.' Nosso amor pelo nosso Salvador é expresso pelo nosso cuidado com Suas ovelhas. Hoje, escolha sair e recuperar Suas ovelhas perdidas, porque esse é o seu chamado."
+      ]
+    },
+    "now-a-christian-what-next": {
+      "title": "Agora um Cristão, e Agora?",
+      "summary": "Ser cristão não é sobre carregar um nome — é sobre viver uma vida que reflita Cristo.",
+      "paragraphs": [
+        "O nome 'cristão' foi dado em Atos 11:26 por causa das obras e estilos de vida dos apóstolos. Em Atos 4, Pedro e João eram percebidos como homens iletrados, mas as pessoas reconheciam que eles haviam estado com Cristo. A vida cristã não pode ser falsificada — é reflexiva e real.",
+        "Os apóstolos não se autodenominaram cristãos. Eles foram assim chamados por causa do tipo de vida que viviam. Estavam refletindo a vida de Cristo. O nome cristão não é uma bandeira, um emblema ou uma bandeira. É um estilo de vida.",
+        "Então você agora carrega o nome — está vivendo a vida? O que te define não é apenas o nome, mas a vida. Decida viver a vida de Cristo. Como diz Gálatas 2:20: 'Estou crucificado com Cristo; logo, já não sou eu quem vive, mas Cristo vive em mim.'"
+      ]
+    },
+    "why-were-you-saved": {
+      "title": "Por Que Você Foi Salvo?",
+      "summary": "Você não foi salvo apenas para si mesmo — sua salvação é um chamado ao serviço e a dar fruto para o Reino de Deus.",
+      "paragraphs": [
+        "Muitas vezes pensamos que a vida para quando somos salvos, que nosso dever termina aí. Mas o Espírito Santo está usando esta mensagem para mudar essa mentalidade. Sua salvação e a minha não é apenas para nós mesmos — nossa salvação é um chamado ao serviço. Fomos salvos para servir.",
+        "Jesus disse em João 15:16: 'Não fostes vós que me escolhestes a mim; pelo contrário, eu vos escolhi a vós outros e vos designei para que vades e deis fruto, e o vosso fruto permaneça.' O principal propósito pelo qual fomos salvos foi para que fôssemos portadores de fruto para Cristo e garantíssemos que esses frutos permanecessem.",
+        "Buscai primeiro o reino de Deus e a Sua justiça, e todas essas coisas vos serão acrescentadas. Seu propósito na terra vai além do seu conforto pessoal — estende-se à expansão do reino de Deus através da sua vida."
+      ]
+    },
+    "what-do-you-do-before-your-manifestation": {
+      "title": "O Que Você Faz Antes da Sua Manifestação?",
+      "summary": "Toda a terra espera a revelação dos filhos de Deus — mas quando você for revelado, estará pronto?",
+      "paragraphs": [
+        "Romanos 8:19 nos diz que a ardente expectativa da criação aguarda a revelação dos filhos de Deus. Toda a terra espera nossa manifestação como filhos de Deus. O mundo está em trevas e espera que nós venhamos ser a luz.",
+        "Mas há uma pergunta a considerar: quando você for revelado, estará pronto? Imagine todos esperando o presidente sair de uma sala, e em vez disso sai um bebê de fraldas. Qual seria a expressão no rosto de todos?",
+        "Espera-se que todos nos preparemos para nossa revelação, pois o tempo da nossa manifestação está próximo. Se aparecermos despreparados, o que esperamos que aconteça? Prepare-se. Passe tempo na presença de Deus, cresça em Sua Palavra e prepare-se para o dia da sua manifestação."
+      ]
+    },
+    "its-a-commandment": {
+      "title": "É um Mandamento",
+      "summary": "A Grande Comissão não é uma sugestão — é um mandamento de Jesus para todo crente.",
+      "paragraphs": [
+        "Como cristãos, somos o templo de Deus e Seu Espírito habita em nós. Mas a pergunta é: o que você está fazendo com a presença e o poder de Deus que está dentro de você? Não fomos salvos por Deus para nós mesmos — fomos salvos para trazer outras almas ao Reino.",
+        "Em Mateus 28:18-20, Jesus disse: 'Toda a autoridade me foi dada no céu e na terra. Portanto, ide e fazei discípulos de todas as nações.' Isso foi um mandamento. O sangue de Jesus não foi derramado em vão. Ele derramou Seu sangue para redimir o mundo inteiro do pecado e da morte.",
+        "Devemos sair e fazer cumprir essa vitória fazendo o mundo conhecer a verdade. O mundo está escurecendo, mas uma pequena vela brilha mais na sala mais escura. Já que Ele disse que somos a luz do mundo, seja a luz. Deixe sua vida exibir a imagem de Cristo. Temos o mandamento de pregar o evangelho, então cumpra seu chamado."
+      ]
+    },
+    "purpose-and-spirituality": {
+      "title": "Propósito e Espiritualidade",
+      "summary": "Seu propósito na terra foi predeterminado por Deus, e você só pode descobri-lo através de um relacionamento pessoal com Ele.",
+      "paragraphs": [
+        "O Bispo David Oyedepo disse: 'Se o propósito de uma coisa não é conhecido, o abuso é inevitável.' Como produto de Deus, você tem um propósito nesta terra, e esse propósito foi predeterminado pelo seu Pai celestial. Jeremias 29:11 diz que Deus tem pensamentos de paz para você, para te dar um fim esperado.",
+        "Deus disse a Jeremias: 'Antes que eu te formasse no ventre, te conheci.' Mesmo antes de você chegar à terra, Deus já tinha te dado uma tarefa. Da mesma forma, você recebeu tarefas para cumprir durante sua estadia aqui.",
+        "Como a espiritualidade entra em jogo? O cristianismo não é uma religião, mas um estilo de vida — um relacionamento pessoal com seu Pai celestial. Se você não fala com seu pai terreno, ele nunca te diria certas coisas. Da mesma forma, se você não tem um relacionamento pessoal com seu Pai celestial, nunca poderá saber o que Ele pensa sobre você ou quais são os planos Dele para você. Sua vida importa. Você não é um acidente biológico."
+      ]
+    },
+    "it-pays-to-serve-god": {
+      "title": "Vale a Pena Servir a Deus",
+      "summary": "Tudo o que Deus pede de você é para o seu próprio bem — servir a Deus vem com benefícios que transformam sua vida.",
+      "paragraphs": [
+        "Deuteronômio 10:12-13 pergunta o que o Senhor requer de nós — temê-Lo, andar em Seus caminhos, amá-Lo e servi-Lo de todo o coração. As últimas três palavras da passagem são 'para o teu bem.' Tudo o que você faz no serviço a Deus é, em última análise, para seu próprio benefício.",
+        "O Bispo David Oyedepo disse: 'Deus não precisa de você ou de mim — nós é que precisamos Dele em todos os aspectos das nossas vidas.' Com essa mentalidade, você entende que nada do que você faz muda quem Deus é, mas tudo o que você faz muda quem você é, seja positiva ou negativamente.",
+        "Deus quer que você avance, e você só pode fazer isso decidindo se mover. Ele quer que você cresça, O conheça mais, se torne mais forte hoje do que era ontem. Como Josué 1:8 diz, se você quer que seu caminho seja próspero e tenha bom sucesso, deve meditar em Sua Palavra dia e noite. Tudo o que você decide fazer para Deus é para o seu próprio bem."
+      ]
+    },
+    "your-first-love": {
+      "title": "Seu Primeiro Amor",
+      "summary": "Jesus adverte contra abandonar seu primeiro amor — a devoção apaixonada que você tinha quando veio a Cristo pela primeira vez.",
+      "paragraphs": [
+        "Em Apocalipse 2:4, Jesus disse à igreja em Éfeso: 'Tenho, porém, contra ti que abandonaste o teu primeiro amor.' Ele primeiro os elogiou por seu trabalho e paciência, mas abandonar o primeiro amor não era aceitável para Ele.",
+        "Seu primeiro amor se refere às primeiras obras que você amava fazer. Quando você nasceu de novo, queria agradar a Deus de todas as formas. Você se envolvia em atividades, projetos e processos para crescer e agradar a Deus. Mas agora, quais eram aquelas coisas que você fazia antes e que não faz mais?",
+        "Talvez você fosse um adorador vibrante, membro do coro, guerreiro de oração, alguém que amava distribuir folhetos ou alguém que tinha fome de Deus. Você pode ainda estar fazendo boas obras agora, mas quais são aquelas coisas que você fazia quando era um jovem cristão que você agora acha que são pequenas demais para você? Jesus está dizendo a você hoje: lembre-se, arrependa-se e faça as primeiras obras novamente."
+      ]
+    },
+    "just-a-reminder": {
+      "title": "Apenas um Lembrete",
+      "summary": "Sem uma conexão com Jesus, seu nome não pode ser escrito no Livro da Vida — este é um lembrete suave para permanecer conectado a Ele.",
+      "paragraphs": [
+        "Apocalipse 20:15 diz que todo aquele que não foi encontrado escrito no Livro da Vida foi lançado no lago de fogo. Esta não é uma carta de condenação, mas um lembrete. O Espírito Santo revelou que Jesus é a nossa Árvore da Vida, e o Livro da Vida vem Dele.",
+        "Sem um relacionamento com Jesus, seu nome não pode ser escrito no Livro da Vida. Muitas pessoas não gostam de discutir este tópico, mas é real. Jesus está voltando em breve, e o tempo de Sua chegada está mais próximo hoje do que ontem.",
+        "Isto também é uma admoestação para os cristãos. Jesus disse em Lucas 9:62 que ninguém que coloca a mão no arado e olha para trás é apto para o reino de Deus. Não perca a fé. Segure-se com mais força. Como Paulo disse, os sofrimentos deste tempo presente não são dignos de serem comparados com a glória que será revelada em nós. E se você não tem um relacionamento com Jesus, acerte isso com Ele hoje."
+      ]
+    },
+    "your-role-to-play-as-a-christian": {
+      "title": "Seu Papel como Cristão",
+      "summary": "Todo cristão tem um papel a desempenhar — seja como lavrador da terra (evangelista) ou como guardião das ovelhas (pastor/professor).",
+      "paragraphs": [
+        "A maioria dos cristãos não sabe que uma vez salvos, temos papéis muito importantes a desempenhar no serviço a Deus. Existem dois deveres principais que podemos observar através das vidas de Caim e Abel. Caim era lavrador da terra, e Abel era pastor de ovelhas.",
+        "O lavrador da terra representa o papel de pregar aos incrédulos e trazê-los a Cristo. Este grupo de pessoas tem a facilidade de sair e enfrentar a multidão, compartilhando o evangelho não importa os desafios. Eles vão a qualquer extremo para garantir que as pessoas ao seu redor saibam quem Cristo é.",
+        "O pastor de ovelhas representa o papel de nutrir e ensinar aqueles que já estão em Cristo. Seu papel é garantir que seus irmãos permaneçam conectados a Cristo e não se desviem de amá-Lo. Isso é feito através do ensino e da oração. Qualquer que seja o papel em que você se encontre, faça-o bem e de todo o coração, para que seu resultado seja aceito por Deus."
+      ]
+    },
+    "the-tree-of-life": {
+      "title": "A Árvore da Vida",
+      "summary": "Jesus é a nossa Árvore da Vida, mas muitos perseguem conhecimento e sucesso mundano enquanto negligenciam a fonte da vida eterna.",
+      "paragraphs": [
+        "No Jardim do Éden, Deus colocou a Árvore da Vida e a Árvore do Conhecimento do Bem e do Mal. Adão podia comer da Árvore da Vida e ter vida eterna, mas escolheu comer da árvore proibida. Você pode estar irritado com Adão, mas faz o mesmo se não nasceu de novo.",
+        "Jesus é a nossa Árvore da Vida. Em João 14:6, Ele disse: 'Eu sou o caminho, a verdade e a vida.' João 3:16 nos diz que todo aquele que Nele crê não pereça, mas tenha a vida eterna. No entanto, em vez de se conectar à fonte da vida, muitos perseguem diplomas e certificados sem ter Cristo neles.",
+        "De que adianta ao homem ganhar o mundo inteiro se perder a sua alma? Todo o conhecimento e conquistas do mundo são vaidade sem Cristo. Este é um chamado importante porque estamos nos últimos tempos. Esta é uma oportunidade para você receber Cristo em sua vida e receber a vida eterna."
+      ]
+    },
+    "its-a-summary": {
+      "title": "É um Resumo",
+      "summary": "O amor é o resumo de toda a lei — amar ao próximo como a si mesmo cumpre todo mandamento.",
+      "paragraphs": [
+        "Muitos acreditam que a lei do Antigo Testamento se foi porque vivemos no tempo da graça. Mas a grande pergunta é: e a lei? Romanos 13:9-10 explica que todos os mandamentos se resumem nesta palavra: 'Amarás ao teu próximo como a ti mesmo.' O amor é o cumprimento da lei.",
+        "Como você ama ao próximo como a si mesmo? Tudo o que você deseja para si, deseje o mesmo para o seu próximo. Mateus 7:12 diz: 'Portanto, tudo o que vós quereis que os homens vos façam, fazei-lho também vós a eles.' Esta é a Regra de Ouro.",
+        "Seu próximo não é apenas seu amigo. Pela história do Bom Samaritano, seu próximo é todos os outros além de você. Estar sob a graça não significa que você pode fazer o que quiser. Romanos 6:1-2 diz: 'De modo nenhum! Nós que estamos mortos para o pecado, como viveremos ainda nele?' A melhor maneira de guardar os mandamentos de Deus é amar ao seu próximo."
+      ]
+    },
+    "a-lack-of-direction": {
+      "title": "Falta de Direção",
+      "summary": "Muitos jovens carecem de direção porque não param para pensar nas consequências de suas escolhas — é hora de se conectar à verdadeira fonte de orientação.",
+      "paragraphs": [
+        "A maioria dos humanos hoje se engana porque carece de direção. Os pais costumam dizer: 'Se eu tivesse tido a oportunidade de alguém me dizer essas coisas, não estaria aqui hoje.' No entanto, muitos jovens ainda não se sentam para planejar o caminho de suas vidas e são facilmente influenciados por seus amigos.",
+        "A verdade é que não estamos pensando. Não pensando no sentido de que não estamos preocupados com as consequências ou ganhos de cada atividade que fazemos. A vida não é um parque de diversões. Não podemos vir a esta vida e desperdiçar recursos.",
+        "Precisamos começar a pensar, e para começar a pensar precisamos nos conectar a uma fonte. Há apenas uma verdadeira fonte — Jesus Cristo — porque sem Ele nada podemos fazer. Vamos começar a pensar sobre nossas escolhas e suas consequências eternas."
+      ]
+    },
+    "a-message-for-you": {
+      "title": "Uma Mensagem para Você",
+      "summary": "Quando você peca depois de ser salvo, é como escolher voltar à escravidão depois de ter sido libertado — Cristo sente profundamente sua escolha.",
+      "paragraphs": [
+        "Deus usou Moisés para libertar Seu povo do Egito. Imagine que depois de chegar à Terra Prometida, um dos israelitas decide voltar ao Egito para servir como escravo só porque quer provar a comida egípcia. Como Moisés se sentiria? Ele não era escravo, mas recebeu a tarefa de libertá-los.",
+        "Você e eu somos como aquele filho do israelita quando pecamos. Cristo passou por tanto e finalmente morreu por nós para que fôssemos resgatados do pecado. Recebemos domínio sobre o pecado. Mas quando decidimos voltar ao pecado, estamos escolhendo sofrer em vez de desfrutar a liberdade que Cristo comprou para nós.",
+        "Como você acha que Cristo se sente quando pecamos? É como dizer a Ele para começar o processo todo de novo. Vamos reconsiderar nossos caminhos. Sua vida faz com que Ele desfrute os benefícios de te libertar? Se você voltou ao pecado, Ele está disposto a te trazer de volta. Ele está esperando por você."
+      ]
+    },
+    "what-real-love-is-like": {
+      "title": "Como É o Amor Verdadeiro",
+      "summary": "O amor de Deus é demonstrado através do sacrifício supremo — Ele deu Seu único Filho para que pudéssemos ser salvos.",
+      "paragraphs": [
+        "Havia um Rei que tinha um único filho a quem amava profundamente. Seus súditos não eram leais, mas em vez de executá-los, ele precisava de alguém puro para suportar as consequências de suas ofensas. Seu único filho se voluntariou. Esta é uma imagem do que Deus fez por nós.",
+        "Somos como os súditos na história. Pecamos, e Deus Pai enviou Seu único Filho, Jesus Cristo, para morrer por nós para que pudéssemos ser salvos. Mas em vez de escolher o caminho certo, muitos escolhem continuar no pecado.",
+        "Você tem dado a Deus o amor que Ele merece? Você tem aceitado a salvação que Ele providenciou através de Cristo? A única maneira de dar a Ele o amor que Ele te deu é entregando sua vida a Ele primeiro. Sem Ele, você nada pode fazer. Se você tomou essa decisão, comece sua jornada com Ele hoje e deixe sua vida refletir Seu amor."
+      ]
+    },
+    "where-do-you-stand": {
+      "title": "Onde Você Está?",
+      "summary": "Toda pessoa deve fazer uma escolha entre a vida e a morte, entre servir a Deus e servir ao diabo — onde você está?",
+      "paragraphs": [
+        "Havia um Rei que fez dois reis menores e os colocou em um palácio. Ele lhes disse para não comerem de uma comida específica, mas um antigo servo mentiu para eles, e eles comeram. Adão e Eva caíram no mesmo engano, e a humanidade tem lutado desde então.",
+        "Mas não culpe Adão e Eva pelo que você está passando. Da mesma forma que Deus deu a eles uma escolha, Ele nos dá uma escolha em Deuteronômio 30:19 — vida ou morte. No entanto, ainda caímos no pecado e culpamos o diabo. Temos mais autoridade na casa de Deus do que o diabo jamais teve, então por que permitimos que ele tenha domínio sobre nós?",
+        "Deus nos deu Seu único Filho para morrer por nós para que pudéssemos ser salvos, mas ainda escolhemos continuar no pecado. Muito em breve Ele virá para levar os fiéis ao Paraíso. De que lado você está? Não se trata da sua igreja ou do seu pastor — trata-se da sua vida e do seu relacionamento com Deus. No último dia, você estará sozinho e enfrentará seu julgamento."
+      ]
+    }
+  }
+}

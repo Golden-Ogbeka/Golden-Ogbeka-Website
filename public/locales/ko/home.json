@@ -19,5 +19,8 @@
   "certifications.viewAll": "모두 보기",
   "education.title": "교육",
   "featured.thumbnailAlt": "{{title}} 썸네일",
-  "featured.moreTools": "+{{count}}"
+  "featured.moreTools": "+{{count}}",
+  "featuredBlog.title": "블로그 글",
+  "featuredBlog.subtitle": "엔지니어링, AI, 그리고 소프트웨어 기술에 대한 생각.",
+  "featuredBlog.viewAll": "모든 글 보기"
 }

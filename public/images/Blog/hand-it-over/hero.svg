@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="glow"><stop offset="40%" stop-color="#fbbf24" stop-opacity="0.12"/><stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="960" cy="500" r="400" fill="url(#glow)"/>
+  <g transform="translate(960,420)"><path d="M-120,80 Q-60,-40 0,-50 Q60,-40 120,80" fill="none" stroke="#fbbf24" stroke-width="10" stroke-linecap="round"/><path d="M-80,50 Q-30,-10 0,-20" fill="none" stroke="#fbbf24" stroke-width="8" stroke-linecap="round"/><path d="M80,50 Q30,-10 0,-20" fill="none" stroke="#fbbf24" stroke-width="8" stroke-linecap="round"/><circle cx="0" cy="15" r="16" fill="#fbbf24"/><circle cx="0" cy="55" r="80" fill="none" stroke="#b38f00" stroke-width="6"/></g>
+  <text x="960" y="820" text-anchor="middle" fill="#94a3b8" font-family="Outfit, sans-serif" font-size="26" letter-spacing="3" font-weight="bold">HAND IT OVER</text>
+</svg>

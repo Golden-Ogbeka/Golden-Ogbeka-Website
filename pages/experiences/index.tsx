@@ -3,6 +3,19 @@ import HeadElement from '../../components/layout/HeadElement';
 import ExperiencesData from '../../data/Experiences';
 import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../utils/analytics';
+
+function slugify(str: string): string {
+  return str.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '');
+}
+
+function slugifyCompany(str: string): string {
+  return str.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '');
+}
+
+function getExpKey(role: string, company: string): string {
+  return `${slugify(role)}-${slugifyCompany(company)}`;
+}
+
 export default function Experiences() {
   const { t } = useTranslation(['common', 'experiences']);
   return (
@@ -35,7 +48,7 @@ export default function Experiences() {
               <div className='flex flex-col md:flex-row md:items-start gap-6'>
                 <div className='flex-1'>
                   <div className='flex flex-col md:flex-row md:items-center justify-between mb-2'>
-                    <h2 className='text-2xl font-semibold'>{t(`experiences:experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.role`, exp.role)}</h2>
+                    <h2 className='text-2xl font-semibold'>{t(`experiences:experience.${getExpKey(exp.role, exp.company)}.role`, exp.role)}</h2>
                     <span className='text-sm font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded-full mt-2 md:mt-0 inline-block w-max'>
                       {exp.date}
                     </span>
@@ -49,11 +62,11 @@ export default function Experiences() {
                         className='text-lg text-zinc-600 dark:text-zinc-400 hover:text-accent transition-colors font-medium'
                         onClick={() => trackEvent('click', 'company_link', exp.company)}
                       >
-                        {t(`experiences:experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.company`, exp.company)}
+                        {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}
                       </a>
                     ) : (
                       <span className='text-lg text-zinc-600 dark:text-zinc-400 font-medium'>
-                        {t(`experiences:experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.company`, exp.company)}
+                        {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}
                       </span>
                     )}
                   </div>
@@ -63,7 +76,7 @@ export default function Experiences() {
                       <li key={idx} className='flex items-start'>
                         <span className='w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-600 mt-2 mr-3 shrink-0'></span>
                         <span className='text-zinc-700 dark:text-zinc-300 leading-relaxed'>
-                          {t(`experiences:experience.${exp.role.toLowerCase().replace(/[()&]/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-+/g, '-').replace(/^-|-$/g, '')}-${exp.company.toLowerCase().replace(/\([^)]*\)/g, '').replace(/\s+/g, '-').replace(/\./g, '').replace(/-$/g, '')}.tasks.${idx}`, task)}
+                          {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.tasks.${idx}`, task)}
                         </span>
                       </li>
                     ))}

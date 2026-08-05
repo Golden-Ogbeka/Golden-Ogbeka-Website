@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="glow"><stop offset="40%" stop-color="#60a5fa" stop-opacity="0.12"/><stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="960" cy="500" r="400" fill="url(#glow)"/>
+  <g transform="translate(960,420)"><rect x="-80" y="-100" width="160" height="210" rx="10" fill="none" stroke="#60a5fa" stroke-width="8"/><line x1="-55" y1="-65" x2="55" y2="-65" stroke="#60a5fa" stroke-width="5"/><line x1="-55" y1="-45" x2="55" y2="-45" stroke="#60a5fa" stroke-width="5"/><line x1="-55" y1="-25" x2="55" y2="-25" stroke="#60a5fa" stroke-width="5"/><line x1="-55" y1="-5" x2="55" y2="-5" stroke="#60a5fa" stroke-width="5"/><line x1="-55" y1="15" x2="45" y2="15" stroke="#60a5fa" stroke-width="5"/><line x1="-55" y1="35" x2="45" y2="35" stroke="#60a5fa" stroke-width="5"/><line x1="-55" y1="55" x2="30" y2="55" stroke="#60a5fa" stroke-width="5"/><path d="M-55,85 L-30,110 L55,60" fill="none" stroke="#fbbf24" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text x="960" y="820" text-anchor="middle" fill="#94a3b8" font-family="Outfit, sans-serif" font-size="26" letter-spacing="3" font-weight="bold">WRITTEN IN THE BOOK OF LIFE</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="glow"><stop offset="40%" stop-color="#fbbf24" stop-opacity="0.12"/><stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="960" cy="500" r="400" fill="url(#glow)"/>
+  <g transform="translate(960,420)"><path d="M-60,-30 L0,-110 L60,-30 Z" fill="none" stroke="#fbbf24" stroke-width="8" stroke-linejoin="round"/><circle cx="0" cy="-110" r="22" fill="#fbbf24"/><circle cx="0" cy="-110" r="12" fill="#b38f00"/><rect x="-50" y="15" width="100" height="95" rx="8" fill="none" stroke="#fbbf24" stroke-width="8"/><line x1="-50" y1="-30" x2="50" y2="-30" stroke="#fbbf24" stroke-width="6"/><path d="M-25,75 L0,50 L25,75" fill="none" stroke="#b38f00" stroke-width="6" stroke-linecap="round"/></g>
+  <text x="960" y="820" text-anchor="middle" fill="#94a3b8" font-family="Outfit, sans-serif" font-size="26" letter-spacing="3" font-weight="bold">FOR YOUR GOOD</text>
+</svg>

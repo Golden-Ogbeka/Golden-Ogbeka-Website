@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="glow"><stop offset="40%" stop-color="#34d399" stop-opacity="0.12"/><stop offset="100%" stop-color="#34d399" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="960" cy="500" r="400" fill="url(#glow)"/>
+  <g transform="translate(960,420)"><path d="M-130,50 Q-100,-10 0,-10 Q100,-10 130,50" fill="none" stroke="#34d399" stroke-width="8" stroke-linecap="round"/><path d="M-90,10 Q-60,-40 0,-50 Q60,-40 90,10" fill="none" stroke="#34d399" stroke-width="7" stroke-linecap="round"/><path d="M-50,-40 Q-30,-70 0,-80 Q30,-70 50,-40" fill="none" stroke="#34d399" stroke-width="6" stroke-linecap="round"/><circle cx="0" cy="-105" r="20" fill="#fbbf24"/><circle cx="0" cy="-105" r="10" fill="#b38f00"/></g>
+  <text x="960" y="820" text-anchor="middle" fill="#94a3b8" font-family="Outfit, sans-serif" font-size="26" letter-spacing="3" font-weight="bold">POWER OF THANKSGIVING</text>
+</svg>

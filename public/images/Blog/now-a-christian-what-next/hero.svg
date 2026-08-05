@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="glow"><stop offset="40%" stop-color="#fbbf24" stop-opacity="0.12"/><stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="960" cy="500" r="400" fill="url(#glow)"/>
+  <g transform="translate(960,420)"><path d="M0,-100 L0,30" stroke="#fbbf24" stroke-width="8" stroke-linecap="round"/><path d="M-80,100 L0,30 L80,100" fill="none" stroke="#fbbf24" stroke-width="8" stroke-linejoin="round"/><circle cx="0" cy="-125" r="28" fill="none" stroke="#fbbf24" stroke-width="7"/><circle cx="0" cy="-125" r="12" fill="#fbbf24"/><line x1="-80" y1="100" x2="80" y2="100" stroke="#fbbf24" stroke-width="6" stroke-linecap="round"/></g>
+  <text x="960" y="820" text-anchor="middle" fill="#94a3b8" font-family="Outfit, sans-serif" font-size="26" letter-spacing="3" font-weight="bold">A LIFESTYLE OF CHRIST</text>
+</svg>

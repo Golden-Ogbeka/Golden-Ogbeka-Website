@@ -4,6 +4,11 @@ import { useRouter } from 'next/router';
 const SITE_URL = 'https://goldenogbeka.com';
 const LOCALES = ['en', 'zh', 'fr', 'de', 'es', 'ja', 'ko', 'pt', 'ru', 'ar'];
 
+const OG_LOCALE_MAP: Record<string, string> = {
+  en: 'en_US', zh: 'zh_CN', fr: 'fr_FR', de: 'de_DE', es: 'es_ES',
+  ja: 'ja_JP', ko: 'ko_KR', pt: 'pt_PT', ru: 'ru_RU', ar: 'ar_AR',
+};
+
 const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
@@ -16,6 +21,23 @@ const personSchema = {
   ],
   description:
     'Senior Software Engineer creating scalable products at the intersection of technology and innovation.',
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  url: SITE_URL,
+  name: 'Golden Ogbeka',
+  description:
+    'Senior Software Engineer creating scalable products at the intersection of technology and innovation.',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: `${SITE_URL}/search?q={search_term_string}`,
+    },
+    'query-input': 'required name=search_term_string',
+  },
 };
 
 interface BreadcrumbItem {
@@ -37,16 +59,26 @@ function HeadElement({
   noIndex = false,
   siteLink = SITE_URL,
   ogImage = '/og-image.png',
+  ogType = 'website',
+  articlePublishedTime,
+  articleAuthor,
+  articleTags,
   breadcrumb,
   softwareApplication,
+  overrideSchemas,
 }: {
   pageTitle?: string;
   description?: string;
   noIndex?: boolean;
   siteLink?: string;
   ogImage?: string;
+  ogType?: 'website' | 'article';
+  articlePublishedTime?: string;
+  articleAuthor?: string;
+  articleTags?: string[];
   breadcrumb?: BreadcrumbItem[];
   softwareApplication?: SoftwareApplicationSchema;
+  overrideSchemas?: Record<string, unknown>[];
 }) {
   const router = useRouter();
   const fullOgImageUrl = `${SITE_URL}${ogImage}`;
@@ -92,7 +124,7 @@ function HeadElement({
       }
     : null;
 
-  const schemas = [personSchema, breadcrumbSchema, softwareSchema].filter(Boolean);
+  const schemas = overrideSchemas ?? [personSchema, websiteSchema, breadcrumbSchema, softwareSchema].filter(Boolean);
 
   return (
     <Head>
@@ -117,15 +149,24 @@ function HeadElement({
       ))}
 
       {/* Open Graph / Facebook */}
-      <meta property='og:type' content='website' />
+      <meta property='og:type' content={ogType} />
       <meta property='og:site_name' content='Golden Ogbeka' />
-      <meta property='og:locale' content={router.locale === 'en' ? 'en_US' : router.locale} />
+      <meta property='og:locale' content={OG_LOCALE_MAP[router.locale || 'en'] || 'en_US'} />
       <meta property='og:url' content={siteLink} />
       <meta property='og:title' content={pageTitle} />
       <meta property='og:description' content={description} />
       <meta property='og:image' content={fullOgImageUrl} />
       <meta property='og:image:width' content='1200' />
       <meta property='og:image:height' content='630' />
+      {ogType === 'article' && articlePublishedTime && (
+        <meta property='article:published_time' content={articlePublishedTime} />
+      )}
+      {ogType === 'article' && articleAuthor && (
+        <meta property='article:author' content={articleAuthor} />
+      )}
+      {ogType === 'article' && articleTags?.map((tag) => (
+        <meta key={tag} property='article:tag' content={tag} />
+      ))}
 
       {/* Twitter / X */}
       <meta name='twitter:card' content='summary_large_image' />
