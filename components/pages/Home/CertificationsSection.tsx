@@ -5,7 +5,6 @@ import { useTranslation } from 'next-i18next';
 
 export default function CertificationsSection() {
   const { t } = useTranslation(['common', 'home', 'certifications']);
-  const featuredCerts = CertificationsData.filter((c) => c.featured);
 
   return (
     <section className='py-20'>
@@ -39,7 +38,9 @@ export default function CertificationsSection() {
       </div>
 
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
-        {featuredCerts.map((cert, index) => (
+        {CertificationsData.map(
+          (cert, index) =>
+            cert.featured && (
           <div key={index} className='minimal-card p-6 flex flex-col'>
             <h3 className='text-lg font-semibold mb-2'>{t(`certifications:certification.${index}.title`, cert.title)}</h3>
             <p className='text-zinc-600 dark:text-zinc-400 mb-4'>{t(`certifications:certification.${index}.organization`, cert.organization)}</p>
@@ -52,7 +53,7 @@ export default function CertificationsSection() {
                   href={cert.link}
                   target='_blank'
                   rel='noreferrer'
-                  className='text-accent hover:text-blue-400 p-2'
+                  className='inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-blue-400 focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none rounded-md py-2 px-2'
                   aria-label={t('a11y.viewCertificate').replace('{title}', t(`certifications:certification.${index}.title`, cert.title))}
                   onClick={() => trackEvent('click', 'certification', cert.title)}
                 >
@@ -69,11 +70,13 @@ export default function CertificationsSection() {
                       d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
                     />
                   </svg>
+                  {t('certifications:viewCertificate')}
                 </a>
               )}
             </div>
           </div>
-        ))}
+            )
+        )}
       </div>
 
       <Link href='/certifications'>

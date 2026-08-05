@@ -42,5 +42,20 @@
   "education.8.degree": "دبلوم في تطوير القيادة",
   "education.8.institution": "African Leadership Development Centre",
   "education.9.degree": "درجة البكالوريوس في علوم الكمبيوتر (الدرجة الأولى)",
-  "education.9.institution": "Covenant University"
+  "education.9.institution": "Covenant University",
+  "certification.12.title": "تسويق المحتوى",
+  "certification.12.organization": "Hubspot Academy",
+  "certification.13.title": "شهادة تحسين محركات البحث (SEO)",
+  "certification.13.organization": "Hubspot Academy",
+  "certification.14.title": "الدورة المتقدمة في إدارة المشاريع",
+  "certification.14.organization": "Udemy",
+  "certification.15.title": "برنامج الإرشاد CUALA",
+  "certification.15.organization": "Covenant University Alumni Association",
+  "certification.16.title": "مبادئ وممارسات DevOps",
+  "certification.16.organization": "Digital Nigeria",
+  "certification.17.title": "أساسيات تطوير HTML5 وCSS3 للمبتدئين",
+  "certification.17.organization": "Digital Nigeria",
+  "certification.18.title": "مقدمة في علوم البيانات",
+  "certification.18.organization": "Digital Nigeria",
+  "viewCertificate": "عرض الشهادة"
 }

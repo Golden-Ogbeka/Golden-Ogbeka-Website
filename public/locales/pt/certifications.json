@@ -42,5 +42,20 @@
   "education.8.degree": "Diploma em Desenvolvimento de Liderança",
   "education.8.institution": "African Leadership Development Centre",
   "education.9.degree": "Bacharelado em Ciência da Computação (Primeira Classe)",
-  "education.9.institution": "Covenant University"
+  "education.9.institution": "Covenant University",
+  "certification.12.title": "Marketing de conteúdo",
+  "certification.12.organization": "Hubspot Academy",
+  "certification.13.title": "Certificação SEO",
+  "certification.13.organization": "Hubspot Academy",
+  "certification.14.title": "Curso de mestrado em gerenciamento de projetos",
+  "certification.14.organization": "Udemy",
+  "certification.15.title": "Programa de mentoria CUALA",
+  "certification.15.organization": "Covenant University Alumni Association",
+  "certification.16.title": "Princípios e práticas de DevOps",
+  "certification.16.organization": "Digital Nigeria",
+  "certification.17.title": "Fundamentos de desenvolvimento HTML5 e CSS3 para iniciantes absolutos",
+  "certification.17.organization": "Digital Nigeria",
+  "certification.18.title": "Introdução à ciência de dados",
+  "certification.18.organization": "Digital Nigeria",
+  "viewCertificate": "Ver certificado"
 }
