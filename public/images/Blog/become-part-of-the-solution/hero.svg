@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#F59E0B" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pieceGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="45%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="pieceDim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <circle cx="1340" cy="540" r="400" fill="url(#glow)"/>
+  <!-- Dim puzzle pieces -->
+  <g fill="url(#pieceDim)" stroke="#F59E0B" stroke-opacity="0.15" stroke-width="2">
+    <rect x="380" y="420" width="240" height="240" rx="28"/>
+    <circle cx="500" cy="384" r="36"/>
+    <circle cx="656" cy="540" r="36"/>
+  </g>
+  <g fill="url(#pieceDim)" stroke="#F59E0B" stroke-opacity="0.15" stroke-width="2">
+    <rect x="660" y="420" width="240" height="240" rx="28"/>
+    <circle cx="780" cy="384" r="36"/>
+    <circle cx="936" cy="540" r="36"/>
+  </g>
+  <g fill="url(#pieceDim)" stroke="#F59E0B" stroke-opacity="0.15" stroke-width="2">
+    <rect x="940" y="420" width="240" height="240" rx="28"/>
+    <circle cx="1060" cy="384" r="36"/>
+    <circle cx="1216" cy="540" r="36"/>
+  </g>
+  <!-- Connection nodes -->
+  <g fill="#F59E0B">
+    <circle cx="620" cy="540" r="7" opacity="0.5"/>
+    <circle cx="900" cy="540" r="7" opacity="0.5"/>
+    <circle cx="1180" cy="540" r="7" opacity="0.35"/>
+  </g>
+  <!-- Gold piece snapping into place -->
+  <g transform="rotate(6 1340 540)">
+    <g fill="url(#pieceGold)" stroke="#FDE68A" stroke-opacity="0.7" stroke-width="3">
+      <rect x="1220" y="420" width="240" height="240" rx="28"/>
+      <circle cx="1340" cy="384" r="36"/>
+      <circle cx="1496" cy="540" r="36"/>
+    </g>
+    <path d="M1306 542 l28 26 l48 -52" stroke="#020617" stroke-width="14" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Dotted guide line from dim pieces to the gold piece -->
+  <g stroke="#F59E0B" stroke-width="2" stroke-dasharray="8,12" opacity="0.3" fill="none">
+    <polyline points="600,700 960,760 1330,700"/>
+  </g>
+  <g fill="white">
+    <circle cx="180" cy="100" r="2" opacity="0.7"/><circle cx="420" cy="60" r="1.5" opacity="0.5"/>
+    <circle cx="700" cy="130" r="2" opacity="0.6"/><circle cx="1000" cy="80" r="1.5" opacity="0.4"/>
+    <circle cx="1350" cy="110" r="2.5" opacity="0.7"/><circle cx="1650" cy="70" r="2" opacity="0.5"/>
+    <circle cx="300" cy="980" r="2" opacity="0.5"/><circle cx="560" cy="930" r="1.5" opacity="0.4"/>
+    <circle cx="1200" cy="960" r="2" opacity="0.5"/><circle cx="1720" cy="900" r="2" opacity="0.4"/>
+    <circle cx="1600" cy="1000" r="1.5" opacity="0.35"/><circle cx="250" cy="240" r="1.5" opacity="0.4"/>
+  </g>
+  <rect x="0" y="1040" width="1920" height="4" fill="#F59E0B" opacity="0.5"/>
+</svg>

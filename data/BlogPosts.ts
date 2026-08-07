@@ -2,6 +2,7 @@ import { StaticImageData } from 'next/image';
 
 import africaHero from '../public/images/Blog/africa-needs-more-creators/hero.svg';
 import doDifficultHero from '../public/images/Blog/do-the-difficult-things/hero.svg';
+import becomePartOfSolutionHero from '../public/images/Blog/become-part-of-the-solution/hero.svg';
 import canadaHero from '../public/images/Blog/more-countries-need-to-be-like-canada/hero.svg';
 import mythBusinessHero from '../public/images/Blog/the-myth-about-ai-for-businesses/hero.svg';
 import mythIndividualHero from '../public/images/Blog/the-myth-about-ai-for-individuals/hero.svg';
@@ -86,6 +87,13 @@ const BlogPosts: BlogPostType[] = [
     ogImagePath: '/images/Blog/do-the-difficult-things/hero.svg',
     date: '2026-07-23',
     featured: true,
+  },
+  {
+    slug: 'become-part-of-the-solution',
+    category: 'tips',
+    image: becomePartOfSolutionHero,
+    ogImagePath: '/images/Blog/become-part-of-the-solution/hero.svg',
+    date: '2026-08-07',
   },
   {
     slug: 'hand-it-over',
