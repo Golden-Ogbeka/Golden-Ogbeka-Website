@@ -141,6 +141,13 @@ const Certifications: CertificationType[] = [
     date: 'August 2021',
     featured: false,
   },
+  {
+    title: 'Operations Management',
+    organization: 'Unicaf University',
+    link: '/certificates/operations-management.pdf',
+    date: 'August 2026',
+    featured: false,
+  },
 ];
 
 export default Certifications;
