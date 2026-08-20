@@ -1,5 +1,6 @@
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
+import Image from 'next/image';
 import ExperiencesData from '../../data/Experiences';
 import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../utils/analytics';
@@ -54,21 +55,43 @@ export default function Experiences() {
                     </span>
                   </div>
                   <div className='mb-6'>
-                    {exp.companyLink ? (
-                      <a
-                        href={exp.companyLink}
-                        target='_blank'
-                        rel='noreferrer'
-                        className='text-lg text-zinc-600 dark:text-zinc-400 hover:text-accent transition-colors font-medium'
-                        onClick={() => trackEvent('click', 'company_link', exp.company)}
-                      >
-                        {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}
-                      </a>
-                    ) : (
-                      <span className='text-lg text-zinc-600 dark:text-zinc-400 font-medium'>
-                        {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}
-                      </span>
-                    )}
+                    <div className='flex items-center gap-3'>
+                      {exp.companyLink ? (
+                        <a
+                          href={exp.companyLink}
+                          target='_blank'
+                          rel='noreferrer'
+                          className='flex items-center gap-3 text-lg text-zinc-600 dark:text-zinc-400 hover:text-accent transition-colors font-medium'
+                          onClick={() => trackEvent('click', 'company_link', exp.company)}
+                        >
+                          <div className={`relative w-10 h-10 shrink-0 rounded-lg overflow-hidden flex items-center justify-center ${exp.logoDarkBackground ? 'bg-zinc-800' : 'bg-zinc-100 dark:bg-zinc-800'}`}>
+                            <Image
+                              src={exp.companyLogo}
+                              alt={exp.company}
+                              width={40}
+                              height={40}
+                              className={`object-contain ${exp.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
+                            />
+                          </div>
+                          {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}
+                        </a>
+                      ) : (
+                        <>
+                          <div className={`relative w-10 h-10 shrink-0 rounded-lg overflow-hidden flex items-center justify-center ${exp.logoDarkBackground ? 'bg-zinc-800' : 'bg-zinc-100 dark:bg-zinc-800'}`}>
+                            <Image
+                              src={exp.companyLogo}
+                              alt={exp.company}
+                              width={40}
+                              height={40}
+                              className={`object-contain ${exp.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
+                            />
+                          </div>
+                          <span className='text-lg text-zinc-600 dark:text-zinc-400 font-medium'>
+                            {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}
+                          </span>
+                        </>
+                      )}
+                    </div>
                   </div>
 
                   <ul className='space-y-3'>
