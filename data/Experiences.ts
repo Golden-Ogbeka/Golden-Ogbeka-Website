@@ -1,4 +1,5 @@
 import { StaticImageData } from 'next/image';
+import AbbeyBank from '../public/images/Experiences/abbey-bank.png';
 import Alerzo from '../public/images/Experiences/alerzo.png';
 import BOI from '../public/images/Experiences/boi.jpg';
 import Composite from '../public/images/Experiences/composite.png';
@@ -19,9 +20,25 @@ export interface ExperienceType {
 
 const Experiences: ExperienceType[] = [
   {
+    role: 'Software Engineer',
+    company: 'Abbey Bank Plc',
+    date: 'Aug 2026 - Present',
+    companyLink: 'https://www.abbeybankplc.com/',
+    tasksAchieved: [
+      'Building technology at a pivotal moment in Abbey Bank\'s transformation into a Regional Commercial Bank, contributing to scalable digital solutions, enterprise systems, and technology capabilities shaping the bank\'s next phase of growth.',
+      'Designed and optimized scalable frontend architecture across mobile and web platforms for a corporate banking platform supporting enterprise financial workflows across Nigeria and the UK.',
+      'Developed secure financial modules including bulk payments, transaction workflows, account management systems, and banking operations features aligned with enterprise security standards.',
+      'Improved application responsiveness, frontend maintainability, and user experience through reusable component systems, optimized rendering patterns, and scalable architecture practices.',
+      'Integrated backend services, RESTful APIs, and authentication workflows supporting secure financial operations and customer-facing banking functionality.',
+      'Collaborated with backend engineers, designers, and product teams to deliver scalable cloud-native solutions in Agile development environments.',
+      'Participated in code reviews, debugging, testing, production support, monitoring, and issue resolution to improve platform reliability and operational stability.',
+    ],
+    companyLogo: AbbeyBank,
+  },
+  {
     role: 'Product Management Tutor',
     company: 'Tech Skool',
-    date: 'June 2026 - present',
+    date: 'Jun 2026 - Aug 2026',
     companyLink: 'https://www.techskool.org/',
     tasksAchieved: [
       'Design and continuously improve product management curricula covering product discovery, customer research, market analysis, product strategy, roadmap planning, stakeholder management, Agile methodologies, and product delivery frameworks',
