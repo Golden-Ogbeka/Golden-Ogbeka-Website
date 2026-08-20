@@ -12,6 +12,7 @@ function ExperienceCard({
 		companyLink?: string;
 		date: string;
 		invertCompanyLogoInDarkMode?: boolean;
+		logoDarkBackground?: boolean;
 		tasksAchieved: string[];
 	};
 }) {
@@ -22,23 +23,41 @@ function ExperienceCard({
 				<span className='dark:text-[#C4C4C4]'>{experience.date}</span>
 			</div>
 
-			<a
-				href={experience.companyLink}
-				className='flex flex-row items-center gap-3 dark:text-lightSecondary text-secondary'
-				target='_blank'
-				rel='noreferrer'
-				onClick={() => trackEvent('click', 'company_link', experience.company)}
-			>
-				<Image
-					src={experience.companyLogo}
-					alt=''
-					width={25}
-					height={25}
-					objectFit='contain'
-					className={`${experience.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
-				/>
-				<span>{experience.company}</span>
-			</a>
+			{experience.companyLink ? (
+				<a
+					href={experience.companyLink}
+					className='flex flex-row items-center gap-3 dark:text-lightSecondary text-secondary'
+					target='_blank'
+					rel='noreferrer'
+					onClick={() => trackEvent('click', 'company_link', experience.company)}
+				>
+					<div className={`relative w-8 h-8 shrink-0 rounded-lg overflow-hidden flex items-center justify-center ${experience.logoDarkBackground ? 'bg-zinc-800' : 'bg-zinc-100 dark:bg-zinc-800'}`}>
+						<Image
+							src={experience.companyLogo}
+							alt=''
+							width={25}
+							height={25}
+							objectFit='contain'
+							className={`${experience.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
+						/>
+					</div>
+					<span>{experience.company}</span>
+				</a>
+			) : (
+				<div className='flex flex-row items-center gap-3 dark:text-lightSecondary text-secondary'>
+					<div className={`relative w-8 h-8 shrink-0 rounded-lg overflow-hidden flex items-center justify-center ${experience.logoDarkBackground ? 'bg-zinc-800' : 'bg-zinc-100 dark:bg-zinc-800'}`}>
+						<Image
+							src={experience.companyLogo}
+							alt=''
+							width={25}
+							height={25}
+							objectFit='contain'
+							className={`${experience.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
+						/>
+					</div>
+					<span>{experience.company}</span>
+				</div>
+			)}
 			<ul className='flex flex-col gap-3 list-none'>
 				{experience.tasksAchieved.map((task, index) => (
 					<li key={index} className='dashedList dark:text-[#C4C4C4]'>

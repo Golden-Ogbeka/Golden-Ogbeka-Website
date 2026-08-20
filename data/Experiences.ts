@@ -1,11 +1,14 @@
 import { StaticImageData } from 'next/image';
+import A1Quest from '../public/images/Experiences/a1quest.png';
 import AbbeyBank from '../public/images/Experiences/abbey-bank.png';
 import Alerzo from '../public/images/Experiences/alerzo.png';
-import BOI from '../public/images/Experiences/boi.jpg';
 import Composite from '../public/images/Experiences/composite.png';
-import Keyla from '../public/images/Experiences/keyla.png';
+import FCMB from '../public/images/Experiences/fcmb.png';
 import KFC from '../public/images/Experiences/kfc.png';
 import Rova from '../public/images/Experiences/rova.jpeg';
+import SterlingBank from '../public/images/Experiences/sterling-bank.png';
+import TechSkool from '../public/images/Experiences/tech-skool.png';
+import TFHC from '../public/images/Experiences/tfhc.png';
 import TCU from '../public/images/Experiences/tcu.png';
 
 export interface ExperienceType {
@@ -16,6 +19,7 @@ export interface ExperienceType {
   date: string;
   tasksAchieved: string[];
   invertCompanyLogoInDarkMode?: boolean;
+  logoDarkBackground?: boolean;
 }
 
 const Experiences: ExperienceType[] = [
@@ -23,9 +27,9 @@ const Experiences: ExperienceType[] = [
     role: 'Software Engineer',
     company: 'Abbey Bank Plc',
     date: 'Aug 2026 - Present',
-    companyLink: 'https://www.abbeybankplc.com/',
+    companyLink: 'https://abbeybank.com/',
     tasksAchieved: [
-      'Building technology at a pivotal moment in Abbey Bank\'s transformation into a Regional Commercial Bank, contributing to scalable digital solutions, enterprise systems, and technology capabilities shaping the bank\'s next phase of growth.',
+      "Building technology at a pivotal moment in Abbey Bank's transformation into a Regional Commercial Bank, contributing to scalable digital solutions, enterprise systems, and technology capabilities shaping the bank's next phase of growth.",
       'Designed and optimized scalable frontend architecture across mobile and web platforms for a corporate banking platform supporting enterprise financial workflows across Nigeria and the UK.',
       'Developed secure financial modules including bulk payments, transaction workflows, account management systems, and banking operations features aligned with enterprise security standards.',
       'Improved application responsiveness, frontend maintainability, and user experience through reusable component systems, optimized rendering patterns, and scalable architecture practices.',
@@ -39,7 +43,7 @@ const Experiences: ExperienceType[] = [
     role: 'Product Management Tutor',
     company: 'Tech Skool',
     date: 'Jun 2026 - Aug 2026',
-    companyLink: 'https://www.techskool.org/',
+    companyLink: 'https://www.techskoolglobal.org/',
     tasksAchieved: [
       'Design and continuously improve product management curricula covering product discovery, customer research, market analysis, product strategy, roadmap planning, stakeholder management, Agile methodologies, and product delivery frameworks',
       'Facilitate live training sessions, workshops, and mentorship programs for aspiring product managers, helping learners develop practical product thinking and execution skills',
@@ -52,7 +56,8 @@ const Experiences: ExperienceType[] = [
       'Track student progress and provide personalized feedback, helping learners improve product thinking, analytical skills, and confidence in professional environments',
       'Contribute to building a supportive learning community that encourages innovation, continuous improvement, and career growth among aspiring technology professionals',
     ],
-    companyLogo: Keyla,
+    companyLogo: TechSkool,
+    logoDarkBackground: true,
   },
   {
     role: 'Frontend Engineer',
@@ -74,7 +79,7 @@ const Experiences: ExperienceType[] = [
     role: 'Frontend Engineer',
     company: 'Alerzo',
     date: 'Oct 2022 - Mar 2025',
-    companyLink: 'https://www.alerzo.com/',
+    companyLink: 'https://www.linkedin.com/company/alerzo',
     tasksAchieved: [
       'Developed and maintained operational systems supporting inventory, logistics, customer, and order management workflows used by thousands of businesses across Nigeria.',
       'Built scalable frontend features and reusable React and TypeScript component systems improving engineering consistency and accelerating feature delivery.',
@@ -97,12 +102,14 @@ const Experiences: ExperienceType[] = [
       'Managed technical decision-making, deployment coordination, testing workflows, and software delivery processes across the product lifecycle.',
       'Implemented engineering best practices including code reviews, collaborative development workflows, frontend optimization strategies, and maintainable architecture patterns.',
     ],
-    companyLogo: TCU, // Fallback logo or define a new one if available
+    companyLogo: A1Quest,
+    companyLink: 'https://a1quest.com',
   },
   {
     role: 'Mobile Engineer',
     company: 'Sterling Bank PLC',
     date: 'Feb 2022 - Jun 2023',
+    companyLink: 'https://sterling.ng/',
     tasksAchieved: [
       'Implemented fintech features supporting Nigerians in diaspora with secure access to banking operations, account management services, and digital financial workflows.',
       'Enhanced mobile applications with secure payment systems, identity verification workflows, transaction capabilities, and card management features.',
@@ -110,19 +117,20 @@ const Experiences: ExperienceType[] = [
       'Integrated backend services and secure authentication workflows supporting enterprise banking operations and customer-facing financial services.',
       'Collaborated with engineers, QA teams, designers, and product stakeholders to deliver secure banking solutions aligned with enterprise standards.',
     ],
-    companyLogo: BOI, // Fallback
+    companyLogo: SterlingBank,
   },
   {
-    role: 'Media  Engineer and Live Audio Engineer',
+    role: 'Media Engineer and Live Audio Engineer',
     company: "The Father's House Church",
-    date: 'Feb 2022 - Jun 2023',
+    date: 'Feb 2022 - Present',
+    companyLink: 'https://tfhconline.org.ng/',
     tasksAchieved: [
       'Learnt music production, handled complex audio mixing and mastering, graphics design, video production, photography, social media management',
       'Produced and engineered live audio for events, concerts, and performances for top musical artist like Bidemi Olaoba, ensuring high-quality sound delivery and audience engagement',
       "Serve as the Media unit head of the Youth Church of The Father's House Church",
-      'Web Development Tutor and Full Stack Engineer. Rebuilt the church\"s software applications and mobile application while managing a team of volunteers.',
+      'Web Development Tutor and Full Stack Engineer. Rebuilt the church"s software applications and mobile application while managing a team of volunteers.',
     ],
-    companyLogo: BOI, // Fallback
+    companyLogo: TFHC,
   },
   {
     role: 'Full Stack Engineer',

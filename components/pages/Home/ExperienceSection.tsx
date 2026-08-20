@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import ExperiencesData from '../../../data/Experiences';
 import { trackEvent } from '../../../utils/analytics';
 import { useTranslation } from 'next-i18next';
@@ -73,7 +74,41 @@ export default function ExperienceSection() {
                   </span>
                 </div>
                 <div className='text-zinc-600 dark:text-zinc-400 font-medium mb-4'>
-                  {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}
+                  <div className='flex items-center gap-3'>
+                    {exp.companyLink ? (
+                      <a
+                        href={exp.companyLink}
+                        target='_blank'
+                        rel='noreferrer'
+                        className='flex items-center gap-3 hover:text-accent transition-colors'
+                        onClick={() => trackEvent('click', 'company_link', exp.company)}
+                      >
+                        <div className={`relative w-8 h-8 shrink-0 rounded-lg overflow-hidden flex items-center justify-center ${exp.logoDarkBackground ? 'bg-zinc-800' : 'bg-zinc-100 dark:bg-zinc-800'}`}>
+                          <Image
+                            src={exp.companyLogo}
+                            alt={exp.company}
+                            width={32}
+                            height={32}
+                            className={`object-contain ${exp.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
+                          />
+                        </div>
+                        {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}
+                      </a>
+                    ) : (
+                      <>
+                        <div className={`relative w-8 h-8 shrink-0 rounded-lg overflow-hidden flex items-center justify-center ${exp.logoDarkBackground ? 'bg-zinc-800' : 'bg-zinc-100 dark:bg-zinc-800'}`}>
+                          <Image
+                            src={exp.companyLogo}
+                            alt={exp.company}
+                            width={32}
+                            height={32}
+                            className={`object-contain ${exp.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
+                          />
+                        </div>
+                        <span>{t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}</span>
+                      </>
+                    )}
+                  </div>
                 </div>
 
                 <div className='space-y-2 relative'>

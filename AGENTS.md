@@ -30,6 +30,18 @@
 - Use `Link` from `next/link` with the legacy `<a>` child pattern (Next.js 12 style).
 - Use `Image` from `next/image` for optimized images.
 
+### Experience Section
+- Experience data is in `data/Experiences.ts` — exports `ExperienceType[]`.
+- `ExperienceType` has optional fields: `companyLink`, `invertCompanyLogoInDarkMode`, `logoDarkBackground`.
+- `logoDarkBackground: true` adds `bg-zinc-800` to the logo container (for white logos on transparent backgrounds that need a dark background in light mode). Only set this for specific companies; default is `bg-zinc-100 dark:bg-zinc-800`.
+- `invertCompanyLogoInDarkMode: true` adds `dark:invert` to the logo image (for dark logos that need to be inverted in dark mode).
+- Logo + company name are always wrapped in a single clickable `<a>` tag when `companyLink` exists, or a non-clickable `<div>` when it doesn't.
+- Company logos are stored in `public/images/Experiences/` — one PNG or JPEG per company.
+- Components: `ExperienceCard.tsx` in `components/layout/ExperienceCard/`, `ExperienceSection.tsx` in `components/pages/Home/`.
+- Page: `pages/experiences/index.tsx` (full listing).
+- Translation key pattern: `experience.{slugified-role}-{slugified-company}.{field}` (e.g., `experience.software-engineer-abbey-bank-plc.role`).
+- The `slugify()` and `slugifyCompany()` functions generate the key prefix from role and company names.
+
 ### Data & i18n
 - All content (projects, experiences, blog posts, etc.) is in TypeScript arrays in `data/`.
 - Never import data directly from external sources — only from `data/` files.
