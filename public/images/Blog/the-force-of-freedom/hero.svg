@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="rays" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#2563EB" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <!-- Sun glow -->
+  <circle cx="960" cy="400" r="150" fill="url(#sun)"/>
+  <circle cx="960" cy="400" r="25" fill="#38BDF8" opacity="0.95"/>
+  <!-- Radiating light rays -->
+  <g stroke="#38BDF8" stroke-width="2" opacity="0.2">
+    <line x1="960" y1="400" x2="960" y2="50"/>
+    <line x1="960" y1="400" x2="1200" y2="100"/>
+    <line x1="960" y1="400" x2="720" y2="100"/>
+    <line x1="960" y1="400" x2="1400" y2="200"/>
+    <line x1="960" y1="400" x2="520" y2="200"/>
+    <line x1="960" y1="400" x2="1500" y2="400"/>
+    <line x1="960" y1="400" x2="420" y2="400"/>
+  </g>
+  <!-- Broken chain links -->
+  <g stroke="#38BDF8" stroke-width="4" fill="none" opacity="0.6">
+    <!-- Left chain fragment -->
+    <ellipse cx="750" cy="420" rx="25" ry="15" transform="rotate(-30 750 420)"/>
+    <ellipse cx="710" cy="400" rx="25" ry="15" transform="rotate(-20 710 400)"/>
+    <ellipse cx="675" cy="385" rx="25" ry="15" transform="rotate(-15 675 385)"/>
+    <!-- Right chain fragment -->
+    <ellipse cx="1170" cy="420" rx="25" ry="15" transform="rotate(30 1170 420)"/>
+    <ellipse cx="1210" cy="400" rx="25" ry="15" transform="rotate(20 1210 400)"/>
+    <ellipse cx="1245" cy="385" rx="25" ry="15" transform="rotate(15 1245 385)"/>
+  </g>
+  <!-- Chain link fragments falling -->
+  <g fill="#38BDF8" opacity="0.4">
+    <ellipse cx="680" cy="450" rx="12" ry="8" transform="rotate(45 680 450)"/>
+    <ellipse cx="1240" cy="450" rx="12" ry="8" transform="rotate(-45 1240 450)"/>
+  </g>
+  <!-- Silhouette figure with arms raised -->
+  <g fill="#1E293B" opacity="0.8">
+    <!-- Head -->
+    <circle cx="960" cy="580" r="30"/>
+    <!-- Body -->
+    <rect x="945" y="610" width="30" height="80" rx="5"/>
+    <!-- Left arm raised -->
+    <rect x="890" y="560" width="55" height="12" rx="6" transform="rotate(-45 917 566)"/>
+    <!-- Right arm raised -->
+    <rect x="975" y="560" width="55" height="12" rx="6" transform="rotate(45 1003 566)"/>
+    <!-- Left leg -->
+    <rect x="945" y="690" width="14" height="60" rx="4" transform="rotate(10 952 690)"/>
+    <!-- Right leg -->
+    <rect x="961" y="690" width="14" height="60" rx="4" transform="rotate(-10 968 690)"/>
+  </g>
+  <!-- Ground/horizon -->
+  <rect x="0" y="750" width="1920" height="330" fill="#0F172A" opacity="0.5"/>
+  <line x1="0" y1="750" x2="1920" y2="750" stroke="#2563EB" stroke-width="2" opacity="0.3"/>
+  <!-- Scattered stars -->
+  <g fill="white">
+    <circle cx="180" cy="100" r="2" opacity="0.7"/>
+    <circle cx="420" cy="60" r="1.5" opacity="0.5"/>
+    <circle cx="700" cy="130" r="2" opacity="0.6"/>
+    <circle cx="1200" cy="80" r="1.5" opacity="0.4"/>
+    <circle cx="1500" cy="120" r="2.5" opacity="0.7"/>
+    <circle cx="1700" cy="70" r="2" opacity="0.5"/>
+    <circle cx="300" cy="200" r="1" opacity="0.3"/>
+    <circle cx="1600" cy="200" r="1" opacity="0.3"/>
+  </g>
+  <rect x="0" y="1040" width="1920" height="4" fill="#2563EB" opacity="0.5"/>
+</svg>

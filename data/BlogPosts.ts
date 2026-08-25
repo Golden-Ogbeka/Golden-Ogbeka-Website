@@ -30,6 +30,7 @@ import lackOfDirectionHero from '../public/images/Blog/a-lack-of-direction/hero.
 import messageForYouHero from '../public/images/Blog/a-message-for-you/hero.svg';
 import realLoveHero from '../public/images/Blog/what-real-love-is-like/hero.svg';
 import whereDoYouStandHero from '../public/images/Blog/where-do-you-stand/hero.svg';
+import theForceOfFreedomHero from '../public/images/Blog/the-force-of-freedom/hero.svg';
 
 export type BlogCategory = 'tech' | 'ai' | 'tips' | 'faith';
 
@@ -94,6 +95,14 @@ const BlogPosts: BlogPostType[] = [
     image: becomePartOfSolutionHero,
     ogImagePath: '/images/Blog/become-part-of-the-solution/hero.svg',
     date: '2026-08-07',
+  },
+  {
+    slug: 'the-force-of-freedom',
+    category: 'tips',
+    image: theForceOfFreedomHero,
+    ogImagePath: '/images/Blog/the-force-of-freedom/hero.svg',
+    date: '2026-08-25',
+    featured: true,
   },
   {
     slug: 'hand-it-over',
