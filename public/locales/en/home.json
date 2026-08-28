@@ -1,7 +1,8 @@
 {
-  "intro.title": "Building scalable enterprise platforms.",
-  "intro.titleHighlight": "scalable enterprise",
-  "intro.subtitle": "I'm Golden Ogbeka, a Senior Software Engineer with 6+ years of experience designing and shipping secure, scalable products across fintech, banking, edtech, logistics, and commerce. I've built enterprise corporate banking platforms for Abbey Bank, FCMB Group, and Sterling Bank — powering bulk payments, multi-currency accounts, treasury operations, and maker-checker approvals trusted across Nigeria and the UK. As a builder and former CTO, I deliver the full stack: from React and React Native frontends to Node.js backends, cloud infrastructure, and the reusable component systems that make teams faster. Whether you need a mission-critical financial platform, a frictionless user experience, or a product taken from idea to scale, I turn complex requirements into reliable, beautiful, production-grade software.",
+  "intro.title": "From Ideas to Value",
+  "intro.titleHighlightOne": "Ideas",
+  "intro.titleHighlightTwo": "Value",
+  "intro.subtitle": "I'm Golden Ogbeka — a Senior Software Engineer, Full-Stack AI Engineer, and former CTO with 7+ years of experience building technology across fintech, banking, commerce, logistics, and edtech. From enterprise corporate banking platforms and high-impact financial systems to modern web and mobile products, distributed architectures, and emerging AI/ML solutions, I've worked across the technology stack to solve problems that matter.\n\nI combine engineering depth, system design, AI, product thinking, and business understanding to build software that is not only technically sound, but secure, scalable, maintainable, and useful to the people and businesses it serves.",
   "intro.viewWork": "View Work",
   "intro.contactMe": "Contact Me",
   "featured.title": "Featured Work",

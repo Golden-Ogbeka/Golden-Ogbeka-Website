@@ -1,7 +1,8 @@
 {
-  "intro.title": "构建可扩展的企业级平台。",
-  "intro.titleHighlight": "可扩展的企业级",
-  "intro.subtitle": "我是 Golden Ogbeka，一名高级软件工程师，拥有 6 年以上的经验，在金融科技、银行、教育科技、物流和商业领域设计和交付安全、可扩展的产品。我为 Abbey Bank、FCMB Group 和 Sterling Bank 构建了企业级企业银行平台——支撑着尼日利亚和英国的批量付款、多币种账户、资金运营以及 maker-checker 审批。作为一名开发者和前 CTO，我提供完整的全栈能力：从 React 和 React Native 前端，到 Node.js 后端、云基础设施，以及让团队更高效的可复用组件系统。无论您需要关键任务型金融平台、无摩擦的用户体验，还是从创意到规模化落地的产品，我都能将复杂需求转化为可靠、优雅、生产级的软件。",
+  "intro.title": "从创意到价值",
+  "intro.titleHighlightOne": "创意",
+  "intro.titleHighlightTwo": "价值",
+  "intro.subtitle": "我是 Golden Ogbeka —— 一名高级软件工程师、全栈 AI 工程师，曾任 CTO，在金融科技、银行、商业、物流和教育科技领域拥有 7 年以上的技术构建经验。从企业银行平台和高影响力金融系统，到现代 Web 与移动产品、分布式架构，以及新兴的 AI/ML 解决方案，我一直在整个技术栈中工作，以解决真正重要的问题。\n\n我将工程深度、系统设计、AI、产品思维与商业理解相结合，构建的软件不仅技术上扎实，而且安全、可扩展、易于维护，并真正造福于它所服务的个人与企业。",
   "intro.viewWork": "查看作品",
   "intro.contactMe": "联系我",
   "featured.title": "精选作品",

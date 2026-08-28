@@ -7,11 +7,24 @@ export default function Intro() {
     <section className='pt-32 pb-20 min-h-[80vh] flex flex-col justify-center animate-fade-in-up'>
       <div>
         <h1 className='text-5xl md:text-7xl font-display font-semibold tracking-tight leading-tight mb-6'>
-          {t('home:intro.title').split(t('home:intro.titleHighlight'))[0]}
-          <span className='text-accent'>{t('home:intro.titleHighlight')}</span>
-          {t('home:intro.title').split(t('home:intro.titleHighlight'))[1]}
+          {(() => {
+            const title = t('home:intro.title');
+            const highlightOne = t('home:intro.titleHighlightOne');
+            const highlightTwo = t('home:intro.titleHighlightTwo');
+            const [pre, rest] = title.split(highlightOne);
+            const [mid, post] = rest.split(highlightTwo);
+            return (
+              <>
+                {pre}
+                <span className='text-accent'>{highlightOne}</span>
+                {mid}
+                <span className='text-accent'>{highlightTwo}</span>
+                {post}
+              </>
+            );
+          })()}
         </h1>
-        <p className='text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 font-light leading-relaxed mb-10 text-justify'>
+        <p className='text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 font-light leading-relaxed mb-10 text-justify whitespace-pre-line'>
           {t('home:intro.subtitle')}
         </p>
 
