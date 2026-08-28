@@ -1,5 +1,5 @@
 import { StaticImageData } from 'next/image';
-import cibWeb1 from '../public/images/Projects/cib-web/1.png';
+import cibWeb1 from '../public/images/Projects/cib-web/3.png';
 import switchImg from '../public/images/Projects/switch/switch.png';
 import cibApp1 from '../public/images/Projects/cib-app/1.png';
 import alerzo1 from '../public/images/Projects/alerzo-admin-web/1.png';
