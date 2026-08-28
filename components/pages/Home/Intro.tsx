@@ -8,10 +8,10 @@ export default function Intro() {
       <div>
         <h1 className='text-5xl md:text-7xl font-display font-semibold tracking-tight leading-tight mb-6'>
           {t('home:intro.title').split(t('home:intro.titleHighlight'))[0]}
-          <span className='text-zinc-500'>{t('home:intro.titleHighlight')}</span>
+          <span className='text-accent'>{t('home:intro.titleHighlight')}</span>
           {t('home:intro.title').split(t('home:intro.titleHighlight'))[1]}
         </h1>
-        <p className='text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 font-light leading-relaxed mb-10'>
+        <p className='text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 font-light leading-relaxed mb-10 text-justify'>
           {t('home:intro.subtitle')}
         </p>
 
