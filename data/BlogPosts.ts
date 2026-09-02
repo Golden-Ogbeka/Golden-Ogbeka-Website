@@ -31,6 +31,7 @@ import messageForYouHero from '../public/images/Blog/a-message-for-you/hero.svg'
 import realLoveHero from '../public/images/Blog/what-real-love-is-like/hero.svg';
 import whereDoYouStandHero from '../public/images/Blog/where-do-you-stand/hero.svg';
 import theForceOfFreedomHero from '../public/images/Blog/the-force-of-freedom/hero.svg';
+import beautyInChaosHero from '../public/images/Blog/the-beauty-in-chaos/hero.webp';
 
 export type BlogCategory = 'tech' | 'ai' | 'tips' | 'faith';
 
@@ -102,6 +103,14 @@ const BlogPosts: BlogPostType[] = [
     image: theForceOfFreedomHero,
     ogImagePath: '/images/Blog/the-force-of-freedom/hero.svg',
     date: '2026-08-25',
+    featured: true,
+  },
+  {
+    slug: 'the-beauty-in-chaos',
+    category: 'tips',
+    image: beautyInChaosHero,
+    ogImagePath: '/images/Blog/the-beauty-in-chaos/hero.webp',
+    date: '2026-09-02',
     featured: true,
   },
   {
