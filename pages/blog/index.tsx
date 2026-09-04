@@ -8,7 +8,7 @@ import CategoryFilter from '../../components/pages/Blog/CategoryFilter';
 import { useTranslation } from 'next-i18next';
 
 const POSTS_PER_PAGE = 6;
-const VALID_CATEGORIES: BlogCategory[] = ['ai', 'tips', 'tech', 'faith'];
+const VALID_CATEGORIES: BlogCategory[] = ['tech', 'life', 'faith'];
 
 type SortOrder = 'newest' | 'oldest';
 
@@ -28,9 +28,8 @@ export default function Blog() {
   const availableCategories = useMemo(() => {
     const cats = new Set<BlogCategory>(BlogPosts.map((p) => p.category));
     const result: (BlogCategory | 'all')[] = ['all'];
-    if (cats.has('ai')) result.push('ai');
-    if (cats.has('tips')) result.push('tips');
     if (cats.has('tech')) result.push('tech');
+    if (cats.has('life')) result.push('life');
     if (cats.has('faith')) result.push('faith');
     return result;
   }, []);

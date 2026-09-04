@@ -6,10 +6,9 @@
   },
   "category": {
     "all": "전체",
-    "tech": "Tech",
-    "ai": "AI",
-    "tips": "팁",
-    "faith": "믿음"
+    "tech": "테크",
+    "life": "라이프",
+    "faith": "신앙"
   },
   "readMore": "더 보기",
   "backToBlog": "블로그로 돌아가기",

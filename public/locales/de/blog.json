@@ -6,9 +6,8 @@
   },
   "category": {
     "all": "Alle",
-    "tech": "Technik",
-    "ai": "KI",
-    "tips": "Tipps",
+    "tech": "Tech",
+    "life": "Leben",
     "faith": "Glaube"
   },
   "readMore": "Weiterlesen",

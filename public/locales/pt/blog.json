@@ -5,10 +5,9 @@
     "noPosts": "Nenhum post encontrado nesta categoria."
   },
   "category": {
-    "all": "Todos",
+    "all": "Tudo",
     "tech": "Tech",
-    "ai": "IA",
-    "tips": "Dicas",
+    "life": "Vida",
     "faith": "Fé"
   },
   "readMore": "Ler mais",

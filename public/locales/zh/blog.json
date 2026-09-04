@@ -6,9 +6,8 @@
   },
   "category": {
     "all": "全部",
-    "tech": "技术",
-    "ai": "AI",
-    "tips": "经验",
+    "tech": "科技",
+    "life": "生活",
     "faith": "信仰"
   },
   "readMore": "阅读全文",

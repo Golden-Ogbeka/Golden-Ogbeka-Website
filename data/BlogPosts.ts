@@ -34,7 +34,7 @@ import theForceOfFreedomHero from '../public/images/Blog/the-force-of-freedom/he
 import beautyInChaosHero from '../public/images/Blog/the-beauty-in-chaos/hero.webp';
 import theAiShockHero from '../public/images/Blog/the-ai-shock/hero.webp';
 
-export type BlogCategory = 'tech' | 'ai' | 'tips' | 'faith';
+export type BlogCategory = 'faith' | 'tech' | 'life';
 
 export interface BlogPostType {
   slug: string;
@@ -48,7 +48,7 @@ export interface BlogPostType {
 const BlogPosts: BlogPostType[] = [
   {
     slug: 'the-myth-about-ai-for-businesses',
-    category: 'ai',
+    category: 'tech',
     image: mythBusinessHero,
     ogImagePath: '/images/Blog/the-myth-about-ai-for-businesses/hero.svg',
     date: '2026-05-28',
@@ -56,21 +56,21 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'the-myth-about-ai-for-individuals',
-    category: 'ai',
+    category: 'tech',
     image: mythIndividualHero,
     ogImagePath: '/images/Blog/the-myth-about-ai-for-individuals/hero.svg',
     date: '2026-06-01',
   },
   {
     slug: 'the-myth-about-ai-for-non-ai-users',
-    category: 'ai',
+    category: 'tech',
     image: mythNonAiHero,
     ogImagePath: '/images/Blog/the-myth-about-ai-for-non-ai-users/hero.svg',
     date: '2026-06-08',
   },
   {
     slug: 'africa-needs-more-creators',
-    category: 'tips',
+    category: 'tech',
     image: africaHero,
     ogImagePath: '/images/Blog/africa-needs-more-creators/hero.svg',
     date: '2026-07-06',
@@ -78,14 +78,14 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'more-countries-need-to-be-like-canada',
-    category: 'ai',
+    category: 'tech',
     image: canadaHero,
     ogImagePath: '/images/Blog/more-countries-need-to-be-like-canada/hero.svg',
     date: '2026-07-22',
   },
   {
     slug: 'do-the-difficult-things',
-    category: 'tips',
+    category: 'life',
     image: doDifficultHero,
     ogImagePath: '/images/Blog/do-the-difficult-things/hero.svg',
     date: '2026-07-23',
@@ -93,14 +93,14 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'become-part-of-the-solution',
-    category: 'tips',
+    category: 'life',
     image: becomePartOfSolutionHero,
     ogImagePath: '/images/Blog/become-part-of-the-solution/hero.svg',
     date: '2026-08-07',
   },
   {
     slug: 'the-force-of-freedom',
-    category: 'tips',
+    category: 'life',
     image: theForceOfFreedomHero,
     ogImagePath: '/images/Blog/the-force-of-freedom/hero.svg',
     date: '2026-08-25',
@@ -108,7 +108,7 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'the-beauty-in-chaos',
-    category: 'tips',
+    category: 'life',
     image: beautyInChaosHero,
     ogImagePath: '/images/Blog/the-beauty-in-chaos/hero.webp',
     date: '2026-09-02',
@@ -116,7 +116,7 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'the-ai-shock',
-    category: 'ai',
+    category: 'tech',
     image: theAiShockHero,
     ogImagePath: '/images/Blog/the-ai-shock/hero.webp',
     date: '2026-09-04',
