@@ -72,6 +72,13 @@ const Certifications: CertificationType[] = [
     featured: false,
   },
   {
+    title: 'Dante Certification Level 2',
+    organization: 'Audinate',
+    link: '/certificates/dante-certification-level-2.pdf',
+    date: 'September 2026',
+    featured: false,
+  },
+  {
     title: 'Broadcast Mixing Masterclass',
     organization: 'Davidic Music Academy',
     link: '/certificates/broadcast-mixing-masterclass.png',
