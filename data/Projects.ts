@@ -255,6 +255,7 @@ const Projects: ProjectType[] = [
     screenshots: [CIBWeb1, CIBWeb2, CIBWeb3, CIBWeb4, CIBWeb5],
     featured: true,
     videoDemoLink: 'https://www.youtube.com/watch?v=k3Y9ZXfJ9GU',
+    liveLink: "https://businessonline.fcmb.com/"
   },
 
   {
@@ -373,6 +374,7 @@ const Projects: ProjectType[] = [
     image: CIBApp1,
     screenshots: [CIBApp1, CIBApp2, CIBApp3, CIBApp4, CIBApp5, CIBApp6, CIBApp7],
     videoDemoLink: 'https://www.youtube.com/watch?v=AOd7ZjdbIQg',
+    liveLink: "https://businessonline.fcmb.com/"
   },
   {
     title: 'Faith-Based Social Testimony Mobile Application',
