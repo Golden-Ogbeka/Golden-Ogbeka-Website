@@ -32,7 +32,7 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
 
   return (
     <div className='mt-16'>
-      <h2 id='gallery-heading' className='text-2xl font-display font-semibold mb-6'>{t('projectDetail.gallery')}</h2>
+      <h2 id='gallery-heading' className='text-xl sm:text-2xl font-display font-semibold mb-6'>{t('projectDetail.gallery')}</h2>
       <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
         {screenshots.map((src, index) => (
           <button

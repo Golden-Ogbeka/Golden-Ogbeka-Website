@@ -15,12 +15,12 @@ export default function Certifications() {
           { name: t('common:certifications.title'), url: '/certifications' },
         ]}
       />
-      <div className='pt-32 pb-20 min-h-screen'>
-        <div className='mb-16 animate-fade-in-up'>
-          <h1 className='text-4xl md:text-5xl font-display font-semibold mb-4'>
+      <div className='pt-24 sm:pt-28 md:pt-32 pb-12 md:pb-20 min-h-screen'>
+        <div className='mb-8 sm:mb-16 animate-fade-in-up'>
+          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-semibold mb-4'>
             {t('common:certifications.title')}
           </h1>
-          <p className='text-zinc-600 dark:text-zinc-400 text-lg max-w-2xl'>
+          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg max-w-2xl'>
             {t('common:certifications.subtitle')}
           </p>
         </div>
@@ -37,7 +37,7 @@ export default function Certifications() {
                   {cert.date}
                 </span>
               </div>
-              <h2 className='text-xl font-semibold mb-2'>{t(`certifications:certification.${index}.title`, cert.title)}</h2>
+              <h2 className='text-lg sm:text-xl font-semibold mb-2'>{t(`certifications:certification.${index}.title`, cert.title)}</h2>
               <p className='text-zinc-600 dark:text-zinc-400 mb-6 flex-1'>
                 {t(`certifications:certification.${index}.organization`, cert.organization)}
               </p>

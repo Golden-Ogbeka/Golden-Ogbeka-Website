@@ -29,12 +29,12 @@ export default function Experiences() {
           { name: t('common:nav.experience'), url: '/experiences' },
         ]}
       />
-      <div className='pt-32 pb-20 min-h-screen'>
-        <div className='mb-16 animate-fade-in-up'>
-          <h1 className='text-4xl md:text-5xl font-display font-semibold mb-4'>
+      <div className='pt-24 sm:pt-28 md:pt-32 pb-12 md:pb-20 min-h-screen'>
+        <div className='mb-8 sm:mb-16 animate-fade-in-up'>
+          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-semibold mb-4'>
             {t('experiences:title')}
           </h1>
-          <p className='text-zinc-600 dark:text-zinc-400 text-lg max-w-2xl'>
+          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg max-w-2xl'>
             {t('experiences:subtitle')}
           </p>
         </div>
@@ -49,7 +49,7 @@ export default function Experiences() {
               <div className='flex flex-col md:flex-row md:items-start gap-6'>
                 <div className='flex-1'>
                   <div className='flex flex-col md:flex-row md:items-center justify-between mb-2'>
-                    <h2 className='text-2xl font-semibold'>{t(`experiences:experience.${getExpKey(exp.role, exp.company)}.role`, exp.role)}</h2>
+                    <h2 className='text-xl sm:text-2xl font-semibold'>{t(`experiences:experience.${getExpKey(exp.role, exp.company)}.role`, exp.role)}</h2>
                     <span className='text-sm font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded-full mt-2 md:mt-0 inline-block w-max'>
                       {exp.date}
                     </span>
@@ -61,7 +61,7 @@ export default function Experiences() {
                           href={exp.companyLink}
                           target='_blank'
                           rel='noreferrer'
-                          className='flex items-center gap-3 text-lg text-zinc-600 dark:text-zinc-400 hover:text-accent transition-colors font-medium'
+                          className='flex items-center gap-3 text-sm sm:text-base md:text-lg text-zinc-600 dark:text-zinc-400 hover:text-accent transition-colors font-medium'
                           onClick={() => trackEvent('click', 'company_link', exp.company)}
                         >
                           <div className={`relative w-10 h-10 shrink-0 rounded-lg overflow-hidden flex items-center justify-center ${exp.logoDarkBackground ? 'bg-zinc-800' : 'bg-zinc-100 dark:bg-zinc-800'}`}>
@@ -86,7 +86,7 @@ export default function Experiences() {
                               className={`object-contain ${exp.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
                             />
                           </div>
-                          <span className='text-lg text-zinc-600 dark:text-zinc-400 font-medium'>
+                          <span className='text-sm sm:text-base md:text-lg text-zinc-600 dark:text-zinc-400 font-medium'>
                             {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}
                           </span>
                         </>

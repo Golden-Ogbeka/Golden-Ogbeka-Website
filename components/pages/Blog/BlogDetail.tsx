@@ -20,10 +20,10 @@ function BlogDetail({ post }: BlogDetailProps) {
         <span className='inline-block px-3 py-1 text-xs font-semibold rounded-full bg-accent text-white mb-4'>
           {t(`blog:category.${post.category}`)}
         </span>
-        <h1 className='text-4xl md:text-5xl lg:text-6xl font-display font-semibold mb-6'>
+        <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-semibold mb-6'>
           {t(`blog:post.${post.slug}.title`, post.slug)}
         </h1>
-        <p className='text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl leading-relaxed'>
+        <p className='text-base sm:text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl leading-relaxed'>
           {t(`blog:post.${post.slug}.summary`, post.slug)}
         </p>
         <time className='block mt-4 text-sm text-zinc-500 dark:text-zinc-500' dateTime={post.date}>
@@ -36,7 +36,7 @@ function BlogDetail({ post }: BlogDetailProps) {
       </header>
 
       <div
-        className='relative w-full aspect-video rounded-2xl overflow-hidden mb-12 bg-zinc-200 dark:bg-zinc-800 animate-fade-in-up'
+        className='relative w-full aspect-video rounded-2xl overflow-hidden mb-8 md:mb-12 bg-zinc-200 dark:bg-zinc-800 animate-fade-in-up'
         style={{ animationDelay: '0.1s' }}
       >
         <Image
@@ -50,7 +50,7 @@ function BlogDetail({ post }: BlogDetailProps) {
       </div>
 
       <div
-        className='prose prose-lg prose-zinc dark:prose-invert max-w-none animate-fade-in-up'
+        className='prose prose-sm sm:prose-base md:prose-lg prose-zinc dark:prose-invert max-w-none animate-fade-in-up'
         style={{ animationDelay: '0.2s' }}
       >
         {Array.isArray(paragraphs) &&

@@ -33,7 +33,7 @@ const Custom404: NextPage = () => {
               {t('page404.message')}
             </p>
             <Link href='/'>
-              <a className='px-8 py-4 gap-2 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 rounded-full font-medium text-lg hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors inline-flex items-center'>
+              <a className='px-8 py-4 gap-2 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 rounded-full font-medium text-sm sm:text-base md:text-lg hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors inline-flex items-center'>
                 <svg
                   className='w-5 h-5'
                   fill='none'

@@ -34,11 +34,11 @@ function BlogCard({ post, index }: BlogCardProps) {
           </span>
         </div>
         <div className='p-6 flex-1 flex flex-col'>
-          <h2 className='text-xl font-semibold mb-2 group-hover:text-accent transition-colors'>
+          <h2 className='text-lg sm:text-xl font-semibold mb-2 group-hover:text-accent transition-colors'>
             {t(`blog:post.${post.slug}.title`, post.slug)}
           </h2>
           <p
-            className='text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-4 flex-1'
+            className='text-sm sm:text-base text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-4 flex-1'
             style={{
               display: '-webkit-box',
               WebkitLineClamp: 2,

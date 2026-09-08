@@ -130,17 +130,17 @@ export default function Blog() {
         ]}
         overrideSchemas={[blogListingSchema]}
       />
-      <div className='pt-32 min-h-screen'>
-        <div className='mb-12 animate-fade-in-up'>
-          <h1 className='text-4xl md:text-5xl font-display font-semibold mb-4'>
+      <div className='pt-24 sm:pt-28 md:pt-32 min-h-screen'>
+        <div className='mb-8 sm:mb-12 animate-fade-in-up'>
+          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-semibold mb-4'>
             {t('blog:page.title')}
           </h1>
-          <p className='text-zinc-600 dark:text-zinc-400 text-lg max-w-2xl'>
+          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg max-w-2xl'>
             {t('blog:page.subtitle')}
           </p>
         </div>
 
-        <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10'>
+        <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 md:mb-10'>
           <CategoryFilter
             activeCategory={activeCategory}
             onCategoryChange={handleCategoryChange}
@@ -178,7 +178,7 @@ export default function Blog() {
         )}
 
         {totalPages > 1 && (
-          <nav className='flex items-center justify-center gap-2 mt-16' aria-label={t('blog:pagination.label')}>
+          <nav className='flex items-center justify-center gap-2 mt-10 md:mt-16' aria-label={t('blog:pagination.label')}>
             <button
               onClick={() => handlePageChange(Math.max(1, safePage - 1))}
               disabled={safePage === 1}

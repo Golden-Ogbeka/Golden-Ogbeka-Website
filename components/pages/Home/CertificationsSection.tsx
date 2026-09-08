@@ -7,13 +7,13 @@ export default function CertificationsSection() {
   const { t } = useTranslation(['common', 'home', 'certifications']);
 
   return (
-    <section className='py-20'>
-      <div className='flex flex-col md:flex-row md:items-end justify-between mb-12'>
+    <section className='py-12 sm:py-16 md:py-20'>
+      <div className='flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12'>
         <div className='max-w-2xl'>
-          <h2 className='text-3xl md:text-4xl font-display font-semibold mb-4'>
+          <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-semibold mb-4'>
             {t('home:certifications.title')}
           </h2>
-          <p className='text-zinc-600 dark:text-zinc-400 text-lg'>
+          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg'>
             {t('home:certifications.subtitle')}
           </p>
         </div>
@@ -42,7 +42,7 @@ export default function CertificationsSection() {
           (cert, index) =>
             cert.featured && (
           <div key={index} className='minimal-card p-6 flex flex-col'>
-            <h3 className='text-lg font-semibold mb-2'>{t(`certifications:certification.${index}.title`, cert.title)}</h3>
+            <h3 className='text-base sm:text-lg font-semibold mb-2'>{t(`certifications:certification.${index}.title`, cert.title)}</h3>
             <p className='text-zinc-600 dark:text-zinc-400 mb-4'>{t(`certifications:certification.${index}.organization`, cert.organization)}</p>
             <div className='mt-auto flex items-center justify-between'>
               <span className='text-sm font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 py-1 rounded-full'>

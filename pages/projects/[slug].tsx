@@ -42,7 +42,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
         }}
       />
 
-      <article className='pt-32 min-h-screen'>
+      <article className='pt-24 sm:pt-28 md:pt-32 min-h-screen'>
         <Link href='/projects'>
           <a className='inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-8 transition-colors' onClick={() => trackEvent('click', 'navigation', 'Back to Projects')}>
             <svg
@@ -62,11 +62,11 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
           </a>
         </Link>
 
-        <header className='mb-12 animate-fade-in-up'>
-          <h1 className='text-4xl md:text-5xl lg:text-6xl font-display font-semibold mb-6'>
+        <header className='mb-10 md:mb-12 animate-fade-in-up'>
+          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-semibold mb-6'>
             {t(`projects:project.${project.slug}.title`, project.title)}
           </h1>
-          <p className='text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl leading-relaxed'>
+          <p className='text-base sm:text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl leading-relaxed'>
             {t(`projects:project.${project.slug}.description`, project.description)}
           </p>
 
@@ -144,7 +144,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
         >
           <div className='md:col-span-2 space-y-12'>
             <section>
-              <h2 className='text-2xl font-display font-semibold mb-4'>{t('projectDetail.keyFeatures')}</h2>
+              <h2 className='text-xl sm:text-2xl font-display font-semibold mb-4'>{t('projectDetail.keyFeatures')}</h2>
               <ul className='space-y-3'>
                 {project.features.map((feature, idx) => (
                   <li key={idx} className='flex items-start'>
@@ -170,7 +170,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
 
           <aside className='space-y-8'>
             <div className='p-6 minimal-card'>
-              <h3 className='text-lg font-semibold mb-4'>{t('projectDetail.coreTools')}</h3>
+              <h3 className='text-base sm:text-lg font-semibold mb-4'>{t('projectDetail.coreTools')}</h3>
               <div className='grid grid-cols-3 gap-5'>
                 {project.coreTools.map((tool, idx) => (
                   <span

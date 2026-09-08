@@ -8,13 +8,13 @@ export default function FeaturedBlogPosts() {
   const { t } = useTranslation(['common', 'home', 'blog']);
 
   return (
-    <section className='py-20'>
-      <div className='flex flex-col md:flex-row md:items-end justify-between mb-12'>
+    <section className='py-12 sm:py-16 md:py-20'>
+      <div className='flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12'>
         <div className='max-w-2xl'>
-          <h2 className='text-3xl md:text-4xl font-display font-semibold mb-4'>
+          <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-semibold mb-4'>
             {t('home:featuredBlog.title')}
           </h2>
-          <p className='text-zinc-600 dark:text-zinc-400 text-lg'>
+          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg'>
             {t('home:featuredBlog.subtitle')}
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function FeaturedBlogPosts() {
         </Link>
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8'>
         {FeaturedBlogPostsData.map((post, index) => (
           <Link key={post.slug} href={`/blog/${post.slug}`}>
             <a
@@ -63,7 +63,7 @@ export default function FeaturedBlogPosts() {
                 </span>
               </div>
               <div className='p-6 flex-1 flex flex-col'>
-                <h3 className='text-xl font-semibold mb-2 group-hover:text-accent transition-colors'>
+                <h3 className='text-lg sm:text-xl font-semibold mb-2 group-hover:text-accent transition-colors'>
                   {t(`blog:post.${post.slug}.title`, post.slug)}
                 </h3>
                 <p

@@ -12,8 +12,8 @@ function Footer() {
     <>
       <SectionDivider />
       <footer id='contact'>
-        <div className='flex flex-col max-w-screen-2xl mx-auto pb-20 px-4 sm:px-6 lg:px-8 justify-items-stretch gap-10 items-center'>
-          <h2 className='uppercase font-semibold tracking-wider text-zinc-500 dark:text-zinc-400 text-xl'>
+        <div className='flex flex-col max-w-screen-2xl mx-auto pb-14 md:pb-20 px-4 sm:px-6 lg:px-8 justify-items-stretch gap-6 md:gap-10 items-center'>
+          <h2 className='uppercase font-semibold tracking-wider text-zinc-500 dark:text-zinc-400 text-lg sm:text-xl'>
             {t('footer.title')}
           </h2>
           <div className='grid md:grid-flow-col gap-3 lg:col-span-6 w-full'>

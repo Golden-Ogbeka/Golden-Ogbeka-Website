@@ -17,17 +17,17 @@ export default function Projects() {
           { name: t('common:nav.projects'), url: '/projects' },
         ]}
       />
-      <div className='pt-32 min-h-screen'>
-        <div className='mb-12 animate-fade-in-up'>
-          <h1 className='text-4xl md:text-5xl font-display font-semibold mb-4'>
+      <div className='pt-24 sm:pt-28 md:pt-32 min-h-screen'>
+        <div className='mb-8 sm:mb-12 animate-fade-in-up'>
+          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-semibold mb-4'>
             {t('projects:title')}
           </h1>
-          <p className='text-zinc-600 dark:text-zinc-400 text-lg max-w-2xl'>
+          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg max-w-2xl'>
             {t('projects:subtitle')}
           </p>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8'>
           {ProjectsData.map((project, index) => (
             <Link key={project.slug} href={`/projects/${project.slug}`}>
               <a
@@ -57,7 +57,7 @@ export default function Projects() {
                   )}
                 </div>
                 <div className='p-6 flex-1 flex flex-col'>
-                  <h2 className='text-xl font-semibold mb-2 group-hover:text-accent transition-colors'>
+                  <h2 className='text-lg sm:text-xl font-semibold mb-2 group-hover:text-accent transition-colors'>
                     {t(`projects:project.${project.slug}.title`, project.title)}
                   </h2>
                   <p

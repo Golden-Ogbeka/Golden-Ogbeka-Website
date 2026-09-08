@@ -12,13 +12,13 @@ function OpenSourceSection() {
   }).slice(0, 8);
 
   return (
-    <section id='opensource' className='pt-24 pb-12'>
-      <div className='flex flex-col md:flex-row md:items-end justify-between mb-12'>
+    <section id='opensource' className='pt-12 pb-8 sm:pt-16 sm:pb-10 md:pt-24 md:pb-12'>
+      <div className='flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12'>
         <div className='max-w-2xl'>
-          <h2 className='text-3xl md:text-4xl font-display font-semibold mb-4'>
+          <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-semibold mb-4'>
             {t('home:openSource.title')}
           </h2>
-          <p className='text-zinc-600 dark:text-zinc-400 text-lg'>
+          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg'>
             {t('home:openSource.subtitle')}
           </p>
         </div>
@@ -54,7 +54,7 @@ function OpenSourceSection() {
             onClick={() => trackEvent('click', 'open_source', repo.name)}
           >
             <div className='flex justify-between items-start mb-4 gap-2'>
-              <h3 className='text-lg font-bold font-outfit text-zinc-900 dark:text-zinc-100 group-hover:text-accent transition-colors truncate flex-1'>
+              <h3 className='text-base sm:text-lg font-bold font-outfit text-zinc-900 dark:text-zinc-100 group-hover:text-accent transition-colors truncate flex-1'>
                 {t(`openSource:${repo.id}.name`, repo.name)}
               </h3>
               <svg

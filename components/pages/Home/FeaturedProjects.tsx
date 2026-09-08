@@ -9,13 +9,13 @@ export default function FeaturedProjects() {
   const featuredProjects = FeaturedProjectsData;
 
   return (
-    <section className='py-20'>
-      <div className='flex flex-col md:flex-row md:items-end justify-between mb-12'>
+    <section className='py-12 sm:py-16 md:py-20'>
+      <div className='flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12'>
         <div className='max-w-2xl'>
-          <h2 className='text-3xl md:text-4xl font-display font-semibold mb-4'>
+          <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-semibold mb-4'>
             {t('home:featured.title')}
           </h2>
-          <p className='text-zinc-600 dark:text-zinc-400 text-lg'>
+          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg'>
             {t('home:featured.subtitle')}
           </p>
         </div>
@@ -39,7 +39,7 @@ export default function FeaturedProjects() {
         </Link>
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8'>
         {featuredProjects.map((project, index) => (
           <Link key={project.slug} href={`/projects/${project.slug}`}>
             <a className='minimal-card flex flex-col group overflow-hidden'>
@@ -65,11 +65,11 @@ export default function FeaturedProjects() {
                   />
                 )}
               </div>
-              <div className='p-8 flex-1 flex flex-col'>
-                <h3 className='text-2xl font-semibold mb-3 group-hover:text-accent transition-colors'>
+              <div className='p-6 md:p-8 flex-1 flex flex-col'>
+                <h3 className='text-xl sm:text-2xl font-semibold mb-3 group-hover:text-accent transition-colors'>
                   {t(`projects:project.${project.slug}.title`, project.title)}
                 </h3>
-                <p className='text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-6 flex-1 text-lg'>
+                <p className='text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-6 flex-1 text-sm sm:text-base md:text-lg'>
                   {t(`projects:project.${project.slug}.description`, project.description)}
                 </p>
                 <div className='flex flex-wrap gap-2 mt-auto'>

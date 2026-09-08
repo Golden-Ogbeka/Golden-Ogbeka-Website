@@ -28,11 +28,11 @@ function RelatedPosts({ currentSlug, currentCategory }: RelatedPostsProps) {
   if (related.length === 0) return null;
 
   return (
-    <section className='mt-16 pt-12 border-t border-zinc-200 dark:border-zinc-800'>
-      <h2 className='text-2xl md:text-3xl font-display font-semibold mb-8 animate-fade-in-up'>
+    <section className='mt-10 pt-8 md:mt-16 md:pt-12 border-t border-zinc-200 dark:border-zinc-800'>
+      <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-display font-semibold mb-8 animate-fade-in-up'>
         Related articles
       </h2>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8'>
         {related.map((post, index) => (
           <BlogCard key={post.slug} post={post} index={index} />
         ))}

@@ -66,7 +66,7 @@ export default function BlogPost({ post }: BlogPostProps) {
         overrideSchemas={[blogPostingSchema]}
       />
 
-      <article className='pt-32 min-h-screen'>
+      <article className='pt-24 sm:pt-28 md:pt-32 min-h-screen'>
         <Link href='/blog'>
           <a
             className='inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-8 transition-colors'

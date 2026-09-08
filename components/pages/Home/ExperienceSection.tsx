@@ -32,13 +32,13 @@ export default function ExperienceSection() {
   const topExperiences = ExperiencesData.slice(0, 5);
 
   return (
-    <section className='py-20 '>
-      <div className='flex flex-col md:flex-row md:items-end justify-between mb-12'>
+    <section className='py-12 sm:py-16 md:py-20'>
+      <div className='flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12'>
         <div className='max-w-2xl'>
-          <h2 className='text-3xl md:text-4xl font-display font-semibold mb-4'>
+          <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-semibold mb-4'>
             {t('home:experience.title')}
           </h2>
-          <p className='text-zinc-600 dark:text-zinc-400 text-lg'>
+          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg'>
             {t('home:experience.subtitle')}
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function ExperienceSection() {
             <div className='flex flex-col md:flex-row md:items-start gap-6 mb-4'>
               <div className='flex-1'>
                 <div className='flex flex-col md:flex-row md:items-center justify-between mb-1'>
-                  <h3 className='text-xl font-semibold'>{t(`experiences:experience.${getExpKey(exp.role, exp.company)}.role`, exp.role)}</h3>
+                  <h3 className='text-lg sm:text-xl font-semibold'>{t(`experiences:experience.${getExpKey(exp.role, exp.company)}.role`, exp.role)}</h3>
                   <span className='text-sm font-medium text-zinc-600 mt-1 md:mt-0'>
                     {exp.date}
                   </span>

@@ -49,12 +49,12 @@ const OpenSourcePage: NextPage = () => {
       />
 
       {/* Hero Section */}
-      <div className='min-h-screen pt-32 pb-12'>
-        <div className='mb-12'>
-          <h1 className='text-5xl md:text-6xl font-outfit font-bold text-zinc-900 dark:text-zinc-100 mb-6 tracking-tight'>
+      <div className='min-h-screen pt-24 sm:pt-28 md:pt-32 pb-10 md:pb-12'>
+        <div className='mb-8 sm:mb-12'>
+          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-outfit font-bold text-zinc-900 dark:text-zinc-100 mb-6 tracking-tight'>
             {t('openSource:title')}
           </h1>
-          <p className='text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl leading-relaxed'>
+          <p className='text-base sm:text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl leading-relaxed'>
             {t('openSource:subtitle')}
           </p>
         </div>
@@ -137,7 +137,7 @@ const OpenSourcePage: NextPage = () => {
               onClick={() => trackEvent('click', 'open_source', repo.name)}
             >
               <div className='flex justify-between items-start mb-4 gap-2'>
-                <h2 className='text-lg font-bold font-outfit text-zinc-900 dark:text-zinc-100 group-hover:text-accent transition-colors truncate flex-1'>
+                <h2 className='text-base sm:text-lg font-bold font-outfit text-zinc-900 dark:text-zinc-100 group-hover:text-accent transition-colors truncate flex-1'>
                   {t(`openSource:${repo.id}.name`, repo.name)}
                 </h2>
                 <svg
@@ -212,7 +212,7 @@ const OpenSourcePage: NextPage = () => {
 
         {filteredRepos.length === 0 && (
           <div className='text-center py-12'>
-            <p className='text-zinc-600 dark:text-zinc-400 text-lg'>
+            <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg'>
               {t('openSource:noResults')}
             </p>
           </div>
