@@ -33,6 +33,7 @@ import whereDoYouStandHero from '../public/images/Blog/where-do-you-stand/hero.s
 import theForceOfFreedomHero from '../public/images/Blog/the-force-of-freedom/hero.svg';
 import beautyInChaosHero from '../public/images/Blog/the-beauty-in-chaos/hero.webp';
 import theAiShockHero from '../public/images/Blog/the-ai-shock/hero.webp';
+import superTalentedHero from '../public/images/Blog/super-talented/hero.webp';
 
 export type BlogCategory = 'faith' | 'tech' | 'life';
 
@@ -120,6 +121,14 @@ const BlogPosts: BlogPostType[] = [
     image: theAiShockHero,
     ogImagePath: '/images/Blog/the-ai-shock/hero.webp',
     date: '2026-09-04',
+  },
+  {
+    slug: 'super-talented',
+    category: 'life',
+    image: superTalentedHero,
+    ogImagePath: '/images/Blog/super-talented/hero.webp',
+    date: '2026-09-22',
+    featured: true,
   },
   {
     slug: 'hand-it-over',
