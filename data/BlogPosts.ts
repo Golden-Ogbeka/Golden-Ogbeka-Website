@@ -34,6 +34,7 @@ import theForceOfFreedomHero from '../public/images/Blog/the-force-of-freedom/he
 import beautyInChaosHero from '../public/images/Blog/the-beauty-in-chaos/hero.webp';
 import theAiShockHero from '../public/images/Blog/the-ai-shock/hero.webp';
 import superTalentedHero from '../public/images/Blog/super-talented/hero.webp';
+import godIsNotATeletubbyHero from '../public/images/Blog/god-is-not-a-teletubby/hero.webp';
 
 export type BlogCategory = 'faith' | 'tech' | 'life';
 
@@ -47,6 +48,14 @@ export interface BlogPostType {
 }
 
 const BlogPosts: BlogPostType[] = [
+  {
+    slug: 'god-is-not-a-teletubby',
+    category: 'faith',
+    image: godIsNotATeletubbyHero,
+    ogImagePath: '/images/Blog/god-is-not-a-teletubby/hero.webp',
+    date: '2026-10-13',
+    featured: true,
+  },
   {
     slug: 'the-myth-about-ai-for-businesses',
     category: 'tech',
