@@ -8,6 +8,19 @@ export interface CertificationType {
 
 const Certifications: CertificationType[] = [
   {
+    title: 'Associate of the Chartered Institute of Bankers (ACIB)',
+    organization: 'Chartered Institute of Bankers of Nigeria (CIBN)',
+    date: 'In Progress',
+    featured: false,
+  },
+  {
+    title: 'Six Sigma White Belt Certification',
+    organization: 'Council for Six Sigma Certification (C.S.S.C)',
+    link: '/certificates/six-sigma-white-belt-certification.pdf',
+    date: 'October 2026',
+    featured: true,
+  },
+  {
     title: "Bachelor's Degree in Computer Science (First Class)",
     organization: 'Covenant University',
     link: '/certificates/covenant-university-bsc.pdf',
