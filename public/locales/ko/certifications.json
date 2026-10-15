@@ -65,5 +65,169 @@
   "certification.1.title": "Six Sigma White Belt Certification",
   "certification.1.organization": "Council for Six Sigma Certification (C.S.S.C)",
   "certification.0.title": "Associate of the Chartered Institute of Bankers (ACIB)",
-  "certification.0.organization": "Chartered Institute of Bankers of Nigeria (CIBN)"
+  "certification.0.organization": "Chartered Institute of Bankers of Nigeria (CIBN)",
+  "viewValueImpact": "가치 영향 보기 (혜택)",
+  "benefitHeading": "가치 영향 (혜택)",
+  "close": "닫기",
+  "certification.0.benefit.intro": "ACIB는 나이지리아 은행가 협회(CIBN)의 대표 전문 자격으로, 나이지리아 은행가를 위한 최고의 전문 기관입니다. 이를 완료하는 것은 은행 분야의 전문적 탁월함에 대한 진지한 헌신을 보여줍니다.",
+  "certification.0.benefit.points": [
+    "나이지리아 은행가를 위한 기준 전문 자격으로 업계 전반에서 인정받습니다.",
+    "은행 운영, 규제, 리스크, 윤리 및 재무 관리 전반에 걸쳐 전문성을 심화합니다.",
+    "업계 역량 프레임워크에 반영된 것처럼 고위 및 관리직 역할에 대한 적합성을 강화합니다.",
+    "CIBN의 실무 커뮤니티, CPD 프로그램, 멘토링 및 전문 네트워크에 대한 접근을 열어줍니다."
+  ],
+  "certification.1.benefit.intro": "Council for Six Sigma Certification (C.S.S.C)에서 발급한 이 인증은 Lean Six Sigma 방법론과 지속적인 프로세스 개선에 대한 실무 기초를 다집니다.",
+  "certification.1.benefit.points": [
+    "DMAIC 개선 프레임워크를 포함한 핵심 Six Sigma 원칙에 대한 이해를 보여줍니다.",
+    "소프트웨어 제공 및 은행 운영에 적용할 수 있는 문제 해결 및 데이터 기반 사고를 강화합니다.",
+    "기술 및 은행 역량을 보완하는 세계적으로 인정받는 지속적 개선 자격을 추가합니다.",
+    "Yellow, Green 및 Black Belt 레벨로 나아갈 수 있는 명확한 경로를 제공합니다."
+  ],
+  "certification.2.benefit.intro": "Covenant University의 컴퓨터 과학 일등급 우등 학위로, 소프트웨어 엔지니어링 경력에 강력한 학문적 기반을 제공합니다.",
+  "certification.2.benefit.points": [
+    "일등급 성적은 뛰어난 학문적 규율, 분석 능력 및 지적 엄격함을 나타냅니다.",
+    "알고리즘, 데이터 구조, 데이터베이스 및 시스템 설계 등 핵심 소프트웨어 엔지니어링 기초를 다룹니다.",
+    "일상적인 엔지니어링 작업에 사용되는 기술의 이론적 토대를 제공합니다.",
+    "졸업생 역할 및 고급 학위 과정의 학위 요건을 충족합니다."
+  ],
+  "certification.3.benefit.intro": "Covenant University의 African Leadership Development Centre에서 제공하는 체계적인 리더십 개발 프로그램으로, 원칙 있고 해결 지향적인 리더를 양성하는 데 중점을 둡니다.",
+  "certification.3.benefit.points": [
+    "팀, 프로젝트 및 조직 변화를 이끄는 실용적인 프레임워크를 제공합니다.",
+    "의사소통, 협업 및 인력 관리 능력을 개발합니다.",
+    "윤리적 사고와 봉사 지향적 리더십 마인드를 함양합니다.",
+    "여러 산업에 걸친 뜻이 맞는 전문가 및 동문 네트워크를 제공합니다."
+  ],
+  "certification.4.benefit.intro": "Amazon Web Services의 핵심 AWS 서비스, 클라우드 개념 및 클라우드 운영 모범 사례에 관한 입문 인증입니다.",
+  "certification.4.benefit.points": [
+    "AWS 컴퓨팅, 스토리지, 네트워킹 및 보안 서비스에 대한 실무 유창성을 기릅니다.",
+    "비용과 성능을 고려하여 클라우드 호스팅 애플리케이션을 설계, 배포 및 운영하는 것을 지원합니다.",
+    "엔지니어링 및 핀테크 팀의 클라우드 마이그레이션과 아키텍처 논의에 대한 준비성을 강화합니다.",
+    "더 깊은 AWS 전문 및 프로페셔널 인증을 위한 기초를 형성합니다."
+  ],
+  "certification.5.benefit.intro": "전문 오디오를 위한 Dante 네트워킹에 관한 Audinate의 고급 인증으로, 레벨 1을 기반으로 네트워크 오디오 설계 및 문제 해결 능력을 심화합니다.",
+  "certification.5.benefit.points": [
+    "Dante 오디오 네트워크 설계 및 구성에 대한 전문성을 심화합니다.",
+    "AV 시스템의 서비스 품질, 클로킹, 지연 시간 및 네트워크 보안에 대한 이해를 강화합니다.",
+    "방송, 라이브 사운드 및 AV 통합 전문가들이 요구하는 고급 기술을 검증합니다.",
+    "특화된 audio-over-IP 역량으로 소프트웨어 엔지니어링 기술을 보완합니다."
+  ],
+  "certification.6.benefit.intro": "디지털 오디오를 IP 네트워크로 전송하는 산업 표준인 Dante 오디오 네트워킹에 관한 Audinate의 기초 인증입니다.",
+  "certification.6.benefit.points": [
+    "Dante Controller, 장치 구성 및 네트워크 오디오 기초를 소개합니다.",
+    "AV-over-IP 기술에 대한 업계에서 인정받는 자격을 제공합니다.",
+    "실용적인 오디오 네트워킹 지식으로 소프트웨어와 방송 엔지니어링을 연결합니다.",
+    "Dante Level 2 인증을 위한 필수 기초를 형성합니다."
+  ],
+  "certification.7.benefit.intro": "생산 시스템을 설계, 운영 및 개선하는 운영 관리의 원칙과 실무를 다루는 대학 수준의 과정입니다.",
+  "certification.7.benefit.points": [
+    "프로세스 설계, 용량 계획, 품질 관리 및 공급망 기초에 대한 역량을 구축합니다.",
+    "엔지니어링 및 은행 환경에서 워크플로를 최적화하는 분석적 관점을 강화합니다.",
+    "효율성, 품질 및 고객 가치의 균형을 맞추는 능력을 향상합니다.",
+    "관리 및 프로세스 개선 통찰력으로 기술 역량을 보완합니다."
+  ],
+  "certification.8.benefit.intro": "주요 경영 이론, 사상가 및 철학과 그것이 현대 조직을 형성하는 방식을 탐구하는 학문적 과정입니다.",
+  "certification.8.benefit.points": [
+    "경영 실무가 어떻게 진화했고 왜 중요한지에 대한 폭넓은 이해를 제공합니다.",
+    "리더십, 조직 행동 및 전략 논의를 위한 어휘와 프레임워크를 제공합니다.",
+    "팀에 동기를 부여하고 성과를 이끄는 요인에 대한 비판적 사고를 예리하게 합니다.",
+    "기술과 비즈니스가 결합된 역량의 경영적 측면을 강화합니다."
+  ],
+  "certification.9.benefit.intro": "직원의 역량을 극대화하여 조직 성과를 끌어내는 방법에 관한 University of California, Riverside Extension 과정입니다.",
+  "certification.9.benefit.points": [
+    "고성과 몰입형 팀을 구축하기 위한 전략을 개발합니다.",
+    "인재 개발, 위임, 피드백 및 변화 리더십을 다룹니다.",
+    "권한만이 아닌 영향력을 통해 이끄는 능력을 향상합니다.",
+    "엔지니어링 리더십 및 인력 관리 책임에 직접 적용됩니다."
+  ],
+  "certification.10.benefit.intro": "기초부터 고급 언어 기능까지 다루는 종합적인 JavaScript 인증입니다.",
+  "certification.10.benefit.points": [
+    "웹의 핵심 언어인 JavaScript에 대한 강력한 구사력을 검증합니다.",
+    "함수, 클로저, 비동기 프로그래밍, DOM 조작 및 현대적 패턴을 다룹니다.",
+    "React, Next.js 및 Node.js를 사용한 프런트엔드 및 풀스택 개발을 지원합니다.",
+    "지속적이고 체계적인 기술 개발에 대한 헌신을 보여줍니다."
+  ],
+  "certification.11.benefit.intro": "검색, 소셜, 디스플레이, 분석 및 전자상거래 전반에 걸쳐 디지털 마케팅의 필수 요소를 다루는 Google의 공인 과정입니다.",
+  "certification.11.benefit.points": [
+    "SEO, SEM, 소셜, 이메일 및 디스플레이 마케팅 채널에 대한 실용적인 지식을 구축합니다.",
+    "디지털 제품 및 포트폴리오의 도달 범위를 성장시키고 측정하는 능력을 향상합니다.",
+    "Google에서 발급한 세계적으로 인정받는 자격을 제공합니다.",
+    "마케팅 맥락이 필요한 사용자 대상 제품을 만드는 엔지니어에게 유용합니다."
+  ],
+  "certification.12.benefit.intro": "의사소통, 팀워크 및 전문성과 같은 직장 내 소프트 스킬에 중점을 둔 Jobberman Nigeria의 교육 프로그램입니다.",
+  "certification.12.benefit.points": [
+    "의사소통, 프레젠테이션 및 대인 관계 기술을 강화합니다.",
+    "이력서 작성, 면접 및 전문적 행동 등 직장 준비성을 구축합니다.",
+    "팀워크 및 갈등 해결 능력을 향상합니다.",
+    "고용 가능성과 전문성의 신호로 고용주들에게 높이 평가됩니다."
+  ],
+  "certification.13.benefit.intro": "라이브 및 녹음 제작을 위한 방송 오디오 믹싱 전문 마스터클래스입니다.",
+  "certification.13.benefit.points": [
+    "콘솔 조작, 게인 스테이징 및 방송 믹스 밸런스에 대한 실습 기술을 개발합니다.",
+    "라이브 및 스튜디오 환경의 오디오 신호 흐름에 대한 이해를 심화합니다.",
+    "창의적인 오디오 제작 기술로 소프트웨어 기술을 보완합니다.",
+    "방송 및 미디어 제작에서 가치 있는 특화 역량을 검증합니다."
+  ],
+  "certification.14.benefit.intro": "Mount Zion Christian Academy와 함께 기독교 영화 제작의 기초를 다루는 영화 교육 프로그램입니다.",
+  "certification.14.benefit.points": [
+    "영화 제작, 스토리텔링 및 화면 연출의 기초 기술을 구축합니다.",
+    "기술 경력과 함께 창의성과 시각적 의사소통을 개발합니다.",
+    "내러티브 제작 워크플로에서 협업한 경험을 제공합니다.",
+    "신앙 기반 미디어 및 커뮤니케이션 프로젝트에 효과적으로 기여할 수 있게 합니다."
+  ],
+  "certification.15.benefit.intro": "필수적인 문제 해결, 리더십 및 디지털 기술을 키우는 McKinsey & Company의 무료 온라인 개발 프로그램입니다.",
+  "certification.15.benefit.points": [
+    "선도적인 경영 컨설턴트가 사용하는 접근법을 활용한 구조적 문제 해결을 훈련합니다.",
+    "현대 직장을 위한 리더십, 적응력 및 협업 기술을 개발합니다.",
+    "McKinsey & Company에서 발급한 세계적으로 인정받는 자격을 제공합니다.",
+    "Forward 학습자 커뮤니티와 지속적인 자료에 대한 접근을 포함합니다."
+  ],
+  "certification.16.benefit.intro": "성장을 이끄는 콘텐츠를 계획, 제작 및 배포하는 콘텐츠 마케팅 전략에 관한 HubSpot Academy의 인증입니다.",
+  "certification.16.benefit.points": [
+    "콘텐츠 전략, 제작, 홍보 및 측정 기술을 구축합니다.",
+    "가치 있는 콘텐츠를 통해 오디언스를 성장시키고 제품을 지원하는 능력을 강화합니다.",
+    "무료로 세계적으로 인정받는 마케팅 자격을 제공합니다.",
+    "기술 블로깅, 문서화 및 개인 브랜딩에 직접 적용됩니다."
+  ],
+  "certification.17.benefit.intro": "검색 가시성을 위한 온페이지, 기술 및 콘텐츠 최적화를 다루는 HubSpot Academy의 SEO 인증입니다.",
+  "certification.17.benefit.points": [
+    "키워드 리서치, 온페이지 최적화 및 링크 전략에 대한 역량을 개발합니다.",
+    "웹사이트와 콘텐츠를 검색 엔진에서 발견 가능하게 하는 능력을 향상합니다.",
+    "널리 인정받는 마케팅 자격을 제공합니다.",
+    "검색 성과 전문성으로 웹 개발 기술을 보완합니다."
+  ],
+  "certification.18.benefit.intro": "시작부터 종료까지 전체 프로젝트 수명 주기를 다루는 포괄적인 프로젝트 관리 과정입니다.",
+  "certification.18.benefit.points": [
+    "범위, 일정, 비용, 리스크 및 이해관계자 관리 기초를 다룹니다.",
+    "엔지니어링 프로젝트를 제때 예산 내에서 계획하고 제공하는 능력을 강화합니다.",
+    "교차 기능 조정 및 의사소통을 향상합니다.",
+    "PMP 및 Agile과 같은 공식 방법론을 위한 강력한 기초를 제공합니다."
+  ],
+  "certification.19.benefit.intro": "학생과 젊은 전문가를 경험 많은 동문 멘토와 연결하는 Covenant University Alumni Association의 멘토링 프로그램입니다.",
+  "certification.19.benefit.points": [
+    "여러 산업에 걸친 뛰어난 동문들로부터 체계적인 지도를 제공합니다.",
+    "강력한 동문 협회 내에서 전문 네트워크와 커뮤니티를 구축합니다.",
+    "목표 설정, 경력 계획 및 자기 개발 기술을 개발합니다.",
+    "환원하고 다른 사람을 멘토링하는 문화를 장려합니다."
+  ],
+  "certification.20.benefit.intro": "현대 소프트웨어 제공을 위한 핵심 DevOps 실무와 원칙을 다루는 Digital Nigeria 인증입니다.",
+  "certification.20.benefit.points": [
+    "지속적 통합, 지속적 제공 및 개발과 운영 간의 협업에 대한 이해를 구축합니다.",
+    "더 빠르고 안정적인 소프트웨어 릴리스 및 배포를 지원합니다.",
+    "확장 가능한 소프트웨어 제공을 위한 수요가 높은 업계 실무와 일치합니다.",
+    "자동화 및 운영 규율로 소프트웨어 엔지니어링 기술을 보완합니다."
+  ],
+  "certification.21.benefit.intro": "HTML5와 CSS3를 이용한 현대 웹 개발의 기초를 다루는 Digital Nigeria 인증입니다.",
+  "certification.21.benefit.points": [
+    "시맨틱 마크업, 레이아웃 및 반응형 디자인의 견고한 기초를 확립합니다.",
+    "현대 프레임워크를 사용한 프런트엔드 개발을 위한 필수 구성 요소를 제공합니다.",
+    "정부 지원의 디지털 기술 자격을 제공합니다.",
+    "성장하는 나이지리아 디지털 경제에서 고용 가능성을 지원합니다."
+  ],
+  "certification.22.benefit.intro": "데이터 과학의 핵심 개념, 도구 및 응용을 소개하는 Digital Nigeria 인증입니다.",
+  "certification.22.benefit.points": [
+    "데이터 분석, 통계 및 머신러닝 개념에 대한 기초 소양을 구축합니다.",
+    "엔지니어링 및 비즈니스 맥락 전반에서 데이터 기반 의사 결정을 강화합니다.",
+    "분석적 및 통계적 사고로 소프트웨어 엔지니어링을 보완합니다.",
+    "수요가 높은 디지털 분야에서 인정받는 자격을 제공합니다."
+  ]
 }
