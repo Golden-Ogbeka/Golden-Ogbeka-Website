@@ -1,233 +1,244 @@
 {
-  "certification.2.title": "コンピューターサイエンス学士号（優等）",
-  "certification.2.organization": "Covenant University",
-  "certification.8.title": "経営理論と哲学",
-  "certification.8.organization": "Unicaf University",
-  "certification.9.title": "組織リーダーシップ：従業員の能力最大化による成功",
-  "certification.9.organization": "University of California, Riverside Extension",
-  "certification.4.title": "AWS Technical Essentials",
-  "certification.4.organization": "Amazon Web Services (AWS)",
-  "certification.10.title": "JavaScript初級から上級レベル認定",
-  "certification.10.organization": "Udemy: Farda Karimov",
-  "certification.11.title": "デジタルマーケティングの基礎",
-  "certification.11.organization": "Google",
-  "certification.12.title": "ソフトスキルトレーニング",
-  "certification.12.organization": "Jobberman Nigeria",
-  "certification.3.title": "リーダーシップ開発ディプロマ",
-  "certification.3.organization": "African Leadership Development Centre",
-  "certification.6.title": "Dante認定レベル1",
+  "certification.3.title": "コンピューターサイエンス学士号（優等）",
+  "certification.3.organization": "Covenant University",
+  "certification.9.title": "経営理論と哲学",
+  "certification.9.organization": "Unicaf University",
+  "certification.10.title": "組織リーダーシップ：従業員の能力最大化による成功",
+  "certification.10.organization": "University of California, Riverside Extension",
+  "certification.5.title": "AWS Technical Essentials",
+  "certification.5.organization": "Amazon Web Services (AWS)",
+  "certification.11.title": "JavaScript初級から上級レベル認定",
+  "certification.11.organization": "Udemy: Farda Karimov",
+  "certification.12.title": "デジタルマーケティングの基礎",
+  "certification.12.organization": "Google",
+  "certification.13.title": "ソフトスキルトレーニング",
+  "certification.13.organization": "Jobberman Nigeria",
+  "certification.4.title": "リーダーシップ開発ディプロマ",
+  "certification.4.organization": "African Leadership Development Centre",
+  "certification.7.title": "Dante認定レベル1",
+  "certification.7.organization": "Audinate",
+  "certification.6.title": "Dante 認定レベル 2",
   "certification.6.organization": "Audinate",
-  "certification.5.title": "Dante 認定レベル 2",
-  "certification.5.organization": "Audinate",
-  "certification.13.title": "ブロードキャストミキシングマスタークラス",
-  "certification.13.organization": "Davidic Music Academy",
-  "certification.14.title": "マウントザイオン映画アカデミー",
-  "certification.14.organization": "Mount Zion Christian Academy",
-  "certification.15.title": "McKinsey Forwardプログラム",
-  "certification.15.organization": "McKinsey & Company",
-  "certification.16.title": "コンテンツマーケティング",
-  "certification.16.organization": "Hubspot Academy",
-  "certification.17.title": "SEO認定",
+  "certification.14.title": "ブロードキャストミキシングマスタークラス",
+  "certification.14.organization": "Davidic Music Academy",
+  "certification.15.title": "マウントザイオン映画アカデミー",
+  "certification.15.organization": "Mount Zion Christian Academy",
+  "certification.16.title": "McKinsey Forwardプログラム",
+  "certification.16.organization": "McKinsey & Company",
+  "certification.17.title": "コンテンツマーケティング",
   "certification.17.organization": "Hubspot Academy",
-  "certification.18.title": "プロジェクトマネジメントマスターコース",
-  "certification.18.organization": "Udemy",
-  "certification.19.title": "CUALAメンタリングプログラム",
-  "certification.19.organization": "Covenant University Alumni Association",
-  "certification.20.title": "DevOpsプラクティスの原則",
-  "certification.20.organization": "Digital Nigeria",
-  "certification.21.title": "HTML5とCSS3基礎開発（完全初心者向け）",
+  "certification.18.title": "SEO認定",
+  "certification.18.organization": "Hubspot Academy",
+  "certification.19.title": "プロジェクトマネジメントマスターコース",
+  "certification.19.organization": "Udemy",
+  "certification.20.title": "CUALAメンタリングプログラム",
+  "certification.20.organization": "Covenant University Alumni Association",
+  "certification.21.title": "DevOpsプラクティスの原則",
   "certification.21.organization": "Digital Nigeria",
-  "certification.22.title": "データサイエンス入門",
+  "certification.22.title": "HTML5とCSS3基礎開発（完全初心者向け）",
   "certification.22.organization": "Digital Nigeria",
-  "certification.7.title": "オペレーションズマネジメント",
-  "certification.7.organization": "Unicaf University",
-  "education.0.degree": "経営理論と哲学",
-  "education.0.institution": "Unicaf University",
-  "education.1.degree": "組織リーダーシップ：従業員の能力最大化による成功",
-  "education.1.institution": "University of California, Riverside",
-  "education.2.degree": "B.Sc. 産業数学専攻",
-  "education.2.institution": "Amazon Web Services (AWS)",
-  "education.3.degree": "コンテンツマーケティング",
-  "education.3.institution": "Hubspot Academy",
-  "education.4.degree": "SEO認定",
+  "certification.23.title": "データサイエンス入門",
+  "certification.23.organization": "Digital Nigeria",
+  "certification.8.title": "オペレーションズマネジメント",
+  "certification.8.organization": "Unicaf University",
+  "education.1.degree": "経営理論と哲学",
+  "education.1.institution": "Unicaf University",
+  "education.2.degree": "組織リーダーシップ：従業員の能力最大化による成功",
+  "education.2.institution": "University of California, Riverside",
+  "education.3.degree": "B.Sc. 産業数学専攻",
+  "education.3.institution": "Amazon Web Services (AWS)",
+  "education.4.degree": "コンテンツマーケティング",
   "education.4.institution": "Hubspot Academy",
-  "education.5.degree": "JavaScript初級から上級レベル認定",
-  "education.5.institution": "Udemy: Farda Karimov",
-  "education.6.degree": "デジタルマーケティングの基礎",
-  "education.6.institution": "Google",
-  "education.7.degree": "ソフトスキルトレーニング",
-  "education.7.institution": "Jobberman Nigeria",
-  "education.8.degree": "リーダーシップ開発ディプロマ",
-  "education.8.institution": "African Leadership Development Centre",
-  "education.9.degree": "コンピューターサイエンス学士号（優等）",
-  "education.9.institution": "Covenant University",
+  "education.5.degree": "SEO認定",
+  "education.5.institution": "Hubspot Academy",
+  "education.6.degree": "JavaScript初級から上級レベル認定",
+  "education.6.institution": "Udemy: Farda Karimov",
+  "education.7.degree": "デジタルマーケティングの基礎",
+  "education.7.institution": "Google",
+  "education.8.degree": "ソフトスキルトレーニング",
+  "education.8.institution": "Jobberman Nigeria",
+  "education.9.degree": "リーダーシップ開発ディプロマ",
+  "education.9.institution": "African Leadership Development Centre",
+  "education.10.degree": "コンピューターサイエンス学士号（優等）",
+  "education.10.institution": "Covenant University",
   "viewCertificate": "証明書を見る",
-  "certification.1.title": "Six Sigma White Belt Certification",
-  "certification.1.organization": "Council for Six Sigma Certification (C.S.S.C)",
-  "certification.0.title": "Associate of the Chartered Institute of Bankers (ACIB)",
-  "certification.0.organization": "Chartered Institute of Bankers of Nigeria (CIBN)",
+  "certification.2.title": "Six Sigma White Belt Certification",
+  "certification.2.organization": "Council for Six Sigma Certification (C.S.S.C)",
+  "certification.1.title": "Associate of the Chartered Institute of Bankers (ACIB)",
+  "certification.1.organization": "Chartered Institute of Bankers of Nigeria (CIBN)",
   "viewValueImpact": "付加価値の効果を見る",
   "benefitHeading": "付加価値の効果",
   "close": "閉じる",
-  "certification.0.benefit.intro": "ACIBはナイジェリア銀行家資格制度（CIBN）が提供する最高位の専門資格であり、ナイジェリアの銀行業における専門性向上への取り組みを示すものです。",
-  "certification.0.benefit.points": [
+  "certification.1.benefit.intro": "ACIBはナイジェリア銀行家資格制度（CIBN）が提供する最高位の専門資格であり、ナイジェリアの銀行業における専門性向上への取り組みを示すものです。",
+  "certification.1.benefit.points": [
     "ナイジェリアの銀行業におけるベンチマークとなる専門資格として業界全体で認知されています。",
     "銀行業務、規制、リスク、倫理、財務管理に関する専門知識を深めます。",
     "業界のコンピテンシー基準に基づき、上級職・管理職への道が開かれます。",
     "CIBNのコミュニティ、CPDプログラム、メンターシップ、プロフェッショナルネットワークへのアクセスが得られます。"
   ],
-  "certification.1.benefit.intro": "Council for Six Sigma Certification（C.S.S.C）が発行する本資格は、Lean Six Sigma手法と継続的なプロセス改善の基礎を身につけるものです。",
-  "certification.1.benefit.points": [
+  "certification.2.benefit.intro": "Council for Six Sigma Certification（C.S.S.C）が発行する本資格は、Lean Six Sigma手法と継続的なプロセス改善の基礎を身につけるものです。",
+  "certification.2.benefit.points": [
     "DMAIC改善フレームワークを含むSix Sigmaの核心原則を理解します。",
     "ソフトウェア開発や銀行業務に応用可能な問題解決力・データに基づく思考力を強化します。",
     "技術・銀行業務のスキルを補完する、グローバルに認知された継続的改善資格を獲得します。",
     "Yellow Belt、Green Belt、Black Beltへと段階的に進む明確な道筋が示されます。"
   ],
-  "certification.2.benefit.intro": "Covenant Universityで取得したコンピューターサイエンス優等学士号は、ソフトウェアエンジニアとしての強固な学術基盤を提供します。",
-  "certification.2.benefit.points": [
+  "certification.3.benefit.intro": "Covenant Universityで取得したコンピューターサイエンス優等学士号は、ソフトウェアエンジニアとしての強固な学術基盤を提供します。",
+  "certification.3.benefit.points": [
     "優等の成績は、卓越した学術的規律、分析力、知的厳密さを示します。",
     "アルゴリズム、データ構造、データベース、システム設計などのソフトウェアエンジニアリングの基礎を網羅します。",
     "日々のエンジニアリング業務で使用する技術の理論的背景を提供します。",
     "新卒採用や大学院進学の要件を満たします。"
   ],
-  "certification.3.benefit.intro": "Covenant UniversityのAfrican Leadership Development Centreが提供する体系的なリーダーシップ開発プログラムは、原則に基づき問題解決型のリーダーを育成します。",
-  "certification.3.benefit.points": [
+  "certification.4.benefit.intro": "Covenant UniversityのAfrican Leadership Development Centreが提供する体系的なリーダーシップ開発プログラムは、原則に基づき問題解決型のリーダーを育成します。",
+  "certification.4.benefit.points": [
     "チーム、プロジェクト、組織変革をリードするための実践的なフレームワークを習得します。",
     "コミュニケーション、協調、組織マネジメント能力を養います。",
     "倫理的な判断力と奉仕志向のリーダーシップマインドを育みます。",
     "業界横断的な志を同じくするプロフェッショナルや同窓生とのネットワークが得られます。"
   ],
-  "certification.4.benefit.intro": "Amazon Web Servicesが提供する基礎資格コースで、AWSの主要サービス、クラウドの概念、クラウド運用のベストプラクティスを学びます。",
-  "certification.4.benefit.points": [
+  "certification.5.benefit.intro": "Amazon Web Servicesが提供する基礎資格コースで、AWSの主要サービス、クラウドの概念、クラウド運用のベストプラクティスを学びます。",
+  "certification.5.benefit.points": [
     "AWSのコンピューティング、ストレージ、ネットワーク、セキュリティサービスに関する実践的な知識を習得します。",
     "コストとパフォーマンスを考慮したクラウドホスト型アプリケーションの設計、デプロイ、運用を支援します。",
     "エンジニアリングチームやフィンテックチームにおけるクラウド移行・アーキテクチャ議論への準備が整います。",
     "上位のAWSスペシャリティ資格・プロフェッショナル資格への足がかりとなります。"
   ],
-  "certification.5.benefit.intro": "Audinateが提供するDanteネットワーク上級認定は、レベル1の知識を基に、ネットワークオーディオ設計・トラブルシューティングをより深く学習します。",
-  "certification.5.benefit.points": [
+  "certification.6.benefit.intro": "Audinateが提供するDanteネットワーク上級認定は、レベル1の知識を基に、ネットワークオーディオ設計・トラブルシューティングをより深く学習します。",
+  "certification.6.benefit.points": [
     "Danteオーディオネットワークの設計・構成に関する専門知識を深めます。",
     "AVシステムにおけるQoS、クロッキング、遅延、ネットワークセキュリティへの理解を強化します。",
     "放送、ライブ音響、AVインテグレーション業界で求められる上級スキルを検証します。",
     "ソフトウェアエンジニアリングスキルに、AV-over-IPの専門性を加えます。"
   ],
-  "certification.6.benefit.intro": "Audinateが提供するDanteオーディオネットワーク基礎認定は、IPネットワーク上でのデジタル音声伝送の業界標準であるDanteの基礎を学ぶものです。",
-  "certification.6.benefit.points": [
+  "certification.7.benefit.intro": "Audinateが提供するDanteオーディオネットワーク基礎認定は、IPネットワーク上でのデジタル音声伝送の業界標準であるDanteの基礎を学ぶものです。",
+  "certification.7.benefit.points": [
     "Dante Controller、デバイス構成、ネットワークオーディオの基礎を習得します。",
     "AV-over-IP技術に関する業界認定資格を取得します。",
     "ソフトウェア・放送エンジニアリングと実践的なオーディオネットワーク知識を橋渡しします。",
     "Dante Level 2認定への前提となる基礎知識を身につけます。"
   ],
-  "certification.7.benefit.intro": "生産システムの設計・運用・改善を対象とする大学レベルのオペレーションズマネジメントコースです。",
-  "certification.7.benefit.points": [
+  "certification.8.benefit.intro": "生産システムの設計・運用・改善を対象とする大学レベルのオペレーションズマネジメントコースです。",
+  "certification.8.benefit.points": [
     "プロセス設計、キャパシティプランニング、品質管理、サプライチェーン基礎の知識を習得します。",
     "エンジニアリングや銀行業務におけるワークフロー最適化に活かせる分析的視点を養います。",
     "効率性、品質、顧客価値のバランスを考慮できるようになります。",
     "技術スキルにマネジメント・プロセス改善の洞察を補完します。"
   ],
-  "certification.8.benefit.intro": "主要な経営理論、思想家、哲学が現代組織に与える影響を学ぶ学術的なコースです。",
-  "certification.8.benefit.points": [
+  "certification.9.benefit.intro": "主要な経営理論、思想家、哲学が現代組織に与える影響を学ぶ学術的なコースです。",
+  "certification.9.benefit.points": [
     "経営実践がどのように発展し、なぜ重要なのかを幅広く理解します。",
     "リーダーシップ、組織行動、戦略の議論に役立つ用語・フレームワークを習得します。",
     "チームの動機やパフォーマンス向上について批判的に考える力を養います。",
     "技術とビジネスを組み合わせたスキルセットに経営的な側面を強化します。"
   ],
-  "certification.9.benefit.intro": "University of California, Riverside Extensionが提供するコースで、従業員の能力を最大限に引き出すことによる組織パフォーマンス向上を学びます。",
-  "certification.9.benefit.points": [
+  "certification.10.benefit.intro": "University of California, Riverside Extensionが提供するコースで、従業員の能力を最大限に引き出すことによる組織パフォーマンス向上を学びます。",
+  "certification.10.benefit.points": [
     "高パフォーマンスでエンゲージメントの高いチームを構築する戦略を習得します。",
     "人材育成、業務委任、フィードバック、変革リーダーシップを学びます。",
     "権威だけでなく影響力によってリードする力を養います。",
     "エンジニアリングリーダーシップや人材マネジメントの責務に直接活かせます。"
   ],
-  "certification.10.benefit.intro": "JavaScriptの基礎から高度な言語機能までを網羅した包括的な認定コースです。",
-  "certification.10.benefit.points": [
+  "certification.11.benefit.intro": "JavaScriptの基礎から高度な言語機能までを網羅した包括的な認定コースです。",
+  "certification.11.benefit.points": [
     "Webの中核言語であるJavaScriptの高い習熟度を証明します。",
     "関数、クロージャ、非同期プログラミング、DOM操作、モダンな設計パターンを学習します。",
     "React、Next.js、Node.jsを用いたフロントエンド・フルスタック開発を支援します。",
     "体系的かつ継続的にスキルを磨く姿勢を示します。"
   ],
-  "certification.11.benefit.intro": "Googleが認定するデジタルマーケティングの基礎コースで、検索、ソーシャル、ディスプレイ、アナリティクス、eコマースを幅広く学びます。",
-  "certification.11.benefit.points": [
+  "certification.12.benefit.intro": "Googleが認定するデジタルマーケティングの基礎コースで、検索、ソーシャル、ディスプレイ、アナリティクス、eコマースを幅広く学びます。",
+  "certification.12.benefit.points": [
     "SEO、SEM、ソーシャル、メール、ディスプレイなどのマーケティングチャネルに関する実践知識を習得します。",
     "デジタルプロダクトやポートフォリオのリーチ拡大・効果測定の方法を学びます。",
     "Google発行のグローバルに認知された資格を取得します。",
     "ユーザー向けプロダクトを開発するエンジニアにとって有用なマーケティングの文脈を理解します。"
   ],
-  "certification.12.benefit.intro": "Jobberman Nigeriaが提供するソフトスキルトレーニングで、コミュニケーション、チームワーク、プロフェッショナリズムを育成します。",
-  "certification.12.benefit.points": [
+  "certification.13.benefit.intro": "Jobberman Nigeriaが提供するソフトスキルトレーニングで、コミュニケーション、チームワーク、プロフェッショナリズムを育成します。",
+  "certification.13.benefit.points": [
     "コミュニケーション、プレゼンテーション、対人スキルを強化します。",
     "履歴書作成、面接、職業倫理など職場準備力を向上させます。",
     "チームワークと対立解決能力を養います。",
     "雇用主から高く評価される就業力・プロフェッショナリズムの証となります。"
   ],
-  "certification.13.benefit.intro": "ライブ・収録制作向けのブロードキャストオーディオミキシングを専門的に学ぶマスタークラスです。",
-  "certification.13.benefit.points": [
+  "certification.14.benefit.intro": "ライブ・収録制作向けのブロードキャストオーディオミキシングを専門的に学ぶマスタークラスです。",
+  "certification.14.benefit.points": [
     "コンソール操作、ゲイン調整、ブロードキャストミックスバランスの実践スキルを習得します。",
     "ライブ・スタジオ環境におけるオーディオ信号フローへの理解を深めます。",
     "ソフトウェアエンジニアリングの技術力にクリエイティブな音響制作スキルを加えます。",
     "放送・メディア制作業界で価値のある専門性を検証します。"
   ],
-  "certification.14.benefit.intro": "Mount Zion Christian Academyが提供するキリスト教映画制作の基礎を学ぶ映画トレーニングプログラムです。",
-  "certification.14.benefit.points": [
+  "certification.15.benefit.intro": "Mount Zion Christian Academyが提供するキリスト教映画制作の基礎を学ぶ映画トレーニングプログラムです。",
+  "certification.15.benefit.points": [
     "映画制作、ストーリーテリング、映像表現の基礎スキルを習得します。",
     "技術的なキャリアと並行して創造性・視覚的コミュニケーション能力を養います。",
     "物語制作ワークフローでの協働経験を積みます。",
     "信仰に基づくメディア・コミュニケーションプロジェクトへの貢献力を高めます。"
   ],
-  "certification.15.benefit.intro": "McKinsey & Companyが提供する無料オンライン開発プログラムで、問題解決、リーダーシップ、デジタルスキルを育成します。",
-  "certification.15.benefit.points": [
+  "certification.16.benefit.intro": "McKinsey & Companyが提供する無料オンライン開発プログラムで、問題解決、リーダーシップ、デジタルスキルを育成します。",
+  "certification.16.benefit.points": [
     "一流コンサルティング企業が用いる構造化問題解決手法を学びます。",
     "現代の職場に求められるリーダーシップ、適応力、協調力を養います。",
     "McKinsey & Company発行のグローバルに認知された資格を取得します。",
     "Forward受講者コミュニティや継続的なリソースへのアクセスが得られます。"
   ],
-  "certification.16.benefit.intro": "HubSpot Academyが提供するコンテンツマーケティング認定で、成長につながるコンテンツの企画・制作・配信を学びます。",
-  "certification.16.benefit.points": [
+  "certification.17.benefit.intro": "HubSpot Academyが提供するコンテンツマーケティング認定で、成長につながるコンテンツの企画・制作・配信を学びます。",
+  "certification.17.benefit.points": [
     "コンテンツ戦略、制作、プロモーション、効果測定のスキルを習得します。",
     "価値あるコンテンツを通じてオーディエンスを拡大し、プロダクトを支援する力を養います。",
     "無料で取得できるグローバルに認知されたマーケティング資格です。",
     "技術ブログ、ドキュメント作成、個人ブランディングに直接活かせます。"
   ],
-  "certification.17.benefit.intro": "HubSpot Academyが提供するSEO認定で、ページ内最適化、技術的SEO、コンテンツ最適化による検索可視性向上を学びます。",
-  "certification.17.benefit.points": [
+  "certification.18.benefit.intro": "HubSpot Academyが提供するSEO認定で、ページ内最適化、技術的SEO、コンテンツ最適化による検索可視性向上を学びます。",
+  "certification.18.benefit.points": [
     "キーワード調査、ページ内最適化、リンク戦略の知識を習得します。",
     "ウェブサイトやコンテンツの検索エンジンでの発見性向上に貢献します。",
     "広く認知されたマーケティング資格を取得します。",
     "Web開発スキルに検索パフォーマンスの専門知識を加えます。"
   ],
-  "certification.18.benefit.intro": "プロジェクトの開始から完了までのライフサイクル全体を網羅する包括的なプロジェクトマネジメントコースです。",
-  "certification.18.benefit.points": [
+  "certification.19.benefit.intro": "プロジェクトの開始から完了までのライフサイクル全体を網羅する包括的なプロジェクトマネジメントコースです。",
+  "certification.19.benefit.points": [
     "スコープ、スケジュール、コスト、リスク、ステークホルダー管理の基礎を学びます。",
     "エンジニアリングプロジェクトを予定通り、予算内で遂行する力を強化します。",
     "部門横断的な調整・コミュニケーション能力を向上させます。",
     "PMPやAgileなどの正式な手法の基礎となります。"
   ],
-  "certification.19.benefit.intro": "Covenant University Alumni Associationが提供するメンタリングプログラムで、学生や若手プロフェッショナルを経験豊富な同窓生が指導します。",
-  "certification.19.benefit.points": [
+  "certification.20.benefit.intro": "Covenant University Alumni Associationが提供するメンタリングプログラムで、学生や若手プロフェッショナルを経験豊富な同窓生が指導します。",
+  "certification.20.benefit.points": [
     "業界で活躍する同窓生から体系的な指導を受けられます。",
     "強固な同窓会ネットワーク内での人脈を構築します。",
     "目標設定、キャリアプランニング、自己啓発スキルを養います。",
     "他者への指導・恩返しの文化を促進します。"
   ],
-  "certification.20.benefit.intro": "Digital Nigeriaが提供するDevOpsプラクティスと原則に関する認定で、現代的なソフトウェア開発・デリバリーを学びます。",
-  "certification.20.benefit.points": [
+  "certification.21.benefit.intro": "Digital Nigeriaが提供するDevOpsプラクティスと原則に関する認定で、現代的なソフトウェア開発・デリバリーを学びます。",
+  "certification.21.benefit.points": [
     "継続的インテグレーション、継続的デリバリー、開発・運用間の協働について理解します。",
     "より迅速かつ信頼性の高いソフトウェアリリース・デプロイを実現します。",
     "スケーラブルなソフトウェアデリバリーにおける業界トレンドに沿った実践を学びます。",
     "ソフトウェアエンジニアリングスキルに自動化・運用規律を補完します。"
   ],
-  "certification.21.benefit.intro": "Digital Nigeriaが提供するHTML5・CSS3を基礎から学ぶWeb開発認定で、モダンWebの基礎を身につけます。",
-  "certification.21.benefit.points": [
+  "certification.22.benefit.intro": "Digital Nigeriaが提供するHTML5・CSS3を基礎から学ぶWeb開発認定で、モダンWebの基礎を身につけます。",
+  "certification.22.benefit.points": [
     "セマンティックHTML、レイアウト、レスポンシブデザインの堅固な基礎を築きます。",
     "モダンフレームワークによるフロントエンド開発の土台となります。",
     "政府支援によるデジタルスキル認定資格を取得します。",
     "ナイジェリアの成長するデジタル経済における就業力を高めます。"
   ],
-  "certification.22.benefit.intro": "Digital Nigeriaが提供するデータサイエンス入門認定で、データサイエンスの核心概念・ツール・応用を学びます。",
-  "certification.22.benefit.points": [
+  "certification.23.benefit.intro": "Digital Nigeriaが提供するデータサイエンス入門認定で、データサイエンスの核心概念・ツール・応用を学びます。",
+  "certification.23.benefit.points": [
     "データ分析、統計学、機械学習の基礎的なリテラシーを習得します。",
     "エンジニアリング・ビジネスの両分野でデータに基づく意思決定力を強化します。",
     "ソフトウェアエンジニアリングに分析的・統計的思考を加えます。",
     "需要の高いデジタル分野で認知された資格を取得します。"
+  ],
+  "certification.0.title": "経営学修士（MBA）",
+  "certification.0.organization": "University of East London",
+  "education.0.degree": "経営学修士（MBA）",
+  "education.0.institution": "University of East London",
+  "certification.0.benefit.intro": "University of East London で進行中の Master of Business Administration（MBA）課程。厳格な学術研究と、テクノロジーおよび金融サービス分野のシニアリーダーシップへの実践的な応用を組み合わせたものです。",
+  "certification.0.benefit.points": [
+    "戦略・財務・マーケティング・オペーション・組織リーダーシップに広く精通します。",
+    "テクノロジーおよび銀行業界のリーダーシップ職に必要な経営判断力と分析力を高めます。",
+    "深いソフトウェアエンジニアリングの専門性に、全社的なビジネス・マネジメントの視点を加えます。",
+    "多様な国際的なビジネス専門家のコミュニティを通じてグローバルな職業ネットワークを広げます。"
   ]
 }

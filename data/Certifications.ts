@@ -14,6 +14,21 @@ export interface CertificationType {
 
 const Certifications: CertificationType[] = [
   {
+    title: 'Master of Business Administration (MBA)',
+    organization: 'University of East London',
+    date: 'In Progress',
+    featured: true,
+    benefits: {
+      intro: 'An in-progress Master of Business Administration at the University of East London, combining rigorous academic study with practical application for senior leadership in technology and financial services.',
+      points: [
+        'Builds a broad command of strategy, finance, marketing, operations, and organisational leadership.',
+        'Strengthens executive decision-making and analytical skills for technology and banking leadership roles.',
+        'Complements deep software engineering expertise with an enterprise-wide business and management perspective.',
+        'Expands a global professional network through a diverse, international cohort of business professionals.',
+      ],
+    },
+  },
+  {
     title: 'Associate of the Chartered Institute of Bankers (ACIB)',
     organization: 'Chartered Institute of Bankers of Nigeria (CIBN)',
     date: 'In Progress',

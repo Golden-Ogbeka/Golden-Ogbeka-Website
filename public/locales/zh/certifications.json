@@ -1,233 +1,244 @@
 {
-  "certification.2.title": "计算机科学学士学位（一级荣誉）",
-  "certification.2.organization": "Covenant University",
-  "certification.8.title": "管理理论与哲学",
-  "certification.8.organization": "Unicaf University",
-  "certification.9.title": "组织领导力：通过最大化员工能力实现成功",
-  "certification.9.organization": "University of California, Riverside Extension",
-  "certification.4.title": "AWS技术基础",
-  "certification.4.organization": "Amazon Web Services (AWS)",
-  "certification.10.title": "JavaScript入门到高级认证",
-  "certification.10.organization": "Udemy: Farda Karimov",
-  "certification.11.title": "数字营销基础",
-  "certification.11.organization": "Google",
-  "certification.12.title": "软技能培训",
-  "certification.12.organization": "Jobberman Nigeria",
-  "certification.3.title": "领导力发展文凭",
-  "certification.3.organization": "African Leadership Development Centre",
-  "certification.6.title": "Dante认证一级",
+  "certification.3.title": "计算机科学学士学位（一级荣誉）",
+  "certification.3.organization": "Covenant University",
+  "certification.9.title": "管理理论与哲学",
+  "certification.9.organization": "Unicaf University",
+  "certification.10.title": "组织领导力：通过最大化员工能力实现成功",
+  "certification.10.organization": "University of California, Riverside Extension",
+  "certification.5.title": "AWS技术基础",
+  "certification.5.organization": "Amazon Web Services (AWS)",
+  "certification.11.title": "JavaScript入门到高级认证",
+  "certification.11.organization": "Udemy: Farda Karimov",
+  "certification.12.title": "数字营销基础",
+  "certification.12.organization": "Google",
+  "certification.13.title": "软技能培训",
+  "certification.13.organization": "Jobberman Nigeria",
+  "certification.4.title": "领导力发展文凭",
+  "certification.4.organization": "African Leadership Development Centre",
+  "certification.7.title": "Dante认证一级",
+  "certification.7.organization": "Audinate",
+  "certification.6.title": "Dante 认证二级",
   "certification.6.organization": "Audinate",
-  "certification.5.title": "Dante 认证二级",
-  "certification.5.organization": "Audinate",
-  "certification.13.title": "广播混音大师班",
-  "certification.13.organization": "Davidic Music Academy",
-  "certification.14.title": "锡安山电影学院",
-  "certification.14.organization": "Mount Zion Christian Academy",
-  "certification.15.title": "McKinsey Forward 项目",
-  "certification.15.organization": "McKinsey & Company",
-  "certification.16.title": "内容营销",
-  "certification.16.organization": "Hubspot Academy",
-  "certification.17.title": "SEO认证",
+  "certification.14.title": "广播混音大师班",
+  "certification.14.organization": "Davidic Music Academy",
+  "certification.15.title": "锡安山电影学院",
+  "certification.15.organization": "Mount Zion Christian Academy",
+  "certification.16.title": "McKinsey Forward 项目",
+  "certification.16.organization": "McKinsey & Company",
+  "certification.17.title": "内容营销",
   "certification.17.organization": "Hubspot Academy",
-  "certification.18.title": "项目管理大师课程",
-  "certification.18.organization": "Udemy",
-  "certification.19.title": "CUALA导师计划",
-  "certification.19.organization": "Covenant University Alumni Association",
-  "certification.20.title": "DevOps实践原则",
-  "certification.20.organization": "Digital Nigeria",
-  "certification.21.title": "HTML5和CSS3基础开发（零基础入门）",
+  "certification.18.title": "SEO认证",
+  "certification.18.organization": "Hubspot Academy",
+  "certification.19.title": "项目管理大师课程",
+  "certification.19.organization": "Udemy",
+  "certification.20.title": "CUALA导师计划",
+  "certification.20.organization": "Covenant University Alumni Association",
+  "certification.21.title": "DevOps实践原则",
   "certification.21.organization": "Digital Nigeria",
-  "certification.22.title": "数据科学入门",
+  "certification.22.title": "HTML5和CSS3基础开发（零基础入门）",
   "certification.22.organization": "Digital Nigeria",
-  "certification.7.title": "运营管理",
-  "certification.7.organization": "Unicaf University",
-  "education.0.degree": "管理理论与哲学",
-  "education.0.institution": "Unicaf University",
-  "education.1.degree": "组织领导力：通过最大化员工能力实现成功",
-  "education.1.institution": "University of California, Riverside",
-  "education.2.degree": "AWS技术基础",
-  "education.2.institution": "Amazon Web Services (AWS)",
-  "education.3.degree": "内容营销",
-  "education.3.institution": "Hubspot Academy",
-  "education.4.degree": "SEO认证",
+  "certification.23.title": "数据科学入门",
+  "certification.23.organization": "Digital Nigeria",
+  "certification.8.title": "运营管理",
+  "certification.8.organization": "Unicaf University",
+  "education.1.degree": "管理理论与哲学",
+  "education.1.institution": "Unicaf University",
+  "education.2.degree": "组织领导力：通过最大化员工能力实现成功",
+  "education.2.institution": "University of California, Riverside",
+  "education.3.degree": "AWS技术基础",
+  "education.3.institution": "Amazon Web Services (AWS)",
+  "education.4.degree": "内容营销",
   "education.4.institution": "Hubspot Academy",
-  "education.5.degree": "JavaScript入门到高级认证",
-  "education.5.institution": "Udemy: Farda Karimov",
-  "education.6.degree": "数字营销基础",
-  "education.6.institution": "Google",
-  "education.7.degree": "软技能培训",
-  "education.7.institution": "Jobberman Nigeria",
-  "education.8.degree": "领导力发展文凭",
-  "education.8.institution": "African Leadership Development Centre",
-  "education.9.degree": "计算机科学学士学位（一级荣誉）",
-  "education.9.institution": "Covenant University",
+  "education.5.degree": "SEO认证",
+  "education.5.institution": "Hubspot Academy",
+  "education.6.degree": "JavaScript入门到高级认证",
+  "education.6.institution": "Udemy: Farda Karimov",
+  "education.7.degree": "数字营销基础",
+  "education.7.institution": "Google",
+  "education.8.degree": "软技能培训",
+  "education.8.institution": "Jobberman Nigeria",
+  "education.9.degree": "领导力发展文凭",
+  "education.9.institution": "African Leadership Development Centre",
+  "education.10.degree": "计算机科学学士学位（一级荣誉）",
+  "education.10.institution": "Covenant University",
   "viewCertificate": "查看证书",
-  "certification.1.title": "Six Sigma White Belt Certification",
-  "certification.1.organization": "Council for Six Sigma Certification (C.S.S.C)",
-  "certification.0.title": "Associate of the Chartered Institute of Bankers (ACIB)",
-  "certification.0.organization": "Chartered Institute of Bankers of Nigeria (CIBN)",
+  "certification.2.title": "Six Sigma White Belt Certification",
+  "certification.2.organization": "Council for Six Sigma Certification (C.S.S.C)",
+  "certification.1.title": "Associate of the Chartered Institute of Bankers (ACIB)",
+  "certification.1.organization": "Chartered Institute of Bankers of Nigeria (CIBN)",
   "viewValueImpact": "查看价值影响（益处）",
   "benefitHeading": "价值影响（益处）",
   "close": "关闭",
-  "certification.0.benefit.intro": "ACIB是尼日利亚特许银行家协会（CIBN）颁发的旗舰专业资格，是尼日利亚银行业的首要专业机构。完成该资格认证表明对银行业专业卓越的坚定承诺。",
-  "certification.0.benefit.points": [
+  "certification.1.benefit.intro": "ACIB是尼日利亚特许银行家协会（CIBN）颁发的旗舰专业资格，是尼日利亚银行业的首要专业机构。完成该资格认证表明对银行业专业卓越的坚定承诺。",
+  "certification.1.benefit.points": [
     "被业界公认为尼日利亚银行家最具权威的专业资格基准。",
     "深入掌握银行业务、监管、风险、道德和财务管理等领域知识。",
     "大幅提升获得高级和管理职位的资格，符合行业能力框架要求。",
     "可加入CIBN专业社区、CPD项目、导师计划和专业人脉网络。"
   ],
-  "certification.1.benefit.intro": "由Six Sigma认证委员会（C.S.S.C）颁发，建立Lean Six Sigma方法论和持续流程改进的实用基础。",
-  "certification.1.benefit.points": [
+  "certification.2.benefit.intro": "由Six Sigma认证委员会（C.S.S.C）颁发，建立Lean Six Sigma方法论和持续流程改进的实用基础。",
+  "certification.2.benefit.points": [
     "掌握核心Six Sigma原理，包括DMAIC改进框架。",
     "增强软件交付和银行业务中的问题解决和数据驱动思维能力。",
     "获得全球认可的持续改进证书，补充技术和银行业务技能。",
     "为Yellow Belt、Green Belt和Black Belt认证打下清晰的进阶路径。"
   ],
-  "certification.2.benefit.intro": "Covenant University颁发的计算机科学一级荣誉学士学位，为软件工程职业生涯奠定坚实的学术基础。",
-  "certification.2.benefit.points": [
+  "certification.3.benefit.intro": "Covenant University颁发的计算机科学一级荣誉学士学位，为软件工程职业生涯奠定坚实的学术基础。",
+  "certification.3.benefit.points": [
     "一级荣誉表明卓越的学术自律、分析能力和思辨能力。",
     "涵盖算法、数据结构、数据库和系统设计等核心软件工程基础。",
     "为日常工程工作所用技术提供坚实的理论基础。",
     "满足研究生职位和深造项目的学位要求。"
   ],
-  "certification.3.benefit.intro": "在Covenant University非洲领导力发展中心（African Leadership Development Centre）完成的结构化领导力发展项目，专注于培养有原则、善于解决问题的领导者。",
-  "certification.3.benefit.points": [
+  "certification.4.benefit.intro": "在Covenant University非洲领导力发展中心（African Leadership Development Centre）完成的结构化领导力发展项目，专注于培养有原则、善于解决问题的领导者。",
+  "certification.4.benefit.points": [
     "掌握领导团队、项目和组织变革的实用框架。",
     "培养沟通、协作和人员管理能力。",
     "塑造道德思考和服务导向的领导心态。",
     "拓展跨行业的志同道合的专业人士和校友网络。"
   ],
-  "certification.4.benefit.intro": "Amazon Web Services（AWS）入门认证，涵盖核心AWS服务、云概念和云运维最佳实践。",
-  "certification.4.benefit.points": [
+  "certification.5.benefit.intro": "Amazon Web Services（AWS）入门认证，涵盖核心AWS服务、云概念和云运维最佳实践。",
+  "certification.5.benefit.points": [
     "熟练掌握AWS计算、存储、网络和安全服务。",
     "支持以成本效益和性能为导向的云托管应用设计、部署和运维。",
     "增强工程和金融科技团队中云迁移和架构讨论的参与能力。",
     "为深入学习AWS专业级和专家级认证奠定基础。"
   ],
-  "certification.5.benefit.intro": "Audinate Dante专业音频网络高级认证，在一级基础上深化网络音频设计和故障排除技能。",
-  "certification.5.benefit.points": [
+  "certification.6.benefit.intro": "Audinate Dante专业音频网络高级认证，在一级基础上深化网络音频设计和故障排除技能。",
+  "certification.6.benefit.points": [
     "深化设计和配置Dante音频网络的专业能力。",
     "加强对服务质量、时钟同步、延迟和AV系统网络安全的理解。",
     "验证广播、现场音响和AV集成专业人员所需的高级技能。",
     "补充软件工程技能，拓展专业AV-over-IP能力。"
   ],
-  "certification.6.benefit.intro": "Audinate Dante音频网络基础认证，Dante是基于IP网络传输数字音频的行业标准。",
-  "certification.6.benefit.points": [
+  "certification.7.benefit.intro": "Audinate Dante音频网络基础认证，Dante是基于IP网络传输数字音频的行业标准。",
+  "certification.7.benefit.points": [
     "了解Dante Controller、设备配置和网络音频基础知识。",
     "获得业界认可的AV-over-IP技术证书。",
     "将软件和广播工程与实用音频网络知识相结合。",
     "是Dante二级认证的先决条件。"
   ],
-  "certification.7.benefit.intro": "大学水平的运营管理课程，涵盖设计、运行和改进生产系统的原理与实践。",
-  "certification.7.benefit.points": [
+  "certification.8.benefit.intro": "大学水平的运营管理课程，涵盖设计、运行和改进生产系统的原理与实践。",
+  "certification.8.benefit.points": [
     "掌握流程设计、产能规划、质量控制和供应链基础。",
     "增强优化工程和银行业务工作流程的分析视角。",
     "提升平衡效率、质量和客户价值的能力。",
     "补充技术技能，增加管理和流程改进洞察。"
   ],
-  "certification.8.benefit.intro": "学术性探索主要管理理论、思想家及其哲学思想如何塑造现代组织。",
-  "certification.8.benefit.points": [
+  "certification.9.benefit.intro": "学术性探索主要管理理论、思想家及其哲学思想如何塑造现代组织。",
+  "certification.9.benefit.points": [
     "全面了解管理实践的发展历程及其重要性。",
     "掌握领导力、组织行为和战略讨论所需的术语和框架。",
     "提升批判性思考能力，更好理解团队激励和绩效驱动因素。",
     "增强技术与业务复合技能中的管理维度。"
   ],
-  "certification.9.benefit.intro": "加州大学河滨分校（University of California, Riverside Extension）课程，探讨如何通过最大化员工能力来释放组织绩效。",
-  "certification.9.benefit.points": [
+  "certification.10.benefit.intro": "加州大学河滨分校（University of California, Riverside Extension）课程，探讨如何通过最大化员工能力来释放组织绩效。",
+  "certification.10.benefit.points": [
     "制定建设高绩效、充满活力团队的策略。",
     "涵盖人才发展、授权、反馈和变革领导力。",
     "提升通过影响力而非仅靠权威领导的能力。",
     "直接适用于工程领导力和人员管理职责。"
   ],
-  "certification.10.benefit.intro": "端到端JavaScript认证，涵盖从基础到高级语言特性的全部内容。",
-  "certification.10.benefit.points": [
+  "certification.11.benefit.intro": "端到端JavaScript认证，涵盖从基础到高级语言特性的全部内容。",
+  "certification.11.benefit.points": [
     "验证对Web核心语言JavaScript的扎实掌握。",
     "涵盖函数、闭包、异步编程、DOM操作和现代编程模式。",
     "支持使用React、Next.js和Node.js进行前端和全栈开发。",
     "展示持续、系统化技能提升的决心。"
   ],
-  "certification.11.benefit.intro": "Google认证课程，涵盖数字营销核心要素，包括搜索、社交、展示、分析和电子商务。",
-  "certification.11.benefit.points": [
+  "certification.12.benefit.intro": "Google认证课程，涵盖数字营销核心要素，包括搜索、社交、展示、分析和电子商务。",
+  "certification.12.benefit.points": [
     "掌握SEO、SEM、社交、电子邮件和展示营销等渠道的实用知识。",
     "提升衡量和拓展数字产品和个人作品集影响力的能力。",
     "获得Google颁发的全球认可证书。",
     "对构建面向用户产品的工程师而言，具备营销背景十分有益。"
   ],
-  "certification.12.benefit.intro": "Jobberman Nigeria培训项目，专注于职场软技能，如沟通、团队合作和职业素养。",
-  "certification.12.benefit.points": [
+  "certification.13.benefit.intro": "Jobberman Nigeria培训项目，专注于职场软技能，如沟通、团队合作和职业素养。",
+  "certification.13.benefit.points": [
     "强化沟通、演讲和人际交往能力。",
     "提升职场准备度：简历撰写、面试技巧和职业行为规范。",
     "改善团队合作和冲突解决能力。",
     "被雇主广泛认可，体现就业能力和职业素养。"
   ],
-  "certification.13.benefit.intro": "广播音频混音专业大师班，针对直播和录制制作。",
-  "certification.13.benefit.points": [
+  "certification.14.benefit.intro": "广播音频混音专业大师班，针对直播和录制制作。",
+  "certification.14.benefit.points": [
     "掌握调音台操作、增益分配和广播混音平衡等实操技能。",
     "深入理解直播和录音环境中的音频信号流。",
     "将软件技术技能与创意音频制作工艺相结合。",
     "验证在广播和媒体制作领域备受重视的专业能力。"
   ],
-  "certification.14.benefit.intro": "Mount Zion Christian Academy锡安山基督教电影学院的电影培训项目，涵盖基督教电影制作基础。",
-  "certification.14.benefit.points": [
+  "certification.15.benefit.intro": "Mount Zion Christian Academy锡安山基督教电影学院的电影培训项目，涵盖基督教电影制作基础。",
+  "certification.15.benefit.points": [
     "掌握电影制作、叙事和银幕工艺等基础技能。",
     "在技术职业之外培养创造力和视觉传达能力。",
     "积累参与叙事制作工作流程的协作经验。",
     "有助于有效参与基督教媒体和传播项目。"
   ],
-  "certification.15.benefit.intro": "McKinsey & Company免费在线发展项目，培养核心问题解决、领导力和数字技能。",
-  "certification.15.benefit.points": [
+  "certification.16.benefit.intro": "McKinsey & Company免费在线发展项目，培养核心问题解决、领导力和数字技能。",
+  "certification.16.benefit.points": [
     "学习顶级管理咨询公司所用的结构化问题解决方法。",
     "培养现代职场所需的领导力、适应力和协作能力。",
     "获得McKinsey & Company颁发的全球认可证书。",
     "可加入Forward学员社区并获取持续学习资源。"
   ],
-  "certification.16.benefit.intro": "HubSpot Academy内容营销认证，涵盖内容营销策略：规划、创作和分发内容以推动增长。",
-  "certification.16.benefit.points": [
+  "certification.17.benefit.intro": "HubSpot Academy内容营销认证，涵盖内容营销策略：规划、创作和分发内容以推动增长。",
+  "certification.17.benefit.points": [
     "掌握内容策略、创作、推广和效果衡量。",
     "提升通过优质内容吸引受众并支持产品的能力。",
     "获得免费且全球认可的营销证书。",
     "直接适用于技术博客写作、技术文档和个人品牌建设。"
   ],
-  "certification.17.benefit.intro": "HubSpot Academy SEO认证，涵盖页面优化、技术优化和内容优化以提升搜索可见度。",
-  "certification.17.benefit.points": [
+  "certification.18.benefit.intro": "HubSpot Academy SEO认证，涵盖页面优化、技术优化和内容优化以提升搜索可见度。",
+  "certification.18.benefit.points": [
     "掌握关键词研究、页面优化和外链策略。",
     "提升网站和内容在搜索引擎中的可发现性。",
     "获得广泛认可的营销证书。",
     "补充Web开发技能，增强搜索性能专业知识。"
   ],
-  "certification.18.benefit.intro": "全面的项目管理课程，涵盖从启动到收尾的完整项目生命周期。",
-  "certification.18.benefit.points": [
+  "certification.19.benefit.intro": "全面的项目管理课程，涵盖从启动到收尾的完整项目生命周期。",
+  "certification.19.benefit.points": [
     "涵盖范围、进度、成本、风险和干系人管理基础。",
     "提升按时、按预算交付工程项目的能力。",
     "改善跨部门协作和沟通效果。",
     "为PMP和Agile等正式方法论打下坚实基础。"
   ],
-  "certification.19.benefit.intro": "Covenant University Alumni Association校友导师计划，连接学生和年轻专业人士与经验丰富的校友导师。",
-  "certification.19.benefit.points": [
+  "certification.20.benefit.intro": "Covenant University Alumni Association校友导师计划，连接学生和年轻专业人士与经验丰富的校友导师。",
+  "certification.20.benefit.points": [
     "获得来自各行业杰出校友的系统化指导。",
     "拓展强大的校友网络和专业人脉。",
     "培养目标设定、职业规划和个人发展能力。",
     "传承回馈精神，鼓励他人参与指导。"
   ],
-  "certification.20.benefit.intro": "Digital Nigeria认证，涵盖现代软件交付的核心DevOps实践和原则。",
-  "certification.20.benefit.points": [
+  "certification.21.benefit.intro": "Digital Nigeria认证，涵盖现代软件交付的核心DevOps实践和原则。",
+  "certification.21.benefit.points": [
     "掌握持续集成、持续交付以及开发与运维协作。",
     "支持更快、更可靠的软件发布和部署。",
     "符合可扩展软件交付领域的热门行业实践。",
     "补充软件工程技能，强化自动化和运维规范。"
   ],
-  "certification.21.benefit.intro": "Digital Nigeria认证，涵盖使用HTML5和CSS3进行现代Web开发的基础知识。",
-  "certification.21.benefit.points": [
+  "certification.22.benefit.intro": "Digital Nigeria认证，涵盖使用HTML5和CSS3进行现代Web开发的基础知识。",
+  "certification.22.benefit.points": [
     "建立语义化标记、布局和响应式设计的扎实基础。",
     "为使用现代前端框架奠定必要基础。",
     "获得政府认可的数字技能证书。",
     "助力提升在尼日利亚蓬勃发展的数字经济中的就业竞争力。"
   ],
-  "certification.22.benefit.intro": "Digital Nigeria认证，介绍数据科学的核心概念、工具和应用。",
-  "certification.22.benefit.points": [
+  "certification.23.benefit.intro": "Digital Nigeria认证，介绍数据科学的核心概念、工具和应用。",
+  "certification.23.benefit.points": [
     "建立数据分析、统计和机器学习概念的基础认知。",
     "增强工程和商业场景中的数据驱动决策能力。",
     "补充软件工程技能，提升分析和统计思维。",
     "获得热门数字领域的认可证书。"
+  ],
+  "certification.0.title": "工商管理硕士（MBA）",
+  "certification.0.organization": "University of East London",
+  "education.0.degree": "工商管理硕士（MBA）",
+  "education.0.institution": "University of East London",
+  "certification.0.benefit.intro": "正在 University of East London 攻读的工商管理硕士（MBA）课程，将严谨的学术学习与技术及金融服务领域高级领导力的实践应用相结合。",
+  "certification.0.benefit.points": [
+    "全面掌握战略、财务、营销、运营与组织领导力。",
+    "提升技术与银行业领导岗位所需的高层决策与分析能力。",
+    "以企业级商业与管理视角补充深厚的软件工程专长。",
+    "通过多元化的国际商业专业人士群体拓展全球职业人脉。"
   ]
 }

@@ -1,233 +1,244 @@
 {
-  "certification.2.title": "Licenciatura en Informática (Primera Promoción)",
-  "certification.2.organization": "Covenant University",
-  "certification.8.title": "Teorías y filosofías de gestión",
-  "certification.8.organization": "Unicaf University",
-  "certification.9.title": "Liderazgo organizacional: éxito maximizando las capacidades de los empleados",
-  "certification.9.organization": "University of California, Riverside Extension",
-  "certification.4.title": "Conceptos básicos técnicos de AWS",
-  "certification.4.organization": "Amazon Web Services (AWS)",
-  "certification.10.title": "Certificación de nivel principiante a avanzado de JavaScript",
-  "certification.10.organization": "Udemy: Farda Karimov",
-  "certification.11.title": "Fundamentos del marketing digital",
-  "certification.11.organization": "Google",
-  "certification.12.title": "Entrenamiento de habilidades blandas",
-  "certification.12.organization": "Jobberman Nigeria",
-  "certification.3.title": "Diplomado en Desarrollo de Liderazgo",
-  "certification.3.organization": "African Leadership Development Centre",
-  "certification.6.title": "Certificación Dante Nivel 1",
+  "certification.3.title": "Licenciatura en Informática (Primera Promoción)",
+  "certification.3.organization": "Covenant University",
+  "certification.9.title": "Teorías y filosofías de gestión",
+  "certification.9.organization": "Unicaf University",
+  "certification.10.title": "Liderazgo organizacional: éxito maximizando las capacidades de los empleados",
+  "certification.10.organization": "University of California, Riverside Extension",
+  "certification.5.title": "Conceptos básicos técnicos de AWS",
+  "certification.5.organization": "Amazon Web Services (AWS)",
+  "certification.11.title": "Certificación de nivel principiante a avanzado de JavaScript",
+  "certification.11.organization": "Udemy: Farda Karimov",
+  "certification.12.title": "Fundamentos del marketing digital",
+  "certification.12.organization": "Google",
+  "certification.13.title": "Entrenamiento de habilidades blandas",
+  "certification.13.organization": "Jobberman Nigeria",
+  "certification.4.title": "Diplomado en Desarrollo de Liderazgo",
+  "certification.4.organization": "African Leadership Development Centre",
+  "certification.7.title": "Certificación Dante Nivel 1",
+  "certification.7.organization": "Audinate",
+  "certification.6.title": "Certificación Dante Nivel 2",
   "certification.6.organization": "Audinate",
-  "certification.5.title": "Certificación Dante Nivel 2",
-  "certification.5.organization": "Audinate",
-  "certification.13.title": "Clase magistral de mezcla de transmisión",
-  "certification.13.organization": "Davidic Music Academy",
-  "certification.14.title": "Academia de Cine Monte Sión",
-  "certification.14.organization": "Mount Zion Christian Academy",
-  "certification.15.title": "Programa avanzado de McKinsey",
-  "certification.15.organization": "McKinsey & Company",
-  "certification.16.title": "Marketing de contenidos",
-  "certification.16.organization": "Hubspot Academy",
-  "certification.17.title": "Certificación SEO",
+  "certification.14.title": "Clase magistral de mezcla de transmisión",
+  "certification.14.organization": "Davidic Music Academy",
+  "certification.15.title": "Academia de Cine Monte Sión",
+  "certification.15.organization": "Mount Zion Christian Academy",
+  "certification.16.title": "Programa avanzado de McKinsey",
+  "certification.16.organization": "McKinsey & Company",
+  "certification.17.title": "Marketing de contenidos",
   "certification.17.organization": "Hubspot Academy",
-  "certification.18.title": "Curso de maestría en gestión de proyectos",
-  "certification.18.organization": "Udemy",
-  "certification.19.title": "Programa de mentoría CUALA",
-  "certification.19.organization": "Covenant University Alumni Association",
-  "certification.20.title": "Principios y prácticas de DevOps",
-  "certification.20.organization": "Digital Nigeria",
-  "certification.21.title": "Fundamentos de desarrollo de HTML5 y CSS3 para principiantes absolutos",
+  "certification.18.title": "Certificación SEO",
+  "certification.18.organization": "Hubspot Academy",
+  "certification.19.title": "Curso de maestría en gestión de proyectos",
+  "certification.19.organization": "Udemy",
+  "certification.20.title": "Programa de mentoría CUALA",
+  "certification.20.organization": "Covenant University Alumni Association",
+  "certification.21.title": "Principios y prácticas de DevOps",
   "certification.21.organization": "Digital Nigeria",
-  "certification.22.title": "Introducción a la ciencia de datos",
+  "certification.22.title": "Fundamentos de desarrollo de HTML5 y CSS3 para principiantes absolutos",
   "certification.22.organization": "Digital Nigeria",
-  "certification.7.title": "Gestión de operaciones",
-  "certification.7.organization": "Unicaf University",
-  "education.0.degree": "Teorías y filosofías de gestión",
-  "education.0.institution": "Unicaf University",
-  "education.1.degree": "Liderazgo organizacional: éxito maximizando las capacidades de los empleados",
-  "education.1.institution": "University of California, Riverside",
-  "education.2.degree": "Conceptos básicos técnicos de AWS",
-  "education.2.institution": "Amazon Web Services (AWS)",
-  "education.3.degree": "Marketing de contenidos",
-  "education.3.institution": "Hubspot Academy",
-  "education.4.degree": "Certificación SEO",
+  "certification.23.title": "Introducción a la ciencia de datos",
+  "certification.23.organization": "Digital Nigeria",
+  "certification.8.title": "Gestión de operaciones",
+  "certification.8.organization": "Unicaf University",
+  "education.1.degree": "Teorías y filosofías de gestión",
+  "education.1.institution": "Unicaf University",
+  "education.2.degree": "Liderazgo organizacional: éxito maximizando las capacidades de los empleados",
+  "education.2.institution": "University of California, Riverside",
+  "education.3.degree": "Conceptos básicos técnicos de AWS",
+  "education.3.institution": "Amazon Web Services (AWS)",
+  "education.4.degree": "Marketing de contenidos",
   "education.4.institution": "Hubspot Academy",
-  "education.5.degree": "Certificación de nivel principiante a avanzado de JavaScript",
-  "education.5.institution": "Udemy: Farda Karimov",
-  "education.6.degree": "Fundamentos del marketing digital",
-  "education.6.institution": "Google",
-  "education.7.degree": "Entrenamiento de habilidades blandas",
-  "education.7.institution": "Jobberman Nigeria",
-  "education.8.degree": "Diplomado en Desarrollo de Liderazgo",
-  "education.8.institution": "African Leadership Development Centre",
-  "education.9.degree": "Licenciatura en Informática (Primera Promoción)",
-  "education.9.institution": "Covenant University",
+  "education.5.degree": "Certificación SEO",
+  "education.5.institution": "Hubspot Academy",
+  "education.6.degree": "Certificación de nivel principiante a avanzado de JavaScript",
+  "education.6.institution": "Udemy: Farda Karimov",
+  "education.7.degree": "Fundamentos del marketing digital",
+  "education.7.institution": "Google",
+  "education.8.degree": "Entrenamiento de habilidades blandas",
+  "education.8.institution": "Jobberman Nigeria",
+  "education.9.degree": "Diplomado en Desarrollo de Liderazgo",
+  "education.9.institution": "African Leadership Development Centre",
+  "education.10.degree": "Licenciatura en Informática (Primera Promoción)",
+  "education.10.institution": "Covenant University",
   "viewCertificate": "Ver certificado",
-  "certification.1.title": "Six Sigma White Belt Certification",
-  "certification.1.organization": "Council for Six Sigma Certification (C.S.S.C)",
-  "certification.0.title": "Associate of the Chartered Institute of Bankers (ACIB)",
-  "certification.0.organization": "Chartered Institute of Bankers of Nigeria (CIBN)",
+  "certification.2.title": "Six Sigma White Belt Certification",
+  "certification.2.organization": "Council for Six Sigma Certification (C.S.S.C)",
+  "certification.1.title": "Associate of the Chartered Institute of Bankers (ACIB)",
+  "certification.1.organization": "Chartered Institute of Bankers of Nigeria (CIBN)",
   "viewValueImpact": "Ver impacto de valor (beneficio)",
   "benefitHeading": "Impacto de valor (beneficio)",
   "close": "Cerrar",
-  "certification.0.benefit.intro": "El ACIB es la cualificación profesional insignia del Chartered Institute of Bankers of Nigeria (CIBN), el organismo profesional de referencia para banqueros en Nigeria. Completarlo demuestra un compromiso serio con la excelencia profesional en banca.",
-  "certification.0.benefit.points": [
+  "certification.1.benefit.intro": "El ACIB es la cualificación profesional insignia del Chartered Institute of Bankers of Nigeria (CIBN), el organismo profesional de referencia para banqueros en Nigeria. Completarlo demuestra un compromiso serio con la excelencia profesional en banca.",
+  "certification.1.benefit.points": [
     "Reconocido en toda la industria como la cualificación profesional de referencia para banqueros en Nigeria.",
     "Profundiza la experiencia en operaciones bancarias, regulación, riesgo, ética y gestión financiera.",
     "Refuerza la elegibilidad para puestos directivos y de gestión, como reflejan los marcos de competencias del sector.",
     "Abre el acceso a la comunidad de práctica de CIBN, los programas de CPD, la mentoría y las redes profesionales."
   ],
-  "certification.1.benefit.intro": "Emitida por el Council for Six Sigma Certification (C.S.S.C), esta certificación construye una base práctica en la metodología Lean Six Sigma y la mejora continua de procesos.",
-  "certification.1.benefit.points": [
+  "certification.2.benefit.intro": "Emitida por el Council for Six Sigma Certification (C.S.S.C), esta certificación construye una base práctica en la metodología Lean Six Sigma y la mejora continua de procesos.",
+  "certification.2.benefit.points": [
     "Demuestra comprensión de los principios fundamentales de Six Sigma, incluido el marco de mejora DMAIC.",
     "Refuerza la resolución de problemas y el pensamiento basado en datos, aplicables al desarrollo de software y a las operaciones bancarias.",
     "Añade una credencial de mejora continua reconocida a nivel mundial que complementa las habilidades técnicas y bancarias.",
     "Proporciona una ruta de progresión clara hacia los niveles Yellow, Green y Black Belt."
   ],
-  "certification.2.benefit.intro": "Una Licenciatura con honores de Primera Clase en Informática de Covenant University, que proporciona una sólida base académica para una carrera en ingeniería de software.",
-  "certification.2.benefit.points": [
+  "certification.3.benefit.intro": "Una Licenciatura con honores de Primera Clase en Informática de Covenant University, que proporciona una sólida base académica para una carrera en ingeniería de software.",
+  "certification.3.benefit.points": [
     "La condición de Primera Clase señala una disciplina académica excepcional, capacidad analítica y rigor intelectual.",
     "Cubre los fundamentos esenciales de la ingeniería de software: algoritmos, estructuras de datos, bases de datos y diseño de sistemas.",
     "Proporciona la base teórica detrás de las tecnologías utilizadas en el trabajo diario de ingeniería.",
     "Cumple los requisitos de titulación para puestos de graduados y programas de estudios avanzados."
   ],
-  "certification.3.benefit.intro": "Un programa estructurado de desarrollo de liderazgo en el African Leadership Development Centre de Covenant University, centrado en formar líderes íntegros y orientados a las soluciones.",
-  "certification.3.benefit.points": [
+  "certification.4.benefit.intro": "Un programa estructurado de desarrollo de liderazgo en el African Leadership Development Centre de Covenant University, centrado en formar líderes íntegros y orientados a las soluciones.",
+  "certification.4.benefit.points": [
     "Proporciona marcos prácticos para liderar equipos, proyectos y cambios organizacionales.",
     "Desarrolla capacidades de comunicación, colaboración y gestión de personas.",
     "Cultiva el razonamiento ético y una mentalidad de liderazgo orientada al servicio.",
     "Proporciona una red de profesionales afines y exalumnos de diversas industrias."
   ],
-  "certification.4.benefit.intro": "La certificación introductoria de Amazon Web Services sobre los servicios fundamentales de AWS, los conceptos de la nube y las mejores prácticas para las operaciones en la nube.",
-  "certification.4.benefit.points": [
+  "certification.5.benefit.intro": "La certificación introductoria de Amazon Web Services sobre los servicios fundamentales de AWS, los conceptos de la nube y las mejores prácticas para las operaciones en la nube.",
+  "certification.5.benefit.points": [
     "Desarrolla fluidez práctica con los servicios de cómputo, almacenamiento, redes y seguridad de AWS.",
     "Apoya el diseño, el despliegue y la operación de aplicaciones alojadas en la nube, teniendo en cuenta el coste y el rendimiento.",
     "Refuerza la preparación para la migración a la nube y los debates de arquitectura en equipos de ingeniería y fintech.",
     "Sentará las bases para certificaciones de AWS más avanzadas de especialidad y profesional."
   ],
-  "certification.5.benefit.intro": "La certificación avanzada de Audinate en redes Dante para audio profesional, que se apoya en el Nivel 1 con habilidades más profundas de diseño y solución de problemas de audio en red.",
-  "certification.5.benefit.points": [
+  "certification.6.benefit.intro": "La certificación avanzada de Audinate en redes Dante para audio profesional, que se apoya en el Nivel 1 con habilidades más profundas de diseño y solución de problemas de audio en red.",
+  "certification.6.benefit.points": [
     "Profundiza la experiencia en el diseño y la configuración de redes de audio Dante.",
     "Refuerza la comprensión de la calidad de servicio, la sincronización, la latencia y la seguridad de red para sistemas AV.",
     "Valida habilidades avanzadas demandadas por profesionales de la radiodifusión, el sonido en vivo y la integración AV.",
     "Complementa las habilidades de ingeniería de software con competencia especializada en audio sobre IP."
   ],
-  "certification.6.benefit.intro": "La certificación fundamental de Audinate en redes de audio Dante, el estándar de la industria para el transporte de audio digital sobre redes IP.",
-  "certification.6.benefit.points": [
+  "certification.7.benefit.intro": "La certificación fundamental de Audinate en redes de audio Dante, el estándar de la industria para el transporte de audio digital sobre redes IP.",
+  "certification.7.benefit.points": [
     "Introduce Dante Controller, la configuración de dispositivos y los fundamentos del audio en red.",
     "Proporciona una credencial reconocida por la industria en tecnología AV-over-IP.",
     "Conecta la ingeniería de software y la de radiodifusión con conocimientos prácticos de redes de audio.",
     "Constituye la base prerequisite para la certificación Dante Nivel 2."
   ],
-  "certification.7.benefit.intro": "Un curso universitario que cubre los principios y prácticas de la gestión de operaciones: diseñar, dirigir y mejorar sistemas productivos.",
-  "certification.7.benefit.points": [
+  "certification.8.benefit.intro": "Un curso universitario que cubre los principios y prácticas de la gestión de operaciones: diseñar, dirigir y mejorar sistemas productivos.",
+  "certification.8.benefit.points": [
     "Desarrolla competencia en diseño de procesos, planificación de capacidad, control de calidad y fundamentos de la cadena de suministro.",
     "Refuerza el enfoque analítico para optimizar flujos de trabajo en entornos de ingeniería y banca.",
     "Mejora la capacidad de equilibrar eficiencia, calidad y valor para el cliente.",
     "Complementa las habilidades técnicas con conocimientos de gestión y mejora de procesos."
   ],
-  "certification.8.benefit.intro": "Un estudio académico de las principales teorías, pensadores y filosofías de gestión y de cómo dan forma a las organizaciones modernas.",
-  "certification.8.benefit.points": [
+  "certification.9.benefit.intro": "Un estudio académico de las principales teorías, pensadores y filosofías de gestión y de cómo dan forma a las organizaciones modernas.",
+  "certification.9.benefit.points": [
     "Proporciona una amplia comprensión de cómo evolucionó la práctica de la gestión y por qué es importante.",
     "Aporta vocabulario y marcos para debates sobre liderazgo, comportamiento organizacional y estrategia.",
     "Afiña el pensamiento crítico sobre lo que motiva a los equipos e impulsa el rendimiento.",
     "Refuerza la dimensión de gestión de un conjunto de habilidades técnico y de negocios combinado."
   ],
-  "certification.9.benefit.intro": "Un curso de University of California, Riverside Extension sobre cómo liberar el rendimiento organizativo maximizando las capacidades de los empleados.",
-  "certification.9.benefit.points": [
+  "certification.10.benefit.intro": "Un curso de University of California, Riverside Extension sobre cómo liberar el rendimiento organizativo maximizando las capacidades de los empleados.",
+  "certification.10.benefit.points": [
     "Desarrolla estrategias para construir equipos de alto rendimiento y comprometidos.",
     "Cubre el desarrollo del talento, la delegación, la retroalimentación y el liderazgo del cambio.",
     "Mejora la capacidad de liderar mediante la influencia en lugar de la sola autoridad.",
     "Se aplica directamente al liderazgo en ingeniería y a las responsabilidades de gestión de personas."
   ],
-  "certification.10.benefit.intro": "Una certificación integral de JavaScript que cubre desde los fundamentos hasta las características avanzadas del lenguaje.",
-  "certification.10.benefit.points": [
+  "certification.11.benefit.intro": "Una certificación integral de JavaScript que cubre desde los fundamentos hasta las características avanzadas del lenguaje.",
+  "certification.11.benefit.points": [
     "Valida un dominio sólido de JavaScript, el lenguaje central de la web.",
     "Cubre funciones, closures, programación asíncrona, manipulación del DOM y patrones modernos.",
     "Apoya el desarrollo front-end y full-stack con React, Next.js y Node.js.",
     "Demuestra compromiso con el desarrollo continuo y estructurado de habilidades."
   ],
-  "certification.11.benefit.intro": "Un curso certificado de Google que cubre los aspectos esenciales del marketing digital en buscadores, redes sociales, display, analítica y comercio electrónico.",
-  "certification.11.benefit.points": [
+  "certification.12.benefit.intro": "Un curso certificado de Google que cubre los aspectos esenciales del marketing digital en buscadores, redes sociales, display, analítica y comercio electrónico.",
+  "certification.12.benefit.points": [
     "Construye conocimientos prácticos de los canales de marketing SEO, SEM, redes sociales, correo electrónico y display.",
     "Mejora la capacidad de hacer crecer y medir el alcance de productos y portafolios digitales.",
     "Proporciona una credencial reconocida a nivel mundial de Google.",
     "Útil para ingenieros que crean productos orientados al usuario y necesitan contexto de marketing."
   ],
-  "certification.12.benefit.intro": "Un programa de formación de Jobberman Nigeria centrado en las habilidades blandas del lugar de trabajo, como la comunicación, el trabajo en equipo y el profesionalismo.",
-  "certification.12.benefit.points": [
+  "certification.13.benefit.intro": "Un programa de formación de Jobberman Nigeria centrado en las habilidades blandas del lugar de trabajo, como la comunicación, el trabajo en equipo y el profesionalismo.",
+  "certification.13.benefit.points": [
     "Fortalece las habilidades de comunicación, presentación e interpersonales.",
     "Desarrolla la preparación para el mundo laboral: elaboración de CV, entrevistas y conducta profesional.",
     "Mejora las habilidades de trabajo en equipo y resolución de conflictos.",
     "Muy valorado por los empleadores como señal de empleabilidad y profesionalismo."
   ],
-  "certification.13.benefit.intro": "Una masterclass especializada en mezcla de audio de radiodifusión para producción en vivo y grabada.",
-  "certification.13.benefit.points": [
+  "certification.14.benefit.intro": "Una masterclass especializada en mezcla de audio de radiodifusión para producción en vivo y grabada.",
+  "certification.14.benefit.points": [
     "Desarrolla habilidades prácticas en la operación de consolas, el ajuste de ganancia y el equilibrio de la mezcla de radiodifusión.",
     "Profundiza la comprensión del flujo de señal de audio en entornos en vivo y de estudio.",
     "Complementa las habilidades técnicas de software con el oficio creativo de la producción de audio.",
     "Valida una competencia especializada valorada en la radiodifusión y la producción de medios."
   ],
-  "certification.14.benefit.intro": "Un programa de formación en cine con Mount Zion Christian Academy que cubre los fundamentos de la producción cinematográfica cristiana.",
-  "certification.14.benefit.points": [
+  "certification.15.benefit.intro": "Un programa de formación en cine con Mount Zion Christian Academy que cubre los fundamentos de la producción cinematográfica cristiana.",
+  "certification.15.benefit.points": [
     "Desarrolla habilidades fundamentales en producción cinematográfica, narración y oficio de pantalla.",
     "Fomenta la creatividad y la comunicación visual junto a una carrera técnica.",
     "Proporciona experiencia en la colaboración con flujos de trabajo de producción narrativa.",
     "Permite contribuir eficazmente a proyectos de medios y comunicación basados en la fe."
   ],
-  "certification.15.benefit.intro": "El programa de desarrollo gratuito en línea de McKinsey & Company que construye habilidades esenciales de resolución de problemas, liderazgo y competencia digital.",
-  "certification.15.benefit.points": [
+  "certification.16.benefit.intro": "El programa de desarrollo gratuito en línea de McKinsey & Company que construye habilidades esenciales de resolución de problemas, liderazgo y competencia digital.",
+  "certification.16.benefit.points": [
     "Entrena en la resolución estructurada de problemas utilizando enfoques empleados por consultores de gestión de primer nivel.",
     "Desarrolla habilidades de liderazgo, adaptabilidad y colaboración para el lugar de trabajo moderno.",
     "Proporciona una credencial reconocida a nivel mundial de McKinsey & Company.",
     "Incluye acceso a una comunidad de estudiantes de Forward y recursos continuos."
   ],
-  "certification.16.benefit.intro": "La certificación de HubSpot Academy en estrategia de marketing de contenidos: planificar, crear y distribuir contenido que impulsa el crecimiento.",
-  "certification.16.benefit.points": [
+  "certification.17.benefit.intro": "La certificación de HubSpot Academy en estrategia de marketing de contenidos: planificar, crear y distribuir contenido que impulsa el crecimiento.",
+  "certification.17.benefit.points": [
     "Desarrolla habilidades en estrategia, creación, promoción y medición de contenidos.",
     "Refuerza la capacidad de hacer crecer una audiencia y respaldar productos mediante contenido valioso.",
     "Proporciona una credencial de marketing gratuita y reconocida a nivel mundial.",
     "Se aplica directamente a la creación de blogs técnicos, documentación y marca personal."
   ],
-  "certification.17.benefit.intro": "La certificación SEO de HubSpot Academy que cubre la optimización en la página, técnica y de contenidos para la visibilidad en buscadores.",
-  "certification.17.benefit.points": [
+  "certification.18.benefit.intro": "La certificación SEO de HubSpot Academy que cubre la optimización en la página, técnica y de contenidos para la visibilidad en buscadores.",
+  "certification.18.benefit.points": [
     "Desarrolla competencia en investigación de palabras clave, optimización on-page y estrategia de enlaces.",
     "Mejora la capacidad de hacer que los sitios web y el contenido sean localizables en los motores de búsqueda.",
     "Proporciona una credencial de marketing ampliamente reconocida.",
     "Complementa las habilidades de desarrollo web con experiencia en rendimiento de búsqueda."
   ],
-  "certification.18.benefit.intro": "Un curso integral de gestión de proyectos que cubre el ciclo de vida completo del proyecto, desde el inicio hasta el cierre.",
-  "certification.18.benefit.points": [
+  "certification.19.benefit.intro": "Un curso integral de gestión de proyectos que cubre el ciclo de vida completo del proyecto, desde el inicio hasta el cierre.",
+  "certification.19.benefit.points": [
     "Cubre los fundamentos de alcance, cronograma, coste, riesgo y gestión de interesados.",
     "Refuerza la capacidad de planificar y entregar proyectos de ingeniería a tiempo y dentro del presupuesto.",
     "Mejora la coordinación y la comunicación entre funciones.",
     "Proporciona una base sólida para metodologías formales como PMP y Agile."
   ],
-  "certification.19.benefit.intro": "Un programa de mentoría de la Covenant University Alumni Association que conecta a estudiantes y jóvenes profesionales con exalumnos mentores experimentados.",
-  "certification.19.benefit.points": [
+  "certification.20.benefit.intro": "Un programa de mentoría de la Covenant University Alumni Association que conecta a estudiantes y jóvenes profesionales con exalumnos mentores experimentados.",
+  "certification.20.benefit.points": [
     "Proporciona orientación estructurada de exalumnos exitosos de diversas industrias.",
     "Construye redes profesionales y comunidad dentro de una sólida asociación de exalumnos.",
     "Desarrolla habilidades de fijación de metas, planificación de carrera y desarrollo personal.",
     "Fomenta una cultura de devolución y de mentoría a otros."
   ],
-  "certification.20.benefit.intro": "Una certificación de Digital Nigeria que cubre las prácticas y principios fundamentales de DevOps para el desarrollo de software moderno.",
-  "certification.20.benefit.points": [
+  "certification.21.benefit.intro": "Una certificación de Digital Nigeria que cubre las prácticas y principios fundamentales de DevOps para el desarrollo de software moderno.",
+  "certification.21.benefit.points": [
     "Desarrolla la comprensión de la integración continua, la entrega continua y la colaboración entre desarrollo y operaciones.",
     "Apoya lanzamientos y despliegues de software más rápidos y fiables.",
     "Se alinea con las prácticas demandadas por la industria para un desarrollo de software escalable.",
     "Complementa las habilidades de ingeniería de software con la automatización y la disciplina operativa."
   ],
-  "certification.21.benefit.intro": "Una certificación de Digital Nigeria que cubre los fundamentos del desarrollo web moderno con HTML5 y CSS3.",
-  "certification.21.benefit.points": [
+  "certification.22.benefit.intro": "Una certificación de Digital Nigeria que cubre los fundamentos del desarrollo web moderno con HTML5 y CSS3.",
+  "certification.22.benefit.points": [
     "Establece bases sólidas en marcado semántico, maquetación y diseño responsivo.",
     "Proporciona los bloques de construcción esenciales para el desarrollo front-end con frameworks modernos.",
     "Ofrece una credencial respaldada por el gobierno en habilidades digitales.",
     "Apoya la empleabilidad en la creciente economía digital de Nigeria."
   ],
-  "certification.22.benefit.intro": "Una certificación de Digital Nigeria que introduce los conceptos, herramientas y aplicaciones fundamentales de la ciencia de datos.",
-  "certification.22.benefit.points": [
+  "certification.23.benefit.intro": "Una certificación de Digital Nigeria que introduce los conceptos, herramientas y aplicaciones fundamentales de la ciencia de datos.",
+  "certification.23.benefit.points": [
     "Desarrolla alfabetización básica en análisis de datos, estadística y conceptos de aprendizaje automático.",
     "Refuerza la toma de decisiones basada en datos en contextos de ingeniería y negocios.",
     "Complementa la ingeniería de software con pensamiento analítico y estadístico.",
     "Proporciona una credencial reconocida en una disciplina digital demandada."
+  ],
+  "certification.0.title": "Maestría en Administración de Empresas (MBA)",
+  "certification.0.organization": "University of East London",
+  "education.0.degree": "Maestría en Administración de Empresas (MBA)",
+  "education.0.institution": "University of East London",
+  "certification.0.benefit.intro": "Una Maestría en Administración de Empresas en curso en la University of East London, que combina un riguroso estudio académico con la aplicación práctica para el liderazgo sénior en tecnología y servicios financieros.",
+  "certification.0.benefit.points": [
+    "Ofrece un amplio dominio de la estrategia, las finanzas, el marketing, las operaciones y el liderazgo organizacional.",
+    "Fortalece las habilidades de toma de decisiones ejecutivas y análisis para roles de liderazgo en tecnología y banca.",
+    "Complementa una sólida experiencia en ingeniería de software con una perspectiva empresarial de negocios y gestión.",
+    "Amplía la red profesional global a través de una cohorte internacional y diversa de profesionales de negocios."
   ]
 }
