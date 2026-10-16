@@ -74,15 +74,7 @@ export default function FeaturedProjects() {
                 <h3 className='text-lg sm:text-xl font-semibold mb-2 group-hover:text-accent transition-colors'>
                   {t(`projects:project.${project.slug}.title`, project.title)}
                 </h3>
-                <p
-                  className='text-zinc-600 dark:text-zinc-400 line-clamp-3 mb-4 flex-1'
-                  style={{
-                    display: '-webkit-box',
-                    WebkitLineClamp: 3,
-                    WebkitBoxOrient: 'vertical',
-                    overflow: 'hidden',
-                  }}
-                >
+                <p className='text-zinc-600 dark:text-zinc-400 line-clamp-3 mb-4'>
                   {t(`projects:project.${project.slug}.description`, project.description)}
                 </p>
                 <div className='flex flex-wrap gap-2 mt-auto'>

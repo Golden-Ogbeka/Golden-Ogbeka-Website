@@ -22,6 +22,32 @@
 }
 
 @layer utilities {
+  .line-clamp-1,
+  .line-clamp-2,
+  .line-clamp-3,
+  .line-clamp-4 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .line-clamp-1 {
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    -webkit-line-clamp: 2;
+  }
+
+  .line-clamp-3 {
+    -webkit-line-clamp: 3;
+  }
+
+  .line-clamp-4 {
+    -webkit-line-clamp: 4;
+  }
+
   .glass-panel {
     @apply bg-white/70 backdrop-blur-md border border-zinc-200/50 shadow-sm dark:bg-zinc-900/70 dark:border-zinc-800/50;
   }

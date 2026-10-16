@@ -66,15 +66,7 @@ export default function FeaturedBlogPosts() {
                 <h3 className='text-lg sm:text-xl font-semibold mb-2 group-hover:text-accent transition-colors'>
                   {t(`blog:post.${post.slug}.title`, post.slug)}
                 </h3>
-                <p
-                  className='text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-4 flex-1 text-sm'
-                  style={{
-                    display: '-webkit-box',
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: 'vertical',
-                    overflow: 'hidden',
-                  }}
-                >
+                <p className='text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-4 text-sm'>
                   {t(`blog:post.${post.slug}.summary`, post.slug)}
                 </p>
                 <div className='flex items-center justify-between mt-auto'>
