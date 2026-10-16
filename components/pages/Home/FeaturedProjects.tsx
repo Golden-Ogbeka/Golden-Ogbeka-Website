@@ -39,18 +39,23 @@ export default function FeaturedProjects() {
         </Link>
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8'>
         {featuredProjects.map((project, index) => (
           <Link key={project.slug} href={`/projects/${project.slug}`}>
-            <a className='minimal-card flex flex-col group overflow-hidden'>
+            <a
+              className='minimal-card flex flex-col group overflow-hidden animate-fade-in-up'
+              style={{ animationDelay: `${index * 0.1}s` }}
+              onClick={() => trackEvent('click', 'project_card', project.title)}
+            >
               <div className='relative w-full aspect-video bg-zinc-200 dark:bg-zinc-800 overflow-hidden'>
                 {project.screenshots && project.screenshots.length > 0 ? (
                   <Image
                     src={project.screenshots[0]}
                     alt={t('home:featured.thumbnailAlt', { title: t(`projects:project.${project.slug}.title`, project.title) })}
-                    className='object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500'
                     layout='fill'
-                    sizes='(max-width: 768px) 100vw, 50vw'
+                    objectFit='cover'
+                    sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
+                    className='transform group-hover:scale-105 transition-transform duration-500'
                     priority={index === 0}
                   />
                 ) : (
@@ -59,30 +64,38 @@ export default function FeaturedProjects() {
                     alt={t('home:featured.thumbnailAlt', { title: t(`projects:project.${project.slug}.title`, project.title) })}
                     layout='fill'
                     objectFit='cover'
-                    sizes='(max-width: 768px) 100vw, 50vw'
+                    sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
                     className='transform group-hover:scale-105 transition-transform duration-500'
                     priority={index === 0}
                   />
                 )}
               </div>
-              <div className='p-6 md:p-8 flex-1 flex flex-col'>
-                <h3 className='text-xl sm:text-2xl font-semibold mb-3 group-hover:text-accent transition-colors'>
+              <div className='p-6 flex-1 flex flex-col'>
+                <h3 className='text-lg sm:text-xl font-semibold mb-2 group-hover:text-accent transition-colors'>
                   {t(`projects:project.${project.slug}.title`, project.title)}
                 </h3>
-                <p className='text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-6 flex-1 text-sm sm:text-base md:text-lg'>
+                <p
+                  className='text-zinc-600 dark:text-zinc-400 line-clamp-3 mb-4 flex-1'
+                  style={{
+                    display: '-webkit-box',
+                    WebkitLineClamp: 3,
+                    WebkitBoxOrient: 'vertical',
+                    overflow: 'hidden',
+                  }}
+                >
                   {t(`projects:project.${project.slug}.description`, project.description)}
                 </p>
                 <div className='flex flex-wrap gap-2 mt-auto'>
                   {project.coreTools.slice(0, 3).map((tool) => (
                     <span
                       key={tool}
-                      className='text-sm font-medium pr-3 py-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-zinc-700 dark:text-zinc-300'
+                      className='text-xs font-medium pr-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full text-zinc-600 dark:text-zinc-300'
                     >
                       {tool}
                     </span>
                   ))}
                   {project.coreTools.length > 3 && (
-                    <span className='text-sm font-medium px-3 py-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-lg text-zinc-700 dark:text-zinc-300'>
+                    <span className='text-xs font-medium px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full text-zinc-600 dark:text-zinc-300'>
                       {t('home:featured.moreTools', { count: project.coreTools.length - 3 })}
                     </span>
                   )}

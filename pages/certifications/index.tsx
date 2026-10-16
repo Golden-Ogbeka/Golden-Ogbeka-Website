@@ -1,10 +1,13 @@
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
+import ValueImpactModal from '../../components/reusable/ValueImpactModal/ValueImpactModal';
 import CertificationsData from '../../data/Certifications';
 import { useTranslation } from 'next-i18next';
+import { useState } from 'react';
 import { trackEvent } from '../../utils/analytics';
 export default function Certifications() {
   const { t } = useTranslation(['common', 'certifications']);
+  const [benefitIndex, setBenefitIndex] = useState<number | null>(null);
   return (
     <AppLayout>
       <HeadElement
@@ -42,36 +45,82 @@ export default function Certifications() {
                 {t(`certifications:certification.${index}.organization`, cert.organization)}
               </p>
 
-              {cert.link && cert.link !== '#' && (
-                <div className='mt-auto'>
-                  <a
-                    href={cert.link}
-                    target='_blank'
-                    rel='noreferrer'
-                    aria-label={t('a11y.viewCertificate').replace('{title}', t(`certifications:certification.${index}.title`, cert.title))}
+              <div className='mt-auto space-y-2'>
+                {cert.link && cert.link !== '#' && (
+                  <div>
+                    <a
+                      href={cert.link}
+                      target='_blank'
+                      rel='noreferrer'
+                      aria-label={t('a11y.viewCertificate').replace('{title}', t(`certifications:certification.${index}.title`, cert.title))}
+                      className='inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-blue-400 focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none transition-colors rounded-md px-2 py-1.5 -ml-2'
+                      onClick={() => trackEvent('click', 'certification', cert.title)}
+                    >
+                      <svg
+                        className='w-4 h-4'
+                        fill='none'
+                        stroke='currentColor'
+                        viewBox='0 0 24 24'
+                        aria-hidden='true'
+                      >
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth={2}
+                          d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
+                        />
+                      </svg>
+                      {t('certifications:viewCertificate')}
+                    </a>
+                  </div>
+                )}
+                <div>
+                  <button
+                    type='button'
                     className='inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-blue-400 focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none transition-colors rounded-md px-2 py-1.5 -ml-2'
-                    onClick={() => trackEvent('click', 'certification', cert.title)}
+                    aria-label={`${t('certifications:viewValueImpact')}: ${t(`certifications:certification.${index}.title`, cert.title)}`}
+                    onClick={() => {
+                      setBenefitIndex(index);
+                      trackEvent('click', 'certification-benefit', cert.title);
+                    }}
                   >
                     <svg
                       className='w-4 h-4'
                       fill='none'
                       stroke='currentColor'
                       viewBox='0 0 24 24'
+                      aria-hidden='true'
                     >
                       <path
                         strokeLinecap='round'
                         strokeLinejoin='round'
                         strokeWidth={2}
-                        d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
+                        d='M13 7h8m0 0v8m0-8l-8 8-4-4-6 6'
                       />
                     </svg>
-                    {t('certifications:viewCertificate')}
-                  </a>
+                    {t('certifications:viewValueImpact')}
+                  </button>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
+
+        {benefitIndex !== null && (
+          <ValueImpactModal
+            open={benefitIndex !== null}
+            onClose={() => setBenefitIndex(null)}
+            title={t(`certifications:certification.${benefitIndex}.title`, CertificationsData[benefitIndex].title)}
+            organization={t(`certifications:certification.${benefitIndex}.organization`, CertificationsData[benefitIndex].organization)}
+            intro={t(`certifications:certification.${benefitIndex}.benefit.intro`, CertificationsData[benefitIndex].benefits.intro)}
+            points={
+              t(`certifications:certification.${benefitIndex}.benefit.points`, {
+                returnObjects: true,
+                defaultValue: CertificationsData[benefitIndex].benefits.points,
+              }) as string[]
+            }
+          />
+        )}
       </div>
     </AppLayout>
   );

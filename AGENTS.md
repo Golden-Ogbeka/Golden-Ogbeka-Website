@@ -51,6 +51,14 @@
 - When adding or modifying data in `data/` files (projects, experiences, open source, certifications, education, blog posts), you MUST add/update the corresponding translations in ALL 10 locale files (`en`, `fr`, `de`, `es`, `pt`, `zh`, `ja`, `ko`, `ru`, `ar`). Use your multilingual capabilities to generate accurate translations. Use the English locale as the source of truth; the locale key format is `{section}.{slug}.{field}` (e.g., `project.my-slug.title`). For slugs containing dots (e.g. `switch3.0`), use the literal dot in the locale key (e.g., `project.switch3.0.title`).
 - **Brand names MUST NOT be translated.** This includes: company names, organization names, institution names, technology names (React, Next.js, etc.), project/repo names, university names, and certification program names. Only translate descriptive content that the user reads (role titles, task descriptions, feature lists, UI chrome, project descriptions, repo descriptions). Check `data/` files to identify which fields are descriptive vs. brand names before translating.
 
+### Certifications Section
+- Certification data lives in `data/Certifications.ts` — exports `CertificationType[]` with `title`, `organization`, `date`, optional `link`, optional `featured`, and a **required** `benefits` field.
+- `benefits` is a `CertificationBenefits` object: `{ intro: string; points: string[] }` — a 1-sentence intro plus 3-4 concise bullet points describing the value impact of that certification (what it adds to Golden's skills, career, and service). Every certification MUST have this field.
+- When adding a new certification, research the credential and write genuine, specific benefit content (not generic filler). Match the concise tone of existing entries.
+- The Value Impact modal (`components/reusable/ValueImpactModal/`) reads translated overrides with the data file as fallback: translation keys are `certification.{index}.benefit.intro` and `certification.{index}.benefit.points` (array) in the `certifications` namespace. Indexes are array positions in `data/Certifications.ts` — keep them in sync.
+- UI chrome keys in the `certifications` namespace: `viewCertificate`, `viewValueImpact`, `benefitHeading`, `close`.
+- The "View Value Impact (Benefit)" link and modal appear only on `pages/certifications/index.tsx` (not the homepage).
+
 ### Blog Section
 - Blog data lives in `data/BlogPosts.ts` — exports `BlogPostType[]` with `slug`, `category`, `image`, `ogImagePath`, `date`, and optional `featured`.
 - Featured blog subset lives in `data/FeaturedBlogPosts.ts` — exports the posts shown on the homepage.

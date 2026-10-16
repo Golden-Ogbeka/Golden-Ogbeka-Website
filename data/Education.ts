@@ -5,6 +5,12 @@ const Education: Array<{
   institutionLink?: string;
 }> = [
   {
+    degree: 'Master of Business Administration (MBA)',
+    institution: 'University of East London',
+    institutionLink: 'https://www.uel.ac.uk/',
+    date: 'In Progress',
+  },
+  {
     degree: 'Management Theories and Philosophies',
     institution: 'Unicaf University',
     institutionLink:

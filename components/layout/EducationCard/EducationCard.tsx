@@ -22,14 +22,20 @@ function EducationCard({
 				<span className='dark:text-[#C4C4C4]'>{education.date}</span>
 			</div>
 
-			<a
-				href={education.institutionLink}
-				className='flex flex-row items-center gap-3 dark:text-lightSecondary text-secondary'
-				target='_blank'
-				rel='noreferrer'
-			>
-				{t(`certifications:education.${index}.institution`, education.institution)}
-			</a>
+			{education.institutionLink ? (
+				<a
+					href={education.institutionLink}
+					className='flex flex-row items-center gap-3 dark:text-lightSecondary text-secondary'
+					target='_blank'
+					rel='noreferrer'
+				>
+					{t(`certifications:education.${index}.institution`, education.institution)}
+				</a>
+			) : (
+				<span className='flex flex-row items-center gap-3 dark:text-lightSecondary text-secondary'>
+					{t(`certifications:education.${index}.institution`, education.institution)}
+				</span>
+			)}
 		</div>
 	);
 }
