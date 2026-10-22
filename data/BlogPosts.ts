@@ -35,6 +35,7 @@ import beautyInChaosHero from '../public/images/Blog/the-beauty-in-chaos/hero.we
 import theAiShockHero from '../public/images/Blog/the-ai-shock/hero.webp';
 import superTalentedHero from '../public/images/Blog/super-talented/hero.webp';
 import godIsNotATeletubbyHero from '../public/images/Blog/god-is-not-a-teletubby/hero.webp';
+import productOfImaginationHero from '../public/images/Blog/you-are-a-product-of-your-imagination/hero.webp';
 
 export type BlogCategory = 'faith' | 'tech' | 'life';
 
@@ -48,6 +49,14 @@ export interface BlogPostType {
 }
 
 const BlogPosts: BlogPostType[] = [
+  {
+    slug: 'you-are-a-product-of-your-imagination',
+    category: 'life',
+    image: productOfImaginationHero,
+    ogImagePath: '/images/Blog/you-are-a-product-of-your-imagination/hero.webp',
+    date: '2026-10-13',
+    featured: true,
+  },
   {
     slug: 'god-is-not-a-teletubby',
     category: 'faith',
