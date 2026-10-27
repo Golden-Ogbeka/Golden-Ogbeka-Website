@@ -31,5 +31,6 @@
   "a11y.closeGallery": "إغلاق المعرض",
   "a11y.prevImage": "الصورة السابقة",
   "a11y.nextImage": "الصورة التالية",
-  "a11y.viewCertificate": "عرض شهادة {title}"
+  "a11y.viewCertificate": "عرض شهادة {title}",
+  "nav.certifications": "Certifications"
 }

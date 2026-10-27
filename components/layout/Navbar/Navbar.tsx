@@ -85,12 +85,12 @@ function Navbar() {
             {t('nav.experience')}
           </a>
         </Link>
-        <Link href='/open-source'>
+        <Link href='/certifications'>
           <a
             className='text-zinc-600 dark:text-zinc-300 hover:text-accent dark:hover:text-accent font-medium hidden md:block'
-            onClick={() => trackEvent('click', 'navigation', 'Open Source')}
+            onClick={() => trackEvent('click', 'navigation', 'Certifications')}
           >
-            {t('nav.openSource')}
+            {t('nav.certifications', 'Certifications')}
           </a>
         </Link>
         <Link href='/blog'>

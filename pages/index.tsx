@@ -27,11 +27,11 @@ const Home: NextPage = () => {
       <Intro />
       <FeaturedProjects />
       <SectionDivider />
-      <OpenSourceSection />
-      <SectionDivider />
       <ExperienceSection />
       <SectionDivider />
       <CertificationsSection />
+      <SectionDivider />
+      <OpenSourceSection />
       <SectionDivider />
       <FeaturedBlogPosts />
     </AppLayout>

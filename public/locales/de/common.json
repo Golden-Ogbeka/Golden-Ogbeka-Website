@@ -31,5 +31,6 @@
   "a11y.closeGallery": "Galerie schließen",
   "a11y.prevImage": "Vorheriges Bild",
   "a11y.nextImage": "Nächstes Bild",
-  "a11y.viewCertificate": "Zertifikat {title} ansehen"
+  "a11y.viewCertificate": "Zertifikat {title} ansehen",
+  "nav.certifications": "Certifications"
 }

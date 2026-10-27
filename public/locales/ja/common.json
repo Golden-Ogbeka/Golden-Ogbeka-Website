@@ -31,5 +31,6 @@
   "a11y.closeGallery": "ギャラリーを閉じる",
   "a11y.prevImage": "前の画像",
   "a11y.nextImage": "次の画像",
-  "a11y.viewCertificate": "{title} の証明書を見る"
+  "a11y.viewCertificate": "{title} の証明書を見る",
+  "nav.certifications": "Certifications"
 }

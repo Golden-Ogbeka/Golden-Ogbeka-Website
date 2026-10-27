@@ -31,5 +31,6 @@
   "a11y.closeGallery": "갤러리 닫기",
   "a11y.prevImage": "이전 이미지",
   "a11y.nextImage": "다음 이미지",
-  "a11y.viewCertificate": "{title} 인증서 보기"
+  "a11y.viewCertificate": "{title} 인증서 보기",
+  "nav.certifications": "Certifications"
 }
