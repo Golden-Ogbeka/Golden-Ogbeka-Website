@@ -44,11 +44,27 @@ const Certifications: CertificationType[] = [
     },
   },
   {
+    title: 'Six Sigma Yellow Belt Certification',
+    organization: 'Council for Six Sigma Certification (C.S.S.C)',
+    link: '/certificates/six-sigma-yellow-belt-certification.pdf',
+    date: 'October 2026',
+    featured: true,
+    benefits: {
+      intro: 'Issued by the Council for Six Sigma Certification (C.S.S.C), this Yellow Belt certification builds on Lean Six Sigma fundamentals with practical tools for process improvement and project support.',
+      points: [
+        'Demonstrates understanding of Six Sigma roles, DMAIC methodology, and basic statistical tools.',
+        'Equips with practical techniques for identifying, measuring, and improving process inefficiencies.',
+        'Strengthens data-informed problem-solving applicable to software delivery and banking operations.',
+        'Builds a solid foundation to progress to Six Sigma Green Belt and Black Belt certifications.',
+      ],
+    },
+  },
+  {
     title: 'Six Sigma White Belt Certification',
     organization: 'Council for Six Sigma Certification (C.S.S.C)',
     link: '/certificates/six-sigma-white-belt-certification.pdf',
     date: 'October 2026',
-    featured: true,
+    featured: false,
     benefits: {
       intro: 'Issued by the Council for Six Sigma Certification (C.S.S.C), this certification builds a working foundation in Lean Six Sigma methodology and continuous process improvement.',
       points: [

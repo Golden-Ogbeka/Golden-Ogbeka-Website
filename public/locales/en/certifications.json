@@ -62,8 +62,10 @@
   "education.10.degree": "Bachelor's Degree in Computer Science (First Class)",
   "education.10.institution": "Covenant University",
   "viewCertificate": "View Certificate",
-  "certification.2.title": "Six Sigma White Belt Certification",
+  "certification.2.title": "Six Sigma Yellow Belt Certification",
   "certification.2.organization": "Council for Six Sigma Certification (C.S.S.C)",
+  "certification.3.title": "Six Sigma White Belt Certification",
+  "certification.3.organization": "Council for Six Sigma Certification (C.S.S.C)",
   "certification.1.title": "Associate of the Chartered Institute of Bankers (ACIB)",
   "certification.1.organization": "Chartered Institute of Bankers of Nigeria (CIBN)",
   "viewValueImpact": "View Value Impact (Benefit)",
@@ -76,8 +78,15 @@
     "Strengthens eligibility for senior and management roles, as reflected in the industry competency frameworks.",
     "Opens access to CIBN's community of practice, CPD programmes, mentorship, and professional networks."
   ],
-  "certification.2.benefit.intro": "Issued by the Council for Six Sigma Certification (C.S.S.C), this certification builds a working foundation in Lean Six Sigma methodology and continuous process improvement.",
+  "certification.2.benefit.intro": "Issued by the Council for Six Sigma Certification (C.S.S.C), this Yellow Belt certification builds on Lean Six Sigma fundamentals with practical tools for process improvement and project support.",
   "certification.2.benefit.points": [
+    "Demonstrates understanding of Six Sigma roles, DMAIC methodology, and basic statistical tools.",
+    "Equips with practical techniques for identifying, measuring, and improving process inefficiencies.",
+    "Strengthens data-informed problem-solving applicable to software delivery and banking operations.",
+    "Builds a solid foundation to progress to Six Sigma Green Belt and Black Belt certifications."
+  ],
+  "certification.3.benefit.intro": "Issued by the Council for Six Sigma Certification (C.S.S.C), this certification builds a working foundation in Lean Six Sigma methodology and continuous process improvement.",
+  "certification.3.benefit.points": [
     "Demonstrates understanding of core Six Sigma principles, including the DMAIC improvement framework.",
     "Strengthens problem-solving and data-informed thinking applicable to software delivery and banking operations.",
     "Adds a globally recognised continuous-improvement credential that complements technical and banking skills.",

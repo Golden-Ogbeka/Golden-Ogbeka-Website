@@ -1,46 +1,46 @@
 {
-  "certification.3.title": "درجة البكالوريوس في علوم الكمبيوتر (الدرجة الأولى)",
-  "certification.3.organization": "Covenant University",
-  "certification.9.title": "النظريات والفلسفات الإدارية",
-  "certification.9.organization": "Unicaf University",
-  "certification.10.title": "القيادة التنظيمية: النجاح من خلال تعظيم قدرات الموظفين",
-  "certification.10.organization": "University of California, Riverside Extension",
-  "certification.5.title": "أساسيات AWS التقنية",
-  "certification.5.organization": "Amazon Web Services (AWS)",
-  "certification.11.title": "شهادة JavaScript من المستوى المبتدئ إلى المتقدم",
-  "certification.11.organization": "Udemy: Farda Karimov",
-  "certification.12.title": "أساسيات التسويق الرقمي",
-  "certification.12.organization": "Google",
-  "certification.13.title": "تدريب المهارات الشخصية",
-  "certification.13.organization": "Jobberman Nigeria",
-  "certification.4.title": "دبلوم في تطوير القيادة",
-  "certification.4.organization": "African Leadership Development Centre",
-  "certification.7.title": "شهادة Dante المستوى 1",
+  "certification.4.title": "درجة البكالوريوس في علوم الكمبيوتر (الدرجة الأولى)",
+  "certification.4.organization": "Covenant University",
+  "certification.10.title": "النظريات والفلسفات الإدارية",
+  "certification.10.organization": "Unicaf University",
+  "certification.11.title": "القيادة التنظيمية: النجاح من خلال تعظيم قدرات الموظفين",
+  "certification.11.organization": "University of California, Riverside Extension",
+  "certification.6.title": "أساسيات AWS التقنية",
+  "certification.6.organization": "Amazon Web Services (AWS)",
+  "certification.12.title": "شهادة JavaScript من المستوى المبتدئ إلى المتقدم",
+  "certification.12.organization": "Udemy: Farda Karimov",
+  "certification.13.title": "أساسيات التسويق الرقمي",
+  "certification.13.organization": "Google",
+  "certification.14.title": "تدريب المهارات الشخصية",
+  "certification.14.organization": "Jobberman Nigeria",
+  "certification.5.title": "دبلوم في تطوير القيادة",
+  "certification.5.organization": "African Leadership Development Centre",
+  "certification.8.title": "شهادة Dante المستوى 1",
+  "certification.8.organization": "Audinate",
+  "certification.7.title": "شهادة Dante المستوى 2",
   "certification.7.organization": "Audinate",
-  "certification.6.title": "شهادة Dante المستوى 2",
-  "certification.6.organization": "Audinate",
-  "certification.14.title": "دورة متقدمة في مزج الصوت الإذاعي",
-  "certification.14.organization": "Davidic Music Academy",
-  "certification.15.title": "أكاديمية ماونت صيون السينمائية",
-  "certification.15.organization": "Mount Zion Christian Academy",
-  "certification.16.title": "برنامج McKinsey Forward",
-  "certification.16.organization": "McKinsey & Company",
-  "certification.17.title": "تسويق المحتوى",
-  "certification.17.organization": "Hubspot Academy",
-  "certification.18.title": "شهادة تحسين محركات البحث (SEO)",
+  "certification.15.title": "دورة متقدمة في مزج الصوت الإذاعي",
+  "certification.15.organization": "Davidic Music Academy",
+  "certification.16.title": "أكاديمية ماونت صيون السينمائية",
+  "certification.16.organization": "Mount Zion Christian Academy",
+  "certification.17.title": "برنامج McKinsey Forward",
+  "certification.17.organization": "McKinsey & Company",
+  "certification.18.title": "تسويق المحتوى",
   "certification.18.organization": "Hubspot Academy",
-  "certification.19.title": "الدورة المتقدمة في إدارة المشاريع",
-  "certification.19.organization": "Udemy",
-  "certification.20.title": "برنامج الإرشاد CUALA",
-  "certification.20.organization": "Covenant University Alumni Association",
-  "certification.21.title": "مبادئ وممارسات DevOps",
-  "certification.21.organization": "Digital Nigeria",
-  "certification.22.title": "أساسيات تطوير HTML5 وCSS3 للمبتدئين",
+  "certification.19.title": "شهادة تحسين محركات البحث (SEO)",
+  "certification.19.organization": "Hubspot Academy",
+  "certification.20.title": "الدورة المتقدمة في إدارة المشاريع",
+  "certification.20.organization": "Udemy",
+  "certification.21.title": "برنامج الإرشاد CUALA",
+  "certification.21.organization": "Covenant University Alumni Association",
+  "certification.22.title": "مبادئ وممارسات DevOps",
   "certification.22.organization": "Digital Nigeria",
-  "certification.23.title": "مقدمة في علوم البيانات",
+  "certification.23.title": "أساسيات تطوير HTML5 وCSS3 للمبتدئين",
   "certification.23.organization": "Digital Nigeria",
-  "certification.8.title": "إدارة العمليات",
-  "certification.8.organization": "Unicaf University",
+  "certification.24.title": "مقدمة في علوم البيانات",
+  "certification.24.organization": "Digital Nigeria",
+  "certification.9.title": "إدارة العمليات",
+  "certification.9.organization": "Unicaf University",
   "education.1.degree": "النظريات والفلسفات الإدارية",
   "education.1.institution": "Unicaf University",
   "education.2.degree": "القيادة التنظيمية: النجاح من خلال تعظيم قدرات الموظفين",
@@ -62,7 +62,7 @@
   "education.10.degree": "درجة البكالوريوس في علوم الكمبيوتر (الدرجة الأولى)",
   "education.10.institution": "Covenant University",
   "viewCertificate": "عرض الشهادة",
-  "certification.2.title": "Six Sigma White Belt Certification",
+  "certification.2.title": "Six Sigma Yellow Belt Certification",
   "certification.2.organization": "Council for Six Sigma Certification (C.S.S.C)",
   "certification.1.title": "Associate of the Chartered Institute of Bankers (ACIB)",
   "certification.1.organization": "Chartered Institute of Bankers of Nigeria (CIBN)",
@@ -87,158 +87,167 @@
     "يعزز الأهلية لأدوار القيادة العليا والإدارية، كما يتضح من أطر الكفاءات القطاعية.",
     "يفتح الباب أمام مجتمع الممارسة التابع لـ CIBN، وبرامج CPD، والإرشاد، والشبكات المهنية."
   ],
-  "certification.2.benefit.intro": "تصدرها Council for Six Sigma Certification (C.S.S.C)، وتُرسّخ هذه الشهادة أساساً عملياً في منهجية Lean Six Sigma وتحسين العمليات المستمر.",
+  "certification.2.benefit.intro": "Issued by the Council for Six Sigma Certification (C.S.S.C), this Yellow Belt certification builds on Lean Six Sigma fundamentals with practical tools for process improvement and project support.",
   "certification.2.benefit.points": [
-    "تُثبت فهماً لمبادئ Six Sigma الأساسية، بما في ذلك إطار التحسين DMAIC.",
-    "تعزز مهارات حل المشكلات والتفكير المستند إلى البيانات المطبَّق في تسليم البرمجيات وعمليات المصارف.",
-    "تضيف مؤهلاً معترفاً به عالمياً في التحسين المستمر يكمّل المهارات التقنية والمصرفية.",
-    "توفّر مساراً واضحاً للتقدم نحو مستويات Yellow Belt وGreen Belt وBlack Belt."
+    "Demonstrates understanding of Six Sigma roles, DMAIC methodology, and basic statistical tools.",
+    "Equips with practical techniques for identifying, measuring, and improving process inefficiencies.",
+    "Strengthens data-informed problem-solving applicable to software delivery and banking operations.",
+    "Builds a solid foundation to progress to Six Sigma Green Belt and Black Belt certifications."
   ],
-  "certification.3.benefit.intro": "درجة بكالوريوس بمرتبة الشرف الأولى في علوم الكمبيوتر من Covenant University، توفر أساساً أكاديمياً متيناً لمسار مهني في هندسة البرمجيات.",
-  "certification.3.benefit.points": [
+  "certification.4.benefit.intro": "درجة بكالوريوس بمرتبة الشرف الأولى في علوم الكمبيوتر من Covenant University، توفر أساساً أكاديمياً متيناً لمسار مهني في هندسة البرمجيات.",
+  "certification.4.benefit.points": [
     "تعكس مرتبة الشرف الأولى انضباطاً أكاديمياً استثنائياً وقدرة تحليلية وصرامة فكرية.",
     "تغطي أساسيات هندسة البرمجيات: الخوارزميات وهيكلات البيانات وقواعد البيانات وتصميم الأنظمة.",
     "توفّر الأساس النظري وراء التقنيات المستخدمة في العمل الهندسي اليومي.",
     "تستوفي متطلبات الدرجة للأدوار المخصصة للخريجين وبرامج الدراسة المتقدمة."
   ],
-  "certification.4.benefit.intro": "برنامج منظم لتطوير القيادة في African Leadership Development Centre التابع لـ Covenant University، يركز على بناء قادة راسخو المبادئ متمركزون حول الحلول.",
-  "certification.4.benefit.points": [
+  "certification.5.benefit.intro": "برنامج منظم لتطوير القيادة في African Leadership Development Centre التابع لـ Covenant University، يركز على بناء قادة راسخو المبادئ متمركزون حول الحلول.",
+  "certification.5.benefit.points": [
     "يزوّد بأطر عملية لقيادة الفرق والمشاريع والتحول التنظيمي.",
     "يطوّر قدرات التواصل والتعاون وإدارة رأس المال البشري.",
     "يعزز التفكير الأخلاقي وعقلية القيادة الموجّهة لخدمة الآخرين.",
     "يوفّر شبكة من المهنيين المتشابهين التفكير والخريجين عبر مختلف القطاعات."
   ],
-  "certification.5.benefit.intro": "شهادة تمهيدية من Amazon Web Services في خدمات AWS الأساسية ومفاهيم الحوسبة السحابية وأفضل ممارسات العمليات السحابية.",
-  "certification.5.benefit.points": [
+  "certification.6.benefit.intro": "شهادة تمهيدية من Amazon Web Services في خدمات AWS الأساسية ومفاهيم الحوسبة السحابية وأفضل ممارسات العمليات السحابية.",
+  "certification.6.benefit.points": [
     "تُنمي إتقاناً عملياً لخدمات AWS في الحوسبة والتخزين والشبكات والأمان.",
     "تدعم تصميم ونشر وتشغيل التطبيقات المستضافة سحابياً مع مراعاة التكلفة والأداء.",
     "تعزز الجاهزية لمناقشات الترحيل السحابي والمعمارية داخل فرق الهندسة والتقنيات المالية.",
     "تشكّل الأساس للحصول على شهادات AWS التخصصية والاحترافية المتقدمة."
   ],
-  "certification.6.benefit.intro": "شهادة متقدمة من Audinate في شبكات Dante للصوت الاحترافي، تبني على المستوى الأول (Level 1) بمهارات أعمق في تصميم الصوت عبر الشبكات وحل المشكلات.",
-  "certification.6.benefit.points": [
+  "certification.7.benefit.intro": "شهادة متقدمة من Audinate في شبكات Dante للصوت الاحترافي، تبني على المستوى الأول (Level 1) بمهارات أعمق في تصميم الصوت عبر الشبكات وحل المشكلات.",
+  "certification.7.benefit.points": [
     "تُعمّق الخبرة في تصميم وتهيئة شبكات Dante الصوتية.",
     "تعزز فهم جودة الخدمة والتزامن (Clocking) وزمن الوصول (Latency) وأمان الشبكات لأنظمة AV.",
     "تُصادق على مهارات متقدمة يبحث عنها محترفو البث والصوت الحي وتكامل أنظمة AV.",
     "تكمّل مهارات هندسة البرمجيات بخبرة متخصصة في نقل الصوت عبر بروتوكول IP (Audio-over-IP)."
   ],
-  "certification.7.benefit.intro": "شهادة تأسيسية من Audinate في شبكات Dante الصوتية، وهو المعيار المعتمد في القطاع لنقل الصوت الرقمي عبر شبكات IP.",
-  "certification.7.benefit.points": [
+  "certification.8.benefit.intro": "شهادة تأسيسية من Audinate في شبكات Dante الصوتية، وهو المعيار المعتمد في القطاع لنقل الصوت الرقمي عبر شبكات IP.",
+  "certification.8.benefit.points": [
     "تُقدّم Dante Controller وتهيئة الأجهزة وأساسيات الصوت عبر الشبكات.",
     "توفّر مؤهلاً معترفاً به في القطاع في تقنية AV-over-IP.",
     "توصل بين هندسة البرمجيات وهندسة البث بمعرفة عملية بشبكات الصوت.",
     "تشكّل المتطلب التأسيسي لشهادة Dante المستوى الثاني (Level 2)."
   ],
-  "certification.8.benefit.intro": "دورة على المستوى الجامعي تغطي مبادئ وممارسات إدارة العمليات: تصميم أنظمة الإنتاج وتشغيلها وتحسينها.",
-  "certification.8.benefit.points": [
+  "certification.9.benefit.intro": "دورة على المستوى الجامعي تغطي مبادئ وممارسات إدارة العمليات: تصميم أنظمة الإنتاج وتشغيلها وتحسينها.",
+  "certification.9.benefit.points": [
     "تنمي الكفاءة في تصميم العمليات وتخطيط الطاقة ومراقبة الجودة وأساسيات سلسلة التوريد.",
     "تعزز المنظور التحليلي لتحسين سير العمل في بيئات الهندسة والمصارف.",
     "تحسّن القدرة على الموازنة بين الكفاءة والجودة وقيمة العميل.",
     "تكمل المهارات التقنية بفهم إداري وخبرة في تحسين العمليات."
   ],
-  "certification.9.benefit.intro": "استكشاف أكاديمي لأبرز النظريات الإدارية والمفكرين والفلسفات وكيفية تأثيرها في تشكيل المؤسسات الحديثة.",
-  "certification.9.benefit.points": [
+  "certification.10.benefit.intro": "استكشاف أكاديمي لأبرز النظريات الإدارية والمفكرين والفلسفات وكيفية تأثيرها في تشكيل المؤسسات الحديثة.",
+  "certification.10.benefit.points": [
     "يوفّر فهماً واسعاً لكيفية تطوّر الممارسة الإدارية ولماذا يُعدّ ذلك مهماً.",
     "يزوّد بمفردات وأطر لمناقشات القيادة والسلوك التنظيمي والاستراتيجية.",
     "يصقل التفكير النقدي حول ما يُحفّز الفرق وما يُدفع الأداء نحو الأمام.",
     "يعزز البُعد الإداري في مجموعة المهارات التقنية والتجارية المتكاملة."
   ],
-  "certification.10.benefit.intro": "دورة من University of California, Riverside Extension حول تعزيز أداء المؤسسات من خلال تعظيم قدرات الموظفين.",
-  "certification.10.benefit.points": [
+  "certification.11.benefit.intro": "دورة من University of California, Riverside Extension حول تعزيز أداء المؤسسات من خلال تعظيم قدرات الموظفين.",
+  "certification.11.benefit.points": [
     "طوّر استراتيجيات لبناء فرق عالية الأداء وذات مشاركة فعّالة.",
     "تغطي تنمية المواهب والتفويض والتغذية الراجعة وقيادة التغيير.",
     "تحسّن القدرة على القيادة من خلال التأثير لا السلطة وحدها.",
     "تُطبَّق مباشرة على القيادة الهندسية ومسؤوليات إدارة رأس المال البشري."
   ],
-  "certification.11.benefit.intro": "شهادة JavaScript شاملة من البداية إلى النهاية تغطي الأساسيات مروراً بالخصائص المتقدمة للغة.",
-  "certification.11.benefit.points": [
+  "certification.12.benefit.intro": "شهادة JavaScript شاملة من البداية إلى النهاية تغطي الأساسيات مروراً بالخصائص المتقدمة للغة.",
+  "certification.12.benefit.points": [
     "تُثبت إتقاناً قوياً للغة JavaScript، لغة الويب الأساسية.",
     "تغطي الدوال والاغلاقات (Closures) والبرمجة غير المتزامنة والتعامل مع DOM والأنماط الحديثة.",
     "تدعم تطوير الواجهات الأمامية والأنظمة المتكاملة باستخدام React وNext.js وNode.js.",
     "تُبرز الالتزام بتطوير المهارات باستمرار وبشكل منظم."
   ],
-  "certification.12.benefit.intro": "دورة معتمدة من Google تغطي أساسيات التسويق الرقمي عبر البحث والمنصات الاجتماعية والإعلانات العرضية والتحليلات والتجارة الإلكترونية.",
-  "certification.12.benefit.points": [
+  "certification.13.benefit.intro": "دورة معتمدة من Google تغطي أساسيات التسويق الرقمي عبر البحث والمنصات الاجتماعية والإعلانات العرضية والتحليلات والتجارة الإلكترونية.",
+  "certification.13.benefit.points": [
     "تُنمي معرفة عملية بقنوات التسويق عبر SEO وSEM والبريد الإلكتروني والمنصات الاجتماعية والإعلانات العرضية.",
     "تحسّن القدرة على تنمية الوصول وقياس مدى انتشار المنتجات الرقمية ومجموعات الأعمال.",
     "توفّر مؤهلاً معترفاً به عالمياً من Google.",
     "مفيدة للمهندسين الذين يبنون منتجات موجّهة للمستخدمين ويحتاجون إلى سياق تسويقي."
   ],
-  "certification.13.benefit.intro": "برنامج تدريبي من Jobberman Nigeria يركز على المهارات الشخصية في بيئة العمل مثل التواصل والعمل الجماعي والاحترافية.",
-  "certification.13.benefit.points": [
+  "certification.14.benefit.intro": "برنامج تدريبي من Jobberman Nigeria يركز على المهارات الشخصية في بيئة العمل مثل التواصل والعمل الجماعي والاحترافية.",
+  "certification.14.benefit.points": [
     "يعزز مهارات التواصل والعرض والعلاقات الإنسانية.",
     "يُهيّئ جاهزيتك لبيئة العمل: إعداد السيرة الذاتية والمقابلات والسلوك المهني.",
     "يحسّن مهارات العمل الجماعي وقدرة حل النزاعات.",
     "تُحظى بتقدير كبير من أصحاب العمل باعتبارها دليلاً على الجاهزية للتوظيف والاحترافية."
   ],
-  "certification.14.benefit.intro": "دورة متقدمة متخصصة في مزج الصوت الإذاعي للإنتاج الحي والمُسجَّل.",
-  "certification.14.benefit.points": [
+  "certification.15.benefit.intro": "دورة متقدمة متخصصة في مزج الصوت الإذاعي للإنتاج الحي والمُسجَّل.",
+  "certification.15.benefit.points": [
     "تنمي مهارات عملية في تشغيل المكسّرات (Console) وضبط مستويات الإشارة (Gain Staging) وتوازن المزج الإذاعي.",
     "تُعمّق فهم مسار إشارة الصوت في بيئات الحفلات والاستوديو.",
     "تكمل المهارات التقنية في البرمجيات بحرفة إنتاج الصوت الإبداعية.",
     "تُصادق على كفاءة متقدمة يُقدَّرها محترفو البث والإنتاج الإعلامي."
   ],
-  "certification.15.benefit.intro": "برنامج تدريبي سينمائي مع Mount Zion Christian Academy يغطي أساسيات إنتاج الأفلام المسيحية.",
-  "certification.15.benefit.points": [
+  "certification.16.benefit.intro": "برنامج تدريبي سينمائي مع Mount Zion Christian Academy يغطي أساسيات إنتاج الأفلام المسيحية.",
+  "certification.16.benefit.points": [
     "ينمي مهارات أساسية في الإنتاج السينمائي وسرد القصص وفن الشاشة.",
     "يطوّر الإبداع والتواصل البصري جنباً إلى جنب مع المسار المهني التقني.",
     "يوفّر خبرة في التعاون ضمن سير عمليات إنتاج السرد السينمائي.",
     "يُمكّن من المساهمة الفعّالة في مشاريع الإعلام والاتصال ذات الطابع الديني."
   ],
-  "certification.16.benefit.intro": "برنامج تطوير مجاني عبر الإنترنت من McKinsey & Company يبني المهارات الأساسية في حل المشكلات والقيادة والمهارات الرقمية.",
-  "certification.16.benefit.points": [
+  "certification.17.benefit.intro": "برنامج تطوير مجاني عبر الإنترنت من McKinsey & Company يبني المهارات الأساسية في حل المشكلات والقيادة والمهارات الرقمية.",
+  "certification.17.benefit.points": [
     "يدرّب على حل المشكلات بشكل منظم وفق الأساليب المعتمدة لدى أبرز الاستشاريين الإداريين.",
     "يطوّر مهارات القدرة على التكيف والتعاون والقيادة في بيئة العمل الحديثة.",
     "توفّر مؤهلاً معترفاً به عالمياً من McKinsey & Company.",
     "تتضمن الوصول إلى مجتمع من المشاركين في Forward ومصادر مستمرة."
   ],
-  "certification.17.benefit.intro": "شهادة HubSpot Academy في استراتيجية تسويق المحتوى: التخطيط لإنشاء وتوزيع محتوى يقود النمو.",
-  "certification.17.benefit.points": [
+  "certification.18.benefit.intro": "شهادة HubSpot Academy في استراتيجية تسويق المحتوى: التخطيط لإنشاء وتوزيع محتوى يقود النمو.",
+  "certification.18.benefit.points": [
     "تنمي مهارات استراتيجية المحتوى وإنشائه والترويج له وقياس أثره.",
     "تعزز القدرة على تنمية الجمهور ودعم المنتجات من خلال محتوى ذي قيمة.",
     "توفّر مؤهلاً تسويقياً مجانياً ومعترفاً به عالمياً.",
     "تُطبَّق مباشرة على التدوين التقني والتوثيق والعلامة التجارية الشخصية."
   ],
-  "certification.18.benefit.intro": "شهادة SEO من HubSpot Academy تغطي تحسين الصفحات والتحسين التقني وتحسين المحتوى لتعزيز الظهور في نتائج البحث.",
-  "certification.18.benefit.points": [
+  "certification.19.benefit.intro": "شهادة SEO من HubSpot Academy تغطي تحسين الصفحات والتحسين التقني وتحسين المحتوى لتعزيز الظهور في نتائج البحث.",
+  "certification.19.benefit.points": [
     "تنمي الكفاءة في بحث الكلمات المفتاحية وتحسين الصفحات واستراتيجية الروابط.",
     "تحسّن القدرة على جعل المواقع والمحتوى قابلاً للاكتشاف في محركات البحث.",
     "توفّر مؤهلاً تسويقياً واسع الاعتراف.",
     "تكمل مهارات تطوير الويب بخبرة في أداء البحث."
   ],
-  "certification.19.benefit.intro": "دورة شاملة في إدارة المشاريع تغطي دورة حياة المشروع كاملة من التأسيس حتى الإغلاق.",
-  "certification.19.benefit.points": [
+  "certification.20.benefit.intro": "دورة شاملة في إدارة المشاريع تغطي دورة حياة المشروع كاملة من التأسيس حتى الإغلاق.",
+  "certification.20.benefit.points": [
     "تغطي أساسيات إدارة النطاق والجدول الزمني والتكلفة والمخاطر وأصحاب المصلحة.",
     "تعزز القدرة على التخطيط وتسليم المشاريع الهندسية في موعدها وضمن ميزانيتها.",
     "تحسّن التنسيق والتواصل بين الوظائف المختلفة.",
     "توفّر أساساً متيناً للمنهجيات الرسمية مثل PMP وAgile."
   ],
-  "certification.20.benefit.intro": "برنامج إرشادي من Covenant University Alumni Association يربط الطلاب والمواهب الشابة من المهنيين بخريجين ذوي خبرة يعملون كمرشدين.",
-  "certification.20.benefit.points": [
+  "certification.21.benefit.intro": "برنامج إرشادي من Covenant University Alumni Association يربط الطلاب والمواهب الشابة من المهنيين بخريجين ذوي خبرة يعملون كمرشدين.",
+  "certification.21.benefit.points": [
     "يوفّر إرشاداً منظماً من خريجين متميّزين عبر مختلف القطاعات.",
     "يبني شبكات مهنية ومجتمعًا داخل جمعية خريجين قوية.",
     "يطوّر مهارات تحديد الأهداف والتخطيط للمسار المهني والتطوير الشخصي.",
     "يشجّع ثقافة رد الجميل والإرشاد للآخرين."
   ],
-  "certification.21.benefit.intro": "شهادة من Digital Nigeria تغطي ممارسات ومبادئ DevOps الأساسية لتسليم البرمجيات الحديث.",
-  "certification.21.benefit.points": [
+  "certification.22.benefit.intro": "شهادة من Digital Nigeria تغطي ممارسات ومبادئ DevOps الأساسية لتسليم البرمجيات الحديث.",
+  "certification.22.benefit.points": [
     "تنمي فهم التكامل المستمر والتسليم المستمر والتعاون بين فرق التطوير والعمليات.",
     "تدعم إصدارات ونشرات برمجيات أسرع وأكثر موثوقية.",
     "توافق الممارسات القطاعية الأكثر طلباً لتسليم برمجيات قابلة للتوسع.",
     "تكمل مهارات هندسة البرمجيات بالأتمتة والانضباط التشغيلي."
   ],
-  "certification.22.benefit.intro": "شهادة من Digital Nigeria تغطي أساسيات تطوير الويب الحديث باستخدام HTML5 وCSS3.",
-  "certification.22.benefit.points": [
+  "certification.23.benefit.intro": "شهادة من Digital Nigeria تغطي أساسيات تطوير الويب الحديث باستخدام HTML5 وCSS3.",
+  "certification.23.benefit.points": [
     "تُرسي أساساً متيناً في الترميز الدلالي والتخطيط والتصميم المتجاوب.",
     "توفّر لبنات أساسية لتطوير الواجهات الأمامية مع الأطر الحديثة.",
     "تقدّم مؤهلاً مدعوماً حكومياً في المهارات الرقمية.",
     "تدعم جاهزية التوظيف في الاقتصاد الرقمي النيجيري المتنامي."
   ],
-  "certification.23.benefit.intro": "شهادة من Digital Nigeria تُقدّم المفاهيم والأدوات والتطبيقات الأساسية لعلوم البيانات.",
-  "certification.23.benefit.points": [
+  "certification.24.benefit.intro": "شهادة من Digital Nigeria تُقدّم المفاهيم والأدوات والتطبيقات الأساسية لعلوم البيانات.",
+  "certification.24.benefit.points": [
     "تنمي معرفة أساسية بتحليل البيانات والإحصاء ومفاهيم تعلّم الآلة.",
     "تعزز اتخاذ القرار المستند إلى البيانات في سياقات الهندسة والأعمال.",
     "تكمل هندسة البرمجيات بالتفكير التحليلي والإحصائي.",
     "توفّر مؤهلاً معترفاً به في تخصص رقمي ذي طلب متزايد."
+  ],
+  "certification.3.title": "Six Sigma White Belt Certification",
+  "certification.3.organization": "Council for Six Sigma Certification (C.S.S.C)",
+  "certification.3.benefit.intro": "A First Class honours degree in Computer Science from Covenant University, providing a strong academic foundation for a career in software engineering.",
+  "certification.3.benefit.points": [
+    "First Class standing signals exceptional academic discipline, analytical ability, and intellectual rigour.",
+    "Covers core software engineering foundations: algorithms, data structures, databases, and systems design.",
+    "Provides the theoretical grounding behind the technologies used in day-to-day engineering work.",
+    "Meets the degree requirements for graduate roles and advanced study programmes."
   ]
 }
