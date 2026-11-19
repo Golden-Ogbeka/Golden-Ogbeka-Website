@@ -36,6 +36,7 @@ import theAiShockHero from '../public/images/Blog/the-ai-shock/hero.webp';
 import superTalentedHero from '../public/images/Blog/super-talented/hero.webp';
 import godIsNotATeletubbyHero from '../public/images/Blog/god-is-not-a-teletubby/hero.webp';
 import productOfImaginationHero from '../public/images/Blog/you-are-a-product-of-your-imagination/hero.webp';
+import greatestPrivilegeHero from '../public/images/Blog/the-greatest-privilege-given-to-man/hero.webp';
 
 export type BlogCategory = 'faith' | 'tech' | 'life';
 
@@ -49,6 +50,14 @@ export interface BlogPostType {
 }
 
 const BlogPosts: BlogPostType[] = [
+  {
+    slug: 'the-greatest-privilege-given-to-man',
+    category: 'life',
+    image: greatestPrivilegeHero,
+    ogImagePath: '/images/Blog/the-greatest-privilege-given-to-man/hero.webp',
+    date: '2026-11-19',
+    featured: true,
+  },
   {
     slug: 'you-are-a-product-of-your-imagination',
     category: 'life',
