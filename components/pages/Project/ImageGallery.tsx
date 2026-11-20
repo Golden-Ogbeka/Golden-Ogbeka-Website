@@ -1,7 +1,7 @@
-import { Dialog } from '@headlessui/react';
+import { Dialog, Transition } from '@headlessui/react';
 import Image, { StaticImageData } from 'next/image';
 import { useRouter } from 'next/router';
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { Fragment, useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../../utils/analytics';
 
@@ -306,10 +306,30 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
       </div>
 
       {/* Full-screen view */}
-      <Dialog open={lightbox} onClose={() => setLightbox(false)} className='relative z-50'>
-        <div className='fixed inset-0 bg-darkBg/95 backdrop-blur-sm' aria-hidden='true' />
+      <Transition show={lightbox} as={Fragment}>
+      <Dialog onClose={() => setLightbox(false)} className='relative z-50'>
+        <Transition.Child
+          as={Fragment}
+          enter='ease-out duration-300 motion-reduce:duration-0'
+          enterFrom='opacity-0'
+          enterTo='opacity-100'
+          leave='ease-in duration-200 motion-reduce:duration-0'
+          leaveFrom='opacity-100'
+          leaveTo='opacity-0'
+        >
+          <div className='fixed inset-0 bg-darkBg/95 backdrop-blur-sm transition-opacity' aria-hidden='true' />
+        </Transition.Child>
         <div className='fixed inset-0 flex flex-col'>
-          <Dialog.Panel className='relative flex flex-col h-full w-full' onKeyDown={onKey}>
+          <Transition.Child
+            as={Fragment}
+            enter='ease-out duration-300 motion-reduce:duration-0'
+            enterFrom='opacity-0 scale-95'
+            enterTo='opacity-100 scale-100'
+            leave='ease-in duration-200 motion-reduce:duration-0'
+            leaveFrom='opacity-100 scale-100'
+            leaveTo='opacity-0 scale-95'
+          >
+          <Dialog.Panel className='relative flex flex-col h-full w-full overflow-hidden transform transition-all' onKeyDown={onKey}>
             <div className='flex items-center justify-between px-4 sm:px-6 h-16 text-white shrink-0'>
               <Dialog.Title className='font-display text-lg sm:text-xl truncate pr-4'>{projectName}</Dialog.Title>
               <div className='flex items-center gap-4'>
@@ -355,7 +375,8 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
                 >
                   <Chevron dir='next' />
                 </button>
-                <div className='flex justify-center gap-2 py-4 px-4 overflow-x-auto shrink-0'>
+                <div className='shrink-0 overflow-x-auto no-scrollbar py-4'>
+                  <div className='flex gap-2 w-max mx-auto px-4'>
                   {screenshots.map((src, i) => (
                     <button
                       key={i}
@@ -370,12 +391,15 @@ export default function ImageGallery({ screenshots, projectName }: ImageGalleryP
                       <Image src={src} alt='' layout='fill' objectFit='cover' sizes='80px' />
                     </button>
                   ))}
+                  </div>
                 </div>
               </>
             )}
           </Dialog.Panel>
+          </Transition.Child>
         </div>
       </Dialog>
+      </Transition>
     </section>
   );
 }

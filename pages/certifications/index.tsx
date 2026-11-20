@@ -9,6 +9,8 @@ import { trackEvent } from '../../utils/analytics';
 export default function Certifications() {
   const { t } = useTranslation(['common', 'certifications']);
   const [benefitIndex, setBenefitIndex] = useState<number | null>(null);
+  // Last opened certificate stays rendered while the modal plays its exit animation.
+  const [shownIndex, setShownIndex] = useState(0);
   return (
     <AppLayout>
       <HeadElement
@@ -69,6 +71,7 @@ export default function Certifications() {
                     aria-label={`${t('certifications:viewValueImpact')}: ${title}`}
                     onClick={() => {
                       setBenefitIndex(index);
+                      setShownIndex(index);
                       trackEvent('click', 'certification-benefit', cert.title);
                     }}
                   >
@@ -83,23 +86,21 @@ export default function Certifications() {
           })}
         </ul>
 
-        {benefitIndex !== null && (
           <ValueImpactModal
             open={benefitIndex !== null}
             onClose={() => setBenefitIndex(null)}
-            title={t(`certifications:certification.${benefitIndex}.title`, CertificationsData[benefitIndex].title)}
-            organization={t(`certifications:certification.${benefitIndex}.organization`, CertificationsData[benefitIndex].organization)}
-            intro={t(`certifications:certification.${benefitIndex}.benefit.intro`, CertificationsData[benefitIndex].benefits.intro)}
-            date={CertificationsData[benefitIndex].date}
-            link={CertificationsData[benefitIndex].link}
+            title={t(`certifications:certification.${shownIndex}.title`, CertificationsData[shownIndex].title)}
+            organization={t(`certifications:certification.${shownIndex}.organization`, CertificationsData[shownIndex].organization)}
+            intro={t(`certifications:certification.${shownIndex}.benefit.intro`, CertificationsData[shownIndex].benefits.intro)}
+            date={CertificationsData[shownIndex].date}
+            link={CertificationsData[shownIndex].link}
             points={
-              t(`certifications:certification.${benefitIndex}.benefit.points`, {
+              t(`certifications:certification.${shownIndex}.benefit.points`, {
                 returnObjects: true,
-                defaultValue: CertificationsData[benefitIndex].benefits.points,
+                defaultValue: CertificationsData[shownIndex].benefits.points,
               }) as string[]
             }
           />
-        )}
       </div>
     </AppLayout>
   );

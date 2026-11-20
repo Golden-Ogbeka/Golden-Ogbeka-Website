@@ -1,4 +1,5 @@
-import { Dialog } from '@headlessui/react';
+import { Dialog, Transition } from '@headlessui/react';
+import { Fragment } from 'react';
 import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../../utils/analytics';
 
@@ -37,16 +38,35 @@ function ValueImpactModal({ open, onClose, title, organization, intro, points, d
   const inProgress = date === 'In Progress';
 
   return (
-    <Dialog open={open} onClose={onClose} className='relative z-50'>
-      <div className='fixed inset-0 bg-darkBg/60 backdrop-blur-sm modal-backdrop-in' aria-hidden='true' />
+    <Transition appear show={open} as={Fragment}>
+    <Dialog onClose={onClose} className='relative z-50'>
+      <Transition.Child
+        as={Fragment}
+        enter='ease-out duration-300 motion-reduce:duration-0'
+        enterFrom='opacity-0'
+        enterTo='opacity-100'
+        leave='ease-in duration-200 motion-reduce:duration-0'
+        leaveFrom='opacity-100'
+        leaveTo='opacity-0'
+      >
+        <div className='fixed inset-0 bg-darkBg/60 backdrop-blur-sm transition-opacity' aria-hidden='true' />
+      </Transition.Child>
 
       <div className='fixed inset-0 flex items-end sm:items-center justify-center sm:p-6'>
-        <Dialog.Panel className='modal-panel-in relative w-full sm:max-w-2xl max-h-[92vh] overflow-y-auto rounded-t-[28px] sm:rounded-[24px] bg-lightBg dark:bg-darkCard border border-zinc-200 dark:border-zinc-800 shadow-2xl'>
+        <Transition.Child
+          as={Fragment}
+          enter='ease-out duration-500 motion-reduce:duration-0'
+          enterFrom='opacity-0 translate-y-12 sm:translate-y-3 sm:scale-95'
+          enterTo='opacity-100 translate-y-0 sm:scale-100'
+          leave='ease-in duration-200 motion-reduce:duration-0'
+          leaveFrom='opacity-100 translate-y-0 sm:scale-100'
+          leaveTo='opacity-0 translate-y-12 sm:translate-y-3 sm:scale-95'
+        >
+        <Dialog.Panel className='transform transition-all relative w-full sm:max-w-2xl max-h-[92vh] overflow-y-auto overflow-x-hidden overscroll-contain rounded-t-[28px] sm:rounded-[24px] bg-lightBg dark:bg-darkCard border border-zinc-200 dark:border-zinc-800 shadow-2xl'>
           {/* Soft gold glow and grab handle (mobile sheet) */}
-          <div
-            aria-hidden='true'
-            className='pointer-events-none absolute -top-24 -right-24 rtl:right-auto rtl:-left-24 w-72 h-72 rounded-full bg-accent/20 blur-3xl'
-          />
+          <div aria-hidden='true' className='pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit]'>
+            <div className='absolute -top-24 -right-24 rtl:right-auto rtl:-left-24 w-72 h-72 rounded-full bg-accent/20 blur-3xl' />
+          </div>
           <div aria-hidden='true' className='sm:hidden mx-auto mt-3 w-10 h-1 rounded-full bg-zinc-300 dark:bg-zinc-700' />
 
           <button
@@ -127,8 +147,10 @@ function ValueImpactModal({ open, onClose, title, organization, intro, points, d
             )}
           </div>
         </Dialog.Panel>
+        </Transition.Child>
       </div>
     </Dialog>
+    </Transition>
   );
 }
 
