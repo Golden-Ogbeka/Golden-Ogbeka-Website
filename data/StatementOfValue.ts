@@ -86,16 +86,10 @@ const StatementOfValue: StatementGroup[] = [
     title: 'Process & business',
     rows: [
       {
-        id: 'yellowBelt',
-        label: 'Six Sigma Yellow Belt',
-        detail: 'Council for Six Sigma Certification',
-        status: 'certified',
-      },
-      {
         id: 'greenBelt',
         label: 'Six Sigma Green Belt',
         detail: 'Council for Six Sigma Certification',
-        status: 'completing',
+        status: 'certified',
       },
       {
         id: 'mba',

@@ -30,7 +30,7 @@ const ValuePillars: ValuePillarType[] = [
     points: [
       'Maker–checker and role-based workflows',
       'Entrust authentication and access control',
-      'Six Sigma: Yellow Belt, Green Belt next',
+      'Six Sigma Green Belt certified',
     ],
   },
   {

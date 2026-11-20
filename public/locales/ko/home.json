@@ -31,8 +31,6 @@
   "statement.row.makerChecker.detail": "나이지리아와 영국의 기업 뱅킹 · Rova (FCMB Group)",
   "statement.row.banks.label": "함께한 은행",
   "statement.row.banks.detail": "Abbey Bank · FCMB Group · Sterling Bank",
-  "statement.row.yellowBelt.label": "Six Sigma Yellow Belt",
-  "statement.row.yellowBelt.detail": "Council for Six Sigma Certification",
   "statement.row.greenBelt.label": "Six Sigma Green Belt",
   "statement.row.greenBelt.detail": "Council for Six Sigma Certification",
   "statement.row.mba.label": "MBA",
@@ -64,7 +62,7 @@
   "pillars.govern.points": [
     "메이커-체커 및 역할 기반 워크플로",
     "Entrust 인증 및 접근 통제",
-    "Six Sigma: Yellow Belt, 다음은 Green Belt"
+    "Six Sigma Green Belt 인증 취득"
   ],
   "pillars.build.eyebrow": "만들기",
   "pillars.build.title": "엔지니어링 깊이",

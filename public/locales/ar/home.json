@@ -31,8 +31,6 @@
   "statement.row.makerChecker.detail": "الخدمات المصرفية للشركات في نيجيريا والمملكة المتحدة · Rova (FCMB Group)",
   "statement.row.banks.label": "البنوك التي عملت معها",
   "statement.row.banks.detail": "Abbey Bank · FCMB Group · Sterling Bank",
-  "statement.row.yellowBelt.label": "Six Sigma Yellow Belt",
-  "statement.row.yellowBelt.detail": "Council for Six Sigma Certification",
   "statement.row.greenBelt.label": "Six Sigma Green Belt",
   "statement.row.greenBelt.detail": "Council for Six Sigma Certification",
   "statement.row.mba.label": "MBA",
@@ -64,7 +62,7 @@
   "pillars.govern.points": [
     "مسارات عمل المُنشئ والمُراجِع والصلاحيات حسب الدور",
     "مصادقة Entrust وضبط الوصول",
-    "Six Sigma: ‏Yellow Belt، ثم Green Belt"
+    "حاصل على شهادة Six Sigma Green Belt"
   ],
   "pillars.build.eyebrow": "البناء",
   "pillars.build.title": "عمق هندسي",

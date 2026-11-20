@@ -31,8 +31,6 @@
   "statement.row.makerChecker.detail": "ナイジェリアと英国の法人向けバンキング · Rova (FCMB Group)",
   "statement.row.banks.label": "支援した銀行",
   "statement.row.banks.detail": "Abbey Bank · FCMB Group · Sterling Bank",
-  "statement.row.yellowBelt.label": "Six Sigma Yellow Belt",
-  "statement.row.yellowBelt.detail": "Council for Six Sigma Certification",
   "statement.row.greenBelt.label": "Six Sigma Green Belt",
   "statement.row.greenBelt.detail": "Council for Six Sigma Certification",
   "statement.row.mba.label": "MBA",
@@ -64,7 +62,7 @@
   "pillars.govern.points": [
     "メーカー・チェッカーとロールベースのワークフロー",
     "Entrust 認証とアクセス制御",
-    "Six Sigma：Yellow Belt、次は Green Belt"
+    "Six Sigma Green Belt 認定取得"
   ],
   "pillars.build.eyebrow": "作る",
   "pillars.build.title": "エンジニアリングの深さ",

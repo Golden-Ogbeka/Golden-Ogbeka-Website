@@ -31,8 +31,6 @@
   "statement.row.makerChecker.detail": "Banco corporativo na Nigéria e no Reino Unido · Rova (FCMB Group)",
   "statement.row.banks.label": "Bancos atendidos",
   "statement.row.banks.detail": "Abbey Bank · FCMB Group · Sterling Bank",
-  "statement.row.yellowBelt.label": "Six Sigma Yellow Belt",
-  "statement.row.yellowBelt.detail": "Council for Six Sigma Certification",
   "statement.row.greenBelt.label": "Six Sigma Green Belt",
   "statement.row.greenBelt.detail": "Council for Six Sigma Certification",
   "statement.row.mba.label": "MBA",
@@ -64,7 +62,7 @@
   "pillars.govern.points": [
     "Fluxos maker–checker e por perfil",
     "Autenticação Entrust e controle de acesso",
-    "Six Sigma: Yellow Belt, em seguida Green Belt"
+    "Certificação Six Sigma Green Belt"
   ],
   "pillars.build.eyebrow": "Construir",
   "pillars.build.title": "Profundidade técnica",

@@ -31,8 +31,6 @@
   "statement.row.makerChecker.detail": "尼日利亚和英国的企业银行业务 · Rova (FCMB Group)",
   "statement.row.banks.label": "服务过的银行",
   "statement.row.banks.detail": "Abbey Bank · FCMB Group · Sterling Bank",
-  "statement.row.yellowBelt.label": "Six Sigma Yellow Belt",
-  "statement.row.yellowBelt.detail": "Council for Six Sigma Certification",
   "statement.row.greenBelt.label": "Six Sigma Green Belt",
   "statement.row.greenBelt.detail": "Council for Six Sigma Certification",
   "statement.row.mba.label": "MBA",
@@ -64,7 +62,7 @@
   "pillars.govern.points": [
     "双人复核与基于角色的工作流",
     "Entrust 身份认证与访问控制",
-    "Six Sigma：Yellow Belt，下一步 Green Belt"
+    "已获 Six Sigma Green Belt 认证"
   ],
   "pillars.build.eyebrow": "构建",
   "pillars.build.title": "工程深度",
