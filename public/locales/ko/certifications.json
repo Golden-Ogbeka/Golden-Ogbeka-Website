@@ -76,12 +76,12 @@
     "업계 역량 프레임워크에 반영된 것처럼 고위 및 관리직 역할에 대한 적합성을 강화합니다.",
     "CIBN의 실무 커뮤니티, CPD 프로그램, 멘토링 및 전문 네트워크에 대한 접근을 열어줍니다."
   ],
-  "certification.2.benefit.intro": "Issued by the Council for Six Sigma Certification (C.S.S.C), this Yellow Belt certification builds on Lean Six Sigma fundamentals with practical tools for process improvement and project support.",
+  "certification.2.benefit.intro": "Council for Six Sigma Certification (C.S.S.C)이 발급하는 이 Yellow Belt 인증은 Lean Six Sigma 기초 위에 프로세스 개선과 프로젝트 지원을 위한 실무 도구를 더합니다.",
   "certification.2.benefit.points": [
-    "Demonstrates understanding of Six Sigma roles, DMAIC methodology, and basic statistical tools.",
-    "Equips with practical techniques for identifying, measuring, and improving process inefficiencies.",
-    "Strengthens data-informed problem-solving applicable to software delivery and banking operations.",
-    "Builds a solid foundation to progress to Six Sigma Green Belt and Black Belt certifications."
+    "Six Sigma 역할, DMAIC 방법론, 기본 통계 도구에 대한 이해를 입증합니다.",
+    "프로세스 비효율을 찾아내고, 측정하고, 개선하는 실무 기법을 갖추게 합니다.",
+    "소프트웨어 딜리버리와 은행 운영에 적용할 수 있는 데이터 기반 문제 해결 역량을 강화합니다.",
+    "Six Sigma Green Belt 및 Black Belt 인증으로 나아갈 탄탄한 기반을 마련합니다."
   ],
   "certification.4.benefit.intro": "Covenant University의 컴퓨터 과학 일등급 우등 학위로, 소프트웨어 엔지니어링 경력에 강력한 학문적 기반을 제공합니다.",
   "certification.4.benefit.points": [
@@ -249,5 +249,16 @@
     "Covers core software engineering foundations: algorithms, data structures, databases, and systems design.",
     "Provides the theoretical grounding behind the technologies used in day-to-day engineering work.",
     "Meets the degree requirements for graduate roles and advanced study programmes."
+  ],
+  "inProgress": "진행 중",
+  "count": "자격 {{count}}개",
+  "certification.25.title": "Six Sigma Green Belt Certification",
+  "certification.25.organization": "Council for Six Sigma Certification (C.S.S.C)",
+  "certification.25.benefit.intro": "Council for Six Sigma Certification (C.S.S.C)의 Green Belt는 DMAIC 방법론으로 Lean Six Sigma 개선 프로젝트를 처음부터 끝까지 이끌 수 있음을 인증합니다.",
+  "certification.25.benefit.points": [
+    "개선 프로젝트를 이끌고, 범위와 기준 지표를 정의하며, DMAIC 전 과정에서 이해관계자를 관리할 수 있게 합니다.",
+    "근본 원인 분석을 위한 가설 검정, 회귀 분석, 공정 능력 등 통계 도구를 더합니다.",
+    "소프트웨어 딜리버리와 은행 운영에 데이터 기반 관리 계획을 적용해 IT 거버넌스를 강화합니다.",
+    "Yellow Belt를 바탕으로 Black Belt 수준의 프로그램 리더십을 준비합니다."
   ]
 }

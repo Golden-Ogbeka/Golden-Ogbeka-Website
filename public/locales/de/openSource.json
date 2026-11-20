@@ -98,5 +98,12 @@
   "Java-Web-Application-for-The-Chicken-Farm.name": "Geflügelladen",
   "Java-Web-Application-for-The-Chicken-Farm.description": "Java EE-Webanwendung für einen Geflügelproduktladen mit Inventar- und Einkaufsworkflows.",
   "Airline_Reservation_System_with_Java.name": "Flugbuchungssystem",
-  "Airline_Reservation_System_with_Java.description": "Java-Desktop-Airline-Reservierungssystem zur Buchung von Flügen und Verwaltung von Kundenreservierungen."
+  "Airline_Reservation_System_with_Java.description": "Java-Desktop-Airline-Reservierungssystem zur Buchung von Flügen und Verwaltung von Kundenreservierungen.",
+  "count_one": "{{count}} Repository",
+  "count_other": "{{count}} Repositories",
+  "titleHighlight": "Source",
+  "stars": "Sterne",
+  "forks": "Forks",
+  "clearFilter": "Filter entfernen",
+  "mostUseful": "Am nützlichsten"
 }

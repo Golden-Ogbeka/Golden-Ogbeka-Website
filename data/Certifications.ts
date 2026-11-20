@@ -412,6 +412,21 @@ const Certifications: CertificationType[] = [
       ],
     },
   },
+  {
+    title: 'Six Sigma Green Belt Certification',
+    organization: 'Council for Six Sigma Certification (C.S.S.C)',
+    date: 'In Progress',
+    featured: true,
+    benefits: {
+      intro: 'The Council for Six Sigma Certification (C.S.S.C) Green Belt qualifies practitioners to lead Lean Six Sigma improvement projects end to end using the DMAIC method.',
+      points: [
+        'Equips to lead improvement projects, define scope and baseline metrics, and manage stakeholders through DMAIC.',
+        'Adds statistical tools such as hypothesis testing, regression, and process capability for root-cause analysis.',
+        'Strengthens IT governance with data-backed control plans for software delivery and banking operations.',
+        'Builds directly on the Yellow Belt and prepares for Black Belt-level programme leadership.',
+      ],
+    },
+  },
 ];
 
 export default Certifications;

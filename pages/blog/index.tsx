@@ -2,13 +2,17 @@ import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
-import BlogPosts, { BlogCategory, BlogPostType } from '../../data/BlogPosts';
+import BlogPosts, { BLOG_CATEGORIES, BlogCategory, BlogPostType } from '../../data/BlogPosts';
 import BlogCard from '../../components/pages/Blog/BlogCard';
-import CategoryFilter from '../../components/pages/Blog/CategoryFilter';
+import PageHeader from '../../components/reusable/PageHeader/PageHeader';
+import ListingToolbar, { ListingView } from '../../components/reusable/ListingToolbar/ListingToolbar';
+import PreviewIndexList from '../../components/reusable/PreviewIndexList/PreviewIndexList';
 import { useTranslation } from 'next-i18next';
+import { trackEvent } from '../../utils/analytics';
 
-const POSTS_PER_PAGE = 6;
-const VALID_CATEGORIES: BlogCategory[] = ['tech', 'life', 'faith'];
+const POSTS_PER_PAGE = 9;
+const VIEW_KEY = 'blog-view';
+const VALID_CATEGORIES: BlogCategory[] = BLOG_CATEGORIES;
 
 type SortOrder = 'newest' | 'oldest';
 
@@ -23,15 +27,32 @@ export default function Blog() {
   const [activeCategory, setActiveCategory] = useState<BlogCategory | 'all'>('all');
   const [sortOrder, setSortOrder] = useState<SortOrder>('newest');
   const [currentPage, setCurrentPage] = useState(1);
+  const [view, setView] = useState<ListingView>('grid');
   const hasInitialized = useRef(false);
 
+  // Remember the visitor's preferred view (convenience only).
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(VIEW_KEY);
+      if (saved === 'index' || saved === 'grid') setView(saved);
+    } catch {
+      /* storage unavailable */
+    }
+  }, []);
+  const chooseView = (v: ListingView) => {
+    setView(v);
+    trackEvent('click', 'blog_view', v);
+    try {
+      localStorage.setItem(VIEW_KEY, v);
+    } catch {
+      /* storage unavailable */
+    }
+  };
+
+  // Only offer categories that have posts, in the configured order.
   const availableCategories = useMemo(() => {
     const cats = new Set<BlogCategory>(BlogPosts.map((p) => p.category));
-    const result: (BlogCategory | 'all')[] = ['all'];
-    if (cats.has('tech')) result.push('tech');
-    if (cats.has('life')) result.push('life');
-    if (cats.has('faith')) result.push('faith');
-    return result;
+    return BLOG_CATEGORIES.filter((c) => cats.has(c));
   }, []);
 
   useEffect(() => {
@@ -130,46 +151,70 @@ export default function Blog() {
         ]}
         overrideSchemas={[blogListingSchema]}
       />
-      <div className='pt-24 sm:pt-28 md:pt-32 min-h-screen'>
-        <div className='mb-8 sm:mb-12 animate-fade-in-up'>
-          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-semibold mb-4'>
-            {t('blog:page.title')}
-          </h1>
-          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg max-w-2xl'>
-            {t('blog:page.subtitle')}
-          </p>
-        </div>
+      <div className='min-h-screen'>
+        <PageHeader
+          eyebrow={t('blog:page.count', { count: BlogPosts.length })}
+          title={t('blog:page.title')}
+          highlight={t('blog:page.titleHighlight')}
+          subtitle={t('blog:page.subtitle')}
+        />
 
-        <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 md:mb-10'>
-          <CategoryFilter
-            activeCategory={activeCategory}
-            onCategoryChange={handleCategoryChange}
-            availableCategories={availableCategories}
-          />
-          <div className='flex items-center gap-2'>
-            <span className='text-sm text-zinc-500 dark:text-zinc-400'>{t('blog:sort.label')}</span>
+        <ListingToolbar
+          filterLabel={t('blog:category.label')}
+          options={[
+            { value: 'all', label: t('blog:category.all') },
+            ...availableCategories.map((c) => ({ value: c, label: t(`blog:category.${c}`) })),
+          ]}
+          active={activeCategory}
+          onFilter={(value) => handleCategoryChange(value as BlogCategory | 'all')}
+          view={view}
+          onView={chooseView}
+          viewGroupLabel={t('blog:view.label')}
+          gridLabel={t('blog:view.grid')}
+          indexLabel={t('blog:view.index')}
+          resultText={t('blog:page.count', { count: filteredAndSorted.length })}
+          extra={
             <button
+              type='button'
               onClick={() => handleSortChange(sortOrder === 'newest' ? 'oldest' : 'newest')}
-              className='minimal-card px-4 py-2 rounded-lg text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-accent dark:hover:text-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent flex items-center gap-2'
-              aria-label={sortOrder === 'newest' ? t('blog:sort.oldest') : t('blog:sort.newest')}
+              aria-label={`${t('blog:sort.label')}: ${sortOrder === 'newest' ? t('blog:sort.newest') : t('blog:sort.oldest')}`}
+              title={sortOrder === 'newest' ? t('blog:sort.newest') : t('blog:sort.oldest')}
+              className='h-10 inline-flex items-center gap-1.5 px-3 rounded-full text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors'
             >
-              <svg className='w-4 h-4' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+              <svg className='w-4 h-4' fill='none' stroke='currentColor' viewBox='0 0 24 24' aria-hidden='true'>
                 {sortOrder === 'newest' ? (
-                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12' />
+                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={1.75} d='M4 6h10M4 12h7M4 18h4m11-3-3 3-3-3m3 3V6' />
                 ) : (
-                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4' />
+                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={1.75} d='M4 6h4M4 12h7M4 18h10m5-9-3-3-3 3m3-3v12' />
                 )}
               </svg>
-              {sortOrder === 'newest' ? t('blog:sort.newest') : t('blog:sort.oldest')}
+              <span className='hidden sm:inline'>{sortOrder === 'newest' ? t('blog:sort.newest') : t('blog:sort.oldest')}</span>
             </button>
-          </div>
-        </div>
+          }
+        />
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
-          {paginatedPosts.map((post, index) => (
-            <BlogCard key={post.slug} post={post} index={index} />
-          ))}
-        </div>
+        {view === 'index' ? (
+          <PreviewIndexList
+            startNumber={(safePage - 1) * POSTS_PER_PAGE + 1}
+            items={paginatedPosts.map((post) => ({
+              key: post.slug,
+              href: `/blog/${post.slug}`,
+              title: t(`blog:post.${post.slug}.title`, post.slug),
+              meta: `${t(`blog:category.${post.category}`)} · ${new Date(post.date).toLocaleDateString(router.locale || 'en', {
+                year: 'numeric',
+                month: 'short',
+              })}`,
+              image: post.image,
+              onClick: () => trackEvent('click', 'blog_card', post.slug),
+            }))}
+          />
+        ) : (
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5'>
+            {paginatedPosts.map((post, index) => (
+              <BlogCard key={post.slug} post={post} index={index} />
+            ))}
+          </div>
+        )}
 
         {filteredAndSorted.length === 0 && (
           <p className='text-zinc-500 dark:text-zinc-400 text-center py-16'>
@@ -178,11 +223,11 @@ export default function Blog() {
         )}
 
         {totalPages > 1 && (
-          <nav className='flex items-center justify-center gap-2 mt-10 md:mt-16' aria-label={t('blog:pagination.label')}>
+          <nav className='flex flex-wrap items-center justify-center gap-2 mt-10 md:mt-16' aria-label={t('blog:pagination.label')}>
             <button
               onClick={() => handlePageChange(Math.max(1, safePage - 1))}
               disabled={safePage === 1}
-              className='px-4 py-2 rounded-lg text-sm font-medium minimal-card text-zinc-600 dark:text-zinc-400 hover:text-accent dark:hover:text-accent transition-colors disabled:opacity-30 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-accent'
+              className='px-4 py-2 rounded-full text-sm border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-zinc-900 dark:hover:border-zinc-100 transition-colors disabled:opacity-30 disabled:cursor-not-allowed'
               aria-label={t('blog:pagination.prev')}
             >
               {t('blog:pagination.prev')}
@@ -191,10 +236,10 @@ export default function Blog() {
               <button
                 key={page}
                 onClick={() => handlePageChange(page)}
-                className={`w-10 h-10 rounded-lg text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-accent ${
+                className={`w-10 h-10 rounded-full text-sm tabular-nums transition-colors ${
                   safePage === page
-                    ? 'bg-accent text-white'
-                    : 'minimal-card text-zinc-600 dark:text-zinc-400 hover:text-accent dark:hover:text-accent'
+                    ? 'bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900'
+                    : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
                 }`}
                 aria-label={`${t('blog:pagination.page')} ${page}`}
                 aria-current={safePage === page ? 'page' : undefined}
@@ -205,7 +250,7 @@ export default function Blog() {
             <button
               onClick={() => handlePageChange(Math.min(totalPages, safePage + 1))}
               disabled={safePage === totalPages}
-              className='px-4 py-2 rounded-lg text-sm font-medium minimal-card text-zinc-600 dark:text-zinc-400 hover:text-accent dark:hover:text-accent transition-colors disabled:opacity-30 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-accent'
+              className='px-4 py-2 rounded-full text-sm border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:border-zinc-900 dark:hover:border-zinc-100 transition-colors disabled:opacity-30 disabled:cursor-not-allowed'
               aria-label={t('blog:pagination.next')}
             >
               {t('blog:pagination.next')}
@@ -226,10 +271,18 @@ export async function getStaticProps({ locale }: { locale: string }) {
     return JSON.parse(fs.readFileSync(fp, 'utf8'));
   }
 
+  // The listing only shows titles and summaries, so drop each post's paragraphs from the page data.
+  const blog = loadNs('blog');
+  const posts = (blog.post || {}) as Record<string, { title?: string; summary?: string }>;
+  const listingPosts: Record<string, { title?: string; summary?: string }> = {};
+  for (const slug of Object.keys(posts)) {
+    listingPosts[slug] = { title: posts[slug].title, summary: posts[slug].summary };
+  }
+
   const initialI18nStore: Record<string, Record<string, unknown>> = {};
   initialI18nStore[locale] = {
     common: loadNs('common'),
-    blog: loadNs('blog'),
+    blog: { ...blog, post: listingPosts },
   };
 
   return {

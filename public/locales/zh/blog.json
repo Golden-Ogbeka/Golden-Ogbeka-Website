@@ -1,14 +1,21 @@
 {
   "page": {
-    "title": "博客",
-    "subtitle": "关于工程、AI 和软件技术的思考。",
-    "noPosts": "该分类下暂无文章。"
+    "title": "随笔与思考",
+    "subtitle": "关于技术、领导力、生活和信仰的文章。",
+    "noPosts": "该分类下暂无文章。",
+    "titleHighlight": "思考",
+    "count": "共 {{count}} 篇文章"
   },
   "category": {
     "all": "全部",
-    "tech": "科技",
-    "life": "生活",
-    "faith": "信仰"
+    "label": "博客分类",
+    "ai": "人工智能",
+    "society": "非洲与社会",
+    "growth": "个人成长",
+    "family": "家庭",
+    "faith": "信仰",
+    "discipleship": "基督徒生活",
+    "love": "神的爱"
   },
   "readMore": "阅读全文",
   "backToBlog": "返回博客",
@@ -418,5 +425,11 @@
         "下次见，我是 Golden Ogbeka。我开发软件应用，我也是一名媒体工程师；社交媒体管理、现场音频混音、音乐制作、视频制作等等都是我做的事情之一。总之，如果你有一个想法，需要找个人谈谈，我就是你要找的人。"
       ]
     }
+  },
+  "relatedTitle": "相关文章",
+  "view": {
+    "label": "布局",
+    "grid": "网格",
+    "index": "索引"
   }
 }

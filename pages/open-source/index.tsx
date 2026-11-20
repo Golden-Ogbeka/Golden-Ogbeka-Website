@@ -2,21 +2,20 @@ import type { NextPage } from 'next';
 import React, { useState } from 'react';
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
-import SectionDivider from '../../components/layout/SectionDivider';
-import OpenSourceData from '../../data/OpenSource';
+import PageHeader from '../../components/reusable/PageHeader/PageHeader';
+import OpenSourceData, { rankByUsefulness } from '../../data/OpenSource';
 import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../utils/analytics';
 import { reveal } from '../../functions/animation';
 const OpenSourcePage: NextPage = () => {
   const { t } = useTranslation(['common', 'openSource']);
   const [filterTech, setFilterTech] = useState<string>('');
-  const [sortBy, setSortBy] = useState<'stars' | 'forks'>('stars');
+  const [sortBy, setSortBy] = useState<'useful' | 'stars' | 'forks'>('useful');
 
   React.useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', reveal);
-      reveal();
-    }
+    window.addEventListener('scroll', reveal, { passive: true });
+    reveal();
+    return () => window.removeEventListener('scroll', reveal);
   }, []);
 
   // Get all unique technologies from repositories
@@ -25,10 +24,11 @@ const OpenSourcePage: NextPage = () => {
   ).sort();
 
   // Filter and sort repositories
-  const filteredRepos = OpenSourceData.filter((repo) => {
+  const filteredRepos = rankByUsefulness(OpenSourceData).filter((repo) => {
     if (!filterTech) return true;
     return repo.technologies.includes(filterTech);
   }).sort((a, b) => {
+    if (sortBy === 'useful') return 0; // keep usefulness order
     if (sortBy === 'stars') {
       return b.stars - a.stars;
     } else if (sortBy === 'forks') {
@@ -48,29 +48,27 @@ const OpenSourcePage: NextPage = () => {
         ]}
       />
 
-      {/* Hero Section */}
-      <div className='min-h-screen pt-24 sm:pt-28 md:pt-32 pb-10 md:pb-12'>
-        <div className='mb-8 sm:mb-12'>
-          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-outfit font-bold text-zinc-900 dark:text-zinc-100 mb-6 tracking-tight'>
-            {t('openSource:title')}
-          </h1>
-          <p className='text-base sm:text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl leading-relaxed'>
-            {t('openSource:subtitle')}
-          </p>
-        </div>
+      <div className='min-h-screen'>
+        <PageHeader
+          eyebrow={t('openSource:count', { count: OpenSourceData.length })}
+          title={t('openSource:title')}
+          highlight={t('openSource:titleHighlight')}
+          subtitle={t('openSource:subtitle')}
+        />
 
         {/* Filters Section */}
-        <div className='mb-12 p-6 bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 rounded-2xl'>
+        <div className='mb-10 p-6 soft-card'>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
             {/* Technology Filter */}
             <div>
-              <label className='block text-sm font-semibold text-zinc-900 dark:text-zinc-100 mb-3'>
+              <label htmlFor='os-filter-tech' className='block text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-2'>
                 {t('openSource:filterByTech')}
               </label>
               <select
+                id='os-filter-tech'
                 value={filterTech}
                 onChange={(e) => setFilterTech(e.target.value)}
-                className='w-full px-4 py-2 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-lg text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-accent'
+                className='w-full px-4 py-2.5 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-full text-zinc-900 dark:text-zinc-100'
               >
                 <option value=''>{t('openSource:allTechs')}</option>
                 {allTechs.map((tech) => (
@@ -83,14 +81,16 @@ const OpenSourcePage: NextPage = () => {
 
             {/* Sort By */}
             <div>
-              <label className='block text-sm font-semibold text-zinc-900 dark:text-zinc-100 mb-3'>
+              <label htmlFor='os-sort-by' className='block text-sm font-medium text-zinc-900 dark:text-zinc-100 mb-2'>
                 {t('openSource:sortBy')}
               </label>
               <select
+                id='os-sort-by'
                 value={sortBy}
-                onChange={(e) => setSortBy(e.target.value as 'stars' | 'forks')}
-                className='w-full px-4 py-2 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-lg text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-accent'
+                onChange={(e) => setSortBy(e.target.value as 'useful' | 'stars' | 'forks')}
+                className='w-full px-4 py-2.5 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-full text-zinc-900 dark:text-zinc-100'
               >
+                <option value='useful'>{t('openSource:mostUseful')}</option>
                 <option value='stars'>{t('openSource:mostStars')}</option>
                 <option value='forks'>{t('openSource:mostForks')}</option>
               </select>
@@ -106,8 +106,10 @@ const OpenSourcePage: NextPage = () => {
               <span className='inline-flex items-center gap-2 px-3 py-1 bg-accent/10 text-accent rounded-full text-sm font-medium'>
                 {filterTech}
                 <button
+                  type='button'
                   onClick={() => setFilterTech('')}
-                  className='hover:opacity-75 transition-opacity'
+                  aria-label={t('openSource:clearFilter')}
+                  className='hover:opacity-75 transition-opacity rounded-full px-1'
                 >
                   ×
                 </button>
@@ -126,33 +128,28 @@ const OpenSourcePage: NextPage = () => {
         </div>
 
         {/* Repositories Grid */}
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
           {filteredRepos.map((repo) => (
             <a
               key={repo.id}
               href={repo.url}
               target='_blank'
               rel='noopener noreferrer'
-              className='group block p-6 bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 hover:border-accent dark:hover:border-accent rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-accent/10'
+              className='minimal-card group flex flex-col p-6'
               onClick={() => trackEvent('click', 'open_source', repo.name)}
             >
               <div className='flex justify-between items-start mb-4 gap-2'>
-                <h2 className='text-base sm:text-lg font-bold font-outfit text-zinc-900 dark:text-zinc-100 group-hover:text-accent transition-colors truncate flex-1'>
+                <h2 className='text-xl leading-snug break-words group-hover:text-accent transition-colors flex-1'>
                   {t(`openSource:${repo.id}.name`, repo.name)}
                 </h2>
                 <svg
-                  className='w-5 h-5 text-zinc-400 group-hover:text-accent transform group-hover:-translate-y-1 group-hover:translate-x-1 transition-all flex-shrink-0 ml-2'
+                  className='w-4 h-4 mt-1.5 shrink-0 text-zinc-400 group-hover:text-accent transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 rtl:-scale-x-100'
                   fill='none'
                   stroke='currentColor'
                   viewBox='0 0 24 24'
-                  xmlns='http://www.w3.org/2000/svg'
+                  aria-hidden='true'
                 >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth={2}
-                    d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
-                  />
+                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M7 17 17 7M9 7h8v8' />
                 </svg>
               </div>
 
@@ -164,7 +161,7 @@ const OpenSourcePage: NextPage = () => {
                 {repo.technologies.slice(0, 3).map((tech, idx) => (
                   <span
                     key={idx}
-                    className='px-2.5 py-1 text-xs font-medium bg-zinc-200 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-md'
+                    className='px-2.5 py-1 text-xs border border-zinc-200 dark:border-zinc-700 text-zinc-600 dark:text-zinc-300 rounded-full'
                   >
                     {tech}
                   </span>
@@ -176,7 +173,7 @@ const OpenSourcePage: NextPage = () => {
                 )}
               </div>
 
-              <div className='flex items-center gap-4 text-xs font-medium text-zinc-500 dark:text-zinc-400'>
+              <div className='mt-auto flex items-center gap-4 text-xs text-zinc-500 dark:text-zinc-400 tabular-nums'>
                 <div className='flex items-center gap-1.5'>
                   <svg
                     className='w-4 h-4'
@@ -218,8 +215,6 @@ const OpenSourcePage: NextPage = () => {
           </div>
         )}
       </div>
-
-      <SectionDivider />
     </AppLayout>
   );
 };

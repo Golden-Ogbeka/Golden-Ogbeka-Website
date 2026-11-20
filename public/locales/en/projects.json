@@ -725,5 +725,15 @@
   "project.testimonies-mobile.coreTools.5": "React Hook Form",
   "project.testimonies-mobile.coreTools.6": "Zod",
   "project.testimonies-mobile.coreTools.7": "Axios",
-  "project.testimonies-mobile.coreTools.8": "TypeScript"
+  "project.testimonies-mobile.coreTools.8": "TypeScript",
+  "count_one": "{{count}} project",
+  "count_other": "{{count}} projects",
+  "titleHighlight": "Projects",
+  "thumbnailAlt": "{{title}} thumbnail",
+  "filterAll": "All",
+  "filterLabel": "Filter by technology",
+  "viewLabel": "Layout",
+  "viewIndex": "Index",
+  "viewGrid": "Grid",
+  "noResults": "No projects use this technology yet."
 }

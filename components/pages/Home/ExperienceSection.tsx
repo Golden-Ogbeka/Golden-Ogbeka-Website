@@ -1,8 +1,9 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import ExperiencesData from '../../../data/Experiences';
 import { trackEvent } from '../../../utils/analytics';
 import { useTranslation } from 'next-i18next';
+import SectionHeader from '../../reusable/SectionHeader/SectionHeader';
+import ViewAllLink from '../../reusable/ViewAllLink/ViewAllLink';
 
 function slugify(str: string): string {
   return str
@@ -31,129 +32,87 @@ export default function ExperienceSection() {
   const { t } = useTranslation(['common', 'home', 'experiences']);
   const topExperiences = ExperiencesData.slice(0, 5);
 
+  const viewAll = (
+    <ViewAllLink
+      href='/experiences'
+      label={t('home:experience.viewAll')}
+      count={ExperiencesData.length}
+      trackLabel='View All Experiences'
+    />
+  );
+
   return (
-    <section className='py-12 sm:py-16 md:py-20'>
-      <div className='flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12'>
-        <div className='max-w-2xl'>
-          <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-semibold mb-4'>
-            {t('home:experience.title')}
-          </h2>
-          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg'>
-            {t('home:experience.subtitle')}
-          </p>
-        </div>
-        <Link href='/experiences'>
-          <a className='hidden md:inline-flex justify-center mt-6 md:mt-0 items-center gap-2 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Experiences')}>
-            {t('home:experience.viewAll')}
-            <svg
-              className='w-5 h-5'
-              fill='none'
-              stroke='currentColor'
-              viewBox='0 0 24 24'
+    <section aria-labelledby='experience-title' className='reveal pt-24 md:pt-32'>
+      <SectionHeader
+        id='experience-title'
+        title={t('home:experience.title')}
+        highlight={t('home:experience.highlight')}
+        subtitle={t('home:experience.subtitle')}
+        action={viewAll}
+      />
+
+      <ol className='border-t border-zinc-200 dark:border-zinc-800'>
+        {topExperiences.map((exp) => {
+          const key = getExpKey(exp.role, exp.company);
+          const company = t(`experiences:experience.${key}.company`, exp.company);
+          const isCurrent = /present/i.test(exp.date);
+          const logo = (
+            <span
+              className={`relative w-8 h-8 shrink-0 rounded-lg overflow-hidden flex items-center justify-center ${
+                exp.logoDarkBackground ? 'bg-zinc-800' : 'bg-zinc-100 dark:bg-zinc-800'
+              }`}
             >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M17 8l4 4m0 0l-4 4m4-4H3'
+              <Image
+                src={exp.companyLogo}
+                alt=''
+                width={32}
+                height={32}
+                className={`object-contain ${exp.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
               />
-            </svg>
-          </a>
-        </Link>
-      </div>
-
-      <div className='space-y-8'>
-        {topExperiences.map((exp, index) => (
-          <div key={index} className='minimal-card p-6 md:p-8'>
-            <div className='flex flex-col md:flex-row md:items-start gap-6 mb-4'>
-              <div className='flex-1'>
-                <div className='flex flex-col md:flex-row md:items-center justify-between mb-1'>
-                  <h3 className='text-lg sm:text-xl font-semibold'>{t(`experiences:experience.${getExpKey(exp.role, exp.company)}.role`, exp.role)}</h3>
-                  <span className='text-sm font-medium text-zinc-600 mt-1 md:mt-0'>
-                    {exp.date}
-                  </span>
-                </div>
-                <div className='text-zinc-600 dark:text-zinc-400 font-medium mb-4'>
-                  <div className='flex items-center gap-3'>
-                    {exp.companyLink ? (
-                      <a
-                        href={exp.companyLink}
-                        target='_blank'
-                        rel='noreferrer'
-                        className='flex items-center gap-3 hover:text-accent transition-colors'
-                        onClick={() => trackEvent('click', 'company_link', exp.company)}
-                      >
-                        <div className={`relative w-8 h-8 shrink-0 rounded-lg overflow-hidden flex items-center justify-center ${exp.logoDarkBackground ? 'bg-zinc-800' : 'bg-zinc-100 dark:bg-zinc-800'}`}>
-                          <Image
-                            src={exp.companyLogo}
-                            alt={exp.company}
-                            width={32}
-                            height={32}
-                            className={`object-contain ${exp.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
-                          />
-                        </div>
-                        {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}
-                      </a>
-                    ) : (
-                      <>
-                        <div className={`relative w-8 h-8 shrink-0 rounded-lg overflow-hidden flex items-center justify-center ${exp.logoDarkBackground ? 'bg-zinc-800' : 'bg-zinc-100 dark:bg-zinc-800'}`}>
-                          <Image
-                            src={exp.companyLogo}
-                            alt={exp.company}
-                            width={32}
-                            height={32}
-                            className={`object-contain ${exp.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
-                          />
-                        </div>
-                        <span>{t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}</span>
-                      </>
-                    )}
-                  </div>
-                </div>
-
-                <div className='space-y-2 relative'>
-                  {exp.tasksAchieved.slice(0, 3).map((task, idx) => (
-                    <div key={idx} className='flex items-start'>
-                      <span className='w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-600 mt-2 mr-3 shrink-0'></span>
-                      <span className='text-zinc-700 dark:text-zinc-300 line-clamp-2'>
-                        {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.tasks.${idx}`, task)}
-                      </span>
-                    </div>
-                  ))}
-                  {exp.tasksAchieved.length > 3 && (
-                    <div className='pt-4'>
-                      <Link href='/experiences'>
-                        <a className='text-sm font-medium text-accent hover:underline' onClick={() => trackEvent('click', 'navigation', `See more - ${exp.role}`)}>
-                          {t('home:experience.seeMore')}
-                        </a>
-                      </Link>
-                    </div>
+            </span>
+          );
+          return (
+            <li
+              key={key}
+              className='grid grid-cols-1 md:grid-cols-[150px_1fr_1.3fr] gap-3 md:gap-8 py-7 border-b border-zinc-200 dark:border-zinc-800 md:items-start'
+            >
+              <span className='text-sm text-zinc-500 dark:text-zinc-400 tabular-nums md:pt-1.5'>{exp.date}</span>
+              <div>
+                <h3 className='text-2xl leading-snug'>
+                  {t(`experiences:experience.${key}.role`, exp.role)}
+                  {isCurrent && (
+                    <span className='ml-3 rtl:ml-0 rtl:mr-3 align-middle font-sans text-[11px] font-semibold uppercase tracking-wide text-accent border border-accent rounded-full px-2 py-0.5'>
+                      {t('home:experience.now')}
+                    </span>
                   )}
-                </div>
+                </h3>
+                {exp.companyLink ? (
+                  <a
+                    href={exp.companyLink}
+                    target='_blank'
+                    rel='noreferrer'
+                    className='mt-2 inline-flex items-center gap-2.5 text-sm text-zinc-600 dark:text-zinc-400 hover:text-accent transition-colors rounded-md'
+                    onClick={() => trackEvent('click', 'company_link', exp.company)}
+                  >
+                    {logo}
+                    {company}
+                  </a>
+                ) : (
+                  <div className='mt-2 inline-flex items-center gap-2.5 text-sm text-zinc-600 dark:text-zinc-400'>
+                    {logo}
+                    {company}
+                  </div>
+                )}
               </div>
-            </div>
-          </div>
-        ))}
-      </div>
+              <p className='text-zinc-600 dark:text-zinc-400 leading-relaxed line-clamp-3 md:pt-1'>
+                {t(`experiences:experience.${key}.tasks.0`, exp.tasksAchieved[0])}
+              </p>
+            </li>
+          );
+        })}
+      </ol>
 
-      <Link href='/experiences'>
-        <a className='md:hidden inline-flex items-center justify-center gap-2 mt-6 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Experiences')}>
-          {t('home:experience.viewAll')}
-          <svg
-            className='w-5 h-5'
-            fill='none'
-            stroke='currentColor'
-            viewBox='0 0 24 24'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth={2}
-              d='M17 8l4 4m0 0l-4 4m4-4H3'
-            />
-          </svg>
-        </a>
-      </Link>
+      <div className='mt-10 md:hidden'>{viewAll}</div>
     </section>
   );
 }

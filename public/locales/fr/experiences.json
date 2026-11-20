@@ -72,5 +72,9 @@
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.1": "Développement d'une infrastructure backend, d'API, de systèmes en temps réel et de fonctionnalités d'applications basées sur le cloud à l'aide de Node.js et des technologies Web modernes.",
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.2": "Géré le cycle de vie complet du produit, y compris l'architecture, le développement, le déploiement, la surveillance, la maintenance et le support opérationnel.",
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.3": "Implémentation de systèmes d'authentification, de flux de paiement, d'intégrations de services et de fonctionnalités de plate-forme évolutives prenant en charge les opérations commerciales quotidiennes.",
-  "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.4": "Contribué à la croissance du produit grâce à la propriété technique, au développement de fonctionnalités, au dépannage et à l'amélioration continue de la plate-forme."
+  "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.4": "Contribué à la croissance du produit grâce à la propriété technique, au développement de fonctionnalités, au dépannage et à l'amélioration continue de la plate-forme.",
+  "count_one": "{{count}} poste",
+  "count_other": "{{count}} postes",
+  "titleHighlight": "professionnelle",
+  "now": "En poste"
 }

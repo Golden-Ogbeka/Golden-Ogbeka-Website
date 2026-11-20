@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { BlogPostType } from '../../../data/BlogPosts';
 
@@ -8,6 +9,7 @@ interface BlogDetailProps {
 
 function BlogDetail({ post }: BlogDetailProps) {
   const { t } = useTranslation(['blog']);
+  const { locale } = useRouter();
 
   const paragraphs = t(`blog:post.${post.slug}.paragraphs`, {
     returnObjects: true,
@@ -16,23 +18,20 @@ function BlogDetail({ post }: BlogDetailProps) {
 
   return (
     <article>
-      <header className='mb-10 animate-fade-in-up'>
-        <span className='inline-block px-3 py-1 text-xs font-semibold rounded-full bg-accent text-white mb-4'>
-          {t(`blog:category.${post.category}`)}
-        </span>
-        <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-semibold mb-6'>
+      <header className='mb-10 max-w-3xl animate-fade-in-up'>
+        <p className='text-sm mb-5 text-zinc-500 dark:text-zinc-400'>
+          <span className='font-semibold uppercase tracking-[0.1em] text-accent text-xs'>{t(`blog:category.${post.category}`)}</span>
+          <span aria-hidden='true'> · </span>
+          <time dateTime={post.date}>
+            {new Date(post.date).toLocaleDateString(locale || 'en', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </time>
+        </p>
+        <h1 className='text-4xl sm:text-5xl md:text-6xl font-light leading-[1.05] tracking-tight mb-6'>
           {t(`blog:post.${post.slug}.title`, post.slug)}
         </h1>
         <p className='text-base sm:text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl leading-relaxed'>
           {t(`blog:post.${post.slug}.summary`, post.slug)}
         </p>
-        <time className='block mt-4 text-sm text-zinc-500 dark:text-zinc-500' dateTime={post.date}>
-          {new Date(post.date).toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-          })}
-        </time>
       </header>
 
       <div
@@ -50,7 +49,7 @@ function BlogDetail({ post }: BlogDetailProps) {
       </div>
 
       <div
-        className='prose prose-sm sm:prose-base md:prose-lg prose-zinc dark:prose-invert max-w-none animate-fade-in-up'
+        className='prose prose-zinc dark:prose-invert prose-lg max-w-3xl animate-fade-in-up'
         style={{ animationDelay: '0.2s' }}
       >
         {Array.isArray(paragraphs) &&

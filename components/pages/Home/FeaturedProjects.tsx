@@ -1,121 +1,98 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import FeaturedProjectsData from '../../../data/FeaturedProjects';
+import ProjectsData from '../../../data/Projects';
 import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../../utils/analytics';
+import SectionHeader from '../../reusable/SectionHeader/SectionHeader';
+import ViewAllLink from '../../reusable/ViewAllLink/ViewAllLink';
+
+function ArrowUpRight() {
+  return (
+    <svg
+      className='w-5 h-5 shrink-0 text-zinc-400 group-hover:text-accent transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 rtl:-scale-x-100'
+      fill='none'
+      stroke='currentColor'
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+    >
+      <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={1.75} d='M7 17 17 7M9 7h8v8' />
+    </svg>
+  );
+}
 
 export default function FeaturedProjects() {
   const { t } = useTranslation(['common', 'home', 'projects']);
-  const featuredProjects = FeaturedProjectsData;
+
+  const viewAll = (
+    <ViewAllLink
+      href='/projects'
+      label={t('home:featured.viewAll')}
+      count={ProjectsData.length}
+      trackLabel='View All Projects'
+    />
+  );
 
   return (
-    <section className='py-12 sm:py-16 md:py-20'>
-      <div className='flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12'>
-        <div className='max-w-2xl'>
-          <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-semibold mb-4'>
-            {t('home:featured.title')}
-          </h2>
-          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg'>
-            {t('home:featured.subtitle')}
-          </p>
-        </div>
-        <Link href='/projects'>
-          <a className='hidden md:inline-flex justify-center mt-6 md:mt-0 items-center gap-2 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Projects')}>
-            {t('home:featured.viewAll')}
-            <svg
-              className='w-5 h-5'
-              fill='none'
-              stroke='currentColor'
-              viewBox='0 0 24 24'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M17 8l4 4m0 0l-4 4m4-4H3'
-              />
-            </svg>
-          </a>
-        </Link>
-      </div>
+    <section aria-labelledby='work-title' className='reveal pt-24 md:pt-32'>
+      <SectionHeader
+        id='work-title'
+        title={t('home:featured.title')}
+        highlight={t('home:featured.highlight')}
+        subtitle={t('home:featured.subtitle')}
+        action={viewAll}
+      />
 
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8'>
-        {featuredProjects.map((project, index) => (
-          <Link key={project.slug} href={`/projects/${project.slug}`}>
-            <a
-              className='minimal-card flex flex-col group overflow-hidden animate-fade-in-up'
-              style={{ animationDelay: `${index * 0.1}s` }}
-              onClick={() => trackEvent('click', 'project_card', project.title)}
-            >
-              <div className='relative w-full aspect-video bg-zinc-200 dark:bg-zinc-800 overflow-hidden'>
-                {project.screenshots && project.screenshots.length > 0 ? (
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
+        {FeaturedProjectsData.map((project, index) => {
+          const title = t(`projects:project.${project.slug}.title`, project.title);
+          const big = index === 0;
+          const src = project.screenshots && project.screenshots.length > 0 ? project.screenshots[0] : project.image;
+          return (
+            <Link key={project.slug} href={`/projects/${project.slug}`}>
+              <a
+                className={`minimal-card group flex flex-col overflow-hidden ${big ? 'md:col-span-2 md:row-span-2' : ''}`}
+                onClick={() => trackEvent('click', 'project_card', project.title)}
+              >
+                <div
+                  className={`relative w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800 border-b border-zinc-200 dark:border-zinc-800 ${
+                    big ? 'aspect-[16/10] md:aspect-auto md:flex-1 md:min-h-[360px]' : 'aspect-[16/10]'
+                  }`}
+                >
                   <Image
-                    src={project.screenshots[0]}
-                    alt={t('home:featured.thumbnailAlt', { title: t(`projects:project.${project.slug}.title`, project.title) })}
+                    src={src}
+                    alt={t('home:featured.thumbnailAlt', { title })}
                     layout='fill'
                     objectFit='cover'
-                    sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
-                    className='transform group-hover:scale-105 transition-transform duration-500'
+                    objectPosition='center'
+                    sizes={big ? '(max-width: 768px) 100vw, 66vw' : '(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'}
+                    className='transition-transform duration-500 group-hover:scale-105'
                     priority={index === 0}
                   />
-                ) : (
-                  <Image
-                    src={project.image}
-                    alt={t('home:featured.thumbnailAlt', { title: t(`projects:project.${project.slug}.title`, project.title) })}
-                    layout='fill'
-                    objectFit='cover'
-                    sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
-                    className='transform group-hover:scale-105 transition-transform duration-500'
-                    priority={index === 0}
-                  />
-                )}
-              </div>
-              <div className='p-6 flex-1 flex flex-col'>
-                <h3 className='text-lg sm:text-xl font-semibold mb-2 group-hover:text-accent transition-colors'>
-                  {t(`projects:project.${project.slug}.title`, project.title)}
-                </h3>
-                <p className='text-zinc-600 dark:text-zinc-400 line-clamp-3 mb-4'>
-                  {t(`projects:project.${project.slug}.description`, project.description)}
-                </p>
-                <div className='flex flex-wrap gap-2 mt-auto'>
-                  {project.coreTools.slice(0, 3).map((tool) => (
-                    <span
-                      key={tool}
-                      className='text-xs font-medium pr-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full text-zinc-600 dark:text-zinc-300'
-                    >
-                      {tool}
-                    </span>
-                  ))}
-                  {project.coreTools.length > 3 && (
-                    <span className='text-xs font-medium px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full text-zinc-600 dark:text-zinc-300'>
-                      {t('home:featured.moreTools', { count: project.coreTools.length - 3 })}
-                    </span>
-                  )}
                 </div>
-              </div>
-            </a>
-          </Link>
-        ))}
+                <div className='p-6 flex gap-4 justify-between'>
+                  <div className='min-w-0'>
+                    <p className='text-xs text-zinc-500 dark:text-zinc-400 mb-1.5 truncate'>
+                      {project.coreTools.slice(0, 3).join(' · ')}
+                    </p>
+                    <h3
+                      className={`leading-snug group-hover:text-accent transition-colors ${big ? 'text-2xl md:text-3xl' : 'text-xl'}`}
+                    >
+                      {title}
+                    </h3>
+                    <p className={`mt-2 text-sm text-zinc-600 dark:text-zinc-400 ${big ? 'line-clamp-3' : 'line-clamp-2'}`}>
+                      {t(`projects:project.${project.slug}.description`, project.description)}
+                    </p>
+                  </div>
+                  <ArrowUpRight />
+                </div>
+              </a>
+            </Link>
+          );
+        })}
       </div>
 
-      <Link href='/projects'>
-        <a className='md:hidden inline-flex items-center justify-center gap-2 mt-6 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors' onClick={() => trackEvent('click', 'navigation', 'View All Projects')}>
-          {t('home:featured.viewAll')}
-          <svg
-            className='w-5 h-5'
-            fill='none'
-            stroke='currentColor'
-            viewBox='0 0 24 24'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth={2}
-              d='M17 8l4 4m0 0l-4 4m4-4H3'
-            />
-          </svg>
-        </a>
-      </Link>
+      <div className='mt-10 md:hidden'>{viewAll}</div>
     </section>
   );
 }

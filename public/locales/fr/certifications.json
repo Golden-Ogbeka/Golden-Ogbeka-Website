@@ -87,12 +87,12 @@
     "Renforce l'éligibilité aux postes de direction et de responsabilité, tel que reflété dans les référentiels de compétences du secteur.",
     "Donne accès à la communauté de pratique de la CIBN, aux programmes de CPD, au mentorat et aux réseaux professionnels."
   ],
-  "certification.2.benefit.intro": "Issued by the Council for Six Sigma Certification (C.S.S.C), this Yellow Belt certification builds on Lean Six Sigma fundamentals with practical tools for process improvement and project support.",
+  "certification.2.benefit.intro": "Délivrée par le Council for Six Sigma Certification (C.S.S.C), cette certification Yellow Belt approfondit les fondamentaux Lean Six Sigma avec des outils pratiques d’amélioration des processus et de soutien aux projets.",
   "certification.2.benefit.points": [
-    "Demonstrates understanding of Six Sigma roles, DMAIC methodology, and basic statistical tools.",
-    "Equips with practical techniques for identifying, measuring, and improving process inefficiencies.",
-    "Strengthens data-informed problem-solving applicable to software delivery and banking operations.",
-    "Builds a solid foundation to progress to Six Sigma Green Belt and Black Belt certifications."
+    "Démontre la compréhension des rôles Six Sigma, de la méthode DMAIC et des outils statistiques de base.",
+    "Apporte des techniques pratiques pour identifier, mesurer et réduire les inefficacités des processus.",
+    "Renforce la résolution de problèmes fondée sur les données, applicable à la livraison logicielle et aux opérations bancaires.",
+    "Pose des bases solides pour progresser vers les certifications Six Sigma Green Belt et Black Belt."
   ],
   "certification.4.benefit.intro": "Un diplôme de premier cycle en informatique avec mention First Class de Covenant University, fournissant une base académique solide pour une carrière en génie logiciel.",
   "certification.4.benefit.points": [
@@ -249,5 +249,17 @@
     "Covers core software engineering foundations: algorithms, data structures, databases, and systems design.",
     "Provides the theoretical grounding behind the technologies used in day-to-day engineering work.",
     "Meets the degree requirements for graduate roles and advanced study programmes."
+  ],
+  "inProgress": "En cours",
+  "count_one": "{{count}} qualification",
+  "count_other": "{{count}} qualifications",
+  "certification.25.title": "Six Sigma Green Belt Certification",
+  "certification.25.organization": "Council for Six Sigma Certification (C.S.S.C)",
+  "certification.25.benefit.intro": "La Green Belt du Council for Six Sigma Certification (C.S.S.C) qualifie pour piloter de bout en bout des projets d’amélioration Lean Six Sigma selon la méthode DMAIC.",
+  "certification.25.benefit.points": [
+    "Permet de piloter des projets d’amélioration, de définir le périmètre et les indicateurs de référence, et de gérer les parties prenantes tout au long du DMAIC.",
+    "Ajoute des outils statistiques comme les tests d’hypothèse, la régression et la capabilité des processus pour l’analyse des causes racines.",
+    "Renforce la gouvernance IT grâce à des plans de contrôle fondés sur les données pour la livraison logicielle et les opérations bancaires.",
+    "S’appuie directement sur la Yellow Belt et prépare au pilotage de programmes de niveau Black Belt."
   ]
 }

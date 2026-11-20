@@ -103,7 +103,7 @@ const Experiences: ExperienceType[] = [
       'Implemented engineering best practices including code reviews, collaborative development workflows, frontend optimization strategies, and maintainable architecture patterns.',
     ],
     companyLogo: A1Quest,
-    companyLink: 'https://a1quest.com',
+    // companyLink: 'https://a1quest.com', // Site unreachable (Nov 2026) — restore when back online
   },
   {
     role: 'Mobile Engineer',

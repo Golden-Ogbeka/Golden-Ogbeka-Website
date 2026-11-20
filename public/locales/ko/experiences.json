@@ -72,5 +72,8 @@
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.1": "Node.js 및 최신 웹 기술을 사용하여 백엔드 인프라, API, 실시간 시스템 및 클라우드 기반 애플리케이션 기능을 개발했습니다.",
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.2": "아키텍처, 개발, 배포, 모니터링, 유지보수 및 운영 지원을 포함한 전체 제품 라이프사이클을 관리했습니다.",
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.3": "일상적인 비즈니스 운영을 지원하는 인증 시스템, 결제 워크플로우, 서비스 통합 및 확장 가능한 플랫폼 기능을 구현했습니다.",
-  "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.4": "기술적 소유권, 기능 개발, 문제 해결 및 지속적인 플랫폼 개선을 통해 제품 성장에 기여했습니다."
+  "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.4": "기술적 소유권, 기능 개발, 문제 해결 및 지속적인 플랫폼 개선을 통해 제품 성장에 기여했습니다.",
+  "count": "경력 {{count}}건",
+  "titleHighlight": "경력",
+  "now": "현재"
 }

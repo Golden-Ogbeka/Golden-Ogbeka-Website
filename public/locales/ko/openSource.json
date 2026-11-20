@@ -98,5 +98,11 @@
   "Java-Web-Application-for-The-Chicken-Farm.name": "Poultry Store",
   "Java-Web-Application-for-The-Chicken-Farm.description": "재고 및 구매 워크플로우를 갖춘 가금류 제품 스토어를 위한 Java EE 웹 애플리케이션.",
   "Airline_Reservation_System_with_Java.name": "Airline Booking System",
-  "Airline_Reservation_System_with_Java.description": "항공편 예약 및 고객 예약 관리를 위한 Java 데스크톱 항공사 예약 시스템."
+  "Airline_Reservation_System_with_Java.description": "항공편 예약 및 고객 예약 관리를 위한 Java 데스크톱 항공사 예약 시스템.",
+  "count": "저장소 {{count}}개",
+  "titleHighlight": "오픈소스",
+  "stars": "스타",
+  "forks": "포크",
+  "clearFilter": "필터 지우기",
+  "mostUseful": "유용한 순"
 }

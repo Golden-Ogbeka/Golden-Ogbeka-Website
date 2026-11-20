@@ -725,5 +725,14 @@
   "project.testimonies-mobile.coreTools.5": "React Hook Form",
   "project.testimonies-mobile.coreTools.6": "Zod",
   "project.testimonies-mobile.coreTools.7": "Axios",
-  "project.testimonies-mobile.coreTools.8": "TypeScript"
+  "project.testimonies-mobile.coreTools.8": "TypeScript",
+  "count": "Проектов: {{count}}",
+  "titleHighlight": "проекты",
+  "thumbnailAlt": "Миниатюра: {{title}}",
+  "filterAll": "Все",
+  "filterLabel": "Фильтр по технологии",
+  "viewLabel": "Вид",
+  "viewIndex": "Список",
+  "viewGrid": "Сетка",
+  "noResults": "Пока нет проектов с этой технологией."
 }

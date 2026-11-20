@@ -5,6 +5,7 @@ import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
 import dynamic from 'next/dynamic';
 import VideoDemo from '../../components/pages/Project/VideoDemo';
+import RelatedProjects, { getRelatedProjects } from '../../components/pages/Project/RelatedProjects';
 
 const ImageGallery = dynamic(
   () => import('../../components/pages/Project/ImageGallery')
@@ -42,11 +43,12 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
         }}
       />
 
-      <article className='pt-24 sm:pt-28 md:pt-32 min-h-screen'>
+      <article className='pt-10 sm:pt-14 md:pt-16 min-h-screen'>
         <Link href='/projects'>
-          <a className='inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-8 transition-colors' onClick={() => trackEvent('click', 'navigation', 'Back to Projects')}>
+          <a className='group inline-flex items-center py-2 text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 mb-8 transition-colors rounded-sm' onClick={() => trackEvent('click', 'navigation', 'Back to Projects')}>
             <svg
-              className='w-4 h-4 mr-2'
+              className='w-4 h-4 mr-2 rtl:mr-0 rtl:ml-2 rtl:-scale-x-100 transition-transform group-hover:-translate-x-0.5'
+              aria-hidden='true'
               fill='none'
               stroke='currentColor'
               viewBox='0 0 24 24'
@@ -62,8 +64,8 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
           </a>
         </Link>
 
-        <header className='mb-10 md:mb-12 animate-fade-in-up'>
-          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-semibold mb-6'>
+        <header className='mb-12 md:mb-16 pb-10 md:pb-12 border-b border-zinc-200 dark:border-zinc-800 animate-fade-in-up'>
+          <h1 className='text-4xl sm:text-5xl md:text-6xl font-light leading-[1.05] tracking-tight mb-6 max-w-4xl'>
             {t(`projects:project.${project.slug}.title`, project.title)}
           </h1>
           <p className='text-base sm:text-lg md:text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl leading-relaxed'>
@@ -80,7 +82,8 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                 onClick={() => trackEvent('click', 'project_link', `${project.title} - Live Preview`)}
               >
                 <svg
-                  className='w-4 h-4 mr-2'
+                  aria-hidden='true'
+                  className='w-4 h-4 mr-2 rtl:mr-0 rtl:ml-2'
                   fill='none'
                   stroke='currentColor'
                   viewBox='0 0 24 24'
@@ -100,10 +103,10 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                 href={project.codeLink}
                 target='_blank'
                 rel='noreferrer'
-                className='inline-flex items-center px-5 py-2.5 minimal-card font-medium'
+                className='inline-flex items-center px-5 py-2.5 rounded-full border border-zinc-300 dark:border-zinc-700 font-medium hover:border-zinc-900 dark:hover:border-zinc-100 transition-colors'
                 onClick={() => trackEvent('click', 'project_link', `${project.title} - Code`)}
               >
-                <svg className='w-4 h-4 mr-2' fill='currentColor' viewBox='0 0 24 24'>
+                <svg className='w-4 h-4 mr-2 rtl:mr-0 rtl:ml-2' fill='currentColor' viewBox='0 0 24 24' aria-hidden='true'>
                   <path
                     fillRule='evenodd'
                     d='M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z'
@@ -118,7 +121,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                 href={project.designLink}
                 target='_blank'
                 rel='noreferrer'
-                className='inline-flex items-center px-5 py-2.5 minimal-card font-medium'
+                className='inline-flex items-center px-5 py-2.5 rounded-full border border-zinc-300 dark:border-zinc-700 font-medium hover:border-zinc-900 dark:hover:border-zinc-100 transition-colors'
                 onClick={() => trackEvent('click', 'project_link', `${project.title} - Design`)}
               >
                 {t('projectDetail.design')}
@@ -129,7 +132,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
                 href={project.apiLink}
                 target='_blank'
                 rel='noreferrer'
-                className='inline-flex items-center px-5 py-2.5 minimal-card font-medium'
+                className='inline-flex items-center px-5 py-2.5 rounded-full border border-zinc-300 dark:border-zinc-700 font-medium hover:border-zinc-900 dark:hover:border-zinc-100 transition-colors'
                 onClick={() => trackEvent('click', 'project_link', `${project.title} - API Docs`)}
               >
                 {t('projectDetail.apiDocs')}
@@ -144,12 +147,13 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
         >
           <div className='md:col-span-2 space-y-12'>
             <section>
-              <h2 className='text-xl sm:text-2xl font-display font-semibold mb-4'>{t('projectDetail.keyFeatures')}</h2>
-              <ul className='space-y-3'>
+              <h2 className='text-3xl font-light mb-6'>{t('projectDetail.keyFeatures')}</h2>
+              <ul className='border-t border-zinc-200 dark:border-zinc-800'>
                 {project.features.map((feature, idx) => (
-                  <li key={idx} className='flex items-start'>
+                  <li key={idx} className='flex items-start py-3.5 border-b border-zinc-200 dark:border-zinc-800'>
                     <svg
-                      className='w-5 h-5 text-zinc-400 mt-1 mr-3 shrink-0'
+                      aria-hidden='true'
+                      className='w-5 h-5 text-accent mt-0.5 mr-3 rtl:mr-0 rtl:ml-3 shrink-0'
                       fill='none'
                       stroke='currentColor'
                       viewBox='0 0 24 24'
@@ -169,13 +173,13 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
           </div>
 
           <aside className='space-y-8'>
-            <div className='p-6 minimal-card'>
-              <h3 className='text-base sm:text-lg font-semibold mb-4'>{t('projectDetail.coreTools')}</h3>
-              <div className='grid grid-cols-3 gap-5'>
+            <div className='p-6 soft-card'>
+              <h3 className='font-sans text-xs font-semibold uppercase tracking-[0.1em] text-accent mb-4'>{t('projectDetail.coreTools')}</h3>
+              <div className='flex flex-wrap gap-2'>
                 {project.coreTools.map((tool, idx) => (
                   <span
                     key={tool}
-                    className='bg-zinc-100 dark:bg-zinc-800 rounded-lg text-sm font-medium text-zinc-700 dark:text-zinc-300'
+                    className='px-3 py-1.5 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 rounded-full text-sm text-zinc-700 dark:text-zinc-300'
                   >
                     {t(`projects:project.${project.slug}.coreTools.${idx}`, tool)}
                   </span>
@@ -186,10 +190,15 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
         </div>
 
         {project.screenshots && project.screenshots.length > 0 && (
-          <ImageGallery screenshots={project.screenshots} projectName={project.title} />
+          <ImageGallery
+            screenshots={project.screenshots}
+            projectName={t(`projects:project.${project.slug}.title`, project.title)}
+          />
         )}
 
         <VideoDemo videoLink={project.videoDemoLink} />
+
+        <RelatedProjects currentSlug={project.slug} />
       </article>
     </AppLayout>
   );
@@ -221,10 +230,14 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   const common = loadNs('common');
   const projects = loadNs('projects');
 
-  // keep only the current project's keys
+  // Keep the current project's keys in full, plus title/description for the "More projects" cards.
+  // Must match what RelatedProjects renders, or their titles fall back to English.
   const prefix = `project.${project?.slug}.`;
+  const relatedKeys = new Set(
+    (project ? getRelatedProjects(project.slug) : []).flatMap((p) => [`project.${p.slug}.title`, `project.${p.slug}.description`])
+  );
   for (const key of Object.keys(projects)) {
-    if (key.startsWith('project.') && !key.startsWith(prefix)) {
+    if (key.startsWith('project.') && !key.startsWith(prefix) && !relatedKeys.has(key)) {
       delete projects[key];
     }
   }

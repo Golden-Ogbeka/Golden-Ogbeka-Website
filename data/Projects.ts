@@ -514,7 +514,7 @@ const Projects: ProjectType[] = [
     image: A1Quest1,
     featured: true,
     screenshots: [A1Quest1, A1Quest2, A1Quest3, A1Quest4, A1Quest5],
-    liveLink: 'https://a1quest.com/',
+    // liveLink: 'https://a1quest.com/', // Site unreachable (Nov 2026) — restore when back online
     videoDemoLink: 'https://www.youtube.com/watch?v=shcwNwKvGxk',
   },
   {
@@ -674,7 +674,7 @@ const Projects: ProjectType[] = [
     screenshots: [TFHWeb1, TFHWeb2, TFHWeb3, TFHWeb4, TFHWeb5, TFHWeb6, TFHWeb7, TFHWeb8],
     videoDemoLink: 'https://www.youtube.com/watch?v=_nPHEHTA67s',
     apiLink: 'https://documenter.getpostman.com/view/25358026/2s8ZDU5ivU',
-    liveLink: 'https://tfh-website.netlify.app/',
+    // liveLink: 'https://tfh-website.netlify.app/', // Returns 404 (Nov 2026) — restore with the new URL
     codeLink: 'https://github.com/Golden-Ogbeka/church-website',
   },
   {

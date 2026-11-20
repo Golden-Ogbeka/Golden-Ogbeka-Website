@@ -17,8 +17,12 @@
 - **Secondary**: CSS Modules only for complex reusable components (Tooltip, Alert, etc.).
 - Dark mode uses the `dark:` prefix — never write imperative dark mode logic in styles.
 - Use theme colors from `tailwind.config.js`: `primary`, `secondary`, `accent`, `darkBg`, `darkCard`, `darkText`, `lightBg`, `lightCard`, `lightText`.
-- Fonts: `font-sans` (Inter) for body, `font-display` (Outfit) for headings.
-- Available utility classes: `glass-panel`, `minimal-card`, `reveal`/`reveal.active`.
+- `accent` is a gold driven by the `--accent` CSS variable in `styles/globals.css` (light `#8C6414`, dark `#D4A84A`, both WCAG AA for text). Do not hardcode other accent colours. Text on `bg-accent` needs `text-white dark:text-darkBg`. Note `zinc-950` does not exist in Tailwind 3.1 — use `darkBg`.
+- Fonts: `font-sans` (Inter) for body, `font-display` (Fraunces serif) for headings. Headings use light/normal weight; emphasis is an italic gold word via `HighlightedText` (`.display-em`), not bold.
+- Font `@font-face` rules live in `pages/_document.tsx` and must be injected with `dangerouslySetInnerHTML` (React escapes quotes in `<style>` children, which silently breaks the fonts).
+- Available utility classes: `glass-panel`, `minimal-card` (white bordered card), `soft-card` (zinc-50 card), `reveal`/`reveal.active` (only hidden when `html.js` is set), `link-underline` (animated underline inside a `group`), `signal-bar`, `text-start`/`text-end` (logical alignment for RTL).
+- Reusable layout pieces: `SectionHeader` (homepage section title + optional action), `PageHeader` (inner page title), `ViewAllLink` (the standard "view all" link: label, count pill and arrow circle; render it in the header on desktop and below the section on mobile), `HighlightedText`.
+- Homepage order: Intro (hero + photo) → CareerSignal → StatementOfValue → ValuePillars → FeaturedProjects → ExperienceSection → OpenSourceSection → CertificationsSection (Education & certifications) → FeaturedBlogPosts. Homepage copy for the hero, ledger and pillars lives in `data/StatementOfValue.ts`, `data/ValuePillars.ts`, `data/CareerMilestones.ts` with translations in the `home` namespace.
 - Typography plugin (`@tailwindcss/typography`) is installed — use `prose prose-zinc dark:prose-invert` for rich text content (blog posts). Use `prose-lg` for larger body text.
 
 ### State Management
@@ -37,7 +41,7 @@
 - `invertCompanyLogoInDarkMode: true` adds `dark:invert` to the logo image (for dark logos that need to be inverted in dark mode).
 - Logo + company name are always wrapped in a single clickable `<a>` tag when `companyLink` exists, or a non-clickable `<div>` when it doesn't.
 - Company logos are stored in `public/images/Experiences/` — one PNG or JPEG per company.
-- Components: `ExperienceCard.tsx` in `components/layout/ExperienceCard/`, `ExperienceSection.tsx` in `components/pages/Home/`.
+- Components: `ExperienceSection.tsx` in `components/pages/Home/` (homepage rows) and `pages/experiences/index.tsx` (timeline). `ExperienceCard.tsx` in `components/layout/ExperienceCard/` is currently unused.
 - Page: `pages/experiences/index.tsx` (full listing).
 - Translation key pattern: `experience.{slugified-role}-{slugified-company}.{field}` (e.g., `experience.software-engineer-abbey-bank-plc.role`).
 - The `slugify()` and `slugifyCompany()` functions generate the key prefix from role and company names.
@@ -62,17 +66,18 @@
 ### Blog Section
 - Blog data lives in `data/BlogPosts.ts` — exports `BlogPostType[]` with `slug`, `category`, `image`, `ogImagePath`, `date`, and optional `featured`.
 - Featured blog subset lives in `data/FeaturedBlogPosts.ts` — exports the posts shown on the homepage.
-- Categories are: `tech`, `ai`, `tips`, `faith`. The `BlogCategory` type is exported from `data/BlogPosts.ts`.
+- Categories are: `ai`, `society`, `growth`, `family`, `faith`, `discipleship`, `love`. The `BlogCategory` type and the display order `BLOG_CATEGORIES` are exported from `data/BlogPosts.ts`. Adding a category means adding it there and its label (`blog:category.{id}`) in all 10 locales.
 - Blog post content (title, summary, paragraphs) lives entirely in the `blog` translation namespace (`public/locales/{locale}/blog.json`).
 - Translation key pattern for blog posts: `blog:post.{slug}.title`, `blog:post.{slug}.summary`, `blog:post.{slug}.paragraphs` (array).
 - Category labels: `blog:category.{category}` (e.g., `blog:category.tech`).
 - Page-level keys: `blog:page.title`, `blog:page.subtitle`, `blog:page.noPosts`.
 - The `paragraphs` key is an array of strings in translations, rendered with `mb-6 leading-relaxed` spacing.
-- Components: `BlogCard.tsx`, `BlogDetail.tsx`, `CategoryFilter.tsx`, `RelatedPosts.tsx` in `components/pages/Blog/`.
+- Components: `BlogCard.tsx`, `BlogDetail.tsx`, `RelatedPosts.tsx` in `components/pages/Blog/`. The blog and projects listings share `components/reusable/ListingToolbar` (filter rail + result count + grid/index switch; grid is the default) and `components/reusable/PreviewIndexList` (numbered index with hover preview).
 - Pages: `pages/blog/index.tsx` (listing with client-side category filter) and `pages/blog/[slug].tsx` (detail with `getStaticPaths`).
 - The blog detail page uses the same translation trimming pattern as project detail — only the current post's keys are kept in the i18n store.
 - Related posts: shown after blog content, prioritizes same-category posts, falls back to top 4 posts.
-- Featured blog posts on homepage use the same dynamic import + i18n cherry-picking pattern as featured projects.
+- Featured blog posts on homepage use the same i18n cherry-picking pattern as featured projects.
+- Related posts are chosen by `getRelatedPosts()` in `RelatedPosts.tsx`; `pages/blog/[slug].tsx` must use the same function so it keeps the right translation keys.
 
 ### Blog Post Images
 - Blog post images MUST be high quality but optimized for web. Follow these rules:

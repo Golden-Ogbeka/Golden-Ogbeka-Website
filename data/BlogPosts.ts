@@ -38,7 +38,10 @@ import godIsNotATeletubbyHero from '../public/images/Blog/god-is-not-a-teletubby
 import productOfImaginationHero from '../public/images/Blog/you-are-a-product-of-your-imagination/hero.webp';
 import greatestPrivilegeHero from '../public/images/Blog/the-greatest-privilege-given-to-man/hero.webp';
 
-export type BlogCategory = 'faith' | 'tech' | 'life';
+export type BlogCategory = 'ai' | 'society' | 'growth' | 'family' | 'faith' | 'discipleship' | 'love';
+
+/** Display order for category filters. Labels live in the blog namespace: blog:category.{id}. */
+export const BLOG_CATEGORIES: BlogCategory[] = ['ai', 'society', 'growth', 'family', 'faith', 'discipleship', 'love'];
 
 export interface BlogPostType {
   slug: string;
@@ -52,7 +55,7 @@ export interface BlogPostType {
 const BlogPosts: BlogPostType[] = [
   {
     slug: 'the-greatest-privilege-given-to-man',
-    category: 'life',
+    category: 'family',
     image: greatestPrivilegeHero,
     ogImagePath: '/images/Blog/the-greatest-privilege-given-to-man/hero.webp',
     date: '2026-11-19',
@@ -60,7 +63,7 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'you-are-a-product-of-your-imagination',
-    category: 'life',
+    category: 'growth',
     image: productOfImaginationHero,
     ogImagePath: '/images/Blog/you-are-a-product-of-your-imagination/hero.webp',
     date: '2026-10-13',
@@ -76,7 +79,7 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'the-myth-about-ai-for-businesses',
-    category: 'tech',
+    category: 'ai',
     image: mythBusinessHero,
     ogImagePath: '/images/Blog/the-myth-about-ai-for-businesses/hero.svg',
     date: '2026-05-28',
@@ -84,21 +87,21 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'the-myth-about-ai-for-individuals',
-    category: 'tech',
+    category: 'ai',
     image: mythIndividualHero,
     ogImagePath: '/images/Blog/the-myth-about-ai-for-individuals/hero.svg',
     date: '2026-06-01',
   },
   {
     slug: 'the-myth-about-ai-for-non-ai-users',
-    category: 'tech',
+    category: 'ai',
     image: mythNonAiHero,
     ogImagePath: '/images/Blog/the-myth-about-ai-for-non-ai-users/hero.svg',
     date: '2026-06-08',
   },
   {
     slug: 'africa-needs-more-creators',
-    category: 'tech',
+    category: 'society',
     image: africaHero,
     ogImagePath: '/images/Blog/africa-needs-more-creators/hero.svg',
     date: '2026-07-06',
@@ -106,14 +109,14 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'more-countries-need-to-be-like-canada',
-    category: 'tech',
+    category: 'society',
     image: canadaHero,
     ogImagePath: '/images/Blog/more-countries-need-to-be-like-canada/hero.svg',
     date: '2026-07-22',
   },
   {
     slug: 'do-the-difficult-things',
-    category: 'life',
+    category: 'growth',
     image: doDifficultHero,
     ogImagePath: '/images/Blog/do-the-difficult-things/hero.svg',
     date: '2026-07-23',
@@ -121,14 +124,14 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'become-part-of-the-solution',
-    category: 'life',
+    category: 'growth',
     image: becomePartOfSolutionHero,
     ogImagePath: '/images/Blog/become-part-of-the-solution/hero.svg',
     date: '2026-08-07',
   },
   {
     slug: 'the-force-of-freedom',
-    category: 'life',
+    category: 'growth',
     image: theForceOfFreedomHero,
     ogImagePath: '/images/Blog/the-force-of-freedom/hero.svg',
     date: '2026-08-25',
@@ -136,7 +139,7 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'the-beauty-in-chaos',
-    category: 'life',
+    category: 'society',
     image: beautyInChaosHero,
     ogImagePath: '/images/Blog/the-beauty-in-chaos/hero.webp',
     date: '2026-09-02',
@@ -144,14 +147,14 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'the-ai-shock',
-    category: 'tech',
+    category: 'ai',
     image: theAiShockHero,
     ogImagePath: '/images/Blog/the-ai-shock/hero.webp',
     date: '2026-09-04',
   },
   {
     slug: 'super-talented',
-    category: 'life',
+    category: 'growth',
     image: superTalentedHero,
     ogImagePath: '/images/Blog/super-talented/hero.webp',
     date: '2026-09-22',
@@ -166,14 +169,14 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'are-you-using-the-right-fuse',
-    category: 'faith',
+    category: 'love',
     image: rightFuseHero,
     ogImagePath: '/images/Blog/are-you-using-the-right-fuse/hero.webp',
     date: '2017-02-04',
   },
   {
     slug: 'are-we-still-here',
-    category: 'faith',
+    category: 'discipleship',
     image: areWeStillHereHero,
     ogImagePath: '/images/Blog/are-we-still-here/hero.webp',
     date: '2016-04-30',
@@ -194,63 +197,63 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'what-exactly-was-christs-commandment',
-    category: 'faith',
+    category: 'love',
     image: christsCommandmentHero,
     ogImagePath: '/images/Blog/what-exactly-was-christs-commandment/hero.webp',
     date: '2016-04-30',
   },
   {
     slug: 'it-is-not-just-about-you',
-    category: 'faith',
+    category: 'discipleship',
     image: notJustAboutYouHero,
     ogImagePath: '/images/Blog/it-is-not-just-about-you/hero.webp',
     date: '2016-04-30',
   },
   {
     slug: 'now-a-christian-what-next',
-    category: 'faith',
+    category: 'discipleship',
     image: nowAChristianHero,
     ogImagePath: '/images/Blog/now-a-christian-what-next/hero.webp',
     date: '2016-04-30',
   },
   {
     slug: 'why-were-you-saved',
-    category: 'faith',
+    category: 'discipleship',
     image: whyWereYouSavedHero,
     ogImagePath: '/images/Blog/why-were-you-saved/hero.webp',
     date: '2016-01-18',
   },
   {
     slug: 'what-do-you-do-before-your-manifestation',
-    category: 'faith',
+    category: 'discipleship',
     image: manifestationHero,
     ogImagePath: '/images/Blog/what-do-you-do-before-your-manifestation/hero.webp',
     date: '2016-01-18',
   },
   {
     slug: 'its-a-commandment',
-    category: 'faith',
+    category: 'discipleship',
     image: itsACommandmentHero,
     ogImagePath: '/images/Blog/its-a-commandment/hero.webp',
     date: '2015-11-09',
   },
   {
     slug: 'purpose-and-spirituality',
-    category: 'faith',
+    category: 'discipleship',
     image: purposeSpiritualityHero,
     ogImagePath: '/images/Blog/purpose-and-spirituality/hero.webp',
     date: '2015-11-09',
   },
   {
     slug: 'it-pays-to-serve-god',
-    category: 'faith',
+    category: 'discipleship',
     image: itPaysToServeGodHero,
     ogImagePath: '/images/Blog/it-pays-to-serve-god/hero.webp',
     date: '2015-10-18',
   },
   {
     slug: 'your-first-love',
-    category: 'faith',
+    category: 'discipleship',
     image: yourFirstLoveHero,
     ogImagePath: '/images/Blog/your-first-love/hero.webp',
     date: '2015-08-08',
@@ -264,7 +267,7 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'your-role-to-play-as-a-christian',
-    category: 'faith',
+    category: 'discipleship',
     image: yourRoleHero,
     ogImagePath: '/images/Blog/your-role-to-play-as-a-christian/hero.webp',
     date: '2015-04-23',
@@ -278,7 +281,7 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'its-a-summary',
-    category: 'faith',
+    category: 'love',
     image: itsASummaryHero,
     ogImagePath: '/images/Blog/its-a-summary/hero.webp',
     date: '2015-03-27',
@@ -299,7 +302,7 @@ const BlogPosts: BlogPostType[] = [
   },
   {
     slug: 'what-real-love-is-like',
-    category: 'faith',
+    category: 'love',
     image: realLoveHero,
     ogImagePath: '/images/Blog/what-real-love-is-like/hero.webp',
     date: '2015-02-20',

@@ -1,38 +1,36 @@
 import type { NextPage } from 'next';
-import dynamic from 'next/dynamic';
 import React from 'react';
 import AppLayout from '../components/layout/AppLayout';
 import HeadElement from '../components/layout/HeadElement';
-import SectionDivider from '../components/layout/SectionDivider';
 import Intro from '../components/pages/Home/Intro';
-
-const FeaturedProjects = dynamic(() => import('../components/pages/Home/FeaturedProjects'), { ssr: false });
+import CareerSignal from '../components/pages/Home/CareerSignal';
+import StatementOfValue from '../components/pages/Home/StatementOfValue';
+import ValuePillars from '../components/pages/Home/ValuePillars';
+import FeaturedProjects from '../components/pages/Home/FeaturedProjects';
+import ExperienceSection from '../components/pages/Home/ExperienceSection';
+import OpenSourceSection from '../components/pages/Home/OpenSourceSection';
+import CertificationsSection from '../components/pages/Home/CertificationsSection';
+import FeaturedBlogPosts from '../components/pages/Home/FeaturedBlogPosts';
 import { reveal } from '../functions/animation';
-
-const OpenSourceSection = dynamic(() => import('../components/pages/Home/OpenSourceSection'), { ssr: false });
-const ExperienceSection = dynamic(() => import('../components/pages/Home/ExperienceSection'), { ssr: false });
-const CertificationsSection = dynamic(() => import('../components/pages/Home/CertificationsSection'), { ssr: false });
-const FeaturedBlogPosts = dynamic(() => import('../components/pages/Home/FeaturedBlogPosts'), { ssr: false });
 
 const Home: NextPage = () => {
   React.useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', reveal);
-      reveal();
-    }
+    window.addEventListener('scroll', reveal, { passive: true });
+    reveal();
+    return () => window.removeEventListener('scroll', reveal);
   }, []);
+
   return (
     <AppLayout>
-      <HeadElement pageTitle='Golden Ogbeka | Senior Software Engineer' />
+      <HeadElement pageTitle='Golden Ogbeka | Senior Software Engineer · IT Governance & Technology Leadership' />
       <Intro />
+      <CareerSignal />
+      <StatementOfValue />
+      <ValuePillars />
       <FeaturedProjects />
-      <SectionDivider />
       <ExperienceSection />
-      <SectionDivider />
-      <CertificationsSection />
-      <SectionDivider />
       <OpenSourceSection />
-      <SectionDivider />
+      <CertificationsSection />
       <FeaturedBlogPosts />
     </AppLayout>
   );
@@ -42,7 +40,7 @@ export default Home;
 
 import FeaturedProjectsData from '../data/FeaturedProjects';
 import FeaturedBlogPostsData from '../data/FeaturedBlogPosts';
-import OpenSourceData from '../data/OpenSource';
+import OpenSourceData, { rankByUsefulness } from '../data/OpenSource';
 import ExperiencesData from '../data/Experiences';
 import CertificationsData from '../data/Certifications';
 
@@ -107,10 +105,8 @@ export async function getStaticProps({ locale }: { locale: string }) {
   }
   initialI18nStore[locale].projects = trimNs(projects, projectKeysToKeep);
 
-  // Top 8 open source repos (by stars+forks)
-  const topRepos = OpenSourceData.slice()
-    .sort((a, b) => (b.stars + b.forks) - (a.stars + a.forks))
-    .slice(0, 8);
+  // Top 8 open source repos — must match OpenSourceSection's ranking
+  const topRepos = rankByUsefulness(OpenSourceData).slice(0, 8);
   const topRepoIds = new Set(topRepos.map(r => r.id));
   const openSource = loadNamespace(locale, 'openSource');
   const openSourceKeysToKeep = new Set<string>();
@@ -167,18 +163,15 @@ export async function getStaticProps({ locale }: { locale: string }) {
   // Featured blog posts
   const featuredBlogSlugs = new Set(FeaturedBlogPostsData.map((p) => p.slug));
   const blog = loadNamespace(locale, 'blog');
-  const blogKeysToKeep = new Set<string>();
-  for (const key of Object.keys(blog)) {
-    if (key.startsWith('post.')) {
-      const keySlug = key.substring(5, key.indexOf('.', 5));
-      if (featuredBlogSlugs.has(keySlug)) {
-        blogKeysToKeep.add(key);
-      }
-    } else {
-      blogKeysToKeep.add(key);
+  // Posts are nested under `post`: keep only featured posts, and only the title and summary the homepage shows.
+  const allPosts = (blog.post || {}) as Record<string, { title?: string; summary?: string }>;
+  const featuredPosts: Record<string, { title?: string; summary?: string }> = {};
+  for (const slug of Object.keys(allPosts)) {
+    if (featuredBlogSlugs.has(slug)) {
+      featuredPosts[slug] = { title: allPosts[slug].title, summary: allPosts[slug].summary };
     }
   }
-  initialI18nStore[locale].blog = trimNs(blog, blogKeysToKeep);
+  initialI18nStore[locale].blog = { ...blog, post: featuredPosts };
 
   return {
     props: {

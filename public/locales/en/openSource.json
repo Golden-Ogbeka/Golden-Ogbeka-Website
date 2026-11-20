@@ -98,5 +98,12 @@
   "Java-Web-Application-for-The-Chicken-Farm.name": "Poultry Store",
   "Java-Web-Application-for-The-Chicken-Farm.description": "Java EE web application for a poultry product store with inventory and purchase workflows.",
   "Airline_Reservation_System_with_Java.name": "Airline Booking System",
-  "Airline_Reservation_System_with_Java.description": "Java desktop airline reservation system for booking flights and managing customer reservations."
+  "Airline_Reservation_System_with_Java.description": "Java desktop airline reservation system for booking flights and managing customer reservations.",
+  "stars": "stars",
+  "forks": "forks",
+  "clearFilter": "Clear filter",
+  "count_one": "{{count}} repository",
+  "count_other": "{{count}} repositories",
+  "titleHighlight": "Source",
+  "mostUseful": "Most useful"
 }

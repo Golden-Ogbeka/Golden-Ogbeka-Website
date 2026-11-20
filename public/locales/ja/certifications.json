@@ -76,12 +76,12 @@
     "業界のコンピテンシー基準に基づき、上級職・管理職への道が開かれます。",
     "CIBNのコミュニティ、CPDプログラム、メンターシップ、プロフェッショナルネットワークへのアクセスが得られます。"
   ],
-  "certification.2.benefit.intro": "Issued by the Council for Six Sigma Certification (C.S.S.C), this Yellow Belt certification builds on Lean Six Sigma fundamentals with practical tools for process improvement and project support.",
+  "certification.2.benefit.intro": "Council for Six Sigma Certification (C.S.S.C) が発行するこの Yellow Belt 認定は、Lean Six Sigma の基礎を踏まえ、プロセス改善とプロジェクト支援のための実践的なツールを身につけるものです。",
   "certification.2.benefit.points": [
-    "Demonstrates understanding of Six Sigma roles, DMAIC methodology, and basic statistical tools.",
-    "Equips with practical techniques for identifying, measuring, and improving process inefficiencies.",
-    "Strengthens data-informed problem-solving applicable to software delivery and banking operations.",
-    "Builds a solid foundation to progress to Six Sigma Green Belt and Black Belt certifications."
+    "Six Sigma の役割、DMAIC 手法、基本的な統計ツールへの理解を示します。",
+    "プロセスの非効率を特定・測定・改善するための実践的な手法を身につけます。",
+    "ソフトウェアデリバリーや銀行業務に活かせる、データに基づく問題解決力を高めます。",
+    "Six Sigma Green Belt や Black Belt 認定へ進むための確かな基盤を築きます。"
   ],
   "certification.4.benefit.intro": "Covenant Universityで取得したコンピューターサイエンス優等学士号は、ソフトウェアエンジニアとしての強固な学術基盤を提供します。",
   "certification.4.benefit.points": [
@@ -249,5 +249,16 @@
     "Covers core software engineering foundations: algorithms, data structures, databases, and systems design.",
     "Provides the theoretical grounding behind the technologies used in day-to-day engineering work.",
     "Meets the degree requirements for graduate roles and advanced study programmes."
+  ],
+  "inProgress": "履修中",
+  "count": "{{count}} 件の資格",
+  "certification.25.title": "Six Sigma Green Belt Certification",
+  "certification.25.organization": "Council for Six Sigma Certification (C.S.S.C)",
+  "certification.25.benefit.intro": "Council for Six Sigma Certification (C.S.S.C) の Green Belt は、DMAIC 手法を用いて Lean Six Sigma の改善プロジェクトを一貫して率いる資格です。",
+  "certification.25.benefit.points": [
+    "改善プロジェクトを率い、範囲と基準指標を定め、DMAIC を通じて関係者をマネジメントできるようになります。",
+    "仮説検定、回帰分析、工程能力などの統計手法を根本原因分析に活用できます。",
+    "データに基づく管理計画により、ソフトウェアデリバリーと銀行業務の IT ガバナンスを強化します。",
+    "Yellow Belt を土台に、Black Belt レベルのプログラムリーダーシップへの準備となります。"
   ]
 }

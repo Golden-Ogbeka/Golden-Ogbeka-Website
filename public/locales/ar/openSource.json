@@ -98,5 +98,11 @@
   "Java-Web-Application-for-The-Chicken-Farm.name": "متجر الدواجن",
   "Java-Web-Application-for-The-Chicken-Farm.description": "تطبيق ويب Java EE لمتجر منتجات الدواجن مع سير عمل المخزون والشراء.",
   "Airline_Reservation_System_with_Java.name": "نظام حجز الطيران",
-  "Airline_Reservation_System_with_Java.description": "نظام حجز طيران سطح مكتب Java لحجز الرحلات وإدارة حجوزات العملاء."
+  "Airline_Reservation_System_with_Java.description": "نظام حجز طيران سطح مكتب Java لحجز الرحلات وإدارة حجوزات العملاء.",
+  "count": "عدد المستودعات: {{count}}",
+  "titleHighlight": "المفتوحة",
+  "stars": "نجوم",
+  "forks": "نسخ متفرعة",
+  "clearFilter": "مسح عامل التصفية",
+  "mostUseful": "الأكثر فائدة"
 }

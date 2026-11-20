@@ -72,5 +72,8 @@
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.1": "Node.jsと最新のWebテクノロジーを使用して、バックエンドインフラストラクチャ、API、リアルタイムシステム、クラウドベースのアプリケーション機能を開発",
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.2": "アーキテクチャ、開発、デプロイ、監視、保守、運用サポートを含むプロダクトライフサイクル全体を管理",
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.3": "認証システム、支払いワークフロー、サービス統合、日々のビジネス運営をサポートするスケーラブルなプラットフォーム機能を実装",
-  "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.4": "技術的オーナーシップ、機能開発、トラブルシューティング、継続的なプラットフォーム改善を通じてプロダクト成長に貢献"
+  "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.4": "技術的オーナーシップ、機能開発、トラブルシューティング、継続的なプラットフォーム改善を通じてプロダクト成長に貢献",
+  "count": "{{count}} 件の職歴",
+  "titleHighlight": "経歴",
+  "now": "現在"
 }

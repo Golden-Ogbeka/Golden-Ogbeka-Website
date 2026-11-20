@@ -76,12 +76,12 @@
     "大幅提升获得高级和管理职位的资格，符合行业能力框架要求。",
     "可加入CIBN专业社区、CPD项目、导师计划和专业人脉网络。"
   ],
-  "certification.2.benefit.intro": "Issued by the Council for Six Sigma Certification (C.S.S.C), this Yellow Belt certification builds on Lean Six Sigma fundamentals with practical tools for process improvement and project support.",
+  "certification.2.benefit.intro": "该 Yellow Belt 认证由 Council for Six Sigma Certification (C.S.S.C) 颁发，在 Lean Six Sigma 基础之上，提供流程改进和项目支持的实用工具。",
   "certification.2.benefit.points": [
-    "Demonstrates understanding of Six Sigma roles, DMAIC methodology, and basic statistical tools.",
-    "Equips with practical techniques for identifying, measuring, and improving process inefficiencies.",
-    "Strengthens data-informed problem-solving applicable to software delivery and banking operations.",
-    "Builds a solid foundation to progress to Six Sigma Green Belt and Black Belt certifications."
+    "证明对 Six Sigma 角色、DMAIC 方法和基础统计工具的理解。",
+    "掌握识别、衡量和改进流程低效环节的实用技术。",
+    "加强以数据为依据的问题解决能力，适用于软件交付和银行运营。",
+    "为进阶 Six Sigma Green Belt 和 Black Belt 认证打下坚实基础。"
   ],
   "certification.4.benefit.intro": "Covenant University颁发的计算机科学一级荣誉学士学位，为软件工程职业生涯奠定坚实的学术基础。",
   "certification.4.benefit.points": [
@@ -249,5 +249,16 @@
     "Covers core software engineering foundations: algorithms, data structures, databases, and systems design.",
     "Provides the theoretical grounding behind the technologies used in day-to-day engineering work.",
     "Meets the degree requirements for graduate roles and advanced study programmes."
+  ],
+  "inProgress": "进行中",
+  "count": "共 {{count}} 项资质",
+  "certification.25.title": "Six Sigma Green Belt Certification",
+  "certification.25.organization": "Council for Six Sigma Certification (C.S.S.C)",
+  "certification.25.benefit.intro": "Council for Six Sigma Certification (C.S.S.C) 颁发的 Green Belt 认证，使持证人能够运用 DMAIC 方法端到端地领导 Lean Six Sigma 改进项目。",
+  "certification.25.benefit.points": [
+    "能够领导改进项目、界定范围和基线指标，并在 DMAIC 全过程中管理相关方。",
+    "增加假设检验、回归分析和过程能力等统计工具，用于根因分析。",
+    "以数据驱动的控制计划加强软件交付和银行运营中的 IT 治理。",
+    "直接建立在 Yellow Belt 之上，为 Black Belt 级别的项目群领导做好准备。"
   ]
 }

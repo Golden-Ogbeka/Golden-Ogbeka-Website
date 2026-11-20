@@ -1,33 +1,31 @@
-import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 import { trackEvent } from '../../../utils/analytics';
 
-function ContactCard({
-	text,
-	icon,
-	href,
-	invertIcon,
-}: {
-	text: string;
-	icon: StaticImageData;
-	href: string;
-	invertIcon?: boolean;
-}) {
-	return (
-		<a
-			className='col-span-2 w-full border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 rounded-lg h-12 flex justify-center items-center gap-3 hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:text-zinc-900 dark:hover:text-white focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-lightBg dark:focus-visible:ring-offset-darkBg transition-colors duration-200 group'
-			href={href}
-			target='_blank'
-			rel='noreferrer'
-			aria-label={text}
-			onClick={() => trackEvent('click', 'contact', text)}
-		>
-			<div className={`contactCardImage items-center flex`} aria-hidden='true'>
-				<Image src={icon} alt='' className='invert dark:invert-0' />
-			</div>
-			<span>{text}</span>
-		</a>
-	);
+function ContactCard({ text, value, href }: { text: string; value: string; href: string }) {
+  const external = href.startsWith('http');
+  return (
+    <a
+      className='group flex items-center justify-between gap-4 py-4 border-b border-zinc-200 dark:border-zinc-800 rounded-sm'
+      href={href}
+      target={external ? '_blank' : undefined}
+      rel='noreferrer'
+      onClick={() => trackEvent('click', 'contact', text)}
+    >
+      <span className='text-zinc-900 dark:text-zinc-100'>{text}</span>
+      <span className='flex items-center gap-3 text-sm text-zinc-500 dark:text-zinc-400 group-hover:text-accent transition-colors'>
+        <span className='link-underline' dir='ltr'>{value}</span>
+        <svg
+          className='w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 rtl:-scale-x-100'
+          fill='none'
+          stroke='currentColor'
+          viewBox='0 0 24 24'
+          aria-hidden='true'
+        >
+          <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M7 17 17 7M9 7h8v8' />
+        </svg>
+      </span>
+    </a>
+  );
 }
 
 export default ContactCard;
