@@ -50,5 +50,7 @@
   "a11y.pauseSlideshow": "슬라이드쇼 일시정지",
   "a11y.playSlideshow": "슬라이드쇼 재생",
   "a11y.expandImage": "전체 화면으로 보기",
-  "a11y.showSlide": "스크린샷 {{number}} 보기"
+  "a11y.showSlide": "스크린샷 {{number}} 보기",
+  "projectDetail.moreProjects": "더 많은 프로젝트",
+  "projectDetail.viewAllProjects": "모든 프로젝트 보기"
 }

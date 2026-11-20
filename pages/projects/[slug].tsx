@@ -5,6 +5,7 @@ import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
 import dynamic from 'next/dynamic';
 import VideoDemo from '../../components/pages/Project/VideoDemo';
+import RelatedProjects, { getRelatedProjects } from '../../components/pages/Project/RelatedProjects';
 
 const ImageGallery = dynamic(
   () => import('../../components/pages/Project/ImageGallery')
@@ -196,6 +197,8 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
         )}
 
         <VideoDemo videoLink={project.videoDemoLink} />
+
+        <RelatedProjects currentSlug={project.slug} />
       </article>
     </AppLayout>
   );
@@ -227,10 +230,14 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   const common = loadNs('common');
   const projects = loadNs('projects');
 
-  // keep only the current project's keys
+  // Keep the current project's keys in full, plus title/description for the "More projects" cards.
+  // Must match what RelatedProjects renders, or their titles fall back to English.
   const prefix = `project.${project?.slug}.`;
+  const relatedKeys = new Set(
+    (project ? getRelatedProjects(project.slug) : []).flatMap((p) => [`project.${p.slug}.title`, `project.${p.slug}.description`])
+  );
   for (const key of Object.keys(projects)) {
-    if (key.startsWith('project.') && !key.startsWith(prefix)) {
+    if (key.startsWith('project.') && !key.startsWith(prefix) && !relatedKeys.has(key)) {
       delete projects[key];
     }
   }

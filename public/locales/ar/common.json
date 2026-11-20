@@ -50,5 +50,7 @@
   "a11y.pauseSlideshow": "إيقاف عرض الشرائح مؤقتًا",
   "a11y.playSlideshow": "تشغيل عرض الشرائح",
   "a11y.expandImage": "عرض بملء الشاشة",
-  "a11y.showSlide": "عرض لقطة الشاشة {{number}}"
+  "a11y.showSlide": "عرض لقطة الشاشة {{number}}",
+  "projectDetail.moreProjects": "مشاريع أخرى",
+  "projectDetail.viewAllProjects": "عرض جميع المشاريع"
 }

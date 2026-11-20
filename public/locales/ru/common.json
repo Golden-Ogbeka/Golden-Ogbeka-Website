@@ -50,5 +50,7 @@
   "a11y.pauseSlideshow": "Приостановить слайд-шоу",
   "a11y.playSlideshow": "Запустить слайд-шоу",
   "a11y.expandImage": "Открыть на весь экран",
-  "a11y.showSlide": "Показать скриншот {{number}}"
+  "a11y.showSlide": "Показать скриншот {{number}}",
+  "projectDetail.moreProjects": "Другие проекты",
+  "projectDetail.viewAllProjects": "Все проекты"
 }

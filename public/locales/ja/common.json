@@ -50,5 +50,7 @@
   "a11y.pauseSlideshow": "スライドショーを一時停止",
   "a11y.playSlideshow": "スライドショーを再生",
   "a11y.expandImage": "全画面で表示",
-  "a11y.showSlide": "スクリーンショット {{number}} を表示"
+  "a11y.showSlide": "スクリーンショット {{number}} を表示",
+  "projectDetail.moreProjects": "その他のプロジェクト",
+  "projectDetail.viewAllProjects": "すべてのプロジェクトを見る"
 }

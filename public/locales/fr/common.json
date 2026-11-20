@@ -50,5 +50,7 @@
   "a11y.pauseSlideshow": "Mettre le diaporama en pause",
   "a11y.playSlideshow": "Lancer le diaporama",
   "a11y.expandImage": "Afficher en plein écran",
-  "a11y.showSlide": "Afficher la capture {{number}}"
+  "a11y.showSlide": "Afficher la capture {{number}}",
+  "projectDetail.moreProjects": "Autres projets",
+  "projectDetail.viewAllProjects": "Voir tous les projets"
 }

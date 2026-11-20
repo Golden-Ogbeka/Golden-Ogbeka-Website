@@ -50,5 +50,7 @@
   "a11y.pauseSlideshow": "Pause slideshow",
   "a11y.playSlideshow": "Play slideshow",
   "a11y.expandImage": "View full screen",
-  "a11y.showSlide": "Show screenshot {{number}}"
+  "a11y.showSlide": "Show screenshot {{number}}",
+  "projectDetail.moreProjects": "More projects",
+  "projectDetail.viewAllProjects": "View all projects"
 }

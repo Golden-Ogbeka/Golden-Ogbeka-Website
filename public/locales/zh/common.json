@@ -50,5 +50,7 @@
   "a11y.pauseSlideshow": "暂停幻灯片",
   "a11y.playSlideshow": "播放幻灯片",
   "a11y.expandImage": "全屏查看",
-  "a11y.showSlide": "显示第 {{number}} 张截图"
+  "a11y.showSlide": "显示第 {{number}} 张截图",
+  "projectDetail.moreProjects": "更多项目",
+  "projectDetail.viewAllProjects": "查看全部项目"
 }

@@ -50,5 +50,7 @@
   "a11y.pauseSlideshow": "Diashow anhalten",
   "a11y.playSlideshow": "Diashow abspielen",
   "a11y.expandImage": "Im Vollbild ansehen",
-  "a11y.showSlide": "Screenshot {{number}} anzeigen"
+  "a11y.showSlide": "Screenshot {{number}} anzeigen",
+  "projectDetail.moreProjects": "Weitere Projekte",
+  "projectDetail.viewAllProjects": "Alle Projekte ansehen"
 }

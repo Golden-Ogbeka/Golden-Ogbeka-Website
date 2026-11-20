@@ -50,5 +50,7 @@
   "a11y.pauseSlideshow": "Pausar presentación",
   "a11y.playSlideshow": "Reproducir presentación",
   "a11y.expandImage": "Ver en pantalla completa",
-  "a11y.showSlide": "Mostrar captura {{number}}"
+  "a11y.showSlide": "Mostrar captura {{number}}",
+  "projectDetail.moreProjects": "Más proyectos",
+  "projectDetail.viewAllProjects": "Ver todos los proyectos"
 }
