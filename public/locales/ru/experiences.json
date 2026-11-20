@@ -72,5 +72,8 @@
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.1": "Разработка бэкенд-инфраструктуры, API, систем реального времени и облачных функций с использованием Node.js",
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.2": "Управление полным жизненным циклом продукта, включая архитектуру, разработку, развёртывание и мониторинг",
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.3": "Внедрение систем аутентификации, платёжных процессов и масштабируемых функций платформы для повседневных бизнес-операций",
-  "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.4": "Вклад в рост продукта через техническое владение, разработку функций и непрерывное улучшение платформы"
+  "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.4": "Вклад в рост продукта через техническое владение, разработку функций и непрерывное улучшение платформы",
+  "count": "Должностей: {{count}}",
+  "titleHighlight": "опыт",
+  "now": "Сейчас"
 }

@@ -20,7 +20,7 @@ const personSchema = {
     'https://github.com/Golden-Ogbeka',
   ],
   description:
-    'Senior Software Engineer creating scalable products at the intersection of technology and innovation.',
+    'Senior Software Engineer focused on IT governance and technology leadership, building secure, well-governed banking software.',
 };
 
 const websiteSchema = {
@@ -29,7 +29,7 @@ const websiteSchema = {
   url: SITE_URL,
   name: 'Golden Ogbeka',
   description:
-    'Senior Software Engineer creating scalable products at the intersection of technology and innovation.',
+    'Senior Software Engineer focused on IT governance and technology leadership, building secure, well-governed banking software.',
   potentialAction: {
     '@type': 'SearchAction',
     target: {
@@ -55,7 +55,7 @@ interface SoftwareApplicationSchema {
 
 function HeadElement({
   pageTitle = 'Golden Ogbeka | Senior Software Engineer',
-  description = 'Senior Software Engineer creating scalable products at the intersection of technology and innovation.',
+  description = 'Senior Software Engineer focused on IT governance and technology leadership, building secure, well-governed banking software.',
   noIndex = false,
   siteLink = SITE_URL,
   ogImage = '/og-image.png',
@@ -133,7 +133,9 @@ function HeadElement({
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <meta name='theme-color' content='#000000' />
       <meta name='google' content='notranslate' />
-      <link rel='icon' href='/favicon.ico' />
+      <link rel='icon' href='/favicon.ico' sizes='any' />
+      <link rel='icon' type='image/png' sizes='32x32' href='/icons/favicon-32.png' />
+      <link rel='apple-touch-icon' href='/icons/apple-touch-icon.png' />
       <meta name='author' content='Golden Ogbeka' />
 
       {/* Primary SEO Tags */}

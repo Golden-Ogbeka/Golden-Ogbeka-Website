@@ -72,5 +72,8 @@
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.1": "使用Node.js和现代Web技术开发后端基础设施、API、实时系统和基于云的应用功能。",
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.2": "管理整个产品生命周期，包括架构、开发、部署、监控、维护和运营支持。",
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.3": "实施认证系统、支付工作流、服务集成和可扩展平台功能，支持日常业务运营。",
-  "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.4": "通过技术所有权、功能开发、故障排除和持续平台改进为产品增长做出贡献。"
+  "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.4": "通过技术所有权、功能开发、故障排除和持续平台改进为产品增长做出贡献。",
+  "count": "共 {{count}} 段经历",
+  "titleHighlight": "经历",
+  "now": "当前"
 }

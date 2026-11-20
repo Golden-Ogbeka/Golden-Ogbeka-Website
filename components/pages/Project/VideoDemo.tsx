@@ -26,7 +26,7 @@ export default function VideoDemo({ videoLink }: VideoDemoProps) {
 
   return (
     <div className="mt-10 mb-6 md:mt-16 md:mb-8">
-      <h2 className="text-xl sm:text-2xl font-display font-semibold mb-6">{t('projectDetail.videoDemo')}</h2>
+      <h2 className="text-3xl font-light mb-6">{t('projectDetail.videoDemo')}</h2>
       
       {embedUrl ? (
         <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-800 shadow-lg">

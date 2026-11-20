@@ -725,5 +725,14 @@
   "project.testimonies-mobile.coreTools.5": "React Hook Form",
   "project.testimonies-mobile.coreTools.6": "Zod",
   "project.testimonies-mobile.coreTools.7": "Axios",
-  "project.testimonies-mobile.coreTools.8": "TypeScript"
+  "project.testimonies-mobile.coreTools.8": "TypeScript",
+  "count": "共 {{count}} 个项目",
+  "titleHighlight": "项目",
+  "thumbnailAlt": "{{title}} 缩略图",
+  "filterAll": "全部",
+  "filterLabel": "按技术筛选",
+  "viewLabel": "布局",
+  "viewIndex": "索引",
+  "viewGrid": "网格",
+  "noResults": "暂无使用该技术的项目。"
 }

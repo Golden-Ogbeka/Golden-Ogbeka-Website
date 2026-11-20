@@ -1,5 +1,6 @@
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
+import PageHeader from '../../components/reusable/PageHeader/PageHeader';
 import Image from 'next/image';
 import ExperiencesData from '../../data/Experiences';
 import { useTranslation } from 'next-i18next';
@@ -29,86 +30,82 @@ export default function Experiences() {
           { name: t('common:nav.experience'), url: '/experiences' },
         ]}
       />
-      <div className='pt-24 sm:pt-28 md:pt-32 pb-12 md:pb-20 min-h-screen'>
-        <div className='mb-8 sm:mb-16 animate-fade-in-up'>
-          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-semibold mb-4'>
-            {t('experiences:title')}
-          </h1>
-          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg max-w-2xl'>
-            {t('experiences:subtitle')}
-          </p>
-        </div>
+      <div className='min-h-screen'>
+        <PageHeader
+          eyebrow={t('experiences:count', { count: ExperiencesData.length })}
+          title={t('experiences:title')}
+          highlight={t('experiences:titleHighlight')}
+          subtitle={t('experiences:subtitle')}
+        />
 
-        <div className='space-y-12'>
-          {ExperiencesData.map((exp, index) => (
-            <article
-              key={index}
-              className='minimal-card p-8 animate-fade-in-up'
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className='flex flex-col md:flex-row md:items-start gap-6'>
-                <div className='flex-1'>
-                  <div className='flex flex-col md:flex-row md:items-center justify-between mb-2'>
-                    <h2 className='text-xl sm:text-2xl font-semibold'>{t(`experiences:experience.${getExpKey(exp.role, exp.company)}.role`, exp.role)}</h2>
-                    <span className='text-sm font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded-full mt-2 md:mt-0 inline-block w-max'>
-                      {exp.date}
+        <ol>
+          {ExperiencesData.map((exp, index) => {
+            const key = getExpKey(exp.role, exp.company);
+            const company = t(`experiences:experience.${key}.company`, exp.company);
+            const isCurrent = /present/i.test(exp.date);
+            const logo = (
+              <span
+                className={`relative w-10 h-10 shrink-0 rounded-lg overflow-hidden flex items-center justify-center ${
+                  exp.logoDarkBackground ? 'bg-zinc-800' : 'bg-zinc-100 dark:bg-zinc-800'
+                }`}
+              >
+                <Image
+                  src={exp.companyLogo}
+                  alt=''
+                  width={40}
+                  height={40}
+                  className={`object-contain ${exp.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
+                />
+              </span>
+            );
+            return (
+              <li
+                key={index}
+                className='grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12 py-10 border-b border-zinc-200 dark:border-zinc-800 first:pt-0 animate-fade-in-up'
+                style={{ animationDelay: `${Math.min(index, 6) * 0.06}s` }}
+              >
+                <div className='md:pt-2'>
+                  <p className='text-sm text-zinc-500 dark:text-zinc-400 tabular-nums'>{exp.date}</p>
+                  {isCurrent && (
+                    <span className='inline-block mt-2 text-[11px] font-semibold uppercase tracking-wide text-accent border border-accent rounded-full px-2 py-0.5'>
+                      {t('experiences:now')}
                     </span>
-                  </div>
-                  <div className='mb-6'>
-                    <div className='flex items-center gap-3'>
-                      {exp.companyLink ? (
-                        <a
-                          href={exp.companyLink}
-                          target='_blank'
-                          rel='noreferrer'
-                          className='flex items-center gap-3 text-sm sm:text-base md:text-lg text-zinc-600 dark:text-zinc-400 hover:text-accent transition-colors font-medium'
-                          onClick={() => trackEvent('click', 'company_link', exp.company)}
-                        >
-                          <div className={`relative w-10 h-10 shrink-0 rounded-lg overflow-hidden flex items-center justify-center ${exp.logoDarkBackground ? 'bg-zinc-800' : 'bg-zinc-100 dark:bg-zinc-800'}`}>
-                            <Image
-                              src={exp.companyLogo}
-                              alt={exp.company}
-                              width={40}
-                              height={40}
-                              className={`object-contain ${exp.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
-                            />
-                          </div>
-                          {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}
-                        </a>
-                      ) : (
-                        <>
-                          <div className={`relative w-10 h-10 shrink-0 rounded-lg overflow-hidden flex items-center justify-center ${exp.logoDarkBackground ? 'bg-zinc-800' : 'bg-zinc-100 dark:bg-zinc-800'}`}>
-                            <Image
-                              src={exp.companyLogo}
-                              alt={exp.company}
-                              width={40}
-                              height={40}
-                              className={`object-contain ${exp.invertCompanyLogoInDarkMode ? 'dark:invert' : ''}`}
-                            />
-                          </div>
-                          <span className='text-sm sm:text-base md:text-lg text-zinc-600 dark:text-zinc-400 font-medium'>
-                            {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.company`, exp.company)}
-                          </span>
-                        </>
-                      )}
+                  )}
+                </div>
+                <article>
+                  <h2 className='text-3xl leading-tight'>{t(`experiences:experience.${key}.role`, exp.role)}</h2>
+                  {exp.companyLink ? (
+                    <a
+                      href={exp.companyLink}
+                      target='_blank'
+                      rel='noreferrer'
+                      className='mt-3 inline-flex items-center gap-3 text-zinc-600 dark:text-zinc-400 hover:text-accent transition-colors rounded-md'
+                      onClick={() => trackEvent('click', 'company_link', exp.company)}
+                    >
+                      {logo}
+                      {company}
+                    </a>
+                  ) : (
+                    <div className='mt-3 inline-flex items-center gap-3 text-zinc-600 dark:text-zinc-400'>
+                      {logo}
+                      {company}
                     </div>
-                  </div>
-
-                  <ul className='space-y-3'>
+                  )}
+                  <ul className='mt-6 space-y-3'>
                     {exp.tasksAchieved.map((task, idx) => (
-                      <li key={idx} className='flex items-start'>
-                        <span className='w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-600 mt-2 mr-3 shrink-0'></span>
+                      <li key={idx} className='flex items-start gap-3'>
+                        <span aria-hidden='true' className='w-1.5 h-1.5 rounded-full bg-accent mt-2.5 shrink-0'></span>
                         <span className='text-zinc-700 dark:text-zinc-300 leading-relaxed'>
-                          {t(`experiences:experience.${getExpKey(exp.role, exp.company)}.tasks.${idx}`, task)}
+                          {t(`experiences:experience.${key}.tasks.${idx}`, task)}
                         </span>
                       </li>
                     ))}
                   </ul>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
+                </article>
+              </li>
+            );
+          })}
+        </ol>
       </div>
     </AppLayout>
   );

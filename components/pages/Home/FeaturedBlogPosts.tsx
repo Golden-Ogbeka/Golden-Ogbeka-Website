@@ -1,113 +1,76 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import FeaturedBlogPostsData from '../../../data/FeaturedBlogPosts';
+import BlogPosts from '../../../data/BlogPosts';
 import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../../utils/analytics';
+import SectionHeader from '../../reusable/SectionHeader/SectionHeader';
+import ViewAllLink from '../../reusable/ViewAllLink/ViewAllLink';
 
 export default function FeaturedBlogPosts() {
   const { t } = useTranslation(['common', 'home', 'blog']);
+  const { locale } = useRouter();
+
+  const viewAll = (
+    <ViewAllLink href='/blog' label={t('home:featuredBlog.viewAll')} count={BlogPosts.length} trackLabel='View All Blog Posts' />
+  );
 
   return (
-    <section className='py-12 sm:py-16 md:py-20'>
-      <div className='flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12'>
-        <div className='max-w-2xl'>
-          <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-semibold mb-4'>
-            {t('home:featuredBlog.title')}
-          </h2>
-          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg'>
-            {t('home:featuredBlog.subtitle')}
-          </p>
-        </div>
-        <Link href='/blog'>
-          <a
-            className='hidden md:inline-flex justify-center mt-6 md:mt-0 items-center gap-2 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors'
-            onClick={() => trackEvent('click', 'navigation', 'View All Blog Posts')}
-          >
-            {t('home:featuredBlog.viewAll')}
-            <svg
-              className='w-5 h-5'
-              fill='none'
-              stroke='currentColor'
-              viewBox='0 0 24 24'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M17 8l4 4m0 0l-4 4m4-4H3'
-              />
-            </svg>
-          </a>
-        </Link>
-      </div>
+    <section aria-labelledby='notes-title' className='reveal pt-24 md:pt-32'>
+      <SectionHeader
+        id='notes-title'
+        title={t('home:featuredBlog.title')}
+        highlight={t('home:featuredBlog.highlight')}
+        subtitle={t('home:featuredBlog.subtitle')}
+        action={viewAll}
+      />
 
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8'>
-        {FeaturedBlogPostsData.map((post, index) => (
-          <Link key={post.slug} href={`/blog/${post.slug}`}>
-            <a
-              className='minimal-card flex flex-col group overflow-hidden'
-              onClick={() => trackEvent('click', 'featured_blog_card', post.slug)}
-            >
-              <div className='relative w-full aspect-video bg-zinc-200 dark:bg-zinc-800 overflow-hidden'>
-                <Image
-                  src={post.image}
-                  alt={t(`blog:post.${post.slug}.title`, post.slug)}
-                  layout='fill'
-                  objectFit='cover'
-                  sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
-                  className='transform group-hover:scale-105 transition-transform duration-500'
-                  priority={index === 0}
-                />
-                <span className='absolute top-3 left-3 px-3 py-1 text-xs font-semibold rounded-full bg-accent text-white'>
-                  {t(`blog:category.${post.category}`)}
-                </span>
-              </div>
-              <div className='p-6 flex-1 flex flex-col'>
-                <h3 className='text-lg sm:text-xl font-semibold mb-2 group-hover:text-accent transition-colors'>
-                  {t(`blog:post.${post.slug}.title`, post.slug)}
-                </h3>
-                <p className='text-zinc-600 dark:text-zinc-400 line-clamp-2 mb-4 text-sm'>
-                  {t(`blog:post.${post.slug}.summary`, post.slug)}
-                </p>
-                <div className='flex items-center justify-between mt-auto'>
-                  <time className='text-sm text-zinc-600 dark:text-zinc-400' dateTime={post.date}>
-                    {new Date(post.date).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric',
-                    })}
-                  </time>
-                  <span className='text-sm font-medium text-accent group-hover:underline'>
-                    {t('blog:readMore')}
+      <ul className='border-t border-zinc-200 dark:border-zinc-800'>
+        {FeaturedBlogPostsData.map((post) => {
+          const title = t(`blog:post.${post.slug}.title`, post.slug);
+          return (
+            <li key={post.slug} className='border-b border-zinc-200 dark:border-zinc-800'>
+              <Link href={`/blog/${post.slug}`}>
+                <a
+                  className='group grid grid-cols-[1fr_auto] md:grid-cols-[140px_1fr_auto] gap-x-6 gap-y-1 py-6 items-center rounded-sm'
+                  onClick={() => trackEvent('click', 'featured_blog_card', post.slug)}
+                >
+                  <span className='col-span-2 md:col-span-1 text-xs text-zinc-500 dark:text-zinc-400'>
+                    <span className='block font-semibold uppercase tracking-[0.1em] text-accent'>
+                      {t(`blog:category.${post.category}`)}
+                    </span>
+                    <time dateTime={post.date}>
+                      {new Date(post.date).toLocaleDateString(locale || 'en', { year: 'numeric', month: 'short' })}
+                    </time>
                   </span>
-                </div>
-              </div>
-            </a>
-          </Link>
-        ))}
-      </div>
+                  <span className='min-w-0'>
+                    <span className='block font-display text-2xl leading-snug group-hover:text-accent transition-colors'>
+                      {title}
+                    </span>
+                    <span className='block mt-1 text-sm text-zinc-600 dark:text-zinc-400 line-clamp-1'>
+                      {t(`blog:post.${post.slug}.summary`, post.slug)}
+                    </span>
+                  </span>
+                  <span className='relative hidden sm:block w-28 h-[72px] rounded-lg overflow-hidden bg-zinc-100 dark:bg-zinc-800'>
+                    <Image
+                      src={post.image}
+                      alt=''
+                      aria-hidden='true'
+                      layout='fill'
+                      objectFit='cover'
+                      sizes='112px'
+                      className='transition-transform duration-500 group-hover:scale-105'
+                    />
+                  </span>
+                </a>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
 
-      <Link href='/blog'>
-        <a
-          className='md:hidden inline-flex items-center justify-center gap-2 mt-6 px-6 py-3 bg-accent text-white font-medium rounded-lg hover:bg-accent/90 transition-colors'
-          onClick={() => trackEvent('click', 'navigation', 'View All Blog Posts')}
-        >
-          {t('home:featuredBlog.viewAll')}
-          <svg
-            className='w-5 h-5'
-            fill='none'
-            stroke='currentColor'
-            viewBox='0 0 24 24'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth={2}
-              d='M17 8l4 4m0 0l-4 4m4-4H3'
-            />
-          </svg>
-        </a>
-      </Link>
+      <div className='mt-10 md:hidden'>{viewAll}</div>
     </section>
   );
 }

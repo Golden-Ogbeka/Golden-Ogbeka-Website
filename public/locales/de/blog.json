@@ -1,14 +1,22 @@
 {
   "page": {
-    "title": "Blog",
-    "subtitle": "Gedanken zu Technik, KI und Software-Handwerk.",
-    "noPosts": "Keine Beiträge in dieser Kategorie gefunden."
+    "title": "Notizen & Gedanken",
+    "subtitle": "Texte über Technologie, Führung, Leben und Glauben.",
+    "noPosts": "Keine Beiträge in dieser Kategorie gefunden.",
+    "titleHighlight": "Gedanken",
+    "count_one": "{{count}} Beitrag",
+    "count_other": "{{count}} Beiträge"
   },
   "category": {
     "all": "Alle",
-    "tech": "Tech",
-    "life": "Leben",
-    "faith": "Glaube"
+    "label": "Blog-Kategorien",
+    "ai": "KI",
+    "society": "Afrika & Gesellschaft",
+    "growth": "Persönliches Wachstum",
+    "family": "Familie",
+    "faith": "Glaube",
+    "discipleship": "Christliches Leben",
+    "love": "Gottes Liebe"
   },
   "readMore": "Weiterlesen",
   "backToBlog": "Zurück zum Blog",
@@ -433,5 +441,11 @@
         "Bis zum nächsten Mal, ich bin Golden Ogbeka. Ich baue Softwareanwendungen und bin auch Medien-Ingenieur; Social-Media-Management, Live-Tonmischung, Musikproduktion, Videoproduktion und vieles mehr gehören zu dem, was ich tue. Aber zusammengefasst: Wenn Sie eine Idee haben und mit jemandem darüber sprechen müssen, bin ich Ihr Mann."
       ]
     }
+  },
+  "relatedTitle": "Ähnliche Artikel",
+  "view": {
+    "label": "Ansicht",
+    "grid": "Raster",
+    "index": "Index"
   }
 }

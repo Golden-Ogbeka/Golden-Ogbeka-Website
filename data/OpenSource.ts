@@ -6,6 +6,12 @@ export interface OpenSourceRepo {
   technologies: string[];
   stars: number;
   forks: number;
+  /**
+   * How useful the repo is to other people, 1–5 (default 2):
+   * 5 ready-to-use products, 4 starters/templates/reusable pieces, 3 good references,
+   * 2 small demos, 1 coursework, assessments, clones or personal config.
+   */
+  usefulness?: number;
 }
 
 const OpenSourceData: OpenSourceRepo[] = [
@@ -17,6 +23,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['TypeScript', 'Next.js', 'React'],
     stars: 12,
     forks: 12,
+    usefulness: 5,
   },
   {
     id: 'Find-It',
@@ -26,6 +33,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['JavaScript', 'React', 'Node.js'],
     stars: 2,
     forks: 0,
+    usefulness: 3,
   },
   {
     id: 'Golden-Ogbeka',
@@ -35,6 +43,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['Markdown'],
     stars: 2,
     forks: 0,
+    usefulness: 1,
   },
   {
     id: 'transaction-viewer',
@@ -44,6 +53,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['TypeScript', 'React', 'TailwindCSS'],
     stars: 0,
     forks: 0,
+    usefulness: 3,
   },
   {
     id: 'account-connect-app',
@@ -53,6 +63,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['TypeScript', 'Node.js', 'Express'],
     stars: 0,
     forks: 0,
+    usefulness: 3,
   },
   {
     id: 'secure-shift-api',
@@ -62,6 +73,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['TypeScript', 'Node.js', 'MongoDB'],
     stars: 0,
     forks: 1,
+    usefulness: 3,
   },
   {
     id: 'To-do-List',
@@ -80,6 +92,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['JavaScript', 'React'],
     stars: 0,
     forks: 0,
+    usefulness: 4,
   },
   {
     id: 'mini-todo-app-server',
@@ -98,6 +111,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['TypeScript', 'Next.js', 'TailwindCSS'],
     stars: 1,
     forks: 0,
+    usefulness: 3,
   },
   {
     id: 'otk-contact-manager',
@@ -116,6 +130,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['React', 'TypeScript', 'Tailwind'],
     stars: 1,
     forks: 1,
+    usefulness: 5,
   },
   {
     id: 'church-backend',
@@ -125,6 +140,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['JavaScript', 'Node.js', 'Express'],
     stars: 1,
     forks: 1,
+    usefulness: 5,
   },
   {
     id: 'risevest-homepage-build',
@@ -134,6 +150,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     stars: 0,
     forks: 0,
+    usefulness: 1,
   },
   {
     id: 'smartchain-test',
@@ -143,6 +160,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['JavaScript'],
     stars: 0,
     forks: 0,
+    usefulness: 1,
   },
   {
     id: 'hux-assessment-backend',
@@ -152,6 +170,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['Node.js', 'Express', 'MongoDB'],
     stars: 0,
     forks: 0,
+    usefulness: 1,
   },
   {
     id: 'hux-assessment-frontend',
@@ -161,6 +180,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['React', 'JavaScript', 'CSS'],
     stars: 0,
     forks: 0,
+    usefulness: 1,
   },
   {
     id: 'BaseReactNativeProject',
@@ -170,6 +190,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['TypeScript', 'React Native'],
     stars: 0,
     forks: 1,
+    usefulness: 4,
   },
   {
     id: 'autocomplete-component',
@@ -179,6 +200,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['React', 'JavaScript'],
     stars: 0,
     forks: 0,
+    usefulness: 4,
   },
   {
     id: 'church-mobile-app',
@@ -188,6 +210,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['React Native', 'JavaScript'],
     stars: 0,
     forks: 0,
+    usefulness: 5,
   },
   {
     id: 'branded-website-template',
@@ -197,6 +220,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['TypeScript', 'Next.js', 'TailwindCSS'],
     stars: 1,
     forks: 0,
+    usefulness: 4,
   },
   {
     id: 'admin-dashboard-template',
@@ -206,6 +230,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['TypeScript', 'React', 'TailwindCSS'],
     stars: 1,
     forks: 0,
+    usefulness: 4,
   },
   {
     id: 'country-details-form',
@@ -224,6 +249,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['HTML', 'CSS'],
     stars: 0,
     forks: 0,
+    usefulness: 4,
   },
   {
     id: 'ARM_financial_market_tickers',
@@ -242,6 +268,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['HTML', 'CSS'],
     stars: 0,
     forks: 0,
+    usefulness: 1,
   },
   {
     id: 'saas-landing-page-vue',
@@ -251,6 +278,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['Vue', 'JavaScript', 'CSS'],
     stars: 0,
     forks: 0,
+    usefulness: 4,
   },
   {
     id: 'Boldo-Design-Implementation',
@@ -269,6 +297,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['TypeScript', 'React', 'Node.js'],
     stars: 0,
     forks: 0,
+    usefulness: 3,
   },
   {
     id: 'github-readme-stats',
@@ -278,6 +307,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['JavaScript', 'GitHub API'],
     stars: 0,
     forks: 0,
+    usefulness: 1,
   },
   {
     id: 'Social-News',
@@ -287,6 +317,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['React', 'Node.js', 'MongoDB', 'Socket.IO'],
     stars: 1,
     forks: 0,
+    usefulness: 3,
   },
   {
     id: 'ceejayne',
@@ -350,6 +381,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['JavaScript', 'React'],
     stars: 0,
     forks: 0,
+    usefulness: 3,
   },
   {
     id: 'Dating-App',
@@ -368,6 +400,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['JavaScript', 'Node.js', 'MongoDB'],
     stars: 0,
     forks: 0,
+    usefulness: 4,
   },
   {
     id: 'Product-Catalog-with-Unsplash-API',
@@ -386,6 +419,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['C'],
     stars: 0,
     forks: 0,
+    usefulness: 1,
   },
   {
     id: 'UserAuthentication',
@@ -395,6 +429,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['JavaScript', 'Node.js', 'JWT'],
     stars: 0,
     forks: 0,
+    usefulness: 3,
   },
   {
     id: 'Java-Web-Application-for-The-Chicken-Farm',
@@ -404,6 +439,7 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['Java', 'Java EE'],
     stars: 0,
     forks: 0,
+    usefulness: 1,
   },
   {
     id: 'Airline_Reservation_System_with_Java',
@@ -413,7 +449,15 @@ const OpenSourceData: OpenSourceRepo[] = [
     technologies: ['Java', 'Swing'],
     stars: 0,
     forks: 0,
+    usefulness: 1,
   },
 ];
+
+/** Usefulness first, then stars + forks as the tie-breaker. */
+export function rankByUsefulness(repos: OpenSourceRepo[]): OpenSourceRepo[] {
+  return repos
+    .slice()
+    .sort((a, b) => (b.usefulness ?? 2) - (a.usefulness ?? 2) || b.stars + b.forks - (a.stars + a.forks));
+}
 
 export default OpenSourceData;

@@ -1,14 +1,22 @@
 {
   "page": {
-    "title": "Blog",
-    "subtitle": "Thoughts on engineering, AI, and software craft.",
-    "noPosts": "No posts found in this category."
+    "title": "Notes & thinking",
+    "subtitle": "Writing on technology, leadership, life and faith.",
+    "noPosts": "No posts found in this category.",
+    "titleHighlight": "thinking",
+    "count_one": "{{count}} post",
+    "count_other": "{{count}} posts"
   },
   "category": {
     "all": "All",
-    "tech": "Tech",
-    "life": "Life",
-    "faith": "Faith"
+    "label": "Blog categories",
+    "ai": "AI",
+    "society": "Africa & society",
+    "growth": "Personal growth",
+    "family": "Family",
+    "faith": "Faith",
+    "discipleship": "Christian living",
+    "love": "God's love"
   },
   "readMore": "Read more",
   "backToBlog": "Back to blog",
@@ -433,5 +441,11 @@
         "Until next time, I am Golden Ogbeka. I build software applications and I'm also a media engineer so social media management, live audio mixing, music production, video production, and many more are some of the things I do but in summary, if you have an idea and need to talk to someone about it, I am your guy."
       ]
     }
+  },
+  "relatedTitle": "Related articles",
+  "view": {
+    "label": "Layout",
+    "grid": "Grid",
+    "index": "Index"
   }
 }

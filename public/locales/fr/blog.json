@@ -1,14 +1,22 @@
 {
   "page": {
-    "title": "Blog",
-    "subtitle": "Réflexions sur l'ingénierie, l'IA et l'art du développement logiciel.",
-    "noPosts": "Aucun article trouvé dans cette catégorie."
+    "title": "Notes et réflexions",
+    "subtitle": "Écrits sur la technologie, le leadership, la vie et la foi.",
+    "noPosts": "Aucun article trouvé dans cette catégorie.",
+    "titleHighlight": "réflexions",
+    "count_one": "{{count}} article",
+    "count_other": "{{count}} articles"
   },
   "category": {
     "all": "Tout",
-    "tech": "Tech",
-    "life": "Vie",
-    "faith": "Foi"
+    "label": "Catégories du blog",
+    "ai": "IA",
+    "society": "Afrique et société",
+    "growth": "Développement personnel",
+    "family": "Famille",
+    "faith": "Foi",
+    "discipleship": "Vie chrétienne",
+    "love": "L’amour de Dieu"
   },
   "readMore": "Lire la suite",
   "backToBlog": "Retour au blog",
@@ -433,5 +441,11 @@
         "À la prochaine, je suis Golden Ogbeka. Je construis des applications logicielles et je suis aussi ingénieur média ; la gestion des réseaux sociaux, la sonorisation live, la production musicale, la production vidéo et bien d'autres font partie de ce que je fais. En résumé, si vous avez une idée et que vous avez besoin d'en parler à quelqu'un, je suis votre homme."
       ]
     }
+  },
+  "relatedTitle": "Articles similaires",
+  "view": {
+    "label": "Affichage",
+    "grid": "Grille",
+    "index": "Index"
   }
 }

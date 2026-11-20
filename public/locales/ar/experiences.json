@@ -72,5 +72,8 @@
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.1": "تطوير البنية التحتية الخلفية و APIs والأنظمة الفورية وميزات التطبيقات السحابية باستخدام Node.js وتقنيات الويب الحديثة.",
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.2": "إدارة دورة حياة المنتج الكاملة بما في ذلك الهندسة والتطوير والنشر والمراقبة والصيانة والدعم التشغيلي.",
   "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.3": "تنفيذ أنظمة المصادقة وسير عمل الدفع وتكاملات الخدمات وميزات المنصة القابلة للتوسع التي تدعم العمليات التجارية اليومية.",
-  "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.4": "المساهمة في نمو المنتج من خلال الملكية الفنية وتطوير الميزات واستكشاف المشكلات والتحسينات المستمرة للمنصة."
+  "experience.founder-and-full-stack-engineer-the-chicken-universe.tasks.4": "المساهمة في نمو المنتج من خلال الملكية الفنية وتطوير الميزات واستكشاف المشكلات والتحسينات المستمرة للمنصة.",
+  "count": "عدد الأدوار: {{count}}",
+  "titleHighlight": "المهنية",
+  "now": "حاليًا"
 }

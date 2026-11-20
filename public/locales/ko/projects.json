@@ -725,5 +725,14 @@
   "project.testimonies-mobile.coreTools.5": "React Hook Form",
   "project.testimonies-mobile.coreTools.6": "Zod",
   "project.testimonies-mobile.coreTools.7": "Axios",
-  "project.testimonies-mobile.coreTools.8": "TypeScript"
+  "project.testimonies-mobile.coreTools.8": "TypeScript",
+  "count": "프로젝트 {{count}}개",
+  "titleHighlight": "프로젝트",
+  "thumbnailAlt": "{{title}} 썸네일",
+  "filterAll": "전체",
+  "filterLabel": "기술로 필터",
+  "viewLabel": "보기",
+  "viewIndex": "목록",
+  "viewGrid": "그리드",
+  "noResults": "이 기술을 사용한 프로젝트가 아직 없습니다."
 }

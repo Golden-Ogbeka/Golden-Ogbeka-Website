@@ -1,14 +1,22 @@
 {
   "page": {
-    "title": "Blog",
-    "subtitle": "Reflexiones sobre ingeniería, IA y el oficio del software.",
-    "noPosts": "No se encontraron publicaciones en esta categoría."
+    "title": "Notas y reflexiones",
+    "subtitle": "Escritos sobre tecnología, liderazgo, vida y fe.",
+    "noPosts": "No se encontraron publicaciones en esta categoría.",
+    "titleHighlight": "reflexiones",
+    "count_one": "{{count}} publicación",
+    "count_other": "{{count}} publicaciones"
   },
   "category": {
     "all": "Todo",
-    "tech": "Tech",
-    "life": "Vida",
-    "faith": "Fe"
+    "label": "Categorías del blog",
+    "ai": "IA",
+    "society": "África y sociedad",
+    "growth": "Crecimiento personal",
+    "family": "Familia",
+    "faith": "Fe",
+    "discipleship": "Vida cristiana",
+    "love": "El amor de Dios"
   },
   "readMore": "Leer más",
   "backToBlog": "Volver al blog",
@@ -418,5 +426,11 @@
         "Hasta la próxima, soy Golden Ogbeka. Construyo aplicaciones de software y también soy ingeniero de medios; la gestión de redes sociales, la mezcla de audio en vivo, la producción musical, la producción de video y muchas más son algunas de las cosas que hago. Pero en resumen, si tienes una idea y necesitas hablar con alguien sobre ella, soy tu hombre."
       ]
     }
+  },
+  "relatedTitle": "Artículos relacionados",
+  "view": {
+    "label": "Vista",
+    "grid": "Cuadrícula",
+    "index": "Índice"
   }
 }

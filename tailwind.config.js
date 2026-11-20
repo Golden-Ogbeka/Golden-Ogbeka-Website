@@ -10,12 +10,14 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        display: ['Outfit', 'sans-serif'],
+        display: ['Fraunces', 'Georgia', 'serif'],
       },
       colors: {
         primary: '#0F172A',     // slate-900
         secondary: '#334155',   // slate-700
-        accent: '#2563EB',      // blue-600 (WCAG AA compliant on white: 4.5:1+)
+        // Gold accent. Set per theme in globals.css (--accent):
+        // light #8C6414 (5.3:1 on white), dark #D4A84A (9:1 on zinc-950) — both WCAG AA.
+        accent: 'rgb(var(--accent) / <alpha-value>)',
         darkBg: '#09090b',      // zinc-950
         darkCard: '#18181b',    // zinc-900
         darkText: '#f4f4f5',    // zinc-100

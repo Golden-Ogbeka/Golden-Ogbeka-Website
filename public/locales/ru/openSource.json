@@ -98,5 +98,11 @@
   "Java-Web-Application-for-The-Chicken-Farm.name": "Poultry Store",
   "Java-Web-Application-for-The-Chicken-Farm.description": "Java EE веб-приложение для магазина птицеводческой продукции с управлением запасами и покупками",
   "Airline_Reservation_System_with_Java.name": "Airline Booking System",
-  "Airline_Reservation_System_with_Java.description": "Java десктопная система бронирования авиабилетов для управления рейсами и клиентами"
+  "Airline_Reservation_System_with_Java.description": "Java десктопная система бронирования авиабилетов для управления рейсами и клиентами",
+  "count": "Репозиториев: {{count}}",
+  "titleHighlight": "исходный код",
+  "stars": "звёзд",
+  "forks": "форков",
+  "clearFilter": "Сбросить фильтр",
+  "mostUseful": "Самые полезные"
 }

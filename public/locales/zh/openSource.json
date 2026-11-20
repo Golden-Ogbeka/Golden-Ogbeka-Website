@@ -98,5 +98,11 @@
   "Java-Web-Application-for-The-Chicken-Farm.name": "Poultry Store",
   "Java-Web-Application-for-The-Chicken-Farm.description": "Java EE Web应用，用于家禽产品商店，包含库存和采购工作流。",
   "Airline_Reservation_System_with_Java.name": "Airline Booking System",
-  "Airline_Reservation_System_with_Java.description": "Java桌面航空预订系统，用于预订航班和管理客户预订。"
+  "Airline_Reservation_System_with_Java.description": "Java桌面航空预订系统，用于预订航班和管理客户预订。",
+  "count": "共 {{count}} 个仓库",
+  "titleHighlight": "开源",
+  "stars": "星标",
+  "forks": "复刻",
+  "clearFilter": "清除筛选",
+  "mostUseful": "最实用"
 }

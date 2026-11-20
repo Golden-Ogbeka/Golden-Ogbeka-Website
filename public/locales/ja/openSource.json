@@ -98,5 +98,11 @@
   "Java-Web-Application-for-The-Chicken-Farm.name": "養鶏ストア",
   "Java-Web-Application-for-The-Chicken-Farm.description": "在庫と購入ワークフローを備えた養鶏製品ストアのJava EE Webアプリケーション。",
   "Airline_Reservation_System_with_Java.name": "航空会社予約システム",
-  "Airline_Reservation_System_with_Java.description": "航空券予約と顧客予約管理のためのJavaデスクトップ航空会社予約システム。"
+  "Airline_Reservation_System_with_Java.description": "航空券予約と顧客予約管理のためのJavaデスクトップ航空会社予約システム。",
+  "count": "{{count}} 件のリポジトリ",
+  "titleHighlight": "オープン",
+  "stars": "スター",
+  "forks": "フォーク",
+  "clearFilter": "フィルターを解除",
+  "mostUseful": "役立つ順"
 }

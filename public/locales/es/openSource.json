@@ -98,5 +98,12 @@
   "Java-Web-Application-for-The-Chicken-Farm.name": "Tienda de aves de corral",
   "Java-Web-Application-for-The-Chicken-Farm.description": "Aplicación web Java EE para una tienda de productos avícolas con flujos de trabajo de inventario y compra.",
   "Airline_Reservation_System_with_Java.name": "Sistema de reservas de aerolíneas",
-  "Airline_Reservation_System_with_Java.description": "Sistema de reservas de aerolíneas de escritorio Java para reservar vuelos y gestionar las reservas de los clientes."
+  "Airline_Reservation_System_with_Java.description": "Sistema de reservas de aerolíneas de escritorio Java para reservar vuelos y gestionar las reservas de los clientes.",
+  "count_one": "{{count}} repositorio",
+  "count_other": "{{count}} repositorios",
+  "titleHighlight": "Abierto",
+  "stars": "estrellas",
+  "forks": "forks",
+  "clearFilter": "Quitar filtro",
+  "mostUseful": "Más útiles"
 }

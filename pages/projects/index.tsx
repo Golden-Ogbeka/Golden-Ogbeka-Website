@@ -1,10 +1,9 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
+import PageHeader from '../../components/reusable/PageHeader/PageHeader';
 import ProjectsData from '../../data/Projects';
 import { useTranslation } from 'next-i18next';
-import { trackEvent } from '../../utils/analytics';
+import ProjectsExplorer from '../../components/pages/Project/ProjectsExplorer';
 export default function Projects() {
   const { t } = useTranslation(['common', 'projects']);
   return (
@@ -17,72 +16,15 @@ export default function Projects() {
           { name: t('common:nav.projects'), url: '/projects' },
         ]}
       />
-      <div className='pt-24 sm:pt-28 md:pt-32 min-h-screen'>
-        <div className='mb-8 sm:mb-12 animate-fade-in-up'>
-          <h1 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-semibold mb-4'>
-            {t('projects:title')}
-          </h1>
-          <p className='text-zinc-600 dark:text-zinc-400 text-sm sm:text-base md:text-lg max-w-2xl'>
-            {t('projects:subtitle')}
-          </p>
-        </div>
+      <div className='min-h-screen'>
+        <PageHeader
+          eyebrow={t('projects:count', { count: ProjectsData.length })}
+          title={t('projects:title')}
+          highlight={t('projects:titleHighlight')}
+          subtitle={t('projects:subtitle')}
+        />
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8'>
-          {ProjectsData.map((project, index) => (
-            <Link key={project.slug} href={`/projects/${project.slug}`}>
-              <a
-                className='minimal-card flex flex-col group overflow-hidden animate-fade-in-up'
-                style={{ animationDelay: `${index * 0.1}s` }}
-                onClick={() => trackEvent('click', 'project_card', project.title)}
-              >
-                <div className='relative w-full aspect-video bg-zinc-200 dark:bg-zinc-800 overflow-hidden'>
-                  {project.screenshots && project.screenshots.length > 0 ? (
-                    <Image
-                      src={project.screenshots[0]}
-                      alt={`${t(`projects:project.${project.slug}.title`, project.title)} thumbnail`}
-                      layout='fill'
-                      objectFit='cover'
-                      sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
-                      className='transform group-hover:scale-105 transition-transform duration-500'
-                    />
-                  ) : (
-                    <Image
-                      src={project.image}
-                      alt={`${t(`projects:project.${project.slug}.title`, project.title)} thumbnail`}
-                      layout='fill'
-                      objectFit='cover'
-                      sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
-                      className='transform group-hover:scale-105 transition-transform duration-500'
-                    />
-                  )}
-                </div>
-                <div className='p-6 flex-1 flex flex-col'>
-                  <h2 className='text-lg sm:text-xl font-semibold mb-2 group-hover:text-accent transition-colors'>
-                    {t(`projects:project.${project.slug}.title`, project.title)}
-                  </h2>
-                  <p className='text-zinc-600 dark:text-zinc-400 line-clamp-3 mb-4'>
-                    {t(`projects:project.${project.slug}.description`, project.description)}
-                  </p>
-                  <div className='flex flex-wrap gap-2 mt-auto'>
-                    {project.coreTools.slice(0, 3).map((tool) => (
-                      <span
-                        key={tool}
-                        className='text-xs font-medium pr-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full text-zinc-600 dark:text-zinc-300'
-                      >
-                        {tool}
-                      </span>
-                    ))}
-                    {project.coreTools.length > 3 && (
-                      <span className='text-xs font-medium px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 rounded-full text-zinc-600 dark:text-zinc-300'>
-                        +{project.coreTools.length - 3}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              </a>
-            </Link>
-          ))}
-        </div>
+        <ProjectsExplorer projects={ProjectsData} />
       </div>
     </AppLayout>
   );

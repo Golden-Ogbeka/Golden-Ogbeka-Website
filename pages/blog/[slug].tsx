@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import AppLayout from '../../components/layout/AppLayout';
 import HeadElement from '../../components/layout/HeadElement';
 import BlogDetail from '../../components/pages/Blog/BlogDetail';
-import RelatedPosts from '../../components/pages/Blog/RelatedPosts';
+import RelatedPosts, { getRelatedPosts } from '../../components/pages/Blog/RelatedPosts';
 import BlogPosts, { BlogPostType } from '../../data/BlogPosts';
 import { useTranslation } from 'next-i18next';
 import { trackEvent } from '../../utils/analytics';
@@ -66,14 +66,15 @@ export default function BlogPost({ post }: BlogPostProps) {
         overrideSchemas={[blogPostingSchema]}
       />
 
-      <article className='pt-24 sm:pt-28 md:pt-32 min-h-screen'>
+      <article className='pt-10 sm:pt-14 md:pt-16 min-h-screen'>
         <Link href='/blog'>
           <a
-            className='inline-flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 mb-8 transition-colors'
+            className='group inline-flex items-center py-2 text-sm text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 mb-8 transition-colors rounded-sm'
             onClick={() => trackEvent('click', 'navigation', 'Back to Blog')}
           >
             <svg
-              className='w-4 h-4 mr-2'
+              aria-hidden='true'
+              className='w-4 h-4 mr-2 rtl:mr-0 rtl:ml-2 rtl:-scale-x-100 transition-transform group-hover:-translate-x-0.5'
               fill='none'
               stroke='currentColor'
               viewBox='0 0 24 24'
@@ -122,22 +123,20 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   const common = loadNs('common');
   const blog = loadNs('blog');
 
-  const currentPrefix = `post.${post?.slug}.`;
+  // Must match the posts RelatedPosts renders, or their titles fall back to slugs.
+  const relatedPosts = post ? getRelatedPosts(post.slug, post.category) : [];
 
-  const relatedPosts = BlogPosts.filter(
-    (p) => p.slug !== post?.slug && (p.category === post?.category || true)
-  ).slice(0, 4);
-
-  const relatedSlugs = new Set(relatedPosts.map((p) => p.slug));
-
-  for (const key of Object.keys(blog)) {
-    if (key.startsWith('post.')) {
-      const keySlug = key.substring(5, key.indexOf('.', 5));
-      if (keySlug !== post?.slug && !relatedSlugs.has(keySlug)) {
-        delete blog[key];
-      }
+  // Posts are nested under `post`: keep this post in full, and only title + summary for related posts.
+  type PostText = { title?: string; summary?: string; paragraphs?: string[] };
+  const allPosts = (blog.post || {}) as Record<string, PostText>;
+  const keptPosts: Record<string, PostText> = {};
+  if (post && allPosts[post.slug]) keptPosts[post.slug] = allPosts[post.slug];
+  for (const related of relatedPosts) {
+    if (allPosts[related.slug]) {
+      keptPosts[related.slug] = { title: allPosts[related.slug].title, summary: allPosts[related.slug].summary };
     }
   }
+  blog.post = keptPosts;
 
   const initialI18nStore: Record<string, Record<string, unknown>> = {};
   initialI18nStore[lng] = { common, blog };
